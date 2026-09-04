@@ -5,6 +5,7 @@
       "chars": 11266,
       "heading": "Self Assessment Legal Framework manual (SALF) > Cash limit for magistrates’ proceedings",
       "index": 11,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -96,12 +97,14 @@
           "enquiry-time-limits",
           "discovery-assessment"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "0614234e5f4b1277": {
       "chars": 11609,
       "heading": "Self Assessment Legal Framework manual (SALF) > Successive interests in residue",
       "index": 22,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -266,12 +269,14 @@
           "mtd-appeals",
           "digital-start-date"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "06dc2ce766d00bb0": {
       "chars": 11296,
       "heading": "Self Assessment Legal Framework manual (SALF) > Who will get tax returns?",
       "index": 21,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -444,12 +449,14 @@
           "trust-income",
           "third-party-reporting"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "06f36e2a81c8ac0b": {
       "chars": 11856,
       "heading": "Self Assessment Legal Framework manual (SALF) > Appeals against the imposition of a surcharge",
       "index": 10,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -623,12 +630,14 @@
           "special-reduction",
           "time-to-pay"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "108c137691514b6e": {
       "chars": 11481,
       "heading": "Self Assessment Legal Framework manual (SALF) > SALF209 — Sanctions against a failure to File a Tax Return: determination of Self Assessment where Tax Return not filed",
       "index": 5,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -756,12 +765,14 @@
           "penalties",
           "time-limits"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "151ce20553e05cc0": {
       "chars": 11451,
       "heading": "Self Assessment Legal Framework manual (SALF) > Example: Calculation of relevant amount",
       "index": 7,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -943,12 +954,14 @@
           "discovery-assessment",
           "interest"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "1532ad8682c7b077": {
       "chars": 11774,
       "heading": "Self Assessment Legal Framework manual (SALF) > A balancing payment (or repayment) is made to reflect tax liability calculated in the self assessment for the year",
       "index": 8,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -1107,12 +1120,14 @@
           "student-loan-repayments",
           "class-4-nics"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "1eaa53dc1cd1620f": {
       "chars": 11681,
       "heading": "Self Assessment Legal Framework manual (SALF) > SALF604 — Claims, Elections and Notices not included in Tax Returns",
       "index": 17,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -1277,12 +1292,14 @@
           "appeals",
           "loss-carry-back"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "2a4ea4feced1e7a8": {
       "chars": 9546,
       "heading": "Self Assessment Legal Framework manual (SALF)",
       "index": 0,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -1451,12 +1468,14 @@
           "enquiries",
           "partnerships"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "30c6d9290b702cf3": {
       "chars": 11378,
       "heading": "Self Assessment Legal Framework manual (SALF) > SALF1020 — Digital Termination Date",
       "index": 23,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -1634,12 +1653,14 @@
           "calendar-quarters-election",
           "mtd-exemptions"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "3ddbec9806ce6bcd": {
       "chars": 2643,
       "heading": "Self Assessment Legal Framework manual (SALF) > SALF1420 — Exemptions where an exclusion notice is in place - Exclusion exemption",
       "index": 24,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -1719,12 +1740,14 @@
           "mtd-exemption",
           "exclusion-notice"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "6bcd27a00fe5abcd": {
       "chars": 11432,
       "heading": "Self Assessment Legal Framework manual (SALF) > Discovery and partnerships",
       "index": 16,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -1832,12 +1855,14 @@
           "paye-coding-claims",
           "time-limits"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "778446d866be1527": {
       "chars": 10494,
       "heading": "Self Assessment Legal Framework manual (SALF) > General rule for the obligations and liabilities of UK representatives",
       "index": 19,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -1921,12 +1946,14 @@
           "partnerships",
           "offences"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "7c71382d3660e35c": {
       "chars": 11472,
       "heading": "Self Assessment Legal Framework manual (SALF) > A partner’s share of any partnership income must be included in his or her own tax return",
       "index": 2,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -2109,12 +2136,14 @@
           "time-limits",
           "assessment-time-limits"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "7d3e1fcb352573f9": {
       "chars": 11451,
       "heading": "Self Assessment Legal Framework manual (SALF) > Penalty for failure to keep records as required",
       "index": 6,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -2288,12 +2317,14 @@
           "surcharge",
           "class-4-nics"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "a4d2a8f1eb52b32e": {
       "chars": 11318,
       "heading": "Self Assessment Legal Framework manual (SALF) > Fixed penalties > Example: Restriction of fixed penalties where tax due minimal",
       "index": 4,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -2459,12 +2490,14 @@
           "reasonable-excuse",
           "special-reduction"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "b03e65b8f3ebf747": {
       "chars": 11056,
       "heading": "Self Assessment Legal Framework manual (SALF) > HMRC and the taxpayer can jointly refer an issue that is the subject of an open enquiry for determination by the tribunal during the enquiry",
       "index": 12,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -2581,12 +2614,14 @@
           "consequential-claims",
           "contract-settlements"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "bb70858b0109e1ca": {
       "chars": 11581,
       "heading": "Self Assessment Legal Framework manual (SALF) > Remission of interest charges on excessive payments on account",
       "index": 9,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -2756,12 +2791,14 @@
           "surcharges",
           "late-payment-penalties"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "be9780a2d06f72be": {
       "chars": 11690,
       "heading": "Self Assessment Legal Framework manual (SALF) > Appeals against daily penalties",
       "index": 15,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -2937,12 +2974,14 @@
           "reasonable-excuse",
           "nominated-partner"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "c5bbd73fd7f9daf7": {
       "chars": 11720,
       "heading": "Self Assessment Legal Framework manual (SALF) > Investment managers: the ‘independent agent’ condition",
       "index": 20,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -3078,12 +3117,14 @@
           "assessments",
           "time-limits"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "eb7004eb69cea423": {
       "chars": 11952,
       "heading": "Self Assessment Legal Framework manual (SALF) > Time limits for individuals",
       "index": 14,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -3325,12 +3366,14 @@
           "amendments",
           "appeals"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "f1be5930f67e60b1": {
       "chars": 11328,
       "heading": "Self Assessment Legal Framework manual (SALF) > General circumstances in which discovery assessments can be made",
       "index": 13,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -3462,12 +3505,14 @@
           "partnership-returns",
           "record-keeping"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "f6cbb58a59b9f61a": {
       "chars": 11701,
       "heading": "Self Assessment Legal Framework manual (SALF) > Specification of information required in a self assessment tax return",
       "index": 3,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [
           {
@@ -3641,12 +3686,14 @@
           "reasonable-excuse",
           "determinations"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "fc7cd24744af4953": {
       "chars": 10967,
       "heading": "Self Assessment Legal Framework manual (SALF) > Any such claim is to be given effect in ‘the later year’",
       "index": 18,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -3757,12 +3804,14 @@
           "non-resident-property-income",
           "uk-representatives-non-residents"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "fe45f51598f5f913": {
       "chars": 11308,
       "heading": "Self Assessment Legal Framework manual (SALF) > SALF202 — Introduction",
       "index": 1,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -3962,7 +4011,8 @@
           "enquiries",
           "determinations"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     }
   },
   "doc": "hmrc-publications/policy-and-interpretation/manuals/salf.md",

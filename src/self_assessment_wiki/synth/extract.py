@@ -1,9 +1,10 @@
 """Stage 2: corpus chunk -> structured JSON note, cached by chunk hash."""
 from __future__ import annotations
 
+import hashlib
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from pathlib import Path
 
 from . import store
@@ -13,6 +14,11 @@ from .llm import Backend, extract_json
 
 SYSTEM = (PROMPTS_DIR / "extract.md").read_text()
 
+# Recorded on every cached note. The chunk hash alone cannot tell a note
+# written under an older prompt (or a weaker model) from a current one, so
+# tuning extract.md mid-run would otherwise leave the corpus silently mixed.
+PROMPT_HASH = hashlib.sha256(SYSTEM.encode()).hexdigest()[:16]
+
 
 @dataclass
 class Plan:
@@ -21,6 +27,7 @@ class Plan:
     chunks: list[Chunk]
     todo: list[Chunk]
     orphans: int
+    stale_prompt: list[Chunk] = field(default_factory=list)
 
 
 def corpus_docs(only: list[str] | None) -> list[Path]:
@@ -43,7 +50,11 @@ def plan(only: list[str] | None = None) -> list[Plan]:
         live = {c.hash for c in chunks}
         orphans = len([h for h in data["chunks"] if h not in live])
         todo = [c for c in chunks if c.hash not in data["chunks"]]
-        plans.append(Plan(doc=doc_rel, meta=meta, chunks=chunks, todo=todo, orphans=orphans))
+        stale_prompt = [c for c in chunks
+                        if c.hash in data["chunks"]
+                        and data["chunks"][c.hash].get("prompt_hash") != PROMPT_HASH]
+        plans.append(Plan(doc=doc_rel, meta=meta, chunks=chunks, todo=todo, orphans=orphans,
+                          stale_prompt=stale_prompt))
     return plans
 
 
@@ -62,8 +73,13 @@ def _prompt(chunk: Chunk, meta: dict) -> str:
 
 
 def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = None,
-        concurrency: int = 4, verbose: bool = True) -> tuple[int, int]:
-    """Extract every uncached chunk. Returns (extracted, failed)."""
+        concurrency: int = 4, stale_prompt: bool = False, verbose: bool = True) -> tuple[int, int]:
+    """Extract every uncached chunk. Returns (extracted, failed).
+
+    The extract file is written after every completed chunk, not once per
+    document: ITEPA is 238 chunks and a run can take hours, so a Ctrl-C or a
+    rate limit an hour in must not discard the work already paid for.
+    """
     plans = plan(only)
     budget = limit
     extracted = failed = 0
@@ -71,40 +87,55 @@ def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = 
     for p in plans:
         data = store.load(p.doc)
         pruned = store.prune_orphans(p.doc, data, {c.hash for c in p.chunks})
-        todo = p.todo if budget is None else p.todo[:max(budget, 0)]
+        work = p.todo + (p.stale_prompt if stale_prompt else [])
+        todo = work if budget is None else work[:max(budget, 0)]
         if not todo and not pruned:
             continue
         if verbose:
-            print(f"{p.doc}: {len(todo)} to extract, {len(p.chunks) - len(p.todo)} cached, {pruned} pruned",
-                  flush=True)
-
-        if todo:
-            with ThreadPoolExecutor(max_workers=concurrency) as pool:
-                futures = {pool.submit(backend.call, SYSTEM, _prompt(c, p.meta)): c for c in todo}
-                for future in as_completed(futures):
-                    chunk = futures[future]
-                    try:
-                        note = extract_json(future.result())
-                    except Exception as exc:  # one bad chunk shouldn't sink the doc
-                        failed += 1
-                        print(f"  ! {p.doc} chunk {chunk.index}: {exc}", file=sys.stderr)
-                        continue
-                    data["chunks"][chunk.hash] = {
-                        "index": chunk.index,
-                        "heading": chunk.heading,
-                        "chars": len(chunk.text),
-                        "note": note,
-                    }
-                    extracted += 1
-                    if verbose:
-                        rel = note.get("relevance", "?")
-                        print(f"  + [{rel}] {chunk.heading[:80]}", flush=True)
+            restale = len([c for c in todo if c.hash in data["chunks"]])
+            print(f"{p.doc}: {len(todo)} to extract"
+                  f"{f' ({restale} re-run for a stale prompt)' if restale else ''}, "
+                  f"{len(p.chunks) - len(p.todo)} cached, {pruned} pruned", flush=True)
 
         data["doc"] = p.doc
         for key in ("source_id", "source_url", "category"):
             if p.meta.get(key):
                 data[key] = p.meta[key]
-        store.save(p.doc, data)
+        if pruned:
+            store.save(p.doc, data)
+
+        if todo:
+            with ThreadPoolExecutor(max_workers=concurrency) as pool:
+                futures = {pool.submit(backend.call, SYSTEM, _prompt(c, p.meta)): c for c in todo}
+                try:
+                    for future in as_completed(futures):
+                        chunk = futures[future]
+                        try:
+                            note = extract_json(future.result())
+                        except Exception as exc:  # one bad chunk shouldn't sink the doc
+                            failed += 1
+                            print(f"  ! {p.doc} chunk {chunk.index}: {exc}", file=sys.stderr)
+                            continue
+                        data["chunks"][chunk.hash] = {
+                            "index": chunk.index,
+                            "heading": chunk.heading,
+                            "chars": len(chunk.text),
+                            "prompt_hash": PROMPT_HASH,
+                            "model": f"{backend.name}:{backend.model}",
+                            "note": note,
+                        }
+                        extracted += 1
+                        store.save(p.doc, data)  # checkpoint: never lose a paid-for chunk
+                        if verbose:
+                            rel = note.get("relevance", "?")
+                            print(f"  + [{rel}] {chunk.heading[:80]}", flush=True)
+                except KeyboardInterrupt:
+                    for future in futures:
+                        future.cancel()
+                    if data["chunks"]:
+                        store.save(p.doc, data)
+                    print(f"\ninterrupted; {extracted} chunk(s) saved", file=sys.stderr, flush=True)
+                    raise
 
         if budget is not None:
             budget -= len(todo)

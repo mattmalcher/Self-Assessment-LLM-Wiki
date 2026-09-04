@@ -5,6 +5,7 @@
       "chars": 10540,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 1**U.K.Introduction > Overriding objective and parties' obligation to co\\-operate with the TribunalU.K.",
       "index": 1,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -33,12 +34,14 @@
         "relevance": "none",
         "summary": "This chunk sets out general First-tier Tribunal (Tax Chamber) procedural rules: the overriding objective of dealing with cases fairly and justly, alternative dispute resolution, delegation of judicial functions to staff, general case management powers, a temporary coronavirus rule on paper decisions, procedure for applying for directions, and consequences of failing to comply with the Rules. It is generic tribunal procedure applicable to all Tax Chamber cases, not specific to Self Assessment filing, payment, enquiry or penalty obligations.",
         "topics": []
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "1cf0fc5da92e694c": {
       "chars": 5538,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 4**U.K.Correcting, setting aside, reviewing and appealing Tribunal decisions > Application for permission to appealU.K.",
       "index": 7,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -158,12 +161,14 @@
           "tribunal-review",
           "procedure"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "1dc61bd616687fb0": {
       "chars": 11932,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 2**U.K.General powers and provisions > RepresentativesU.K.",
       "index": 3,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -264,12 +269,14 @@
           "lead-cases",
           "document-service"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "250fb2cc3901ca1f": {
       "chars": 11612,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009",
       "index": 0,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -384,12 +391,14 @@
           "definitions",
           "appeals"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "51efffc66edbbcc1": {
       "chars": 11648,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3**U.K.Procedure before the Tribunal > CHAPTER 2U.K.Procedure after allocation of cases to categories > Further steps in a Default Paper caseU.K.",
       "index": 5,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -405,12 +414,14 @@
         "relevance": "none",
         "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules on further steps after allocation to case categories, transfer of Complex cases to the Upper Tribunal, and hearings (notice, public/private, attendance, recording, absence). It concerns general tribunal appeal procedure, not the Self Assessment filing/payment/enquiry/penalty regime.",
         "topics": []
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "ae08c75097c765fc": {
       "chars": 8886,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3**U.K.Procedure before the Tribunal > CHAPTER 4U.K.Decisions > Consent ordersU.K.",
       "index": 6,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -426,12 +437,14 @@
         "relevance": "none",
         "summary": "This chunk covers First-tier Tribunal (Tax Chamber) procedural rules on consent orders, notice of decisions and reasons, correction of clerical mistakes, and setting aside decisions that dispose of proceedings. It is generic tribunal procedure applicable across all Tax Chamber cases, not specific to Self Assessment.",
         "topics": []
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "f0d3d14e5038bc7b": {
       "chars": 10955,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3**U.K.Procedure before the Tribunal > CHAPTER 1U.K.Starting proceedings and allocation of cases to categories > Proceedings without notice to a respondentU.K.",
       "index": 4,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -555,12 +568,14 @@
           "hardship-applications",
           "statement-of-case"
         ]
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     },
     "fbc77d4748b8ad7f": {
       "chars": 10789,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 2**U.K.General powers and provisions > Striking out a party's caseU.K.",
       "index": 2,
+      "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
@@ -574,7 +589,8 @@
         "relevance": "none",
         "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules on striking out a party's case (rule 8), substitution and addition of parties (rule 9), and orders for costs/expenses (rule 10), including Complex case cost-shifting and assessment procedures. It concerns tribunal litigation procedure after an appeal has been lodged, not Self Assessment filing, payment, enquiry or penalty obligations.",
         "topics": []
-      }
+      },
+      "prompt_hash": "2ff1133f3478bd79"
     }
   },
   "doc": "legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md",
