@@ -1,0 +1,1196 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation.manuals",
+  "chunks": {
+    "4efc8de14d7faa4c": {
+      "chars": 10627,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This manual chunk is a partial mirror; a note states only 80 sections were pulled with ~209 more queued, so significant portions of ARTG are missing from this extract.",
+          "Business units may use different agreed versions of standard letters for specific case types (e.g. CCG product code 'CCGAPPEAL'); officers should check local practice before using templates listed.",
+          "Guidance applies with effect from 1 April 2009 following tribunal reform; prior tribunal structures (General/Special Commissioners, VAT & Duties Tribunal) were replaced.",
+          "Tax credit appeals were still transitioning into the Tax Chamber at the time of writing (transferred to Social Entitlement Chamber on 3 November 2008, to move into Tax Chamber once reforms bedded down) - this is largely historical/procedural context, not current SA-specific rules."
+        ],
+        "cross_references": [
+          "ARTG2240 (late appeal to HMRC)",
+          "ARTG2720 (settlement of appeal by agreement)",
+          "ARTG2510 (postponement of tax)",
+          "ARTG2530 (disputed postponed amount)",
+          "ARTG4220 (offer of review, direct taxes)",
+          "ARTG4290 (review without offer)",
+          "ARTG2730 (deemed settlement, s54 TMA)",
+          "ARTG4300 (late review acceptance)",
+          "ARTG3330 and ARTG3340 (hardship applications)",
+          "ARTG4000 (statutory review process)",
+          "ARTG8000 (applications to tribunal)",
+          "ARTG8350 (Complex category cases)",
+          "Tribunals, Courts and Enforcement Act 2007 (TCEA)",
+          "Section 704 ITA 2007",
+          "Section 706 ICTA 1988",
+          "s54 TMA 1970",
+          "HMRC Litigation and Settlement Strategy (external PDF)",
+          "How HMRC resolves civil tax disputes (gov.uk collection)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "All decisions (other than restoration decisions) are subject to a right of internal review, whether or not offered by HMRC.",
+            "ref": "ARTG000",
+            "term": "Internal review"
+          },
+          {
+            "meaning": "In direct taxes HMRC may offer a review if it is not possible to finalise an appeal by agreement; in indirect taxes a review must be offered with an appealable decision.",
+            "ref": "ARTG000",
+            "term": "Offer of review"
+          },
+          {
+            "meaning": "All business units will have a review team in place by 1st April 2009.",
+            "ref": "ARTG000",
+            "term": "Review team"
+          },
+          {
+            "meaning": "A person who conducts a review.",
+            "ref": "ARTG000",
+            "term": "Review officer"
+          },
+          {
+            "meaning": "A person who makes the appealable decision and notifies the right of appeal/review etc.; normally the caseworker.",
+            "ref": "ARTG000",
+            "term": "Decision maker"
+          },
+          {
+            "meaning": "Where HMRC makes a Simple Assessment of income tax or CGT, if the taxpayer believes it is or may be incorrect they may raise a statutory query; only if dissatisfied with HMRC's final response can they appeal against the Simple Assessment.",
+            "ref": "ARTG000",
+            "term": "Customer query of Simple Assessment"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Raise a statutory query with HMRC before appealing",
+            "ref": "ARTG000",
+            "trigger": "Taxpayer believes Simple Assessment is or may be incorrect",
+            "who": "Taxpayer disputing a Simple Assessment"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Act in line with the Litigation and Settlement Strategy, the rule of law, and principles of justice/integrity",
+            "ref": "ARTG1020",
+            "trigger": "Involvement in resolution of tax disputes/reviews",
+            "who": "HMRC review officers and litigators"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk introduces HMRC's Appeals, Reviews and Tribunals Guidance (ARTG) manual, covering standard correspondence templates for appeals cases, a glossary of key terms (internal review, offer of review, review team, decision maker, Simple Assessment queries), background on the 2009 tribunal reform creating the Tax Chamber and Upper Tribunal, and HMRC's Litigation and Settlement Strategy governing dispute resolution. It explains the two-tier tribunal structure and routes of appeal from First-tier Tribunal to Upper Tribunal to appellate courts. It also notes the statutory review process introduced from 1 April 2009 for appealable tax decisions, and that Simple Assessment disputes must go through a statutory query process before an appeal can be made.",
+        "topics": [
+          "appeals",
+          "reviews",
+          "tribunals",
+          "internal-review",
+          "litigation-and-settlement-strategy",
+          "correspondence-templates",
+          "simple-assessment"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "53c54a023add2a18": {
+      "chars": 10695,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG7540 — How to make an HMRC application",
+      "index": 4,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This is internal HMRC procedural/operational guidance on tribunal applications, not primary legislation, and is not directly about the taxpayer's Self Assessment filing obligations, though it governs how enquiry closure notice disputes and certain penalty applications are progressed via tribunal.",
+          "Refusal by either party to join a joint application carries no right of appeal.",
+          "Once a joint application is made, HMRC cannot issue a partial or final closure notice on the referred matter until the tribunal decision, appeal period expiry, or withdrawal.",
+          "Any appeal against enquiry conclusion (ITSA only) cannot reopen a matter already decided via a joint tribunal application."
+        ],
+        "cross_references": [
+          "ARTG8320",
+          "ARTG8350",
+          "ARTG8370",
+          "ARTG8380",
+          "ARTG8400",
+          "ARTG8410",
+          "EM2160",
+          "Section 93(3) TMA 1970",
+          "Sch 36 FA 2008 (including para 39 and para 50)",
+          "Practice Direction 'Categorisation of cases in the Tax Chamber' paragraph 4(e)",
+          "Tribunal Procedure Rules 6, 21, 32"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "HMRC applications to First-tier Tribunal (Tax)",
+            "name": "Time limit for making application to tribunal",
+            "ref": "ARTG7540",
+            "rule": "Relevant time limit for making the application (if any); if late, must request extension and give reasons"
+          },
+          {
+            "applies_to": "Joint HMRC/customer applications regarding IT or CT Self Assessment enquiries",
+            "name": "Window for joint application to tribunal during enquiry",
+            "ref": "ARTG7555",
+            "rule": "From the date HMRC gave notice of the enquiry into the return until the date the enquiry is completed"
+          }
+        ],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Provide the tribunal with specified information including officer's name/address, respondent details, facts, grounds and result sought",
+            "ref": "ARTG7540",
+            "trigger": "Making an application to the tribunal",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make a separate application for each customer",
+            "ref": "ARTG7540",
+            "trigger": "Multiple customers involved (e.g. two directors of same company)",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "Relevant time limit for the application (if any)",
+            "must": "Send application by post to First-tier Tribunal (Tax), PO Box 16972, Birmingham, B16 6TZ, within relevant time limit if any",
+            "ref": "ARTG7540",
+            "trigger": "Making an application",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include a request for extension and reasons for lateness if application is sent after time limit expired",
+            "ref": "ARTG7540",
+            "trigger": "Application submitted after time limit",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Write to customer with details of para 39 penalty, nature of continuing offence, and notice of Upper Tribunal application, and inform them of hearing and representation rights",
+            "ref": "ARTG7540",
+            "trigger": "Making a para 50 Sch 36 FA 2008 application to the Upper Tribunal",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "Any time from date HMRC gave notice of enquiry until enquiry completed",
+            "must": "Make joint application in writing stating the matter(s) referred",
+            "ref": "ARTG7555",
+            "trigger": "Question arising in connection with subject matter of an enquiry into IT or CT Self Assessment return",
+            "who": "Customer and HMRC"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "HMRC may apply to the Upper Tribunal under para 50 Sch 36 FA 2008 for a further penalty, amount determined by tribunal taking into account unpaid tax",
+            "ref": "ARTG7540 / para 50 Sch 36 FA 2008",
+            "trigger": "Continuing offence following a penalty charged under para 39 Sch 36 FA 2008"
+          },
+          {
+            "consequence": "HMRC application for continuing daily penalties under S93(3) TMA 1970, categorised as Default Paper case decided without oral hearing unless tribunal decides otherwise",
+            "ref": "ARTG7560 / S93(3) TMA 1970",
+            "trigger": "Failure to comply triggering continuing daily penalties"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This chunk sets out internal HMRC procedural guidance on how decision makers make applications to the First-tier Tribunal (Tax) or Upper Tribunal, including required content, addresses, forms, and time limits. It also covers customer applications for closure notices during Self Assessment enquiries, joint applications between HMRC and customers to resolve enquiry matters, and how the tribunal categorises and processes such applications (default paper cases vs oral hearings). It touches on Self Assessment enquiries specifically in the context of partial/final closure notice applications and joint references to the tribunal.",
+        "topics": [
+          "tribunal-applications",
+          "hmrc-procedure",
+          "enquiry-closure-notices",
+          "penalties-procedure",
+          "schedule-36-fa-2008"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "7391893595ddbe6f": {
+      "chars": 11607,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG2040 — Rights of appeal",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "No right of appeal against a Simple Assessment unless the customer has raised a query under s31AA TMA1970 and been given a final response.",
+          "Some tribunal decisions on applications (e.g. Sch 36 FA 2008 applications, hardship, postponement, late appeals, closure applications) carry no right of appeal.",
+          "Without notice (ex-parte) HMRC applications generally proceed without customer involvement, and the tribunal's decision on these is usually not appealable.",
+          "Deadline for appeal is described as 'usually 30 days' — exact period depends on the notice of decision, see ARTG2060."
+        ],
+        "cross_references": [
+          "ARTG2160",
+          "ARTG3040",
+          "ARTG8370",
+          "ARTG8350",
+          "ARTG8000",
+          "ARTG8940",
+          "ARTG9010",
+          "ARTG8990",
+          "ARTG9000",
+          "s31AA TMA 1970",
+          "Sch 36 FA 2008",
+          "s93(3) TMA 1970",
+          "s100C TMA 1970",
+          "S138 TCGA 1992",
+          "S703 ICTA 1988",
+          "S697 ITA 2007",
+          "S49 TMA",
+          "S55(3)(b) TMA",
+          "S28ZA(1) TMA",
+          "PARA 31A Schedule 18 FA 1998",
+          "ARTG7555",
+          "ARTG7540",
+          "ARTG8240",
+          "ARTG8250",
+          "ARTG8260",
+          "ARTG7520",
+          "ARTG7530",
+          "SI 273/2009",
+          "s219(1A) IHTA 1984",
+          "Sch 13 FA 2003",
+          "CH910000",
+          "CH24320",
+          "CH24360",
+          "CH24400",
+          "ARTG8610",
+          "ARTG2240",
+          "ARTG6250"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Customers appealing an HMRC decision",
+            "name": "Appeal deadline",
+            "ref": "ARTG2040, ARTG2060",
+            "rule": "Usually 30 days from notice of decision"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Any decision of the Commissioners for HMRC or an officer of HMRC in relation to which a taxpayer has a right of appeal; includes assessments, determinations, notices and amendments",
+            "ref": "ARTG2060",
+            "term": "HMRC decision"
+          },
+          {
+            "meaning": "The HMRC officer responsible for the decision the customer disagrees with; for fixed penalties or automatically computer-generated matters, the person who initially considers the dispute is treated as the decision maker",
+            "ref": "ARTG2070",
+            "term": "Decision maker (direct taxes)"
+          },
+          {
+            "meaning": "Tribunal rules term for applications not connected with an appeal",
+            "ref": "ARTG7510",
+            "term": "Originating application or reference"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "Usually 30 days",
+            "must": "Appeal in writing within the time limit given in the notice of decision",
+            "ref": "ARTG2040 / ARTG2060",
+            "trigger": "Receipt of an appealable HMRC decision",
+            "who": "Customer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "HMRC may apply to tribunal for daily penalties",
+            "ref": "s93(3) TMA 1970",
+            "trigger": "Continuing failure to make a return"
+          },
+          {
+            "consequence": "Penalty proceedings before tribunal",
+            "ref": "s100C TMA 1970",
+            "trigger": "Proceedings under s100C TMA 1970"
+          },
+          {
+            "consequence": "HMRC may apply to the Upper Tribunal for a tax related penalty",
+            "ref": "para 50(2) Sch 36 FA 2008; ARTG7540",
+            "trigger": "Tax related penalty circumstances"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk covers HMRC's Appeals, Reviews and Tribunals Guidance on rights of appeal against tax decisions, assessments, amendments, notices and determinations, including a 30-day time limit to appeal in writing. It defines 'HMRC decision' and 'decision maker', notes Simple Assessment has no right of appeal unless a query under s31AA TMA1970 has been raised and answered, and describes the tribunal structure (First-tier Tribunal, Upper Tribunal, appellate courts). It also lists HMRC and customer applications to the tribunal outside normal appeals, including daily penalty applications for continuing failure to make a return under s93(3) TMA 1970, late appeal applications under s49 TMA, postponement applications under s55(3)(b) TMA, and joint applications to determine questions during a Self Assessment enquiry under s28ZA(1) TMA.",
+        "topics": [
+          "appeals",
+          "tribunal",
+          "hmrc-decisions",
+          "time-limits",
+          "penalties",
+          "self-assessment-enquiry"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "78e7368e1bbfc02b": {
+      "chars": 11647,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG1030 — Reviews of HMRC decisions",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Article 6 'criminal' penalty threshold",
+            "period": "n/a",
+            "ref": "ARTG1040",
+            "value": "penalties based on a maximum of 70% or 100% of the tax unpaid"
+          }
+        ],
+        "caveats": [
+          "Where a Simple Assessment has been made there is no right of appeal unless the customer has raised a query under s31AA TMA1970 and been given a final response to that query.",
+          "The right to appeal directly to the tribunal exists regardless of whether HMRC has carried out a review, except where the appeal concerns restoration of seized goods.",
+          "Article 6 'criminal' classification for HRA purposes does not change the civil standard of proof or burden of proof applicable to HMRC penalty proceedings.",
+          "This ARTG guidance does not cover restoration decisions, tax credits, child benefit, child trust fund decisions, or Valuation Office decisions unrelated to HMRC-administered taxes (those go to other tribunals/chambers)."
+        ],
+        "cross_references": [
+          "ARTG1010",
+          "ARTG4030",
+          "ARTG4220",
+          "ARTG4230",
+          "ARTG4290",
+          "ARTG2410",
+          "ARTG3100",
+          "ARTG6210",
+          "ARTG4820",
+          "TMA 1970 s31AA",
+          "CH81150",
+          "CH81161",
+          "ARTG1080",
+          "ARTG2500",
+          "Complaints Handling Guidance (CHG)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "customers disagreeing with a direct tax decision",
+            "name": "Direct tax appeal window",
+            "ref": "ARTG2010",
+            "rule": "30 days from the date the formal decision notice was issued (date HMRC posts it, not date of receipt)"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Income tax, corporation tax, capital gains tax, national insurance contributions, statutory payments, inheritance tax, petroleum revenue tax, student loans, stamp taxes, bank payroll tax, annual tax on enveloped dwellings (ATED); also tax collected under PAYE and the construction industry scheme; references to 'tax' include NICs",
+            "ref": "ARTG1060",
+            "term": "Direct taxes (for this guidance)"
+          },
+          {
+            "meaning": "Aggregates levy, air passenger duty, alcoholic liquor duties, bingo duty, climate change levy, customs duty, gaming duty, general betting duty, hydrocarbon oils duties, insurance premium tax, landfill tax, lottery duty, machine games duty, money laundering decisions, plastic packaging tax, pool betting duty, remote gaming duty, soft drinks industry levy, tobacco products duty, VAT",
+            "ref": "ARTG1070",
+            "term": "Indirect taxes (for this guidance)"
+          },
+          {
+            "meaning": "HMRC's refusal to restore seized goods or agreement to restore goods, whether subject to a condition or not; excludes appeals against seizure or condemnation proceedings in the Magistrates' Court",
+            "ref": "ARTG1080",
+            "term": "Restoration decisions"
+          },
+          {
+            "meaning": "A classification distinct from UK domestic criminal law, encompassing all UK domestic criminal proceedings plus some civil proceedings that may result in penalties and surcharges",
+            "ref": "ARTG1040",
+            "term": "Article 6 'criminal charge' (ECHR)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "carry out a review of its decision where the customer disagrees and wants a review",
+            "ref": "ARTG4030",
+            "trigger": "customer disagreement with an appealable decision and request for review",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "n/a",
+            "must": "offer a review at the time the decision is notified",
+            "ref": "ARTG4230",
+            "trigger": "issuing an appealable indirect tax decision",
+            "who": "HMRC (indirect tax)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "write to the customer to tell them the outcome of the review",
+            "ref": "ARTG4820",
+            "trigger": "completion of review",
+            "who": "Review officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "take appropriate action to implement the review conclusion",
+            "ref": "ARTG1030",
+            "trigger": "review officer has told customer of conclusions",
+            "who": "Decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "contact the customer to establish what they are unhappy about, and send a copy of complaint correspondence to the complaints team",
+            "ref": "ARTG1100",
+            "trigger": "customer correspondence expressing dissatisfaction or unclear intent",
+            "who": "Decision maker receiving unclear/complaint correspondence"
+          },
+          {
+            "deadline": "30 days from date notice issued (posted)",
+            "must": "have 30 days from the date the formal decision notice was issued to disagree/appeal",
+            "ref": "ARTG2010",
+            "trigger": "issue of formal decision notice",
+            "who": "Customer (direct tax)"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Treated as 'criminal' for Article 6 ECHR purposes, requiring HRA warning to be given as soon as the error was identified and before considering the behaviours leading to the error; civil standard of proof (balance of probabilities) still applies",
+            "ref": "ARTG1040; CH81150 to CH81161",
+            "trigger": "Penalties for deliberate inaccuracies (maximum penalty falling within 70-100% of tax unpaid range)"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This chunk explains HMRC's statutory review process for appealable tax decisions, distinguishing direct tax (where a review may be offered by HMRC or requested by the customer) from indirect tax (where HMRC must offer a review). It notes customers can appeal to the tribunal regardless of review, sets out Human Rights Act Article 6 implications for penalty proceedings (civil standard of proof applies even where penalties are treated as 'criminal' for Article 6 purposes, i.e. those with maxima of 70-100% of tax unpaid), defines which taxes count as 'direct' (including income tax) versus 'indirect', and states that Simple Assessments carry no right of appeal unless a query has been raised under s31AA TMA1970 with a final response given. It also covers handling of mixed complaint/appeal correspondence and gives the general 30-day time limit for direct tax appeals from the date of the decision notice.",
+        "topics": [
+          "reviews-of-decisions",
+          "appeals-process",
+          "human-rights-act",
+          "simple-assessment",
+          "direct-vs-indirect-tax-guidance",
+          "complaints"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "80f83b4acae938c5": {
+      "chars": 7246,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG2150 — Who can make an appeal",
+      "index": 8,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "A person subject to a bankruptcy order has no standing to make or continue an appeal on tax debts that are provable claims in the bankruptcy; only the trustee in bankruptcy may act (content partly withheld under FOIA exemptions).",
+          "The list of appealable decisions in ARTG2160 is stated as not exhaustive.",
+          "Grounds of appeal may be specifically excluded by law or too vague to be valid; examples given (e.g. objecting to electronic payment method, or claiming an amendment is simply 'unfair') are not valid grounds on their own.",
+          "During an enquiry, appeal rights on a jeopardy amendment are restricted: no review or tribunal notification until the enquiry closes."
+        ],
+        "cross_references": [
+          "ARTG2212",
+          "ARTG2213",
+          "ARTG4820",
+          "ARTG4850",
+          "ARTG2510",
+          "ARTG2740",
+          "ARTG2171",
+          "ARTG2172",
+          "ARTG1100",
+          "CH84050",
+          "EM1955",
+          "s31AA TMA1970",
+          "Para 1 Schedule 36 FA 2008",
+          "OTA75 Schs 5-8"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An amendment made by HMRC during an enquiry into a self assessment, appealable to HMRC but not to a tribunal (nor eligible for review) until the enquiry into the related matters is closed",
+            "ref": "ARTG2160 / EM1955",
+            "term": "Jeopardy amendment"
+          },
+          {
+            "meaning": "Any expression of dissatisfaction; distinct from an appeal, to be referred to the relevant complaints team if in doubt",
+            "ref": "ARTG2170 (see ARTG1100)",
+            "term": "Complaint"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "inform the customer directly of any decision affecting their appeal rights (even where represented by an agent)",
+            "ref": "ARTG2150",
+            "trigger": "issuing a decision, review offer, review conclusion, or deemed review conclusion",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "include grounds of appeal in any appeal",
+            "ref": "ARTG2170",
+            "trigger": "making an appeal",
+            "who": "Customer/agent"
+          },
+          {
+            "deadline": "n/a",
+            "must": "contact the customer, explain why grounds appear invalid, suggest valid grounds if appropriate, and ask customer to withdraw or amend the appeal",
+            "ref": "ARTG2171",
+            "trigger": "receipt of an appeal with apparently invalid grounds",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "consider what the independent tribunal would likely think before rejecting an appeal as invalid",
+            "ref": "ARTG2170 (see ARTG2172)",
+            "trigger": "considering rejecting an appeal",
+            "who": "HMRC decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "have the enquiry into their self assessment closed before they can notify their appeal against a jeopardy amendment to the tribunal or request a review",
+            "ref": "ARTG2160 (see EM1955)",
+            "trigger": "appeal against a jeopardy amendment made during an enquiry",
+            "who": "Customer"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk covers who is entitled to make an appeal against an HMRC decision (the named person, personal representative/trustee, partner, or authorised agent), and confirms customers must always be informed directly of matters affecting their appeal rights even if represented. It lists decisions that can be appealed, including amendments to a self assessment or partnership statement, penalties, and closure notice amendments/conclusions, noting the list is not exhaustive. It also explains jeopardy amendments during a self assessment enquiry (appealable to HMRC but not to a tribunal until the enquiry closes) and sets out requirements for valid grounds of appeal, with guidance on handling invalid grounds and distinguishing appeals from complaints.",
+        "topics": [
+          "appeals",
+          "who-can-appeal",
+          "grounds-of-appeal",
+          "self-assessment-amendments",
+          "jeopardy-amendments",
+          "invalid-appeals",
+          "bankruptcy"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "a2ba88bd58667223": {
+      "chars": 11911,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > Information and inspection powers applications, penalty applications",
+      "index": 5,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "An email from an Authorised Officer agreeing to an application is not sufficient - signature required.",
+          "For unannounced inspections, HMRC may not be granted access to premises and cannot force entry if refused.",
+          "If relying on sensitive intelligence, decision maker must not comment on reliability of information beyond stating it is sufficiently credible, and must not disclose the source.",
+          "Escalating to National HumInt Centre for wording guidance is described as resource intensive and generally disproportionate, not appropriate for most cases.",
+          "This chunk primarily concerns HMRC compliance/inspection powers procedure generally (VAT/indirect tax hardship references, Sch 36 FA2008) rather than Self Assessment income tax filing specifically, though Sch 36 notices and penalties can apply in SA compliance contexts."
+        ],
+        "cross_references": [
+          "ARTG8000 onwards (tribunals)",
+          "ARTG3330 (HMRC consideration of hardship applications)",
+          "ARTG7591",
+          "ARTG7592",
+          "ARTG7550",
+          "ARTG7540",
+          "ARTG7530",
+          "ARTG4340",
+          "ARTG8640",
+          "CH26220",
+          "CH26800+",
+          "Schedule 36 FA 2008",
+          "SI 1916 2009"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Person disputing privilege of documents (correspondence route)",
+            "name": "List of disputed documents",
+            "ref": "ARTG7591",
+            "rule": "Within 20 working days of the date document(s)/information was required by the information notice"
+          },
+          {
+            "applies_to": "HMRC",
+            "name": "HMRC notification of non-privileged documents",
+            "ref": "ARTG7591",
+            "rule": "Within 20 working days of receiving the list from the person"
+          },
+          {
+            "applies_to": "Person disputing privilege",
+            "name": "Application to tribunal on privilege dispute",
+            "ref": "ARTG7591",
+            "rule": "Within 20 working days of the date HMRC notified them of the documents HMRC thinks are not privileged"
+          },
+          {
+            "applies_to": "HMRC inspecting officer",
+            "name": "Inspecting officer's application to tribunal",
+            "ref": "ARTG7592",
+            "rule": "42 working days of having been given the sealed container by the person"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Includes taxpayer notices, third party notices and notices about persons whose identity is unknown, as defined in paras 1, 2 and 5 Schedule 36 FA2008",
+            "ref": "ARTG7590",
+            "term": "Information notices"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Bring 3 copies of the notice to the tribunal for signature (customer, HMRC, tribunal records)",
+            "ref": "ARTG7000s (Information and inspection powers applications)",
+            "trigger": "Applying for tribunal approval to issue an information/inspection notice under Sch 36 FA 2008 or penalty notice requiring tribunal approval",
+            "who": "Decision maker"
+          },
+          {
+            "deadline": "Within 20 working days of the date document(s)/information was required by the notice",
+            "must": "Give HMRC a list of disputed documents with description of nature and content",
+            "ref": "ARTG7591",
+            "trigger": "Dispute over privilege re: information notice given in correspondence",
+            "who": "Customer/person receiving information notice (correspondence dispute)"
+          },
+          {
+            "deadline": "Within 20 working days of receiving the list",
+            "must": "Notify the person of any documents HMRC believes are not privileged",
+            "ref": "ARTG7591",
+            "trigger": "Receipt of list of disputed documents",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "Within 20 working days of HMRC's notification",
+            "must": "Apply to the tribunal to decide the matter, including copies of disputed documents",
+            "ref": "ARTG7591",
+            "trigger": "HMRC notifies which documents it considers not privileged",
+            "who": "Person disputing privilege"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Seal, label and sign container with disputed documents and give to inspecting officer",
+            "ref": "ARTG7592",
+            "trigger": "Dispute over privilege during inspection of premises",
+            "who": "Person subject to inspection"
+          },
+          {
+            "deadline": "Within 42 working days of having been given it by the person",
+            "must": "Countersign container and give it, with seal intact, to the tribunal together with an application",
+            "ref": "ARTG7592",
+            "trigger": "Receipt of sealed container from person",
+            "who": "Inspecting officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "State whether the disputed amount has been paid and status of any hardship application",
+            "ref": "ARTG7570",
+            "trigger": "Making a relevant appeal to the tribunal where amount determined by HMRC has not been paid",
+            "who": "Customer making relevant appeal (indirect tax)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report the outcome of any tribunal application and issues raised to the Authorised Officer who signed it",
+            "ref": "ARTG7600",
+            "trigger": "After tribunal hearing on unannounced inspection/notice application",
+            "who": "Decision maker"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Decision maker may follow usual procedures for charging penalties for non-compliance with an information notice; right of appeal against any penalty charged",
+            "ref": "ARTG7590 (see also CH26220, CH26800+)",
+            "trigger": "Information not provided within the time limit set by the tribunal's disclosure decision (privilege dispute)"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This chunk covers HMRC internal procedure for tribunal applications under Schedule 36 FA 2008 for information/inspection notices and penalties, including requirements for Authorised Officer signature. It describes hardship application procedure for indirect tax appeals, disputes over privileged communications arising from information notices (with distinct time-limited procedures for correspondence versus premises inspection), and authorisation requirements for unannounced business premises inspections. It also briefly covers escalation of Upper Tribunal decisions to appellate courts.",
+        "topics": [
+          "information-notices",
+          "inspection-powers",
+          "schedule-36",
+          "tribunal-applications",
+          "privileged-communications",
+          "hardship-applications",
+          "penalties-procedure",
+          "appeals"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "c550bd449532b2c8": {
+      "chars": 10170,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG12030 — Pre-action letters",
+      "index": 7,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Judicial review leave requirement applies except in Scotland, which has a different procedure.",
+          "Content on who within HMRC must act on a pre-action letter has been withheld under FOIA exemptions.",
+          "Guidance on whether the case owner/complaints team may modify the disputed decision before advice is also withheld under FOIA exemptions.",
+          "The 30-day appeal time limit is subject to different time limits applying in some cases (see ARTG2180).",
+          "If an appeal letter is incomplete but clearly intended as an appeal, the decision maker should still treat the decision as under appeal and informally stand over tax pending full details.",
+          "This chunk primarily concerns judicial review and general appeal validity requirements, not SA-specific filing/penalty rules directly, though the appeal mechanism is relevant to disputing SA assessments/decisions."
+        ],
+        "cross_references": [
+          "ARTG12030",
+          "ARTG12040",
+          "ARTG12050",
+          "ARTG12060",
+          "ARTG2130",
+          "ARTG2140",
+          "ARTG2150",
+          "ARTG2160",
+          "ARTG2170",
+          "ARTG2180",
+          "ARTG2190",
+          "ARTG2200-ARTG2220",
+          "ARTG2410",
+          "S49(D)(1) TMA 1970",
+          "Civil Procedures Practice Direction (judicial review protocol)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Public body (HMRC)",
+            "name": "Pre-action letter reply",
+            "ref": "ARTG12030",
+            "rule": "usually within 14 days"
+          },
+          {
+            "applies_to": "Customer/HMRC",
+            "name": "Application for permission to bring judicial review",
+            "ref": "ARTG12040",
+            "rule": "within three months of the date of the decision"
+          },
+          {
+            "applies_to": "Customer/HMRC",
+            "name": "Late application for permission (following FTT decision)",
+            "ref": "ARTG12040",
+            "rule": "within 1 month of the date the First-tier Tribunal sent their reasons for the decision or notification that set-aside application was unsuccessful"
+          },
+          {
+            "applies_to": "Interested parties",
+            "name": "Acknowledgement of service",
+            "ref": "ARTG12040",
+            "rule": "within 21 days of the date the High Court/Upper Tribunal sent the copy of the application"
+          },
+          {
+            "applies_to": "Applicant for permission",
+            "name": "Application for reconsideration at a hearing",
+            "ref": "ARTG12050",
+            "rule": "within 14 days of the date the High Court/Upper Tribunal sent its decision"
+          },
+          {
+            "applies_to": "Party granted permission",
+            "name": "Detailed grounds submission",
+            "ref": "ARTG12050",
+            "rule": "within 35 days after the High Court/Upper Tribunal granted permission"
+          },
+          {
+            "applies_to": "Customer",
+            "name": "Time limit to appeal an HMRC direct tax decision",
+            "ref": "ARTG2140",
+            "rule": "within 30 days of the notification of the decision (unless a different time limit applies, see ARTG2180)"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A letter that complies with Annex A of the protocol in the Civil Procedures Practice Direction, identifying the issues in dispute and including details of the matter being challenged and relevant documents; a letter that merely threatens judicial review without such detail is not a pre-action letter",
+            "ref": "ARTG12030",
+            "term": "pre-action letter"
+          },
+          {
+            "meaning": "A customer's disagreement with an HMRC direct tax decision that is made in writing, sent to HMRC, within the time limit, by an appropriate person, against an appealable decision, and contains the grounds of appeal",
+            "ref": "ARTG2130",
+            "term": "appeal (direct tax)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Normally send a pre-action letter to the public body before applying for permission to begin proceedings",
+            "ref": "ARTG12030",
+            "trigger": "Intent to bring judicial review claim",
+            "who": "Person considering judicial review (England and Wales)"
+          },
+          {
+            "deadline": "usually within 14 days",
+            "must": "Reply to the pre-action letter",
+            "ref": "ARTG12030",
+            "trigger": "Receipt of a valid pre-action letter",
+            "who": "Public body receiving a pre-action letter"
+          },
+          {
+            "deadline": "within three months of the date of the decision (or within 1 month of First-tier Tribunal sending reasons/refusal of set-aside, if later)",
+            "must": "Apply in writing to the High Court or Upper Tribunal for permission to bring proceedings, including specified details and documents",
+            "ref": "ARTG12040",
+            "trigger": "Decision to challenge",
+            "who": "Customer/HMRC seeking judicial review"
+          },
+          {
+            "deadline": "within 21 days of the date the Court/Tribunal sent the copy",
+            "must": "Write to the High Court/Upper Tribunal to acknowledge service if they want to take part in proceedings",
+            "ref": "ARTG12040",
+            "trigger": "Receipt of copy of application",
+            "who": "Party receiving a copy of a judicial review application"
+          },
+          {
+            "deadline": "within 14 days of the date the decision was sent",
+            "must": "Apply for the decision to be reconsidered at a hearing",
+            "ref": "ARTG12050",
+            "trigger": "High Court refuses permission without a hearing, or grants with conditions",
+            "who": "Party applying for permission after refusal or conditional grant"
+          },
+          {
+            "deadline": "within 35 days after permission granted",
+            "must": "Provide detailed grounds in support of their case to the High Court in writing",
+            "ref": "ARTG12050",
+            "trigger": "Permission granted",
+            "who": "Party granted permission for judicial review"
+          },
+          {
+            "deadline": "within 30 days of notification of the decision (unless a different time limit applies)",
+            "must": "Give notice in writing, sent to HMRC, containing grounds of appeal, from an appropriate person, against an appealable decision",
+            "ref": "ARTG2140",
+            "trigger": "Disagreement with an HMRC direct tax decision",
+            "who": "Customer wishing to appeal an HMRC direct tax decision"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Have already sent the appeal to HMRC first",
+            "ref": "S49(D)(1) TMA 1970 / ARTG2410",
+            "trigger": "Wish to notify appeal to tribunal",
+            "who": "Customer wishing to notify appeal to the tribunal"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk covers HMRC's judicial review process (pre-action letters, applications to the High Court/Upper Tribunal, permission, and hearings) and then separately describes what constitutes a valid appeal against an HMRC direct tax decision. An appeal must be in writing, sent to HMRC within 30 days of the decision notification, made by an appropriate person, against an appealable decision, and contain grounds of appeal. Customers do not need to use the word 'appeal' and cannot appeal by phone.",
+        "topics": [
+          "appeals",
+          "judicial-review",
+          "how-to-appeal",
+          "appeal-time-limits",
+          "tribunal-procedure"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "dfbe2e279c242094": {
+      "chars": 11588,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG10020 — Outcome of hearing by relevant appellate court",
+      "index": 6,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Payment/interest treatment depends on which rules apply to the specific tax or duty - reader directed to check CH140160 first",
+          "Judicial review for First-tier Tribunal's own procedures is applied for directly at the Upper Tribunal, whereas other judicial review cases require an initial application to the High Court/Court of Session, which then considers referral to the Upper Tribunal",
+          "The Upper Tribunal is not a court for Human Rights Act s.4 purposes and cannot make a declaration of incompatibility"
+        ],
+        "cross_references": [
+          "ARTG11020",
+          "ARTG11040",
+          "ARTG2720",
+          "ARTG3420",
+          "ARTG6820",
+          "ARTG8460",
+          "ARTG8420",
+          "ARTG8440",
+          "CH141000",
+          "CH140160",
+          "CH146000",
+          "CHG415",
+          "ARTG12020",
+          "The Judge Over Your Shoulder (Treasury Solicitors)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Additional tax due following resolution of an appeal",
+            "name": "Payment of additional tax after appeal",
+            "ref": "ARTG11030",
+            "rule": "Due and payable 30 days after the tax payable as a result of the amended decision is notified to the customer"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A route for a customer to challenge HMRC action where there is no statutory right of appeal to the tribunal, e.g. discretionary decisions, application of Extra-Statutory Concessions, misdirection, or unfair conduct by an officer; also available against First-tier Tribunal decisions where there is no appeal on a point of law",
+            "ref": "ARTG12010",
+            "term": "Judicial review"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Update records with details of the outcome and return case papers to the decision maker",
+            "ref": "ARTG11010 / ARTG11020",
+            "trigger": "Tribunal or appellate court appeal resolved",
+            "who": "Litigator"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Amend the customer's record so the correct amount of tax is charged and release any postponed or suspended tax",
+            "ref": "ARTG11020",
+            "trigger": "Notification of resolution of appeal (agreement, tribunal decision, or court decision)",
+            "who": "Decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Notify customer of additional tax payable following resolution of appeal",
+            "ref": "ARTG11030",
+            "trigger": "Amount of tax due following appeal is greater than originally charged",
+            "who": "Decision maker"
+          },
+          {
+            "deadline": "n/a - repayment should be prompt to avoid complaints",
+            "must": "Make arrangements to repay overpaid tax with interest promptly",
+            "ref": "ARTG11040",
+            "trigger": "Amount of tax due following appeal is less than originally charged",
+            "who": "Decision maker"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Interest chargeable on unpaid tax from original due date",
+            "ref": "ARTG11030",
+            "trigger": "Unpaid tax from the original due date (where amount due equals amount originally charged)"
+          },
+          {
+            "consequence": "Interest chargeable on unpaid additional tax from the date it becomes due (30 days after notification)",
+            "ref": "ARTG11030",
+            "trigger": "Additional tax unpaid after the 30-day notification period"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This chunk covers ARTG10020–ARTG12020: what an appellate court can do when it finds an Upper Tribunal decision involved an error of law (set aside, remit with guidance, or remake the decision); what happens once a tribunal or court appeal is resolved, including amending the customer's record and releasing postponed/suspended tax; how additional tax due after an appeal becomes payable 30 days after notification (with interest from that date), while overpaid tax is repayable with interest from the date of the original decision; and an overview of judicial review as a route for disputes with no statutory right of appeal (e.g. discretionary decisions, ESCs, maladministration), including jurisdiction rules for England & Wales, Scotland and Northern Ireland where judicial review is generally carried out by the Upper Tribunal.",
+        "topics": [
+          "appeals",
+          "tribunal-appeals",
+          "appellate-court",
+          "payment-of-tax-following-appeal",
+          "repayment-interest",
+          "judicial-review",
+          "postponed-tax"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "fecdb674f7be27ff": {
+      "chars": 11967,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > Customer’s rights",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Simple Assessment appeal rights only arise after a s31AA TMA 1970 query is raised and a final response given; otherwise there is no right of appeal or review.",
+          "A review cannot take place after the appeal has been sent to the tribunal.",
+          "The 30-day extension for indirect tax decisions requires HMRC to notify the customer within 30 days of the decision letter, not the customer requesting it within 30 days.",
+          "Restoration decisions follow different rules from other indirect tax decisions - no direct tribunal appeal against the initial decision, only against a review decision."
+        ],
+        "cross_references": [
+          "ARTG4000 onwards - reviews",
+          "ARTG2400 onwards - notifying appeal to tribunal",
+          "ARTG4220",
+          "ARTG4290",
+          "ARTG4330",
+          "ARTG2100+",
+          "ARTG2240",
+          "ARTG4300",
+          "ARTG4820",
+          "ARTG4850",
+          "ARTG2420",
+          "ARTG8240",
+          "ARTG3050",
+          "ARTG4230",
+          "ARTG3060",
+          "ARTG4690",
+          "ARTG3120",
+          "ARTG6000 onwards",
+          "ARTG6500 onwards",
+          "TMA 1970 s49C",
+          "TMA 1970 s49F",
+          "TMA 1970 s31AA",
+          "VATA 1994 s83D"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Customer following HMRC offer of review",
+            "name": "Accept review offer or notify tribunal",
+            "ref": "s49C TMA 1970",
+            "rule": "30 days from the date shown on the review offer letter"
+          },
+          {
+            "applies_to": "Customer disputing a Simple Assessment",
+            "name": "Simple Assessment query",
+            "ref": "s31AA TMA 1970",
+            "rule": "60 days after the date the notice of Simple Assessment was issued, or such other longer period as HMRC may allow"
+          },
+          {
+            "applies_to": "HMRC conducting a review (direct tax)",
+            "name": "Review period",
+            "ref": "ARTG2000 - Conduct of review",
+            "rule": "45 days unless a different period is agreed"
+          },
+          {
+            "applies_to": "Customer disagreeing with review outcome",
+            "name": "Notify tribunal after review conclusion",
+            "ref": "Section 49F TMA 1970",
+            "rule": "30 days from the date of the conclusion of review letter"
+          },
+          {
+            "applies_to": "Customer where review not concluded in time",
+            "name": "Notify tribunal after deemed-upheld review",
+            "ref": "ARTG2420",
+            "rule": "Within 30 days of the date of the review officer's letter stating the review is treated as upheld, and after the end of the review period"
+          },
+          {
+            "applies_to": "Customer, indirect tax decisions",
+            "name": "Indirect tax: accept review or appeal to tribunal",
+            "ref": "ARTG2020",
+            "rule": "30 days of the date of the decision letter, or extended time limit"
+          },
+          {
+            "applies_to": "HMRC, indirect tax reviews",
+            "name": "Indirect tax review period",
+            "ref": "ARTG4690",
+            "rule": "45 days of the date HMRC received the customer's review acceptance unless another period is agreed"
+          },
+          {
+            "applies_to": "Customer, indirect tax decisions",
+            "name": "Indirect tax: appeal after review conclusion",
+            "ref": "ARTG2020",
+            "rule": "30 days from the date of the conclusion of review letter"
+          },
+          {
+            "applies_to": "Customer, restoration decisions",
+            "name": "Restoration decision review request",
+            "ref": "ARTG2030",
+            "rule": "45 days of the decision letter"
+          },
+          {
+            "applies_to": "HMRC, restoration decisions",
+            "name": "Restoration decision review period",
+            "ref": "ARTG2030",
+            "rule": "45 days of the date HMRC received the customer's request"
+          },
+          {
+            "applies_to": "Customer, restoration decisions",
+            "name": "Restoration decision tribunal notification",
+            "ref": "ARTG6500",
+            "rule": "30 days"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "The 45 day period (or other agreed period) within which HMRC must carry out a review of a decision",
+            "ref": "ARTG2000 - Conduct of review",
+            "term": "Review period"
+          },
+          {
+            "meaning": "A decision about the restoration of seized goods, subject to different review/appeal rules than other indirect tax decisions",
+            "ref": "ARTG2030",
+            "term": "Restoration decision"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Write directly to the customer when offering a review (copy to agent where appropriate)",
+            "ref": "ARTG2000 - HMRC offer of a review",
+            "trigger": "Discussions do not resolve the matter or are not appropriate/possible",
+            "who": "Decision maker (HMRC)"
+          },
+          {
+            "deadline": "30 days from the date shown on the review offer letter",
+            "must": "Either notify the appeal to the tribunal or accept the review offer",
+            "ref": "s49C TMA 1970",
+            "trigger": "Receipt of HMRC's review offer letter",
+            "who": "Customer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Provide the customer with their current view of the matter, sent directly to the customer (copy to agent)",
+            "ref": "ARTG4290",
+            "trigger": "Customer requests a review",
+            "who": "Decision maker (HMRC)"
+          },
+          {
+            "deadline": "45 days (the 'review period'), unless a different period is agreed",
+            "must": "Carry out the review",
+            "ref": "ARTG2000 - Conduct of review",
+            "trigger": "Customer accepts review offer or has been sent the review view letter",
+            "who": "HMRC (review officer)"
+          },
+          {
+            "deadline": "Within the review period",
+            "must": "Write to the customer setting out conclusions and reasoning and the customer's options, sent directly to customer (copy to agent)",
+            "ref": "ARTG4820",
+            "trigger": "Completion of the review",
+            "who": "Review officer"
+          },
+          {
+            "deadline": "As soon as possible after the review period has ended",
+            "must": "Write to the customer to tell them the decision under review is treated as upheld",
+            "ref": "ARTG4850",
+            "trigger": "Review officer fails to send conclusion letter within the review period",
+            "who": "Review officer"
+          },
+          {
+            "deadline": "30 days from the date of the conclusion of review letter",
+            "must": "Notify the appeal to the tribunal if disagreeing with review outcome",
+            "ref": "ARTG2420",
+            "trigger": "Receipt of conclusion of review letter (or deemed-upheld letter)",
+            "who": "Customer"
+          },
+          {
+            "deadline": "60 days after the date the notice of Simple Assessment was issued, or such longer period as HMRC may allow",
+            "must": "Raise a query on a Simple Assessment before any appeal right arises",
+            "ref": "s31AA TMA 1970",
+            "trigger": "Customer believes Simple Assessment is or may be incorrect",
+            "who": "Customer"
+          },
+          {
+            "deadline": "30 days of the date of the decision letter, or within any extended time limit",
+            "must": "Accept the review offer or appeal to the tribunal",
+            "ref": "ARTG2020",
+            "trigger": "Receipt of decision letter offering a review",
+            "who": "Customer (indirect tax decisions)"
+          },
+          {
+            "deadline": "45 days of the date HMRC received the customer's review acceptance, unless another period agreed",
+            "must": "Carry out the review",
+            "ref": "ARTG4690",
+            "trigger": "Customer accepts review offer (indirect tax)",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "45 days of the decision letter",
+            "must": "Ask HMRC for a review",
+            "ref": "ARTG2030",
+            "trigger": "Disagreement with a restoration decision",
+            "who": "Customer (restoration decisions)"
+          },
+          {
+            "deadline": "45 days of the date HMRC received the customer's request",
+            "must": "Carry out review of restoration decision",
+            "ref": "ARTG2030",
+            "trigger": "Customer requests review within 45 days",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "30 days",
+            "must": "Notify appeal to the tribunal against a review decision",
+            "ref": "ARTG6500",
+            "trigger": "Disagreement with review conclusions",
+            "who": "Customer (restoration decisions)"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Appeal treated as settled by agreement",
+            "ref": "s49C TMA 1970",
+            "trigger": "Customer does not accept review offer or notify tribunal within 30 days of review offer letter"
+          },
+          {
+            "consequence": "Appeal treated as settled by agreement",
+            "ref": "Section 49F TMA 1970",
+            "trigger": "Customer does not notify appeal to tribunal within 30 days of review conclusion letter"
+          },
+          {
+            "consequence": "No right of appeal (and no right of review)",
+            "ref": "s31AA TMA 1970",
+            "trigger": "Customer disagrees with Simple Assessment without first raising a query under s31AA and receiving a final response"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk describes HMRC's internal ARTG guidance on how a customer's appeal proceeds after being sent to HMRC: either via a review (HMRC-offered or customer-requested) or by notification to the tribunal. It sets out timeframes (30 days to accept a review offer or go to tribunal, 45 days for HMRC to conduct a review, 30 days to appeal to tribunal after review conclusion) and the consequence of inaction (appeal treated as settled by agreement under s49C/s49F TMA 1970). It also covers the special rule for Simple Assessments, which carry no right of appeal unless the customer first raises a query under s31AA TMA 1970 within 60 days, and separately describes parallel processes for indirect tax decisions (VATA 1994 s83D) and restoration decisions.",
+        "topics": [
+          "appeals",
+          "reviews",
+          "hmrc-review-offer",
+          "tribunal-notification",
+          "simple-assessment",
+          "penalties-appeals-process"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/manuals/artg.md",
+  "source_id": "hmrc-manual-artg",
+  "source_url": "https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance"
+}

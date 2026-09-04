@@ -1,0 +1,80 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "6bbde2a5d2efdb3e": {
+      "chars": 6550,
+      "heading": "Interest and alternative finance payments eligible for relief on qualifying loans and alternative finance arrangements (Self Assessment helpsheet HS340)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Limit on Income Tax reliefs",
+            "period": "n/a",
+            "ref": "HS340 Section 2",
+            "value": "greater of £50,000 and 25% of 'adjusted total income'"
+          }
+        ],
+        "caveats": [
+          "For tax year 6 April 2025 to 5 April 2026, relief cannot be claimed for the cost of getting a loan/alternative finance, or interest on it, where funds are used for residential property in a partnership's property business — this is instead used to calculate a reduction in Income Tax in box 12.",
+          "Relief does not apply to overdraft or credit card interest.",
+          "Equipment/machinery loan interest relief only applies if capital allowances could be claimed on the item(s), and only the business-use proportion qualifies if used partly for other purposes.",
+          "MTD for Income Tax users must use compatible software rather than the SA return boxes referenced in this helpsheet."
+        ],
+        "cross_references": [
+          "Additional information pages (SA101)",
+          "Helpsheet 204 Limit on Income Tax reliefs",
+          "Changes to tax relief for residential landlords guidance",
+          "Property Income Manual PIM2106",
+          "Expenses and benefits: loans provided to employees guidance",
+          "Making Tax Digital for Income Tax guidance"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Someone who works for the greater part of their time as a director or employee of the company or of a subsidiary in which the company has an interest of 51% or more",
+            "ref": "HS340 Section 1",
+            "term": "Full-time employee (for employee-controlled company relief)"
+          },
+          {
+            "meaning": "A loan or alternative finance arrangement where borrowed money is used for specified purposes (e.g. buying shares in a close company, acquiring partnership interest, buying business equipment) entitling the borrower to interest/payment relief",
+            "ref": "HS340 Section 1",
+            "term": "Qualifying loan/alternative finance arrangement"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "obtain and keep a certificate of interest or alternative finance payments from the lender",
+            "ref": "HS340 Section 3",
+            "trigger": "claiming relief for interest/alternative finance payments",
+            "who": "Self Assessment taxpayer claiming qualifying loan interest relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "make claims and adjustments through compatible software instead of SA return boxes",
+            "ref": "HS340 introductory guidance",
+            "trigger": "mandated use of MTD for Income Tax",
+            "who": "Taxpayer using Making Tax Digital for Income Tax"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS340 explains how to claim relief for interest on qualifying loans and alternative finance payments in box 5 of the 'other tax reliefs' section (page Ai 2) of the SA101 additional information pages. It lists qualifying purposes (close company shares/loans, employee-controlled companies, co-operatives, partnership interests, equipment/machinery), excludes overdraft/credit card interest, and covers the residential property finance costs restriction, the overall limit on Income Tax reliefs, record-keeping requirements, and beneficial loan interest benefits. It also notes that Making Tax Digital for Income Tax users will make claims via compatible software instead of these SA boxes.",
+        "topics": [
+          "reliefs",
+          "qualifying-loan-interest",
+          "alternative-finance-payments",
+          "residential-property-finance-costs",
+          "limit-on-income-tax-reliefs",
+          "additional-information-pages",
+          "beneficial-loans"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/interest-and-alternative-finance-payments-eligible-for-relief-on-qualifying-loans-and-alternative-finance-arrangements-self-assessment-helpsheet-hs340.md",
+  "source_id": "sa-helpsheets:5f67dd70-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/interest-and-alternative-finance-payments-eligible-for-relief-on-qualifying-loans-and-alternative-finance-arrangements-hs340-self-assessment-helpshee"
+}

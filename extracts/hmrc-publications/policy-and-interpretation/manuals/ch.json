@@ -1,0 +1,626 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation.manuals",
+  "chunks": {
+    "00649e8ff2572e84": {
+      "chars": 10816,
+      "heading": "Compliance Handbook (CH) > CH10100 — Overview",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Record-keeping alignment changes apply from different dates depending on tax: 1 April 2009 (income tax, CGT, corporation tax, direct tax claims not in return, VAT); 1 April 2010 (IPT, SDLT, aggregates levy, climate change levy, landfill tax); bank payroll tax from 8 April 2010; excise duties from 1 April 2011; ATED from 1 April 2013.",
+          "Inspection powers in Schedule 36 do not apply to excise checks on revenue traders; only limited Schedule 36 provisions apply to excise information notices from 1 April 2011.",
+          "A page only applies to excise duties if there is a legislative reference to CEMA at the bottom of the page.",
+          "Some content on CH22500 and CH28010 withheld under Freedom of Information Act 2000 exemptions.",
+          "Schedule 23 FA 2011 amended from 1 April 2015 to include diverted profits tax (only for accounting periods starting on or before 31 December 2025) and from 6 April 2018 to include chargeable soft drinks.",
+          "This chunk is primarily general compliance/record-keeping and data-gathering framework, not SA-specific procedure, though income tax record-keeping rules are directly relevant to SA taxpayers."
+        ],
+        "cross_references": [
+          "FA08/SCH37",
+          "TMA70/S12B",
+          "TMA70/SCH1A/PARA2A",
+          "FA98/SCH18/PARA21",
+          "VATA94/SCH11/PARA6 & 6A",
+          "EU directive 2006/112/EU",
+          "FA10/SCH1/PARA34",
+          "CEMA79/S118A",
+          "FA13/SCH32",
+          "CH210000",
+          "CH11400",
+          "CH11000",
+          "CH13000",
+          "CH14000",
+          "CH84530",
+          "Notice 700 - The VAT Guide",
+          "Notice 700/21 - Keeping VAT records",
+          "CH20000+",
+          "CH22000+",
+          "CH23000+",
+          "CH26000+",
+          "FA08/SCH36",
+          "CEMA/S118BA",
+          "IEIM101350",
+          "IEIM111030",
+          "IEIM101400",
+          "FA11/SCH23",
+          "SI2012/847",
+          "CH29950",
+          "CH200000+",
+          "Schedule 23 Finance Act 2011 (legislation.gov.uk)",
+          "SI 2012/847 (legislation.gov.uk)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Includes an individual, a company, an unincorporated association, a partner, a partnership (only in relation to partnership books and records for direct taxes purposes), a taxable person for VAT/aggregates levy/climate change levy/landfill tax, the representative member of a VAT group or other group, an individual/organisation acting as personal representative, a taxable intermediary for insurance premium tax, a pension scheme administrator, a trustee, and a revenue trader",
+            "ref": "CH10400",
+            "term": "Person"
+          },
+          {
+            "meaning": "A person who is, or who is required to be, registered for those taxes; includes a partnership for all VAT purposes",
+            "ref": "CH10400",
+            "term": "Taxable person (for VAT, aggregates levy, climate change levy or landfill tax)"
+          },
+          {
+            "meaning": "Third party from whom HMRC can collect data using data-gathering powers under Schedule 23 FA 2011, for use in compliance risk analysis (not for checking the data-holder's own tax position)",
+            "ref": "CH28010",
+            "term": "Relevant data-holder"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a - ongoing retention for specified period",
+            "must": "Keep and maintain records to make a correct and complete return or claim, and retain records and supporting documents for a specified period",
+            "ref": "CH10100",
+            "trigger": "Requirement to make a return or claim (even if not made every year)",
+            "who": "A person (including individuals) required to make a return or claim"
+          },
+          {
+            "must": "Keep records up to date and in sufficient detail to allow a correct and complete return, calculate correct tax, and enable HMRC to check figures",
+            "ref": "CH10200",
+            "trigger": "n/a",
+            "who": "A person keeping records"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "HMRC may charge a penalty; no change to existing penalty regimes",
+            "ref": "CH10100",
+            "trigger": "Failure to keep or retain records"
+          },
+          {
+            "consequence": "Penalties apply (detail not given in this chunk)",
+            "ref": "CH28020",
+            "trigger": "Failing to comply with a data-holder notice"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This chunk covers HMRC's Compliance Handbook general provisions on record-keeping obligations across taxes (including income tax and direct taxes claims not in a return), who counts as a 'person' for these purposes, and separate chapters on excise information notices and third-party data-gathering powers under Schedule 23 FA 2011. Record-keeping alignment changes took effect from 1 April 2009 for income tax, CGT, corporation tax, direct tax claims not in a return, and VAT, with later effective dates for other taxes. It notes a penalty may be charged for failure to keep or retain records, with no change to existing penalty regimes.",
+        "topics": [
+          "record-keeping",
+          "penalties",
+          "definitions-person",
+          "data-gathering-powers",
+          "information-notices"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "2c0a7b2aaf5ec67b": {
+      "chars": 11732,
+      "heading": "Compliance Handbook (CH) > CH29950 — Glossary",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Initial fixed penalty for failure to comply with data-holder notice",
+            "period": "n/a",
+            "ref": "CH29950 - Initial fixed penalties",
+            "value": "£300"
+          },
+          {
+            "name": "Daily default penalty for continued non-compliance with data-holder notice",
+            "period": "n/a",
+            "ref": "CH29950 - Daily default penalties",
+            "value": "up to £60 a day"
+          }
+        ],
+        "caveats": [
+          "This glossary defines terms specifically for HMRC's data-gathering guidance under FA11/SCH23, not general Self Assessment terminology.",
+          "Some definitions reference other manual pages or external legislation for full meaning rather than stating it in full here."
+        ],
+        "cross_references": [
+          "FA11/SCH23 PARA5",
+          "CH28720",
+          "CH28280",
+          "CH212100",
+          "TMA 1970 s.108, s.114, s.115",
+          "TCGA 1992 s.288(1), ss.99 and 103A",
+          "ITEPA 2003 (Parts 2-7, Chapter 7 of Part 2, s.714)",
+          "ITA 2007 Part 10A, s.999, s.1000",
+          "CTA 2009 Part 6",
+          "CTA 2010 Part 23 Chapter 5",
+          "ITTOIA 2005 Chapter 8 of Part 4, s.696, s.620",
+          "FA 2010 Schedule 6 paragraph 1(1)",
+          "FA 2008 s.114, s.39(2)",
+          "Dormant Bank and Building Society Accounts Act 2008 s.5(6)",
+          "SI 1986/1711",
+          "Building Societies Act 1986",
+          "Child Trusts Funds Act 2004 s.3",
+          "OTA 1975 Part 1",
+          "FA 1994 Part 3",
+          "FA 1996 Part 3",
+          "FA 2000 Schedule 6",
+          "FA 2001 Part 2",
+          "VATA 1994",
+          "SI 1995 Value Added Tax Regulations reg.2",
+          "CG76550",
+          "Directive 77/799/EEC",
+          "FA 2006 s.173"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A person who is required to provide relevant data to HMRC.",
+            "ref": "CH29950",
+            "term": "Data-holder"
+          },
+          {
+            "meaning": "A notice issued to a relevant data-holder to provide 'relevant data'.",
+            "ref": "CH29950",
+            "term": "Data-holder notice"
+          },
+          {
+            "meaning": "Data specified by Treasury for that type of data-holder; can be general data or data relating to particular persons or matters, and may include personal data such as names and addresses.",
+            "ref": "CH29950",
+            "term": "Relevant data"
+          },
+          {
+            "meaning": "Data that the data-holder is required to keep and preserve under or by virtue of any enactment relating to tax; ceases to be statutory records once the required preservation period expires.",
+            "ref": "CH29950; see also CH212100",
+            "term": "Statutory records"
+          },
+          {
+            "meaning": "A tax year, accounting period or other period for which tax is charged.",
+            "ref": "CH29950",
+            "term": "Chargeable period"
+          },
+          {
+            "meaning": "Includes Income tax, Capital gains tax, Corporation tax, VAT, Insurance premium tax, Inheritance tax, Stamp duty land tax, Stamp duty reserve tax, Petroleum revenue tax, Aggregates levy, Climate change levy, Landfill tax, Relevant foreign tax.",
+            "ref": "CH29950",
+            "term": "Tax (for data-gathering purposes)"
+          },
+          {
+            "meaning": "Includes concealing, destroying or otherwise disposing of a material document, or arranging for any such concealment, destruction or disposal.",
+            "ref": "CH29950",
+            "term": "Fails to comply"
+          },
+          {
+            "meaning": "Include TMA s.108 (responsibility of company officers), s.114 (want of form), s.115 (delivery and service of documents).",
+            "ref": "CH29950",
+            "term": "Machinery provisions of TMA"
+          },
+          {
+            "meaning": "A document the data-holder has been required to provide by a data-holder notice, or has been informed by HMRC that they will be or are likely to be required to provide.",
+            "ref": "CH29950",
+            "term": "Material document"
+          },
+          {
+            "meaning": "Has the meaning given by section 288(1) of TCGA 1992.",
+            "ref": "CH29950",
+            "term": "Company"
+          },
+          {
+            "meaning": "Has the same meanings as in TMA 1970.",
+            "ref": "CH29950",
+            "term": "Body of persons"
+          }
+        ],
+        "obligations": [],
+        "penalties": [
+          {
+            "consequence": "Liable to an initial fixed penalty of £300",
+            "ref": "CH29950 - Initial fixed penalties",
+            "trigger": "Data-holder fails to comply with a data-holder notice"
+          },
+          {
+            "consequence": "Liable to daily default penalties of up to £60 a day",
+            "ref": "CH29950 - Daily default penalties",
+            "trigger": "Data-holder charged initial fixed penalty still does not comply with the data-holder notice"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This is a glossary of terms used in HMRC's data-gathering guidance under FA11/SCH23, defining concepts like data-holder, relevant data, statutory records, and various tax and securities terms. It also states the initial fixed penalty (£300) and daily default penalty (up to £60/day) for failure to comply with a data-holder notice, and lists the taxes to which data-gathering powers apply, including income tax. This is general compliance/information powers guidance rather than Self Assessment filing guidance specifically.",
+        "topics": [
+          "glossary",
+          "data-gathering-powers",
+          "definitions",
+          "penalties"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "44c400144ec10b87": {
+      "chars": 10492,
+      "heading": "Compliance Handbook (CH)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This chunk is an index/contents page, not substantive Self Assessment guidance itself; only CH900000 lists relevant provisions.",
+          "Several referenced sections (CH930000, CH290000, CH500000, CH920000) have content withheld under FOIA exemptions or moved to internal-only platforms, so no detail is available here.",
+          "Note explicitly states Schedule 24 does not apply to P11D returns; penalties for those fall under section 98 TMA 1970 instead.",
+          "Document itself notes the manual has ~656 more sections not mirrored in this pipeline run (max_sections cap), so this chunk is a small, curated subset of the full Compliance Handbook."
+        ],
+        "cross_references": [
+          "Litigation and Settlement Strategy manual",
+          "TMA70/S8",
+          "TMA70/S8A",
+          "FA04/S254",
+          "FA98/SCH18/PARA3",
+          "section 98 TMA 1970",
+          "COG914080",
+          "HMRC factsheet CC/FS13 Compliance checks: publishing details of deliberate defaulters",
+          "VAT Regulations 1995 Regulations 34 and 35"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [
+          {
+            "consequence": "Subject to penalties for inaccuracies as listed under Schedule 24-type regime",
+            "ref": "CH900000 - Income Tax",
+            "trigger": "Inaccuracy in Income Tax personal returns under TMA70/S8"
+          },
+          {
+            "consequence": "Subject to penalties for inaccuracies",
+            "ref": "CH900000 - Income Tax",
+            "trigger": "Inaccuracy in Income Tax trustee returns under TMA70/S8A"
+          },
+          {
+            "consequence": "Subject to penalties for inaccuracies",
+            "ref": "CH900000 - Income Tax",
+            "trigger": "Inaccuracy in partnership returns and statements, declarations and accounts in connection with a partnership return"
+          },
+          {
+            "consequence": "Subject to penalties for inaccuracies",
+            "ref": "CH900000 - Capital Gains Tax",
+            "trigger": "Inaccuracy in Capital Gains Tax personal returns under TMA70/S8"
+          },
+          {
+            "consequence": "Penalties payable under section 98 TMA 1970, not Schedule 24",
+            "ref": "CH900000 - PAYE (see COG914080)",
+            "trigger": "Incorrect (and late) P11D returns"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This is the landing/index chunk of HMRC's Compliance Handbook manual, covering penalties and compliance powers generally rather than Self Assessment specifically. The substantive content is CH900000, an alphabetical list mapping taxes/duties to the specific returns, statements, declarations or accounts that attract inaccuracy penalties, including Income Tax and Capital Gains Tax personal returns (TMA70/S8), trustee returns (TMA70/S8A) and partnership returns. Other sections (litigation and settlement strategy, VAT/excise wrongdoing, COVID-19 guidance, evasion, publishing deliberate defaulters, feedback/contact pages) are either withheld under FOIA exemptions, redirected elsewhere, or purely navigational.",
+        "topics": [
+          "compliance-handbook",
+          "penalties-index",
+          "schedule-24-inaccuracy-penalties",
+          "manual-navigation"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "4f7ad4a5fdb871f1": {
+      "chars": 11409,
+      "heading": "Compliance Handbook (CH) > Level of proof",
+      "index": 4,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Failure-to-file penalties under Sch 55 FA 2009 currently apply only to the listed taxes (Income Tax/CGT, BPT, RPS, PAYE RTI, CIS, MGD, ATED, SDRT, SDIL, PPT, certain excise stores) and are to be extended to other taxes in later years.",
+          "TMA 1970 ss.100-103 penalty provisions do not apply to penalties under Sch 55 FA 2009 or Sch 41 FA 2008.",
+          "PAYE RTI returns have no 12-month behaviour penalties, unlike other filing obligations.",
+          "Wrongdoing penalty regime applies to Landfill Tax only from 1 April 2018, though page titles in that section don't reflect this."
+        ],
+        "cross_references": [
+          "CH81180",
+          "CH81190",
+          "CH72240",
+          "CH72260",
+          "CH61180",
+          "CH91800",
+          "CH91200",
+          "CH70000+",
+          "TMA 1970 s.100-103",
+          "FA09/SCH55",
+          "FA10/SCH1/PARA38",
+          "FA08/SCH41",
+          "FA18/SCH12"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "The balance of probabilities - i.e., on the evidence it is more likely than not that the inaccuracy or failure to comply was careless or deliberate; quality of evidence should be higher for more serious behaviour though standard of proof itself is unchanged.",
+            "ref": "CH (Level of proof)",
+            "term": "Level (standard) of proof"
+          },
+          {
+            "meaning": "The tax unpaid at a specified date, or to which the person is liable for the relevant period, used as the base for failure-to-notify penalties.",
+            "ref": "CH70100",
+            "term": "Potential lost revenue"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "The filing date",
+            "must": "File their return or other document on time",
+            "ref": "CH60100 / CH61180",
+            "trigger": "Notice to file issued",
+            "who": "A person"
+          },
+          {
+            "deadline": "Not specified in chunk",
+            "must": "Tell HMRC when certain events happen (e.g. tax to pay without notice to file, starting a new taxable activity, turnover reaching a threshold, change in activity nature)",
+            "ref": "CH70100",
+            "trigger": "Occurrence of a notifiable event",
+            "who": "A person"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Liability to a penalty under one of four penalty models combining fixed and tax-geared penalties, sometimes with daily penalties; higher penalties after 12 months, especially for offshore matters; reducible by disclosure",
+            "ref": "FA09/SCH55, FA10/SCH1/PARA38",
+            "trigger": "Failure to file a return or other document on time without reasonable excuse"
+          },
+          {
+            "consequence": "Penalty as a percentage of 'potential lost revenue', range depending on behaviour (careless/deliberate) and whether disclosure prompted/unprompted; reductions for quality of disclosure",
+            "ref": "FA08/SCH41; CH70100",
+            "trigger": "Failure to notify HMRC of a notifiable event on or after 1 April 2010"
+          },
+          {
+            "consequence": "Wrongdoing penalty as a percentage of VAT/excise duty/Landfill Tax due, higher if deliberate or deliberate and concealed; reductions for prompted/unprompted disclosure and quality",
+            "ref": "FA08/SCH41; FA18/SCH12; CH90100",
+            "trigger": "Unauthorised VAT invoice issue, misuse of product attracting lower excise duty, handling goods with unpaid excise duty, or (from 1 April 2018) unauthorised Landfill Tax disposal"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk covers HMRC's compliance handbook standard of proof (balance of probabilities) for careless/deliberate behaviour, then overviews three penalty regimes: failure to file returns on time (Schedule 55 FA 2009, covering Income Tax, CGT, CIS, PAYE RTI and other taxes), failure to notify (Schedule 41 FA 2008), and VAT/excise/landfill wrongdoing penalties (also Schedule 41 FA 2008 and Schedule 12 FA 2018). All regimes feature reasonable excuse defences, penalty assessments with appeal/review rights, special reduction for special circumstances, and disapplication of TMA 1970 ss.100-103.",
+        "topics": [
+          "penalties",
+          "level-of-proof",
+          "failure-to-file",
+          "failure-to-notify",
+          "wrongdoing-penalties",
+          "reasonable-excuse",
+          "appeals"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "9bb1655c72ec169b": {
+      "chars": 7280,
+      "heading": "Compliance Handbook (CH) > CH140100 — Overview",
+      "index": 5,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "The FA 2009 interest rules do not yet apply to all taxes; readers must check which taxes and from what date the rules apply (see CH140160).",
+          "Where the FA 2009 rules apply, they replace any previous interest provisions.",
+          "General rules may be modified by special provisions for particular circumstances - both must be checked.",
+          "Repayment interest Rule 2 currently only applies to VAT (from 01/01/2023 for Prescribed Accounting Periods starting on or after that date), not other taxes.",
+          "This content relates to interest rules generally (applicable to VAT and other taxes) rather than being specific to Self Assessment Income Tax, though late payment/repayment interest concepts may be relevant to SA if/when the regime applies to Income Tax."
+        ],
+        "cross_references": [
+          "CH140160",
+          "CH140200",
+          "CH140220",
+          "CH142000",
+          "CH146200",
+          "CH141120",
+          "CH146040",
+          "CH149930",
+          "CH149950",
+          "CH140000",
+          "FA09/S101",
+          "FA09/S102",
+          "FA09/SCH53",
+          "FA09/SCH54 & SCH54A",
+          "Section 80 VATA 1994",
+          "Regulation 29 of VAT Regulations 1995"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Interest charged when a person pays late, running from the late payment interest start date (usually the date the amount is due and payable) to the late payment interest end date (usually the date paid or set off), calculated on a simple basis.",
+            "ref": "CH140100",
+            "term": "Late payment interest"
+          },
+          {
+            "meaning": "Interest paid by HMRC on overpayments and repayments, running from the repayment interest start date to the repayment interest end date (date repaid or set off), calculated on a simple basis.",
+            "ref": "CH140100",
+            "term": "Repayment interest"
+          },
+          {
+            "meaning": "For amounts paid to HMRC and then repaid, the later of the date the amount was paid and the date the amount being repaid was due and payable; applies to all taxes covered by FA2009 interest provisions.",
+            "ref": "CH140100",
+            "term": "Repayment interest start date - Rule 1"
+          },
+          {
+            "meaning": "For amounts not paid to HMRC but becoming payable via a return or claim, the later of the date the return/claim was required and the date it was actually filed/made; currently only applies to VAT from 01/01/2023 for Prescribed Accounting Periods starting on or after 01/01/2023.",
+            "ref": "CH140100",
+            "term": "Repayment interest start date - Rule 2"
+          },
+          {
+            "meaning": "Recompense for the loss of use of money over time; it is not a penalty.",
+            "ref": "CH140100",
+            "term": "Interest (general)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "due and payable date",
+            "must": "pay the correct amount due under an enactment to HMRC by the due and payable date",
+            "ref": "CH140100",
+            "trigger": "amount due under an enactment",
+            "who": "A person owing tax or duty"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk explains the FA 2009 interest rules regime, which apply to certain taxes (not yet all) and replace previous interest provisions where applicable. It sets out general rules for calculating late payment interest (simple, from a start date to end date) and repayment interest (with two start-date rules depending on whether an amount was paid to HMRC or arises from a return/claim), noting Rule 2 currently only applies to VAT from 01/01/2023. It also describes CH140110 as a navigational page explaining how to use the interest guidance, pointing to general rules and special provisions elsewhere in the manual.",
+        "topics": [
+          "late-payment-interest",
+          "repayment-interest",
+          "interest-rules",
+          "vat",
+          "finance-act-2009"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "c948ce578c680cf7": {
+      "chars": 11114,
+      "heading": "Compliance Handbook (CH) > CH50100 — Overview",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Aligned time limits do not affect the rules on how long HMRC has to make an assessment (a distinct concept from how far back it can assess).",
+          "Transitional provisions apply for VAT (from 1 April 2009) and for direct taxes/other duties (from 1 April 2010), and for SDLT/SDRT/PRT/excise duty (from 1 April 2011).",
+          "Aligned time limits apply to assessments made after the relevant commencement dates regardless of the period to which the assessment relates.",
+          "This guidance covers assessments/determinations and IHT recovery proceedings, not time limits for claims, which are covered elsewhere.",
+          "There are no consequential claims permitted for VAT, IPT, aggregates levy, climate change levy, landfill tax, PRT or excise duty following a discovery assessment/enquiry closure, unlike for IT/CGT/CT/SDLT.",
+          "Restrictions exist on use of the 12-year offshore time limit, e.g. where HMRC received relevant overseas information (see CH53510, CH53550).",
+          "For IHT where no account has been delivered, if loss of tax is brought about deliberately, there remains no time limit at all.",
+          "Onus of proof for careless or deliberate behaviour rests with HMRC, relevant when extended time limits are invoked."
+        ],
+        "cross_references": [
+          "CH51250",
+          "CH56000+",
+          "CH53100",
+          "CH51200",
+          "CH51700",
+          "CH53510",
+          "CH56800",
+          "CH53550",
+          "CH52000+",
+          "CH53000+",
+          "CH55100",
+          "CH51300",
+          "CH53300",
+          "CH53600",
+          "CH51820",
+          "CH51520",
+          "CH51530"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Income Tax, CGT, Corporation Tax, VAT, IPT, SDLT, SDRT, PRT, Aggregates Levy, Climate Change Levy, Landfill Tax, Excise Duty",
+            "name": "Normal assessment time limit",
+            "ref": "CH50100",
+            "rule": "varies by tax; aligned regime effective 1 April 2010 for direct taxes"
+          },
+          {
+            "applies_to": "Income Tax, CGT, Corporation Tax, IHT proceedings (account delivered), SDLT, SDRT, PRT",
+            "name": "Careless behaviour extended time limit",
+            "ref": "CH50100",
+            "rule": "within 6 years of the end of the relevant tax period"
+          },
+          {
+            "applies_to": "all taxes listed at CH51200; IHT (no account delivered) 20 years from relevant date unless deliberate loss with no time limit",
+            "name": "Deliberate behaviour extended time limit",
+            "ref": "CH50100 / CH51700",
+            "rule": "within 20 years of the end of the relevant tax period"
+          },
+          {
+            "applies_to": "Income Tax, CGT, IHT",
+            "name": "Offshore matter extended time limit",
+            "ref": "CH50100 / CH53510 / CH56800",
+            "rule": "within 12 years of the end of the year or assessment to which the loss of tax relates"
+          },
+          {
+            "applies_to": "deceased's IT/CGT liability up to date of death",
+            "name": "Personal representatives - IT/CGT normal assessment",
+            "ref": "CH54200",
+            "rule": "within 4 years of the end of the year of assessment in which the person died"
+          },
+          {
+            "applies_to": "deceased's IT/CGT liability, careless or deliberate behaviour or failure to notify",
+            "name": "Personal representatives - IT/CGT careless/deliberate/failure to notify",
+            "ref": "CH54200",
+            "rule": "may only assess for a year of assessment ending not earlier than 6 years prior to date of death, and assessment must be made within 4 years of death"
+          },
+          {
+            "applies_to": "deceased's VAT liability for prescribed accounting periods",
+            "name": "Personal representatives - VAT normal assessment",
+            "ref": "CH54200",
+            "rule": "within 4 years after a person's death"
+          },
+          {
+            "applies_to": "deceased's VAT liability",
+            "name": "Personal representatives - VAT deliberate behaviour/failure to notify/notifiable arrangement",
+            "ref": "CH54200",
+            "rule": "may assess prescribed accounting periods within 20 years prior to death; all such assessments must be made within 4 years of date of death"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Failure or inaccuracy occurring due to lack of reasonable care, including not telling HMRC of an inaccuracy without unreasonable delay after discovering it, or failure to notify liability without unreasonable delay after reasonable excuse ceased",
+            "ref": "CH54300",
+            "term": "Careless behaviour"
+          },
+          {
+            "meaning": "Behaviour of the person (or another acting on their behalf) that deliberately causes loss of tax or over-repayment",
+            "ref": "CH54300",
+            "term": "Deliberate behaviour"
+          },
+          {
+            "meaning": "A loss of tax involving assets, income or activities offshore, or a transfer that makes the lost tax significantly harder to identify, triggering a 12-year assessing time limit",
+            "ref": "CH50100 / CH53510",
+            "term": "Offshore matter/offshore transfer"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "varies: 6, 12 or 20 years depending on behaviour/offshore matter",
+            "must": "assess within the normal time limit unless extended time limits for careless/deliberate behaviour or offshore matters apply",
+            "ref": "CH50100",
+            "trigger": "discovery of lost tax or over-repayment",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "4 years from end of year of assessment of death",
+            "must": "assess personal representatives for the deceased's income tax/CGT liability up to date of death within 4 years of the end of the year of assessment in which the person died",
+            "ref": "CH54200",
+            "trigger": "person's death",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "n/a",
+            "must": "prove careless or deliberate behaviour when relying on extended assessment time limits",
+            "ref": "CH54300",
+            "trigger": "reliance on extended time limit (6, 12 or 20 years)",
+            "who": "HMRC"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains HMRC's aligned assessment time limits across taxes (from 1 April 2010 for direct taxes), distinguishing normal time limits from extended limits for careless behaviour (6 years), deliberate behaviour (20 years), and offshore matters (12 years). It also sets out special time limits for assessing personal representatives of deceased persons for income tax/CGT (4 years from end of year of assessment of death, or 6 years back for careless/deliberate behaviour) and VAT, and confirms HMRC bears the onus of proving careless or deliberate behaviour when relying on extended time limits.",
+        "topics": [
+          "assessment-time-limits",
+          "discovery-assessment",
+          "careless-behaviour",
+          "deliberate-behaviour",
+          "offshore-time-limit",
+          "personal-representatives",
+          "burden-of-proof",
+          "enquiry-closure-notice"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/manuals/ch.md",
+  "source_id": "hmrc-manual-ch",
+  "source_url": "https://www.gov.uk/hmrc-internal-manuals/compliance-handbook"
+}

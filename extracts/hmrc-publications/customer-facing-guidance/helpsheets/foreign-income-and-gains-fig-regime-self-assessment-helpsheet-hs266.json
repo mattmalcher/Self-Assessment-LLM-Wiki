@@ -1,0 +1,202 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "230dc40cf85a4b48": {
+      "chars": 6363,
+      "heading": "Foreign income and gains (FIG) regime (Self Assessment helpsheet HS266) > 5\\. Effects of making a claim > 5\\.4 Pension contributions",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Basic amount (pension relief threshold)",
+            "period": "n/a",
+            "ref": "5.4 Pension contributions / PTM044100",
+            "value": "£3,600"
+          }
+        ],
+        "caveats": [
+          "Pension relief reduction only applies if the maximum relief entitlement for the tax year is higher than the basic amount (£3,600); relief is not reduced below this basic amount",
+          "FTCR cannot be claimed on income covered by a FIG regime claim; only claimable on the proportion of foreign income not covered by such a claim",
+          "Foreign income only qualifies as 'qualifying foreign income' if it arises on or after 6 April 2025 - a foreign income claim cannot be made for a tax year before 6 April 2025",
+          "Former remittance basis users returning after 10 consecutive tax years of non-UK residence cannot claim FIG relief for foreign income/gains arising before 6 April 2025 while UK resident and on the remittance basis, regardless of when remitted",
+          "Relevant foreign earnings and foreign specific employment income are NOT qualifying foreign income for FIG claims - separate relief may be available via Overseas Workday Relief (OWR) election"
+        ],
+        "cross_references": [
+          "PTM044100 - Contributions: tax relief for members: conditions",
+          "RFIG43000 - FIG regime: Effects of claim",
+          "RFIG45100 - FIG regime: Qualifying foreign income",
+          "RFIG45200 - FIG regime: Disqualified income",
+          "RFIG45250 - FIG regime: Income from trusts",
+          "RFIG45300 - FIG regime: Income arising under the settlements legislation",
+          "RFIG45400 - FIG regime: Income arising under the transfer of assets abroad provisions",
+          "RFIG45500 - FIG regime: Foreign capital gains",
+          "EIM43550 Globally mobile employees: Overseas Workday Relief",
+          "helpsheet HS264 (Temporary Repatriation Facility)",
+          "section 3 TCGA 1992",
+          "section 86 TCGA 1992",
+          "section 87, 89(2) and Schedule 4C TCGA 1992"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Includes profits of a trade carried on wholly outside the UK, a UK resident partner's share of profits of a firm trading wholly outside the UK, profits of an overseas property business, dividends from non-UK resident companies, interest (e.g. on a foreign bank account), and foreign pension income (except disqualified pension income); must arise on or after 6 April 2025",
+            "ref": "RFIG45100",
+            "term": "Qualifying foreign income"
+          },
+          {
+            "meaning": "Income that cannot be claimed for under the FIG regime and is taxed when it arises; includes certain income under settlements legislation, income from a UK-situated security following a share exchange involving a non-UK incorporated close company, transferred income streams treated as income, performance income, and certain types of pension income",
+            "ref": "RFIG45200",
+            "term": "Disqualified income"
+          },
+          {
+            "meaning": "Includes qualifying foreign asset gains, certain gains under s.3 TCGA 1992 (non-UK resident close company gains attributed to UK residents), qualifying QAHC gains, certain gains under s.86 TCGA 1992 (settlor-attributed gains of non-resident settlements), and gains under s.87, 89(2) and Schedule 4C TCGA 1992 (beneficiary-attributed gains of non-resident settlements)",
+            "ref": "RFIG45500",
+            "term": "Qualifying foreign gains (for FIG relief)"
+          }
+        ],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk explains how making a FIG regime claim affects pension contribution tax relief and Foreign Tax Credit Relief (FTCR), then sets out which foreign income and gains qualify for FIG relief. It defines qualifying foreign income, disqualified income, and covers trust income, settlements legislation, transfer of assets abroad (ToAA) provisions, and qualifying foreign gains. Foreign income only qualifies if it arises on or after 6 April 2025, meaning former remittance basis users cannot claim relief for pre-6 April 2025 income/gains even if remitted within their first 4 years back in the UK.",
+        "topics": [
+          "foreign-income-and-gains-regime",
+          "pension-contributions-relief",
+          "foreign-tax-credit-relief",
+          "qualifying-foreign-income",
+          "disqualified-income",
+          "trusts",
+          "settlements-legislation",
+          "transfer-of-assets-abroad",
+          "foreign-capital-gains"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "2d748a43d0a370c5": {
+      "chars": 11400,
+      "heading": "Foreign income and gains (FIG) regime (Self Assessment helpsheet HS266)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Foreign dividends example (Sergio)",
+            "period": "2025-26",
+            "ref": "HS266 Section 3.1",
+            "value": "£50,000"
+          },
+          {
+            "name": "Overseas shares gain example (Sergio)",
+            "period": "2025-26",
+            "ref": "HS266 Section 3.1",
+            "value": "£20,000"
+          }
+        ],
+        "caveats": [
+          "Remittance basis abolished from 6 April 2025; domicile no longer a relevant connecting factor - replaced by tax residence-based system.",
+          "If 4-year period as UK resident started before 6 April 2025, FIG regime can be used from 2025-26 tax year up to and including the last tax year of the 4-year period (e.g. those becoming UK resident from 2022-23 can still use it).",
+          "Unused years cannot be rolled over if no claim is made for a particular year within the 4-year window.",
+          "Once the 4-year qualifying period ends, only way to requalify is a further period of at least 10 consecutive tax years of non-UK residence.",
+          "Losing personal allowance, CGT annual exempt amount and other reliefs applies regardless of whether claim is for income only, gains only, or OWR only.",
+          "Foreign losses cannot be claimed in the claim year and cannot be carried forward or backward.",
+          "This helpsheet must be read together with the relevant notes accompanying supplementary pages; content applies to the 2026 version (2025-26 tax year)."
+        ],
+        "cross_references": [
+          "RDR3 Guidance Note: Statutory Residence Test (SRT)",
+          "SACM3025 - Making and Amending Claims: Quantification by the Taxpayer",
+          "SACM10010 - Unsuccessful Attempts to Make a Claim or Election: Unsatisfactory Claims",
+          "RFIG42300 Claims for relief - time limits (Residence and FIG Regime Manual)",
+          "EIM43550 Globally mobile employees: Overseas Workday Relief (Employment Income Manual)",
+          "HS227 Losses (2026)",
+          "SA109, SA103F, SA104F, SA106, SA107, SA108"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Foreign income claim and foreign gain claim",
+            "name": "Time limit to make a FIG regime claim",
+            "ref": "HS266 Section 4",
+            "rule": "Anniversary of 31 January following the end of the tax year to which the claim relates (12 months from the normal filing date)"
+          },
+          {
+            "applies_to": "2025-26 tax year FIG claims",
+            "name": "Example: 2025-26 claim deadline",
+            "ref": "HS266 Section 4",
+            "rule": "Normal filing date for 2025-26 return is 31 January 2027; time limit for claim is 31 January 2028"
+          },
+          {
+            "applies_to": "Amendments to FIG claims",
+            "name": "Time limit to amend a claim",
+            "ref": "HS266 Section 4",
+            "rule": "Same as making a claim, unless a notice to file was issued after 31 October 2026"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "An individual in one of their first 4 years of UK residence after a period of at least 10 consecutive tax years of non-UK residence, who is not a member of the House of Commons or House of Lords",
+            "ref": "HS266 Section 2",
+            "term": "Qualifying new resident"
+          },
+          {
+            "meaning": "Foreign income and gains regime introduced 6 April 2025, replacing the remittance basis, enabling qualifying new residents to claim UK tax relief on foreign income and gains arising during their first 4 years of UK residence",
+            "ref": "HS266 Section 1",
+            "term": "FIG regime"
+          },
+          {
+            "meaning": "Income measure used to calculate entitlement to reliefs including tax-free childcare and HICBC; foreign income relief under FIG regime is disregarded when calculating ANI",
+            "ref": "HS266 Section 5.3",
+            "term": "Adjusted net income (ANI)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Complete relevant boxes on SA109 (Residence and foreign income and gains (FIG) regime etc pages) and tick box 28 (foreign income) and/or box 29 (foreign gains) and/or box 30 (QAHC-deemed foreign UK income/gains)",
+            "ref": "HS266 Section 3",
+            "trigger": "Wishing to claim relief under the FIG regime",
+            "who": "Qualifying new resident claiming FIG relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report and claim relief for each amount of foreign income from each source separately on the relevant supplementary page (e.g. SA106 for savings and dividend income separately)",
+            "ref": "HS266 Section 3",
+            "trigger": "Claiming foreign income relief under FIG regime",
+            "who": "Person claiming foreign income relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Identify each qualifying foreign gain in the claim; relief given by deducting amount from total chargeable gains",
+            "ref": "HS266 Section 3",
+            "trigger": "Claiming foreign gains relief under FIG regime",
+            "who": "Person claiming foreign gains relief"
+          },
+          {
+            "deadline": "12 months from normal filing date (anniversary of 31 January following end of tax year), unless notice to file issued after 31 October 2026",
+            "must": "Amend claim within the time limit",
+            "ref": "HS266 Section 3 and Section 4",
+            "trigger": "Discovery of incorrect amount reported on supplementary pages",
+            "who": "Claimant wishing to amend an incorrect reported amount"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS266 explains the FIG regime, introduced 6 April 2025 to replace the remittance basis, allowing 'qualifying new residents' (UK residents in their first 4 years after 10+ consecutive years of non-UK residence) to claim relief on foreign income and gains via annual claims on SA109 plus relevant supplementary pages (SA103F, SA104F, SA106, SA107, SA108). Claims must be made per tax year and per source, have no monetary limit, but must be made within 12 months of the normal filing date (i.e. by the anniversary of 31 January following the tax year). Making a claim causes loss of personal allowance, CGT annual exempt amount, blind person's allowance, marriage-related tax reductions, and certain loss reliefs (no carry forward/back), while relieved foreign income is disregarded from adjusted net income calculations.",
+        "topics": [
+          "foreign-income-and-gains-regime",
+          "fig-regime",
+          "qualifying-new-resident",
+          "remittance-basis-abolition",
+          "sa109",
+          "claims-time-limits",
+          "allowances-loss",
+          "capital-gains",
+          "overseas-workday-relief"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266.md",
+  "source_id": "sa-helpsheets:f689f4a2-7da1-41a3-b37d-b18c346219ed",
+  "source_url": "https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266"
+}

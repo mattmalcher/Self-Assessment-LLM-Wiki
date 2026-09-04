@@ -1,0 +1,122 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation.manuals",
+  "chunks": {
+    "03d1a982cf333f09": {
+      "chars": 11914,
+      "heading": "HMRC manuals > A to Z of manuals > D",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Economic Crime Levy threshold",
+            "period": "n/a",
+            "ref": "Economic Crime Levy Manual",
+            "value": "£10.2 million"
+          }
+        ],
+        "caveats": [
+          "This chunk is a navigational index of manuals, not substantive tax guidance itself; relevance to Self Assessment depends on the linked manuals' content, not shown here."
+        ],
+        "cross_references": [
+          "Enquiry Manual",
+          "Partnership Manual",
+          "Property Income Manual",
+          "Repayment Claims Manual",
+          "Residence and FIG Regime Manual",
+          "Residence, Domicile and Remittance Basis Manual",
+          "Double Taxation Relief Manual",
+          "International Manual",
+          "PAYE Manual",
+          "Pensions Tax Manual"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is an alphabetical directory listing (D through R) of HMRC internal manuals with links and one-line descriptions. It includes manuals relevant to Self Assessment context such as the Enquiry Manual (how HMRC carries out tax enquiry work), Partnership Manual, Property Income Manual, Repayment Claims Manual, and Residence, Domicile and Remittance Basis Manual, alongside many unrelated manuals (excise, VAT, insurance, oil taxation, etc.).",
+        "topics": [
+          "hmrc-manuals-index",
+          "manual-directory"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "3d1bac3911d8e1cd": {
+      "chars": 8699,
+      "heading": "HMRC manuals > A to Z of manuals > S",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This is a navigational index chunk; it points to manuals rather than stating substantive tax rules itself, so detail on Self Assessment obligations, deadlines and penalties must be sourced from the linked manuals directly."
+        ],
+        "cross_references": [
+          "Self Assessment Claims Manual (https://www.gov.uk/hmrc-internal-manuals/self-assessment-claims-manual)",
+          "Self Assessment: the legal framework (https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework)",
+          "Self Assessment Manual (https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual)",
+          "Scottish Taxpayer Technical Guidance (https://www.gov.uk/hmrc-internal-manuals/scottish-taxpayer-technical-guidance)",
+          "Welsh taxpayer technical guidance (https://www.gov.uk/hmrc-internal-manuals/welsh-taxpayer-technical-guidance)",
+          "Trusts, Settlements and Estates (https://www.gov.uk/hmrc-internal-manuals/trusts-settlements-and-estates-manual)",
+          "Savings and Investment Manual (https://www.gov.uk/hmrc-internal-manuals/savings-and-investment-manual)"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk lists HMRC internal manuals alphabetically from S through Z, with one-line descriptions and links. It includes several manuals directly relevant to Self Assessment: the Self Assessment Claims Manual, Self Assessment: the legal framework, and the Self Assessment Manual, plus related manuals on Scottish and Welsh taxpayer status, Trusts Settlements and Estates, and Savings and Investment. Most other entries (e.g. tobacco duty, VAT, stamp taxes, tonnage tax) are unrelated to Self Assessment.",
+        "topics": [
+          "manuals-index",
+          "self-assessment-claims",
+          "self-assessment-legal-framework",
+          "self-assessment-manual",
+          "scottish-taxpayer",
+          "welsh-taxpayer",
+          "trusts-settlements-estates"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "3fc95cfd860520da": {
+      "chars": 10892,
+      "heading": "HMRC manuals",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Guidance is not comprehensive and not definitive in every case",
+          "Based on the law as it stood when published; HMRC issues amended/supplementary guidance if the law or its interpretation changes",
+          "This chunk is purely a navigational index (A to C only), not substantive tax content"
+        ],
+        "cross_references": [
+          "Find HMRC Manuals (https://www.gov.uk/find-hmrc-manuals)",
+          "HMRC Publication scheme",
+          "When you can rely on information or advice provided by HMRC guidance",
+          "Business Income Manual",
+          "Capital Gains Manual",
+          "Compliance Handbook Manual",
+          "COTAX Manual",
+          "Construction Industry Scheme Reform Manual"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is an index/navigation page listing HMRC internal manuals alphabetically (A to C shown in this chunk), each with a short description of scope. It includes manuals such as Business Income Manual and Capital Gains Manual which are relevant background for Self Assessment calculations, but the chunk itself is a directory rather than substantive tax guidance. It notes the manuals are HMRC staff guidance, published under the Publication scheme, reflect the law as it stood when published, and are not comprehensive or definitive.",
+        "topics": [
+          "hmrc-manuals-index",
+          "navigation"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/manuals/index.md",
+  "source_id": "hmrc-manuals-index",
+  "source_url": "https://www.gov.uk/government/collections/hmrc-manuals"
+}

@@ -1,9 +1,16 @@
 {
+  "the-return": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-04",
+    "input_hash": "dc769e21a5712266",
+    "note_count": 90,
+    "output": "docs/lifecycle/the-return.md"
+  },
   "who-must-file": {
     "generated_by": "claude-cli:opus",
     "generated_on": "2026-09-04",
-    "input_hash": "b7afec02377737e3",
-    "note_count": 13,
+    "input_hash": "b1fa40a58374ef7a",
+    "note_count": 39,
     "output": "docs/lifecycle/who-must-file.md"
   }
 }

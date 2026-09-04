@@ -1,0 +1,904 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "105bf82d42634545": {
+      "chars": 11752,
+      "heading": "Gains on UK life insurance policies (Self Assessment helpsheet HS320) > Rhan 2 — Pryd y dylech roi gwybod am enillion ar ddigwyddiad trethadwy > 5\\. Person sy’n agored i dreth > 5\\.3 Cynrychiolwyr personol",
+      "index": 4,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "SA registration threshold for gains plus other savings/investment income",
+            "period": "n/a",
+            "ref": "6.1",
+            "value": "£10,000"
+          },
+          {
+            "name": "RRQP annual premium limit",
+            "period": "n/a",
+            "ref": "9.2",
+            "value": "£3,600"
+          }
+        ],
+        "caveats": [
+          "Trustees and personal representatives taxable on a deceased person's gains are not entitled to time-apportionment reduction",
+          "Where multiple certificates are received for the same gain (e.g. due to partial surrender in the final insurance year), the taxpayer should use the details from the latest certificate",
+          "Where a partial surrender and a full surrender occur in the same insurance year, only the gain on the full surrender should be reported, as the partial surrender gain is subsumed into the final gain calculation",
+          "This is a Welsh-language version of HS320 guidance; example dates given (e.g. 2025-26 tax year) are illustrative for that year's helpsheet edition"
+        ],
+        "cross_references": [
+          "SA101 (Self Assessment additional information pages)",
+          "SA900 (Trust and Estate Tax Return)",
+          "IPTM3240 (Insurance Policyholder Taxation Manual)",
+          "IPTM2076 (Insurance Policyholder Taxation Manual - RRQPs)",
+          "IPTM2077 (Insurance Policyholder Taxation Manual - RRQP calculation example)",
+          "IPTM3730 to IPTM3734 (Insurance Policyholder Taxation Manual - time-apportionment reduction)",
+          "Part 5 (calculating gains where no certificate received)",
+          "'Loss, or no gain, on the policy' section"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Usually the 12-month period beginning on the anniversary of the date the policy was arranged",
+            "ref": "Part 2, s.7",
+            "term": "Insurance year (blwyddyn yswiriant / blwyddyn bolisi)"
+          },
+          {
+            "meaning": "Where an event ends a policy/contract (full surrender, death, maturity, or taking a capital sum in lieu of annuity payments), the insurance year is treated as ending on that date; if this would cause the insurance year to start and end within the same tax year, it is extended to include the previous insurance year",
+            "ref": "Part 2, s.7",
+            "term": "Final insurance year (blwyddyn yswiriant derfynol)"
+          },
+          {
+            "meaning": "Generally a policy issued before 21 March 2012 and varied after that date to increase premiums where the £3,600 annual premium limit is breached, or a qualifying policy that becomes an RRQP under other circumstances such as certain assignments where the limit is breached",
+            "ref": "9.2",
+            "term": "RRQP (Restricted Relief Qualifying Policy)"
+          },
+          {
+            "meaning": "A reduction to gains for periods during the relevant interest period when the taxpayer was not UK resident, calculated using formula A/B where A = number of overseas days in the relevant interest period and B = number of days in the relevant interest period",
+            "ref": "9.3",
+            "term": "Time-apportionment reduction (gostyngiad ar sail dosraniad amser)"
+          },
+          {
+            "meaning": "Part of the policy period during which the taxpayer beneficially owns the rights under the policy, or holds them on non-charitable trusts created by them, or as security for their debt",
+            "ref": "9.3",
+            "term": "Relevant interest period (cyfnod buddiant perthnasol)"
+          },
+          {
+            "meaning": "All days during a tax year when not UK resident, and any days during a split year treated as the overseas part",
+            "ref": "9.3",
+            "term": "Overseas days (diwrnodau tramor)"
+          },
+          {
+            "meaning": "A policy is treated as jointly owned if more than one person has a beneficial entitlement to benefits, or rights are held on trusts created by more than one person, or held as security for a debt owed by more than one person, or held in more than one capacity",
+            "ref": "9.1",
+            "term": "Joint ownership (cyd-berchnogaeth)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Report the gain on their Self Assessment tax return, in the 'UK other income' section under gains from life insurance policies, capital redemption policies and life annuity contracts",
+            "ref": "6.1",
+            "trigger": "Chargeable event gain arises",
+            "who": "Individual already within Self Assessment"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Register for Self Assessment and report the gain on their Self Assessment return",
+            "ref": "6.1",
+            "trigger": "Gain plus savings and other investment income exceeds £10,000",
+            "who": "Individual not within Self Assessment whose gain (plus savings/investment income) exceeds £10,000"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Either contact Self Assessment general enquiries or send a copy of the chargeable event certificate (with National Insurance number) to HMRC Self Assessment, Welsh Customer Service",
+            "ref": "6.1",
+            "trigger": "Chargeable event gain arises but below £10,000 threshold combined with other investment income",
+            "who": "Individual not within Self Assessment whose gain (plus savings/investment income) does not exceed £10,000"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report the gain on the Trust and Estate Tax Return (SA900), under 'Gains on UK life insurance policies, life annuities and capital redemption policies'",
+            "ref": "6.2",
+            "trigger": "Chargeable event gain arises on trust-held policy",
+            "who": "UK-resident trustees liable to tax"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report the gain following IPTM3240 guidance depending on whether basic rate tax is treated as paid",
+            "ref": "6.3",
+            "trigger": "Personal representatives realise a chargeable event gain",
+            "who": "Personal representatives realising gains"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report a reduced gain calculated using the formula: Gain × (total allowable premiums payable) / (total premiums payable), not the certificate figure",
+            "ref": "9.2",
+            "trigger": "Policy is a Restricted Relief Qualifying Policy",
+            "who": "Taxpayer with an RRQP"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Calculate the reduction themselves using formula A/B and deduct from the certificate gain; also deduct full years of non-UK residence from the 'number of years' shown on the certificate",
+            "ref": "9.3",
+            "trigger": "Non-UK residence during the relevant interest period, on a policy issued on/after 6 April 2013 or varied/assigned on/after that date",
+            "who": "Taxpayer eligible for time-apportionment reduction (non-UK resident during relevant period)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Each report their equal share (e.g. half if two joint owners) of the gain on their own tax return",
+            "ref": "9.1",
+            "trigger": "Policy held in joint ownership",
+            "who": "Joint owners (including spouses/civil partners) of a policy"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk (in Welsh) covers how and where to report chargeable event gains on UK life insurance policies depending on the taxpayer's circumstances (individual, trustee, personal representative), including SA registration thresholds. It explains which tax year a gain is taxable in, including rules on insurance years, partial surrenders, and final insurance years being extended when they would otherwise start and end in the same tax year. It also covers reducing the reported gain for jointly-owned policies, Restricted Relief Qualifying Policies (RRQPs), and time-apportionment reductions for non-UK residence periods.",
+        "topics": [
+          "life-insurance-gains",
+          "chargeable-event",
+          "reporting-requirements",
+          "self-assessment-registration",
+          "insurance-year",
+          "top-slicing-relief",
+          "RRQP",
+          "personal-representatives",
+          "trustees"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "10eca614f8a9fc46": {
+      "chars": 11410,
+      "heading": "Gains on UK life insurance policies (Self Assessment helpsheet HS320) > Part 3 — Amount of the gain > 10\\. Tax reliefs > 10\\.2 Loss, or no gain, on the policy",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Deficiency relief availability threshold",
+            "period": "n/a",
+            "ref": "HS320 s.10.3",
+            "value": "n/a (relief only for individuals, not trustees/personal representatives)"
+          },
+          {
+            "name": "PPB gain calculation rate",
+            "period": "n/a",
+            "ref": "HS320 s.14",
+            "value": "15% of (A + B - C)"
+          },
+          {
+            "name": "Part surrender allowance",
+            "period": "n/a",
+            "ref": "HS320 s.13",
+            "value": "unused one twentieth (5%) of premiums paid per year, maximum 100% of premiums (reached after 20 consecutive years)"
+          },
+          {
+            "name": "Example 1 gain (maturity/full surrender)",
+            "period": "n/a",
+            "ref": "HS320 s.15.1",
+            "value": "£10,000 (TB) - £4,000 (TD) = £6,000"
+          },
+          {
+            "name": "Example 2 gain (death)",
+            "period": "n/a",
+            "ref": "HS320 s.15.2",
+            "value": "£8,000 (TB) - £4,000 (TD) = £4,000"
+          },
+          {
+            "name": "Example 3 gain (sale)",
+            "period": "n/a",
+            "ref": "HS320 s.15.3",
+            "value": "£10,000 (TB) - £5,000 (TD) = £5,000"
+          },
+          {
+            "name": "Example 4 part surrender gain",
+            "period": "2025 to 2026",
+            "ref": "HS320 s.16.1",
+            "value": "£3,700 - £3,000 = £700"
+          },
+          {
+            "name": "Example 5 part surrender gain",
+            "period": "2025 to 2026",
+            "ref": "HS320 s.16.2",
+            "value": "£3,100 - £2,500 = £600"
+          },
+          {
+            "name": "Example 7 PPB gain year 1",
+            "period": "2023 to 2024",
+            "ref": "HS320 s.17",
+            "value": "15% x £100,000 = £15,000"
+          },
+          {
+            "name": "Example 7 PPB gain year 2",
+            "period": "2024 to 2025",
+            "ref": "HS320 s.17",
+            "value": "15% x (£100,000 + £15,000 - £0) = £17,250 (plus £30,000 part surrender gain)"
+          },
+          {
+            "name": "Example 7 PPB gain year 3",
+            "period": "2025 to 2026",
+            "ref": "HS320 s.17",
+            "value": "15% x (£100,000 + £15,000 + £17,250 - £30,000) = £15,337.50"
+          }
+        ],
+        "caveats": [
+          "Deficiency relief does not reduce tax due at the additional rate.",
+          "Deficiency relief is only available to individuals; trustees and personal representatives cannot claim it.",
+          "Transfer of policy ownership between spouses/civil partners living together does not give rise to a gain, unlike other connected-person transfers which use market value.",
+          "No PPB gain arises in the final insurance year of a policy.",
+          "Example 17's final figure shows a discrepancy: calculation states '£15,337.50' but the following sentence says '£15,377.50 is chargeable to Income Tax' - likely a typo in the source."
+        ],
+        "cross_references": [
+          "IPTM3860 (Insurance Policyholder Taxation Manual) - deficiency relief calculation",
+          "IPTM3596 (Insurance Policyholder Taxation Manual) - wholly disproportionate gains application process",
+          "IPTM7535 (Insurance Policyholder Taxation Manual) - related policies",
+          "IPTM3527 and IPTM3528 (Insurance Policyholder Taxation Manual) - commission rebate calculations",
+          "IPTM3270 (Insurance Policyholder Taxation Manual) - general chargeable event gains taxation"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Negative result of chargeable event calculation with no gains on the policy in earlier years; no relief available, cannot be set against other gains or income",
+            "ref": "HS320 s.10.2",
+            "term": "Loss on a life insurance policy"
+          },
+          {
+            "meaning": "Relief available only to individuals (not trustees or personal representatives) when a final chargeable event calculation is negative but earlier gains were taxed as income; reduces tax due on other income at relevant rates (not additional rate) in the tax year of the deficiency",
+            "ref": "HS320 s.10.3",
+            "term": "Deficiency relief"
+          },
+          {
+            "meaning": "Higher, default higher, savings higher, dividend upper, Scottish higher, Scottish advanced, Welsh higher rates of income tax, against which deficiency relief can be set",
+            "ref": "HS320 s.10.3",
+            "term": "Relevant rates"
+          },
+          {
+            "meaning": "A gain from part surrender/part assignment that is disproportionate to the underlying economic gain, often arising early in a policy's life from taking cash in excess of the 5% tax-deferred allowance",
+            "ref": "HS320 s.11",
+            "term": "Wholly disproportionate gain"
+          },
+          {
+            "meaning": "Generally the value received on maturity/full surrender plus value previously received under the policy (excluding earlier critical illness/disability benefits); for death, the surrender value immediately before death; for sale, the sale price or market value if between connected persons",
+            "ref": "HS320 s.12.1-12.3",
+            "term": "TB (Total Benefits)"
+          },
+          {
+            "meaning": "Generally all amounts paid as premiums under the policy",
+            "ref": "HS320 s.12.1",
+            "term": "TD (Total Deductions)"
+          },
+          {
+            "meaning": "All gains that were someone's income for tax purposes in a tax year before the policy matured or was fully surrendered",
+            "ref": "HS320 s.12.1",
+            "term": "PG (Previous Gains)"
+          },
+          {
+            "meaning": "Typically a policy derived from a maturity option where one policy matures and proceeds are applied as premium for a new policy",
+            "ref": "HS320 s.12.1",
+            "term": "Related policy"
+          },
+          {
+            "meaning": "Gain calculated as 15% of (A + B - C) where A is premiums paid, B is cumulative previous PPB gains, C is cumulative part surrender gains; no PPB gain arises in the final insurance year",
+            "ref": "HS320 s.14",
+            "term": "PPB gain"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Make no entries on the tax return for the loss",
+            "ref": "HS320 s.10.2",
+            "trigger": "Negative result on chargeable event with no prior gains on the policy",
+            "who": "Individual with a loss on a life insurance policy (no earlier gains)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Apply to HMRC to have the gain recalculated on a just and reasonable basis",
+            "ref": "HS320 s.11",
+            "trigger": "Gain from part surrender/part assignment considered wholly disproportionate to underlying economic gain",
+            "who": "Person liable to tax who considers a part surrender/part assignment gain wholly disproportionate"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk explains how to calculate gains or losses on UK life insurance policies for Self Assessment purposes, covering losses (no relief available), deficiency relief for individuals with earlier taxed gains, the wholly-disproportionate-gains adjustment mechanism, and detailed formulas for calculating gains on maturity, full surrender, death, sale, part surrender, part assignment and personal portfolio bonds (PPBs). Worked examples illustrate each calculation type with specific figures.",
+        "topics": [
+          "life-insurance-gains",
+          "chargeable-event-gains",
+          "deficiency-relief",
+          "part-surrender",
+          "part-assignment",
+          "ppb-gains",
+          "wholly-disproportionate-gains",
+          "capital-gains-calculation"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "4a459b549a5849db": {
+      "chars": 11904,
+      "heading": "Gains on UK life insurance policies (Self Assessment helpsheet HS320) > Part 2 — When you should report a chargeable event gain > 6\\. How to report a gain > 6\\.1\\. If an individual is liable to tax",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Savings and investment income threshold for SA registration",
+            "period": "n/a",
+            "ref": "HS320 s.6.1",
+            "value": "£10,000"
+          },
+          {
+            "name": "RRQP annual premium limit",
+            "period": "n/a",
+            "ref": "HS320 s.9.2",
+            "value": "£3,600"
+          }
+        ],
+        "caveats": [
+          "Trustees and personal representatives are not entitled to time apportioned reduction or top slicing relief.",
+          "The £10,000 threshold applies to the gain together with other savings and investment income, not the gain alone.",
+          "If both part surrenders and a full surrender occur in the same insurance year, only the gain on the full surrender should be reported (part surrender gains are subsumed).",
+          "Where multiple certificates are received for the same gain, the later (revised) certificate figures should be used.",
+          "Order of application matters when multiple reliefs/reductions apply: RRQP reduction, then time apportioned reduction, then top slicing relief.",
+          "For TSR, unlike RRQP/time apportioned reduction, the full gain (not a reduced figure) must be entered on the tax return; HMRC calculates the TSR amount.",
+          "Detailed TSR calculation is not fully covered in this helpsheet; readers directed to IPTM3820."
+        ],
+        "cross_references": [
+          "How to register for Self Assessment: https://www.gov.uk/self-assessment-tax-returns/sending-return",
+          "SA101 supplementary pages: https://www.gov.uk/government/publications/self-assessment-additional-information-sa101",
+          "SA900 Trust and Estate Tax Return",
+          "IPTM3240 (personal representatives)",
+          "IPTM2076 (RRQP)",
+          "IPTM2077 (RRQP calculation example)",
+          "IPTM3730 to IPTM3734 (time apportioned reductions)",
+          "IPTM3820 (top slicing relief calculation)",
+          "Part 5 of HS320 (calculating chargeable event gains without a certificate)",
+          "'Loss, or no gain, on the policy' section"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Normally the 12-month period beginning on the anniversary of the date the policy was taken out; all part surrenders in the same insurance year are treated as arising at the end of that year",
+            "ref": "HS320 s.7",
+            "term": "Insurance year (policy year)"
+          },
+          {
+            "meaning": "The insurance year in which a policy/contract ends (full surrender, death, maturity, or capital sum taken as alternative to annuity); if this would begin and end in the same tax year, it is extended to include the previous insurance year",
+            "ref": "HS320 s.7",
+            "term": "Final insurance year"
+          },
+          {
+            "meaning": "Most commonly a policy issued before 21 March 2012 and varied after that date to increase premiums, breaching the £3,600 annual premium limit; may also arise via certain assignments; gain is reduced by the allowable/total premiums formula",
+            "ref": "HS320 s.9.2; IPTM2076",
+            "term": "Restricted Relief Qualifying Policy (RRQP)"
+          },
+          {
+            "meaning": "A reduction to a chargeable gain available where the taxpayer was non-UK resident at some point during the 'material interest period', calculated using formula A/B (foreign days / total days in material interest period); not available to trustees or personal representatives",
+            "ref": "HS320 s.9.3",
+            "term": "Time apportioned reduction"
+          },
+          {
+            "meaning": "The part of the policy period during which the person beneficially owns the rights under the policy, or the rights are held on non-charitable trusts they created or as security for their debt",
+            "ref": "HS320 s.9.3",
+            "term": "Material interest period"
+          },
+          {
+            "meaning": "All days in a tax year for which a person is not UK resident, and any days in a split year taxed as if not UK resident (the overseas part)",
+            "ref": "HS320 s.9.3",
+            "term": "Foreign days"
+          },
+          {
+            "meaning": "Relief generally available where adding the gain to other income pushes the taxpayer into a higher tax band than they would otherwise be in; given as a reduction in tax rather than a reduction to the gain; not available to trustees or personal representatives",
+            "ref": "HS320 s.10.1",
+            "term": "Top slicing relief (TSR)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Report the gain in their Self Assessment return",
+            "ref": "HS320 s.6.1",
+            "trigger": "Chargeable event gain arises",
+            "who": "Individual already within Self Assessment"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Register for Self Assessment and report the gain in the return",
+            "ref": "HS320 s.6.1",
+            "trigger": "Gain plus other savings/investment income exceeds £10,000",
+            "who": "Individual not within Self Assessment whose gain (plus other savings/investment income) exceeds £10,000"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report gain by contacting Self Assessment general enquiries or sending a copy of the chargeable event certificate (with National Insurance number) to HMRC, BX9 1AS",
+            "ref": "HS320 s.6.1",
+            "trigger": "Chargeable event gain arises but below £10,000 threshold",
+            "who": "Individual not within Self Assessment whose gain (plus other savings/investment income) does not exceed £10,000"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report the gain in the Trust and Estate Tax Return (SA900) under 'Gains on UK life insurance policies, life annuities and capital redemption policies'",
+            "ref": "HS320 s.6.2",
+            "trigger": "Chargeable event gain arises to trust",
+            "who": "UK resident trustees liable to tax on a gain"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report gain according to whether basic rate tax is treated as paid, per IPTM3240 guidance",
+            "ref": "HS320 s.6.3 / IPTM3240",
+            "trigger": "Gain realised by personal representatives",
+            "who": "Personal representatives realising gains"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Each enter half the calculated or certificated gain on their own tax return",
+            "ref": "HS320 s.9.1",
+            "trigger": "Policy jointly owned with spouse or civil partner",
+            "who": "Joint owner of a policy with spouse/civil partner"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Calculate the reduction themselves and deduct it from the gain shown on the certificate; also reduce the 'number of years' by whole non-UK resident years",
+            "ref": "HS320 s.9.3",
+            "trigger": "Non-UK resident at some point during material interest period",
+            "who": "Person claiming time apportioned reduction"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how individuals, trustees and personal representatives report chargeable event gains on UK life insurance policies within Self Assessment, including thresholds triggering registration, which return/section to use, and how to determine the taxable year for gains (particularly for part surrenders and full surrenders). It also covers reductions to the reported gain (joint ownership apportionment, Restricted Relief Qualifying Policies, time apportioned reductions) and top slicing relief, including the order in which these reliefs/reductions must be applied.",
+        "topics": [
+          "life-insurance-gains",
+          "chargeable-event-gains",
+          "registering-for-self-assessment",
+          "other-uk-income",
+          "trust-and-estate-return",
+          "top-slicing-relief",
+          "time-apportioned-reduction",
+          "restricted-relief-qualifying-policy",
+          "which-tax-year"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "639ab467d0fcdc0a": {
+      "chars": 2991,
+      "heading": "Gains on UK life insurance policies (Self Assessment helpsheet HS320) > Rhan 5 — Enghreifftiau o gyfrifiadau > 16\\. Enghreifftiau o’r cyfrifiad o ennill ar ildiad rhannol > 16\\.1 Enghraifft 4",
+      "index": 6,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Example 4: partial surrenders in year to 24 May 2025",
+            "period": "year to 24 May 2025",
+            "ref": "16.1 Enghraifft 4",
+            "value": "£250 and £3,450 (total surrender value £3,700)"
+          },
+          {
+            "name": "Example 4: initial/only premium",
+            "period": "policy from 25 May 2019",
+            "ref": "16.1 Enghraifft 4",
+            "value": "£10,000"
+          },
+          {
+            "name": "Example 4: allowable payment (one-twentieth per year)",
+            "period": "year to 24 May 2025",
+            "ref": "16.1 Enghraifft 4",
+            "value": "£500 per year; total allowed £3,000"
+          },
+          {
+            "name": "Example 4: gain arising",
+            "period": "2025 to 2026",
+            "ref": "16.1 Enghraifft 4",
+            "value": "£700"
+          },
+          {
+            "name": "Example 5: partial surrender in year to 31 October 2025",
+            "period": "year to 31 October 2025",
+            "ref": "16.2 Enghraifft 5",
+            "value": "£1,500"
+          },
+          {
+            "name": "Example 5: prior years' partial surrenders",
+            "period": "years prior to 2025",
+            "ref": "16.2 Enghraifft 5",
+            "value": "£400 per year (4 years = £1,600)"
+          },
+          {
+            "name": "Example 5: total surrender value",
+            "period": "year to 31 October 2025",
+            "ref": "16.2 Enghraifft 5",
+            "value": "£3,100"
+          },
+          {
+            "name": "Example 5: single premium",
+            "period": "policy from 1 November 2020",
+            "ref": "16.2 Enghraifft 5",
+            "value": "£10,000"
+          },
+          {
+            "name": "Example 5: allowable payments",
+            "period": "n/a",
+            "ref": "16.2 Enghraifft 5",
+            "value": "£500 (current year) + £2,000 (4 prior years) = £2,500"
+          },
+          {
+            "name": "Example 5: gain arising",
+            "period": "2025 to 2026",
+            "ref": "16.2 Enghraifft 5",
+            "value": "£600"
+          },
+          {
+            "name": "PPB example: premium",
+            "period": "policy taken out 3 June 2022",
+            "ref": "17. Enghraifft o gyfrifo enillion PPB",
+            "value": "£100,000"
+          },
+          {
+            "name": "PPB gain year to 2 June 2023 (15% x £100,000)",
+            "period": "2023 to 2024",
+            "ref": "17. Enghraifft o gyfrifo enillion PPB",
+            "value": "£15,000"
+          },
+          {
+            "name": "PPB partial surrender gain year to 2 June 2024",
+            "period": "2024 to 2025",
+            "ref": "17. Enghraifft o gyfrifo enillion PPB",
+            "value": "£30,000"
+          },
+          {
+            "name": "PPB gain year to 2 June 2024 (15% x (£100,000+£15,000-£0))",
+            "period": "2024 to 2025",
+            "ref": "17. Enghraifft o gyfrifo enillion PPB",
+            "value": "£17,250"
+          },
+          {
+            "name": "PPB gain year to 2 June 2025 (15% x (£100,000+£15,000+£17,250-£30,000))",
+            "period": "2025 to 2026",
+            "ref": "17. Enghraifft o gyfrifo enillion PPB",
+            "value": "£15,337.50 (also stated as £15,377.50 later in text)"
+          }
+        ],
+        "caveats": [
+          "Figures appear inconsistent within the PPB example: the calculated gain is stated as £15,337.50 but the following sentence refers to £15,377.50 being payable — likely a typographical inconsistency in the source.",
+          "This is a Welsh-language version of HS320 examples; underlying rules (5% cumulative allowance, PPB 15% deemed gain) are set by chargeable event gains legislation not detailed in this chunk."
+        ],
+        "cross_references": [
+          "Insurance Policyholder Taxation Manual IPTM3270",
+          "HMRC Self Assessment contact/Welsh language helplines"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This Welsh-language chunk (HS320, examples 4 and 5) illustrates calculation of gains on partial surrenders of UK life insurance policies using the 5% annual allowance mechanism, showing how excess over allowable payments is taxed in the year of surrender. It also gives a worked example of calculating gains on a Personal Portfolio Bond (PPB) over three insurance years, applying a 15% deemed gain formula adjusted for prior gains and surrenders. The section closes by directing readers to HMRC's Insurance Policyholder Taxation Manual (IPTM3270) and to contact HMRC for Self Assessment advice.",
+        "topics": [
+          "life-insurance-gains",
+          "chargeable-event-gains",
+          "partial-surrender",
+          "personal-portfolio-bonds",
+          "worked-examples"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "d3789d5e3914020c": {
+      "chars": 10979,
+      "heading": "Gains on UK life insurance policies (Self Assessment helpsheet HS320)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Qualifying policy premium limit",
+            "period": "n/a",
+            "ref": "HS320 section 1.1",
+            "value": "£3,600"
+          }
+        ],
+        "caveats": [
+          "These notes cover the most common circumstances only; more complex cases or purchased life annuities/capital redemption policies require reference to IPTM guidance.",
+          "Tax treated as paid at basic rate is not repayable in any circumstances.",
+          "A policy made before 20 March 1968 and not changed afterwards will not give rise to a gain, but if changed after that date it may be treated as made after that date.",
+          "Absence of a certificate does not necessarily mean no gain arose - certificates may have gone to trustees, nominees, lenders, or an old address, or the insurer may be unaware of the triggering event."
+        ],
+        "cross_references": [
+          "Insurance Policyholder Taxation Manual (IPTM)",
+          "IPTM2090",
+          "IPTM3410 to IPTM3430",
+          "Helpsheet 262 Income and benefits from transfers of assets abroad and income from non-resident trusts"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Gains taxable as income arising from UK life insurance policies (not capital gains), on which basic rate tax may be treated as paid, non-repayable in any circumstances",
+            "ref": "HS320 introduction",
+            "term": "Chargeable event gains"
+          },
+          {
+            "meaning": "Generally a policy with a minimum term of 10 years, fairly even premiums at regular intervals, and (if taken out on/after 21 March 2012 or varied after that date) premiums payable by any beneficiary for all such policies must be less than £3,600 per year",
+            "ref": "HS320 section 1.1",
+            "term": "Qualifying policy"
+          },
+          {
+            "meaning": "All policies that are not qualifying policies, often single premium life insurance policies",
+            "ref": "HS320 section 1.2",
+            "term": "Non-qualifying policy"
+          },
+          {
+            "meaning": "A policy allowing the policyholder or connected person to select the property by which the policy is valued, subject to certain permitted property exclusions; gives rise to an annual gain",
+            "ref": "HS320 section 1.3",
+            "term": "Personal Portfolio Bond (PPB)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "issue a chargeable event certificate if they know a gain has been made",
+            "ref": "HS320 Part 1, section 3",
+            "trigger": "a chargeable event gain occurring on a life insurance policy",
+            "who": "UK insurers"
+          },
+          {
+            "deadline": "n/a",
+            "must": "report a chargeable event gain",
+            "ref": "HS320 Part 2, section 6",
+            "trigger": "a chargeable event gain has arisen, even if no certificate was received",
+            "who": "Individual/trustee/personal representative liable to tax"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS320 explains how chargeable event gains on UK life insurance policies arise and who is liable to tax on them, distinguishing qualifying and non-qualifying policies and personal portfolio bonds. It sets out the events that trigger a gain (surrender, maturity, death, sale/assignment, PPB status), the role of insurer chargeable event certificates, and situations where a gain arises despite no certificate being received. It also details who bears the tax liability: individuals as beneficial owners, security holders, or settlors, UK resident trustees in specified circumstances, and personal representatives.",
+        "topics": [
+          "life-insurance-gains",
+          "chargeable-event-gains",
+          "income-tax-on-savings",
+          "trusts",
+          "personal-representatives",
+          "reporting-requirements"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "e22fa8bc225b5705": {
+      "chars": 11637,
+      "heading": "Gains on UK life insurance policies (Self Assessment helpsheet HS320) > HS320 Enillion ar bolisïau yswiriant bywyd yn y DU (2026)",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Uchafswm premiwm blynyddol ar gyfer polisi cymhwysol (o 21 Mawrth 2012 ymlaen, neu os amrywiwyd wedi hynny)",
+            "period": "n/a",
+            "ref": "Rhan 1, adran 1.1",
+            "value": "£3,600 y flwyddyn"
+          }
+        ],
+        "caveats": [
+          "Nodiadau'r daflen gymorth hon yn gyffredinol yn berthnasol i unigolion, ymddiriedolwyr a chynrychiolwyr personol, oni nodir fel arall.",
+          "Nid yw treth sylfaenol a drinir fel pe bai wedi'i thalu yn ad-daladwy o dan unrhyw amgylchiadau.",
+          "Polisïau a wnaed cyn 20 Mawrth 1968 heb newid wedyn - dim ennill fel arfer; os newidiwyd wedyn gellir eu trin fel pe baent wedi'u gwneud ar ôl y dyddiad hwnnw.",
+          "Terfyn premiwm £3,600 dim ond yn berthnasol i bolisïau a drefnwyd ar/ar ôl 21 Mawrth 2012, neu bolisïau cynharach a amrywiwyd wedi hynny.",
+          "Mae'r cwmpas cyffredinol yn eithrio blwydd-daliadau bywyd a brynwyd a pholisïau adbrynu cyfalaf, sy'n cael eu cyfeirio at IPTM."
+        ],
+        "cross_references": [
+          "Llawlyfr Trethiant Deiliaid Polisïau Yswiriant (IPTM)",
+          "IPTM2090",
+          "IPTM3410 i IPTM3430",
+          "Taflen Gymorth 262 (HS262) Incwm a buddiannau o drosglwyddo asedion dramor ac incwm o ymddiriedolaethau nad ydynt yn breswyl yn y DU"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Enillion ar ddigwyddiad trethadwy, trethadwy fel incwm; nid yw'n ennill cyfalaf felly ni ellir defnyddio colledion cyfalaf na'r swm eithriedig blynyddol yn ei erbyn.",
+            "ref": "Rhagymadrodd",
+            "term": "Enillion (gain)"
+          },
+          {
+            "meaning": "Fel arfer polisi 10 mlynedd neu fwy gyda phremiymau gweddol gyfartal yn daladwy'n rheolaidd; ar/ar ôl 21 Mawrth 2012 (neu os amrywiwyd wedyn) rhaid i bremiymau blynyddol pob buddiolwr fod yn llai na £3,600.",
+            "ref": "Rhan 1, adran 1.1",
+            "term": "Polisi cymhwysol (qualifying policy)"
+          },
+          {
+            "meaning": "Pob polisi nad yw'n bolisi cymhwysol, yn aml polisïau premiwm sengl.",
+            "ref": "Rhan 1, adran 1.2",
+            "term": "Polisi anghymhwysol (non-qualifying policy)"
+          },
+          {
+            "meaning": "Polisi sy'n caniatáu i ddeiliad y polisi neu berson cysylltiedig ddewis yr eiddo y prisir y polisi yn ei erbyn (heblaw rhestr gyfyngedig o eiddo caniataol); mae PPBau'n arwain at enillion blynyddol.",
+            "ref": "Rhan 1, adran 1.3",
+            "term": "Bond Portffolio Personol (PPB)"
+          },
+          {
+            "meaning": "Person sydd fel arfer wedi talu'r premiymau ac sydd â hawl i fuddiannau'r polisi, neu sydd â hawl gyfan gwbl i gael budd, e.e. buddiolwr ymddiriedolaeth wag.",
+            "ref": "Rhan 2, adran 5.1",
+            "term": "Perchennog llesiannol (beneficial owner)"
+          },
+          {
+            "meaning": "Person sydd wedi creu neu ychwanegu eiddo at ymddiriedolaeth sy'n dal y polisi; caiff enillion eu trin fel ei incwm ef/hi p'un a oes hawl i fudd o dan yr ymddiriedolaeth ai peidio (oni bai ymddiriedolaeth wag/ganlyniadol).",
+            "ref": "Rhan 2, adran 5.1",
+            "term": "Setlwr (settlor)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "provide a chargeable event certificate if they know a gain has been made on a life insurance policy",
+            "ref": "Rhan 1, adran 3",
+            "trigger": "knowledge that a gain has arisen on a policy",
+            "who": "UK insurers"
+          },
+          {
+            "deadline": "n/a",
+            "must": "report a gain even if no certificate was received, where circumstances suggest a gain may have arisen (e.g. certificate sent to wrong address, held by nominee/trustee, insurer unaware of event)",
+            "ref": "Rhan 1, adran 4",
+            "trigger": "one of the listed circumstances applies (certificate misdirected, held in trust/nominee/security, insurer unaware of death/sale)",
+            "who": "Policyholder/individual liable to tax"
+          },
+          {
+            "deadline": "n/a",
+            "must": "may reclaim from trustees any tax paid on the gain",
+            "ref": "Rhan 2, adran 5.1",
+            "trigger": "gain treated as settlor's income under trust rules",
+            "who": "Settlor liable on trust gains"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This Welsh-language chunk of HS320 explains how chargeable event gains on UK life insurance policies arise, distinguishing qualifying from non-qualifying policies and personal portfolio bonds (PPBs). It lists the events that trigger a gain (full/partial surrender, maturity, death, sale/assignment for value, PPB status), circumstances where no gain arises, and explains when chargeable event certificates should be issued and what to do if one is not received despite a gain having occurred. It also sets out who is liable to tax on the gain (individual beneficial owner, security holder, settlor) and when UK-resident trustees are instead taxable.",
+        "topics": [
+          "life-insurance-gains",
+          "chargeable-events",
+          "qualifying-policies",
+          "personal-portfolio-bonds",
+          "trusts",
+          "hs320"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "f12852b506d41958": {
+      "chars": 11503,
+      "heading": "Gains on UK life insurance policies (Self Assessment helpsheet HS320) > Rhan 3 — Swm yr enillion > 10\\. Rhyddhadau Treth > 10\\.1 Rhyddhad Haenen Uchaf (TSR)",
+      "index": 5,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Example 1 - gain on maturity/full surrender",
+            "period": "n/a",
+            "ref": "HS320 s.15.1",
+            "value": "£6,000 (TB £10,000 - TD £4,000)"
+          },
+          {
+            "name": "Example 2 - gain on death",
+            "period": "n/a",
+            "ref": "HS320 s.15.2",
+            "value": "£4,000 (TB £8,000 - TD £4,000)"
+          },
+          {
+            "name": "Example 3 - gain on sale",
+            "period": "n/a",
+            "ref": "HS320 s.15.3",
+            "value": "£5,000 (TB £10,000 - TD £5,000)"
+          },
+          {
+            "name": "Premium payment threshold for commission repayment guidance",
+            "period": "n/a",
+            "ref": "HS320 s.12.1 / IPTM3527, IPTM3528",
+            "value": "£100,000 per year"
+          },
+          {
+            "name": "PPB gain formula",
+            "period": "n/a",
+            "ref": "HS320 s.14",
+            "value": "15% x (A + B - C)"
+          },
+          {
+            "name": "Part surrender annual tax-deferred allowance",
+            "period": "n/a",
+            "ref": "HS320 s.13",
+            "value": "5% of premiums paid (max 100% over 20 consecutive years)"
+          }
+        ],
+        "caveats": [
+          "This section does not apply to trustees or personal representatives claiming on behalf of a deceased person taxable on the gains - they have no entitlement to TSR.",
+          "Deficiency relief is only available to individuals, not trustees or personal representatives.",
+          "TSR calculation is described as potentially complex; full details are not given in this helpsheet and readers are directed to IPTM3820.",
+          "Where multiple reliefs apply (RRQP, time-apportionment reduction, TSR), a specific calculation order must be followed: Restricted Relief Qualifying Policy first, then time-apportionment reduction, then top slicing relief.",
+          "No PPB gain arises in the final insurance year.",
+          "Transfer of policy ownership between spouses/civil partners living together does not give rise to a gain, unlike transfers between other connected persons (e.g., siblings) which use market value."
+        ],
+        "cross_references": [
+          "IPTM3820 - Insurance Policyholder Taxation Manual (TSR calculation detail)",
+          "IPTM3860 - Insurance Policyholder Taxation Manual (deficiency relief calculation)",
+          "IPTM3596 - Insurance Policyholder Taxation Manual (wholly disproportionate gains claims)",
+          "IPTM7535 - Insurance Policyholder Taxation Manual (related policies)",
+          "IPTM3527, IPTM3528 - Insurance Policyholder Taxation Manual (commission repayment on premiums over £100,000)",
+          "HS320 section 9.3 (time-apportionment reduction, non-UK residence)",
+          "HS320 section 13 (part surrenders/assignments calculation)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Relief given as a reduction in tax (not a reduction in the gain itself) available where adding the gain to other income pushes the taxpayer into a higher/additional rate band when otherwise paying basic or higher rate on other income; requires knowledge of the number of complete years from the chargeable event certificate, reduced for time-apportionment where claimed",
+            "ref": "HS320 s.10.1",
+            "term": "TSR (Top Slicing Relief)"
+          },
+          {
+            "meaning": "Relief available only to individuals (not trustees or personal representatives) where a final chargeable event (full surrender, final profit share, death, maturity, or capital sum in lieu of annuity) produces a negative result that includes a deduction for earlier gains (other than PPB gains) that formed part of the policyholder's income, and the individual has income taxable at a 'relevant rate' (higher rate, default higher rate, higher rate for savings, Welsh/Scottish higher rate, or Scottish top rate) in the tax year of the deficiency; reduces tax due on other income at the relevant rate but not additional rate tax",
+            "ref": "HS320 s.10.3",
+            "term": "Deficiency relief"
+          },
+          {
+            "meaning": "A negative calculation result on a policy where no earlier gains have been made; no relief is available and cannot be set against gains on another policy or other income; no return entries required",
+            "ref": "HS320 s.10.2",
+            "term": "Loss on a policy"
+          },
+          {
+            "meaning": "Gains arising on part surrender/part assignment that are disproportionate to the underlying economic gain, typically arising early in a policy's life where policyholders withdraw cash well in excess of the 5% tax-deferred allowance",
+            "ref": "HS320 s.11",
+            "term": "Wholly disproportionate gains"
+          },
+          {
+            "meaning": "Generally the value received on maturity/full surrender plus value of any amounts received previously under the policy, excluding earlier disability or critical illness benefits; varies by event type (surrender value before death, sale price on sale, etc.)",
+            "ref": "HS320 s.12.1",
+            "term": "TB (Total Benefits)"
+          },
+          {
+            "meaning": "Generally all amounts paid as premiums under the policy",
+            "ref": "HS320 s.12.1",
+            "term": "TD (Total Deductions)"
+          },
+          {
+            "meaning": "All gains that were someone's income for tax purposes in a tax year before the year the policy matured or was fully surrendered",
+            "ref": "HS320 s.12.1",
+            "term": "PG (Previous Gains)"
+          },
+          {
+            "meaning": "Gain on a Personal Portfolio Bond calculated as 15% of (A + B - C), where A is premiums paid to date, B is cumulative prior PPB gains, and C is cumulative prior part-surrender gains; no PPB gain arises in the final insurance year",
+            "ref": "HS320 s.14",
+            "term": "PPB gain"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Report the full amount of the gain on the Self Assessment Tax Return (not reduced for TSR)",
+            "ref": "HS320 s.10.1",
+            "trigger": "Top Slicing Relief claimed",
+            "who": "Individual taxpayer reporting a chargeable event gain"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Apply to HMRC to have the gain recalculated on a just and reasonable basis",
+            "ref": "HS320 s.11 / IPTM3596",
+            "trigger": "Gain considered wholly disproportionate to underlying economic gain",
+            "who": "Taxpayer with a wholly disproportionate gain following a part surrender or part assignment"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk (Welsh-language HS320 helpsheet) explains Top Slicing Relief (TSR) eligibility and calculation order relative to Qualifying Policy relief and time-apportionment reduction, then covers losses on policies (no relief available), deficiency relief conditions and effect, and claims for wholly disproportionate gains on part surrenders/assignments. It then details the different calculation methods for gains on maturity/full surrender, death, sale/assignment, part surrenders/assignments, and PPB (personal portfolio bond) gains, using the formula Total Benefits (TB) minus (Total Deductions (TD) plus Previous Gains (PG)), with worked numerical examples.",
+        "topics": [
+          "life-insurance-gains",
+          "top-slicing-relief",
+          "deficiency-relief",
+          "wholly-disproportionate-gains",
+          "gain-calculation-methods",
+          "chargeable-events"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/gains-on-uk-life-insurance-policies-self-assessment-helpsheet-hs320.md",
+  "source_id": "sa-helpsheets:5f67dcd2-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/gains-on-uk-life-insurance-policies-hs320-self-assessment-helpsheet"
+}

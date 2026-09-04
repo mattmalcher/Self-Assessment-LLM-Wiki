@@ -1,0 +1,99 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "96daf0b6095c65fa": {
+      "chars": 8344,
+      "heading": "Limit on Income Tax reliefs (Self Assessment helpsheet HS204)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Limit on Income Tax reliefs",
+            "period": "2025 to 2026 and later years (originally from 6 April 2013)",
+            "ref": "HS204 Section 1.1",
+            "value": "£50,000, or 25% of adjusted total income if higher"
+          },
+          {
+            "name": "Adjusted total income threshold for needing to calculate the limit",
+            "period": "n/a",
+            "ref": "HS204 Section 3.1",
+            "value": "£200,000"
+          }
+        ],
+        "caveats": [
+          "This version (HS204 2026) explains the limit for 2025 to 2026 and later years; earlier years may have different specific box references.",
+          "Under Making Tax Digital for Income Tax, claims and adjustments will be made via software rather than the SA boxes listed, so the box references may not apply to all taxpayers going forward.",
+          "The limit does not affect trading losses used against capital gains, or losses used against profits of the same trade/property business, or EIS/SEIS share loss relief - these are excluded from the calculation.",
+          "Loan interest relief that cannot be given in full due to the limit cannot be carried forward as a trade loss, unlike certain other excess loan interest for partnership trades."
+        ],
+        "cross_references": [
+          "SA103S Self-employment (short) boxes 33 and 34",
+          "SA103F Self-employment (full) boxes 78 and 79",
+          "SA103L Lloyd's underwriters box 56",
+          "SA104S Partnership (short) boxes 22 and 23",
+          "SA104F Partnership (full) boxes 22 and 23 and box 39",
+          "SA105 UK property box 42",
+          "SA106 Foreign box 31",
+          "SA101 Additional information 'Other tax reliefs' boxes 5 and 6",
+          "SA108 Capital gains summary box 12, box 13, box 15",
+          "Working Sheet 1 (adjusted total income calculation)",
+          "Working Sheet 2 (loss allocation tracking)",
+          "Making Tax Digital for Income Tax guidance"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Figure calculated (via Working Sheet 1) used to determine 25% relief limit when total income exceeds £200,000",
+            "ref": "HS204 Section 3.1",
+            "term": "Adjusted total income"
+          },
+          {
+            "meaning": "Trade loss relief against general income and early trade losses relief, property loss relief (capital allowances/agricultural expenses), post-cessation trade/property relief, employment loss relief, former employees deduction for liabilities, losses on deeply discounted securities and strips of government securities, share loss relief (except EIS/SEIS), and qualifying loan interest",
+            "ref": "HS204 Section 2.1",
+            "term": "Limited reliefs"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Restrict aggregate relief claimed against total income to the greater of £50,000 or 25% of adjusted total income",
+            "ref": "HS204 Section 1.1",
+            "trigger": "Total relevant reliefs claimed against general income exceed £50,000 in a tax year",
+            "who": "Individual claiming trade loss relief, property loss relief, post-cessation reliefs, employment loss relief, losses on deeply discounted securities, share loss relief, or qualifying loan interest against general income"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Calculate adjusted total income using Working Sheet 1 to determine the revised limit",
+            "ref": "HS204 Section 3.1",
+            "trigger": "Total income exceeds £200,000",
+            "who": "Individual with total income over £200,000 claiming affected reliefs"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make claims and adjustments through compatible software instead of Self Assessment boxes",
+            "ref": "HS204 introduction",
+            "trigger": "Required to use Making Tax Digital for Income Tax",
+            "who": "Individual using Making Tax Digital for Income Tax with self-employment or property income"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS204 explains the cap on certain Income Tax reliefs (trade loss relief, property loss relief, post-cessation reliefs, employment loss relief, losses on deeply discounted securities, share loss relief, qualifying loan interest) that can be set against total income, applicable from 6 April 2013: the greater of £50,000 or 25% of adjusted total income. It identifies the specific SA return boxes affected (SA103S, SA103F, SA103L, SA104S, SA104F, SA105, SA106, SA101, SA108), gives worked examples of how the limit and ordering of relief claims operate, lists exceptions (e.g. losses against profits of the same trade/property business, EIS/SEIS share loss relief), and notes that adjusted total income only needs calculating if total income exceeds £200,000. It also flags that under Making Tax Digital for Income Tax, claims will be made through compatible software rather than SA return boxes.",
+        "topics": [
+          "limit-on-income-tax-reliefs",
+          "loss-relief",
+          "trade-loss-relief",
+          "property-loss-relief",
+          "qualifying-loan-interest",
+          "share-loss-relief",
+          "self-assessment-boxes"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/limit-on-income-tax-reliefs-self-assessment-helpsheet-hs204.md",
+  "source_id": "sa-helpsheets:5f67e282-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/limit-on-income-tax-reliefs-hs204-self-assessment-helpsheet"
+}

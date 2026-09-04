@@ -1,0 +1,55 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "a259c609fb64e0a2": {
+      "chars": 2323,
+      "heading": "Self Assessment: detailed information",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This chunk is purely a navigational index; substantive content resides in the linked documents, not here."
+        ],
+        "cross_references": [
+          "https://www.gov.uk/claim-tax-refund",
+          "https://www.gov.uk/check-if-you-need-tax-return",
+          "https://www.gov.uk/guidance/check-when-you-can-expect-a-reply-from-hmrc",
+          "https://www.gov.uk/tax-appeals",
+          "https://www.gov.uk/estimate-self-assessment-penalties",
+          "https://www.gov.uk/log-in-file-self-assessment-tax-return",
+          "https://www.gov.uk/government/collections/get-help-filling-in-your-self-assessment-tax-return",
+          "https://www.gov.uk/tax-help",
+          "https://www.gov.uk/sa302-tax-calculation",
+          "https://www.gov.uk/guidance/help-and-support-for-self-assessment",
+          "https://www.gov.uk/guidance/help-online-for-self-assessment",
+          "https://www.gov.uk/difficulties-paying-hmrc",
+          "https://www.gov.uk/keeping-your-pay-tax-records",
+          "https://www.gov.uk/pay-self-assessment-tax-bill",
+          "https://www.gov.uk/self-assessment-tax-returns",
+          "https://www.gov.uk/understand-self-assessment-bill",
+          "https://www.gov.uk/guidance/use-software-to-help-complete-your-self-assessment-tax-return"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This is an index page listing 17 GOV.UK guidance documents in the 'Self Assessment: detailed information' collection, covering topics such as checking whether a return is needed, filing online, paying tax bills, penalties, appeals, record-keeping, and getting help. It provides titles, last-updated dates, and links but no substantive guidance content itself.",
+        "topics": [
+          "index",
+          "collection-page",
+          "sa-overview",
+          "penalties",
+          "payment",
+          "filing",
+          "records"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/govuk-guidance.md",
+  "source_id": "govuk-sa-detailed-information",
+  "source_url": "https://www.gov.uk/government/collections/self-assessment-detailed-information"
+}

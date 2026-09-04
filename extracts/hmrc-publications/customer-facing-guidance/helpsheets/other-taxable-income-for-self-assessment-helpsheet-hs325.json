@@ -1,0 +1,90 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "ac45b658cdd6e7d5": {
+      "chars": 8338,
+      "heading": "Other taxable income for Self Assessment helpsheet (HS325)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Trading and miscellaneous income allowance",
+            "period": "from 6 April 2017",
+            "ref": "HS325 - Other taxable income",
+            "value": "£1,000"
+          },
+          {
+            "name": "Redundancy/termination payment exemption limit",
+            "period": "n/a",
+            "ref": "HS325 - Other payments in boxes 3 to 10",
+            "value": "£30,000"
+          }
+        ],
+        "caveats": [
+          "Losses on 'other income' can only be used against income of the same type, and expenses claimed under the trading income allowance cannot generate a loss.",
+          "Under Making Tax Digital for Income Tax, claims and adjustments for self-employment and property income are made through compatible software rather than the SA boxes described here.",
+          "Detailed conditions apply to third-party arrangement income taxable under box 3; taxpayer advised to seek tax adviser input.",
+          "Examples given (e.g. £10,000 redundancy, £40,000 redundancy with £1,000 PENP) are illustrative only; more complex cases require use of Working Sheet 2 or professional advice."
+        ],
+        "cross_references": [
+          "Guidance: use Making Tax Digital for Income Tax",
+          "How to complete your Self Assessment tax return",
+          "Self Assessment additional information pages (SA101)",
+          "Tax-free allowances on property and trading income guidance",
+          "Business Income Manual BIM100110 (receipts of casual earnings)",
+          "Working sheet 1 (other taxable income)",
+          "Working sheet 2 (employment lump sums)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A scheme providing benefits which include retirement and death benefits, usually set up by an employer but not registered by HMRC",
+            "ref": "HS325 - Other payments in boxes 3 to 10",
+            "term": "Employer-financed retirement benefits scheme"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Report other taxable income in boxes 17 and 18 of 'Other UK income' section, page TR 3",
+            "ref": "HS325 - Other taxable income",
+            "trigger": "Receipt of miscellaneous/casual income not otherwise reported",
+            "who": "Taxpayer with other taxable income (e.g. casual earnings, commission, freelance income)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete boxes 3 to 10 of 'Employment lump sums, compensation and deductions' section, page Ai 2",
+            "ref": "HS325 - Employment lump sums section",
+            "trigger": "Receipt of large cash payments/benefits from employer or former employer",
+            "who": "Taxpayer receiving employment lump sums, termination payments or post-employment income"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Use compatible software to create digital records and send quarterly updates for self-employment and property income instead of using referenced SA boxes",
+            "ref": "HS325 - introductory MTD note",
+            "trigger": "Being required to use MTD for Income Tax",
+            "who": "Taxpayer using Making Tax Digital for Income Tax"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS325 explains how to work out figures for the 'other UK income' and 'additional information' sections of the SA tax return, covering miscellaneous/casual income, the £1,000 trading/miscellaneous income allowance, loss relief rules for other income, and employment lump sums including redundancy payments and post-employment notice pay. It provides worked examples for boxes 3-10 on redundancy payments against the £30,000 exemption and directs users to working sheets 1 and 2. It also notes that under Making Tax Digital for Income Tax, self-employment and property income will be handled via quarterly digital updates instead of these SA boxes.",
+        "topics": [
+          "other-taxable-income",
+          "miscellaneous-income",
+          "trading-income-allowance",
+          "losses",
+          "employment-lump-sums",
+          "termination-payments",
+          "post-employment-notice-pay",
+          "making-tax-digital"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/other-taxable-income-for-self-assessment-helpsheet-hs325.md",
+  "source_id": "sa-helpsheets:5f67dbe3-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/other-taxable-income-hs325-self-assessment-helpsheet"
+}

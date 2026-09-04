@@ -16,16 +16,16 @@ corpus/*.md  --[extract]-->  extracts/*.json  --[compose]-->  docs/*.md
 ## Quick start
 
 ```bash
-uv run python -m self_assessment_wiki.synth.build status              # what's stale — costs nothing
-uv run python -m self_assessment_wiki.synth.build extract --limit 20  # try 20 chunks first
-uv run python -m self_assessment_wiki.synth.build compose --only who-must-file
+uv run status              # what's stale — costs nothing
+uv run extract --limit 20  # try 20 chunks first
+uv run compose --only who-must-file
 ```
 
 Then the full run:
 
 ```bash
-uv run python -m self_assessment_wiki.synth.build all
-uv run python -m self_assessment_wiki.synth.report                    # refresh docs/meta/wiki-status.md
+uv run synth all
+uv run report   # refresh docs/meta/wiki-status.md
 ```
 
 ## Backends

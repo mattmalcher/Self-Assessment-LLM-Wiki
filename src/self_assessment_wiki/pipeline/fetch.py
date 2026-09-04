@@ -6,9 +6,9 @@ This is stage 1 of three: it mirrors sources deterministically. Stages 2 and
 3 (synth/) read corpus/ and write the wiki in docs/.
 
 Usage:
-    python -m self_assessment_wiki.pipeline.fetch                 # fetch everything due
-    python -m self_assessment_wiki.pipeline.fetch --only itepa-2003 tma-1970
-    python -m self_assessment_wiki.pipeline.fetch --dry-run        # resolve URLs, fetch nothing
+    uv run fetch                 # fetch everything due
+    uv run fetch --only itepa-2003 tma-1970
+    uv run fetch --dry-run   # resolve URLs, fetch nothing
 """
 from __future__ import annotations
 

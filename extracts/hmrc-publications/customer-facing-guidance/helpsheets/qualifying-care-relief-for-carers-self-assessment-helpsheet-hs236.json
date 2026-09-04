@@ -1,0 +1,134 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "1b96c1708aa53eb7": {
+      "chars": 8030,
+      "heading": "Qualifying care relief for carers (Self Assessment helpsheet HS236)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Fixed amount (qualifying amount, per household, full year)",
+            "period": "n/a",
+            "ref": "HS236 s.2",
+            "value": "£19,690"
+          },
+          {
+            "name": "Weekly amount - children under 11",
+            "period": "n/a",
+            "ref": "HS236 s.2",
+            "value": "£415"
+          },
+          {
+            "name": "Weekly amount - children aged 11 or over",
+            "period": "n/a",
+            "ref": "HS236 s.2",
+            "value": "£495"
+          },
+          {
+            "name": "Weekly amount - each adult",
+            "period": "n/a",
+            "ref": "HS236 s.2",
+            "value": "£495"
+          }
+        ],
+        "caveats": [
+          "This is the 2026 version of HS236; figures (£19,690, £415, £495) apply for the relevant tax year and should not be assumed to apply to other years.",
+          "Private arrangements with friends or relatives do not qualify for the relief.",
+          "Supported lodging schemes only qualify unless the relationship is more akin to landlord and tenant than family members.",
+          "Carers cannot claim expenses or capital allowances if using qualifying care relief (simplified method or under qualifying amount); the profit method forgoes qualifying care relief entirely.",
+          "Qualifying care receipt customers are stated as exempt from Making Tax Digital for Income Tax specifically for tax year 2026 to 2027, implying this may not extend to other years without further confirmation."
+        ],
+        "cross_references": [
+          "Helpsheet 252 Capital allowances and balancing charges",
+          "Self Assessment: self-employment (short) (SA103S)",
+          "Self Assessment: Tax Return (SA100)",
+          "Self Assessment: self-employment (full) (SA103F)",
+          "Helpsheet HS222 How to calculate your taxable profits",
+          "Changes to reporting income from self employment and partnerships guidance",
+          "Check if you're eligible for Making Tax Digital for Income Tax guidance",
+          "Rent a Room Scheme"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A relief allowing carers who look after children or adults placed with them by a local authority, health and social care trust, fostering service provider or Shared Lives service provider to receive certain payments (qualifying amounts) tax-free",
+            "ref": "HS236 introduction",
+            "term": "Qualifying care relief"
+          },
+          {
+            "meaning": "The sum of a fixed household amount for a full year plus a weekly amount for each cared-for child or adult, used to determine how much care income is tax-free",
+            "ref": "HS236 s.2",
+            "term": "Qualifying amount"
+          },
+          {
+            "meaning": "Method where a carer pays tax on the difference between qualifying care receipts and the qualifying amount, retaining entitlement to qualifying care relief",
+            "ref": "HS236 s.3.2, s.3.4",
+            "term": "Simplified method"
+          },
+          {
+            "meaning": "Method where a carer pays tax on total care receipts less expenses and capital allowances, forgoing qualifying care relief",
+            "ref": "HS236 s.3.2, s.3.3",
+            "term": "Profit method"
+          },
+          {
+            "meaning": "Where a young person who was fostered continues to receive care after their 18th birthday",
+            "ref": "HS236 s.1",
+            "term": "Staying put care"
+          },
+          {
+            "meaning": "Arrangements where the parent is aged 18 or over and the child is not a 'looked after child'",
+            "ref": "HS236 s.1",
+            "term": "Parent and child arrangements"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Fill in a tax return and claim qualifying care relief on the 'self-employment (short)' pages",
+            "ref": "HS236 s.3.1",
+            "trigger": "Receiving qualifying care payments below the qualifying amount",
+            "who": "Carer whose total care payments are less than the qualifying amount"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Fill in a tax return and include receipts and expenses on the 'self-employment (full)' pages; cannot claim qualifying care relief",
+            "ref": "HS236 s.3.3",
+            "trigger": "Choosing profit method because expenses/capital allowances exceed qualifying amount",
+            "who": "Carer using the profit method"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Fill in a tax return, claim qualifying care relief, and include total receipts and qualifying amount on the 'self-employment (short)' pages",
+            "ref": "HS236 s.3.4",
+            "trigger": "Total care receipts exceed qualifying amount, choosing simplified method",
+            "who": "Carer using the simplified method"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Apportion receipts to calculate total receipts for the tax year",
+            "ref": "HS236 s.4",
+            "trigger": "Annual accounting date not on or between 31 March and 5 April",
+            "who": "Carer with accounting date not matching the tax year"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS236 explains qualifying care relief for foster carers, adult placement carers, kinship carers, staying put carers and similar arrangements, allowing certain care payments to be received tax-free. It sets out the qualifying amount (a fixed household amount plus weekly per-child/adult amounts), how to apportion it for partial years or multiple carers, and how carers report income depending on whether receipts are below or above the qualifying amount (using the simplified or profit method). It also notes qualifying care recipients are exempt from Making Tax Digital for Income Tax in 2026 to 2027 and directs carers to relevant SA103S/SA103F pages.",
+        "topics": [
+          "qualifying-care-relief",
+          "foster-carers",
+          "self-employment-pages",
+          "income-calculation",
+          "reliefs",
+          "record-keeping"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/qualifying-care-relief-for-carers-self-assessment-helpsheet-hs236.md",
+  "source_id": "sa-helpsheets:5f67cd23-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/qualifying-care-relief-foster-carers-adult-placement-carers-kinship-carers-and-staying-put-carers-hs236-self-assessment-helpsheet"
+}

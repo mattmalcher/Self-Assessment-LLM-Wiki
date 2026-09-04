@@ -1,4 +1,4 @@
-# Written by `python -m self_assessment_wiki.synth.report` - do not hand-edit.
+# Written by `uv run report` - do not hand-edit.
 title: The Self Assessment lifecycle
 nav:
   - who-must-file.md

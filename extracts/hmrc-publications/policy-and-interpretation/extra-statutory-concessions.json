@@ -1,0 +1,38 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation",
+  "chunks": {
+    "3c3dcd6894443bfe": {
+      "chars": 988,
+      "heading": "Extra-Statutory Concessions guidance and notices",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This chunk is a navigation/index list, not substantive guidance; specific ESC content relevant to Self Assessment would be in the linked documents, not here.",
+          "Some listed concessions (BIM 66301, ESC A94) have been withdrawn, so their prior effect may no longer apply."
+        ],
+        "cross_references": [
+          "VAT Notice 48: Extra Statutory Concessions",
+          "Extra-Statutory Concessions: ex-Inland Revenue",
+          "Withdrawal and grandfathering of Extra-Statutory Concession BIM 66301: Sub-postmasters",
+          "Withdrawal of Extra-Statutory Concession (ESC) A94: Theatre Angels"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is an index page listing four GOV.UK documents in the Extra-Statutory Concessions collection: the VAT Notice 48 on Extra Statutory Concessions, a general ex-Inland Revenue ESC publication, and two withdrawal notices for specific concessions (BIM 66301 Sub-postmasters and ESC A94 Theatre Angels). It provides titles, upstream update dates, and links but no substantive concession content itself.",
+        "topics": [
+          "extra-statutory-concessions",
+          "document-index"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/extra-statutory-concessions.md",
+  "source_id": "hmrc-escs",
+  "source_url": "https://www.gov.uk/government/collections/extra-statutory-concessions"
+}

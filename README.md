@@ -82,19 +82,19 @@ uv sync                                     # base deps only
 uv run mkdocs serve                         # http://127.0.0.1:8000
 
 # stage 1 — no API access needed
-uv run python -m self_assessment_wiki.pipeline.fetch --dry-run          # check the registry resolves
-uv run python -m self_assessment_wiki.pipeline.fetch --only <source-id> # fetch one source
-uv run python -m self_assessment_wiki.pipeline.fetch                    # fetch everything due
+uv run fetch --dry-run          # check the registry resolves
+uv run fetch --only <source-id> # fetch one source
+uv run fetch                    # fetch everything due
 
 # stages 2-3 — needs a Claude/OpenAI subscription or API key
-uv run python -m self_assessment_wiki.synth.build status                # what's stale; costs nothing
-uv run python -m self_assessment_wiki.synth.build extract --limit 20     # try 20 chunks first
-uv run python -m self_assessment_wiki.synth.build compose --only who-must-file
-uv run python -m self_assessment_wiki.synth.build all                    # the full run
-uv run python -m self_assessment_wiki.synth.report                       # refresh docs/meta/wiki-status.md
+uv run status                       # what's stale; costs nothing
+uv run extract --limit 20           # try 20 chunks first
+uv run compose --only who-must-file
+uv run synth all                    # the full run
+uv run report                       # refresh docs/meta/wiki-status.md
 ```
 
-`synth.build` defaults to `--backend claude-cli` (the `claude` CLI, so your
+`synth` defaults to `--backend claude-cli` (the `claude` CLI, so your
 Claude Code subscription, no API key). `--backend codex-cli` uses `codex exec`;
 `--backend anthropic` / `--backend openai` use `ANTHROPIC_API_KEY` /
 `OPENAI_API_KEY` and need the `synth` extra: `uv sync --extra synth`.

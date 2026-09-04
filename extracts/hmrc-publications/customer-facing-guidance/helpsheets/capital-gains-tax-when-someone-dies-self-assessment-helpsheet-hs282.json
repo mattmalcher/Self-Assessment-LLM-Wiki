@@ -1,0 +1,228 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "3b1b058a38e835d7": {
+      "chars": 10624,
+      "heading": "Capital Gains Tax when someone dies (Self Assessment helpsheet HS282) > 7\\. Calculating gains and losses",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Annual Exempt Amount (AEA) for personal representatives",
+            "period": "period of death and 2 subsequent tax years",
+            "ref": "HS282 section 8",
+            "value": "full amount of the AEA available in period from death to following 5 April, and in the following 2 tax years (one AEA per year); no AEA in later years"
+          },
+          {
+            "name": "CGT rate for personal representatives (and trustees)",
+            "period": "disposals on or after 30 October 2024",
+            "ref": "HS282 section 9",
+            "value": "24%"
+          },
+          {
+            "name": "Example 3 share valuation - full holding",
+            "period": "date of death, 31 December 2025",
+            "ref": "HS282 section 13.1",
+            "value": "600 shares valued at £60,000 (£100/share)"
+          },
+          {
+            "name": "Example 3 share valuation - 20% holding",
+            "period": "date of death, 31 December 2025",
+            "ref": "HS282 section 13.1",
+            "value": "200 shares valued at £2,000 (£10/share)"
+          },
+          {
+            "name": "Example 3 legatee acquisition cost",
+            "period": "n/a",
+            "ref": "HS282 section 13.1",
+            "value": "£20,000 (1/3 of £60,000)"
+          }
+        ],
+        "caveats": [
+          "For disposals before 30 October 2024, a different (earlier) helpsheet's rates apply - not covered in this chunk",
+          "Values are not treated as 'ascertained' for IHT/CGT matching purposes if the estate is fully spouse/civil partner exempt, well below the IHT threshold, or the asset qualifies for 100% IHT relief",
+          "Unused nil-rate band transfers between spouses can mean a first-death valuation is not 'ascertained' even years later, regardless of interval between deaths",
+          "Deed of variation CGT treatment only applies if all listed conditions are met; if not met, variations may trigger CGT disposals - described as a complex area warranting professional advice",
+          "Trust settlor treatment on deed of variation depends on execution date (post 5 April 2006 rule noted) and whether it replaces an absolute gift or another trust in the will"
+        ],
+        "cross_references": [
+          "Statement of Practice SP02/04",
+          "Section 62(6) Taxation of Chargeable Gains Act 1992",
+          "Inheritance (Provision for Family and Dependants) Act 1975, section 2",
+          "Checklist form IOV2 - Inheritance Tax Instrument of Variation Checklist",
+          "Inheritance Tax Manual (Valuation Office Agency)",
+          "Dealing with the estate of someone who's died (gov.uk/probate-estate)",
+          "Self Assessment: general enquiries contact page",
+          "Inheritance Tax: General enquiries helpline",
+          "HS282 Example 1 (referenced but not in this chunk)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Legatees/beneficiaries varying entitlement under will or intestacy for CGT purposes",
+            "name": "Deed of variation time limit",
+            "ref": "HS282 section 14",
+            "rule": "instrument in writing made within 2 years of the deceased's death"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A value for an asset that has been determined for Inheritance Tax purposes on the estate of the deceased at death; must be used as CGT acquisition cost if the value is needed for both taxes",
+            "ref": "HS282 section 13",
+            "term": "Ascertained value"
+          },
+          {
+            "meaning": "The point at which administration of the estate is usually considered complete, after which assets pass to legatees",
+            "ref": "HS282 section 11",
+            "term": "Residue"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Use market value at date of death as acquisition cost for estate assets",
+            "ref": "HS282 section 7",
+            "trigger": "Death of the deceased",
+            "who": "Personal representatives"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Use actual cost/value for assets acquired during administration",
+            "ref": "HS282 section 7",
+            "trigger": "Acquisition of asset during estate administration",
+            "who": "Personal representatives"
+          },
+          {
+            "deadline": "within 2 years of the deceased's death",
+            "must": "Ensure instrument made within 2 years of death, all relevant parties are party to it, no consideration other than disclaimer/variation, and statement that section 62(6) TCGA 1992 is to apply",
+            "ref": "HS282 section 14",
+            "trigger": "Wish to vary distribution of estate for CGT purposes",
+            "who": "Personal representatives/legatees seeking deed of variation treatment"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk explains CGT rules for personal representatives and legatees administering a deceased person's estate: assets are rebased to market value at date of death, personal representatives get a full AEA for up to 3 tax years, and the CGT rate for personal representatives (and trustees) is 24% for disposals on or after 30 October 2024. It covers deductible administration expenses (including HMRC's SP02/04 scale), how assets transfer CGT-free to legatees at death value, valuation rules where IHT and CGT values must match ('ascertained' values), and conditions for deeds of variation to be read back into the will for CGT purposes under TCGA 1992 s.62(6).",
+        "topics": [
+          "capital-gains-tax",
+          "death-estates",
+          "personal-representatives",
+          "legatees",
+          "annual-exempt-amount",
+          "deed-of-variation",
+          "inheritance-tax-interaction",
+          "probate"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "4e44d8e4ca9aec44": {
+      "chars": 11755,
+      "heading": "Capital Gains Tax when someone dies (Self Assessment helpsheet HS282)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Annual Exempt Amount (AEA) - 2025-26 example",
+            "period": "2025-26",
+            "ref": "HS282 Section 4, Example 2",
+            "value": "£12,300 (as used in worked Example 2 for 2023-24)"
+          }
+        ],
+        "caveats": [
+          "This helpsheet is for the tax year 2025 to 2026.",
+          "Terms mostly refer to England and Wales law; Scotland/Northern Ireland terminology and general law background may differ.",
+          "AEA is not available if the deceased died before 6 April 2025, was non-domiciled in the UK, and claimed the remittance basis on foreign income and gains.",
+          "From 6 April 2025 the remittance basis of taxation is no longer available.",
+          "If the deceased died before 6 April 2025, their domicile status may also be relevant to residence status determination for personal representatives.",
+          "Losses in the year of death must be set off against gains even if net chargeable gains fall below the AEA; unused losses cannot be used by personal representatives or legatees.",
+          "No CGT charge arises on death itself; special deemed-transfer rules apply instead."
+        ],
+        "cross_references": [
+          "Capital Gains Manual",
+          "Report and pay Capital Gains Tax on UK property (https://www.gov.uk/report-and-pay-your-capital-gains-tax)",
+          "HS307 Non-Resident Capital Gains (NRCG) on direct and indirect disposals of interests in UK land and property",
+          "Residence, remittance basis etc notes",
+          "Inheritance Tax section of this helpsheet"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "UK resident and non-resident individuals/personal representatives disposing of UK residential or commercial property or land",
+            "name": "CGT reporting and payment on UK property disposal",
+            "ref": "HS282 Sections 2.1, 2.2",
+            "rule": "within 60 days of the date of completion"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Someone responsible for settling the affairs of a deceased person; outside Scotland, executors and administrators; in Scotland, executors nominate and executor's dative.",
+            "ref": "HS282 Section 1",
+            "term": "Personal representative"
+          },
+          {
+            "meaning": "The period in which personal representatives are settling the estate, starting on date of death and ending for tax purposes when the residue of the estate is ascertained or disputes about the will are resolved.",
+            "ref": "HS282 Section 1",
+            "term": "Administration period"
+          },
+          {
+            "meaning": "Ascertained when the net balance of the estate has been identified and enough funds have been provided to pay any liabilities.",
+            "ref": "HS282 Section 1",
+            "term": "Residue of the estate"
+          },
+          {
+            "meaning": "For CGT purposes, someone who benefits from a testamentary disposition (usually a will) or on intestacy/partial intestacy; includes trustees of a settlement made under the will or intestacy.",
+            "ref": "HS282 Section 1",
+            "term": "Legatee"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "within 60 days of the date of completion",
+            "must": "tell HMRC and pay any CGT due",
+            "ref": "HS282 Section 2.1",
+            "trigger": "sell or dispose of all or part of an interest in UK residential or commercial property, being liable to pay CGT",
+            "who": "UK resident personal representative or legatee"
+          },
+          {
+            "deadline": "within 60 days of the date of completion",
+            "must": "tell HMRC and pay any CGT due",
+            "ref": "HS282 Section 2.2",
+            "trigger": "sell or dispose of all or part of an interest in UK residential or commercial property, or other UK land",
+            "who": "Non-resident personal representative or legatee"
+          },
+          {
+            "deadline": "n/a",
+            "must": "agree the deceased's CGT liability with HMRC, including settling open points, completing a return for the year of death, and completing returns for prior years not filed",
+            "ref": "HS282 Section 3",
+            "trigger": "deceased disposed of assets before death and returns were not sent or agreed with HMRC",
+            "who": "Personal representatives"
+          },
+          {
+            "deadline": "n/a",
+            "must": "report the disposal to HMRC",
+            "ref": "HS282 Section 2.2",
+            "trigger": "UK residential or commercial property, or other UK land, has been disposed of",
+            "who": "Personal representative of a deceased person who lived abroad"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "HS282 explains how CGT applies when someone dies, covering the treatment of personal representatives, the administration period, legatees, and intestacy. It sets out that assets are deemed transferred at market value on the date of death, describes reporting and payment obligations for UK property disposals, and details AEA availability and loss carry-back rules with a worked example for 2025-26. It also covers residence/domicile status of the deceased and personal representatives, and pre-death CGT liability agreement.",
+        "topics": [
+          "capital-gains-tax",
+          "death-estates",
+          "personal-representatives",
+          "annual-exempt-amount",
+          "losses",
+          "residence-domicile",
+          "legatees"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-when-someone-dies-self-assessment-helpsheet-hs282.md",
+  "source_id": "sa-helpsheets:5f67d29a-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/death-personal-representatives-and-legatees-hs282-self-assessment-helpsheet"
+}

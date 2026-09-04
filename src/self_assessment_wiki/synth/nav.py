@@ -57,7 +57,7 @@ def write() -> list[Path]:
         return target.is_dir() and any(target.rglob("*.md"))
 
     root = DOCS_DIR / ".pages"
-    root.write_text("# Written by `python -m self_assessment_wiki.synth.report` - do not hand-edit.\n"
+    root.write_text("# Written by `uv run report` - do not hand-edit.\n"
                     "nav:\n" + "".join(f"  - {e}\n" for e in ROOT_NAV if populated(e))
                     + "  - ...\n")
     written.append(root)
@@ -66,7 +66,7 @@ def write() -> list[Path]:
         target = DOCS_DIR / directory
         if not populated(directory):
             continue
-        lines = ["# Written by `python -m self_assessment_wiki.synth.report` - do not hand-edit.",
+        lines = ["# Written by `uv run report` - do not hand-edit.",
                  f"title: {title}"]
         pages = by_dir.get(directory, [])
         if pages:

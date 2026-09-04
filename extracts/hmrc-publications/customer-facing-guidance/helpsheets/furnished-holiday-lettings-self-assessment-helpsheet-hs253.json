@@ -1,0 +1,152 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "9e1042b4f475c40e": {
+      "chars": 10108,
+      "heading": "Furnished holiday lettings (Self Assessment helpsheet HS253)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Pattern of occupation threshold",
+            "period": "n/a",
+            "ref": "HS253 - The pattern of occupation condition",
+            "value": "155 days"
+          },
+          {
+            "name": "Availability condition",
+            "period": "current",
+            "ref": "HS253 - The availability condition",
+            "value": "at least 210 days in the year"
+          },
+          {
+            "name": "Availability condition (historic)",
+            "period": "2011-12 and earlier",
+            "ref": "HS253 - The availability condition",
+            "value": "140 days for the tax year 2011 to 2012 and earlier"
+          },
+          {
+            "name": "Letting condition",
+            "period": "current",
+            "ref": "HS253 - The letting condition",
+            "value": "at least 105 days in the year"
+          },
+          {
+            "name": "Letting condition (historic)",
+            "period": "2011-12 and earlier",
+            "ref": "HS253 - The letting condition",
+            "value": "70 days for the tax year 2011 to 2012 and earlier"
+          }
+        ],
+        "caveats": [
+          "Guidance covers FHL rules only up to the end of the 2025 tax year, implying rules change or cease afterward",
+          "Special COVID-19 provisions for availability and letting conditions applied specifically to the tax year 2023 to 2024",
+          "Historic lower day thresholds (140/70 days) applied only for tax year 2011 to 2012 and earlier",
+          "Losses from UK FHL business cannot be offset against EEA FHL business profits or vice versa",
+          "A period of grace election can only be made if the property met the letting condition in the immediately preceding year (on its own or via averaging), and after two consecutive period of grace elections without meeting the threshold the property ceases to qualify as FHL"
+        ],
+        "cross_references": [
+          "Helpsheet 252 Capital allowances and balancing charges",
+          "Helpsheet 275 Entrepreneurs' relief",
+          "Helpsheet 290 Business asset roll over relief",
+          "Helpsheet 295 Relief for gifts and similar transactions",
+          "Helpsheet 296 Debts and Capital Gains Tax",
+          "Self Assessment 'UK Property' pages"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Averaging election for FHL letting condition",
+            "name": "Averaging election deadline",
+            "ref": "HS253 - Averaging election, Time limit",
+            "rule": "Up to one year after 31 January following the end of the tax year (e.g. for 2024 to 2025 return, by 31 January 2027)"
+          },
+          {
+            "applies_to": "Period of grace election for FHL letting condition",
+            "name": "Period of grace election deadline",
+            "ref": "HS253 - How to make an election",
+            "rule": "Up to one year after 31 January following the end of the tax year (e.g. for 2024 to 2025 return, by 31 January 2027)"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Properties in the UK or EEA that are furnished, commercially let with intent to profit, and meet the pattern of occupation, availability and letting occupancy conditions",
+            "ref": "HS253 - Accommodation that qualifies as a FHL",
+            "term": "Furnished Holiday Lettings (FHLs)"
+          },
+          {
+            "meaning": "Condition not met if total of all lettings exceeding 31 continuous days is more than 155 days during the year",
+            "ref": "HS253 - The pattern of occupation condition",
+            "term": "Pattern of occupation condition"
+          },
+          {
+            "meaning": "Property must be available for letting as furnished holiday accommodation for at least 210 days in the year (excluding days the owner stays there)",
+            "ref": "HS253 - The availability condition",
+            "term": "Availability condition"
+          },
+          {
+            "meaning": "Property must be commercially let as furnished holiday accommodation to the public for at least 105 days in the year, excluding lets to friends/relatives at reduced rates and longer-term lets over 31 days (unless due to unforeseen circumstances)",
+            "ref": "HS253 - The letting condition",
+            "term": "Letting condition"
+          },
+          {
+            "meaning": "Election allowing the letting condition to be applied to the average occupancy rate across all FHL properties in a single FHL business (UK or EEA, not mixed)",
+            "ref": "HS253 - Averaging election",
+            "term": "Averaging election"
+          },
+          {
+            "meaning": "Election allowing a property to continue qualifying as an FHL where the letting condition is not met but genuine intention to let and the other two conditions are shown, usable for up to two consecutive years if the condition was met in the prior year",
+            "ref": "HS253 - Period of grace election",
+            "term": "Period of grace election"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Work out the profit or loss from FHLs separately from any other rental business",
+            "ref": "HS253",
+            "trigger": "Claiming FHL tax treatment",
+            "who": "Person letting FHL properties"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Keep separate records for UK FHL business and EEA FHL business",
+            "ref": "HS253",
+            "trigger": "Operating both UK and EEA FHL businesses",
+            "who": "Person with FHLs in UK and EEA"
+          },
+          {
+            "deadline": "Up to one year after 31 January following the end of the tax year",
+            "must": "Make the averaging election",
+            "ref": "HS253 - Averaging election, Time limit",
+            "trigger": "One or more properties fails to meet the 105-day letting condition",
+            "who": "Person wishing to use averaging election"
+          },
+          {
+            "deadline": "Up to one year after 31 January following the end of the tax year",
+            "must": "Show genuine intention to let the property and make the election",
+            "ref": "HS253 - Period of grace election",
+            "trigger": "Property meets pattern of occupation and availability conditions but not the letting condition",
+            "who": "Person wishing to use period of grace election"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS253 explains the special tax rules for Furnished Holiday Lettings (FHLs) up to the end of the 2025 tax year, including qualifying conditions (location, furnishing, commercial letting), the three occupancy conditions (pattern of occupation, availability, letting), and the averaging and period of grace elections available to meet the letting condition. It also covers treatment of losses, apportionment of expenses, and consequences when a property stops being an FHL, with cross-references to other capital allowances and CGT relief helpsheets.",
+        "topics": [
+          "furnished-holiday-lettings",
+          "property-income",
+          "capital-allowances",
+          "capital-gains-tax-reliefs",
+          "elections",
+          "losses",
+          "occupancy-conditions"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/furnished-holiday-lettings-self-assessment-helpsheet-hs253.md",
+  "source_id": "sa-helpsheets:5f67e2d6-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/furnished-holiday-lettings-hs253-self-assessment-helpsheet"
+}

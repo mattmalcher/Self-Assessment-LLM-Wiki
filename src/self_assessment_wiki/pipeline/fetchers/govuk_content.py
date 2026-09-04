@@ -12,11 +12,14 @@ Covers three source `type`s that all key off the same API
                             recursively (manuals are trees; content lives at
                             leaf sections, "contents" nodes are just
                             branches) and writes every leaf's body into one
-                            page, capped at `max_sections` per run
+                            page. Fetches every section by default; set
+                            `max_sections` on the entry to cap it.
 """
 from __future__ import annotations
 
 import re
+
+import requests
 
 from ..common import conditional_get
 from ..render import build_page, html_to_markdown, write_if_changed
@@ -26,7 +29,14 @@ WEB_BASE = "https://www.gov.uk"
 
 
 def _get_doc(path: str) -> dict | None:
-    result = conditional_get(f"{API_BASE}{path}", {}, as_json=True)
+    try:
+        result = conditional_get(f"{API_BASE}{path}", {}, as_json=True)
+    except requests.HTTPError as exc:
+        if exc.response is not None and exc.response.status_code == 404:
+            # Manual section trees list some sections (withdrawn/renumbered)
+            # that 404 on the content API - skip rather than fail the run.
+            return None
+        raise
     return result.json
 
 
@@ -150,25 +160,32 @@ def fetch_collection(entry: dict, manifest_entry: dict) -> bool:
     return changed_any or index_changed
 
 
-def _collect_leaf_sections(root_path: str, max_sections: int) -> tuple[list[tuple[str, dict]], int]:
+def _collect_leaf_sections(
+    root_path: str, max_sections: int | None
+) -> tuple[list[tuple[str, dict]], int, list[tuple[str, str]]]:
     """BFS over a manual's section tree; returns [(breadcrumb, section_doc), ...]
-    for sections that actually have body content, up to max_sections fetches.
+    for sections that actually have body content, up to max_sections fetches
+    (or every section, if max_sections is None). Also returns [(title, path), ...]
+    for sections listed in the tree that 404'd on the content API (withdrawn or
+    renumbered sections the manual's own navigation hasn't caught up with).
     """
     root = _get_doc(root_path)
     if root is None:
-        return [], 0
+        return [], 0, []
     frontier: list[tuple[str, str]] = []  # (breadcrumb_title, base_path)
     for group in root.get("details", {}).get("child_section_groups", []):
         for section in group.get("child_sections", []):
             frontier.append((section["title"], section["base_path"]))
 
     leaves = []
+    missing = []
     fetched = 0
-    while frontier and fetched < max_sections:
+    while frontier and (max_sections is None or fetched < max_sections):
         title, path = frontier.pop(0)
         doc = _get_doc(path.replace(WEB_BASE, ""))
         fetched += 1
         if doc is None:
+            missing.append((title, path))
             continue
         body = doc.get("details", {}).get("body", "") or ""
         if body.strip():
@@ -177,12 +194,12 @@ def _collect_leaf_sections(root_path: str, max_sections: int) -> tuple[list[tupl
             for section in group.get("child_sections", []):
                 frontier.append((section["title"], section["base_path"]))
 
-    return leaves, len(frontier)
+    return leaves, len(frontier), missing
 
 
 def fetch_manual(entry: dict, manifest_entry: dict) -> bool:
-    max_sections = entry.get("max_sections", 80)
-    leaves, remaining = _collect_leaf_sections(entry["url"], max_sections)
+    max_sections = entry.get("max_sections")
+    leaves, remaining, missing = _collect_leaf_sections(entry["url"], max_sections)
 
     root = _get_doc(entry["url"])
     intro = root.get("description", "") if root else ""
@@ -195,6 +212,16 @@ def fetch_manual(entry: dict, manifest_entry: dict) -> bool:
             f"~{remaining} more queued). Raise the cap and re-run to pull the rest. "
             f"Full manual: <{WEB_BASE}{entry['url']}>."
         )
+        body_lines.append("")
+    if missing:
+        body_lines.append(
+            f"> {len(missing)} section(s) listed in this manual's navigation "
+            f"404'd on GOV.UK's content API and were skipped - likely withdrawn "
+            f"or renumbered sections the manual's own contents page hasn't "
+            f"caught up with. Content here may be incomplete as a result:"
+        )
+        for title, path in missing:
+            body_lines.append(f"> - {title}: <{WEB_BASE}{path}>")
         body_lines.append("")
 
     for title, doc in leaves:
@@ -212,6 +239,7 @@ def fetch_manual(entry: dict, manifest_entry: dict) -> bool:
         "category": entry["category"],
         "document_type": "manual",
         "sections_mirrored": len(leaves),
+        "sections_404": len(missing),
     }
     page = build_page(front_matter, entry["title"], "\n".join(body_lines))
     return write_if_changed(entry["output"], page, manifest_entry)

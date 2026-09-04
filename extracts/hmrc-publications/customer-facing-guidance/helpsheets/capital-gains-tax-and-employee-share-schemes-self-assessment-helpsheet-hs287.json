@@ -1,0 +1,207 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "1deacb4b5e4c5488": {
+      "chars": 8635,
+      "heading": "Capital Gains Tax and employee share schemes (Self Assessment helpsheet HS287) > 15\\. How you elect",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "ESS CGT exemption limit",
+            "period": "n/a",
+            "ref": "HS287 s.19",
+            "value": "£50,000"
+          },
+          {
+            "name": "ESS lifetime cap on gains",
+            "period": "agreements entered into on or after 17 March 2016",
+            "ref": "HS287 s.19.1",
+            "value": "£100,000"
+          },
+          {
+            "name": "Material interest threshold",
+            "period": "n/a",
+            "ref": "HS287 s.19",
+            "value": "25%"
+          }
+        ],
+        "caveats": [
+          "Income Tax reliefs and CGT exemption for ESS shares received as consideration for agreements entered into on or after 1 December 2016 have been removed",
+          "Transitional rules apply for some employees who received mandatory independent advice on 23 November 2016",
+          "2016 lifetime cap change (16 March 2016) only affects agreements entered into on or after 17 March 2016; agreements before this date unaffected",
+          "£50,000 exemption limit can apply separately per agreement, but a single £50,000 limit applies across agreements with the same company or associated companies",
+          "Exemption does not apply if the individual or connected person has/had a material interest in the employer or parent undertaking at acquisition or in the previous year"
+        ],
+        "cross_references": [
+          "Capital Gains Tax summary (SA108) pages",
+          "Capital Gains Manual",
+          "Helpsheet 284 Shares and Capital Gains Tax",
+          "Self Assessment and to change your personal details contact page"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An employment status, available from 1 September 2013, awarded shares in employer or parent undertaking, with different employment rights to employees generally",
+            "ref": "HS287 s.19",
+            "term": "Employee shareholder"
+          },
+          {
+            "meaning": "Being able to exercise at least 25% of voting rights in a company, or (for a close company) having rights entitling to at least 25% of assets on winding up; can arise via connected persons",
+            "ref": "HS287 s.19",
+            "term": "Material interest"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "Before the time limit is up; if included in a return, must be in that return",
+            "must": "Explain the election is being made and provide date of acquisition, company name, number/class/cost or value of shares, number and cost of shares in the treated-as-disposed category, and details of the first disposal",
+            "ref": "HS287 s.15",
+            "trigger": "Wishing to make a same day acquisition election",
+            "who": "Taxpayer making a same day acquisition election"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter disposal details on Capital Gains Tax summary (SA108), write 'same day acquisition election' in computations, and include additional details in box 54 on page CG 3 or in computations",
+            "ref": "HS287 s.15",
+            "trigger": "Filing a return showing the first disposal of shares acquired on the same day",
+            "who": "Taxpayer making a same day acquisition election via return"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make reference to the election each time they dispose of any of the remaining shares",
+            "ref": "HS287 s.15",
+            "trigger": "Subsequent disposals of remaining shares from the same-day acquisition",
+            "who": "Taxpayer making a same day acquisition election"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Tell HMRC about shares disposed of, amount received, disposal date, trustees' name/address, replacement asset acquired, its acquisition date and cost, and amount of proceeds used to acquire replacement asset",
+            "ref": "HS287 s.18",
+            "trigger": "Claiming relief on transfer of shares to an approved SIP",
+            "who": "Taxpayer claiming SIP transfer relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter disposal on Capital Gains Tax summary pages, enter 'relief on disposal to share incentive plan' and amount claimed in computations, include additional SIP/replacement asset details in box 54 or computations",
+            "ref": "HS287 s.18",
+            "trigger": "Claiming SIP transfer relief",
+            "who": "Taxpayer claiming SIP transfer relief"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains the practical mechanics of making a 'same day acquisition' election for shares (no special form, specific details required, entered via SA108 pages and computations), and how to claim relief on transfers of unlisted shares to an approved Share Incentive Plan (SIP). It also details Employee Shareholder Shares (ESS): the CGT exemption on the first £50,000 of ESS acquired, the material interest exclusion, the 16 March 2016 changes introducing a £100,000 lifetime cap for agreements from 17 March 2016, and special rules for spousal/civil partner transfers and share reorganisations involving ESS.",
+        "topics": [
+          "capital-gains-tax",
+          "share-schemes",
+          "elections",
+          "employee-shareholder-shares",
+          "sip",
+          "reliefs",
+          "same-day-acquisition-election"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "c48f6800efa77f68": {
+      "chars": 11739,
+      "heading": "Capital Gains Tax and employee share schemes (Self Assessment helpsheet HS287)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "ISA transfer limit for shares from SIP/approved profit-sharing/SAYE scheme",
+            "period": "tax year to 5 April 2026",
+            "ref": "HS287 Section 5",
+            "value": "£20,000"
+          },
+          {
+            "name": "ISA transfer limit for shares from SIP/approved profit-sharing/SAYE scheme",
+            "period": "tax year to 5 April 2025",
+            "ref": "HS287 Section 5",
+            "value": "£20,000"
+          }
+        ],
+        "caveats": [
+          "Applies to shares/securities acquired because of employment after 31 August 2003; different rules applied before that date (see Capital Gains Manual).",
+          "If using Making Tax Digital for Income Tax, claims and adjustments are made through compatible software instead of the SA boxes referenced in this helpsheet.",
+          "ISA and pension transfer provisions are conditional on certain unspecified conditions being met.",
+          "This is helpsheet HS287 for the 2025 to 2026 tax return; figures and deadlines given are specific to that year."
+        ],
+        "cross_references": [
+          "Capital Gains Tax summary (SA108)",
+          "Capital Gains Tax summary notes",
+          "HMRC Capital Gains Manual (CG56300c)",
+          "Helpsheet 284 Shares and Capital Gains Tax",
+          "SA101 Notes Additional information notes (pages AiN 2 to AiN 4)",
+          "Employee Tax Advantaged Share Scheme User Manual",
+          "Guidance on use of Making Tax Digital for Income Tax"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Election to categorise same-day share acquisitions for CGT ordering",
+            "name": "Same-day acquisition election deadline",
+            "ref": "HS287 Section 14",
+            "rule": "within one year and 10 months after the end of the tax year in which you first dispose of some of the shares acquired on the same day"
+          },
+          {
+            "applies_to": "Same-day acquisition election",
+            "name": "Example deadline for 2025-26",
+            "ref": "HS287 Section 14",
+            "rule": "for the year ended 5 April 2026 by 31 January 2028"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Employee share scheme where employees do not usually pay Income Tax when they acquire shares",
+            "ref": "HS287 Section 1",
+            "term": "Tax advantaged scheme"
+          },
+          {
+            "meaning": "Employee share scheme not falling within the tax advantaged category (contrast to tax advantaged)",
+            "ref": "HS287 Section 1",
+            "term": "Non-Tax Advantaged scheme"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Enter code ESH in box 36 (listed shares) or box 20 (unlisted shares) of the Capital Gains Tax summary pages when making a claim or election; use code MUL if multiple codes could apply to box 36",
+            "ref": "HS287 Section 2",
+            "trigger": "Disposal of employee scheme shares with a claim or election",
+            "who": "Taxpayer disposing of shares acquired under any employee share scheme"
+          },
+          {
+            "deadline": "Within one year and 10 months after the end of the tax year in which the shares are first disposed of",
+            "must": "Make an election dividing same-day acquired shares into two categories",
+            "ref": "HS287 Section 14",
+            "trigger": "Disposal of shares acquired on the same day from different share scheme sources",
+            "who": "Taxpayer wishing to change share disposal ordering for same-day acquisitions"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "HS287 explains how to calculate and report Capital Gains Tax on employee share and security schemes acquired after 31 August 2003, covering approved schemes (SIPs, SAYE, CSOP, EMI), unapproved schemes, transfers to ISAs and pension schemes, restricted/convertible shares, and same-day acquisition pooling rules. It sets out how to determine the CGT base cost of shares in various scenarios and specifies the box/code (ESH or MUL) to use on the Capital Gains Tax summary (SA108) pages. It also gives the time limit for electing to treat same-day share acquisitions as two separate categories for disposal ordering purposes.",
+        "topics": [
+          "capital-gains-tax",
+          "employee-share-schemes",
+          "share-incentive-plans",
+          "EMI",
+          "SAYE",
+          "CSOP",
+          "ISAs",
+          "pension-transfers",
+          "share-pooling",
+          "elections"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-and-employee-share-schemes-self-assessment-helpsheet-hs287.md",
+  "source_id": "sa-helpsheets:5f67d41e-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/employee-share-and-security-schemes-and-capital-gains-tax-hs287-self-assessment-helpsheet"
+}

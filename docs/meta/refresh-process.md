@@ -89,14 +89,14 @@ and a footer listing every source it drew on.
 ## Running it
 
 ```bash
-uv run python -m self_assessment_wiki.pipeline.fetch          # stage 1 — no API access needed
-uv run python -m self_assessment_wiki.synth.build status      # what's stale, no model calls
-uv run python -m self_assessment_wiki.synth.build extract     # stage 2
-uv run python -m self_assessment_wiki.synth.build compose     # stage 3
-uv run python -m self_assessment_wiki.synth.report            # regenerate this site's status page
+uv run fetch     # stage 1 — no API access needed
+uv run status    # what's stale, no model calls
+uv run extract   # stage 2
+uv run compose   # stage 3
+uv run report    # regenerate this site's status page
 ```
 
-`synth.build` defaults to `--backend claude-cli`, which shells out to the
+`synth` defaults to `--backend claude-cli`, which shells out to the
 `claude` CLI and therefore runs on a Claude Code subscription with no API key.
 `--backend codex-cli` does the same through `codex exec`; `--backend anthropic`
 and `--backend openai` use API keys instead. See the repository's
@@ -106,10 +106,10 @@ and `--backend openai` use API keys instead. See the repository's
 
 - **A source:** add an entry to `src/self_assessment_wiki/pipeline/sources.yml` with a unique `id`,
   a `type` matching a fetcher, `status: fetch` and an `output` path under
-  `corpus/`. Run `uv run python -m self_assessment_wiki.pipeline.fetch --only <id>`.
+  `corpus/`. Run `uv run fetch --only <id>`.
 - **A page:** add an entry to `src/self_assessment_wiki/synth/pages.yml` with an `id`, `title`,
   `output` under `docs/`, a `brief`, and a `select` block. Check the selector
-  with `uv run python -m self_assessment_wiki.synth.build compose --dry-run`, which reports how many
+  with `uv run compose --dry-run`, which reports how many
   notes it picks up, before spending a model call on it.
 
 [Wiki status](wiki-status.md) reports how much of the corpus has been through

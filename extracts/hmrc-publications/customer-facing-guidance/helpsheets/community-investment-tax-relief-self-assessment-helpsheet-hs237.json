@@ -1,0 +1,154 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "cd442153b53ec114": {
+      "chars": 8089,
+      "heading": "Community Investment Tax Relief (Self Assessment helpsheet HS237)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "CITR annual relief rate",
+            "period": "per tax year, for each of 5 tax years",
+            "ref": "HS237 Section 1",
+            "value": "up to 5% of the invested amount"
+          },
+          {
+            "name": "CITR total maximum relief",
+            "period": "over 5-year investment period",
+            "ref": "HS237 Section 1",
+            "value": "up to 25% of the invested amount"
+          },
+          {
+            "name": "Example 1 investment",
+            "period": "2025 to 2026 onward",
+            "ref": "HS237 Section 1.1",
+            "value": "£10,000 invested 1 June 2025"
+          },
+          {
+            "name": "Example 1 relief",
+            "period": "2025 to 2026",
+            "ref": "HS237 Section 1.1",
+            "value": "£500 (5% of £10,000)"
+          },
+          {
+            "name": "Example 2 relief carried forward",
+            "period": "2025 to 2026 to 2026 to 2027",
+            "ref": "HS237 Section 1.2",
+            "value": "£200"
+          },
+          {
+            "name": "Example 2 total claim",
+            "period": "2026 to 2027",
+            "ref": "HS237 Section 1.2",
+            "value": "£700"
+          },
+          {
+            "name": "Example 3 invested amount entered on return",
+            "period": "2025 to 2026",
+            "ref": "HS237 Section 1.3",
+            "value": "£14,000"
+          },
+          {
+            "name": "Example 4 investments",
+            "period": "2021 to 2022 through 2026 to 2027",
+            "ref": "HS237 Section 2.1",
+            "value": "£10,000 (1 June 2021) and £5,000 (1 June 2022)"
+          }
+        ],
+        "caveats": [
+          "CITR is a relief against Income Tax only; it cannot be used to reduce Capital Gains Tax",
+          "If Making Tax Digital for Income Tax applies, claims and adjustments are made through compatible software instead of the Self Assessment boxes described",
+          "Relief may be reduced if part of a loan/deposit is repaid/withdrawn within 5 years, or if the investor receives value, financial advantage or benefit from the CDFI",
+          "Investor must be beneficial owner, unprotected from investment risk, and the investment must not be part of a tax avoidance scheme for relief to remain valid",
+          "If payments on account are reduced in anticipation of CITR but the relief due is less than expected, HMRC will charge interest on the shortfall"
+        ],
+        "cross_references": [
+          "Making Tax Digital for Income Tax guidance",
+          "Community Investment Tax Relief manual (HMRC CITR manual)",
+          "List of accredited CDFIs (gov.uk publication)",
+          "Self Assessment Additional Information pages (SA101)",
+          "Self Assessment contact guidance"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Individual investors claiming CITR",
+            "name": "Earliest point for formal CITR claim",
+            "ref": "HS237 Section 2",
+            "rule": "Cannot make a formal claim until the Tax Relief Certificate is received and the tax year to which the claim relates has ended"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Accredited institution in which individuals or companies invest to qualify for CITR; list prepared by BEIS",
+            "ref": "HS237 Section 1",
+            "term": "Community Development Finance Institution (CDFI)"
+          },
+          {
+            "meaning": "Certificate issued by the CDFI for each qualifying investment, needed before a formal claim can be made",
+            "ref": "HS237 Section 1",
+            "term": "Tax Relief Certificate"
+          },
+          {
+            "meaning": "For shares/securities, the amount subscribed; for loans/deposits, generally the original advance or deposit, subject to reduction if part is repaid/withdrawn within 5 years",
+            "ref": "HS237 Section 3",
+            "term": "Invested amount"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Enter the 'invested amount(s)' on which relief is claimed in box 3 in the 'Other tax reliefs' section on page Ai 2 of the Additional Information (SA101) pages",
+            "ref": "HS237 Section 2",
+            "trigger": "Claiming CITR relief for the tax year",
+            "who": "Individual investor claiming CITR"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Give details about each investment in box 19, 'Any other information', on page TR7 of the tax return",
+            "ref": "HS237 Section 2",
+            "trigger": "Claiming CITR relief",
+            "who": "Individual investor claiming CITR"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Keep the Tax Relief Certificate safe (do not need to send with return, but may be requested during an enquiry)",
+            "ref": "HS237 Section 2",
+            "trigger": "Receipt of Tax Relief Certificate from CDFI",
+            "who": "Individual investor claiming CITR"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Write to HMRC to ask for a change to current year's PAYE code to include expected CITR",
+            "ref": "HS237 Section 4",
+            "trigger": "Investor wants relief reflected before formal claim",
+            "who": "Individual investor wanting in-year benefit via PAYE"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Write to HMRC to ask to reduce Self Assessment payments on account to reflect expected CITR",
+            "ref": "HS237 Section 4",
+            "trigger": "Investor wants relief reflected before formal claim",
+            "who": "Individual investor wanting in-year benefit via payments on account"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS237 explains how individual investors claim Community Investment Tax Relief (CITR) for investments in accredited Community Development Finance Institutions (CDFIs), giving up to 5% relief per year for 5 tax years (25% total) against Income Tax only. It sets out how to enter the invested amount in box 3 of the Additional Information (SA101) pages and provide details in box 19 of TR7, plus how PAYE codes or payments on account can be adjusted in-year pending formal claim after the tax year ends.",
+        "topics": [
+          "community-investment-tax-relief",
+          "citr",
+          "income-tax-relief",
+          "additional-information-pages",
+          "paye-code-adjustment",
+          "payments-on-account"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/community-investment-tax-relief-self-assessment-helpsheet-hs237.md",
+  "source_id": "sa-helpsheets:5f67cf48-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/community-investment-tax-relief-hs237-self-assessment-helpsheet"
+}

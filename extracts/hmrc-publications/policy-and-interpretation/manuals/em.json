@@ -1,0 +1,1082 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation.manuals",
+  "chunks": {
+    "19eeb408dfe3281e": {
+      "chars": 8313,
+      "heading": "Enquiry Manual (EM) > EM3266 — Recovery of overpayment of tax",
+      "index": 6,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "An assessment can only be varied on appeal in four specified situations; otherwise a finalised assessment requires a further assessment rather than variation.",
+          "Extended time limits for careless or deliberate loss of tax (EM3214/EM3215) are not overruled by the standard time limit for recovery assessments.",
+          "HMRC cannot use information powers to compel a taxpayer to sign a certified statement of assets and liabilities, only to require production of a statement.",
+          "Some content in EM3266 and EM3540 withheld under FOIA exemptions."
+        ],
+        "cross_references": [
+          "DMBM215180",
+          "DMBM215190",
+          "TMA 1970 s.29",
+          "TMA 1970 s.87A",
+          "EM3214",
+          "EM3215",
+          "TMA 1970 s.54",
+          "TMA 1970 s.49C(4)",
+          "TMA 1970 s.49E(5)",
+          "TMA 1970 s.49F(2)",
+          "TMA 1970 s.50(6)/(7)",
+          "ARTG2700",
+          "EM3820",
+          "EM3580",
+          "EM3805",
+          "CH23000",
+          "FA08/Sch36/Para1"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "assessments to recover overpaid tax/interest under s30 TMA 1970 / Sch18 FA98 para 52",
+            "name": "Time limit for assessment to recover overpayment of tax",
+            "ref": "EM3266",
+            "rule": "latest of: four years after the end of the accounting period to which it relates; the year of assessment/end of accounting period following that in which the amount being recovered was paid; three months after completion of an enquiry into a relevant company tax return; when the enquiry is completed into an individual's tax return"
+          }
+        ],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "may make an assessment to recover excessive repayment of tax or interest on repayments",
+            "ref": "TMA 1970 s.30; Sch 18 FA 98 para 52",
+            "trigger": "repayment excessive due to HMRC error",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "should use s29 TMA 1970 instead where overpayment arises from taxpayer inflating expenses or tax already paid",
+            "ref": "TMA 1970 s.29",
+            "trigger": "overpayment caused by taxpayer inflation of expenses/tax paid",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "compile and sign/date a statement of assets and liabilities covering own, minor/dependent children's, nominee-held, and offshore assets",
+            "ref": "EM3540",
+            "trigger": "HMRC requests statement after establishing understated profits",
+            "who": "taxpayer/agent"
+          },
+          {
+            "deadline": "n/a",
+            "must": "may require a statement of assets and liabilities via information notice if taxpayer fails to supply one voluntarily",
+            "ref": "FA08/Sch36/Para1; CH23000",
+            "trigger": "taxpayer refusal to supply statement",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk covers HMRC's power to assess and recover excessive repayments of tax (including interest) under s30 TMA 1970/Sch 18 FA98 para 52, the applicable time limits, and use of s29 TMA 1970 where overpayment arises from inflated expenses or tax paid. It also explains the limited circumstances in which a finalised assessment can be varied (s54, s49C, s49E/s49F, s50 TMA 1970), the practice of making alternative assessments where the correct tax head is uncertain, and guidance on requesting and reviewing a taxpayer's statement of assets and liabilities during an enquiry, including use of Schedule 36 information notices where a taxpayer refuses to provide one.",
+        "topics": [
+          "assessments",
+          "enquiries",
+          "overpayment-recovery",
+          "appeals",
+          "penalties-and-offences",
+          "statement-of-assets"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "1e7878176e63034b": {
+      "chars": 7540,
+      "heading": "Enquiry Manual (EM) > EM3560 — Private Side - Private Bank Accounts",
+      "index": 8,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Some content withheld in EM3560 due to Freedom of Information Act 2000 exemptions.",
+          "A statement of assets and liabilities should not be sought where returns have not been shown incorrect or only non-culpable adjustments agreed.",
+          "FA08/Sch36/Para1 information powers can obtain a list of assets but cannot compel it to be certified.",
+          "Contract settlements including only tax and interest (no penalties) are exceptional, e.g. where payments on account have been received."
+        ],
+        "cross_references": [
+          "EM3593",
+          "EM3805",
+          "EM3810",
+          "EM3830",
+          "EM6000",
+          "ARTG2210",
+          "EM1975",
+          "EM5207",
+          "EM0075",
+          "EM3540",
+          "EM6214",
+          "FA08/Sch36/Para1"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Not routinely call for private bank statements in the opening letter of an enquiry",
+            "ref": "EM3560",
+            "trigger": "Start of enquiry",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "Before concluding the enquiry",
+            "must": "Consider whether a statement of assets and liabilities or certificate of disclosure is required before concluding an enquiry with agreed tax and penalties",
+            "ref": "EM3801",
+            "trigger": "Agreement reached on tax and penalties",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Proceed using statutory provisions (not contract settlement) if penalties are not involved and there is an open SA enquiry",
+            "ref": "EM3801; EM3830",
+            "trigger": "No penalties involved, open SA enquiry",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Issue all notices relating to Income Tax, CGT or Corporation Tax enquiries in writing",
+            "ref": "EM0075",
+            "trigger": "Any enquiry notice",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "Before concluding the enquiry",
+            "must": "Obtain a statement of assets and liabilities before concluding a full business enquiry where an understatement of profits has been established and one has not already been obtained",
+            "ref": "EM3805",
+            "trigger": "Understatement of profits established in full business enquiry",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not seek a statement of assets and liabilities where returns have not been shown incorrect or only non-culpable adjustments agreed",
+            "ref": "EM3805",
+            "trigger": "Concluding an enquiry",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk covers HMRC enquiry manual guidance on examining private bank accounts during a full private side examination (EM3560), including when to request statements, sampling approaches, and what to look for in transactions. It also covers concluding an SA enquiry (EM3801), distinguishing cases where tax and penalties are agreed versus disputed, and when a statement of assets and liabilities should be obtained (EM3805).",
+        "topics": [
+          "enquiry-process",
+          "private-bank-accounts",
+          "records",
+          "concluding-enquiries",
+          "contract-settlement",
+          "penalties",
+          "capital-statements"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "27bda71580d8d212": {
+      "chars": 11524,
+      "heading": "Enquiry Manual (EM) > EM1900 — No Evidence of Taxable Source",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Penalty rules for negligence/carelessness described apply specifically to periods beginning on or after 1 April 2008 where the filing date of the return was on or after 1 April 2009 (see CH81140).",
+          "If HMRC cannot reasonably identify a source for capital, a discovery assessment cannot be made (EM1900).",
+          "Legally an enquiry covers the full return even if the opening letter indicated only certain matters would be examined (EM1905).",
+          "Where a partial closure notice is issued, HMRC should consider allowing taxpayer amendments relating to the matter being settled by the PCN; otherwise amendments only take effect at final closure notice (EM1906)."
+        ],
+        "cross_references": [
+          "COG14600",
+          "EM1975",
+          "EM3835",
+          "CH81140",
+          "CH82400",
+          "SACM12000",
+          "EM3250",
+          "TMA70/S9ZA",
+          "FA98/SCH18/PARA 15",
+          "TMA70/S42(1)",
+          "TMA70/SCH.1A",
+          "TMA70/SCH.1B",
+          "TMA70/S118(1)",
+          "TMA70/S9A",
+          "FA98/Sch18/Para24",
+          "TMA70/SCH1A/Para5",
+          "CTM90602",
+          "Self Assessment Claims Manual (SACM)",
+          "Schedule 36 Finance Act 2008",
+          "CH24300"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Self assessment return amendments by taxpayer",
+            "name": "Taxpayer amendment window",
+            "ref": "EM1906; TMA70/S9ZA",
+            "rule": "up to the end of the period of 12 months from the fixed filing date"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Where the Taxes Acts stipulate a taxpayer should make an election, usually made in writing; TMA70/S42(10) provides that S42 applies to elections as it applies to claims, so elections are treated as claims",
+            "ref": "EM1907; TMA70/S42(10)",
+            "term": "Election"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Update caseflow and any enquiry plan, and tell the taxpayer the enquiry scope is being widened and what is now covered",
+            "ref": "EM1905",
+            "trigger": "Decision to extend the scope of an enquiry",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "Until PCN/final closure notice or settlement",
+            "must": "Not process taxpayer amendments received during an enquiry until the enquiry into that matter is concluded (by partial/final closure notice or contract settlement)",
+            "ref": "EM1906; TMA70/S9ZA",
+            "trigger": "Taxpayer amendment received while enquiry is open",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "12 months from fixed filing date",
+            "must": "May amend return and have amendments reflected in self assessment",
+            "ref": "EM1906; TMA70/S9ZA",
+            "trigger": "Within 12 months of the fixed filing date",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Consider whether conditions for discovery assessment are met where tax under-assessed and correction is outside taxpayer amendment time limit",
+            "ref": "EM1906; EM3250",
+            "trigger": "Taxpayer reports error outside amendment time limit, tax under-assessed",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Penalties may be chargeable; early disclosure may lead to complete abatement or complete reduction of penalty",
+            "ref": "EM1906; CH81140; CH82400",
+            "trigger": "Additional tax due shown by a taxpayer amendment where taxpayer was negligent or careless (for periods beginning on/after 1 April 2008 where filing date on/after 1 April 2009)"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk covers HMRC Enquiry Manual guidance on: assessing capital with no evident taxable source (EM1900); extending the scope of an enquiry beyond originally notified matters (EM1905); the taxpayer's right to amend a self assessment return within 12 months of the filing date, and how that right is suspended once an enquiry is opened until a closure notice issues (EM1906); the statutory basis for claims and elections under TMA70/S42, Sch1A and Sch1B (EM1907); and joint applications by taxpayer and HMRC to the tribunal to resolve questions arising during an enquiry (EM1910).",
+        "topics": [
+          "enquiries",
+          "discovery-assessment",
+          "taxpayer-amendments",
+          "claims-and-elections",
+          "closure-notices",
+          "tribunal-applications",
+          "penalties-carelessness"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "3a88018a0f88d943": {
+      "chars": 11336,
+      "heading": "Enquiry Manual (EM) > Making a joint application to the tribunal",
+      "index": 4,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Neither HMRC nor the taxpayer has a right of appeal against the other's refusal to join a tribunal application.",
+          "Refusal to join a joint application may lead the taxpayer to apply to the tribunal for a direction requiring HMRC to issue a partial or final closure notice within a specified period.",
+          "Opening an enquiry into a later year as a matter of routine may expose HMRC to an application under S28A(6) to complete the enquiry.",
+          "Discovery assessments can legally be made while an enquiry window is open only where loss of tax was caused carelessly or deliberately.",
+          "Several passages in the source are withheld under Freedom of Information Act 2000 exemptions, so guidance is incomplete.",
+          "Showing accounts are unreliable due to inadequate record keeping does not itself prove omissions; HMRC must produce its own evidence to substitute a higher profit figure."
+        ],
+        "cross_references": [
+          "ARTG7555",
+          "EM1975",
+          "EM3265",
+          "EM3253",
+          "EM1905",
+          "EM2710",
+          "S28A(6)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An enquiry focused on specific point(s) of a return; decision to extend to later years depends on whether the point recurs in later returns",
+            "ref": "EM2040",
+            "term": "Aspect enquiry"
+          },
+          {
+            "meaning": "A comprehensive enquiry where errors/omissions found in the earlier year's return are likely repeated in later years, potentially requiring enquiries into subsequent returns",
+            "ref": "EM2040",
+            "term": "Full enquiry"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Consider whether enquiry findings will have any impact on the taxpayer's tax credits or child benefit entitlement",
+            "ref": "EM2150",
+            "trigger": "Making an enquiry into a taxpayer's tax return",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "on completion of enquiry",
+            "must": "Calculate the amount by which the level of income shown on the return has changed and report to B&C using the 'SA Profit Uplift' form",
+            "ref": "EM2150",
+            "trigger": "Completion of an enquiry that has under-declared income affecting tax credits",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Explain reasons in writing if refusing to join a taxpayer's requested joint tribunal application, and remind taxpayer of right to appeal against amendment at end of enquiry",
+            "ref": "Making a joint application to the tribunal",
+            "trigger": "Taxpayer requests joint application to tribunal that officer considers inappropriate",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a (delay opening notice until a couple of months before enquiry window closes if opening only to keep year open)",
+            "must": "Judge timing of opening notice for subsequent year enquiries carefully; avoid opening as a matter of routine",
+            "ref": "EM2040",
+            "trigger": "Full enquiry underway into an earlier year with subsequent year returns filed",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not suggest to the taxpayer that a civil penalty will be charged before evasion has been ruled out",
+            "ref": "EM2701",
+            "trigger": "During conduct of an enquiry with no proof of evasion",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk covers HMRC Enquiry Manual guidance on joint tribunal applications (neither party can be compelled to join, no right of appeal against refusal), opening enquiries into subsequent years' returns while an earlier year is under enquiry (distinguishing aspect vs full enquiries, timing of opening notices, and use of discovery assessments), the requirement to consider impacts of enquiry findings on tax credits/child benefit, and general practice guidance on what a full/aspect enquiry involves (examining records, not raising matters piecemeal, avoiding premature suggestions of evasion).",
+        "topics": [
+          "enquiries",
+          "tribunal-applications",
+          "closure-notices",
+          "subsequent-year-enquiries",
+          "discovery-assessment",
+          "tax-credits-impact",
+          "aspect-enquiry",
+          "full-enquiry"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "47aa84f2c1a595a3": {
+      "chars": 9947,
+      "heading": "Enquiry Manual (EM) > EM1545 — Discovery' Investigation Unavoidable",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "EM1895 content is almost entirely withheld under Freedom of Information Act 2000 exemptions, so its substantive guidance on disclosing third party information is not available in this chunk.",
+          "Several passages in EM1805 are also withheld under FOIA exemptions.",
+          "Discovery assessment route under s.29 TMA 1970 is only relevant once the normal enquiry window (s.9A) has closed."
+        ],
+        "cross_references": [
+          "EM3200+ (discovery provisions)",
+          "CH23500 (Sch36 Para1 notice)",
+          "EM1895 (disclosing third party information)",
+          "CH20000 (information and inspection powers)",
+          "EM1975+ (closure notice tribunal application)",
+          "CH201620–CH201740 (Internet and Social Media use)",
+          "FIS Handbook",
+          "TMA 1970 s.29",
+          "Finance Act 2008 Schedule 36 Paragraph 21(6) and Paragraph 1",
+          "RIPA 2000 ss.21, 26(2), 48",
+          "Human Rights Act 1998 / ECHR Article 8"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Defined under RIPA 2000 s.21 as traffic data (s.21(4)(a)), service data (s.21(4)(b)), and any other data held by a CSP about a person (s.21(4)(c))",
+            "ref": "EM1806",
+            "term": "Communications data"
+          },
+          {
+            "meaning": "Defined in RIPA s.48 to include monitoring/observing/listening to persons or their communications, recording such activity, use of a surveillance device, and use of covert human intelligence sources (CHIS)",
+            "ref": "EM1806",
+            "term": "Surveillance"
+          },
+          {
+            "meaning": "Under RIPA s.26(2), surveillance that is covert but not intrusive, undertaken for a specific investigation/operation, likely to obtain private information, and not an immediate response to events",
+            "ref": "EM1806",
+            "term": "Directed surveillance"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Consider using an information notice under Paragraph 21(6) Schedule 36 Finance Act 2008 and an assessment under section 29 TMA 1970",
+            "ref": "EM1545",
+            "trigger": "Enquiry time limit has passed but discovery is warranted",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Send an FA08/Sch36/Para1 notice requiring production of outstanding information",
+            "ref": "EM1590",
+            "trigger": "Taxpayer/agent does not produce information within the time shown in the opening letter and no revised timescale agreed",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Follow guidance at EM1895 before disclosing third party information to the taxpayer",
+            "ref": "EM1805",
+            "trigger": "Officer holds third party information relevant to an SA enquiry",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Open SA enquiries neutrally by asking for information without challenging accuracy, and explain identified risks",
+            "ref": "EM1805",
+            "trigger": "Opening an SA enquiry",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Consider whether RIPA authorisation is needed and follow the FIS Handbook where uncertain",
+            "ref": "EM1806",
+            "trigger": "Compliance check may involve surveillance or acquisition of communications data",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "May affect (reduce) the level of any penalties due and reduce enquiry time/effort",
+            "ref": "EM1805",
+            "trigger": "Taxpayer discloses and co-operates actively in quantifying inaccuracies"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk covers HMRC internal guidance on pursuing discovery assessments once the enquiry window has closed, issuing Schedule 36 information notices after non-response to informal requests, HMRC's recommended general approach to opening SA enquiries neutrally, and the application of RIPA 2000 to compliance checks involving surveillance or communications data. Much of EM1805 and EM1895 has been redacted under FOIA exemptions.",
+        "topics": [
+          "enquiries",
+          "discovery-assessment",
+          "information-notices",
+          "compliance-checks",
+          "surveillance-powers"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "6aab198dc0720726": {
+      "chars": 11885,
+      "heading": "Enquiry Manual (EM) > EM2795 — Records Examination: Introduction",
+      "index": 5,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Guidance in this part of the manual covers SA years only; pre-SA years require referral to Specialist Technical Team.",
+          "Discovery assessment use is subject to meeting statutory conditions and normal/extended time limits (see EM3214, EM3220, EM3230), not detailed in full in this chunk.",
+          "Operational restrictions described are described as HMRC's normal practice, distinct from the legal position (an officer can legally make a discovery assessment even while enquiry window is open if loss of tax was careless or deliberate)."
+        ],
+        "cross_references": [
+          "TMA 1970 s.9A",
+          "TMA 1970 s.12AC",
+          "TMA 1970 Schedule 1A",
+          "FA 1998 Schedule 18",
+          "TMA 1970 s.28A",
+          "TMA 1970 s.28B",
+          "TMA 1970 s.29",
+          "TMA 1970 s.28C",
+          "TMA 1970 s.8",
+          "EM2960",
+          "EM3501",
+          "EM3570",
+          "EM2800",
+          "EM2905",
+          "EM2950",
+          "EM3000",
+          "EM21000",
+          "EM2027",
+          "PAYE96300",
+          "EM3214",
+          "EM3230",
+          "EM3241",
+          "EM3253",
+          "EM3257",
+          "EM3220",
+          "HMRC v Tooth [2021] UKSC 17"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An assessment made by an HMRC officer to recover a loss of tax where the time limit to open an SA enquiry has passed or there has been a failure to submit a return, subject to statutory conditions being met",
+            "ref": "EM3202",
+            "term": "Discovery assessment"
+          },
+          {
+            "meaning": "Following HMRC v Tooth [2021] UKSC 17, there is no principle that a discovery ceases to be valid due to passage of time; assessments may be made at any time up to the statutory time limit",
+            "ref": "EM3260",
+            "term": "Staleness (rejected doctrine)"
+          },
+          {
+            "meaning": "Following HMRC v Tooth, one officer's knowledge is not deemed imparted to another; what matters is whether the officer making the assessment has subjectively made a discovery of an under-assessment",
+            "ref": "EM3260",
+            "term": "Collective knowledge (rejected doctrine)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Authorise discovery assessments at HO grade or above",
+            "ref": "EM3265",
+            "trigger": "Making a discovery assessment",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Open an enquiry under SA provisions wherever possible rather than using discovery",
+            "ref": "EM3201",
+            "trigger": "SA return received and enquiry window still open",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Issue a determination (not a discovery assessment) where a notice to file has been issued but no return submitted and time limits permit",
+            "ref": "EM3202",
+            "trigger": "No return submitted after notice to file",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Seek advice from Specialist Technical Team before making a discovery assessment in cases not covered by standard guidance, or for pre-SA years",
+            "ref": "EM3202 / EM3265",
+            "trigger": "Uncertainty over appropriate use of discovery vs SA powers",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Normally viewed as carelessness; HMRC may make a discovery assessment up to 6 years after the end of the tax year (20 years if failure to notify chargeability)",
+            "ref": "EM3265 / EM3220",
+            "trigger": "Return submitted too late for taxpayer to self assess (after statutory filing date)"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk covers HMRC's Enquiry Manual guidance on examining business records to challenge the credibility of a return, and on discovery assessments under Self Assessment. Enquiries are opened under s.9A (individuals), s.12AC (partnerships), Schedule 1A (claims) TMA 1970, or Schedule 18 FA 1998 (companies), and closed under specified corresponding provisions. Discovery assessments are used to recover tax loss when enquiry time limits have passed or no return was submitted, subject to conditions, and the Supreme Court in HMRC v Tooth confirmed discoveries cannot become 'stale' and there is no collective knowledge principle within HMRC. Discovery assessments require HO grade authorisation and are generally not used where an enquiry window is open or a return could still be issued/determined.",
+        "topics": [
+          "enquiries",
+          "discovery-assessments",
+          "records-examination",
+          "determinations",
+          "time-limits",
+          "penalties-carelessness"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "82d7300f3ce62af5": {
+      "chars": 11284,
+      "heading": "Enquiry Manual (EM)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This manual excerpt is only 6 of ~561 total sections of the Enquiry Manual (max_sections: 100 cap noted, ~461 more queued but not pulled in this run)",
+          "Several pages/content sections withheld under Freedom of Information Act 2000 exemptions (EM2200 body, EM20000 mailbox detail, EM21000 entirely)",
+          "TMA70/S19A, FA98/SCH18/Para27, TMA70/SCH1A/Para6, TMA70/S20 relate to information powers in force before 1 April 2009 - largely superseded by Schedule 36 FA 2008 powers for use on or after 1 April 2009",
+          "EMUPDATE001 is an archived legacy page no longer required",
+          "TMA70/S100A(1) permitting penalty issuance after death was repealed by Finance Act 2007 due to Human Rights Act incompatibility - historical/repealed provision noted for context only"
+        ],
+        "cross_references": [
+          "CH300000+ (Compliance Handbook - penalties)",
+          "CH21300+ (Compliance Handbook - information powers)",
+          "CH300550",
+          "CH300200",
+          "CH300500",
+          "CH300700",
+          "CH300400",
+          "CH300900",
+          "CH300600",
+          "CH301200",
+          "CH301100",
+          "CH301150",
+          "CH20000+",
+          "CH22000",
+          "CH250000+",
+          "CH201600+",
+          "CH203540+",
+          "CH21360",
+          "CH21380",
+          "EM1806 (Surveillance and Human Intelligence)",
+          "CH10000+ (record keeping)",
+          "Schedule 36 FA 2008",
+          "TMA70/S19A",
+          "FA98/SCH18/Para27",
+          "TMA70/SCH1A/Para6",
+          "TMA70/S20",
+          "TMA70/S100A(1) (repealed by Finance Act 2007)",
+          "EM21000 (contact link)"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "make the person aware of their right not to self-incriminate before discussing potential 'criminal' penalty liability, via Factsheet CC/FS9 or the HRA Message",
+            "ref": "EM1350",
+            "trigger": "before any discussion where person may be liable to a penalty considered 'criminal' under Article 6",
+            "who": "HMRC officer conducting an enquiry"
+          },
+          {
+            "deadline": "n/a",
+            "must": "avoid unreasonable delay in establishing facts and issuing any penalty due, once rights have been explained",
+            "ref": "EM1350; CH301200",
+            "trigger": "after informing person of rights and potential penalty liability",
+            "who": "HMRC officer conducting an enquiry"
+          },
+          {
+            "deadline": "n/a",
+            "must": "follow guidance at CH301100 before proceeding further if tax evasion, fraud or criminal activity is suspected",
+            "ref": "EM1350; CH301100",
+            "trigger": "suspicion of tax evasion, fraud, or criminal activity",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "keep and maintain business and non-business records, and retain records/supporting documents for a specified period",
+            "ref": "EM1450; CH10000+",
+            "trigger": "requirement to make a correct and complete return or claim, even in years no return/claim is made",
+            "who": "Taxpayer (person required to make a return or claim)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "must never include VAT or VAT penalties in a contract settlement",
+            "ref": "EM6000",
+            "trigger": "when negotiating a contract settlement",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Article 6 fair trial protections apply, including right not to self-incriminate; if in doubt, treat procedurally as 'criminal'",
+            "ref": "EM1350; CH300200; CH300500",
+            "trigger": "Behaviour-based penalties (most penalties) considered 'criminal' under Article 6 ECHR"
+          },
+          {
+            "consequence": "No longer permitted - TMA70/S100A(1) was repealed by Finance Act 2007 as incompatible with the Human Rights Act",
+            "ref": "EM1350",
+            "trigger": "Issuing a penalty after a taxpayer has died (previously permitted under TMA70/S100A(1))"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This is HMRC's internal Enquiry Manual (EM), covering how HMRC conducts direct tax enquiries into Self Assessment returns. It addresses Human Rights Act considerations (right to fair trial and privacy) during enquiries, statutory record-keeping requirements, use of Schedule 36 FA 2008 information and inspection powers, and contract settlements (direct tax only, excluding VAT). Much of the manual's content is withheld under FOIA exemptions, and only a small fraction of the full manual (100 of ~561 sections) was mirrored in this run.",
+        "topics": [
+          "enquiries",
+          "human-rights-act",
+          "information-powers",
+          "record-keeping",
+          "contract-settlements",
+          "penalties"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "cd9a0aac9f12ad8b": {
+      "chars": 9490,
+      "heading": "Enquiry Manual (EM) > EM3550 — Private Side - Introduction",
+      "index": 7,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Some content in EM3555 has been withheld under Freedom of Information Act 2000 exemptions.",
+          "A trader is not obliged to create a balance sheet, so details of Capital Account or drawings may not always be available on the SAI.",
+          "Cash test deficiency figures are described as likely minimum figures since cash expenditure is difficult to quantify precisely.",
+          "This is internal HMRC operational guidance for enquiry officers, not law directly imposing obligations on ordinary taxpayers (aside from the general record-keeping expectation)."
+        ],
+        "cross_references": [
+          "EM0092",
+          "EM3520",
+          "EM3555",
+          "EM3570",
+          "EM3580",
+          "EM3560",
+          "EM2220",
+          "EM2960"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A cash-flow exercise on personal (rather than business) money, comparing cash available (drawings, private withdrawals, known cash receipts) against cash expenditure (deposits and estimated personal spending) to identify shortfalls.",
+            "ref": "EM3555",
+            "term": "Cash test"
+          },
+          {
+            "meaning": "A simple calculation of the approximate amount available for private expenditure after savings and specific items have been excluded.",
+            "ref": "EM3570+",
+            "term": "Means test"
+          },
+          {
+            "meaning": "A full reconciliation year by year of the taxpayer's capital worth, income and expenditure.",
+            "ref": "EM3580+",
+            "term": "Capital statement"
+          },
+          {
+            "meaning": "Money taken by a trader for personal or family use from business cash, business bank accounts, or transfers from a personal account where no separate business account exists; may appear in accounts as a balancing figure.",
+            "ref": "EM3555",
+            "term": "Drawings"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "identify and examine all significant risks of error in the return, including whether it is fundamentally incorrect, via comprehensive review of underlying records",
+            "ref": "EM3550",
+            "trigger": "return selected for full enquiry",
+            "who": "Enquiry officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "keep a record of any money taken for personal/family use from business cash, business bank account(s), or transfers from personal account",
+            "ref": "EM3555",
+            "trigger": "operating a business with drawings",
+            "who": "Taxpayer (business/trader)"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This HMRC Enquiry Manual chunk describes how officers conducting a full enquiry into a Self Assessment return should examine a taxpayer's private financial affairs when business records appear inadequate or income levels lack credibility. It outlines three main techniques - cash tests, means tests, and capital statements - and gives detailed guidance on conducting cash-flow analysis of personal drawings, cash withdrawal patterns, and private bank/card statements to identify undisclosed income or diverted profits.",
+        "topics": [
+          "enquiry-techniques",
+          "private-side-review",
+          "cash-flow-test",
+          "means-test",
+          "capital-statement",
+          "business-records",
+          "compliance-checks"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "ed160649dd2312f0": {
+      "chars": 11690,
+      "heading": "Enquiry Manual (EM) > EM0020 — 'Your Charter'",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Class 1 settlement culpable duty threshold",
+            "period": "n/a",
+            "ref": "EM0100",
+            "value": "£4,000"
+          }
+        ],
+        "caveats": [
+          "Fraud/negligence penalty regime applies only where filing date is on or before 31 March 2009; superseded by the deliberate/careless inaccuracy penalty regime (CH80000+) for periods beginning on/after 1 April 2008 with filing dates on/after 1 April 2009.",
+          "Classes 2, 3, 4 & 5 of settlement classification have been withdrawn.",
+          "CTSA (Corporation Tax Self Assessment) rules apply to companies only for accounting periods ending on or after 1 July 1999; CT Pay and File applied for periods ending on or after 31 July 1993.",
+          "SA rules for individuals, trusts and partnerships apply from 6 April 1996.",
+          "Only one notice of enquiry into a return is permitted.",
+          "Payments on account are 'normally' equal to half the prior year's liability - exceptions not detailed in this chunk.",
+          "The written-notice requirement for tax notices does not apply to all taxes, e.g. Stamp Duty Reserve Tax or Bank Payroll Tax, which lack equivalent legislation to S989 ITA 2007/S1119 CTA2010."
+        ],
+        "cross_references": [
+          "TMA70/S29",
+          "TMA 70 S9A(1)",
+          "S989 ITA 2007",
+          "S1119 CTA2010",
+          "S832(1) ICTA 1988",
+          "FA98 S118",
+          "FA98/SCH18/PARA 41",
+          "Schedule 18 FA 1998 paragraph 18",
+          "CTA10/S455",
+          "CTA10/S458",
+          "Section 18 CRCA",
+          "Section 3 CRCA",
+          "Interpretation Act 1978 s.1",
+          "CH11000",
+          "CH13000",
+          "CH23520",
+          "CH80000",
+          "EM4000",
+          "EM4100",
+          "EM4500",
+          "EM0067",
+          "EM0090",
+          "EM6402a",
+          "EM6402b",
+          "EM8642",
+          "SACM3015",
+          "COG900200",
+          "CC-FS9 factsheet"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Non-company taxpayers, 1995-96 onwards",
+            "name": "Notify chargeability (individuals not receiving a return)",
+            "ref": "EM0050",
+            "rule": "Within 6 months of the end of the tax year in which liability arises"
+          },
+          {
+            "applies_to": "Persons starting own business",
+            "name": "Class 2 NIC registration for new businesses",
+            "ref": "EM0050",
+            "rule": "Within 3 months, from 31 January 2001"
+          },
+          {
+            "applies_to": "Companies",
+            "name": "Company notify chargeability",
+            "ref": "EM0050",
+            "rule": "Within 12 months of the end of their accounting period"
+          },
+          {
+            "applies_to": "Individuals, partnerships and trusts",
+            "name": "SA return filing deadline",
+            "ref": "EM0050",
+            "rule": "31 January following the end of the tax year"
+          },
+          {
+            "applies_to": "Companies",
+            "name": "Company return filing deadline",
+            "ref": "EM0050",
+            "rule": "Generally 12 months from the end of the accounting period"
+          },
+          {
+            "applies_to": "Income Tax and Class 4 NIC payers",
+            "name": "First payment on account",
+            "ref": "EM0050",
+            "rule": "31 January in the year of assessment"
+          },
+          {
+            "applies_to": "Income Tax and Class 4 NIC payers",
+            "name": "Second payment on account",
+            "ref": "EM0050",
+            "rule": "31 July after the year of assessment"
+          },
+          {
+            "applies_to": "SA taxpayers",
+            "name": "Balancing payment",
+            "ref": "EM0050",
+            "rule": "Next 31 January, same time return is due"
+          },
+          {
+            "applies_to": "Taxpayers with CGT liability",
+            "name": "CGT payment",
+            "ref": "EM0050",
+            "rule": "31 January after the end of the tax year"
+          },
+          {
+            "applies_to": "Companies",
+            "name": "Corporation Tax payment",
+            "ref": "EM0050",
+            "rule": "Day following expiry of 9 months from the end of the accounting period (most companies); very large companies pay quarterly"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A notice in writing, as defined at S989 ITA 2007 and S1119 CTA2010 (previously S832(1) ICTA 1988); exception under FA98 S118 for certain claims",
+            "ref": "EM0067",
+            "term": "Notice (for Income Tax/CGT/Corporation Tax)"
+          },
+          {
+            "meaning": "Income Tax chargeable on an individual settlements where total culpable duty does not exceed £4,000, involving untaxed interest under ITTOIA05/S369, charges on income, bank/local authority/building society interest, and other UK taxed investment income",
+            "ref": "EM0100",
+            "term": "Class 1 Cases"
+          },
+          {
+            "meaning": "All settlements that don't fall within Class 1 or Class 6",
+            "ref": "EM0100",
+            "term": "Class 1A Cases"
+          },
+          {
+            "meaning": "All employer compliance cases",
+            "ref": "EM0100",
+            "term": "Class 6 Cases"
+          },
+          {
+            "meaning": "Includes enquiry cases concluded by contract or formal means where there is a penalty position, even if it is proposed not to seek a penalty",
+            "ref": "EM0100",
+            "term": "Settlement (for classification purposes)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "Within 6 months of the end of the tax year in which liability arises",
+            "must": "Notify chargeability to tax",
+            "ref": "EM0050",
+            "trigger": "Liability to tax arising, for 1995-96 onwards",
+            "who": "Person who is not a company and has not received a tax return"
+          },
+          {
+            "deadline": "Within 3 months",
+            "must": "Register for Class 2 NIC",
+            "ref": "EM0050",
+            "trigger": "Starting a business, from 31 January 2001",
+            "who": "Person starting their own business"
+          },
+          {
+            "deadline": "Within 12 months of the end of their accounting period",
+            "must": "Notify chargeability",
+            "ref": "EM0050",
+            "trigger": "Liability to tax arising",
+            "who": "Company"
+          },
+          {
+            "deadline": "n/a (not specified in chunk)",
+            "must": "Notify chargeability of any income or gains not included in that simple assessment",
+            "ref": "EM0050",
+            "trigger": "Notice to file withdrawn, for 2016-17 onwards",
+            "who": "Person whose notice to file a return is withdrawn to allow a simple assessment"
+          },
+          {
+            "deadline": "31 January following the end of the tax year",
+            "must": "Send back (file) their SA return; self assess even if HMRC is asked to calculate liability",
+            "ref": "EM0050",
+            "trigger": "End of the tax year",
+            "who": "Individuals, partnerships and trusts"
+          },
+          {
+            "deadline": "Generally 12 months from the end of the accounting period",
+            "must": "File return",
+            "ref": "EM0050",
+            "trigger": "End of accounting period",
+            "who": "Companies"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Keep records to enable correct and complete returns to be made, and preserve those records",
+            "ref": "EM0050 / CH11000 / CH13000",
+            "trigger": "Requirement to make a return",
+            "who": "All taxpayers"
+          },
+          {
+            "deadline": "31 January in the year of assessment; 31 July after the year of assessment",
+            "must": "Make payments on account (each normally half the prior year's income tax and Class 4 NIC liability)",
+            "ref": "EM0050",
+            "trigger": "n/a",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "Next 31 January, same time as return is due",
+            "must": "Make final balancing payment where appropriate",
+            "ref": "EM0050",
+            "trigger": "n/a",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "31 January after the end of the tax year",
+            "must": "Pay Capital Gains Tax",
+            "ref": "EM0050",
+            "trigger": "n/a",
+            "who": "Taxpayer with CGT liability"
+          },
+          {
+            "deadline": "At any time from receipt of the return until the end of a defined period",
+            "must": "Give written notice to open an enquiry into a return",
+            "ref": "EM0065",
+            "trigger": "Decision to enquire into a return",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Close enquiry by written notice setting out conclusions and any amendments",
+            "ref": "EM0065",
+            "trigger": "Completion of enquiry",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Give all notices relating to Income Tax, CGT or Corporation Tax enquiries in writing",
+            "ref": "EM0067",
+            "trigger": "Any requirement to 'give notice' under Income Tax/Corporation Tax Acts",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make customers aware of rights and obligations at the appropriate stage of enquiry, and provide relevant factsheet/booklet even if explained verbally/in writing",
+            "ref": "EM0020",
+            "trigger": "During an enquiry",
+            "who": "HMRC staff"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not give or disclose HMRC information without lawful authority",
+            "ref": "Section 18 CRCA / EM0070",
+            "trigger": "Handling HMRC information",
+            "who": "HMRC employees"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Sign a declaration of confidentiality",
+            "ref": "Section 3 CRCA / EM0070",
+            "trigger": "Joining HMRC",
+            "who": "New HMRC staff"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Monetary penalty",
+            "ref": "EM0055",
+            "trigger": "Failure to notify liability"
+          },
+          {
+            "consequence": "Monetary penalty",
+            "ref": "EM0055",
+            "trigger": "Failure to deliver a return (by filing date, or at all)"
+          },
+          {
+            "consequence": "Monetary penalty",
+            "ref": "EM0055 / EM4500+",
+            "trigger": "Fraudulently or negligently delivering an incorrect return where the filing date is on or before 31 March 2009"
+          },
+          {
+            "consequence": "Monetary penalty",
+            "ref": "EM0055 / CH80000+",
+            "trigger": "Deliberately or carelessly giving HMRC a return or document containing an inaccuracy, relating to a tax period beginning on or after 1 April 2008 with a filing date on or after 1 April 2009"
+          },
+          {
+            "consequence": "Surcharge",
+            "ref": "EM0055 / EM4100+",
+            "trigger": "IT/Class 4 NICs/CGT remaining unpaid 28 days after due date"
+          },
+          {
+            "consequence": "Surcharge",
+            "ref": "EM0055 / EM4100+",
+            "trigger": "IT/Class 4 NICs/CGT remaining unpaid 6 months after due date"
+          },
+          {
+            "consequence": "Interest accrues daily on tax paid late (commercial restitution, not a penalty)",
+            "ref": "EM0055 / EM4000+",
+            "trigger": "Late payment of tax generally"
+          },
+          {
+            "consequence": "Criminal sanctions",
+            "ref": "EM0070 / Section 18 CRCA",
+            "trigger": "Disclosure of HMRC information without lawful authority"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk covers multiple EM manual pages on the SA system outline: obligations to notify chargeability, return filing deadlines, record-keeping duties, and the structure of payments on account and balancing payments. It also covers interest, surcharges and penalties for late payment/filing, HMRC's enquiry powers under the 'process now/check later' regime, requirements that HMRC notices be in writing, staff confidentiality obligations under CRCA 2005, classification of settlements, and guidance on which year to open enquiries into when omissions may span multiple years.",
+        "topics": [
+          "notify-chargeability",
+          "filing-deadlines",
+          "payments-on-account",
+          "balancing-payment",
+          "record-keeping",
+          "interest",
+          "surcharges",
+          "penalties",
+          "enquiry-powers",
+          "notice-requirements",
+          "confidentiality",
+          "settlements",
+          "discovery-assessment"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/manuals/em.md",
+  "source_id": "hmrc-manual-em",
+  "source_url": "https://www.gov.uk/hmrc-internal-manuals/enquiry-manual"
+}

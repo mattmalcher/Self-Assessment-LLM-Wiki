@@ -16,7 +16,7 @@
     "last_checked": "2026-09-04"
   },
   "crca-2005": {
-    "content_hash": "1937387d3bbb5f8b74b561d8060f66e0ddaf38ee8085ed015505b07b103970bf",
+    "content_hash": "3f68adf6a0171e971d899346f62cf3d2ef6f77d423eb6d093649389b098cd7e2",
     "http": {
       "etag": null,
       "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
@@ -34,23 +34,23 @@
     "upstream_updated_at": "2017-04-21T13:20:24+01:00"
   },
   "hmrc-manual-artg": {
-    "content_hash": "af3c5ded78cb725094f8ad2e3738e6575bbd82c9c0a15b10d52236ea2603e4eb",
+    "content_hash": "500477ee55707085a6a2f63a1a5849296ffb7ca0f3ce4a7db727c5a153849c7d",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-ch": {
-    "content_hash": "a945ba94871a306fdf57223579f49309e95d2eabda742f71ea1fcfe6915f808a",
+    "content_hash": "4be824260e80a7728cee350d92114b2ad61e4c3a695ef4cf6578dd9415c9c5c7",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-em": {
-    "content_hash": "1aaec13e86b99fb27811de9ad9376e1ef89aa565c9eb61687ead5b2e3cb8599e",
+    "content_hash": "5fe62c0c00165cdad095a44fd84e6a90fcde44a458450c7dcc1177200a051420",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-salf": {
-    "content_hash": "e5195f27f4c62121881ff97f1393d77552061436c27aaea50c0f0271e7dfb7a2",
+    "content_hash": "48fde6d3a527ca952d23ee0df745d369e0c031532e23e2b5bbe94c371d60d8ee",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-sam": {
-    "content_hash": "fca156c045fad0b5b894263625b7568d1c2a79a196e10c82e3edc50b737cab96",
+    "content_hash": "bd41af8eb0da0dd5b7d43c3a491f034e96df1214e2e367b924de6edf81943500",
     "last_checked": "2026-09-04"
   },
   "hmrc-manuals-index": {
@@ -79,7 +79,7 @@
     "upstream_updated_at": "2026-08-14T10:54:46+01:00"
   },
   "itepa-2003": {
-    "content_hash": "acb77b07df0697158cf5fe5f895a4b6a79e363a4b61b12e492203371be7ef5e1",
+    "content_hash": "92d577c4352b6ef49ec7a45e0560643956dab4b7672464e69b504fd0ba3c8c7e",
     "http": {
       "etag": null,
       "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
@@ -182,7 +182,7 @@
     "upstream_updated_at": "2014-07-04T00:00:00+01:00"
   },
   "si-ftt-tax-chamber-rules-2009": {
-    "content_hash": "ff74264cd4849a4702d52e218e830b720ead796eea274d03118e228f24ffc5af",
+    "content_hash": "207e469cab2151d1439772f0d0fded4105c206197e410e140eb90b7eb3a6e6a1",
     "http": {
       "etag": null,
       "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
@@ -198,7 +198,7 @@
     "last_checked": "2026-09-04"
   },
   "tma-1970": {
-    "content_hash": "bbdc0a641f122dbe58392ab14371b096812afbea2964683731b88c7beaa439de",
+    "content_hash": "155b31b2d4b262df3019d54b6c6d570b47776d9187d80c860c19e669cd4f8ca2",
     "http": {
       "etag": null,
       "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"

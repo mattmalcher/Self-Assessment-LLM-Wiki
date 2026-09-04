@@ -1,0 +1,59 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "6168d16040c47788": {
+      "chars": 4192,
+      "heading": "Self Assessment tax return helpsheets",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This chunk is purely a navigational index; detailed rules, figures and deadlines are contained in the individual linked helpsheets, not in this chunk."
+        ],
+        "cross_references": [
+          "HS343 Accrued Income Scheme",
+          "HS234 Averaging for creators of literary or artistic works",
+          "HS287 Capital Gains Tax and employee share schemes",
+          "HS292 Capital Gains Tax land and leases",
+          "HS282 Capital Gains Tax when someone dies",
+          "HS342 Charitable giving tax relief",
+          "HS237 Community Investment Tax Relief",
+          "HS305 Employment-related shares and securities",
+          "HS341 Enterprise Investment Scheme – Income Tax relief",
+          "HS266 Foreign income and gains (FIG) regime",
+          "HS253 Furnished holiday lettings",
+          "HS320 Gains on UK life insurance policies",
+          "HS321 Gains on foreign life insurance policies",
+          "HS340 Interest and alternative finance payments eligible for relief",
+          "HS204 Limit on Income Tax reliefs",
+          "HS286 Negligible value claims and Income Tax losses on disposal of shares",
+          "HS207 Non taxable payments or benefits for employees",
+          "HS325 Other taxable income for Self Assessment",
+          "HS264 Paying tax on the remittance basis",
+          "HS345 Pension savings — tax charges",
+          "HS236 Qualifying care relief for carers",
+          "HS393 Seed Enterprise Investment Scheme — Income Tax and Capital Gains Tax reliefs"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is an index page listing 22 Self Assessment tax return helpsheets available on GOV.UK, covering topics such as capital gains tax, various income tax reliefs (EIS, SEIS, charitable giving, qualifying loans), foreign income and gains, pension savings tax charges, and employment-related shares. Each entry gives a title, an upstream last-updated date, and a link to the individual helpsheet document. No substantive tax rules, figures, or obligations are stated in this chunk itself.",
+        "topics": [
+          "helpsheets-index",
+          "capital-gains-tax",
+          "reliefs",
+          "foreign-income",
+          "pensions",
+          "employment-shares"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/index.md",
+  "source_id": "sa-helpsheets",
+  "source_url": "https://www.gov.uk/government/collections/self-assessment-helpsheets-main-self-assessment-tax-return"
+}

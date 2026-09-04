@@ -1,0 +1,138 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "ca9dd95ff22f9711": {
+      "chars": 10576,
+      "heading": "Enterprise Investment Scheme – Income Tax relief (Self Assessment helpsheet HS341)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Maximum EIS subscription amount eligible for relief per tax year",
+            "period": "2025-26",
+            "ref": "HS341 s.2 / s.6",
+            "value": "£2 million"
+          },
+          {
+            "name": "Maximum EIS subscription not in a knowledge-intensive company (KIC)",
+            "period": "2025-26",
+            "ref": "HS341 s.2 / s.6",
+            "value": "£1 million"
+          },
+          {
+            "name": "EIS Income Tax relief rate",
+            "period": "2025-26",
+            "ref": "HS341 s.6",
+            "value": "30%"
+          }
+        ],
+        "caveats": [
+          "Relief is only available once form EIS3 or EIS5 has actually been received; investors cannot claim for investments where the certificate has not yet been issued.",
+          "Investors who need to use Making Tax Digital for Income Tax will make claims through compatible software rather than the Self Assessment boxes described in this helpsheet.",
+          "Amounts and rates quoted (£2 million, £1 million, 30%) apply to tax year 2025 to 2026 as stated; the helpsheet also references tax year 2026 to 2027 in limited circumstances.",
+          "Eligibility can be lost due to connection with the company, lack of commercial purpose, loans linked to the investment, options to require repurchase, 'replacement capital' rules, risk-protection arrangements, or holding other non-qualifying shares issued on or after 18 November 2015.",
+          "Relief may be restricted if the investor has received value from the company; the restricted amount will be stated on form EIS3."
+        ],
+        "cross_references": [
+          "Self Assessment additional information pages (SA101)",
+          "Making Tax Digital for Income Tax guidance",
+          "Seed Enterprise Investment Scheme (SEIS)",
+          "Contact: Self Assessment (HMRC organisations page)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "'Enterprise Investment Scheme Certificate and claim to relief' form issued by the invested company to certify certain scheme conditions are satisfied",
+            "ref": "HS341 introduction",
+            "term": "EIS3"
+          },
+          {
+            "meaning": "'Certificate and claim to relief for investment through an approved fund' form issued by a fund manager where investment was made through an approved knowledge-intensive investment fund",
+            "ref": "HS341 introduction",
+            "term": "EIS5"
+          },
+          {
+            "meaning": "A company type identified on form EIS3 as such at the time of investment, relevant to whether relief above £1 million can be claimed",
+            "ref": "HS341 s.2",
+            "term": "Knowledge-intensive company (KIC)"
+          },
+          {
+            "meaning": "Being an employee, partner or 'paid director' of the company (or subsidiary), or controlling the company/possessing more than 30% of ordinary share capital, voting power, or winding-up assets entitlement, either personally or via an associate",
+            "ref": "HS341 s.3",
+            "term": "Connected (with a company)"
+          },
+          {
+            "meaning": "Includes a spouse or civil partner, lineal ancestor or descendant, a business partner, and certain persons connected through a trust",
+            "ref": "HS341 s.3",
+            "term": "Associate"
+          },
+          {
+            "meaning": "A director who receives or is entitled to receive any form of payment from the company other than certain items such as reimbursement of allowable expenses",
+            "ref": "HS341 s.3",
+            "term": "Paid director"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Enter the total amount of subscriptions being claimed in box 2 of the 'Other tax reliefs' section on page Ai 2 of the additional information (SA101) pages",
+            "ref": "HS341 s.2",
+            "trigger": "Claiming EIS Income Tax relief in Self Assessment",
+            "who": "Investor claiming EIS Income Tax relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter details of each investment (UIR, company name, amount claimed, share issue date, and attribution choice if over limits) in box 19 'Any other information' on page TR 7 of the tax return",
+            "ref": "HS341 s.2",
+            "trigger": "Claiming EIS Income Tax relief in Self Assessment",
+            "who": "Investor claiming EIS Income Tax relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Wait until form received before claiming; if received after tax return sent, complete the claim form inside EIS3/EIS5 and send to HMRC",
+            "ref": "HS341 s.2",
+            "trigger": "Investment made but certificate not yet issued",
+            "who": "Investor who has not yet received EIS3/EIS5"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete the claim form in form EIS3 (or EIS5) to show the amount on which relief is claimed for the previous year and send it to HMRC",
+            "ref": "HS341 s.5",
+            "trigger": "Choosing to treat shares as issued in the previous tax year",
+            "who": "Investor claiming relief for previous tax year"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Keep form EIS3 (or EIS5) safe as HMRC may ask to see it to support the claim",
+            "ref": "HS341 s.2",
+            "trigger": "Claiming EIS Income Tax relief",
+            "who": "Investor claiming EIS relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Use compatible software to create digital records, send quarterly updates, and make claims/adjustments through software instead of Self Assessment boxes",
+            "ref": "HS341 introduction",
+            "trigger": "Required to use Making Tax Digital for Income Tax",
+            "who": "MTD for Income Tax users"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS341 explains how an individual claims Income Tax relief under the Enterprise Investment Scheme (EIS) via Self Assessment, using certificates form EIS3 (or EIS5 for approved knowledge-intensive fund investments) received from the investee company or fund manager. It covers eligibility conditions (connection tests, commercial purpose, no risk-protection arrangements), how to complete box 2 on page Ai 2 and box 19 on page TR 7, the £2 million annual maximum (with £1 million cap for non-KIC), joint ownership treatment, and the option to carry relief back to the previous tax year. It also notes Making Tax Digital for Income Tax users will make claims through compatible software instead of Self Assessment boxes.",
+        "topics": [
+          "enterprise-investment-scheme",
+          "income-tax-relief",
+          "eis3",
+          "eis5",
+          "additional-information-pages",
+          "reliefs-claim"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/enterprise-investment-scheme-income-tax-relief-self-assessment-helpsheet-hs341.md",
+  "source_id": "sa-helpsheets:5f67de13-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/enterprise-investment-scheme-income-tax-relief-hs341-self-assessment-helpsheet"
+}

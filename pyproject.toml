@@ -13,6 +13,16 @@ dependencies = [
     "beautifulsoup4==4.12.3",
 ]
 
+[project.scripts]
+# So the pipeline is `uv run fetch` / `uv run extract` rather than a module path.
+fetch = "self_assessment_wiki.pipeline.fetch:main"
+sources-index = "self_assessment_wiki.pipeline.render_sources_index:main"
+synth = "self_assessment_wiki.synth.build:main"
+status = "self_assessment_wiki.synth.build:status"
+extract = "self_assessment_wiki.synth.build:extract_cmd"
+compose = "self_assessment_wiki.synth.build:compose_cmd"
+report = "self_assessment_wiki.synth.report:main"
+
 [project.optional-dependencies]
 # Only needed for the API backends of the synthesis layer
 # (`--backend anthropic` / `--backend openai`).
