@@ -20,6 +20,11 @@ MANIFEST_PATH = SYNTH_DIR / "manifest.json"
 # chunks, not the whole Act.
 CHUNK_CHARS = int(os.environ.get("SYNTH_CHUNK_CHARS", "12000"))
 
+# Chunks smaller than this are merged into a neighbour rather than extracted
+# on their own - a bare `---` or an orphan heading is not worth a model call,
+# but its text is still carried into the chunk beside it.
+MIN_CHUNK_CHARS = int(os.environ.get("SYNTH_MIN_CHUNK_CHARS", "400"))
+
 # Defaults; every one is overridable on the command line.
 DEFAULT_BACKEND = os.environ.get("SYNTH_BACKEND", "claude-cli")
 DEFAULT_CONCURRENCY = int(os.environ.get("SYNTH_CONCURRENCY", "4"))

@@ -8,16 +8,53 @@ That stability is what makes the extract cache worth having.
 from __future__ import annotations
 
 import hashlib
+import os
 import re
 from dataclasses import dataclass, field
 from pathlib import Path
 
 import yaml
 
-from .config import CHUNK_CHARS
+from .config import CHUNK_CHARS, MIN_CHUNK_CHARS
 
 _HEADING = re.compile(r"^(#{1,6})\s+(.*)$")
 _FRONT_MATTER = re.compile(r"\A---\n(.*?)\n---\n", re.DOTALL)
+
+# legislation.gov.uk editorial annotations: a bare title line followed by one
+# entry per amendment. They are not all the same kind of thing, and only one
+# kind is expensive - measured share of the mirrored text:
+#
+#                                  TMA     ITEPA   CRCA    FTT rules
+#   Textual Amendments             42.3%   30.1%   24.2%   29.0%
+#   Commencement Information         -       -     13.7%     -
+#   Modifications etc.              0.8%    0.1%    3.1%     -
+#   Marginal Citations              0.0%     -       -      0.4%
+#
+# Textual Amendments are pure history ("S. 1 substituted (18.4.2005) by ..."),
+# and since the mirror holds only the *current* consolidated text they cannot
+# tell you what a provision used to say - just that it changed, which the
+# surviving inline F-markers already flag and corpus/ still records in full.
+#
+# The rest carry live content and are nearly free, so they are kept:
+# "Modifications etc." records another enactment *applying* a section (a
+# cross-reference, not history) and "Commencement Information" is what makes a
+# provision prospective (a caveat). Both are fields in the extract schema.
+_STRIPPED_ANNOTATIONS = tuple(
+    a.strip() for a in os.environ.get("SYNTH_STRIP_ANNOTATIONS", "Textual Amendments").split(",")
+    if a.strip()
+)
+_ANNOTATION_TITLE = re.compile(
+    r"^(" + "|".join(re.escape(a) for a in _STRIPPED_ANNOTATIONS) + r")\b.*$"
+) if _STRIPPED_ANNOTATIONS else None
+# An annotation entry opens with its commentary key, either as a back-link
+# ("[F1](#reference-key-…)S. 1 substituted …") or bare ("C2S. 1 applied …").
+_ANNOTATION_ENTRY = re.compile(r"^\[?[FCIEMPX]\d+\]?\b")
+# Commentary anchors carry a hash and no information once the hover title is
+# gone: "[F204](#commentary-key-8c03…)" -> "F204".
+# The lookahead keeps "[F2](#…)2 General Commissioners" from becoming the
+# unreadable "F22 General Commissioners".
+_COMMENTARY_LINK = re.compile(r"\[([FCIEMPX]\d+)\]\(#[^)]*\)(?=\S)")
+_COMMENTARY_LINK_EOW = re.compile(r"\[([FCIEMPX]\d+)\]\(#[^)]*\)")
 
 
 @dataclass
@@ -48,16 +85,83 @@ def split_front_matter(text: str) -> tuple[dict, str]:
     return meta, text[match.end():]
 
 
+def _strip_annotations(text: str) -> str:
+    """Drop the annotation blocks named in SYNTH_STRIP_ANNOTATIONS.
+
+    An annotation block is a title line ("Textual Amendments") followed by
+    blank-separated entries, each opening with its commentary key (F1, C2,
+    I3, M1). A block runs until the first paragraph that is not an entry - in
+    practice, the next heading.
+
+    Set SYNTH_STRIP_ANNOTATIONS to a comma-separated list of titles to change
+    what goes, or to the empty string to keep every annotation.
+    """
+    if _ANNOTATION_TITLE is None:
+        return text
+    out: list[str] = []
+    lines = text.splitlines(keepends=True)
+    i = 0
+    while i < len(lines):
+        if not _ANNOTATION_TITLE.match(lines[i].rstrip("\n")):
+            out.append(lines[i])
+            i += 1
+            continue
+        i += 1  # the title line
+        while i < len(lines):
+            while i < len(lines) and not lines[i].strip():
+                i += 1
+            if i >= len(lines) or not _ANNOTATION_ENTRY.match(lines[i].lstrip()):
+                break
+            while i < len(lines) and lines[i].strip():  # the entry paragraph
+                i += 1
+    return "".join(out)
+
+
 def _clean(text: str) -> str:
     """Strip the mirroring artefacts that would otherwise dominate a chunk.
 
     legislation.gov.uk markdown carries a hover title on nearly every link
     ("Go to S. 1"), which is pure noise to a summariser and can be a third of
-    the characters in a section.
+    the characters in a section, and repeats every amendment's history under
+    the provision it touched.
+
+    Chunk hashes are computed over the cleaned text, so changing this
+    function invalidates the extract cache for every document it touches.
     """
     text = re.sub(r'\]\(([^)\s]+)\s+"[^"]*"\)', r"](\1)", text)
+    text = _strip_annotations(text)
+    text = _COMMENTARY_LINK.sub(r"\1 ", text)
+    text = _COMMENTARY_LINK_EOW.sub(r"\1", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
     return text
+
+
+def _coalesce(chunks: list[Chunk], min_chars: int) -> list[Chunk]:
+    """Merge undersized chunks into a neighbour rather than paying a model
+    call for a bare `---` or an orphan heading.
+
+    Nothing is discarded: a runt is appended to the preceding chunk, or to
+    the following one when it is the first. The merged chunk keeps the
+    earlier heading path, and hashes/indices are recomputed from the joined
+    text.
+    """
+    if len(chunks) < 2:
+        return chunks
+    merged: list[Chunk] = []
+    for chunk in chunks:
+        if merged and len(chunk.text.strip()) < min_chars:
+            prev = merged[-1]
+            merged[-1] = Chunk(doc=prev.doc, index=prev.index, heading_path=prev.heading_path,
+                               text=prev.text.rstrip("\n") + "\n\n" + chunk.text)
+        else:
+            merged.append(chunk)
+    # A runt in first position has no predecessor to join, so fold it forward.
+    while len(merged) > 1 and len(merged[0].text.strip()) < min_chars:
+        first, second = merged[0], merged[1]
+        merged[:2] = [Chunk(doc=first.doc, index=0, heading_path=first.heading_path,
+                            text=first.text.rstrip("\n") + "\n\n" + second.text)]
+    return [Chunk(doc=c.doc, index=i, heading_path=c.heading_path, text=c.text)
+            for i, c in enumerate(merged)]
 
 
 def chunk_file(path: Path, corpus_root: Path, *, target_chars: int = CHUNK_CHARS) -> tuple[dict, list[Chunk]]:
@@ -128,4 +232,4 @@ def chunk_file(path: Path, corpus_root: Path, *, target_chars: int = CHUNK_CHARS
         size += len(block)
     emit()
 
-    return meta, chunks
+    return meta, _coalesce(chunks, MIN_CHUNK_CHARS)
