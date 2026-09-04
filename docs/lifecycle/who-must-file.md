@@ -3,12 +3,27 @@ title: Who must file a Self Assessment return
 generated: true
 generated_on: '2026-09-04'
 generated_by: claude-cli:opus
-input_hash: b7afec02377737e3
-note_count: 13
+input_hash: b1fa40a58374ef7a
+note_count: 39
 sources:
+- hmrc-escs
+- hmrc-manual-artg
+- hmrc-manual-ch
+- hmrc-manual-em
 - hmrc-manual-salf
+- hmrc-manual-sam
+- hmrc-tools-calculators
+- sa-helpsheets:5f67c90c-7631-11e4-a3cb-005056011aef
+- sa-helpsheets:5f67ceae-7631-11e4-a3cb-005056011aef
+- sa-helpsheets:5f67d46f-7631-11e4-a3cb-005056011aef
+- sa-helpsheets:5f67d5b1-7631-11e4-a3cb-005056011aef
+- sa-helpsheets:5f67db85-7631-11e4-a3cb-005056011aef
+- sa-helpsheets:5f67dc31-7631-11e4-a3cb-005056011aef
+- sa-helpsheets:5f67dcd2-7631-11e4-a3cb-005056011aef
+- sa-helpsheets:5f67dfee-7631-11e4-a3cb-005056011aef
 - si-ftt-tax-chamber-rules-2009
 ---
+
 # Who must file a Self Assessment return
 
 !!! danger "Unofficial - not HMRC, not advice, written by an LLM"
@@ -21,132 +36,134 @@ sources:
     [GOV.UK](https://www.gov.uk/self-assessment-tax-returns) for official
     guidance.
 
-Self Assessment obligations do not arise from being "self-employed" or "a higher rate taxpayer" as such: the return obligation is created by a notice to file under s.8 TMA 1970, and a separate statutory duty to notify chargeability under s.7 TMA 1970 catches people HMRC has not written to. This page sets out both mechanisms, who they apply to, what the supplied sources say about HMRC's operational selection of taxpayers, and what happens when either obligation is missed. It relies only on the source notes listed; where the notes are thin (notably on HMRC's published entry criteria and on withdrawal of a notice), that is flagged at the end.
+This page sets out how a person is brought into UK Self Assessment for income tax and capital gains tax: the notice to file that creates the filing obligation, the separate statutory duty to notify chargeability where no notice has been given, who HMRC issues notices to in practice, and how a person can be taken back out. It is an independent reference, not an HMRC publication; HMRC manual material is identified as HMRC's own view rather than law.
 
-## 1. The notice to file is what creates the return obligation
+## Two distinct obligations
 
-A "notice to file" is a notice requiring a tax return, issued to the taxpayer by "an officer of the Board"; some taxpayers instead receive a paper return that itself contains the notice to file (SALF203 / TMA 1970 s.8). Once given, the taxpayer must deliver a completed return by the statutory filing date (TMA 1970 s.8(1)(a), (1D)–(1G)).
+The statutory scheme has two separate triggers. Confusing them is the most common modelling error.
 
-Three consequences follow from that framing:
-
-| Consequence | Rule | Ref |
+| | Notice to file | Notify chargeability |
 |---|---|---|
-| Filing date is fixed by the notice date | 31 October (paper) / 31 January (electronic) where notice given before 31 July; if notice given after 31 July, 3 months beginning with the date of the notice, or 31 January if later | TMA 1970 s.8(1)(a), (1D)–(1G) |
-| Late filing is penalised | Fixed penalties under Schedule 55 FA 2009, with daily/tax-geared penalties in some cases (2010-11 onward); s.93 TMA 1970 £100 + £100 for 2009-10 and earlier | Sch 55 FA 2009; SALF208; TMA 1970 s.93(2),(4) |
-| Non-filing can be met with a determination | An officer may estimate tax due to the best of their information and belief; treated as a self assessment until superseded by an actual return | TMA 1970 s.28C(1),(1A),(2),(3) |
+| Statutory source | TMA 1970 s.8 (individuals), s.8A (trustees), s.8 TMA (personal representatives), s.12AA (partnerships) | TMA 1970 s.7(1) |
+| Trigger | HMRC gives a notice requiring a return (SALF203) | Having profits or chargeable gains on which tax is due, **and** no notice to file has been given (TMA 1970 s.7(1)) |
+| What it requires | Delivery of a completed return containing a self assessment by the filing date (TMA 1970 s.8(1)(a); s.9(1)) | Notification to an officer of the Board within six months of the end of the tax year (TMA 1970 s.7(1)) |
+| Sanction if missed | Fixed, daily and tax-geared penalties under Schedule 55 FA 2009; HMRC may make a determination under TMA 1970 s.28C | Penalty under Schedule 41 FA 2008 |
 
-The return must contain a self assessment of the tax due, even where the result is nil or a repayment (TMA 1970 s.9(1)), unless the taxpayer files the information section early enough for HMRC to calculate the tax (TMA 1970 s.9(2)).
+A person who has been given a notice to file must file **even if no tax is due**: the return must include a self assessment "even if nil or a repayment is due" (TMA 1970 s.9(1), as described at SALF204). The notice, not the underlying tax position, is what creates the filing duty.
 
-**Implementable rule — filing date.** Inputs: `notice_date`, `tax_year_end`, `filing_medium`. If `notice_date` ≤ 31 July following the tax year: filing date = 31 October (paper) or 31 January (electronic). Otherwise: filing date = max(notice_date + 3 months, 31 January following the tax year) for electronic filing (TMA 1970 s.8(1)(a), (1D)–(1G)).
+## The notice to file
 
-## 2. Voluntary returns: filing without a notice
+SALF203 describes the notice to file as "a notice requiring a tax return, issued to the taxpayer by 'an officer of the Board'", noting that some taxpayers receive a paper return that itself contains the notice. Any notice relating to income tax, CGT or corporation tax must be in writing (S989 ITA 2007 / S1119 CTA 2010, per EM0067).
 
-A return received from a customer or agent where HMRC has not given a notice to file is a "voluntary return". Since law introduced with retrospective and prospective effect from 12 February 2019, it is treated as made in response to a notice to file given on the same date the return was received (SALF202).
+Filing dates flow from the notice and its issue date:
 
-That has a specific consequence: a voluntary return is always treated as delivered on or before the filing date, so no late filing penalty applies (SALF202 / SALF203). Voluntary return filing dates and payment dates track the receipt date:
-
-| Situation | Deemed filing date | Balancing payment due |
+| Case | Filing date | Ref |
 |---|---|---|
-| Voluntary paper return received on or before 31 July | 31 October following the tax year | 31 January following the tax year |
-| Voluntary paper return received after 31 July | 3 months after date received | — |
-| Voluntary electronic return received on or before 31 October | 31 January following the tax year | 31 January following the tax year |
-| Voluntary electronic return received after 31 October | 3 months after date received | 3 months from the date the voluntary return was received |
+| Paper return, notice given before 31 July following the tax year | 31 October following end of year of assessment | TMA 1970 s.8(1)(a) |
+| Electronic return, notice given before 31 July | 31 January following end of year of assessment | TMA 1970 s.8(1)(a) |
+| Notice given after 31 July following end of tax year | 3 months beginning with the date of the notice, or 31 January if later (electronic filing) | TMA 1970 s.8(1D)–(1G) |
+| Taxpayer wants HMRC to calculate the tax; notice given after 31 August | 2 months beginning with the day the notice is given | TMA 1970 s.9(2); SALF202 |
 
-Sources: SALF202; TMA 1970 s.59B(3)–(6) and Schedule 3ZA.
+HMRC's operational manual (SAM, "Filing date – 2007-08 and later years") states the late-issue rule slightly differently, as "3 months and 7 days after issue date", and records exceptions to the standard dates for non-resident companies (SA700), registered pension scheme trustees (SA970) and certain elected representatives (MPs, MSPs, Welsh and NI Assembly Members). Where the notes disagree, SALF/statute gives 3 months; the SAM operational entry gives 3 months and 7 days.
 
-Filing voluntarily does not remove the record-keeping duty: s.12B applies where a notice to file is given, a return containing the notice is given, **or** a voluntary return is made and delivered (TMA 1970 s.12B(1),(2)).
+## Voluntary returns
 
-## 3. The statutory duty to notify chargeability (s.7 TMA 1970)
+A return received where HMRC has not given a notice to file is a **voluntary return**. Since law put beyond doubt from 12 February 2019, with retrospective and prospective effect, it is treated as made in response to a notice to file given on the date the return was received (SALF202). Consequences:
 
-Where no notice to file has been issued, the obligation runs the other way: the taxpayer must tell HMRC.
+- A voluntary return is always treated as delivered on or before the filing date, so no late-filing penalty arises (SALF202/SALF203).
+- Its filing date for other purposes is 31 October (paper) or 31 January (electronic) following the tax year, unless received after 31 July (paper) or 31 October (electronic), in which case 3 months after the date received (SALF202).
+- Any balancing payment is due three months from the date the voluntary return was received where it is delivered after 31 October following the year (TMA 1970 s.59B(3)–(6) and Schedule 3ZA).
 
-**Rule.** A person who has profits or chargeable gains on which tax is due, and who has not been given a notice to file, must notify an officer of the Board of chargeability to income tax or capital gains tax within six months from the end of the tax year in which the liability arises — the notification must be received on or before 5 October (TMA 1970 s.7(1)).
+## Who HMRC issues notices to
 
-**Exceptions.** The exceptions to the notify-chargeability requirement apply only where the taxpayer has **no chargeable gains (or gains within the annual exempt amount)** and **either** has no net income tax liability **or** has had sufficient tax deducted at source (SALF210, per Note 1). Both limbs must hold; the gains condition is not optional.
+This is administrative practice, not statute. SALF ("Who will get tax returns?") states that around 4 million of the 28 million taxpayers covered by PAYE are sent Self Assessment returns, because of higher rate liability or because their affairs are complex. SALF706 separately confirms that PAYE employees can be within Self Assessment.
 
-**Implementable rule — s.7 in scope.** Inputs: `notice_to_file_given` (bool), `chargeable_gains`, `annual_exempt_amount`, `net_income_tax_liability`, `tax_deducted_at_source_sufficient` (bool). Notification is required where `notice_to_file_given == false` AND NOT (`chargeable_gains ≤ annual_exempt_amount` AND (`net_income_tax_liability == 0` OR `tax_deducted_at_source_sufficient`)). Deadline: 5 October following the end of the tax year (TMA 1970 s.7(1); SALF210).
+Notices are also given to persons other than individuals:
 
-**Penalty.** Failure to notify within the six-month time limit attracts a penalty under Schedule 41 FA 2008, up to the net amount of tax due but unpaid at 31 January following the tax year in which the liability arises. Critically, the penalty is eliminated if the full tax is paid on or before that 31 January, even where notification was made late (Schedule 41 FA 2008, per SALF210).
-
-**Coronavirus support payments.** A person who receives a coronavirus support payment they are not entitled to must notify chargeability within a distinct notification period: it starts on the day income tax became chargeable and ends on the later of 20 October 2020 or the 90th day after the income tax became chargeable (SALF210).
-
-Note the interaction with due dates: where a late notice to file or a late voluntary return shifts the balancing payment date to three months from delivery/receipt, the sources describe that as applying where there is **no** failure to notify under s.7 (TMA 1970 s.59B(3)–(6) and Sch 3ZA). A s.7 failure does not buy extra time to pay.
-
-## 4. Who HMRC issues notices to, and why
-
-This is operational practice rather than statute. The SALF manual states that around **4 million** of the **28 million** taxpayers covered by PAYE are sent Self Assessment returns, because of higher rate liability or because their affairs are otherwise complex (SALF, "Who will get tax returns?" — Note 2). SALF separately confirms that PAYE employees can be within Self Assessment (Note 11).
-
-The supporting information HMRC uses to identify such cases comes largely from employer and third-party reporting:
-
-| Report | Who | Deadline | Ref |
-|---|---|---|---|
-| P60 to employee | Employers | 31 May | PAYE Regulations |
-| P11D to HMRC and copy to employee | Employers | 6 July | PAYE Regulations |
-| Written details of expenses/benefits to employee where provided by a third party and not on the employer's P11D | Third parties | 6 July following the tax year in which paid or provided | Section 15 |
-
-Section 15 is described as a general information-seeking power letting HMRC require employers and third parties to give details of expenses payments and benefits in kind (Note 2).
-
-## 5. Categories other than individuals
-
-The regime brings in persons other than the individual taxpayer:
-
-| Who | Obligation | Ref |
+| Person | Return obligation | Ref |
 |---|---|---|
-| **Trustees** | Make a return of income, profits or gains arising to the trust and pay income tax/CGT due, on the same fixed timescale as individual SA filing and payment | Section 8A / Section 9 |
-| **Any "relevant trustee"** | May notify chargeability, make the return, or deal with an enquiry on behalf of all trustees | Section 107A(1) |
-| **Personal representatives** | Make a return for the deceased's estate and pay income tax/CGT; deduct tax at basic (or investment/dividend) rate before distributing income; notify beneficiaries on form R185 (Estate Income) | Section 8 TMA; SALF806 |
-| **Beneficiaries of estates** | Enter income attributed to their interest, and the associated tax credit, on their own SA return | Chapter 6 Part 5 ITTOIA |
-| **Partners** | Include their share of partnership profits, losses, credits or charges in their own personal return — using exactly the allocated figure, with no adjustments permitted | TMA 1970 s.8(1B),(1C); SALF502 |
-| **Partnership (nominated partner)** | File a partnership return establishing each partner's chargeable amounts, income tax payable and profit allocation | TMA 1970 s.12AA(1),(1A),(2),(3) |
-| **UK representative of a non-resident** | Fulfil all the non-resident's SA obligations — notification of chargeability, filing the return and self assessment, interim and final payments | FA95/Sch23 paras 1–3; FA2003/S150(3)–(4) |
+| Trustees | Return of trust income, profits or gains and payment of IT/CGT, on the same fixed timescale as individuals | TMA 1970 s.8A / s.9 |
+| Any "relevant trustee" | May notify chargeability, make the return, or deal with an enquiry on behalf of all trustees | TMA 1970 s.107A(1); "relevant trustee" defined at s.7(9) and s.118 |
+| Personal representatives | Return of estate income, profits or gains; deduct tax before distributing income; issue form R185 to beneficiaries | TMA 1970 s.8; SALF806 |
+| Beneficiaries of estates | Enter income attributed to their interest, with the tax credit, on their own SA return | Chapter 6 Part 5 ITTOIA 2005 |
+| Partnerships (nominated partner) | Partnership return establishing each partner's chargeable amounts and the profit allocation | TMA 1970 s.12AA(1)–(3) |
+| Individual partners | Include their share of partnership profits, losses, credits or charges in their own personal return, using exactly the allocated figure | TMA 1970 s.8(1B), (1C); SALF502 |
+| UK representative of a non-resident | Must fulfil the non-resident's SA obligations, including notification, filing and payments | FA95/Sch23 paras 1–3; FA2003/S150(3)–(4) |
 
-Two points of nuance. There are **no partnership assessments** under Self Assessment: assessment and collection operate on individual partners as if the partnership did not exist, even though a partnership return is required (Note 5). And trustees are jointly liable in law, though in practice one "principal acting trustee" deals with HMRC; HMRC may recover from any other relevant trustee, except that recovery against someone who became a relevant trustee only after a penalty or surcharge arose is limited to outstanding tax and interest on tax (Section 107A(2)–(4); s.107A(3)).
+There are no partnership assessments under Self Assessment; assessment and collection operate on the individual partners as if the partnership did not exist, despite the partnership return requirement (SALF, discovery/partnership sections).
 
-For non-residents, certain agents — Lloyd's agents, brokers and investment managers — meeting strict conditions are not treated as UK representatives at all, so the representative obligations never bite (Note 10). The investment manager tests turn on the independent agent condition and the "20%" condition (FA95/S127(3); FA2003/Sch26/Para 3–4; SP 01/2001 — HMRC's published view, not statute).
+## Notifying chargeability where no notice is given
 
-## 6. Being taken out again
+**Rule (implementable).** Input: whether a notice to file under s.8/s.8A was given for the year; whether the person has profits or chargeable gains on which tax is due. Condition: tax due **and** no notice given. Result: notification to an officer of the Board required within six months of the end of the tax year in which the liability arises — i.e. received on or before 5 October (TMA 1970 s.7(1); SALF210; EM0050 states the same six-month rule for 1995-96 onwards).
 
-The notes contain two mechanisms that reduce or remove obligations, neither of which is withdrawal of a s.8 notice:
+**Exceptions.** SALF210 states that exceptions to the notify-chargeability requirement apply only where the taxpayer has no chargeable gains (or gains within the annual exempt amount) **and** either has no net income tax liability or has had sufficient tax deducted at source.
 
-- **Coding out instead of a balancing payment.** Where a taxpayer is within PAYE and the additional liability is **less than £3,000**, it may be collected through the PAYE code, provided the return is submitted electronically before 31 December following the end of the tax year, or on paper by 31 October following the end of the tax year (or received after but processed before 31 December) (SALF204).
-- **Digital exclusion from MTD obligations.** A person or partner may be excluded from digital obligations where HMRC is satisfied they are a practising member of a religious society whose beliefs bar electronic communications or records, that it is not reasonably possible for them to use electronic communications or keep electronic records (age, disability, where they live), or that they cannot meet identity-verification conditions (SALF1420). The person writes to HMRC to apply, stating the reason and the dates of exclusion; HMRC decides and, if satisfied, must issue an **exclusion notice** stating the start date and any end date (SALF1430). If no end date was specified and the person later believes they have ceased to be excluded, they must give further notice within **3 months** of first having reason to believe that (SALF1430). HMRC anticipates it will be rare for the digital exclusion conditions to be met (SALF1420). Appeals against HMRC decisions under the Schedule A1 regulations must be made in writing, specifying grounds, within 30 days after the day notice of the decision is given (SALF950).
+**Coronavirus support payments.** Where a person receives a support payment they were not entitled to, the notification period starts on the day income tax became chargeable and ends on the later of 20 October 2020 or the 90th day after the income tax became chargeable (SALF210).
 
-This exclusion removes the *digital* obligations, not the s.8 return obligation — the return remains due 31 January the following year (SALF910; s.8(1)(a) TMA 1970).
+**Penalty.** Failure to notify within the six-month limit attracts a penalty under Schedule 41 FA 2008 of up to the net amount of tax due but unpaid at 31 January following the tax year in which the liability arises. SALF210 records that the penalty is eliminated if the full tax is paid on or before that 31 January, even where notification was late. The Compliance Handbook describes the same regime as a percentage of "potential lost revenue", varying with behaviour (careless/deliberate) and whether disclosure was prompted or unprompted (FA08/SCH41; CH70100).
 
-## 7. Making Tax Digital: an additional layer for some who already file
+**Notifiable events (HMRC's framing).** CH70100 lists the events a person must tell HMRC about as including having tax to pay without a notice to file, starting a new taxable activity, turnover reaching a threshold, and a change in the nature of an activity.
 
-MTD for Income Tax applies to "relevant persons" (sole traders and landlords carrying on a "relevant activity") whose qualifying income exceeds the threshold for the relevant tax year (SALF910; SALF930).
+**Related registration duty.** A person starting their own business must register for Class 2 NIC within 3 months, from 31 January 2001 (EM0050; Regulation 87A of SI 2001/1004 is cross-referenced at SALF210).
 
-| Qualifying income in | Threshold | MTD mandated from |
+Missing the 5 October date does not shift the payment dates: where a return is issued after 5 October because of a failure to notify, SAM's "Failure to Notify" entry states the balancing charge remains due 31 January after the end of the tax year, and payments on account are unchanged. (By contrast, where HMRC issues a return late through its own error, SAM says the due dates are amended accordingly.)
+
+## Thresholds in customer-facing guidance
+
+Self Assessment helpsheets state registration thresholds in simplified terms. For chargeable event gains on life insurance policies:
+
+| Situation | Guidance | Ref |
+|---|---|---|
+| Individual already within SA | Report the gain on the SA return (Foreign section / "UK other income") | HS320 s.6.1; HS321 s.6.1 |
+| Not within SA; gain **plus other savings and investment income** exceeds £10,000 | Register for SA and report the gain on the return | HS320 s.6.1; HS321 s.6.1 |
+| Not within SA; gain plus other savings/investment income is £10,000 or less | Contact SA general enquiries, or send a copy of the chargeable event certificate with the NI number to HMRC, BX9 1AS | HS320 s.6.1; HS321 s.6.1 |
+
+Note that the £10,000 test is on the gain **together with** other savings and investment income, not the gain alone (HS320 s.6.1 caveats). This is customer-facing guidance rather than statute; the underlying statutory duty for a person with tax to pay and no notice to file remains s.7(1).
+
+## Being taken out again: withdrawal of a notice and Simple Assessment
+
+EM0050 records that, for 2016-17 onwards, where a person's notice to file a return is **withdrawn to allow a Simple Assessment**, that person must notify chargeability in respect of any income or gains **not included** in that Simple Assessment. The notes do not give the statutory provision governing withdrawal itself, nor the deadline for that residual notification.
+
+Simple Assessment has restricted challenge rights: there is no right of appeal (and no right of review) unless the person first raises a query under TMA 1970 s.31AA within 60 days of the date the notice of Simple Assessment was issued (or such longer period as HMRC may allow) and receives a final response (ARTG; s.31AA TMA 1970).
+
+## Overlay: Making Tax Digital for Income Tax
+
+MTD does not change who is required to file, but changes how relevant persons meet the obligation. SALF910 sets out qualifying income thresholds and mandation dates:
+
+| Qualifying income in return for | Threshold | MTD applies from |
 |---|---|---|
 | 2024-25 | over £50,000 | 6 April 2026 |
 | 2025-26 | over £30,000 | 6 April 2027 |
-| 2026-27 and any subsequent tax year | over £20,000 | 6 April 2028 |
+| 2026-27 and later | over £20,000 | 6 April 2028 |
 
-Source: SALF910. A "relevant activity" excludes partnership activities, charitable/exempt unauthorised unit trust trustee activities, Lloyd's underwriting, REIT share distributions and OEIC participation (SALF930); MTD does not yet apply to partnerships, with a future timeline to be set by HMRC (Note 9). The standard digital start date is 6 April in the tax year after the tax year in which the return obligation first applies (SALF1010), and when the notice to file was actually given can shift that date by a year; a calendar quarters election can shift it to 1 April in the prior year (Note 9). The notes warn that the commencement instruments have been repeatedly amended and revoked (SI 2021/1079 → SI 2024/422 → SI 2026/356; SI 2021/1076 amended by SI 2024/167, revoked by SI 2026/336), so the currently operative instrument should be checked.
+A "relevant person" is one carrying on (or who has carried on) a "relevant activity" — an activity giving rise to profits or income chargeable under Part 2 (trade, profession, vocation) or Part 3 (property business) ITTOIA 2005 if the person were UK resident, excluding partnership activities, charitable/exempt unauthorised unit trust trustee activities, Lloyd's underwriting, REIT share distributions and OEIC participation (SALF930). MTD for Income Tax does not yet apply to partnerships; SALF states HMRC will set a future timeline. The self assessment return remains due 31 January the following year (SALF910; TMA 1970 s.8(1)(a)).
 
-## 8. Missing the obligation: what HMRC can do
+Digital exclusion exemptions (religious belief; not reasonably possible to use electronic communications or keep electronic records because of age, disability or location; inability to meet identity verification conditions) require an application in writing and an exclusion notice from HMRC; SALF1420 states it is anticipated to be rare for the conditions to be met.
 
-| Failure | HMRC response | Ref |
+## What happens when the obligation is missed
+
+| Failure | Consequence | Ref |
 |---|---|---|
-| Notice to file given, no return by the filing date | Determination of tax due, to the best of the officer's information and belief; treated as a self assessment. No right of appeal, but automatically superseded by an actual self assessment | TMA 1970 s.28C(1)–(3) |
-| — time limit to make one | No determination after 3 years beginning with the filing date | TMA 1970 s.28C(5) |
-| — replacement by the taxpayer's own return | Within that 3-year period, or if later within 12 months of the date of the determination | TMA 1970 s.28C(6) |
-| Failure to notify under s.7 | Penalty up to the net tax due but unpaid at 31 January following the tax year; nil if the tax is paid by that date | Schedule 41 FA 2008 |
-| Undeclared income/gains discovered later | Discovery assessment; 4 years (ordinary), 6 years (careless), 12 years (offshore matters/transfers), 20 years (deliberate, **failure to notify**, DOTAS/POTAS) after the end of the tax year | TMA 1970 s.29(1), s.34(1), s.36(1),(1A), s.36A |
+| Return not filed by the filing date (notice given) | Fixed penalties, sometimes daily and tax-geared penalties | Schedule 55 FA 2009; SALF208 |
+| Return not filed at all | HMRC may make a determination of tax due to the best of the officer's information and belief, treated as a self assessment until superseded | TMA 1970 s.28C(1),(3) |
+| — time limit for determination | No determination after 3 years beginning with the filing date | TMA 1970 s.28C(5) |
+| — replacing a determination | Actual self assessment must be filed within that 3-year period or, if later, within 12 months of the determination date | TMA 1970 s.28C(6) |
+| Failure to notify chargeability | Penalty up to the net tax unpaid at the following 31 January | Schedule 41 FA 2008 |
 
-Note the last row: a failure to notify under s.7 puts the taxpayer into the 20-year discovery assessment window (TMA 1970 s.36(1A)). Tax charged by a discovery assessment is due 30 days after the notice of assessment is given (TMA 1970 s.59B(6)).
+There is no right of appeal against a determination, but it is automatically superseded once an actual self assessment is filed (SALF209).
+
+Filing also triggers record-keeping duties under TMA 1970 s.12B(1),(2): retention to the fifth anniversary of the 31 January next following the year of assessment for a person with a business, and the first anniversary of that 31 January otherwise, extended where an enquiry is open. Where the notice to file or voluntary return is made or delivered after the normal retention-triggering date, SALF211 says the requirement is reduced to records still in the taxpayer's possession.
 
 ## Gaps in the sources
 
-The notes do not cover the following parts of the brief, and nothing here should be inferred from them:
+The supplied notes do not cover, and this page therefore does not state:
 
-- **Withdrawal of a notice to file.** The supplied notes contain no reference to TMA 1970 s.8B or any equivalent power to withdraw a notice, no conditions for withdrawal, and no time limits. This page therefore cannot describe how a notice is withdrawn or what happens to filing dates and penalties when it is.
-- **HMRC's operational entry criteria.** Beyond "higher rate liability or complex affairs" and the 4m-of-28m figure (SALF, Note 2), the notes contain no list of the customer-facing criteria that pull someone into Self Assessment — no self-employment gross-income threshold, no property income threshold, no High Income Child Benefit Charge, no dividend or savings-income triggers, no partnership/director/non-resident-landlord criteria. The £3,000 figure in section 6 is a coding-out threshold (SALF204), **not** an entry criterion.
-- **The "check if you need to send a return" customer guidance.** No GOV.UK customer-facing guidance page is among the notes, so the simplified public criteria and their divergences from the statute cannot be described or compared.
-- **Registration mechanics.** Nothing in the notes covers how a person registers (SA1, CWF1), how a UTR is issued, or deadlines tied to registration as distinct from the s.7 notification deadline.
-- **Exit from Self Assessment.** Beyond MTD digital exclusion, the notes say nothing about how HMRC removes a taxpayer from the SA population once criteria cease to apply.
-- **Tribunal material.** The only tribunal source supplied (SI 2009/273) is general Tax Chamber procedure — representatives, time calculation, witness summonses, withdrawal and lead cases — and, as its own note states, does not establish Self Assessment obligations. No case law on the scope of s.7 or s.8 is in the notes.
+- The statutory provision permitting HMRC to **withdraw** a notice to file, the conditions for withdrawal, or the deadline for the residual notification of income not in a Simple Assessment. Only the EM0050 summary of the effect is available.
+- Any HMRC operational **SA criteria list** (for example, self-employment turnover triggers, high-income child benefit charge, dividend or untaxed income thresholds, or criteria for taking a taxpayer out of SA). The only operational statement in the notes is the SALF figure of roughly 4 million of 28 million PAYE taxpayers receiving returns because of higher rate liability or complex affairs. SAM106000 is not among the supplied notes.
+- The full statutory text of the s.7 exceptions (only SALF210's summary of them is available), and the s.7(2)–(7) detail.
+- Registration mechanics (SA1/CWF1 forms, UTR issue, deadlines for registering).
+- Thresholds for capital gains reporting into SA, other than the 60-day UK residential property reporting rule mentioned in HS292 for completions on or after 27 October 2021, which is a separate return obligation.
+- Non-resident individual filing requirements beyond the UK representative provisions.
 
 ---
 
@@ -154,5 +171,19 @@ The notes do not cover the following parts of the brief, and nothing here should
 
 This page was written by an LLM from structured notes extracted from the mirrored sources below. Always check the upstream source before relying on any figure or deadline.
 
+- [sa-helpsheets:5f67dfee-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/accrued-income-scheme-hs343-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/accrued-income-scheme-self-assessment-helpsheet-hs343.md`
+- [sa-helpsheets:5f67ceae-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/averaging-for-creators-of-literary-or-artistic-works-hs234-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/averaging-for-creators-of-literary-or-artistic-works-self-assessment-helpsheet-hs234.md`
+- [sa-helpsheets:5f67d5b1-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/land-and-leases-the-valuation-of-land-and-capital-gains-tax-hs292-self-assessment-helpsheet) - 2 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-land-and-leases-self-assessment-helpsheet-hs292.md`
+- [sa-helpsheets:5f67dc31-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/employee-shares-and-securities-further-guidance-hs305-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/employment-related-shares-and-securities-self-assessment-helpsheet-hs305.md`
+- [sa-helpsheets:5f67db85-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/gains-on-foreign-life-insurance-policies-hs321-self-assessment-helpsheet) - 3 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/gains-on-foreign-life-insurance-policies-self-assessment-helpsheet-hs321.md`
+- [sa-helpsheets:5f67dcd2-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/gains-on-uk-life-insurance-policies-hs320-self-assessment-helpsheet) - 7 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/gains-on-uk-life-insurance-policies-self-assessment-helpsheet-hs320.md`
+- [sa-helpsheets:5f67d46f-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/negligible-value-claims-and-income-tax-losses-on-disposals-of-shares-you-have-subscribed-for-in-qualifying-trading-companies-hs286-self-assessment-he) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/negligible-value-claims-and-income-tax-losses-on-disposal-of-shares-self-assessment-helpsheet-hs286.md`
+- [sa-helpsheets:5f67c90c-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/non-taxable-payments-or-benefits-for-employees-hs207-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/non-taxable-payments-or-benefits-for-employees-self-assessment-helpsheet-hs207.md`
+- [hmrc-tools-calculators](https://www.gov.uk/guidance/hmrc-tools-and-calculators) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-tools.md`
+- [hmrc-escs](https://www.gov.uk/government/collections/extra-statutory-concessions) - 1 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/extra-statutory-concessions.md`
+- [hmrc-manual-artg](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance) - 3 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/artg.md`
+- [hmrc-manual-ch](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook) - 1 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/ch.md`
+- [hmrc-manual-em](https://www.gov.uk/hmrc-internal-manuals/enquiry-manual) - 2 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/em.md`
 - [hmrc-manual-salf](https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework) - 12 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/salf.md`
+- [hmrc-manual-sam](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual) - 1 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/sam.md`
 - [si-ftt-tax-chamber-rules-2009](https://www.legislation.gov.uk/uksi/2009/273/contents) - 1 note(s) - mirrored at `corpus/legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md`
