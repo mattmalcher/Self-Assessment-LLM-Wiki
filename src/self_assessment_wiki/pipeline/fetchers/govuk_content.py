@@ -35,12 +35,45 @@ def _slugify(text: str) -> str:
     return slug or "item"
 
 
+def _html_attachments(details: dict, mode: str) -> list[dict]:
+    """The HTML attachments worth mirroring, newest edition only by default.
+
+    For a helpsheet publication `details.body` is a 200-500 character summary;
+    the helpsheet itself is an `html` attachment, one per tax year. Mirroring
+    every year would quadruple the corpus for no gain, so `latest` keeps only
+    the attachments carrying the highest year seen in their title or URL.
+    """
+    if mode == "none":
+        return []
+    html = [a for a in details.get("attachments", []) or []
+            if a.get("attachment_type") == "html" and a.get("url")]
+    if mode == "all" or len(html) < 2:
+        return html
+
+    def year(att: dict) -> int:
+        years = re.findall(r"(?:19|20)\d{2}", f"{att.get('title', '')} {att['url']}")
+        return max((int(y) for y in years), default=0)
+
+    newest = max(year(a) for a in html)
+    return [a for a in html if year(a) == newest] if newest else html[:1]
+
+
 def fetch_single(entry: dict, manifest_entry: dict) -> bool:
     doc = _get_doc(entry["url"])
     if doc is None:
         return False
-    body_html = doc.get("details", {}).get("body", "") or ""
-    body_md = html_to_markdown(body_html) if body_html.strip() else "*(no body content)*"
+    details = doc.get("details", {})
+    body_html = details.get("body", "") or ""
+    parts = [html_to_markdown(body_html)] if body_html.strip() else []
+    for att in _html_attachments(details, entry.get("html_attachments", "latest")):
+        att_doc = _get_doc(att["url"] if att["url"].startswith("/") else att["url"].replace(WEB_BASE, ""))
+        att_body = (att_doc or {}).get("details", {}).get("body", "") or ""
+        if not att_body.strip():
+            continue
+        parts.append(f"## {att_doc.get('title', att.get('title', 'Attachment'))}")
+        parts.append(f"*Source: <{WEB_BASE}{att_doc['base_path']}>*\n")
+        parts.append(html_to_markdown(att_body))
+    body_md = "\n\n".join(p for p in parts if p.strip()) or "*(no body content)*"
     front_matter = {
         "source_url": f"{WEB_BASE}{doc['base_path']}",
         "source_id": entry["id"],
@@ -74,6 +107,9 @@ def fetch_collection(entry: dict, manifest_entry: dict) -> bool:
                 "title": item["title"],
                 "output": item_output,
                 "category": entry["category"],
+                # Helpsheets arrive as members of a collection; the real text
+                # is in their HTML attachment, not in details.body.
+                "html_attachments": entry.get("html_attachments", "latest"),
             }
             if fetch_single(item_entry, item_manifest):
                 changed_any = True
@@ -82,15 +118,23 @@ def fetch_collection(entry: dict, manifest_entry: dict) -> bool:
         updated = (item.get("public_updated_at") or "")[:10]
         rows.append((item["title"], updated, item_link))
 
-    body_lines = [
-        f"Full index of the **{doc.get('title', entry['title'])}** collection "
-        f"from GOV.UK ({len(documents)} documents).",
-        "",
-        "| Title | Upstream last updated | Link |",
-        "|---|---|---|",
-    ]
-    for title, updated, link in rows:
-        body_lines.append(f"| {title} | {updated} | [{'source' if not entry.get('expand_items') else 'view'}]({link}) |")
+    if documents:
+        body_lines = [
+            f"Full index of the **{doc.get('title', entry['title'])}** collection "
+            f"from GOV.UK ({len(documents)} documents).",
+            "",
+            "| Title | Upstream last updated | Link |",
+            "|---|---|---|",
+        ]
+        for title, updated, link in rows:
+            body_lines.append(
+                f"| {title} | {updated} | [{'source' if not entry.get('expand_items') else 'view'}]({link}) |")
+    else:
+        # Some collections (HMRC manuals) list their members in a curated
+        # `details.body` and leave `links.documents` empty; an empty table is
+        # worse than the prose.
+        body_lines = [html_to_markdown(doc.get("details", {}).get("body", "") or "")
+                      or "*(no member documents listed)*"]
 
     front_matter = {
         "source_url": f"{WEB_BASE}{doc['base_path']}",
@@ -112,7 +156,7 @@ def _collect_leaf_sections(root_path: str, max_sections: int) -> tuple[list[tupl
     """
     root = _get_doc(root_path)
     if root is None:
-        return []
+        return [], 0
     frontier: list[tuple[str, str]] = []  # (breadcrumb_title, base_path)
     for group in root.get("details", {}).get("child_section_groups", []):
         for section in group.get("child_sections", []):

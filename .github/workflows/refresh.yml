@@ -27,43 +27,42 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: actions/setup-python@v5
+      - uses: astral-sh/setup-uv@v5
         with:
           python-version: "3.12"
-          cache: pip
 
-      - run: pip install -r requirements.txt
+      - run: uv sync --locked
 
       - name: Fetch sources
-        run: python -m pipeline.fetch
+        run: uv run python -m self_assessment_wiki.pipeline.fetch
 
       - name: Report what this makes stale
         run: |
           {
-            cat pipeline/last_run_summary.md
+            cat src/self_assessment_wiki/pipeline/last_run_summary.md
             echo
             echo '### Synthesis work this creates'
             echo
             echo 'Run locally on the merged branch:'
             echo
             echo '```bash'
-            echo 'python -m synth.build extract   # fills the extract cache for changed chunks'
-            echo 'python -m synth.build compose   # rewrites only the pages whose inputs moved'
+            echo 'uv run python -m self_assessment_wiki.synth.build extract   # fills the extract cache for changed chunks'
+            echo 'uv run python -m self_assessment_wiki.synth.build compose   # rewrites only the pages whose inputs moved'
             echo '```'
             echo
             echo '<details><summary>Current plan</summary>'
             echo
             echo '```'
-            python -m synth.build status || true
+            uv run python -m self_assessment_wiki.synth.build status || true
             echo '```'
             echo
             echo '</details>'
-          } > pipeline/pr_body.md
+          } > src/self_assessment_wiki/pipeline/pr_body.md
 
       - name: Check for changes
         id: diff
         run: |
-          if git diff --quiet -- corpus pipeline/manifest.json docs/meta/sources.md; then
+          if git diff --quiet -- corpus src/self_assessment_wiki/pipeline/manifest.json docs/meta/sources.md; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -75,10 +74,10 @@ jobs:
         with:
           commit-message: "Refresh corpus"
           title: "Scheduled corpus refresh"
-          body-path: pipeline/pr_body.md
+          body-path: src/self_assessment_wiki/pipeline/pr_body.md
           branch: automated/refresh-corpus
           delete-branch: true
           add-paths: |
             corpus
             docs/meta/sources.md
-            pipeline/manifest.json
+            src/self_assessment_wiki/pipeline/manifest.json

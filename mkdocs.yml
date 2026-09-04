@@ -1,16 +1,25 @@
 site_name: Self Assessment LLM Wiki
 site_description: >-
-  An LLM-written, continuously refreshed reference on UK Self Assessment,
-  condensed from a mirrored corpus of primary legislation, case law, HMRC
-  manuals and policy publications, and customer-facing guidance.
+  UNOFFICIAL and not affiliated with HMRC. An LLM-written, continuously
+  refreshed reference on UK Self Assessment, condensed from a mirrored corpus
+  of primary legislation, case law, HMRC manuals and policy publications, and
+  customer-facing guidance. Not tax advice - check the cited source.
 site_url: https://mattmalcher.github.io/Self-Assessment-LLM-Wiki/
 repo_url: https://github.com/mattmalcher/Self-Assessment-LLM-Wiki
 repo_name: mattmalcher/Self-Assessment-LLM-Wiki
 edit_uri: ""
 docs_dir: docs
 
+# Shown in the footer of every page, alongside the announcement bar defined in
+# overrides/main.html.
+copyright: >-
+  Unofficial and independent. Not HMRC, not endorsed by or affiliated with
+  HMRC, and not tax advice. Pages are written by a language model from
+  mirrored sources.
+
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - media: "(prefers-color-scheme: light)"
       scheme: default

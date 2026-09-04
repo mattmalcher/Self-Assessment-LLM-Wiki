@@ -18,6 +18,12 @@ Rules:
   interpretation** (manuals, Statements of Practice, concessions - HMRC's
   view, not law), and **customer-facing guidance** (simplified, may omit
   edge cases).
+- **Never write in HMRC's voice.** This is an unofficial, independent page,
+  not an HMRC publication. Attribute HMRC's position to HMRC ("HMRC's view
+  is...", "SAM106000 says..."), never as "we" or as instruction to the
+  reader from the department. Do not address the reader as if you were HMRC
+  ("you must send us your return"), and do not imply the page is official,
+  approved or authoritative.
 - Prefer tables for anything with a shape: deadlines, thresholds, penalty
   tiers, rates. Prefer short paragraphs over long ones. No marketing tone,
   no "in today's fast-moving world", no restating the brief back.

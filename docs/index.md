@@ -1,5 +1,16 @@
 # Self Assessment LLM Wiki
 
+!!! danger "Unofficial - not HMRC, not advice, written by an LLM"
+
+    This is an independent personal project. It is **not** HMRC, is **not**
+    endorsed by or affiliated with HMRC or any government body, and nothing
+    on it is tax advice. Every page is **written by a language model** from
+    mirrored source material and can be wrong, incomplete or out of date.
+    Official guidance is at
+    [GOV.UK](https://www.gov.uk/self-assessment-tax-returns); if something
+    here matters to you, check it against the source each page cites, or ask
+    a qualified adviser.
+
 A reference on UK **Self Assessment** (Income Tax), written by an LLM from a
 continuously refreshed mirror of the primary material: the legislation that
 creates the obligations, the tribunal decisions that interpret it, HMRC's own
@@ -68,14 +79,23 @@ feed that, alongside the hand-written
 [data model notes](reference-implementation/data-model-notes.md). That
 implementation is **not** started here.
 
-## Not legal advice, and LLM-written
+## Not official, not advice, LLM-written
 
-This is a research aid with two distinct failure modes, and both matter:
+Nothing here is an HMRC publication, and no part of this site is produced,
+reviewed, endorsed or approved by HMRC or any government body. HMRC material
+is quoted and linked as a *source*; the words on these pages are not HMRC's.
+It is not tax, legal or financial advice, and no professional relationship
+arises from reading it.
+
+It is a research aid with three distinct failure modes, and all three matter:
 
 1. The mirror can be stale or incomplete relative to upstream.
-2. The pages are **written by a language model**. The prompts forbid adding
+2. Only part of the mirrored corpus has been read - see
+   [wiki status](meta/wiki-status.md).
+3. The pages are **written by a language model**. The prompts forbid adding
    facts not present in the source notes and require a citation for every
    figure, but summarisation errors, missed conditions and dropped edge cases
    are still possible.
 
-Check any figure, date or rule against the cited source before relying on it.
+Check any figure, date or rule against the cited source before relying on it,
+and take advice from a qualified professional for anything that matters.

@@ -2,5 +2,5 @@
 site/
 __pycache__/
 *.pyc
-pipeline/last_run_summary.md
-pipeline/pr_body.md
+src/self_assessment_wiki/pipeline/last_run_summary.md
+src/self_assessment_wiki/pipeline/pr_body.md

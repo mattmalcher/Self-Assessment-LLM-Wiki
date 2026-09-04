@@ -238,7 +238,12 @@
   status: fetch
   output: corpus/hmrc-publications/customer-facing-guidance/helpsheets/index.md
   expand_items: true
-  items_dir: docs/hmrc-publications/customer-facing-guidance/helpsheets
+  # Must be the directory holding `output`: the index links its members
+  # relatively, and nothing under docs/ is fetched material.
+  items_dir: corpus/hmrc-publications/customer-facing-guidance/helpsheets
+  # details.body is a one-paragraph summary for these; the helpsheet itself
+  # is an HTML attachment, one per tax year.
+  html_attachments: latest
 
 # ---------------------------------------------------------------------------
 # HMRC publications > Customer facing tools

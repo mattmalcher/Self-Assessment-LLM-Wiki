@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Entrypoint for the LLM layer.
 
-    python -m synth.build status                 # what's stale, no model calls
-    python -m synth.build extract                # corpus -> extracts/ (cached)
-    python -m synth.build compose                # extracts/ -> docs/
-    python -m synth.build all                    # both, in order
+    python -m self_assessment_wiki.synth.build status                 # what's stale, no model calls
+    python -m self_assessment_wiki.synth.build extract                # corpus -> extracts/ (cached)
+    python -m self_assessment_wiki.synth.build compose                # extracts/ -> docs/
+    python -m self_assessment_wiki.synth.build all                    # both, in order
 
 Run this locally: it is deliberately not part of the scheduled GitHub
 Actions refresh, so it can use whatever Claude or OpenAI subscription you
@@ -31,12 +31,17 @@ def cmd_status(args) -> int:
     todo = sum(len(p.todo) for p in plans)
     cached = sum(len(p.chunks) - len(p.todo) for p in plans)
     orphans = sum(p.orphans for p in plans)
+    stale_prompt = sum(len(p.stale_prompt) for p in plans)
     print("Extract stage (corpus -> extracts/)")
     print(f"  {len(plans)} corpus documents, {cached + todo} chunks")
     print(f"  {cached} cached, {todo} need extracting, {orphans} stale cache entries to prune")
+    if stale_prompt:
+        print(f"  {stale_prompt} cached under an older extract prompt "
+              f"(re-run with `extract --stale-prompt`)")
     for p in plans:
-        if p.todo or p.orphans:
-            print(f"    {p.doc}: {len(p.todo)} new, {p.orphans} stale")
+        if p.todo or p.orphans or p.stale_prompt:
+            print(f"    {p.doc}: {len(p.todo)} new, {p.orphans} stale, "
+                  f"{len(p.stale_prompt)} old-prompt")
 
     model = _model(args, "compose")
     works = compose.plan(model)
@@ -56,15 +61,16 @@ def cmd_extract(args) -> int:
     model = _model(args, "extract")
     if args.dry_run:
         plans = extract.plan(args.only)
-        todo = sum(len(p.todo) for p in plans)
-        print(f"would make {todo} model call(s) to {args.backend}:{model}")
-        for p in plans:
-            if p.todo:
-                print(f"  {p.doc}: {len(p.todo)}")
+        counts = {p.doc: len(p.todo) + (len(p.stale_prompt) if args.stale_prompt else 0)
+                  for p in plans}
+        print(f"would make {sum(counts.values())} model call(s) to {args.backend}:{model}")
+        for doc, n in counts.items():
+            if n:
+                print(f"  {doc}: {n}")
         return 0
     backend = get_backend(args.backend, model, timeout=args.timeout)
     done, failed = extract.run(backend, only=args.only, limit=args.limit,
-                               concurrency=args.concurrency)
+                               concurrency=args.concurrency, stale_prompt=args.stale_prompt)
     print(f"\nextracted {done} chunk(s), {failed} failed")
     return 1 if failed and not done else 0
 
@@ -99,6 +105,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--model", help="override the per-stage default model")
     parser.add_argument("--concurrency", type=int, default=DEFAULT_CONCURRENCY)
     parser.add_argument("--limit", type=int, help="extract: stop after N chunks (cost control)")
+    parser.add_argument("--stale-prompt", action="store_true",
+                        help="extract: also re-run chunks cached under an older extract.md")
     parser.add_argument("--force", action="store_true", help="compose: rewrite even if up to date")
     parser.add_argument("--dry-run", action="store_true", help="plan only, no model calls")
     parser.add_argument("--timeout", type=int, default=900, help="per-call timeout, seconds")

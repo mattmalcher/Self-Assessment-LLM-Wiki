@@ -156,6 +156,32 @@ def _front_matter(spec: dict, notes: list[Selected], model: str, backend: str, i
     return "---\n" + yaml.safe_dump(fm, sort_keys=False, default_flow_style=False).strip() + "\n---\n\n"
 
 
+# Rendered into the top of every generated page, immediately under the H1.
+# The site banner (overrides/main.html) says the same thing, but a page can
+# also be read as raw markdown in the repository, printed, or pasted
+# elsewhere - so the disclaimer travels inside the page too.
+DISCLAIMER = """
+!!! danger "Unofficial - not HMRC, not advice, written by an LLM"
+
+    This page is **not** an HMRC publication and has no connection to HMRC or
+    any government body. It was **written by a language model** from mirrored
+    source material, and can be wrong, incomplete or out of date. It is not
+    tax advice. Check every figure, date and rule against the cited source
+    before relying on it, and see
+    [GOV.UK](https://www.gov.uk/self-assessment-tax-returns) for official
+    guidance.
+"""
+
+
+def _with_disclaimer(body: str) -> str:
+    """Insert the disclaimer directly below the page's H1."""
+    lines = body.splitlines()
+    for i, line in enumerate(lines):
+        if line.startswith("# "):
+            return "\n".join(lines[: i + 1]) + "\n" + DISCLAIMER + "\n".join(lines[i + 1:])
+    return DISCLAIMER + body
+
+
 def _provenance(notes: list[Selected]) -> str:
     """A closing block linking every corpus document the page drew on."""
     by_doc: dict[str, Selected] = {}
@@ -211,7 +237,7 @@ def run(backend: Backend, model: str, *, only: list[str] | None = None, force: b
             continue
         if not work.notes:
             print(f"! {spec['id']}: no extract notes match its selector - "
-                  f"run `python -m synth.build extract` first, or widen `select:`")
+                  f"run `python -m self_assessment_wiki.synth.build extract` first, or widen `select:`")
             failed += 1
             continue
         if verbose:
@@ -225,7 +251,7 @@ def run(backend: Backend, model: str, *, only: list[str] | None = None, force: b
         if body.startswith("```"):
             body = body.split("\n", 1)[1].rsplit("```", 1)[0].strip()
         page = (_front_matter(spec, work.notes, model, backend.name, work.input_hash)
-                + body + "\n" + _provenance(work.notes))
+                + _with_disclaimer(body) + "\n" + _provenance(work.notes))
         out = REPO_ROOT / spec["output"]
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(page)

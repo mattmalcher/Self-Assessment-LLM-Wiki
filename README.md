@@ -1,5 +1,10 @@
 # Self Assessment LLM Wiki
 
+> **Unofficial.** This is an independent personal project. It is not HMRC, is
+> not endorsed by or affiliated with HMRC or any government body, and nothing
+> in it is tax advice. Every page is written by a language model. Official
+> guidance is at <https://www.gov.uk/self-assessment-tax-returns>.
+
 An **LLM-written** reference on UK Self Assessment (Income Tax), published to
 GitHub Pages, condensed from a continuously refreshed mirror of the primary
 material — legislation, tribunal decisions, HMRC manuals and policy
@@ -36,8 +41,10 @@ proportion to what changed upstream:
   evidence actually moved.
 
 Stages 2 and 3 run **locally against your own Claude or OpenAI subscription**,
-not in CI — see [`synth/README.md`](synth/README.md). CI refreshes the corpus
-and reports what that made stale; you decide when to spend the model calls.
+not in CI — see
+[`src/self_assessment_wiki/synth/README.md`](src/self_assessment_wiki/synth/README.md).
+CI refreshes the corpus and reports what that made stale; you decide when to
+spend the model calls.
 
 ## Repo layout
 
@@ -47,9 +54,10 @@ extracts/       structured JSON notes, one file per corpus doc, keyed by
                 chunk hash — both the LLM cache and the structured
                 intermediate for a future head-of-duty implementation
 docs/           the wiki (LLM-written, plus a few hand-written meta pages)
-pipeline/       stage 1: sources.yml (the registry), fetchers/, fetch.py,
+src/self_assessment_wiki/
+  pipeline/     stage 1: sources.yml (the registry), fetchers/, fetch.py,
                 manifest.json (HTTP/hash cache state)
-synth/          stages 2-3: pages.yml (the page plan), prompts/, build.py,
+  synth/        stages 2-3: pages.yml (the page plan), prompts/, build.py,
                 manifest.json (per-page input hashes)
 mkdocs.yml      site config (Material theme)
 .github/workflows/
@@ -60,34 +68,36 @@ mkdocs.yml      site config (Material theme)
 Nothing under `corpus/`, `extracts/`, `docs/` (except `docs/index.md`,
 `docs/external-explainers.md`, `docs/reference-implementation/data-model-notes.md`
 and `docs/meta/refresh-process.md`) is hand-edited — it is all regenerated.
-To change what a page says, change its brief or selector in `synth/pages.yml`,
-or the prompts in `synth/prompts/`.
+To change what a page says, change its brief or selector in
+`src/self_assessment_wiki/synth/pages.yml`, or the prompts in
+`src/self_assessment_wiki/synth/prompts/`.
 
 ## Local development
 
-```bash
-python3 -m venv .venv && source .venv/bin/activate
-pip install -r requirements.txt
+Requires [`uv`](https://docs.astral.sh/uv/).
 
-mkdocs serve                                # http://127.0.0.1:8000
+```bash
+uv sync                                     # base deps only
+
+uv run mkdocs serve                         # http://127.0.0.1:8000
 
 # stage 1 — no API access needed
-python -m pipeline.fetch --dry-run          # check the registry resolves
-python -m pipeline.fetch --only <source-id> # fetch one source
-python -m pipeline.fetch                    # fetch everything due
+uv run python -m self_assessment_wiki.pipeline.fetch --dry-run          # check the registry resolves
+uv run python -m self_assessment_wiki.pipeline.fetch --only <source-id> # fetch one source
+uv run python -m self_assessment_wiki.pipeline.fetch                    # fetch everything due
 
 # stages 2-3 — needs a Claude/OpenAI subscription or API key
-python -m synth.build status                # what's stale; costs nothing
-python -m synth.build extract --limit 20    # try 20 chunks first
-python -m synth.build compose --only who-must-file
-python -m synth.build all                   # the full run
-python -m synth.report                      # refresh docs/meta/wiki-status.md
+uv run python -m self_assessment_wiki.synth.build status                # what's stale; costs nothing
+uv run python -m self_assessment_wiki.synth.build extract --limit 20     # try 20 chunks first
+uv run python -m self_assessment_wiki.synth.build compose --only who-must-file
+uv run python -m self_assessment_wiki.synth.build all                    # the full run
+uv run python -m self_assessment_wiki.synth.report                       # refresh docs/meta/wiki-status.md
 ```
 
 `synth.build` defaults to `--backend claude-cli` (the `claude` CLI, so your
 Claude Code subscription, no API key). `--backend codex-cli` uses `codex exec`;
 `--backend anthropic` / `--backend openai` use `ANTHROPIC_API_KEY` /
-`OPENAI_API_KEY` and need `pip install -r requirements-synth.txt`.
+`OPENAI_API_KEY` and need the `synth` extra: `uv sync --extra synth`.
 
 ## Where this is going
 
@@ -98,9 +108,11 @@ generated pages (`rules-inventory`, `data-requirements`) exist specifically to
 inventory what such a system would need. The implementation itself is not
 started.
 
-## Not legal advice
+## Not official, not legal advice
 
-Two failure modes, both real: the mirror can lag upstream, and the pages are
-written by a language model. The prompts forbid using knowledge outside the
+Nothing here is an HMRC publication or is reviewed, endorsed or approved by
+HMRC. HMRC material is quoted and linked as a source; the words on the pages
+are not HMRC's. Two failure modes, both real: the mirror can lag upstream,
+and the pages are written by a language model. The prompts forbid using knowledge outside the
 supplied source notes and require a citation for every rule and figure, but
 check anything you rely on against the cited source.
