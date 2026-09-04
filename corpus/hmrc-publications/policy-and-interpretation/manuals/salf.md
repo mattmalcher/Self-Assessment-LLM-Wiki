@@ -3,14 +3,13 @@ source_url: https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-frame
 source_id: hmrc-manual-salf
 category: hmrc-publications.policy-and-interpretation.manuals
 document_type: manual
-sections_mirrored: 88
+sections_mirrored: 101
+sections_404: 0
 ---
 
 # Self Assessment Legal Framework manual (SALF)
 
 The legal framework for Income Tax Self Assessment (SA), how to pay or claim tax, how HM Revenue & Customs checks the returns and about tax returns for partnerships
-
-> This manual has more sections than were mirrored this run (`max_sections: 100` in `pipeline/sources.yml`, ~13 more queued). Raise the cap and re-run to pull the rest. Full manual: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework>.
 
 ## SALF100 — Self Assessment: an overview
 *Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf100>*
@@ -5110,6 +5109,282 @@ If HMRC is satisfied the person is or was excluded, they must issue an exclusion
 If an exclusion notice has already been given without specifying an end date and it is found that the person ceased to be excluded, a further notice must be issued with that date.  
    
 An exclusion notice is “in place” during the period starting from the date the person became excluded. It ends on the date the Commissioners consider that the person ceased to be excluded (if any).
+
+
+---
+
+## SALF1440 — Exemptions by reference to amount of income
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1440>*
+
+A relevant person with qualifying income below specified amounts will be exempt from Making Tax Digital (MTD) obligations.  
+  
+MTD for Income Tax will be introduced as follows:
+
+
+- from April 2026 (Y), for those with qualifying income over £50,000 in tax year 2024\-25 (Y\-2\)
+- from April 2027 (Y), for those with qualifying income over £30,000 in tax year 2025\-26 (Y\-2\)
+- from April 2028 (Y), for those with qualifying income over £20,000 in tax year 2026\-27 (Y\-2\)
+
+
+**For 2026\-27 tax year**
+
+
+This exemption applies to digital obligations for tax year 2026\-27 if a relevant person’s qualifying income is below the qualifying amount for 2024\-25 (£50,000 see below).
+
+
+**For any tax year after 2026\-27 where no obligation applied in the previous year**
+
+
+This exemption applies after tax year 2026\-27 if there was no digital obligation in the previous year (Y\-1\) and the amount of qualifying income for tax year Y\-2 is less than the qualifying amount for tax year Y\-2\. 
+
+
+**For any tax year after 2028\-29 where digital obligation applied in previous three years**
+
+
+This exemption applies to a person for a tax year after 2028\-29 if the digital obligation applied to the person for the previous three years and the amount of qualifying income for each of those three years was below the qualifying amount for that year. This ensures continuity for the person for at least four years. It means that, from tax year 2029\-30 onwards, for a person who is subject to digital obligation, they will continue to be subject to digital obligation until they have had three consecutive years in which their qualifying income was below the qualifying amount. This ensures continuity for a minimum of four tax years and avoids fluctuations in income leading to yearly changes in whether digital obligations apply.
+
+
+The “qualifying amount” for a tax year is:
+
+
+- £50,000 for the tax year 2024\-25
+- £30,000 for the tax year 2025\-26
+- £20,000 for the tax year 2026\-27 and any subsequent tax year
+
+
+---
+
+## SALF1450 — Determination of qualifying income
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1450>*
+
+A person’s qualifying income is either:
+
+
+- The total gross
+amount from all relevant activities included in the return before any
+deductions
+- If there is no requirement for the gross amount, the net amount included in the return after deductions
+
+
+The following should not be included:
+
+
+- Amounts received by a trustee, in that capacity
+- Payments or transfers related to visiting performers (ITTOIA 2005, s.13\)
+- Qualifying care receipts (ITTOIA 2005, Chapter 2 of Part 7\)
+
+
+No account will be taken of any amendment to the return which increases the person’s qualifying income for the year if the amendment is made after the start of the tax year to which digital obligations would otherwise apply.  
+  
+If the qualifying income for a tax year is for a period longer or shorter than 12 months, it should be adjusted proportionately based on the length of the period. If it appears that that method would work unreasonably or unjustly, it should be adjusted on a just reasonable basis.  
+  
+If the tax year has ended and the person has not yet been given a notice to file to make and deliver a return for that year, then the qualifying income is dependent on whether that person was required to give HMRC quarterly updates. If they were required to give HMRC quarterly updates, then the qualifying income is the gross amount of income from each business required to be included on the latest update. In any other case the qualifying amount is zero.
+
+
+---
+
+## SALF1460 — Exemptions by reference to description of relevant activity
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1460>*
+
+A digital obligation does not apply to a relevant person in relation to a relevant activity if they have given notice to HMRC that the relevant activity falls within the following descriptions:
+
+
+- a relevant activity carried on by a trustee, in that capacity
+- a visiting performer
+- the provision of qualifying care
+
+
+Giving notice includes delivering a return containing information about the business which is sufficient to enable HMRC to be satisfied that it falls into one of the categories.
+
+
+---
+
+## SALF1470 — Further exemptions - overseas activities in non-residence cases
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1470>*
+
+A digital obligation does not apply to the overseas activities of a person for the tax year (Y) if either:
+
+
+- the person was not resident in the United Kingdom in the tax year Y\-2
+- the tax year Y is a tax year after the tax year 2026\-27 and the person is a new non\-resident in the tax year Y
+
+
+“Overseas activity” means relevant activity carried on wholly outside the UK or where a relevant activity is carried on partly outside the UK, that part of the activity.  
+  
+A person is a “new non\-resident” in the tax year Y if the person was resident in the UK for the tax year Y\-2, but is not resident, or reasonably expects not to be resident, in the UK for the tax year Y, and has given a notice satisfying HMRC of these facts.
+
+
+---
+
+## SALF1480 — Exemptions for persons of specified description
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1480>*
+
+There are a limited number of exemptions for people in certain specified categories where the application of Making Tax Digital (MTD) would be unduly onerous or technically complex.   
+  
+A digital obligation does not apply to a relevant person for a digital obligation tax year if the person either:
+
+
+- at any point during the previous filing tax year in relation to the digital obligation tax year was any of the descriptions below
+- after the end of the previous filing tax year in relation to the digital obligation tax year has started to be any of the descriptions below and has given notice satisfying HMRC of this fact
+
+
+(The “previous filing tax year” is the latest tax year the person was required to deliver a return and had to do so before the start of the tax year so will depend on when the notice to file a return was given.)  
+  
+This applies to the following categories unless the power has been revoked or come to an end or, in certain circumstances, the donor is still capable of providing financial information to HMRC. Where this exemption applies, any obligation which has arisen is to be treated as never having arisen.
+
+
+## Specified descriptions
+
+
+- A donor of:
+	- a lasting power of
+	attorney within the meaning of s.9(1\) of the Mental Capacity Act 2005 (lasting
+	powers of attorney)
+	- an enduring power of attorney under Schedule 4 of the same Act (characteristics of an enduring power of attorney)unless the power has been revoked or come to an end, or the
+donor is still capable of providing financial information to HMRC.
+- An individual who has granted:
+
+
+	- a continuing power of attorney under section 15(1\) of the Adults with Incapacity (Scotland) Act 2000 (creation of continuing power of attorney)
+	- a welfare power of attorney under section 16(1\) of the Adults with Incapacity (Scotland) Act 2000 (creation and exercise of welfare power of attorney)unless the power has been revoked or come to an end, or the donor is still capable of providing financial information to HMRC.
+- A donor of an enduring power which meets the requirements of Article 4(1\) of the Enduring Powers of Attorney (Northern Ireland) Order 1987 (characteristics of an enduring power), unless the power has been revoked or come to an end, or the donor is still capable of providing financial information to HMRC
+- A person in respect of whom a deputy has been appointed under section 16(2\)(b) of the Mental Capacity Act 2005 (powers to make decisions and appoint deputies: general) unless the power has been revoked or come to an end
+- An adult in respect of whom a guardianship order has been made within the meaning of section 58(1\) of the Adults with Incapacity (Scotland) 2000 (disposal of application); this does not include an order which has been recalled, terminated or come to an end
+- A patient in respect of whom a controller has been appointed under Article 101(1\) of the Mental Health (Northern Ireland) Order 1986 (power to appoint controller); this does not include the appointment of a controller who has been discharged, or an appointment which has come to an end
+- Someone who is a minister of a religious denomination
+- An underwriting member of Lloyd’s
+
+
+---
+
+## SALF1490 — No National Insurance Number
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1490>*
+
+A digital obligation does not apply to a relevant person for a digital obligation tax year if on the last day of the previous tax year the person is without a national insurance number.
+
+
+---
+
+## SALF1500 — Exemption for persons based on claim to relief or chargeability to tax
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1500>*
+
+A relevant person is exempt from digital obligations for a tax year if they are a company chargeable to tax under Part 2 of ITTOIA (trading income) or were entitled to certain tax reductions or allowances in the previous filing tax year in relation to the digital obligation tax year, or have given notice satisfying HMRC that they reasonably expect to be entitled at any point after that tax year up to and including the digital obligation tax year.   
+  
+Relevant Reductions and Allowances are:
+
+
+- Marriage Allowance:
+	- Under section 45(1\) of ITA 2007 (for marriages before 5 December 2005\)
+	- Under section 46(1\) of ITA 2007 (for marriages and civil partnerships on or after 5 December 2005\)
+- Blind Person's Allowance:
+	- Under section 38(1\) of ITA 2007
+	- Transferred allowance under section 39(2\) of ITA 2007
+
+
+If the person becomes entitled to one of these allowances after a digital obligation has already arisen for tax year Y, the obligation is taken never to have arisen.
+
+
+---
+
+## SALF1510 — Temporary exemptions for the tax year 2026-27
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1510>*
+
+A digital obligation does not apply to tax year 2026\-27 if a relevant person fell into one of the following categories in the previous filing tax year in relation to the tax year 2026\-27, or has given notice satisfying HMRC that they expect to fall into one of the following categories up to and including 2026\-27:
+
+
+- Trust, settlement or estate income for which the person is chargeable to income tax
+	- on income of, or payment from (including discretionary payments) settled property of which the person is a beneficiary
+	- under section 619(1\) of ITTOIA 2005 (settlements: amount treated as income of settlor or family)
+	- under section 649(1\) of ITTOIA 2005 (charge to tax on estate income)
+- Visiting performers (s.13(1\) of ITTOIA 2005\)
+- Providers of qualifying care for which the person qualifies for care relief within the meaning of s.804(1\) ITTOIA 2005 (person who qualifies for relief)
+- Persons making an averaging claim under Chapter 16 of Part 2 of ITTOIA 2005 (averaging profits of farmers and creative artists)
+
+
+Giving notice includes delivering a return containing information about the business which is sufficient to enable HMRC to be satisfied that it falls into one of the categories.
+
+
+---
+
+## SALF1520 — Temporary exemptions for tax year 2026-27 - Residence and foreign income and gains
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1520>*
+
+A digital obligation does not apply to tax year 2026\-27 if a relevant person met one of the following conditions in the previous filing tax year in relation to the tax year 2026\-27, or has given notice satisfying HMRC that they meet the following conditions:
+
+
+- the person is not resident in the UK for the tax year
+- the tax year is a split year for the person under Part 3 of Schedule 45 to the Finance Act 2013 (split year treatment)
+- the person claims personal allowances for the tax year as a non\-resident under double taxation arrangements within the meaning of Part 2 of TIOPA 2010 (double taxation relief)
+- the person is, for the tax year both:
+	- resident in the United Kingdom
+	- resident for tax purposes in a country or territory outside the United Kingdom
+- section 809VA of ITA 2007 (money or other property used to make investments) applies to the person for the tax year, or has applied to the person for an earlier tax year but no longer applies
+- the person makes an election for the year under section 41M of ITEPA 2003 (foreign employment election for qualifying new residents)
+- the person makes a claim for relief for the tax year under:
+	- section 845A of ITTOIA 2005 (claim for relief for qualifying new residents)
+	- paragraph 1 of Schedule D1 to the 1992 Act (claim for relief for qualifying new residents)
+- the person makes a designation election, within the meaning of paragraph 1(6\) of Schedule 10 to the Finance Act 2025 (temporary repatriation facility), for the tax year
+- section 809I of ITA 2007 (remittance basis charge: income and gains treated as remitted) applies to the person for the tax year
+
+
+---
+
+## SALF1530 — Further exemptions
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1530>*
+
+The Commissioners may make specific or general directions to provide additional exemptions from digital obligations.   
+  
+These exemptions may apply to specific tax years or specific digital obligations, and may be defined by:
+
+
+- The amount of income of a relevant person
+- The description of a relevant person
+- The description of a relevant activity
+
+
+Currently, this power has not been exercised to provide for further exemptions.
+
+
+---
+
+## SALF1610 — Verification of identity
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1610>*
+
+To comply with digital obligations, a relevant person must meet certain conditions relating to the verification of identity.  
+  
+Identify verification conditions may be set out by Commissioners direction.
+
+
+---
+
+## SALF1620 — Form and method of giving notices
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1620>*
+
+Any notice that is required or permitted under the MTD Income Tax (Digital Obligations) Regulations must comply with the requirements set by the Commissioners direction.   
+  
+Notices must be in a form specified and delivered by a method specified (which may include electronic communication).   
+Where a notice may or must be given to HMRC, it must:
+
+
+- be accompanied by any evidence specified by the Commissioners
+- where the Regulations do not set out a specific time for giving the notice, be provided within the timeframe specified by the Commissioners direction
+
+
+A direction made by the Commissioners may make different provision for different cases.
+
+
+---
+
+## SALF1630 — Making Tax Digital volunteers
+*Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework/salf1630>*
+
+To help customers prepare for MTD, Volunteers (formerly referred to as ‘participants’) can sign up for Making Tax Digital before being required to use it. The earliest year they could do this was 2024\-25\.  
+  
+For example, obligations may commence on 6 April 2027, but a customer could sign up and volunteer for an earlier year e.g. 2026 \-27 tax year.  
+  
+For this group of customers none of the statutory MTD obligations apply so there can be no penalty e.g. for a ‘late’ quarterly update. Penalties will still be charged if the tax return deadline is missed as this is not an obligation created by the MTD legislation.  
+  
+Further information on penalties and penalty reform can be found in Compliance Handbook.
 
 
 ---

@@ -34,23 +34,23 @@
     "upstream_updated_at": "2017-04-21T13:20:24+01:00"
   },
   "hmrc-manual-artg": {
-    "content_hash": "af3c5ded78cb725094f8ad2e3738e6575bbd82c9c0a15b10d52236ea2603e4eb",
+    "content_hash": "500477ee55707085a6a2f63a1a5849296ffb7ca0f3ce4a7db727c5a153849c7d",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-ch": {
-    "content_hash": "a945ba94871a306fdf57223579f49309e95d2eabda742f71ea1fcfe6915f808a",
+    "content_hash": "4be824260e80a7728cee350d92114b2ad61e4c3a695ef4cf6578dd9415c9c5c7",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-em": {
-    "content_hash": "1aaec13e86b99fb27811de9ad9376e1ef89aa565c9eb61687ead5b2e3cb8599e",
+    "content_hash": "5fe62c0c00165cdad095a44fd84e6a90fcde44a458450c7dcc1177200a051420",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-salf": {
-    "content_hash": "e5195f27f4c62121881ff97f1393d77552061436c27aaea50c0f0271e7dfb7a2",
+    "content_hash": "48fde6d3a527ca952d23ee0df745d369e0c031532e23e2b5bbe94c371d60d8ee",
     "last_checked": "2026-09-04"
   },
   "hmrc-manual-sam": {
-    "content_hash": "fca156c045fad0b5b894263625b7568d1c2a79a196e10c82e3edc50b737cab96",
+    "content_hash": "bd41af8eb0da0dd5b7d43c3a491f034e96df1214e2e367b924de6edf81943500",
     "last_checked": "2026-09-04"
   },
   "hmrc-manuals-index": {
