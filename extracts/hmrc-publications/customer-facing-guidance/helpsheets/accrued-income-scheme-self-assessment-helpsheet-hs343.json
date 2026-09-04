@@ -1,0 +1,203 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "1e8e66b46e0f716e": {
+      "chars": 11150,
+      "heading": "Accrued Income Scheme (Self Assessment helpsheet HS343)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Small holdings exemption threshold",
+            "period": "n/a",
+            "ref": "HS343 Section 6",
+            "value": "£5,000"
+          }
+        ],
+        "caveats": [
+          "This helpsheet covers most cases but not everything; special rules require further guidance where they apply.",
+          "The scheme will not normally apply if not resident in the UK, though advice is recommended for those recently arriving/leaving the UK or non-residents carrying on a UK trade.",
+          "The £5,000 small holdings exemption applies only to individuals, personal representatives and trusts for disabled people, not other trusts.",
+          "If holdings exceed £5,000 nominal value, the scheme applies to any transfer however small.",
+          "The tax year in which a profit/loss is taxed/relieved depends on the next interest payment date, not the transfer date, which can shift it to a later tax year (illustrated in Example 3, referencing 2024-25 and 2025-26).",
+          "Under MTD for Income Tax, claims/adjustments are made through compatible software instead of the SA return boxes referenced in this helpsheet."
+        ],
+        "cross_references": [
+          "Savings and Investment manual",
+          "Self Assessment additional information pages (SA101)",
+          "Self Assessment Foreign pages (SA106)",
+          "Accrued Income Scheme working sheet",
+          "Making Tax Digital for Income Tax guidance"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "The basic value of a security excluding accrued interest",
+            "ref": "HS343 Section 1",
+            "term": "Clean price"
+          },
+          {
+            "meaning": "The amount representing the value of the next interest payment included in a security's price",
+            "ref": "HS343 Section 1",
+            "term": "Accrued interest"
+          },
+          {
+            "meaning": "The additional amount received on sale of a security with accrued interest, treated as income under the Accrued Income Scheme",
+            "ref": "HS343 Section 1",
+            "term": "Accrued income profit"
+          },
+          {
+            "meaning": "The extra amount paid to buy a security with accrued interest, deductible from interest received under the Accrued Income Scheme",
+            "ref": "HS343 Section 1",
+            "term": "Accrued income loss"
+          },
+          {
+            "meaning": "Includes UK government gilts (incl. index-linked), transferable bank/building society investment bonds, bonds/loan notes/debentures/alternative finance investment bonds (incl. sukuk) issued by UK companies/local authorities/other bodies, and similar overseas securities; excludes National Savings/Ulster Savings Certificates, shares/unit trust holdings, non-interest-bearing securities, and most deeply discounted securities",
+            "ref": "HS343 Section 4",
+            "term": "Securities (for AIS purposes)"
+          },
+          {
+            "meaning": "Buying, selling, gifting/receiving as gift, or exchanging securities for something other than cash",
+            "ref": "HS343 Section 4.1",
+            "term": "Transfer of securities"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Add the accrued income profit to interest entered in box 3 on page Ai 1 of the additional information pages",
+            "ref": "HS343 Section 1",
+            "trigger": "Sale of a security with accrued interest",
+            "who": "Individual with accrued income profit on sale of securities"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make Accrued Income Scheme adjustments to interest reported on the Foreign pages of the tax return",
+            "ref": "HS343 Section 4",
+            "trigger": "Holding/transferring overseas securities similar to gilts",
+            "who": "Individual receiving foreign security interest with AIS adjustments"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Read this helpsheet together with MTD for Income Tax guidance and make claims/adjustments through compatible software instead of SA return boxes",
+            "ref": "HS343 introduction",
+            "trigger": "Use of Making Tax Digital for Income Tax for self-employment/property income sources",
+            "who": "Taxpayer using Making Tax Digital for Income Tax"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Translate amounts into sterling at the spot rate of exchange for the day the sale or purchase was settled",
+            "ref": "HS343 Section 7.1",
+            "trigger": "Transfer of securities settled in foreign currency",
+            "who": "Taxpayer with amounts paid/received in foreign currency for securities"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS343 explains the Accrued Income Scheme, which taxes the 'accrued interest' element of the price when gilt-edged or similar securities are bought or sold, treating it as an accrued income profit (taxable) or accrued income loss (deductible from interest received). It covers who the scheme applies to, what counts as 'securities', a £5,000 small holdings exemption, how to calculate profits/losses using contract notes or a working sheet, and the rule that profits/losses are allocated to the tax year in which the next interest payment date falls (not necessarily the year of transfer).",
+        "topics": [
+          "accrued-income-scheme",
+          "interest-income",
+          "gilts-and-securities",
+          "self-assessment-return-entries",
+          "exemptions",
+          "foreign-income"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "34619a975b909210": {
+      "chars": 6330,
+      "heading": "Accrued Income Scheme (Self Assessment helpsheet HS343) > 8\\. When do accrued income profits or losses arise > 8\\.2 Step 2",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "The netting/rounding method described (Step 2) is a simplification of the underlying law; in some situations a more detailed calculation or special rules apply, and further advice may be needed.",
+          "The death-of-holder exception and subsequent transfer rules depend on timing relative to the next interest payment date, as shown in Example 4 (John's estate, 2016 to 2017 tax year).",
+          "Working sheet/time apportionment (Example 5) is unnecessary if a contract note already separately states clean price and accrued interest."
+        ],
+        "cross_references": [
+          "Self Assessment additional information pages (SA101)",
+          "Self Assessment Foreign pages (SA106)",
+          "Accrued Income Scheme working sheet (HS343)",
+          "HS343 s.9.1 'Securities with unusual terms'"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Death of a securities holder does not count as a transfer of the securities; no Accrued Income Scheme profits or losses arise on death itself",
+            "ref": "HS343 s.9",
+            "term": "Accrued Income Scheme (death exception)"
+          },
+          {
+            "meaning": "Method of calculating accrued income profit or loss by apportioning interest over the period held, illustrated by working sheet example (e.g. £250 × (92/183) = £125)",
+            "ref": "HS343 s.11",
+            "term": "Time apportionment"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Add net accrued income profit to, or subtract net accrued income loss from, the total gross interest entered in box 3 on page Ai 1",
+            "ref": "HS343 s.8.2",
+            "trigger": "Having calculated accrued income profits/losses for the tax year",
+            "who": "Taxpayer completing SA additional information pages"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Round profits down to the nearest whole pound and round losses up to the nearest whole pound when entering in box 3",
+            "ref": "HS343 s.8.2",
+            "trigger": "Entering net accrued income result in box 3",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not change the figures for net interest and tax deducted entered in boxes 1 and 2 on page Ai 1",
+            "ref": "HS343 s.8.2",
+            "trigger": "n/a",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Add up accrued income profits/losses from foreign securities separately and adjust column B of the overseas savings income box on the Foreign pages (SA106)",
+            "ref": "HS343 s.8.2",
+            "trigger": "Transfers of foreign securities",
+            "who": "Taxpayer with foreign security transfers"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete a tax return for the deceased up to the date of death; use the working sheet to calculate accrued income profit or loss if securities are transferred after the next interest payment is due",
+            "ref": "HS343 s.9",
+            "trigger": "Death of a securities holder; subsequent transfer of securities after next interest payment date",
+            "who": "Personal representative of a deceased person"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Contact HMRC or a tax adviser for securities with unusual terms, unpaid/unclaimed interest, losses exceeding interest of that kind of security, or securities with extra interest features",
+            "ref": "HS343 s.9.1",
+            "trigger": "Occurrence of any listed unusual situation",
+            "who": "Taxpayer/adviser"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how to net accrued income profits and losses and apply the result to box 3 (gross interest from UK securities) on the additional information pages, with rounding rules, and separately for foreign securities on the Foreign pages. It also covers the treatment of securities held by a deceased person's estate, unusual securities terms requiring further advice, and provides a worked example of the time-apportionment method for calculating accrued income on a transfer.",
+        "topics": [
+          "accrued-income-scheme",
+          "interest-income",
+          "additional-information-pages",
+          "foreign-securities",
+          "estates-personal-representatives",
+          "working-sheet"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/accrued-income-scheme-self-assessment-helpsheet-hs343.md",
+  "source_id": "sa-helpsheets:5f67dfee-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/accrued-income-scheme-hs343-self-assessment-helpsheet"
+}

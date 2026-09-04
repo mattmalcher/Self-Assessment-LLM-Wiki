@@ -1,0 +1,498 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "1e06111389aa8915": {
+      "chars": 9327,
+      "heading": "Capital Gains Tax land and leases (Self Assessment helpsheet HS292) > 8\\. Business assets",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Example 6 - office block cost",
+            "period": "n/a",
+            "ref": "HS292 Example 6",
+            "value": "£100 million"
+          },
+          {
+            "name": "Example 6 - SBA claimed",
+            "period": "5 years",
+            "ref": "HS292 Example 6",
+            "value": "£10 million"
+          },
+          {
+            "name": "Example 6 - sale proceeds",
+            "period": "n/a",
+            "ref": "HS292 Example 6",
+            "value": "£120 million"
+          },
+          {
+            "name": "Example 6 - chargeable gain with SBA",
+            "period": "n/a",
+            "ref": "HS292 Example 6",
+            "value": "£30 million"
+          },
+          {
+            "name": "Example 7 - capital premium for bare land lease",
+            "period": "80-year lease",
+            "ref": "HS292 Example 7",
+            "value": "£20 million"
+          },
+          {
+            "name": "Example 7 - factory build cost",
+            "period": "n/a",
+            "ref": "HS292 Example 7",
+            "value": "£100 million"
+          },
+          {
+            "name": "Example 7 - SBA claimed",
+            "period": "40 years",
+            "ref": "HS292 Example 7",
+            "value": "£80 million"
+          },
+          {
+            "name": "Example 7 - disposal proceeds (combined)",
+            "period": "n/a",
+            "ref": "HS292 Example 7",
+            "value": "£60 million"
+          },
+          {
+            "name": "Example 7 - chargeable gain on building",
+            "period": "n/a",
+            "ref": "HS292 Example 7",
+            "value": "£40 million"
+          },
+          {
+            "name": "Example 7 - loss on land",
+            "period": "n/a",
+            "ref": "HS292 Example 7",
+            "value": "£18.2 million"
+          },
+          {
+            "name": "Example 8 - power plant build cost",
+            "period": "40-year lease",
+            "ref": "HS292 Example 8",
+            "value": "£100 million"
+          },
+          {
+            "name": "Example 8 - SBA claimed",
+            "period": "40 years",
+            "ref": "HS292 Example 8",
+            "value": "£80 million"
+          },
+          {
+            "name": "Example 8 - loss on demolition",
+            "period": "n/a",
+            "ref": "HS292 Example 8",
+            "value": "£20 million"
+          }
+        ],
+        "caveats": [
+          "SBA does not need to be taken into account where the transfer is a no gain/no loss transfer (e.g. between spouses) or on incorporation where incorporation relief applies",
+          "SBA is given only on qualifying buildings/structures, not on the land, but for CGT purposes land and building are treated as a single asset",
+          "The election to disapply deemed disposal treatment on demolition is irrevocable once made",
+          "Where SBA is available for only part of allowable expenditure, two separate CGT calculations and apportionments are required",
+          "Example 7 and 8 figures are illustrative worked examples, not general rates or thresholds"
+        ],
+        "cross_references": [
+          "Incorporation relief (HS276 Self Assessment helpsheet)",
+          "Capital Gains summary (SA108)",
+          "Box 20, Box 54 of SA108"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Leaseholders who claimed SBA and whose qualifying building/structure is demolished",
+            "name": "Election to disapply deemed disposal on demolition",
+            "ref": "HS292 s.8.2",
+            "rule": "Must be made in writing on or before the first anniversary of 31 January following the year of assessment in which the demolition occurred"
+          },
+          {
+            "applies_to": "Demolition election",
+            "name": "Example deadline for 2025-26 demolition",
+            "ref": "HS292 s.8.2",
+            "rule": "For a demolition taking place in the period 6 April 2025 to 5 April 2026 the election must be made by 31 January 2028"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A capital allowance available for qualifying buildings and structures (not the land itself) used in a qualifying activity; must be accounted for on disposal of the land for CGT purposes",
+            "ref": "HS292 s.8",
+            "term": "Structures and Buildings Allowance (SBA)"
+          },
+          {
+            "meaning": "Under CGT rules, a lease of land with no more than 50 years left to run is a wasting asset, meaning the lessee's allowable expenditure is wasted over time, unless capital allowances (e.g. SBA) can be claimed on it",
+            "ref": "HS292 s.8.2",
+            "term": "Wasting asset (lease)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Add the amount of SBA actually claimed to the disposal consideration when calculating the capital gain or loss",
+            "ref": "HS292 s.8.1/8.2",
+            "trigger": "Disposal of land/lease including a qualifying building or structure for which SBA was claimed",
+            "who": "Person disposing of freehold or leasehold land including a qualifying SBA building/structure"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Treat demolition as a disposal of the qualifying building/structure (not the land) and add SBA claimed to consideration received",
+            "ref": "HS292 s.8.2",
+            "trigger": "Demolition of a qualifying building/structure for which SBA was claimed",
+            "who": "Lessee holding a leasehold interest who claimed SBA and whose building is demolished"
+          },
+          {
+            "deadline": "On or before the first anniversary of 31 January following the year of assessment in which the demolition occurred",
+            "must": "Make a written, irrevocable election identifying the qualifying building/structure and date of demolition, via box 54 'Any other information' or computations",
+            "ref": "HS292 s.8.2",
+            "trigger": "Demolition occurs and election desired",
+            "who": "Taxpayer wishing to opt out of deemed disposal on demolition"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter code 'OTH' (or 'MUL') in box 20 of the Capital Gains summary (SA108) and provide details in box 54 or computations identifying the building/structure and unclaimed allowance amount",
+            "ref": "HS292 s.8.3",
+            "trigger": "Building contributed to is demolished and claimant has no interest in it, having received SBA on the contribution",
+            "who": "Taxpayer claiming allowable loss for unclaimed SBA on capital contribution"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how Structures and Buildings Allowance (SBA) interacts with Capital Gains Tax computations on disposal of land, leases and demolition of qualifying buildings/structures. It covers freehold disposals (SBA added to consideration), leasehold disposals (wasting asset rules, apportionment between SBA and non-SBA expenditure), demolition treated as a deemed disposal (with an irrevocable election to opt out), and capital contributions to qualifying buildings. It gives worked examples and specifies where and how to make claims/elections on the SA return (Capital Gains summary SA108, box 20 code 'OTH'/'MUL', box 54).",
+        "topics": [
+          "capital-gains-tax",
+          "structures-and-buildings-allowance",
+          "land-and-leases",
+          "business-assets",
+          "capital-gains-summary",
+          "elections"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "a0855d615fc5b5b7": {
+      "chars": 11038,
+      "heading": "Capital Gains Tax land and leases (Self Assessment helpsheet HS292)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Example 1 - allowable expenditure on grant of long lease",
+            "period": "2025-26 (lease granted 30 June 2025)",
+            "ref": "HS292 Example 1",
+            "value": "£100,000"
+          },
+          {
+            "name": "Example 1 - chargeable gain",
+            "period": "2025-26",
+            "ref": "HS292 Example 1",
+            "value": "£97,000"
+          },
+          {
+            "name": "Example 2 - amount chargeable to Income Tax on short lease premium",
+            "period": "2025-26 (lease granted 6 April 2025)",
+            "ref": "HS292 Example 2",
+            "value": "£3,500"
+          },
+          {
+            "name": "Example 2 - allowable expenditure",
+            "period": "2025-26",
+            "ref": "HS292 Example 2",
+            "value": "£16,677"
+          },
+          {
+            "name": "Example 2 - chargeable gain",
+            "period": "2025-26",
+            "ref": "HS292 Example 2",
+            "value": "£14,823"
+          }
+        ],
+        "caveats": [
+          "This helpsheet is for the tax year 2025 to 2026 and is only an introduction; readers in doubt should seek advice from a tax adviser.",
+          "If required to use Making Tax Digital for Income Tax, claims and adjustments are made through compatible software instead of the Self Assessment boxes referenced in this helpsheet.",
+          "The 60-day reporting/payment deadline for UK residential property applies where completion was on or after 27 October 2021; different rules may apply for earlier completions.",
+          "Section 2.4 (short lease out of a short leasehold interest) and lease extension rules involve special/restricted calculations not fully detailed here; HMRC or a tax adviser should be consulted.",
+          "Capital losses on short lease assignment/surrender or short lease grants out of short leasehold interests may be restricted in some circumstances."
+        ],
+        "cross_references": [
+          "Capital Gains Tax summary (SA108)",
+          "Capital Gains Tax Manual",
+          "Non-resident Capital Gains for land and property in the UK (Self Assessment helpsheet HS307)",
+          "UK property notes (SA105), page UKPN 4 box 22",
+          "Report and pay Capital Gains Tax on UK property guidance",
+          "Section 28 Taxation of Chargeable Gains Act 1992",
+          "Making Tax Digital for Income Tax guidance"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "UK residents disposing of UK residential property interests with CGT liability, where completion was on or after 27 October 2021",
+            "name": "CGT reporting and payment deadline for UK residential property disposals",
+            "ref": "HS292 Section 1",
+            "rule": "Within 60 days of completion"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A lease with more than 50 years duration remaining, out of a freehold or long leasehold interest.",
+            "ref": "HS292 Section 2.1 / 2.6",
+            "term": "Long lease"
+          },
+          {
+            "meaning": "A lease with no more than 50 years remaining, whether out of a freehold/long leasehold interest or out of a short leasehold interest.",
+            "ref": "HS292 Section 2.1 / 2.6",
+            "term": "Short lease"
+          },
+          {
+            "meaning": "A part disposal for Capital Gains Tax purposes, which may also give rise to an Income Tax charge depending on the category of lease granted.",
+            "ref": "HS292 Section 2.1",
+            "term": "Grant of a lease"
+          },
+          {
+            "meaning": "Normally the time remaining until expiry of the current term, but may be affected by termination notice provisions or tenant extension rights.",
+            "ref": "HS292 Section 2.1 / 2.6",
+            "term": "Duration of a lease (for CGT purposes)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "Within 60 days of completion of conveyance",
+            "must": "Report and pay any Capital Gains Tax due",
+            "ref": "HS292 Section 1",
+            "trigger": "Disposal of UK residential property interest with CGT liability, completion on or after 27 October 2021",
+            "who": "UK resident disposing of an interest in UK residential property with a CGT liability"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "HS292 explains Capital Gains Tax treatment of disposals of land and leases for the 2025 to 2026 tax year, to support completion of the Capital Gains Tax summary (SA108) pages. It covers part-disposal rules for grants of long and short leases (with worked examples), premiums partly chargeable to Income Tax on short leases, capital sums received during a lease, assignment/surrender of leases, lease extensions, and compulsory purchase rules including the date of disposal. UK residents disposing of UK residential property with a CGT liability must report and pay within 60 days of completion (for completions on or after 27 October 2021); non-residents are referred to HS307.",
+        "topics": [
+          "capital-gains-tax",
+          "land-and-leases",
+          "premiums",
+          "compulsory-purchase",
+          "lease-grant",
+          "lease-extension",
+          "sa108"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "c2f939921b82af19": {
+      "chars": 11620,
+      "heading": "Capital Gains Tax land and leases (Self Assessment helpsheet HS292) > 4\\. Compulsory purchase > 4\\.2 Small part disposals",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Example 3 - land purchase cost",
+            "period": "1999",
+            "ref": "HS292 s.4.2 Example 3",
+            "value": "£200,000"
+          },
+          {
+            "name": "Example 3 - compulsory purchase compensation for strip of land",
+            "period": "2003",
+            "ref": "HS292 s.4.2 Example 3",
+            "value": "£8,000"
+          },
+          {
+            "name": "Example 3 - reduced cost after compensation deducted",
+            "period": "n/a",
+            "ref": "HS292 s.4.2 Example 3",
+            "value": "£192,000"
+          },
+          {
+            "name": "Example 3 - sale proceeds of remaining land",
+            "period": "2025",
+            "ref": "HS292 s.4.2 Example 3",
+            "value": "£250,000"
+          },
+          {
+            "name": "Example 3 - chargeable gain",
+            "period": "2025",
+            "ref": "HS292 s.4.2 Example 3",
+            "value": "£58,000"
+          },
+          {
+            "name": "Example 4 - original land cost",
+            "period": "April 1991",
+            "ref": "HS292 s.4.3 Example 4",
+            "value": "£50,000"
+          },
+          {
+            "name": "Example 4 - compulsory purchase compensation",
+            "period": "May 2025",
+            "ref": "HS292 s.4.3 Example 4",
+            "value": "£80,000"
+          },
+          {
+            "name": "Example 4 - cost of new land purchased",
+            "period": "n/a",
+            "ref": "HS292 s.4.3 Example 4",
+            "value": "£100,000"
+          },
+          {
+            "name": "Example 4 - gain before rollover",
+            "period": "n/a",
+            "ref": "HS292 s.4.3 Example 4",
+            "value": "£30,000"
+          },
+          {
+            "name": "Example 4 - allowable cost of new land after rollover",
+            "period": "n/a",
+            "ref": "HS292 s.4.3 Example 4",
+            "value": "£70,000"
+          },
+          {
+            "name": "Example 5 - sale proceeds",
+            "period": "May 2025",
+            "ref": "HS292 s.5.1 Example 5",
+            "value": "£50,000"
+          },
+          {
+            "name": "Example 5 - market value at 31 March 1982",
+            "period": "31 March 1982",
+            "ref": "HS292 s.5.1 Example 5",
+            "value": "£20,000"
+          },
+          {
+            "name": "Example 5 - costs of disposal",
+            "period": "n/a",
+            "ref": "HS292 s.5.1 Example 5",
+            "value": "£2,000"
+          },
+          {
+            "name": "Example 5 - chargeable gain",
+            "period": "n/a",
+            "ref": "HS292 s.5.1 Example 5",
+            "value": "£28,000"
+          },
+          {
+            "name": "Small part disposal threshold (percentage of holding value)",
+            "period": "n/a",
+            "ref": "HS292 s.6",
+            "value": "20% of the market value of the holding"
+          },
+          {
+            "name": "Small part disposal threshold (absolute value)",
+            "period": "n/a",
+            "ref": "HS292 s.6",
+            "value": "£20,000"
+          },
+          {
+            "name": "Aggregate annual disposals threshold for small part disposal relief",
+            "period": "n/a",
+            "ref": "HS292 s.6",
+            "value": "£20,000"
+          }
+        ],
+        "caveats": [
+          "Rollover relief rules are modified if the new land will become a wasting asset within 10 years, or if only part of the compensation is applied to acquire new land — taxpayer advised to seek further guidance from HMRC or a tax adviser",
+          "New land acquired for rollover relief cannot include a dwelling house that is or may become the taxpayer's only or main residence",
+          "Small part disposal relief under s.4.2 must be claimed at the time compensation is received, otherwise a Capital Gain must be returned",
+          "HMRC may insist on the statutory (rather than alternative) basis of apportionment if not satisfied the alternative apportionment is fair and reasonable",
+          "Once statutory rules have been applied to a part disposal, they must also be applied to subsequent disposals of the same holding",
+          "31 March 1982 valuations must reflect the state/condition of the land as it was at that date, not current condition, and must account for tenancy status as it existed then"
+        ],
+        "cross_references": [
+          "Capital Gains summary (SA108)",
+          "Business Asset Roll-over Relief (Self Assessment helpsheet HS290)",
+          "Form CG34 Post-transaction valuation checks for capital gains",
+          "Partnership helpsheet (for jointly held land as partnership asset)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A claim that compensation received for compulsory acquisition of part of a larger land holding should not be treated as a disposal, but instead deducted from the allowable expenditure on the entire holding, subject to conditions on wasting assets, relative market value, and no advertising of intent to sell",
+            "ref": "HS292 s.4.2",
+            "term": "Small part disposal (compulsory purchase, s.4.2)"
+          },
+          {
+            "meaning": "Not necessarily the whole estate, but the smallest unit of land with a separately identifiable cost, including all land compulsorily acquired",
+            "ref": "HS292 s.4.2",
+            "term": "Holding (for small part disposal purposes)"
+          },
+          {
+            "meaning": "Typically land held under a lease with no more than 50 years still to run (small part disposal context) or no more than 60 years to run on acquisition (rollover context, within 10 years)",
+            "ref": "HS292 s.4.2 / s.4.3",
+            "term": "Wasting asset (land)"
+          },
+          {
+            "meaning": "Compensation category for compulsory purchase covering losses such as stock/profit losses (taxable as income), loss of goodwill (CGT), expenses (set against expenses), and other amounts (CGT if from chargeable assets)",
+            "ref": "HS292 s.4.4",
+            "term": "Disturbance compensation"
+          },
+          {
+            "meaning": "Compensation paid for a fall in value of retained land caused by compulsory purchase, treated as a part disposal of the retained land",
+            "ref": "HS292 s.4.4",
+            "term": "Severance or injurious affection"
+          },
+          {
+            "meaning": "A method HMRC will usually accept for apportioning allowable cost on a part disposal of land without requiring a valuation of the retained land, treating the disposed part as a separate asset",
+            "ref": "HS292 s.5",
+            "term": "Alternative basis of apportionment"
+          },
+          {
+            "meaning": "An election that a disposal of part of a land holding not be regarded as a disposal, with consideration deducted from allowable cost of the rest of the holding, subject to 20%/£20,000 thresholds and non-wasting-asset condition",
+            "ref": "HS292 s.6",
+            "term": "Small part disposal (s.6, general land disposals)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "Must be claimed at the time the compensation is received, otherwise the compensation will require a Capital Gain to be returned",
+            "must": "Enter code 'OTH' in box 8, 20 or 28 of the Capital Gains summary (SA108) and provide details of the claim in box 54 or in computations, with a clear statement that relief is being claimed",
+            "ref": "HS292 s.4.2",
+            "trigger": "Claiming that compulsory purchase compensation for part of a holding should not be treated as a disposal",
+            "who": "Taxpayer claiming small part disposal relief on compulsory purchase compensation"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter code 'ROR' in box 8, 20 or 28 of the Capital Gains summary, provide details in box 54 or computations, and complete the HS290 rollover relief form and send it to HMRC with the tax return",
+            "ref": "HS292 s.4.3",
+            "trigger": "Applying compensation from compulsory purchase to acquire new land and claiming rollover of the gain",
+            "who": "Taxpayer claiming rollover relief on compulsory purchase compensation reinvested in new land"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter code 'OTH' in box 8, 20 or 28 of the Capital Gains Tax summary and provide election details in box 54 or computations",
+            "ref": "HS292 s.6",
+            "trigger": "Disposing of part of a holding of land within the 20%/£20,000 thresholds and electing not to treat it as a disposal",
+            "who": "Taxpayer electing for small part disposal relief under section 6 rules"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Put 'X' in box 53 and provide details of the valuation in box 54 or computations",
+            "ref": "HS292 s.7",
+            "trigger": "Use of any land valuation (own estimate or professional) in calculating gain/loss",
+            "who": "Taxpayer who used a valuation to calculate a gain or loss on land in the Capital Gains Tax summary"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Put a note to that effect in box 54 or computations",
+            "ref": "HS292 s.7",
+            "trigger": "Having asked HMRC to check valuations via form CG34",
+            "who": "Taxpayer who requested a CG34 post-transaction valuation check"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk (HS292) explains Capital Gains Tax treatment of compulsory purchase compensation, including small part disposal relief, rollover relief where compensation is reinvested in new land, apportionment of compensation between land, disturbance and severance/injurious affection, and alternative and statutory bases for apportioning cost on part disposals. It also covers when land valuations are needed, special rules for 31 March 1982 valuations and jointly owned land, and the CG34 post-transaction valuation check service. All examples reference dates in 2025 and instruct taxpayers on how to claim reliefs via the SA108 Capital Gains summary boxes 8, 20, 28, 53 and 54.",
+        "topics": [
+          "capital-gains-tax",
+          "compulsory-purchase",
+          "land-and-leases",
+          "rollover-relief",
+          "part-disposals",
+          "valuations",
+          "sa108"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-land-and-leases-self-assessment-helpsheet-hs292.md",
+  "source_id": "sa-helpsheets:5f67d5b1-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/land-and-leases-the-valuation-of-land-and-capital-gains-tax-hs292-self-assessment-helpsheet"
+}

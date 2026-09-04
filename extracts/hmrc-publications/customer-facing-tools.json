@@ -1,0 +1,90 @@
+{
+  "category": "hmrc-publications.customer-facing-tools",
+  "chunks": {
+    "412be7b7b5b36226": {
+      "chars": 5159,
+      "heading": "HMRC tools and calculators > PAYE",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Transition profit tool applies specifically to the 2023 to 2024 tax year for those affected by Basis Period Reform, not a general-purpose calculator.",
+          "This is a navigational/directory listing rather than substantive guidance on Self Assessment rules."
+        ],
+        "cross_references": [
+          "https://www.gov.uk/self-assessment-tax-calculator",
+          "http://www.hmrc.gov.uk/gds/specialist/lloyds_calculator.htm",
+          "https://www.gov.uk/guidance/work-out-your-transition-profit",
+          "https://www.gov.uk/guidance/check-what-taxes-may-apply-to-you-as-a-sole-trader",
+          "section 107 Finance Act 2000"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk lists directory links to HMRC tools and calculators grouped by tax area (PAYE, Pensions, Self Assessment, Self-employed, SDLT, VAT). The Self Assessment section links to a tool for estimating a Self Assessment tax bill, a Lloyd's calculator for section 107 Finance Act 2000 adjustments, and a tool to work out transition profit for the 2023 to 2024 tax year under Basis Period Reform. A Self-employed section links to a tool checking which taxes a sole trader may need to register for.",
+        "topics": [
+          "tools-directory",
+          "self-assessment-calculator",
+          "transition-profit",
+          "basis-period-reform",
+          "paye",
+          "sdlt",
+          "vat",
+          "pensions"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "ae1d4778b96bdab7": {
+      "chars": 9051,
+      "heading": "HMRC tools and calculators",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "The Capital Gains Tax adjustment calculator applies only to disposals of assets on or after 30 October 2024, when the rates changed, and is specifically for use in the Self Assessment tax return.",
+          "The overlap relief calculator is stated as being for the 2023 to 2024 tax year specifically.",
+          "This page is a navigational index of tools; most listed tools are for taxes other than Self Assessment Income Tax and are only tangentially relevant."
+        ],
+        "cross_references": [
+          "Capital Gains Tax adjustment calculator for the 2024 to 2025 tax year",
+          "Overlap relief calculator (2023 to 2024 tax year)",
+          "Estimate your Income Tax for a previous tax year",
+          "Estimate your Income Tax for the current year",
+          "Check employment status for tax (CEST)",
+          "Check what help you could get with childcare costs",
+          "Child Benefit tax calculator"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "taxpayers generally",
+            "name": "Check your tax filing and payment deadlines",
+            "ref": "https://www.gov.uk/guidance/check-your-tax-filing-and-payment-deadlines",
+            "rule": "tool to find filing and payment deadlines for your taxes"
+          }
+        ],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is a directory page listing HMRC's online tools and calculators grouped by tax type, including Alcohol Duty, Capital Allowances, Capital Gains Tax, Corporation Tax, Income Tax, Inheritance Tax and National Insurance. A few entries are directly relevant to Self Assessment: a Capital Gains Tax adjustment calculator for reporting disposals after a mid-year rate change, an overlap relief calculator for the self-employed/partnerships, a filing and payment deadlines checker, and Income Tax estimators for current and previous years. Most other tools (Alcohol Duty, Corporation Tax, Inheritance Tax, gambling duties, import/export) are unrelated to individual Self Assessment filing.",
+        "topics": [
+          "hmrc-tools",
+          "calculators",
+          "capital-gains-tax",
+          "overlap-relief",
+          "deadlines",
+          "income-tax-estimation"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-tools.md",
+  "source_id": "hmrc-tools-calculators",
+  "source_url": "https://www.gov.uk/guidance/hmrc-tools-and-calculators"
+}

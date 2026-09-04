@@ -1,0 +1,324 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "0cb325a9d728cb5b": {
+      "chars": 11995,
+      "heading": "Non taxable payments or benefits for employees (Self Assessment helpsheet HS207) > 14\\. Travelling expenses of group company employees",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Long service award cost limit",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 19",
+            "value": "£50 for each year of service"
+          },
+          {
+            "name": "Encouragement award maximum",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 21",
+            "value": "£25"
+          },
+          {
+            "name": "Financial benefit award cap",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 22",
+            "value": "£5,000"
+          },
+          {
+            "name": "Financial benefit award - first year percentage",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 22",
+            "value": "50% of expected net financial benefit during first year"
+          },
+          {
+            "name": "Financial benefit award - up to 5 years percentage",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 22",
+            "value": "10% of expected net financial benefit over a period of up to 5 years"
+          },
+          {
+            "name": "Small gifts from third parties threshold",
+            "period": "per tax year",
+            "ref": "Helpsheet HS207, section 25",
+            "value": "£250 or less"
+          },
+          {
+            "name": "Trivial benefits threshold",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 25.1",
+            "value": "less than £50 / does not exceed £50"
+          },
+          {
+            "name": "Trivial benefits cap for close company directors/office holders",
+            "period": "per tax year",
+            "ref": "Helpsheet HS207, section 25.1 Condition E",
+            "value": "£300"
+          },
+          {
+            "name": "Work-late/disrupted sharing home travel journey limit",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 26",
+            "value": "up to 60 journeys in the year"
+          },
+          {
+            "name": "Work bus minimum seating capacity (bus)",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 27",
+            "value": "12 or more"
+          },
+          {
+            "name": "Work bus minimum seating capacity (minibus)",
+            "period": "n/a",
+            "ref": "Helpsheet HS207, section 27",
+            "value": "9 or more"
+          }
+        ],
+        "caveats": [
+          "Section numbers referenced in section 23 (goodwill entertainment) relate to the Income Tax (Employments and Pensions) Act 2003, not TMA 1970.",
+          "Retraining cost exemption in section 17 requires employee to have been employed at least 2 years and course must last no more than 2 years; multiple conditions must all be met.",
+          "Trivial benefits exemption cap of £300 for close company directors/office holders is an aggregate annual limit distinct from the £50 per-benefit threshold.",
+          "Long service award exemption requires no similar award within previous 10 years and service of not less than 20 years."
+        ],
+        "cross_references": [
+          "Section 87 (vouchers)",
+          "Section 94 (credit tokens)",
+          "Section 201 (benefits in kind)",
+          "Section 62 (earnings)",
+          "Section 72 (taxable expenses payments)",
+          "Income Tax (Employments and Pensions) Act 2003"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An award made for a suggestion which has some special merit or reflects praiseworthy effort on the part of the person making the suggestion",
+            "ref": "Helpsheet HS207, section 21",
+            "term": "Encouragement award"
+          },
+          {
+            "meaning": "An award made following a decision to implement a suggestion, based on degree of improvement in efficiency/effectiveness and expected financial benefits",
+            "ref": "Helpsheet HS207, section 22",
+            "term": "Financial benefit award"
+          },
+          {
+            "meaning": "Entertainment provided to an employee or family/household member by a third party unconnected with the employer, not procured by the employer and not linked to services performed or to be performed",
+            "ref": "Helpsheet HS207, section 23",
+            "term": "Goodwill entertainment"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "60 days of re-employment",
+            "must": "Tell HMRC within 60 days if a former employee is re-employed within 2 years of finishing a retraining course",
+            "ref": "Helpsheet HS207, section 17",
+            "trigger": "Re-employment of employee who received retraining exemption within 2 years of course end",
+            "who": "Employer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "The excess over £25 is taxable",
+            "ref": "Helpsheet HS207, section 21",
+            "trigger": "Encouragement award exceeds £25"
+          },
+          {
+            "consequence": "The excess over that figure is taxable",
+            "ref": "Helpsheet HS207, section 22",
+            "trigger": "Financial benefit award exceeds £5,000"
+          },
+          {
+            "consequence": "The entire cost of the benefit is subject to tax",
+            "ref": "Helpsheet HS207, section 25.1",
+            "trigger": "Trivial benefit total cost (across multiple occasions) exceeds £50"
+          },
+          {
+            "consequence": "Retraining cost exemption is withdrawn",
+            "ref": "Helpsheet HS207, section 17",
+            "trigger": "Re-employment by same employer within 2 years of finishing retraining course"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This chunk lists categories of employee payments and benefits that are exempt from tax, including group company travel, strike-disruption travel, disabled travel assistance, retraining costs, employer-funded training, long service awards, suggestion scheme awards, goodwill entertainment, parking, small third-party gifts, trivial benefits, late-night/disrupted car-share travel, and work buses/subsidies. Each exemption is subject to specific conditions and, in several cases, monetary caps. These are benefit-in-kind exemptions relevant to calculating taxable employment income rather than Self Assessment process rules directly.",
+        "topics": [
+          "employment-benefits",
+          "non-taxable-benefits",
+          "travel-expenses",
+          "training-costs",
+          "long-service-awards",
+          "suggestion-schemes",
+          "trivial-benefits",
+          "small-gifts"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "34de10d1becb4744": {
+      "chars": 4755,
+      "heading": "Non taxable payments or benefits for employees (Self Assessment helpsheet HS207) > 28\\. Christmas or other annual party",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Christmas/annual party exemption limit",
+            "period": "n/a",
+            "ref": "Helpsheet HS207 s.28",
+            "value": "£150 a head"
+          }
+        ],
+        "caveats": [
+          "From 6 April 2020, counselling services that are also medical treatments (e.g. CBT, Interpersonal Therapy) are no longer taxable when provided as part of welfare counselling, implying a change from prior treatment.",
+          "Loans attracting only partial tax relief on interest are not exempt and must be reported, unlike fully relieved loans.",
+          "Mobile phone exemption applies only to one phone provided by the employer to the employee directly, not to money paid to the employee or phones provided to family members."
+        ],
+        "cross_references": [
+          "Self Assessment Additional information (SA101) page Ai 5, box 5 'Other tax reliefs'",
+          "Self Assessment Additional information (SA101) page Ai 2, box 5 'Other tax reliefs'",
+          "Employment page box 15"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Counselling made available to all employees generally on similar terms; excludes advice on finance or tax (other than debt counselling), leisure or recreation, or legal advice",
+            "ref": "Helpsheet HS207 s.33",
+            "term": "Welfare counselling (for exemption purposes)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Not include Working Rule Agreement allowances covered by the HMRC agreement on the tax return",
+            "ref": "Helpsheet HS207 s.31",
+            "trigger": "Allowance covered by Working Rule Agreement and not shown on P11D",
+            "who": "Employee/taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter the cash equivalent of a loan in box 15 of the Employment page and claim relief in box 5 of Other tax reliefs (Additional information pages) or in trade profit computation",
+            "ref": "Helpsheet HS207 s.36",
+            "trigger": "Interest-free or low-interest loan attracts only partial tax relief on interest",
+            "who": "Employee/taxpayer"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk lists further non-taxable employment benefits exempt from tax that need not be reported on a Self Assessment return, including staff parties up to £150 a head, recreational facilities, offshore rig travel/subsistence, Working Rule Agreement allowances, counselling, mobile phones, cycle loans, low-interest loans with full tax relief, and employee shareholder advice funding. It specifies conditions attached to each exemption and notes where partially-relieved loans must instead be entered on the tax return.",
+        "topics": [
+          "benefits-in-kind",
+          "exempt-benefits",
+          "employment-income",
+          "P11D",
+          "mobile-phones",
+          "loans",
+          "cycle-to-work"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "e62abafeab1b63a5": {
+      "chars": 11909,
+      "heading": "Non taxable payments or benefits for employees (Self Assessment helpsheet HS207)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Medical treatment to help return to work",
+            "period": "tax year",
+            "ref": "HS207 s.6",
+            "value": "£500"
+          },
+          {
+            "name": "Homeworking additional household costs - no evidence required",
+            "period": "from 6 April 2020",
+            "ref": "HS207 s.11",
+            "value": "£6 a week"
+          },
+          {
+            "name": "Incidental overnight expenses - UK",
+            "period": "n/a",
+            "ref": "HS207 s.12",
+            "value": "£5 a night"
+          },
+          {
+            "name": "Incidental overnight expenses - outside UK",
+            "period": "n/a",
+            "ref": "HS207 s.12",
+            "value": "£10 a night"
+          }
+        ],
+        "caveats": [
+          "Childcare voucher schemes closed to new applicants after 4 October 2018; only those who joined on or before that date may continue receiving exempt vouchers.",
+          "Directly contracted childcare schemes similarly closed to new applicants after 4 October 2018.",
+          "If maximum incidental overnight expenses limit is exceeded for a journey, the full amount (not just the excess) becomes taxable.",
+          "Meal exemption does not apply where meals are provided under salary sacrifice or flexible remuneration arrangements, or in hotel/catering businesses' public dining areas (unless a staff-only designated area is used).",
+          "Living accommodation exemption for directors only applies if no material interest in the company and either full-time working director or company is non-profit/charity.",
+          "This is a helpsheet for 2026 tax year guidance; users under Making Tax Digital for Income Tax use compatible software rather than SA boxes referenced."
+        ],
+        "cross_references": [
+          "Extra-Statutory Concessions collection (gov.uk)",
+          "EIM16050 Employment Income Manual (qualifying childcare vouchers)",
+          "EIM22010 Employment Income Manual (directly contracted childcare)",
+          "Booklet 480, Chapter 21 'Provision of living accommodation'",
+          "Guidance on use of Making Tax Digital for Income Tax"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A registered medical practitioner, nurse, occupational therapist, physiotherapist or psychologist",
+            "ref": "HS207 s.6",
+            "term": "Health care professional"
+          },
+          {
+            "meaning": "An assessment to identify employees who might be at particular risk of ill-health",
+            "ref": "HS207 s.7",
+            "term": "Health screening assessment"
+          },
+          {
+            "meaning": "A physical examination of the employee by a health professional for (and only for) determining the employee's state of health; does not cover medical treatment",
+            "ref": "HS207 s.7",
+            "term": "Medical check-up"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Not enter benefits/expenses covered by exemptions or concessions on the tax return",
+            "ref": "HS207",
+            "trigger": "Benefit/expense covered by statutory exemption, ESC or PAYE Settlement Agreement",
+            "who": "Employee completing Employment pages"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include on tax return the excess over the appropriate amount of childcare vouchers or directly contracted childcare",
+            "ref": "HS207 s.8-9",
+            "trigger": "Value received exceeds the 'appropriate amount' for a week",
+            "who": "Employee"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Read this helpsheet together with MTD for Income Tax guidance and make claims/adjustments through compatible software instead of SA boxes",
+            "ref": "HS207",
+            "trigger": "Employee has self-employment or property income sources under MTD",
+            "who": "Employee using Making Tax Digital for Income Tax"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "HS207 lists benefits and expenses employees do not need to report on the Employment pages of a Self Assessment return because they are covered by statutory exemptions, Extra-Statutory Concessions, or PAYE Settlement Agreements. It gives brief details of common exemptions covering accommodation, meals, pensions, medical treatment abroad, medical treatment to aid return to work, health screening, nurseries and childcare vouchers/directly contracted childcare, certain living accommodation, homeworking payments, incidental overnight expenses, and directors' travel expenses. Where amounts exceed specified thresholds (e.g. childcare vouchers, incidental overnight expenses), the excess is taxable and must be entered on the return.",
+        "topics": [
+          "employment-benefits",
+          "exempt-benefits",
+          "p11d",
+          "employment-pages",
+          "expenses"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/non-taxable-payments-or-benefits-for-employees-self-assessment-helpsheet-hs207.md",
+  "source_id": "sa-helpsheets:5f67c90c-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/non-taxable-payments-or-benefits-for-employees-hs207-self-assessment-helpsheet"
+}

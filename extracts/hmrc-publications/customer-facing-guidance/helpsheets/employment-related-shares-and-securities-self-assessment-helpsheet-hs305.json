@@ -1,0 +1,497 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "2ac5a8b22d18e6fa": {
+      "chars": 10001,
+      "heading": "Employment-related shares and securities (Self Assessment helpsheet HS305) > How to calculate the Income Tax",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Temporary repatriation facility (TRF) charge rate",
+            "period": "2025-26",
+            "ref": "HS305 - IMEs",
+            "value": "12%"
+          },
+          {
+            "name": "Market value artificial reduction/enhancement threshold",
+            "period": "n/a",
+            "ref": "HS305 - Securities with an artificially enhanced market value",
+            "value": "more than 10%"
+          },
+          {
+            "name": "7 year look-back period for artificial reduction",
+            "period": "n/a",
+            "ref": "HS305 - Restricted securities",
+            "value": "7 years"
+          }
+        ],
+        "caveats": [
+          "Rules for internationally mobile employees are described as complex; helpsheet gives only a brief summary and refers users to ERSM160000 for full guidance.",
+          "Remittance basis treatment applies only to chargeable foreign securities income earned in a tax year prior to 6 April 2025.",
+          "Unchargeable foreign securities income should never be included in the working sheets.",
+          "SA101 box 1 completion is only sufficient if the employer had enough information to calculate foreign securities income correctly and did so via PAYE/P60; otherwise fuller calculation via working sheets may be needed.",
+          "For restricted shares acquired before 16 April 2003 or if a spreadsheet calculator is needed, taxpayer must email the Share Schemes team rather than rely on this helpsheet alone."
+        ],
+        "cross_references": [
+          "HS305 Working sheets (2026) — employment-related securities, sheets 12-19",
+          "Employment Related Securities Manual (ERSM160000)",
+          "Self Assessment Additional Information pages (SA101)",
+          "Residence and foreign income and gains (FIG) pages (SA109)",
+          "Helpsheet HS264 (temporary repatriation facility)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Unrestricted market value",
+            "ref": "HS305 - How to calculate the Income Tax",
+            "term": "UMV"
+          },
+          {
+            "meaning": "Initial uncharged proportion",
+            "ref": "HS305 - How to calculate the Income Tax",
+            "term": "IUP"
+          },
+          {
+            "meaning": "Previously charged proportion",
+            "ref": "HS305 - How to calculate the Income Tax",
+            "term": "PCP"
+          },
+          {
+            "meaning": "Outstanding proportion",
+            "ref": "HS305 - How to calculate the Income Tax",
+            "term": "OP"
+          },
+          {
+            "meaning": "Consideration given and expenses incurred",
+            "ref": "HS305 - How to calculate the Income Tax",
+            "term": "CE"
+          },
+          {
+            "meaning": "Either 5 April 2026 or the date the securities were disposed of, if earlier",
+            "ref": "HS305 - Securities with an artificially enhanced market value",
+            "term": "Relevant date (artificially enhanced value)"
+          },
+          {
+            "meaning": "Either 5 April 2026 or the date of the chargeable event, if earlier",
+            "ref": "HS305 - Restricted securities",
+            "term": "Relevant date (restricted securities)"
+          },
+          {
+            "meaning": "Internationally mobile employee, subject to special rules for employment-related securities and securities options acquired from 6 April 2015",
+            "ref": "HS305 - Taxable specific income from employment-related securities: changes for IMEs",
+            "term": "IME"
+          },
+          {
+            "meaning": "Part of a taxable amount arising for an IME which may be partly or all chargeable foreign securities income (subject to remittance basis pre-6 April 2025) or partly/all unchargeable foreign securities income",
+            "ref": "HS305 - IMEs",
+            "term": "Foreign securities income"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Complete the relevant working sheet entering consideration/benefits received ignoring the artificial reduction",
+            "ref": "HS305 - Consideration or benefits received",
+            "trigger": "Artificial reduction of consideration or benefits within 7 years ending on receipt",
+            "who": "Employee with employment-related securities where market value artificially reduced"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 18 to work out taxable amount",
+            "ref": "HS305 - Securities disposed of for more than their market value",
+            "trigger": "Disposal of securities (by taxpayer or connected person) for consideration exceeding market value",
+            "who": "Taxpayer disposing of securities for more than market value"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 19 to work out taxable amount",
+            "ref": "HS305 - Benefits accruing to holders of securities",
+            "trigger": "Benefits received because of ownership of employment-related securities",
+            "who": "Holder of employment-related securities receiving benefits"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report income designated under TRF on SA109 (Residence and foreign income and gains pages) instead of working sheets",
+            "ref": "HS305 - IMEs",
+            "trigger": "Remittance of chargeable foreign securities income earned pre-6 April 2025 to UK in 2025-26 under TRF",
+            "who": "Internationally mobile employee (IME) with chargeable foreign securities income remitted in 2025-26"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete SA101 Additional Information pages box 1 (page Ai 2) for any chargeable foreign securities income remitted to UK in the year (unless using TRF)",
+            "ref": "HS305 - IMEs",
+            "trigger": "Employer deducted chargeable/unchargeable foreign securities income from PAYE taxable amount",
+            "who": "IME whose employer handled foreign securities income via PAYE/P60 correctly"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This HS305 chunk sets out the formula for calculating taxable amounts on employment-related securities (UMV × (IUP − PCP − OP) − CE) and directs users to specific working sheets (12–19) depending on circumstances: single vs multiple chargeable events, convertible securities, artificially enhanced or reduced market value, restricted securities, risk of forfeiture, disposal for more than market value, and benefits accruing to security holders. It also covers 2015 rule changes for internationally mobile employees (IMEs), explaining treatment of foreign securities income, the remittance basis for pre-6 April 2025 years, and the temporary repatriation facility (TRF) with a 12% charge for income remitted in 2025-26, to be reported via SA109. Where employers have already correctly handled foreign securities income via PAYE/P60, employees generally only need to complete SA101 Additional Information box 1 (page Ai 2) unless using the TRF.",
+        "topics": [
+          "employment-related-securities",
+          "share-schemes",
+          "income-tax-calculation",
+          "restricted-securities",
+          "convertible-securities",
+          "internationally-mobile-employees",
+          "remittance-basis",
+          "sa101",
+          "helpsheet-hs305"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "378127e1404cd29f": {
+      "chars": 11494,
+      "heading": "Employment-related shares and securities (Self Assessment helpsheet HS305)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "7 year SAYE savings feature was abolished with effect from 23 July 2013 (revised Prospectus date); provision applies only to existing 7-year savings contracts",
+          "Remittance basis rules for securities income are described as complex and only applied prior to 6 April 2025",
+          "Rules and figures reflect the 2026 version of the helpsheet; taxpayers using Making Tax Digital for Income Tax will instead make claims/adjustments through compatible software rather than these SA boxes",
+          "Amounts already fully taxed by the employer (typically on P60/P45) should not be entered in the 'Share schemes' box"
+        ],
+        "cross_references": [
+          "Additional information notes (SA101)",
+          "Self Assessment Additional information pages (SA101)",
+          "Self Assessment Employment pages (SA102)",
+          "Self Assessment tax return (SA100), page TR 3, box 4",
+          "Employment Related Securities Manual (ERSM), including ERSM160000",
+          "Employee Tax Advantaged Share Scheme User Manual (ETASSUM)",
+          "HS305 Working sheets (2026) — employment-related securities (working sheets 1, 2, 3, 6)",
+          "Making Tax Digital for Income Tax guidance",
+          "Transfer of Undertakings (Protection of Employment) (TUPE) Regulations 2006"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Deducting employee-paid employer's NICs under a National Insurance contributions agreement",
+            "name": "NIC agreement deduction cut-off",
+            "ref": "HS305",
+            "rule": "NICs paid to employer before 5 June following the tax year in which the relevant share transaction occurred"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Securities acquired because of employment, where the employer (or someone connected to the employer) gave the taxpayer (or another person) an opportunity to acquire them; includes shares in a company (UK or overseas) or unincorporated body, and debentures, loan stock, bonds and other debt instruments",
+            "ref": "HS305",
+            "term": "Employment-related securities"
+          },
+          {
+            "meaning": "Shares bought with dividends arising on other shares within a Schedule 2 SIP plan and reinvested in the tax-advantaged plan",
+            "ref": "HS305 - Dividend Shares",
+            "term": "Dividend Shares"
+          },
+          {
+            "meaning": "Company Share Option Plan operating as a tax-advantaged ('Schedule 4') scheme",
+            "ref": "HS305 - Schedule 4 CSOP",
+            "term": "Schedule 4 CSOP"
+          },
+          {
+            "meaning": "Tax-advantaged Savings Related Share Scheme (Save As You Earn) under Schedule 3",
+            "ref": "HS305 - SRS/SAYE",
+            "term": "Schedule 3 SAYE Scheme"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Complete box 1 'Share schemes' section on page Ai 2 of the Additional information (SA101) pages using the relevant working sheet",
+            "ref": "HS305",
+            "trigger": "Employer has not deducted tax from the whole taxable amount, or used an incorrect (too low) PAYE valuation",
+            "who": "Taxpayer with employment-related securities not fully taxed under PAYE"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include the amount in the Employment pages (SA102)",
+            "ref": "HS305",
+            "trigger": "Receipt of separate notification of taxable amount and tax deducted from employer after leaving employment",
+            "who": "Taxpayer receiving taxable amount from options/securities after P45 issued"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include the amount of dividend used to buy the shares in box 4 dividend boxes on page TR 3",
+            "ref": "HS305 - Dividend Shares",
+            "trigger": "Dividend shares cease to be subject to the plan within 3 years of purchase for a non-exempt reason",
+            "who": "Taxpayer with dividend shares ceasing to be subject to plan within 3 years (non-exempt reason)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Keep working sheets in case HMRC ask to see them",
+            "ref": "HS305",
+            "trigger": "Completion of a working sheet for a taxable event",
+            "who": "Taxpayer using working sheets"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Taxpayer may have to pay more tax",
+            "ref": "HS305",
+            "trigger": "HMRC checks details used by employer to calculate taxable amount/tax due and finds an error"
+          }
+        ],
+        "relevance": "core",
+        "summary": "HS305 explains how to report tax liabilities arising from employment-related shares and securities in the 'Share schemes' box 1 on page Ai 2 of the SA101 Additional information pages, covering cases not fully taxed under PAYE. It sets out charging rules for Schedule 2 Share Incentive Plans (SIP), dividend shares, Schedule 4 Company Share Option Plans (CSOP), and Schedule 3 SAYE schemes, including exemptions on cessation of employment or option exercise in specified circumstances. It also covers NIC elections/agreements deductible against tax due, and remittance basis complications for securities income arising before 6 April 2025.",
+        "topics": [
+          "employment-related-securities",
+          "share-schemes",
+          "additional-information-pages",
+          "SIP",
+          "CSOP",
+          "SAYE",
+          "national-insurance-election",
+          "remittance-basis"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "ad8069fda97e55f2": {
+      "chars": 3314,
+      "heading": "Employment-related shares and securities (Self Assessment helpsheet HS305) > Employee shareholder shares",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Minimum value of shares awarded to employee shareholder",
+            "period": "n/a",
+            "ref": "Employee shareholder shares",
+            "value": "£2,000"
+          },
+          {
+            "name": "Deemed payment for employee shareholder shares",
+            "period": "n/a",
+            "ref": "Employee shareholder shares",
+            "value": "£2,000"
+          }
+        ],
+        "caveats": [
+          "Income tax reliefs and CGT exemption for shares received as consideration for entering into an Employee Shareholder agreement on or after 1 December 2016 have been removed",
+          "Transitional rules apply for some employees who received mandatory independent advice on their proposed Employee Shareholder agreement on 23 November 2016",
+          "Deemed payment only applies on the first occasion an individual acquires qualifying shares, and only where the employee shareholder has no 'material interest' in the company"
+        ],
+        "cross_references": [
+          "Part 7 Income Tax (Earnings and Pensions) Act",
+          "Chapter 2 of Part 7 ITEPA (restricted securities)",
+          "Chapter 3 of Part 7 ITEPA (convertible securities)",
+          "HS305 Working sheets (2026) — employment-related securities, working sheet 12",
+          "HS305 Working sheets (2026) — employment-related securities, working sheet 4",
+          "HS305 Working sheets (2026) — employment-related securities, working sheet 14, box 6",
+          "Guidance on the Income Tax treatment of Employee Shareholder shares"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An employment status, available from 1 September 2013, with different employment rights to employees, requiring award of at least £2,000 worth of shares in consideration of agreeing to the status",
+            "ref": "Employee shareholder shares",
+            "term": "Employee shareholder"
+          },
+          {
+            "meaning": "Individuals eligible to be employee shareholders are deemed to have made a payment of £2,000 for the shares; applies only on the first occasion an individual acquires 'qualifying shares' under an employee shareholder agreement, subject to not having a 'material interest' in the company",
+            "ref": "Employee shareholder shares",
+            "term": "Deemed payment"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Award employee shareholder at least £2,000 worth of shares",
+            "ref": "Employee shareholder shares",
+            "trigger": "Employee agreeing to become an employee shareholder",
+            "who": "Employer or parent company"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Treat market value of shares minus deemed payment as earnings from employment for the year acquired",
+            "ref": "Employee shareholder shares",
+            "trigger": "Acquisition of employee shareholder shares",
+            "who": "Individual (employee shareholder)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Apply Part 7 ITEPA rules (Chapter 2 for restricted securities, Chapter 3 for convertible securities) and use relevant HS305 working sheets",
+            "ref": "Part 7 Income Tax (Earnings and Pensions) Act",
+            "trigger": "Shares are restricted or convertible securities",
+            "who": "Individual with restricted or convertible employee shareholder shares"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk explains the employee shareholder employment status (available from 1 September 2013) and how shares awarded under such agreements are taxed. Income tax reliefs and CGT exemption for shares from agreements entered into on or after 1 December 2016 were removed, with transitional rules for some who received mandatory advice on 23 November 2016. Employee shareholders must receive at least £2,000 of shares and are deemed to have paid £2,000 for them; the market value minus this deemed payment is treated as earnings. The shares are employment-related securities under Part 7 ITEPA, potentially triggering Chapter 2 (restricted securities) or Chapter 3 (convertible securities) charges, with references to specific HS305 working sheets for calculations.",
+        "topics": [
+          "employee-shareholder-shares",
+          "employment-related-securities",
+          "share-schemes",
+          "market-value-of-shares",
+          "restricted-securities",
+          "convertible-securities"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "de51c394cf146006": {
+      "chars": 11430,
+      "heading": "Employment-related shares and securities (Self Assessment helpsheet HS305) > Tax advantaged share schemes > Enterprise Management Incentives (EMI)",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "De minimis threshold for notional/actual employment-related loans",
+            "period": "n/a",
+            "ref": "Working sheet 8 guidance",
+            "value": "£10,000"
+          },
+          {
+            "name": "Market value reduction threshold for artificially depressed securities",
+            "period": "n/a",
+            "ref": "Securities with artificially depressed market value",
+            "value": "at least 10%"
+          },
+          {
+            "name": "Forfeiture risk period exemption for depressed value shares",
+            "period": "n/a",
+            "ref": "Securities with artificially depressed market value",
+            "value": "5 years or less"
+          }
+        ],
+        "caveats": [
+          "The 90-day disqualifying event window was 40 days prior to 17 July 2013 - different rule applies depending on date.",
+          "If working sheet 5 box 8 entry is '0', no further completion needed and no tax is due on exercise.",
+          "No benefit arises from an interest-free loan if total notional/actual employment loans do not exceed £10,000 at any time in the tax year.",
+          "Artificially depressed market value tax charge does not apply where shares are subject to forfeiture risk of 5 years or less and no election has been made to pay tax at acquisition.",
+          "If an election was made with employer to pay Income Tax at acquisition as if restricted securities were unrestricted, no further Income Tax is due on chargeable events.",
+          "Rules referenced apply specifically to restricted securities acquired on or after 16 April 2003."
+        ],
+        "cross_references": [
+          "HS305 Working sheets (2026) — employment-related securities (sheets 4-11)",
+          "Self Assessment Employment pages (SA102) / page Ai 2 box 1",
+          "Helpsheet 340: interest and alternative finance payments eligible for relief on qualifying loans and alternative finance arrangements",
+          "Form P11D"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An event after which, if an EMI option is exercised more than 90 days later (40 days prior to 17 July 2013) and shares have risen in value, additional tax may be due",
+            "ref": "EMI section",
+            "term": "Disqualifying event"
+          },
+          {
+            "meaning": "Securities subject to restrictions such that their market value may be less than similar unrestricted securities",
+            "ref": "Restricted securities section",
+            "term": "Restricted securities"
+          },
+          {
+            "meaning": "Securities that can be converted into securities of a different description",
+            "ref": "Convertible securities section",
+            "term": "Convertible securities"
+          },
+          {
+            "meaning": "An event in relation to restricted securities acquired on or after 16 April 2003 that triggers Income Tax",
+            "ref": "Restricted securities acquired on or after 16 April 2003",
+            "term": "Chargeable event"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 4 to work out the taxable amount",
+            "ref": "HS305 Working sheet 4",
+            "trigger": "Exercise of EMI option granted at a discount",
+            "who": "Taxpayer who exercised a discounted EMI option"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 5 to work out the taxable amount",
+            "ref": "HS305 Working sheet 5",
+            "trigger": "Exercise more than 90 days (40 days prior to 17 July 2013) after a disqualifying event, with share value risen",
+            "who": "Taxpayer who exercised an EMI option after a disqualifying event"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheets 4 and 5, add box 15 (WS4) and box 12 (WS5), enter total in box 1 on page Ai 2",
+            "ref": "HS305 Working sheets 4 and 5 / page Ai 2 box 1",
+            "trigger": "Exercise of discounted EMI option more than 90 days (40 days prior to 17 July 2013) after disqualifying event",
+            "who": "Taxpayer who exercised a discounted EMI option after a disqualifying event"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 6",
+            "ref": "HS305 Working sheet 6",
+            "trigger": "Receipt of something for giving up or not exercising EMI option",
+            "who": "Taxpayer who gave up or did not exercise an EMI option for consideration"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Pay Income Tax on cash or value received and complete working sheet 6",
+            "ref": "HS305 Working sheet 6",
+            "trigger": "Assignment, release or non-exercise of option (unless exchanged for another option)",
+            "who": "Taxpayer receiving value for assigning/releasing/not exercising any option"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 7, taxed on difference between market value at exercise and amount paid",
+            "ref": "HS305 Working sheet 7",
+            "trigger": "Exercise (or automatic exercise) of non-tax-advantaged option",
+            "who": "Taxpayer exercising a non-tax-advantaged securities option"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Use working sheet 8 to calculate taxable amount (unless total notional/actual loans ≤£10,000 in the tax year)",
+            "ref": "HS305 Working sheet 8",
+            "trigger": "Acquisition of securities at less than market value, treated as interest-free loan",
+            "who": "Taxpayer acquiring securities as a benefit where employer has not calculated the benefit"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 9 to calculate taxable amount if employer has not told you or more tax is due",
+            "ref": "HS305 Working sheet 9",
+            "trigger": "Sale/transfer of securities below acquisition value, or release/write-off of partly paid amount",
+            "who": "Taxpayer taxed on interest-free loan benefit who sells/transfers securities or has partly-paid amount released/written off"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 10 if employer has not told you the taxable amount or more tax is due",
+            "ref": "HS305 Working sheet 10",
+            "trigger": "Acquisition of securities for less than market value by reason of employment",
+            "who": "Taxpayer acquiring free or cheap securities from employment"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 10 for taxable amount if employer has not advised",
+            "ref": "HS305 Working sheet 10",
+            "trigger": "Acquisition of securities once scheme conditions are met",
+            "who": "Taxpayer with securities acquired via incentive scheme conditions met"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete working sheet 11 if employer has not told you the taxable amount or more tax is due",
+            "ref": "HS305 Working sheet 11",
+            "trigger": "Market value reduced by at least 10% at acquisition by non-commercial actions",
+            "who": "Taxpayer acquiring securities with artificially depressed market value"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk details how to calculate taxable amounts for various employment-related securities scenarios on Self Assessment, directing taxpayers to specific working sheets (4-11) in HS305 Working sheets (2026). It covers EMI option exercises (including discounted and post-disqualifying-event cases), assignment/release of options, non-tax-advantaged option exercises, securities acquired as benefits (interest-free loan treatment), securities sold/transferred, free or cheap securities, restricted and convertible securities, and artificially depressed market value securities. It also notes post-acquisition tax charges for restricted/convertible securities acquired on or after 16 April 2003.",
+        "topics": [
+          "employment-related-securities",
+          "EMI-options",
+          "share-options",
+          "restricted-securities",
+          "convertible-securities",
+          "benefits-in-kind",
+          "helpsheet-HS305"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/employment-related-shares-and-securities-self-assessment-helpsheet-hs305.md",
+  "source_id": "sa-helpsheets:5f67dc31-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/employee-shares-and-securities-further-guidance-hs305-self-assessment-helpsheet"
+}

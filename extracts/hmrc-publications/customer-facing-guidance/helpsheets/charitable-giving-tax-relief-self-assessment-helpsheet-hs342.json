@@ -1,0 +1,157 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "ee6ddc5dae67d840": {
+      "chars": 11509,
+      "heading": "Charitable giving tax relief (Self Assessment helpsheet HS342)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Gift Aid grossing-up factor",
+            "period": "n/a",
+            "ref": "HS342 Section 1",
+            "value": "100/80 (basic rate 20%)"
+          },
+          {
+            "name": "Example higher rate relief",
+            "period": "2025 to 2026",
+            "ref": "HS342 Section 1.1",
+            "value": "£25 on £100 gift at 40%"
+          },
+          {
+            "name": "Example additional rate relief",
+            "period": "2025 to 2026",
+            "ref": "HS342 Section 1.1",
+            "value": "£31.25 on £100 gift at 45%"
+          },
+          {
+            "name": "Payroll Giving relief cap",
+            "period": "n/a",
+            "ref": "HS342 Section 4",
+            "value": "greater of £50,000 or 25% of adjusted total income"
+          }
+        ],
+        "caveats": [
+          "Charities based in the EU, Iceland, Liechtenstein or Norway can no longer apply for tax relief; relief obtained on or before 14 March 2023 continued only until April 2024.",
+          "No reliefs will be given on gifts to non-UK charities after 5 April 2024.",
+          "Guidance instructs users to check the online 'Tax relief when you donate to a charity' guide or a tax adviser before completing boxes 5-10, as reliefs may change and not be reflected in this helpsheet.",
+          "If using Making Tax Digital for Income Tax, claims/adjustments are made through compatible software instead of the Self Assessment boxes referenced.",
+          "HMRC cannot accept a first claim or higher claim for Gift Aid carry-back in an amended tax return for the year ended 5 April 2026 - must be in the original return.",
+          "No additional relief is due for basic rate taxpayers unless claiming certain allowances for people aged over 65."
+        ],
+        "cross_references": [
+          "https://www.gov.uk/donating-to-charity",
+          "https://www.gov.uk/guidance/use-making-tax-digital-for-income-tax",
+          "https://www.gov.uk/government/publications/self-assessment-employment-sa102",
+          "https://www.gov.uk/government/publications/self-assessment-additional-information-sa101",
+          "https://www.gov.uk/government/organisations/hm-revenue-customs/contact/self-assessment",
+          "Tax return page TR 4, boxes 5-10"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Gift Aid donations",
+            "name": "Gift Aid carry-back to previous tax year",
+            "ref": "HS342 Section 1",
+            "rule": "payments made between 6 April 2026 and date of submitting return for year ended 5 April 2026 can be carried back; must be claimed in original return, before appropriate filing date"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A scheme providing relief for gifts of money to UK based charities that meet the UK tax definition of a charity, treated as made after deduction of basic rate Income Tax.",
+            "ref": "HS342 Section 1",
+            "term": "Gift Aid"
+          },
+          {
+            "meaning": "Community Amateur Sports Club registered with HMRC as such when a Gift Aid donation is made; broadly same Gift Aid rules as charities but cannot claim Gift Aid on membership subscriptions.",
+            "ref": "HS342 Section 1",
+            "term": "CASC"
+          },
+          {
+            "meaning": "Shares/securities listed on a recognised stock exchange, dealt on AIM or PLUS-Quoted Market, units in an Authorised Unit Trust, shares in an OEIC, or interests in certain overseas collective investment schemes.",
+            "ref": "HS342 Section 2",
+            "term": "Qualifying investments (for share/security gift relief)"
+          },
+          {
+            "meaning": "Liabilities to which the charity becomes subject in connection with the transfer of shares/securities or property, deducted when calculating relief.",
+            "ref": "HS342 Sections 2-3",
+            "term": "Disposal-related liabilities"
+          },
+          {
+            "meaning": "The whole of a person's beneficial interest in freehold or leasehold land in the UK.",
+            "ref": "HS342 Section 3",
+            "term": "Qualifying interest in land"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "have paid enough Income Tax or Capital Gains Tax to cover tax reclaimed by charity/CASC, or pay an additional amount of Income Tax if not",
+            "ref": "HS342 Section 1",
+            "trigger": "making Gift Aid donations exceeding tax paid",
+            "who": "Self Assessment taxpayer donating via Gift Aid"
+          },
+          {
+            "deadline": "n/a",
+            "must": "enter total Gift Aid payments in boxes 5, 6, 7 and 8 on page TR 4",
+            "ref": "HS342 Section 1.1",
+            "trigger": "making Gift Aid donations",
+            "who": "Self Assessment taxpayer"
+          },
+          {
+            "deadline": "before the appropriate filing date, in original return for year ended 5 April 2026",
+            "must": "make the claim in their original tax return for the year ended 5 April 2026 (not an amended return)",
+            "ref": "HS342 Section 1",
+            "trigger": "wanting relief on donations made between 6 April 2026 and date of filing to be given for the earlier year",
+            "who": "Self Assessment taxpayer wanting to carry back Gift Aid relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "enter relief claimed for gifts of shares/securities in box 9 on page TR 4",
+            "ref": "HS342 Section 2",
+            "trigger": "making qualifying gift/sale of shares or securities to charity",
+            "who": "Self Assessment taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "enter relief claimed for gifts of land/buildings in box 10 on page TR 4",
+            "ref": "HS342 Section 3",
+            "trigger": "making qualifying gift/sale of property to charity",
+            "who": "Self Assessment taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "report Payroll Giving donations on the Additional Information pages; not enter donations elsewhere on the return",
+            "ref": "HS342 Section 4",
+            "trigger": "participating in a Payroll Giving scheme",
+            "who": "Self Assessment taxpayer using Payroll Giving"
+          },
+          {
+            "deadline": "n/a",
+            "must": "keep records/documents relating to the gifts (Gift Aid amounts, share/property transfer documents) in case HMRC asks for more information",
+            "ref": "HS342 Sections 1-3",
+            "trigger": "claiming charitable giving relief",
+            "who": "Self Assessment taxpayer claiming these reliefs"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS342 explains four tax reliefs for charitable giving to be reported on the Self Assessment tax return: Gift Aid, gifts of shares/securities, gifts of land/buildings, and Payroll Giving. It details how relief is calculated (including grossing-up for higher/additional rate taxpayers), which tax return boxes (5-10 on TR4) to use, the carry-back rule for Gift Aid payments, and the cap on Payroll Giving relief. It also notes changes affecting relief on gifts to non-UK charities and record-keeping requirements.",
+        "topics": [
+          "charitable-giving",
+          "gift-aid",
+          "gifts-of-shares",
+          "gifts-of-property",
+          "payroll-giving",
+          "tax-return-boxes",
+          "carry-back-relief"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/charitable-giving-tax-relief-self-assessment-helpsheet-hs342.md",
+  "source_id": "sa-helpsheets:5f67ddc2-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/charitable-giving-hs342-self-assessment-helpsheet"
+}

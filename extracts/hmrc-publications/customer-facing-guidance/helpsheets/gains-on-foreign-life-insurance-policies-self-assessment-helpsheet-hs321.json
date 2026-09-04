@@ -1,0 +1,366 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "04644ff36591748f": {
+      "chars": 10768,
+      "heading": "Gains on foreign life insurance policies (Self Assessment helpsheet HS321) > Part 3 — Amount of the gain > 10\\. Tax reliefs > 10\\.3 Deficiency relief",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "One twentieth (5%) allowance on premiums for part surrenders",
+            "period": "n/a",
+            "ref": "HS321 s.13",
+            "value": "5% of premiums paid per year, maximum 100% over 20 years"
+          },
+          {
+            "name": "PPB gain calculation rate",
+            "period": "n/a",
+            "ref": "HS321 s.14",
+            "value": "15% of (A + B - C)"
+          },
+          {
+            "name": "Commission rebate reporting threshold",
+            "period": "n/a",
+            "ref": "HS321 12.1; IPTM3527/IPTM3528",
+            "value": "£100,000 a year into the policy"
+          },
+          {
+            "name": "Example 4 gain",
+            "period": "2025 to 2026",
+            "ref": "HS321 16.1",
+            "value": "£700"
+          },
+          {
+            "name": "Example 5 gain",
+            "period": "2025 to 2026",
+            "ref": "HS321 16.2",
+            "value": "£600"
+          },
+          {
+            "name": "Example PPB gain year 1",
+            "period": "2023 to 2024",
+            "ref": "HS321 s.17",
+            "value": "£15,000"
+          },
+          {
+            "name": "Example PPB gain year 2 plus part surrender gain",
+            "period": "2024 to 2025",
+            "ref": "HS321 s.17",
+            "value": "PPB gain £17,250; part surrender gain £30,000"
+          },
+          {
+            "name": "Example PPB gain year 3",
+            "period": "2025 to 2026",
+            "ref": "HS321 s.17",
+            "value": "£15,337.50"
+          }
+        ],
+        "caveats": [
+          "Deficiency relief is not available to trustees or personal representatives, only individuals.",
+          "Deficiency relief does not reduce tax due at the additional rate.",
+          "Transfer of policy ownership between spouses/civil partners living together does not give rise to a gain, but transfers between connected persons (e.g. siblings) use market value as TB.",
+          "The wholly disproportionate gain recalculation is only available on application to HMRC, not automatic.",
+          "Figures in examples (e.g. £15,377.50 vs calculated £15,337.50 in Example in s.17) appear inconsistent in the source text - quoted as given."
+        ],
+        "cross_references": [
+          "IPTM3860 (Insurance Policyholder Taxation Manual) - deficiency relief calculation",
+          "IPTM3596 (Insurance Policyholder Taxation Manual) - wholly disproportionate gains application",
+          "IPTM7535 (Insurance Policyholder Taxation Manual) - related policies",
+          "IPTM3527 and IPTM3528 (Insurance Policyholder Taxation Manual) - commission rebate gain calculation",
+          "IPTM3270 (Insurance Policyholder Taxation Manual) - general chargeable event gains guidance",
+          "Contact HMRC Self Assessment page"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Relief available only to individuals (not trustees or personal representatives) where a final chargeable event (surrender, final profit participation, death, maturity, or capital sum in lieu of annuity) produces a negative result including a deduction for earlier gains (other than PPB gains), reducing tax on other income taxed at a 'relevant rate' (higher, default higher, savings higher, dividend upper, Scottish higher, Scottish advanced, Welsh higher), but not additional rate tax.",
+            "ref": "HS321 10.3",
+            "term": "Deficiency relief"
+          },
+          {
+            "meaning": "A gain arising from part surrender/part assignment calculation that is disproportionate to the underlying economic gain, often because cash taken exceeds the 5% tax-deferred allowance early in a policy's life; can be recalculated on application to HMRC on a just and reasonable basis.",
+            "ref": "HS321 s.11",
+            "term": "Wholly disproportionate gain"
+          },
+          {
+            "meaning": "Generally the value received on maturity/full surrender plus value previously received under the policy (excluding earlier critical illness/disability benefits); for death it is the surrender value immediately before death; for sale it is normally the sale price (or market value if connected persons).",
+            "ref": "HS321 12.1-12.3",
+            "term": "TB (Total Benefits)"
+          },
+          {
+            "meaning": "Generally all amounts paid as premiums under the policy.",
+            "ref": "HS321 12.1",
+            "term": "TD (Total Deductions)"
+          },
+          {
+            "meaning": "All gains that were someone's income for tax purposes in a tax year before that in which the policy matured or was fully surrendered.",
+            "ref": "HS321 12.1",
+            "term": "PG (Previous Gains)"
+          },
+          {
+            "meaning": "A policy typically derived from a maturity option where one policy matures and proceeds are applied as premium for a new policy.",
+            "ref": "HS321 12.1; IPTM7535",
+            "term": "Related policy"
+          },
+          {
+            "meaning": "Gain calculated as 15% of (A + B – C) where a policy is a personal portfolio bond (PPB) at the end of the insurance year; A is cumulative premiums, B is cumulative previous PPB gains, C is cumulative part surrender gains; no PPB gain arises in the final insurance year.",
+            "ref": "HS321 s.14",
+            "term": "PPB gain"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Calculate the gain using the relevant formula (TB minus TD plus PG, or part-surrender/PPB formula) for inclusion on the Self Assessment return",
+            "ref": "HS321 Part 4 & 5",
+            "trigger": "Occurrence of a chargeable event (maturity, full surrender, death, sale, assignment, part surrender, part assignment)",
+            "who": "Individual with a chargeable event gain on a foreign life insurance policy"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Claim deficiency relief where a final chargeable event produces a negative result and they have income at a relevant rate",
+            "ref": "HS321 10.3",
+            "trigger": "Deficiency arising on final chargeable event",
+            "who": "Individual seeking deficiency relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Apply to HMRC to have the gain recalculated on a just and reasonable basis",
+            "ref": "HS321 s.11; IPTM3596",
+            "trigger": "Gain from part surrender/part assignment considered wholly disproportionate to underlying economic gain",
+            "who": "Person liable to tax on a wholly disproportionate gain"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk explains deficiency relief for individuals on foreign life insurance policies, the ability to apply for recalculation of wholly disproportionate gains, and the detailed methods for calculating chargeable event gains on maturity, full surrender, death, sale, part surrender/assignment, and PPB (personal portfolio bond) gains. It includes worked examples showing gain calculations and which tax year the gain is assessable in, relevant to completing the foreign pages of a Self Assessment return.",
+        "topics": [
+          "foreign-life-insurance-policies",
+          "chargeable-event-gains",
+          "deficiency-relief",
+          "part-surrender",
+          "ppb-gains",
+          "capital-gains-calculation"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "15abab8179b8909e": {
+      "chars": 10898,
+      "heading": "Gains on foreign life insurance policies (Self Assessment helpsheet HS321) > Part 2 — When you should report a chargeable event gain > 6\\. How to report a gain > 6\\.1\\. If an individual is liable to tax",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Self Assessment registration threshold for gain plus other savings/investment income",
+            "period": "n/a",
+            "ref": "HS321 s.6.1",
+            "value": "£10,000"
+          }
+        ],
+        "caveats": [
+          "Trustees and personal representatives are not entitled to time apportioned reduction or top slicing relief.",
+          "If a policy was issued before 6 April 2013 and not varied/assigned since, time apportioned reduction rules may differ - refer to IPTM3730-3734.",
+          "A loss on a life insurance policy cannot be set against gains on another policy or other income and attracts no relief unless deficiency relief applies (requires gains in earlier years).",
+          "Where both time apportioned reduction and TSR apply, the reduction must be calculated first, then TSR.",
+          "If more than one certificate is received for the same gain, the later (revised) certificate's figures should be used.",
+          "Where part surrenders and a full surrender occur in the same insurance year, only the gain on the full surrender should be reported (part surrender gains are absorbed into the final calculation)."
+        ],
+        "cross_references": [
+          "Foreign supplementary pages (SA106)",
+          "Trust and Estate Foreign Tax Return (SA904)",
+          "IPTM3240 - Insurance Policyholder Taxation Manual",
+          "IPTM3730 to IPTM3734 - Insurance Policyholder Taxation Manual",
+          "IPTM3820 - Insurance Policyholder Taxation Manual",
+          "Self Assessment: general enquiries contact page",
+          "How to register for Self Assessment guidance"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Normally the 12-month period beginning on the anniversary of the date the policy was taken out; all part surrenders in the same insurance year are treated as arising at the end of that year.",
+            "ref": "HS321 s.7",
+            "term": "Insurance year (policy year)"
+          },
+          {
+            "meaning": "The insurance year in which a policy/contract ends (via full surrender, death, maturity, or taking a capital sum instead of annuity payments); if this would begin and end within the same tax year, it is extended to include the previous insurance year.",
+            "ref": "HS321 s.7",
+            "term": "Final insurance year"
+          },
+          {
+            "meaning": "The part of the policy period during which the taxpayer beneficially owns the rights, or the rights are held on non-charitable trusts they created or as security for their debt.",
+            "ref": "HS321 s.9.2",
+            "term": "Material interest period"
+          },
+          {
+            "meaning": "All days in a tax year for which the person is not UK resident, and any days in a split year taxed as if not UK resident (the overseas part).",
+            "ref": "HS321 s.9.2",
+            "term": "Foreign days"
+          },
+          {
+            "meaning": "A reduction to the chargeable gain, calculated as A/B (foreign days in material interest period ÷ total days in material interest period), available to individuals (not trustees/personal representatives) who were non-UK resident during part of the material interest period.",
+            "ref": "HS321 s.9.2",
+            "term": "Time apportioned reduction"
+          },
+          {
+            "meaning": "Relief generally available where adding the gain to other income pushes the taxpayer from basic to higher/additional rate, or higher to additional rate; given as a reduction to tax rather than to the gain itself, calculated using number of complete policy years (reduced by non-UK resident years if TAR is claimed).",
+            "ref": "HS321 s.10.1",
+            "term": "Top slicing relief (TSR)"
+          },
+          {
+            "meaning": "Possible relief where a full surrender, death or maturity calculation produces a negative result but gains were made on the policy in earlier years.",
+            "ref": "HS321 s.10.2",
+            "term": "Deficiency relief"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Report the gain in their Self Assessment return, in the Foreign section under 'Other overseas income and gains' (or SA106 if paper return)",
+            "ref": "HS321 s.6.1",
+            "trigger": "Chargeable event gain on foreign life insurance policy",
+            "who": "Individual already within Self Assessment"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Register for Self Assessment and report the gain in their Self Assessment return",
+            "ref": "HS321 s.6.1",
+            "trigger": "Gain plus other savings/investment income exceeds £10,000",
+            "who": "Individual not within Self Assessment with gain (plus other savings/investment income) exceeding £10,000"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report by contacting Self Assessment general enquiries or sending a copy of the chargeable event certificate (with National Insurance number) to HMRC, BX9 1AS",
+            "ref": "HS321 s.6.1",
+            "trigger": "Chargeable event gain arises but total is £10,000 or less",
+            "who": "Individual not within Self Assessment with gain (plus other savings/investment income) not exceeding £10,000"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report the gain in the Trust and Estate Foreign Tax Return (SA904) under 'Gains on foreign life insurance policies, life annuities and capital redemption policies'",
+            "ref": "HS321 s.6.2",
+            "trigger": "Chargeable event gain arising to UK resident trustees",
+            "who": "UK resident trustees liable to tax"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report gain according to whether basic rate tax is treated as paid; refer to IPTM3240",
+            "ref": "HS321 s.6.3 / IPTM3240",
+            "trigger": "Gain realised by personal representatives",
+            "who": "Personal representatives who realised gains"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Calculate the reduction themselves (A/B formula) and deduct from the gain shown on the certificate, and subtract whole non-UK resident years from the 'number of years' shown on the certificate",
+            "ref": "HS321 s.9.2",
+            "trigger": "Taxpayer was non-UK resident at some point during the material interest period and is liable to tax on the gain",
+            "who": "Policy owner claiming time apportioned reduction"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Each enter their own share (default equal, or half if jointly owned with spouse/civil partner) of the gain on their own tax return",
+            "ref": "HS321 s.9.1",
+            "trigger": "Policy held in co-ownership",
+            "who": "Joint owners (including spouses/civil partners)"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how and where to report chargeable event gains on foreign life insurance policies depending on taxpayer type (individual, trustee, personal representative), and sets out registration thresholds for those not already in Self Assessment. It details rules for determining which tax year a gain falls into, including insurance year and final insurance year mechanics with worked examples. It also covers reducing the reported gain via joint-ownership apportionment and time apportioned reductions for non-UK residence periods, plus top slicing relief and treatment of losses/deficiency relief.",
+        "topics": [
+          "foreign-life-insurance-gains",
+          "self-assessment-registration",
+          "chargeable-event-gains",
+          "foreign-pages-sa106",
+          "trust-and-estate-return",
+          "top-slicing-relief",
+          "time-apportioned-reduction",
+          "deficiency-relief",
+          "insurance-year-timing"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "6c851ca23e2fa0bc": {
+      "chars": 11935,
+      "heading": "Gains on foreign life insurance policies (Self Assessment helpsheet HS321)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This helpsheet focuses on non-qualifying policies; purchased life annuities and capital redemption policies, or more complex circumstances, require reference to IPTM.",
+          "Policies made before 20 March 1968 and not subsequently changed do not give rise to a gain, but changes after that date may bring the policy within scope.",
+          "Policies taken out before 6 April 2000 may not carry an insurer obligation to issue a chargeable event certificate even if a gain arose, requiring self-calculation.",
+          "This is the 2026 version of the helpsheet; content is guidance, not statute, and rules on liability (Section 5) have several conditional branches depending on trust/estate status."
+        ],
+        "cross_references": [
+          "Insurance Policyholder Taxation Manual (IPTM)",
+          "IPTM3410 to IPTM3430",
+          "Trust and Estate Foreign Notes (SA904)",
+          "Helpsheet 262 — Income and benefits from transfers of assets abroad and income from non-resident trusts",
+          "Self Assessment Foreign pages (SA106) notes"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Most foreign policies; will normally give rise to a gain, subject to various factors affecting taxability. A single premium life insurance policy can never be a qualifying policy.",
+            "ref": "Part 1, Section 1.1",
+            "term": "Non-qualifying policy"
+          },
+          {
+            "meaning": "A policy that allows the policyholder or connected person to select the property by which the policy is valued, beyond specified permitted categories (e.g. internal linked funds, authorised unit trusts, approved investment trust shares, OEIC shares, certain cash deposits, certain life policies, collective investment scheme interests, UK REIT shares, authorised contractual scheme interests); gives rise to an annual charge.",
+            "ref": "Part 1, Section 1.2",
+            "term": "Personal Portfolio Bond (PPB)"
+          },
+          {
+            "meaning": "A gain taxable as income (not capital gains) arising from events such as full/part surrender, maturity, death of life insured, sale/assignment for value, or PPB status; capital losses and annual exempt amount cannot be set against it.",
+            "ref": "HS321 intro / Section 2",
+            "term": "Chargeable event gain"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Issue a chargeable event certificate if they know a gain has been made on a life insurance policy",
+            "ref": "Part 1, Section 3",
+            "trigger": "Knowledge that a gain has been made",
+            "who": "Insurers"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Contact trustees, nominee, lender or insurer to obtain or request a copy of the chargeable event certificate, or inform insurer of the event",
+            "ref": "Part 1, Section 4",
+            "trigger": "Belief that a gain may have arisen without receipt of a certificate",
+            "who": "Policyholder/taxpayer who has not received a certificate but suspects a gain"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Report the gain as their income (with right to recover tax from trustees)",
+            "ref": "Part 2, Section 5.1",
+            "trigger": "Gain arises on policy held by trust they created or added property to (unless bare or resulting trust)",
+            "who": "Settlor of a trust holding the policy"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "HS321 explains how chargeable event gains on foreign life insurance policies arise and who is liable to Income Tax on them, covering qualifying/non-qualifying policies, Personal Portfolio Bonds, chargeable event gain certificates, and the rules determining whether individuals, trustees or personal representatives are chargeable. Gains are taxed as income (not capital gains) and, unlike UK policies, normally carry no non-repayable basic rate tax credit. It also explains circumstances where a certificate may not have been received despite a gain arising, and cross-refers to other helpsheets and the IPTM manual for more complex cases.",
+        "topics": [
+          "foreign-life-insurance-policies",
+          "chargeable-event-gains",
+          "personal-portfolio-bonds",
+          "trustees",
+          "personal-representatives",
+          "foreign-income"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/gains-on-foreign-life-insurance-policies-self-assessment-helpsheet-hs321.md",
+  "source_id": "sa-helpsheets:5f67db85-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/gains-on-foreign-life-insurance-policies-hs321-self-assessment-helpsheet"
+}

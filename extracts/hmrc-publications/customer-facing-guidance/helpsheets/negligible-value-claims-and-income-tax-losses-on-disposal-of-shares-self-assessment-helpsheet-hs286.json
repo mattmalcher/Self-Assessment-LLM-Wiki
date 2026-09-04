@@ -1,0 +1,361 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "44c246d572e939b3": {
+      "chars": 6575,
+      "heading": "Negligible value claims and Income Tax losses on disposal of shares (Self Assessment helpsheet HS286) > How and when to claim the relief",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Cap on total Income Tax losses claimable against a year's income",
+            "period": "2013 to 2014 onwards",
+            "ref": "How the relief is given",
+            "value": "£50,000, or 25% of that income if greater"
+          },
+          {
+            "name": "Personal allowance (example)",
+            "period": "2024-25 and 2025-26",
+            "ref": "Example 6",
+            "value": "£12,570"
+          },
+          {
+            "name": "Example allowable loss",
+            "period": "2025-26",
+            "ref": "Example 6",
+            "value": "£50,000"
+          }
+        ],
+        "caveats": [
+          "Relief cannot be restricted to preserve personal Income Tax allowances - the loss is deducted from total income before allowances.",
+          "If Income Tax relief is claimed for a capital loss, it cannot also be set against capital gains.",
+          "The £50,000/25% of income limit does not apply to losses on shares with EIS or SEIS relief attributable.",
+          "There is a specified order of priority for losses claimed in a tax year (share losses in-year first, then carried-back share losses, then other Income Tax losses).",
+          "If claiming for multiple tax years, the claim must state which year takes priority."
+        ],
+        "cross_references": [
+          "SA108 Capital Gains Tax summary (2025)",
+          "SA108 Capital Gains Tax summary (2024)",
+          "SA110 Tax calculation summary (2024)",
+          "Helpsheet 204 Limit on Income Tax reliefs (2024)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Allowable losses on qualifying shares set against income",
+            "name": "Time limit to claim share loss relief against income",
+            "ref": "How and when to claim the relief",
+            "rule": "One year from 31 January following the tax year in which the loss occurred"
+          },
+          {
+            "applies_to": "Allowable loss made in 2025 to 2026",
+            "name": "Example deadline for 2025-26 loss",
+            "ref": "How and when to claim the relief",
+            "rule": "31 January 2028"
+          },
+          {
+            "applies_to": "Allowable loss made in 2024 to 2025 (claim by amending 2024-25 return)",
+            "name": "Example deadline for 2024-25 loss",
+            "ref": "How and when to claim the relief",
+            "rule": "31 January 2027"
+          }
+        ],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "31 January following the end of the tax year after the loss year (e.g. loss in 2025-26 must be claimed by 31 January 2028)",
+            "must": "Claim relief within one year of 31 January following the year the loss occurred",
+            "ref": "How and when to claim the relief",
+            "trigger": "Making an allowable loss on disposal of qualifying shares",
+            "who": "Claimant with an allowable loss on qualifying shares"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter relief in box 41 on page CG 2 of SA108, include capital losses in box 35, and give details in box 54 or computations",
+            "ref": "SA108 Capital Gains Tax summary (2025)",
+            "trigger": "Claiming relief for a 2025-26 allowable loss",
+            "who": "Claimant for 2025 to 2026 loss"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter relief in box 43 on page CG2 of SA108, include losses in box 35, give details in box 54/computations, calculate the tax difference, and enter it in box 15 on page TC 2 of SA110",
+            "ref": "SA108 Capital Gains Tax summary (2024); SA110 Tax calculation summary (2024)",
+            "trigger": "Claiming relief for a 2024-25 allowable loss",
+            "who": "Claimant for 2024 to 2025 loss"
+          },
+          {
+            "deadline": "31 January 2027",
+            "must": "Amend 2024-25 tax return to claim relief against 2024-25 or 2023-24 income",
+            "ref": "How and when to claim the relief",
+            "trigger": "Allowable loss made in 2024 to 2025",
+            "who": "Claimant with a 2024-25 allowable loss"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include minimum information (company name, registration number, country of incorporation, country of tax residency if different, date loss arose, priority statement if multiple years claimed)",
+            "ref": "How and when to claim the relief",
+            "trigger": "Making a negligible value/share loss claim",
+            "who": "Claimant"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how and when to claim Income Tax relief for an allowable capital loss on qualifying shares, including the one-year time limit from 31 January following the loss year, the specific SA108/SA110 boxes to use for 2025-26 and 2024-25 claims, and required minimum information about the issuing company. It also describes how relief is given (deducted from total income before personal allowances, with an ordering priority for losses), and sets out the £50,000 or 25% of income cap on total Income Tax losses claimable, with a worked example (Example 6).",
+        "topics": [
+          "negligible-value-claims",
+          "share-loss-relief",
+          "capital-losses",
+          "sa108",
+          "sa110",
+          "claim-deadlines",
+          "loss-relief-limit"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "9fb4056c1530789d": {
+      "chars": 11982,
+      "heading": "Negligible value claims and Income Tax losses on disposal of shares (Self Assessment helpsheet HS286)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Example 1 - subscription for shares",
+            "period": "n/a (subscribed 2009)",
+            "ref": "HS286 Example 1",
+            "value": "£15,000"
+          },
+          {
+            "name": "Example 2 - subscription for shares",
+            "period": "n/a (subscribed 1998)",
+            "ref": "HS286 Example 2",
+            "value": "£10,000"
+          },
+          {
+            "name": "Example 3 - subscription for shares",
+            "period": "n/a (subscribed 1998)",
+            "ref": "HS286 Example 3",
+            "value": "£10,000"
+          },
+          {
+            "name": "Example 4 - subscription for shares / allowable capital loss claimed",
+            "period": "2025 to 2026",
+            "ref": "HS286 Example 4",
+            "value": "£10,000"
+          }
+        ],
+        "caveats": [
+          "This helpsheet explains the basic rules for tax year 2025 to 2026 and does not cover all scenarios; complex cases may need a tax adviser.",
+          "If Making Tax Digital for Income Tax applies, claims and adjustments are made through compatible software instead of the Self Assessment boxes referenced in this helpsheet.",
+          "You cannot make a negligible value claim after the company has been dissolved; you are instead automatically treated as having disposed of the shares at the time of dissolution.",
+          "A gift of shares is not a qualifying disposal for share loss relief purposes.",
+          "The date chosen for a deemed disposal in a negligible value claim could affect ability to claim some other reliefs.",
+          "Delay in submitting the claim/tax return affects how far back the earlier specified time can be set."
+        ],
+        "cross_references": [
+          "SA108 Capital Gains Tax summary",
+          "CG13120P Capital Gains Manual (negligible value claims)",
+          "VCM70000 Venture Capital Schemes Manual (Share Loss Relief)",
+          "CG13137 Capital Gains Manual (buildings/structures negligible value rules)",
+          "Form CG34 (post-transaction valuation checks)",
+          "Negligible value agreements list (Shares and Assets Valuation Office)",
+          "Making Tax Digital for Income Tax guidance"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Taxpayers wanting HMRC to check a valuation for a negligible value claim",
+            "name": "CG34 valuation check application",
+            "ref": "HS286 - Checking the valuation of an asset",
+            "rule": "at least 3 months before your tax return filing date"
+          },
+          {
+            "applies_to": "Negligible value claims specifying an earlier deemed disposal date",
+            "name": "Earlier specified time for negligible value claim",
+            "ref": "HS286 - Negligible value claims",
+            "rule": "the earlier time you choose can be up to 2 years before the start of the tax year in which you make the claim"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "An asset is of negligible value if it is worth next to nothing.",
+            "ref": "HS286 - Negligible value claims",
+            "term": "Negligible value"
+          },
+          {
+            "meaning": "A claim allowing you to treat an asset as being disposed of, even though you still own it; results in being treated as though disposed of and immediately reacquired at the specified value at the time the claim is made (or an earlier specified time if conditions met).",
+            "ref": "HS286 - Negligible value claims",
+            "term": "Negligible value claim"
+          },
+          {
+            "meaning": "A claim to set certain allowable capital losses on disposal of shares subscribed for in a qualifying trading company against income, rather than only against chargeable gains.",
+            "ref": "HS286 - Claim to set loss from share disposal against income",
+            "term": "Share loss relief"
+          },
+          {
+            "meaning": "A disposal by way of a negligible value claim, an arm's length bargain, a distribution made in the course of winding up the company, or the dissolution of the company; a gift of shares is not a qualifying disposal.",
+            "ref": "HS286 - Qualifying disposals",
+            "term": "Qualifying disposal (for share loss relief)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Still own the asset when making the claim and the asset must have become of negligible value while owned",
+            "ref": "HS286 - Negligible value claims",
+            "trigger": "Wishing to make a negligible value claim",
+            "who": "Claimant making a negligible value claim"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Provide details in box 54 'Any other information' on page CG 4 of SA108, or in computations included with the tax return",
+            "ref": "HS286 - Negligible value claims",
+            "trigger": "Making a negligible value claim via tax return",
+            "who": "Taxpayer making a negligible value claim in a tax return"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Notify HMRC of the capital loss by making a calculation and sending it to HMRC (separate claim from the negligible value claim); include loss in boxes 7, 19, 27 or 35 of SA108 with code 'NVC' (or 'MUL' if multiple codes apply) in boxes 8, 20, 28 or 36, with accompanying computation",
+            "ref": "HS286 - Notifying HMRC of an allowable loss",
+            "trigger": "Resulting capital loss from a competent negligible value claim",
+            "who": "Taxpayer with a capital loss from a negligible value disposal"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make a calculation of the loss and send it to HMRC for the capital loss to be an allowable loss",
+            "ref": "HS286 - Negligible value claims",
+            "trigger": "Dissolution of the company in which shares were held",
+            "who": "Taxpayer whose shares became worthless because company was dissolved"
+          },
+          {
+            "deadline": "at least 3 months before your tax return filing date",
+            "must": "Complete and send CG34 application to the address on the form",
+            "ref": "HS286 - Checking the valuation of an asset",
+            "trigger": "Wanting HMRC to check a valuation used in connection with a deemed disposal",
+            "who": "Taxpayer seeking HMRC valuation check"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This HS286 helpsheet (2025 to 2026 tax year) explains how to make a negligible value claim on an asset that has become worthless, and how to claim Share Loss Relief to set allowable capital losses on disposal of subscriber shares in qualifying trading companies against Income Tax. It sets out conditions for a competent negligible value claim (must still own the asset when claiming, asset became negligible while owned), how far back an earlier specified disposal date can go, and how to notify HMRC of the resulting allowable loss via SA108 boxes with code 'NVC' or 'MUL'. It also covers using form CG34 to check valuations and lists qualifying disposal types for share loss relief.",
+        "topics": [
+          "negligible-value-claims",
+          "capital-losses",
+          "share-loss-relief",
+          "sa108",
+          "capital-gains-summary",
+          "qualifying-trading-companies"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "e064e23618a96eae": {
+      "chars": 9832,
+      "heading": "Negligible value claims and Income Tax losses on disposal of shares (Self Assessment helpsheet HS286) > In what type of company should I have subscribed for shares",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Gross assets limit (shares issued before 6 April 2006)",
+            "period": "n/a",
+            "ref": "The gross assets rule",
+            "value": "£15 million immediately before, £16 million immediately after the issue"
+          },
+          {
+            "name": "Gross assets limit (shares issued on or after 6 April 2006)",
+            "period": "n/a",
+            "ref": "The gross assets rule",
+            "value": "£7 million immediately before, £8 million immediately after the issue"
+          },
+          {
+            "name": "Limit on Income Tax reliefs",
+            "period": "n/a",
+            "ref": "Calculating the allowable loss",
+            "value": "£50,000, or 25% of your income if that is greater"
+          },
+          {
+            "name": "Example 5 - EIS relief claimed vs loss relief",
+            "period": "2003 subscription / August 2025 negligible value claim",
+            "ref": "Example 5",
+            "value": "Subscribed £10,000, EIS relief £2,000 (20%), loss relief claimable £8,000"
+          },
+          {
+            "name": "Substantial non-qualifying activity threshold",
+            "period": "n/a",
+            "ref": "In what type of company should I have subscribed for shares",
+            "value": "more than about 20%"
+          }
+        ],
+        "caveats": [
+          "Rules differ significantly depending on whether shares were issued before or on/after 6 April 1998, and gross assets limits differ depending on whether issued before or on/after 6 April 2006.",
+          "The £50,000/25% of income limit on Income Tax reliefs does not apply to losses on shares to which EIS or SEIS relief is attributable.",
+          "Relief on shares acquired via reorganisation or share exchange is only available in limited circumstances unless ownership of the new company exactly mirrors the old company.",
+          "No relief for losses on shares in the holding company of a non-trading group.",
+          "Where a shareholding includes both subscribed and non-subscribed (bought/gifted/inherited) shares, only the subscribed portion qualifies and apportionment rules apply — reader advised to seek further guidance."
+        ],
+        "cross_references": [
+          "Helpsheet 341 Enterprise Investment Scheme — Income Tax relief",
+          "Helpsheet 285 Share reorganisations, company takeovers and Capital Gains Tax",
+          "Helpsheet 204 Limit on Income Tax reliefs",
+          "Helpsheet 297 Capital Gains Tax and Enterprise Investment Scheme",
+          "Venture capital schemes — apply for the Enterprise Investment Scheme (GOV.UK guidance)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Must not exceed gross assets limit in force at issue; must not be listed on a recognised stock exchange (or have arrangements to be) at issue, unless listed on or after 7 March 2001; must not be a building society or registered industrial and provident society; must be a trading company (wholly for qualifying trades, or group with non-qualifying activities not substantial, i.e. broadly not more than ~20%)",
+            "ref": "In what type of company should I have subscribed for shares",
+            "term": "Qualifying trading company (shares issued on or after 6 April 1998)"
+          },
+          {
+            "meaning": "Must not have had shares listed on a recognised stock exchange since incorporation (or one year before issue if later); must not be a building society or registered industrial and provident society; must be a trading company whose business consisted wholly or mainly of carrying on a trade, or have subsidiaries meeting this test",
+            "ref": "In what type of company should I have subscribed for shares",
+            "term": "Qualifying trading company (shares issued before 6 April 1998)"
+          },
+          {
+            "meaning": "Trade consisting wholly or mainly of dealing in land, commodities, futures, shares/securities/financial instruments; not a qualifying trade for EIS purposes; or not pursued on a commercial basis expected to make a profit",
+            "ref": "Trading companies that do not qualify",
+            "term": "Non-qualifying trade (post 6 April 1998)"
+          },
+          {
+            "meaning": "Trade consisting wholly or mainly of dealing in shares, securities, land, or commodity futures; or not pursued on a commercial basis expected to make a profit",
+            "ref": "Trading companies that do not qualify",
+            "term": "Non-qualifying trade (pre 6 April 1998)"
+          },
+          {
+            "meaning": "Company must have been a trading company throughout the 6 years to the date of disposal, or throughout its active existence if less than 6 years",
+            "ref": "How long must the company have been a trading company",
+            "term": "How long must the company have been a trading company"
+          },
+          {
+            "meaning": "Relief still available if company stopped trading no more than 3 years before disposal, has not started a non-qualifying activity, and satisfied qualifying conditions at date it stopped trading",
+            "ref": "Companies that have stopped trading",
+            "term": "Companies that have stopped trading"
+          },
+          {
+            "meaning": "Must not be fixed rate dividend preference shares; must have been subscribed for individually (including jointly or via nominee); shares transferred from a spouse/civil partner during their lifetime who subscribed for them are treated as subscribed for by the recipient; subscribed shares are those issued for money or money's worth",
+            "ref": "Qualifying shares",
+            "term": "Qualifying shares"
+          }
+        ],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk sets out detailed conditions a company must satisfy to be a 'qualifying trading company' for the purpose of claiming Income Tax loss relief on negligible value or disposal of subscribed shares, with different rules depending on whether shares were issued before or after 6 April 1998. It covers the gross assets rule thresholds, disqualifying trades, the 6-year trading requirement, treatment of companies that have stopped trading, share reorganisations/takeovers, and how to calculate the allowable loss including interaction with EIS relief and the £50,000/25% of income limit on Income Tax reliefs.",
+        "topics": [
+          "negligible-value-claims",
+          "share-loss-relief",
+          "eis",
+          "capital-losses-against-income",
+          "qualifying-trading-company",
+          "gross-assets-rule"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/negligible-value-claims-and-income-tax-losses-on-disposal-of-shares-self-assessment-helpsheet-hs286.md",
+  "source_id": "sa-helpsheets:5f67d46f-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/negligible-value-claims-and-income-tax-losses-on-disposals-of-shares-you-have-subscribed-for-in-qualifying-trading-companies-hs286-self-assessment-he"
+}

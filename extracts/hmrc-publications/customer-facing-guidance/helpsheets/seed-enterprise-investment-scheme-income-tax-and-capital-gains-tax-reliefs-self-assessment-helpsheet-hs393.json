@@ -1,0 +1,261 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "220fa488903f7ea0": {
+      "chars": 11527,
+      "heading": "Seed Enterprise Investment Scheme — Income Tax and Capital Gains Tax reliefs (Self Assessment helpsheet HS393)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Maximum SEIS subscription for Income Tax relief",
+            "period": "2025-26",
+            "ref": "HS393 s.1.2 / s.1.6",
+            "value": "£200,000"
+          },
+          {
+            "name": "SEIS Income Tax relief rate",
+            "period": "2025-26",
+            "ref": "HS393 s.1.6",
+            "value": "50%"
+          },
+          {
+            "name": "Maximum SEIS subscription limit for previous year carry-back",
+            "period": "2024-25",
+            "ref": "HS393 s.1.6",
+            "value": "£100,000"
+          },
+          {
+            "name": "Maximum reinvestment relief exempt gain",
+            "period": "2025-26",
+            "ref": "HS393 s.2.2",
+            "value": "£100,000"
+          },
+          {
+            "name": "Reinvestment relief exemption proportion",
+            "period": "2025-26",
+            "ref": "HS393 s.2.1 / s.2.2",
+            "value": "50% of the gain"
+          },
+          {
+            "name": "Substantial interest threshold",
+            "period": "n/a",
+            "ref": "HS393 s.1.3",
+            "value": "more than 30% of share capital, voting power, or winding-up assets entitlement"
+          }
+        ],
+        "caveats": [
+          "Applies to shares issued during the year ended 5 April 2026; figures (£200,000, £100,000, 50%) are specific to tax years 2025 to 2026 and 2024 to 2025 and may differ in other years",
+          "Relief cannot be claimed until form SEIS3 is received, even if shares were issued in the relevant tax year",
+          "If MTD for Income Tax applies, claims and adjustments are made through compatible software instead of the SA boxes referenced in this helpsheet",
+          "Reinvestment relief is only available if SEIS Income Tax relief is also obtained; cannot claim reinvestment relief independently",
+          "Cannot claim reinvestment relief for tax year 2024 to 2025 for shares treated as issued in tax year 2023 to 2024, illustrating a carry-back restriction one year removed",
+          "Relief may be withdrawn or reduced if value is received from the company or under other conditions detailed on form SEIS3, not fully reproduced in this chunk"
+        ],
+        "cross_references": [
+          "Investment schemes guidance (gov.uk/business-tax/investment-schemes)",
+          "Self Assessment Additional Information pages (SA101)",
+          "Self Assessment Capital Gains Summary notes (SA108)",
+          "HMRC Statement of Practice 6/98",
+          "Form SEIS3 'Seed Enterprise Investment Scheme Certificate'",
+          "Making Tax Digital for Income Tax guidance"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Controlling the company, or possessing more than 30% of the company's share capital or more than 30% of the voting power in the company, or being entitled to more than 30% of the company's assets in a winding-up (does not apply, subject to conditions, while only original subscriber shares are issued)",
+            "ref": "HS393 s.1.3",
+            "term": "Substantial interest"
+          },
+          {
+            "meaning": "Includes a spouse or civil partner, lineal ancestor or descendant, a business partner and certain persons connected via a trust",
+            "ref": "HS393 s.1.3",
+            "term": "Associate"
+          },
+          {
+            "meaning": "Relief enabling an individual who disposes of an asset giving rise to a chargeable gain to treat a maximum of 50% of the gain as exempt from CGT where the gain is reinvested in qualifying SEIS shares",
+            "ref": "HS393 s.2.1",
+            "term": "Reinvestment relief"
+          },
+          {
+            "meaning": "CGT relief where shares in a SEIS company are disposed of after being held for 3 years and certain criteria are met",
+            "ref": "HS393 s.2",
+            "term": "Disposal relief"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Enter total subscription amount claimed (max £200,000) in box 10 'Other tax reliefs' on page Ai 2 of Additional Information pages, and enter investment details (UIR, company name, amount, date of issue) in box 19 'Any other information' on page TR 7",
+            "ref": "HS393 s.1.2",
+            "trigger": "Receipt of form SEIS3 for shares issued in year ended 5 April 2026",
+            "who": "Investor claiming SEIS Income Tax relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete the claim form incorporated in SEIS3 and send it to HMRC",
+            "ref": "HS393 s.1.2",
+            "trigger": "Receipt of SEIS3 after submission of tax return",
+            "who": "Investor who receives SEIS3 after filing tax return"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete the claim form incorporated in form SEIS3 showing amount claimed for previous year and send to HMRC",
+            "ref": "HS393 s.1.5",
+            "trigger": "Election to carry back relief to 2024 to 2025",
+            "who": "Investor wanting relief for shares treated as issued in previous year"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Keep form SEIS3 safe as HMRC may request it to support the claim",
+            "ref": "HS393 s.1.2",
+            "trigger": "Claim made for SEIS Income Tax relief",
+            "who": "Investor claiming Income Tax relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Each obtain their own form SEIS3 from the company to claim relief",
+            "ref": "HS393 s.1.4",
+            "trigger": "Shares issued jointly",
+            "who": "Joint owners of SEIS shares"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "HS393 explains how to claim SEIS Income Tax relief and two SEIS CGT reliefs (reinvestment relief and disposal relief) for tax year 2025 to 2026, including eligibility conditions, how to enter claims on the SA101 Additional Information pages and box 19 of the main return, and rules on carrying back relief to the previous tax year. It sets out the £200,000 subscription limit and 50% relief rate for 2025 to 2026, joint ownership treatment, substantial interest and associate definitions, and conditions for claiming reinvestment relief on gains reinvested in qualifying SEIS shares.",
+        "topics": [
+          "seis",
+          "income-tax-relief",
+          "capital-gains-tax-relief",
+          "reinvestment-relief",
+          "disposal-relief",
+          "investment-schemes",
+          "sa101-additional-information"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "4a87087b82d236d5": {
+      "chars": 5347,
+      "heading": "Seed Enterprise Investment Scheme — Income Tax and Capital Gains Tax reliefs (Self Assessment helpsheet HS393) > 3\\. Which SEIS shares qualify for reinvestment relief > 3\\.1 How much reinvestment relief can you claim",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Cap on reinvestment relief (50% of amount receiving SEIS Income Tax relief)",
+            "period": "2025-26",
+            "ref": "HS393 s.3.1",
+            "value": "50%"
+          },
+          {
+            "name": "Maximum SEIS Income Tax relief claimable",
+            "period": "2025-26",
+            "ref": "HS393 s.3.1",
+            "value": "£200,000"
+          },
+          {
+            "name": "Maximum reinvestment relief claimable",
+            "period": "2025-26",
+            "ref": "HS393 s.3.1",
+            "value": "£100,000"
+          },
+          {
+            "name": "Annual Exempt Amount (AEA)",
+            "period": "2025-26",
+            "ref": "HS393 s.3.2",
+            "value": "£6,000"
+          },
+          {
+            "name": "Minimum holding period for disposal relief",
+            "period": "n/a",
+            "ref": "HS393 s.4",
+            "value": "3 years"
+          }
+        ],
+        "caveats": [
+          "Figures (£200,000 SEIS Income Tax relief cap, £100,000 reinvestment relief cap, £6,000 AEA) apply specifically to tax year 2025 to 2026 and may differ in other years.",
+          "Reinvestment relief must not exceed 50% of the amount on which SEIS Income Tax relief is received.",
+          "Disposal relief is not due, wholly or partly, if shares are disposed of within 3 years of issue (except disposals to spouse/civil partner), triggering withdrawal of Income Tax relief and CGT chargeability on any gain.",
+          "Only part of a gain may be exempt from CGT if Income Tax relief was partly withdrawn or subscriptions exceeded the maximum allowed.",
+          "If no Income Tax liability exists before the SEIS subscription, no Income Tax relief is received and any gain on disposal is fully chargeable.",
+          "The notes on form SEIS3 explain situations where relief must be withdrawn or reduced — not detailed in this chunk."
+        ],
+        "cross_references": [
+          "Capital Gains Tax summary pages (SA108)",
+          "Capital Gains Tax summary notes (CGN 2)",
+          "Form SEIS3",
+          "GOV.UK - Self Assessment capital gains summary (SA108)",
+          "HMRC contact page for Self Assessment advice"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Claims for SEIS reinvestment relief referenced in this helpsheet (2025 to 2026 tax year)",
+            "name": "Latest date for making a SEIS reinvestment relief claim",
+            "ref": "HS393 s.3.4",
+            "rule": "31 January 2032"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Relief meaning no CGT is payable on a gain from disposal of SEIS shares, provided the shares were held at least 3 years and full (or non-withdrawn) SEIS Income Tax relief was received on the whole subscription",
+            "ref": "HS393 s.4",
+            "term": "Disposal relief"
+          },
+          {
+            "meaning": "Relief exempting from CGT part of a chargeable gain reinvested into SEIS shares, capped at 50% of the amount on which SEIS Income Tax relief is given, up to £100,000",
+            "ref": "HS393 s.3.1",
+            "term": "Reinvestment relief"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Complete the claim form attached to the SEIS3 certificate and attach it to the 'Capital Gains Tax summary' pages of the tax return, put code 'OTH' in box 28 on page CG 2, and provide claim details in box 54 or in the computation",
+            "ref": "HS393 s.3.3",
+            "trigger": "Claiming SEIS reinvestment relief on a gain reinvested into SEIS shares",
+            "who": "SEIS investor claiming reinvestment relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter in box 40 the total of all gains claimed exempt due to SEIS reinvestment in the year to 5 April 2026 (not exceeding £100,000)",
+            "ref": "HS393 s.3.3",
+            "trigger": "Claiming reinvestment relief for gains made in the year to 5 April 2026",
+            "who": "SEIS investor claiming reinvestment relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete the SEIS3 claim form and send it to HMRC",
+            "ref": "HS393 s.3.3",
+            "trigger": "Wishing to claim reinvestment relief after the tax return has already been sent",
+            "who": "SEIS investor claiming after tax return submitted"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not claim reinvestment relief before receiving the relevant form SEIS3",
+            "ref": "HS393 s.3.4",
+            "trigger": "Intending to claim reinvestment relief",
+            "who": "SEIS investor"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how SEIS reinvestment relief is calculated and capped, how to claim it on the Capital Gains Tax summary (SA108) pages of the Self Assessment return, and the claim time limit. It also covers SEIS disposal relief conditions, when disposal relief is not due, how losses on SEIS share disposals are treated, and includes worked examples.",
+        "topics": [
+          "seis",
+          "reinvestment-relief",
+          "capital-gains-tax",
+          "disposal-relief",
+          "sa108",
+          "claims",
+          "time-limits"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-self-assessment-helpsheet-hs393.md",
+  "source_id": "sa-helpsheets:5f67e327-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-hs393-self-assessment-helpsheet"
+}

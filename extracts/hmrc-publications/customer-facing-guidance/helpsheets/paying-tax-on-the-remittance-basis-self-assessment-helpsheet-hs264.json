@@ -1,0 +1,554 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "04ec3ff103f9c9ba": {
+      "chars": 11668,
+      "heading": "Paying tax on the remittance basis (Self Assessment helpsheet HS264) > 4\\. Temporary repatriation facility (TRF) > 4\\.3 How to make a designation > 1\\. Identify qualifying overseas capital",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "TRF charge rate",
+            "period": "2025 to 2026",
+            "ref": "HS264 4.3.3 Calculating the TRF Charge",
+            "value": "12%"
+          }
+        ],
+        "caveats": [
+          "No foreign tax credit is available against the TRF charge",
+          "Designated qualifying overseas capital does not form part of total taxable income or gains, adjusted net income (ANI), or pension net/threshold/adjusted income calculations",
+          "TRF designation does not impact payments on account for the following year",
+          "Records of designated qualifying overseas capital need not be submitted to HMRC unless required for a compliance check",
+          "Remittance basis does not apply to chargeable event gains under life insurance/life annuity/capital redemption policies - these are taxed on full amount arising regardless of remittance",
+          "A remittance can occur without physical importation of money/property from overseas (e.g. UK-to-UK payment arrangements)",
+          "Gifts to non-relevant persons can still trigger a remittance if used to benefit a relevant person"
+        ],
+        "cross_references": [
+          "RDRM72100 onwards",
+          "SA109 - Residence and foreign income and gains (FIG) regime etc",
+          "Residence, domicile and the remittance basis: RDR1",
+          "Capital Gains Tax for non-residents: UK residential property guidance",
+          "RDRM34300 - Business Investment Relief",
+          "Self Assessment Foreign pages (SA106) and Foreign notes",
+          "Self Assessment: general enquiries contact page"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Non-UK residents disposing of UK residential property interests",
+            "name": "Notification of UK residential property disposal by non-resident",
+            "ref": "Remittance basis 2025 (HS264)",
+            "rule": "within 30 days of conveyance"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Amounts derived from pre-6 April 2025 foreign income and gains, which may include offshore bank account funds, offshore assets, jointly held amounts, amounts in exempt property, amounts invested via business investment relief, mixed fund amounts, and certain trust payments matched to pre-6 April 2025 FIG",
+            "ref": "HS264 4.3.1 / RDRM72100 onwards",
+            "term": "Qualifying overseas capital"
+          },
+          {
+            "meaning": "A declaration treated as taking place at the beginning of the tax year (6 April 2025 for 2025-26) designating qualifying overseas capital, subject to a flat 12% charge that is a charge on capital, not income or gains",
+            "ref": "HS264 4.3.2-4.3.3",
+            "term": "TRF designation"
+          },
+          {
+            "meaning": "An alternative tax treatment available to UK resident, non-domiciled individuals with foreign income and gains, under which UK tax is charged only on UK source income/gains and on remitted foreign income and gains",
+            "ref": "Remittance basis 2025 (HS264) - The remittance basis",
+            "term": "Remittance basis"
+          },
+          {
+            "meaning": "Applies if born in the UK with UK domicile of origin and UK resident in 2024 to 2025 tax year, or UK resident for at least 15 of the previous 20 tax years and UK resident in 2024 to 2025 tax year; remittance basis unavailable if deemed domicile",
+            "ref": "Remittance basis 2025 (HS264) - The remittance basis",
+            "term": "Deemed domicile"
+          },
+          {
+            "meaning": "Foreign income and gains (or something deriving from them) brought to, received in, or used in the UK by or for the benefit of a relevant person, used to pay for UK services, or used outside the UK for a relevant debt in the UK",
+            "ref": "Remittance basis 2025 (HS264) - Remitted to the UK",
+            "term": "Remitted to the UK"
+          },
+          {
+            "meaning": "Includes the individual, their spouse/civil partner or cohabiting partner, children/grandchildren under 18 (including of spouse/partner), trustees of a settlement with a relevant-person beneficiary, and close companies (UK or would-be-close non-resident) in which a relevant person is a participator",
+            "ref": "Remittance basis 2025 (HS264) - Relevant person",
+            "term": "Relevant person"
+          },
+          {
+            "meaning": "An account or fund containing more than one source or year of income/gains such that remittances cannot be easily attributed to a single source",
+            "ref": "Remittance basis 2025 (HS264) - Deciding what you have remitted",
+            "term": "Mixed fund"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Designate the amount on the 'Residence and foreign income and gains (FIG) regime etc' pages (SA109) using boxes 50, 51, 52 and 54, with entries in UK sterling",
+            "ref": "HS264 4.3.2",
+            "trigger": "Wanting to make a TRF designation of qualifying overseas capital",
+            "who": "Individual making a TRF designation"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Keep their own records of the designated qualifying overseas capital on which the TRF charge has been paid",
+            "ref": "HS264 4.3.4",
+            "trigger": "Making a TRF designation",
+            "who": "Individual who has made a TRF designation"
+          },
+          {
+            "deadline": "30 days of conveyance",
+            "must": "Tell HMRC within 30 days of conveyance and may have to pay Capital Gains Tax on gains",
+            "ref": "Remittance basis 2025 (HS264)",
+            "trigger": "Sale or disposal of whole or part interest in UK residential property while non-resident",
+            "who": "Non-resident individual disposing of UK residential property"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete the 'Residence, remittance basis etc' (SA109) pages",
+            "ref": "Remittance basis 2025 (HS264) - Claiming the remittance basis",
+            "trigger": "Deciding to claim the remittance basis",
+            "who": "Individual claiming remittance basis for 2024 to 2025"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete form SA109 to claim business investment relief",
+            "ref": "RDRM34300 / SA109",
+            "trigger": "Bringing foreign income and gains to the UK and investing in a qualifying target company",
+            "who": "Remittance basis taxpayer investing FIG in a qualifying target company"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how to make a Temporary Repatriation Facility (TRF) designation for pre-6 April 2025 foreign income and gains, including identifying qualifying overseas capital, completing boxes 50-54 on SA109, currency conversion rules, calculation of the flat 12% TRF charge, and record-keeping obligations. It then transitions into the separate HS264 Remittance Basis 2025 helpsheet, covering who can claim the remittance basis, the deemed domicile rules, what counts as a remittance, the definition of 'relevant person', and business investment relief.",
+        "topics": [
+          "remittance-basis",
+          "temporary-repatriation-facility",
+          "trf-designation",
+          "sa109",
+          "foreign-income-and-gains",
+          "mixed-funds",
+          "record-keeping",
+          "relevant-person"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "05c0210eb2cb6dee": {
+      "chars": 11006,
+      "heading": "Paying tax on the remittance basis (Self Assessment helpsheet HS264)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "The remittance basis was abolished from 6 April 2025; 2024 to 2025 was the last tax year it could be claimed or apply automatically.",
+          "This helpsheet applies only to former remittance basis users with pre-6 April 2025 unremitted foreign income/gains, not to current-year remittance basis claims.",
+          "Capital gains on disposals on or after 6 April 2025 are taxed on the arising basis in the year of disposal, not under remittance rules, per Example 2.",
+          "MTD for Income Tax users should follow software-based claims/adjustments rather than SA return boxes referenced in this helpsheet.",
+          "Business investment relief claims relating to pre-6 April 2025 funds cannot be made after 5 April 2028."
+        ],
+        "cross_references": [
+          "HS266",
+          "SA106 'Foreign' pages",
+          "SA109 'Residence and foreign income and gains (FIG) regime etc' pages",
+          "RDRM33050",
+          "RDRM34000",
+          "RDRM34300",
+          "RDRM35210 onwards",
+          "RDR1: Residence, domicile and the remittance basis guidance",
+          "Making Tax Digital for Income Tax guidance",
+          "'Foreign notes' page FN 1"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Business investment relief claims on pre-6 April 2025 foreign income/gains",
+            "name": "Business investment relief claim cut-off",
+            "ref": "HS264 Section 1.2",
+            "rule": "Claims cannot be made after 5 April 2028"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "An alternative tax treatment previously available to individuals resident but not domiciled in the UK with foreign income and gains, under which they were liable to UK tax on UK source income/gains in full but only on foreign income/gains remitted to the UK",
+            "ref": "HS264 Section 1",
+            "term": "Remittance basis"
+          },
+          {
+            "meaning": "Foreign income and gains (or something deriving from them) that are brought to, received in, or used in the UK by or for the benefit of the individual or another relevant person, used to pay for UK services, or used outside the UK for a relevant debt or benefit in the UK",
+            "ref": "HS264 Section 1.1",
+            "term": "Remitted to the UK"
+          },
+          {
+            "meaning": "Includes the individual, their spouse/civil partner or cohabiting partner, children/grandchildren under 18 (including of spouse/civil partner), trustees of a settlement where a relevant person is a beneficiary, and close companies (or non-resident companies that would be close if UK resident) where a relevant person is a participator",
+            "ref": "HS264 Section 1.2",
+            "term": "Relevant person"
+          },
+          {
+            "meaning": "A fund of money or other property containing more than one type of income or capital (including foreign chargeable gains) or income/capital from more than one tax year",
+            "ref": "HS264 Section 1.4",
+            "term": "Mixed fund"
+          },
+          {
+            "meaning": "A facility allowing designation of pre-6 April 2025 foreign income and gains to avoid normal tax rates on remittance",
+            "ref": "HS264 intro",
+            "term": "Temporary repatriation facility (TRF)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Declare the remittance on Self Assessment tax return in the year the remittance occurs, unless covered by TRF designation",
+            "ref": "HS264 Section 1",
+            "trigger": "Remittance of pre-6 April 2025 foreign income or gains to the UK",
+            "who": "Former remittance basis user with pre-6 April 2025 unremitted foreign income/gains"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Complete box 38 of SA109 and include a breakdown of amount invested into each company at box 54",
+            "ref": "HS264 Section 1.2",
+            "trigger": "Claiming business investment relief on remitted foreign income/gains invested in a qualifying target company",
+            "who": "Individual claiming business investment relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Read this helpsheet together with MTD guidance and make claims/adjustments through compatible software instead of SA return boxes",
+            "ref": "HS264 intro",
+            "trigger": "Use of Making Tax Digital for Income Tax",
+            "who": "Taxpayer using Making Tax Digital for Income Tax"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS264 explains the abolition of the remittance basis from 6 April 2025 and the transition to arising-basis taxation for UK residents, with the FIG regime available to 'qualifying new residents'. It covers how pre-6 April 2025 unremitted foreign income and gains are taxed if later remitted, unless designated under the temporary repatriation facility (TRF), and gives guidance on completing the Foreign pages (SA106) and Residence and FIG regime pages (SA109). It defines 'remitted to the UK', 'relevant person', and 'mixed fund', and explains business investment relief and foreign tax credit relief for remitted income.",
+        "topics": [
+          "remittance-basis",
+          "foreign-income-and-gains",
+          "temporary-repatriation-facility",
+          "sa106",
+          "sa109",
+          "mixed-funds",
+          "business-investment-relief"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "45a1a5392b4a5ea3": {
+      "chars": 11447,
+      "heading": "Paying tax on the remittance basis (Self Assessment helpsheet HS264) > 2\\. Completing the ‘Foreign’ pages > 2\\.1 Box 2 Foreign Tax Credit Relief (FTCR) > Example 4",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "TRF reduced tax rate",
+            "period": "2025 to 2026 and 2026 to 2027",
+            "ref": "HS264 s.4",
+            "value": "12%"
+          },
+          {
+            "name": "TRF reduced tax rate",
+            "period": "2027 to 2028",
+            "ref": "HS264 s.4",
+            "value": "15%"
+          },
+          {
+            "name": "Example 4 UK tax rate",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.2.1 Example 4",
+            "value": "40%"
+          },
+          {
+            "name": "Example 4 gross income",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.2.1 Example 4",
+            "value": "£10,000"
+          },
+          {
+            "name": "Example 4 foreign tax",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.2.1 Example 4",
+            "value": "£1,000"
+          },
+          {
+            "name": "Example 4 remitted amount",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.2.1 Example 4",
+            "value": "£4,500"
+          },
+          {
+            "name": "Example 5 SWT amount",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.2.2 Example 5",
+            "value": "£2,000"
+          },
+          {
+            "name": "Example 5 taxable income to enter",
+            "period": "n/a (year of set-off)",
+            "ref": "HS264 s.2.2 Example 5",
+            "value": "£2,500"
+          },
+          {
+            "name": "Example 6 SWT amount",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.2.2 Example 6",
+            "value": "£200"
+          },
+          {
+            "name": "Example 6 total income taxed eventually",
+            "period": "n/a",
+            "ref": "HS264 s.2.2 Example 6",
+            "value": "£1,000"
+          },
+          {
+            "name": "Example 7 overseas rents received",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.3.1 Example 7",
+            "value": "£10,000"
+          },
+          {
+            "name": "Example 7 foreign tax paid",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.3.1 Example 7",
+            "value": "£2,000"
+          },
+          {
+            "name": "Example 7 amount to enter in column B",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.3.1 Example 7",
+            "value": "£7,500"
+          },
+          {
+            "name": "Example 7 amount to enter in column C",
+            "period": "2023 to 2024",
+            "ref": "HS264 s.3.1 Example 7",
+            "value": "£1,500"
+          }
+        ],
+        "caveats": [
+          "SWT set-off or repayment for former remittance basis users is itself treated as a remittance of income at the time it's set off or repaid.",
+          "Dividends paid on or after 6 April 2016 do not qualify for a dividend tax credit when remitted, unlike pre-6 April 2016 dividends that accrued tax credit entitlement.",
+          "The tax-free dividend allowance and dividend nil rate do not apply to remitted foreign dividends taxed at normal UK rates.",
+          "TRF designation does not require remittance during the TRF period to benefit from the reduced rate, but remittances in the same year as designation must still be reported.",
+          "There is no obligation to designate the full amount of pre-6 April 2025 income and gains under the TRF; partial designations are permitted.",
+          "Example figures and rates relate to the 2023 to 2024 tax year and TRF periods 2025-26 to 2027-28; should not be assumed to apply to other years without checking current rules."
+        ],
+        "cross_references": [
+          "Foreign pages (SA106)",
+          "Residence and foreign income and gains (FIG) regime etc pages (SA109)",
+          "UK-Swiss Tax Cooperation Agreement",
+          "foreign exchange rates (trade-tariff.service.gov.uk)",
+          "HS264 s.4.3 How to make a designation"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Former remittance basis users with SWT set against UK tax liability",
+            "name": "SWT set-off deemed remittance date",
+            "ref": "HS264 s.2.2 Example 5",
+            "rule": "Normally the 'set-off' will be regarded as having been at 31 January following the tax year"
+          },
+          {
+            "applies_to": "Former remittance basis users designating pre-6 April 2025 foreign income and gains",
+            "name": "TRF availability period",
+            "ref": "HS264 s.4",
+            "rule": "Available from 6 April 2025 for 3 tax years: 2025 to 2026, 2026 to 2027 and 2027 to 2028"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "An amount of tax withheld on certain payments to UK residents under the European Savings Directive and equivalent third party agreements, in addition to any foreign tax deducted by the country of origin",
+            "ref": "HS264 s.2.2",
+            "term": "Special Withholding Tax (SWT)"
+          },
+          {
+            "meaning": "A temporary measure available from 6 April 2025 for 3 tax years allowing former remittance basis users to designate pre-6 April 2025 foreign income and gains ('qualifying overseas capital') for taxation at a reduced rate",
+            "ref": "HS264 s.4",
+            "term": "Temporary Repatriation Facility (TRF)"
+          },
+          {
+            "meaning": "Designated qualifying overseas capital that gets remitted in priority to other amounts in a mixed fund, regardless of the year in which they arose",
+            "ref": "HS264 s.4",
+            "term": "TRF capital"
+          },
+          {
+            "meaning": "Amounts that can be designated under the TRF, including pre-6 April 2025 foreign income and gains, funds of uncertain origin, capital payments/income from non-UK trusts matched to pre-6 April 2025 foreign income or gains, and overseas assets",
+            "ref": "HS264 s.4.2",
+            "term": "Qualifying overseas capital"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Make a claim on the return and supply certificates from the Swiss paying agent confirming SWT amounts",
+            "ref": "HS264 s.2.2",
+            "trigger": "SWT deducted under UK-Swiss Tax Cooperation Agreement",
+            "who": "Former remittance basis user with SWT deducted and opting to treat it as payment on account"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Convert foreign currency remittance amounts to UK sterling at the exchange rate on the date of remittance (or bank's rate if credited to sterling account) and enter all amounts in sterling on pages F2 and F3",
+            "ref": "HS264 s.3",
+            "trigger": "Completing Foreign pages",
+            "who": "Former remittance basis user"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Apportion the foreign tax paid according to the proportion of income remitted",
+            "ref": "HS264 s.3.1",
+            "trigger": "Foreign tax paid and not all income remitted",
+            "who": "Former remittance basis user with partly remitted income and foreign tax paid"
+          },
+          {
+            "deadline": "Within TRF period (2025-26 to 2027-28)",
+            "must": "Make a designation election on the 'Residence and foreign income and gains (FIG) regime etc' pages (SA109)",
+            "ref": "HS264 s.4",
+            "trigger": "Wish to designate pre-6 April 2025 foreign income/gains under TRF",
+            "who": "Former remittance basis user wishing to use TRF"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk continues HS264 guidance on completing the SA106 Foreign pages for former remittance basis users, covering FTCR apportionment on partial remittances, Special Withholding Tax (SWT) treatment and its effect as a remittance when set off or repaid, currency conversion rules, and how to report remitted non-dividend and dividend foreign income. It also introduces the Temporary Repatriation Facility (TRF), a 3-year measure from 6 April 2025 allowing former remittance basis users to designate pre-6 April 2025 foreign income and gains at reduced tax rates.",
+        "topics": [
+          "remittance-basis",
+          "foreign-tax-credit-relief",
+          "special-withholding-tax",
+          "foreign-income",
+          "foreign-dividends",
+          "temporary-repatriation-facility",
+          "sa106-foreign-pages"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "d7f69e228d344330": {
+      "chars": 12170,
+      "heading": "Paying tax on the remittance basis (Self Assessment helpsheet HS264) > The remittance basis > Remittances from a mixed fund",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Dividend Allowance",
+            "period": "2024 to 2025",
+            "ref": "HS264 Boxes 7.3, 7.4 and 7.5",
+            "value": "£500"
+          },
+          {
+            "name": "Normal UK tax rates applicable to remitted foreign dividends",
+            "period": "n/a",
+            "ref": "HS264 Boxes 7.3, 7.4 and 7.5",
+            "value": "currently 20%, 40% and 45%"
+          },
+          {
+            "name": "Special dividend tax rates (not applicable to remitted foreign dividends)",
+            "period": "n/a",
+            "ref": "HS264 Boxes 7.3, 7.4 and 7.5",
+            "value": "currently 8.75%, 33.75% and 39.35%"
+          },
+          {
+            "name": "Mixed funds cleansing availability window",
+            "period": "n/a",
+            "ref": "HS264 Cleansing of mixed funds",
+            "value": "6 April 2017 until 5 April 2019"
+          }
+        ],
+        "caveats": [
+          "Detailed mixed fund ordering rule guidance for periods before the 2017 Finance Bill changes is only available in RDR1, not in this helpsheet.",
+          "Mixed funds cleansing was a time-limited relief only available from 6 April 2017 to 5 April 2019.",
+          "Dividend tax credit entitlement on remittance only applies to dividends paid or accrued before 6 April 2016; dividends paid on or after that date do not qualify for a dividend tax credit when remitted.",
+          "The tax-free Dividend Allowance does not apply to remitted foreign company dividends taxed at normal rates.",
+          "Foreign pension 10% reduction no longer applies from 6 April 2017 onward.",
+          "Figures such as the Dividend Allowance and dividend tax rates are stated as applicable for 2024 to 2025 and may differ in other years."
+        ],
+        "cross_references": [
+          "Residence, domicile and the remittance basis: RDR1",
+          "Foreign notes (SA106), page FN 1",
+          "Foreign notes (SA106), page FN 9",
+          "Self Assessment Foreign pages (SA106)",
+          "Double Taxation Agreements collection on GOV.UK",
+          "UK-Swiss Tax Cooperation Agreement",
+          "foreign exchange rates (trade-tariff.service.gov.uk)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Timing of SWT set-off against UK tax liability being treated as a remittance",
+            "name": "Normal SWT set-off date",
+            "ref": "HS264 Special Withholding Tax",
+            "rule": "31 January following the tax year"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A fund of money or other property which contains more than one type of income or capital (including 'foreign chargeable gains') or income or capital from more than one tax year, e.g. a bank account with different types of income/capital paid in, or an overseas asset bought with money from more than one source or tax year.",
+            "ref": "HS264 Remittances from a mixed fund",
+            "term": "Mixed fund"
+          },
+          {
+            "meaning": "An amount of tax withheld on certain payments to UK residents under the terms of the European Savings Directive and equivalent third party agreements, in addition to any foreign tax deducted by the country of origin.",
+            "ref": "HS264 Special Withholding Tax",
+            "term": "Special Withholding Tax (SWT)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Not complete box 1 (Unremittable income) on the Foreign pages",
+            "ref": "HS264 Box 1 Unremittable income",
+            "trigger": "Taxable on remittance basis",
+            "who": "Remittance basis taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Only claim credit for the proportionate share of foreign tax deducted corresponding to the amount remitted",
+            "ref": "HS264 Box 2 Foreign Tax Credit Relief (FTCR)",
+            "trigger": "Only part of foreign income amount is remitted",
+            "who": "Remittance basis taxpayer claiming FTCR on partly remitted income"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make a claim on the return and supply certificates from Swiss paying agent confirming amounts of withholding tax deducted",
+            "ref": "HS264 Special Withholding Tax",
+            "trigger": "Tax deducted under UK-Swiss Tax Cooperation Agreement",
+            "who": "Taxpayer wanting SWT treated as payment on account"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not report these dividends in rows headed 'Dividends from foreign companies'; instead include on pages F2 and F3 in rows headed 'Remitted foreign dividend income', using separate sheets if income from more than one country, and total columns D and F into boxes 7.3 and 7.4",
+            "ref": "HS264 Boxes 7.3, 7.4 and 7.5",
+            "trigger": "Remittance basis claim on foreign dividends",
+            "who": "Taxpayer with remitted foreign dividends"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Provide payer of the pension and relevant double taxation treaty details in 'Any other information' box or separate sheet",
+            "ref": "HS264 Foreign pensions",
+            "trigger": "Claiming treaty exemption for foreign pension",
+            "who": "Taxpayer claiming foreign pension not taxable due to double taxation treaty"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not fill in boxes 14 to 24 or box 26, 31 or 32; instead complete columns A to F and boxes 25 and 27 to 30 in the Summary section",
+            "ref": "HS264 Boxes 14 to 24 Income from land and property abroad",
+            "trigger": "Choosing remittance basis for overseas property income",
+            "who": "Remittance basis taxpayer with overseas property income"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how mixed funds (containing multiple income/capital types or years) are treated under statutory ordering rules for remittance basis purposes, and directs readers to RDR1 for pre-2017 treatment while noting mixed fund cleansing was only available 6 April 2017 to 5 April 2019. It gives detailed instructions for completing the 'Foreign' pages boxes 1, 2 and 7.3-7.5, covering unremittable income, Foreign Tax Credit Relief (with worked examples), Special Withholding Tax treatment and set-off timing, foreign dividend taxation at normal rates rather than dividend rates, foreign pensions post-6 April 2017, and apportionment of foreign tax on partly-remitted overseas property income.",
+        "topics": [
+          "remittance-basis",
+          "mixed-funds",
+          "foreign-tax-credit-relief",
+          "special-withholding-tax",
+          "foreign-dividends",
+          "foreign-pensions",
+          "foreign-property-income",
+          "foreign-pages-sa106"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/paying-tax-on-the-remittance-basis-self-assessment-helpsheet-hs264.md",
+  "source_id": "sa-helpsheets:5f67cefb-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet"
+}

@@ -1,0 +1,822 @@
+{
+  "category": "hmrc-publications.customer-facing-guidance",
+  "chunks": {
+    "10e027630a230bc4": {
+      "chars": 11716,
+      "heading": "Pension savings — tax charges (Self Assessment helpsheet HS345) > Box 11 Annual allowance tax paid or payable by your pension scheme > The overseas transfer charge due on a transfer",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Overseas transfer charge rate",
+            "period": "n/a",
+            "ref": "HS345 - Responsibility for paying the tax and providing information",
+            "value": "25% of the 'transferred value'"
+          },
+          {
+            "name": "Unauthorised payments charge rate",
+            "period": "n/a",
+            "ref": "HS345 - Unauthorised payments",
+            "value": "40%"
+          },
+          {
+            "name": "Unauthorised payments surcharge rate",
+            "period": "n/a",
+            "ref": "HS345 - Unauthorised payments",
+            "value": "a further 15%"
+          },
+          {
+            "name": "Surcharge threshold",
+            "period": "n/a",
+            "ref": "HS345 - Unauthorised payments surcharge",
+            "value": "25% of the value of your rights under the scheme (or of UK tax-relieved/UK transferred funds for overseas schemes)"
+          }
+        ],
+        "caveats": [
+          "The 5 conditions exempting a transfer from the overseas transfer charge, and the residence-based exemptions, can be reversed by a later change of circumstances within 5 full tax years, retroactively triggering the charge.",
+          "Boxes 13 to 16 in respect of overseas pension schemes can be ignored if the individual was not UK resident in 2025 to 2026 or in any of the previous 5 tax years.",
+          "If a deduction was made from an unauthorised payment to cover the scheme administrator's own tax liability, the amount entered in box 13/14 must be the pre-deduction (gross) amount, not the amount actually received.",
+          "A prior-year unauthorised payment not subject to surcharge when paid can later become subject to surcharge due to a subsequent payment, requiring contact with HMRC about the earlier year's return rather than amendment via this year's boxes."
+        ],
+        "cross_references": [
+          "PTM112300",
+          "PTM102900",
+          "PTM102100",
+          "PTM113230",
+          "PTM102300",
+          "PTM102400",
+          "PTM113240",
+          "PTM131000",
+          "PTM113210",
+          "Pension schemes and unauthorised payments (GOV.UK guidance)",
+          "SA return page TR7 'Any other information' box"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Transfers from a QROPS or former QROPS to another QROPS, and changes of residence after transfer",
+            "name": "Relevant period for overseas transfer charge re-imposition",
+            "ref": "HS345 - The overseas transfer charge due on a transfer / due to a change of circumstances",
+            "rule": "5 full tax years from the original transfer"
+          },
+          {
+            "applies_to": "Unauthorised payments surcharge",
+            "name": "Surcharge period",
+            "ref": "HS345 - Unauthorised payments surcharge",
+            "rule": "Starts on date first unauthorised payment made; ends 12 months after that date or when surcharge threshold reached, if earlier"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "The amount of the transfer that is taxable under the overseas transfer charge; not simply the amount of the transfer",
+            "ref": "HS345 - Responsibility for paying the tax and providing information",
+            "term": "Transferred value"
+          },
+          {
+            "meaning": "Payments by registered pension schemes, or by overseas pension schemes from UK tax-relieved funds or UK transferred funds, made to or for the member, which are described as unauthorised in pensions tax legislation or which do not fit as authorised payments; may include non-monetary transfers of assets",
+            "ref": "HS345 - Unauthorised payments",
+            "term": "Unauthorised payments"
+          },
+          {
+            "meaning": "Period starting on the date the first unauthorised payment was made to/for the individual and ending 12 months later or when the surcharge threshold is reached, if earlier",
+            "ref": "HS345 - Unauthorised payments surcharge",
+            "term": "Surcharge period"
+          },
+          {
+            "meaning": "Pension Scheme Tax Reference number of the pension scheme paying an amount of annual allowance charge or overseas transfer charge",
+            "ref": "HS345 Box 12",
+            "term": "PSTR"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Are jointly liable to pay the overseas transfer charge",
+            "ref": "HS345 - Responsibility for paying the tax and providing information",
+            "trigger": "Overseas transfer charge arises on a transfer from a registered pension scheme to a QROPS",
+            "who": "Individual and scheme administrator (transfer from registered pension scheme)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Are jointly liable to pay the overseas transfer charge",
+            "ref": "HS345 - Responsibility for paying the tax and providing information",
+            "trigger": "Tax charge arises on a transfer from a QROPS or former QROPS",
+            "who": "Individual and scheme manager (transfer from QROPS/former QROPS)"
+          },
+          {
+            "deadline": "before the transfer",
+            "must": "Give the scheme administrator all required information prescribed by legislation before transferring to a QROPS",
+            "ref": "PTM102900",
+            "trigger": "Transfer from a registered pension scheme to a QROPS",
+            "who": "Individual"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter the 'transferred value' of the transfer in box 11.1",
+            "ref": "HS345 Box 11.1",
+            "trigger": "Overseas transfer charge liability",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter the amount of tax charge paid to HMRC by the scheme administrator/manager in box 11.2",
+            "ref": "HS345 Box 11.2",
+            "trigger": "Overseas transfer charge liability",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter the PSTR number of the pension scheme paying the charge in box 12 (or scheme manager's name/address in 'Any other information' box for overseas schemes)",
+            "ref": "HS345 Box 12",
+            "trigger": "Completion of boxes 11.1 and 11.2",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter unauthorised payment amount (not subject to surcharge) in box 13",
+            "ref": "HS345 Box 13",
+            "trigger": "Receipt of an unauthorised payment not subject to surcharge",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter unauthorised payment amount (subject to surcharge) in box 14",
+            "ref": "HS345 Box 14",
+            "trigger": "Receipt of an unauthorised payment subject to surcharge",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Contact HMRC about the previous year's tax return",
+            "ref": "HS345 - Unauthorised payment not subject to surcharge when paid which later becomes subject to surcharge",
+            "trigger": "A prior-year unauthorised payment not previously subject to surcharge later becomes subject to surcharge due to a further payment in the current tax year",
+            "who": "Taxpayer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Overseas transfer charge of 25% of the transferred value applies",
+            "ref": "HS345 - The overseas transfer charge due on a transfer",
+            "trigger": "Transfer to a QROPS not meeting any of the 5 conditions, or required information not given to scheme administrator"
+          },
+          {
+            "consequence": "Overseas transfer charge becomes due",
+            "ref": "HS345 - The overseas transfer charge due to a change of circumstances after the transfer",
+            "trigger": "Change of country of residence within 5 full tax years after a transfer that removes eligibility for the residence-based exemptions"
+          },
+          {
+            "consequence": "40% unauthorised payments charge, plus 15% surcharge if surcharge threshold reached",
+            "ref": "HS345 - Unauthorised payments / Unauthorised payments surcharge",
+            "trigger": "Payment is an unauthorised payment"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk explains HS345 guidance on the overseas transfer charge on transfers to/from QROPS, including the 5 exemption conditions, the effect of a later change of residence, joint liability for payment, and how to complete boxes 11.1, 11.2 and 12 of the SA return. It also covers boxes 13-16 on unauthorised payments and the unauthorised payments surcharge, defining unauthorised payments, the 40% charge and 15% surcharge, the surcharge threshold/period, and how to report amounts including where a deduction has been made by the scheme administrator.",
+        "topics": [
+          "pension-tax-charges",
+          "overseas-transfer-charge",
+          "qrops",
+          "unauthorised-payments",
+          "unauthorised-payments-surcharge",
+          "hs345",
+          "self-assessment-boxes"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "6102c1642259be63": {
+      "chars": 11876,
+      "heading": "Pension savings — tax charges (Self Assessment helpsheet HS345) > Your annual allowance for 2025 to 2026 > High income and flexi\\-accessed",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Money purchase annual allowance",
+            "period": "2025-26",
+            "ref": "High income and flexi-accessed",
+            "value": "£10,000"
+          },
+          {
+            "name": "Default/standard annual allowance",
+            "period": "2025-26",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "value": "£60,000"
+          },
+          {
+            "name": "Minimum tapered annual allowance",
+            "period": "2025-26",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "value": "£10,000"
+          },
+          {
+            "name": "Threshold income limit",
+            "period": "2025-26",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "value": "£260,000"
+          },
+          {
+            "name": "Adjusted income limit",
+            "period": "2025-26",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "value": "£260,000"
+          },
+          {
+            "name": "Taper reduction rate",
+            "period": "2025-26",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "value": "£1 for every £2 of adjusted income above £260,000"
+          }
+        ],
+        "caveats": [
+          "Figures and thresholds (£10,000, £60,000, £260,000) are specific to 2025 to 2026 and may differ in other tax years.",
+          "The 7-step comparison test replaces 'default annual allowance' with 'tapered annual allowance' and 'alternative annual allowance' with 'reduced alternative annual allowance' for high-income individuals — care needed not to conflate the two sets of terminology.",
+          "Carry-forward cannot be added to the £10,000 money purchase allowance, only to the tapered/default or alternative annual allowance.",
+          "Overseas pension scheme carry-forward rules depend on whether UK tax relief was obtained in the relevant year and on continuity of scheme membership across the 3 prior years.",
+          "No SA return disclosure or claim is needed for carry-forward if no annual allowance charge arises."
+        ],
+        "cross_references": [
+          "https://www.gov.uk/tax-on-your-private-pension/annual-allowance",
+          "https://www.gov.uk/guidance/salary-sacrifice-and-the-effects-on-paye#examples-of-salary-sacrifice",
+          "https://www.gov.uk/guidance/pension-schemes-work-out-your-tapered-annual-allowance",
+          "https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm057100",
+          "https://www.gov.uk/hmrc-internal-manuals/pensions-tax-manual/ptm113320 (referenced as PTM113320, linked via ptm112300)",
+          "Box 10 of the tax return"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A reduced annual allowance applying to high earners, found by reducing £60,000 by £1 for every £2 of adjusted income above £260,000, subject to a £10,000 minimum.",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "term": "Tapered annual allowance"
+          },
+          {
+            "meaning": "Collectively, the £10,000 money purchase allowance and the reduced alternative annual allowance, applying to those who have flexi-accessed a money purchase arrangement.",
+            "ref": "High income and flexi-accessed",
+            "term": "Money purchase annual allowance"
+          },
+          {
+            "meaning": "Found by deducting £10,000 from the tapered (or default) annual allowance; applies to pension input amounts other than money purchase inputs after flexi-access.",
+            "ref": "High income and flexi-accessed",
+            "term": "Alternative annual allowance"
+          },
+          {
+            "meaning": "Income excluding pension contributions, unless paid as salary sacrifice by an employer.",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "term": "Threshold income"
+          },
+          {
+            "meaning": "Income added to any pension contributions made by the individual or employer.",
+            "ref": "Tapered annual allowance — What 'high income' is for 2025 to 2026",
+            "term": "Adjusted income"
+          },
+          {
+            "meaning": "Covers both defined contribution and cash balance arrangements.",
+            "ref": "Flexi accessing a money purchase arrangement",
+            "term": "Money purchase arrangement (for flexi-access purposes)"
+          },
+          {
+            "meaning": "For tax years 2014 to 2015 onwards, (taxable earnings (TE) + taxable specific income (TSI)) divided by employment income (EI), used to modify pension input amount calculations for overseas scheme members.",
+            "ref": "Overseas pension schemes carry forward",
+            "term": "Appropriate fraction (overseas schemes)"
+          },
+          {
+            "meaning": "The increase in value of promised benefits over the tax year (closing value minus opening value); if negative, pension input is nil.",
+            "ref": "Defined benefits arrangement",
+            "term": "Pension savings amount for defined benefits arrangement"
+          },
+          {
+            "meaning": "Total gross contributions (including tax relief) paid into the arrangement during the tax year by the individual, employer, or someone else on their behalf, excluding contributions paid after age 75 by the individual or non-employer, and excluding investment income/returns.",
+            "ref": "How to work out pension savings for a defined contribution, or other money purchase, arrangement",
+            "term": "Pension savings amount for defined contribution/money purchase arrangement"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Enter the excess amount (excess amount 1 or excess amount 2, whichever is greater) in box 10 of the tax return",
+            "ref": "HS345 Step 7",
+            "trigger": "Total pension input amount for 2025 to 2026 exceeds default/tapered annual allowance after applying the 7-step comparison test",
+            "who": "Individual with money purchase inputs exceeding £10,000 and total pension input exceeding default annual allowance"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Put the excess amount in box 10",
+            "ref": "HS345 Step 3",
+            "trigger": "Total pension input amount exceeds default annual allowance",
+            "who": "Individual with total pension input amount exceeding default annual allowance (money purchase inputs ≤£10,000)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Have been a member of a registered pension scheme during each carry-forward year; no claim or return disclosure needed if no charge is due",
+            "ref": "Unused annual allowance carry forward section",
+            "trigger": "Wishing to use unused annual allowance from previous 3 tax years",
+            "who": "Individual carrying forward unused annual allowance"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains how the annual allowance for pension savings works for 2025 to 2026 where an individual has both high income and has flexi-accessed a money purchase arrangement, including the interaction of tapered, money purchase, and alternative annual allowances. It sets out a 7-step calculation to determine the excess pension savings to enter in box 10 of the SA return, defines 'high income' via threshold and adjusted income tests, and describes carry-forward rules (including for overseas pension schemes) and how pension input amounts are calculated for defined contribution, money purchase and defined benefit arrangements.",
+        "topics": [
+          "pension-annual-allowance",
+          "money-purchase-annual-allowance",
+          "tapered-annual-allowance",
+          "carry-forward",
+          "flexi-access",
+          "overseas-pension-schemes",
+          "defined-benefit-pension-input",
+          "sa-tax-return-box-10",
+          "hs345"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "7060d4a7e7d15eea": {
+      "chars": 11701,
+      "heading": "Pension savings — tax charges (Self Assessment helpsheet HS345) > How to work out pension savings for a defined benefits arrangement or a cash balance arrangement > How to find the opening value for a defined benefits arrangement",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Multiplier for annual pension (opening/closing value)",
+            "period": "n/a",
+            "ref": "Opening value Step 2 / Closing value Step 2",
+            "value": "16"
+          },
+          {
+            "name": "Increase applied to opening value / opening pot value",
+            "period": "n/a",
+            "ref": "Opening value Step 4 / Cash balance opening value Step 2",
+            "value": "3.1%"
+          },
+          {
+            "name": "Annual allowance charge rates",
+            "period": "n/a",
+            "ref": "Working out and paying the annual allowance charge",
+            "value": "45%, 40% or 20%"
+          },
+          {
+            "name": "Rosie's pensionable pay at 5 April 2025",
+            "period": "2024-25",
+            "ref": "Example",
+            "value": "£270,000"
+          },
+          {
+            "name": "Rosie's pensionable pay at 5 April 2026",
+            "period": "2025-26",
+            "ref": "Example",
+            "value": "£280,000"
+          },
+          {
+            "name": "Rosie's opening value",
+            "period": "n/a",
+            "ref": "Example",
+            "value": "£1,504,963"
+          },
+          {
+            "name": "Rosie's closing value",
+            "period": "n/a",
+            "ref": "Example",
+            "value": "£1,588,448"
+          },
+          {
+            "name": "Rosie's pension input amount",
+            "period": "2025 to 2026",
+            "ref": "Example",
+            "value": "£83,485"
+          },
+          {
+            "name": "Rosie's unused annual allowance carried forward from 2024 to 2025",
+            "period": "2024-25",
+            "ref": "Example",
+            "value": "£17,000"
+          },
+          {
+            "name": "Threshold income / adjusted income limit for tapering",
+            "period": "2025-26",
+            "ref": "Example",
+            "value": "£260,000"
+          },
+          {
+            "name": "Rosie's adjusted income",
+            "period": "2025-26",
+            "ref": "Example",
+            "value": "£365,000"
+          },
+          {
+            "name": "Standard annual allowance before tapering",
+            "period": "2025-26",
+            "ref": "Example",
+            "value": "£60,000"
+          },
+          {
+            "name": "Minimum tapered annual allowance",
+            "period": "2025-26",
+            "ref": "Example",
+            "value": "£10,000"
+          },
+          {
+            "name": "Rosie's tapered annual allowance calculated (before floor)",
+            "period": "2025-26",
+            "ref": "Example",
+            "value": "£7,500"
+          },
+          {
+            "name": "Rosie's annual allowance charge",
+            "period": "2025 to 2026",
+            "ref": "Example",
+            "value": "£56,485"
+          },
+          {
+            "name": "Overseas transfer charge trigger date",
+            "period": "n/a",
+            "ref": "Boxes 11.1 and 11.2 Overseas transfer charge",
+            "value": "9 March 2017"
+          },
+          {
+            "name": "Overseas pension scheme deferred member increase reference date",
+            "period": "n/a",
+            "ref": "Defined benefits and cash balance arrangements in overseas pension schemes",
+            "value": "14 October 2010"
+          }
+        ],
+        "caveats": [
+          "Contributions required to be paid to a defined benefits or cash balance arrangement are not counted; only the increase in value of pension rights/pot is tested.",
+          "Tapered annual allowance is capped at a minimum of £10,000 even if the formula produces a lower figure.",
+          "Annual allowance charge rates (45%, 40%, 20%) can differ if the taxpayer pays Scottish Income Tax or Welsh Income Tax.",
+          "Overseas pension scheme deferred member increases can be ignored only if in line with scheme rules as at 14 October 2010 or CPI increases for a chosen 12-month period.",
+          "If a scheme pays part of the charge after the return is filed and box 11 becomes incorrect, the taxpayer must contact HMRC to amend the return.",
+          "Overseas transfer charge rules apply only to transfers requested on or after 9 March 2017, and may apply retrospectively for a limited period if circumstances change."
+        ],
+        "cross_references": [
+          "PTM053301 - effect of transfers, pension credits/debits and BCEs on closing value (defined benefits)",
+          "PTM053400 - effect of transfers, pension credits/debits and BCEs on closing value (cash balance)",
+          "PTM113320 - examples of applying the overseas fraction and currency conversion",
+          "PTM056110 - rate of the annual allowance charge, worked example",
+          "PTM056200 - Annual allowance: tax charge: Telling HMRC",
+          "PTM056300 - Annual allowance: tax charge: Who pays",
+          "PTM056410 - maximum amount you can order a pension scheme to pay",
+          "Box 10 and Box 11 of the tax return (Annual allowance tax paid or payable by your pension scheme)",
+          "Boxes 11.1 and 11.2 (Overseas transfer charge)",
+          "Working Sheet (referenced for calculating pensions savings tax charge for box 6 on Tax calculation summary pages)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Notional capital value of expected pension benefits at start of tax year: annual pension × 16, plus separate lump sum if applicable, increased by 3.1%",
+            "ref": "How to find the opening value for a defined benefits arrangement",
+            "term": "Opening value (defined benefits)"
+          },
+          {
+            "meaning": "Notional capital value of expected pension benefits at end of tax year: annual pension × 16, plus separate lump sum if applicable, without the 3.1% increase step",
+            "ref": "How to find the closing value for a defined benefits arrangement",
+            "term": "Closing value (defined benefits)"
+          },
+          {
+            "meaning": "Value of promised pension pot immediately before start of tax year, increased by 3.1%",
+            "ref": "How to find the opening value for a cash balance arrangement",
+            "term": "Opening value (cash balance)"
+          },
+          {
+            "meaning": "Value of promised pension pot at end of tax year",
+            "ref": "How to find your closing value for a cash balance arrangement",
+            "term": "Closing value (cash balance)"
+          },
+          {
+            "meaning": "An arrangement with a combination of benefit options depending on circumstances at the point benefits are drawn; pension input amount is the greatest of the amounts calculated under each relevant method",
+            "ref": "How to work out pension savings for a hybrid arrangement",
+            "term": "Hybrid arrangement"
+          },
+          {
+            "meaning": "Pension input amount (difference between opening and closing values) multiplied by (TE + TSI) / EI",
+            "ref": "Defined benefits and cash balance arrangements in overseas pension schemes",
+            "term": "Adjusted pension input amount (overseas schemes)"
+          },
+          {
+            "meaning": "EI is total employment income from an employer sponsoring the scheme in 2025 to 2026; TE is so much of EI as is UK taxable earnings; TSI is so much of EI as constitutes taxable specific income",
+            "ref": "Defined benefits and cash balance arrangements in overseas pension schemes",
+            "term": "EI, TE, TSI"
+          },
+          {
+            "meaning": "A charge arising on certain transfers requested on or after 9 March 2017 to a QROPS from a registered pension scheme, QROPS or former QROPS; may also arise later if circumstances change",
+            "ref": "Boxes 11.1 and 11.2 Overseas transfer charge",
+            "term": "Overseas transfer charge"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Record the excess amount on the tax return at box 10 and the tax paid at box 11",
+            "ref": "Box 10 / Box 11 notes",
+            "trigger": "Scheme administrator pays an amount of the annual allowance charge on the individual's behalf",
+            "who": "Individual with excess pension savings where scheme administrator pays part of the charge"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Contact HMRC to amend the return",
+            "ref": "Box 11 notes",
+            "trigger": "Arranging after filing for the pension scheme to pay the tax (or pay more) so box 11 is no longer correct",
+            "who": "Individual whose box 11 figure becomes incorrect after filing"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter total amount where more than one pension scheme administrator or overseas pension scheme manager is paying an amount in box 11",
+            "ref": "Box 11 notes",
+            "trigger": "Multiple schemes/managers paying part of the charge",
+            "who": "Individual entering overseas scheme figures"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk (HS345) sets out the step-by-step method for valuing opening and closing pension rights under defined benefits and cash balance arrangements, including a worked example (Rosie) showing calculation of the pension input amount and tapered annual allowance charge for 2025 to 2026. It covers hybrid arrangements, overseas pension scheme calculations using the TE+TSI/EI fraction, the rates at which the annual allowance charge applies (45%, 40%, 20%), scheme pays elections, and how to complete Self Assessment return boxes 10, 11, 11.1 and 11.2 relating to annual allowance charge and overseas transfer charge.",
+        "topics": [
+          "pension-savings",
+          "annual-allowance",
+          "annual-allowance-charge",
+          "defined-benefits-arrangement",
+          "cash-balance-arrangement",
+          "overseas-pension-schemes",
+          "hybrid-arrangement",
+          "sa-tax-return-boxes",
+          "overseas-transfer-charge"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "785db5f824f46174": {
+      "chars": 10807,
+      "heading": "Pension savings — tax charges (Self Assessment helpsheet HS345)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Standard annual allowance",
+            "period": "2025-26",
+            "ref": "HS345 – Your annual allowance for 2025 to 2026",
+            "value": "£60,000"
+          },
+          {
+            "name": "Money purchase allowance (flexi-accessed)",
+            "period": "2025-26",
+            "ref": "HS345 – Flexi-accessed but no high income",
+            "value": "£10,000"
+          },
+          {
+            "name": "Alternative annual allowance (flexi-accessed)",
+            "period": "2025-26",
+            "ref": "HS345 – Flexi-accessed but no high income",
+            "value": "£50,000"
+          },
+          {
+            "name": "High income threshold for tapering",
+            "period": "2025-26",
+            "ref": "HS345 – Your annual allowance for 2025 to 2026",
+            "value": "£260,000"
+          },
+          {
+            "name": "Minimum tapered annual allowance",
+            "period": "2025-26",
+            "ref": "HS345 – High income but not flexi-accessed",
+            "value": "£10,000"
+          },
+          {
+            "name": "Tapering rate",
+            "period": "2025-26",
+            "ref": "HS345 – High income but not flexi-accessed",
+            "value": "£1 reduction per £2 of adjusted income above £260,000"
+          },
+          {
+            "name": "Carry-forward period for unused annual allowance",
+            "period": "n/a",
+            "ref": "HS345 – Your annual allowance for 2025 to 2026",
+            "value": "previous 3 tax years"
+          },
+          {
+            "name": "Pension savings statement threshold (scheme pension input amount)",
+            "period": "2025-26",
+            "ref": "HS345 – Pension savings statements",
+            "value": "£60,000"
+          },
+          {
+            "name": "Pension savings statement threshold (money purchase input amount)",
+            "period": "2025-26",
+            "ref": "HS345 – Pension savings statements",
+            "value": "£10,000"
+          }
+        ],
+        "caveats": [
+          "Figures and thresholds given (e.g. £60,000, £260,000, £10,000, £50,000) apply specifically to tax year 2025 to 2026 and may differ for other years.",
+          "The annual allowance calculator cannot be used for all types of pension arrangements.",
+          "Personal representatives completing a return for someone who died during 2025 to 2026 can ignore boxes 10, 11 and part of box 12 for the period up to death.",
+          "Under Making Tax Digital for Income Tax, claims and adjustments will be made through compatible software instead of the Self Assessment boxes referenced in this helpsheet.",
+          "Box 10 treatment for overseas pension schemes depends on whether funds derive solely from UK transferred funds or include UK tax-relieved funds."
+        ],
+        "cross_references": [
+          "Self Assessment additional information pages (SA101), page Ai 4",
+          "PTM051100 – Pensions Tax Manual (annual allowance)",
+          "PTM113300 – Pensions Tax Manual (overseas pension schemes)",
+          "PTM051200 – Pensions Tax Manual (severe ill-health)",
+          "Tax on your private pension contributions / Tax when you get a pension (unauthorised payments charge and surcharge)",
+          "Self Assessment tax return notes (2026)",
+          "Working sheet — total pension savings tax charges (2026)",
+          "Annual allowance calculator (tax.service.gov.uk)",
+          "Guidance on Making Tax Digital for Income Tax"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Pension scheme administrators, where pension input amount thresholds are exceeded for 2025 to 2026",
+            "name": "Pension savings statement issue deadline",
+            "ref": "HS345 – Pension savings statements",
+            "rule": "by 6 October 2026"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "The tax year 2025 to 2026, referred to in this context as the pension input period for that year, over which pension savings are tested against the annual allowance",
+            "ref": "HS345 – Box 10",
+            "term": "Pension input period"
+          },
+          {
+            "meaning": "The amount tested against the annual allowance; for defined contribution/money purchase arrangements it is the actual contributions, for cash balance arrangements the increase in promised pension pot, and for defined benefits arrangements the increase in value of benefit rights",
+            "ref": "HS345 – Box 10",
+            "term": "Pension input amount"
+          },
+          {
+            "meaning": "The part of pension savings over the annual allowance, subject to the annual allowance charge",
+            "ref": "HS345 – Box 10",
+            "term": "Excess amount"
+          },
+          {
+            "meaning": "Having flexibly accessed a money purchase arrangement at any time from 6 April 2015",
+            "ref": "HS345 – Your annual allowance for 2025 to 2026",
+            "term": "Flexi-accessed"
+          },
+          {
+            "meaning": "Collectively, the £10,000 money purchase allowance for certain money purchase pension input amounts and the £50,000 alternative annual allowance for other pension input amounts, applicable to those who have flexi-accessed",
+            "ref": "HS345 – Flexi-accessed but no high income",
+            "term": "Money purchase annual allowance"
+          },
+          {
+            "meaning": "A reduced annual allowance for individuals with high income (over £260,000), reduced by £1 for every £2 of adjusted income above £260,000, subject to a £10,000 minimum",
+            "ref": "HS345 – High income but not flexi-accessed",
+            "term": "Tapered annual allowance"
+          },
+          {
+            "meaning": "The £60,000 annual allowance that applies to a flexi-accessed individual unless money purchase input amounts exceed £10,000 and the money purchase annual allowance produces a higher charge",
+            "ref": "HS345 – Flexi-accessed but no high income",
+            "term": "Default annual allowance"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Complete box 10 with the amount of pension savings in excess of the annual allowance",
+            "ref": "HS345 – Boxes 10 and 11 annual allowance charge",
+            "trigger": "Pension input amount for 2025 to 2026 exceeds annual allowance",
+            "who": "Individual with pension savings exceeding annual allowance in 2025 to 2026"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter the amount the scheme is paying at box 11 and the Pension Scheme Tax Reference number at box 12",
+            "ref": "HS345 – Boxes 10 and 11 annual allowance charge",
+            "trigger": "Pension scheme agrees to pay some or all of the charge",
+            "who": "Individual whose pension scheme pays some/all of the annual allowance charge"
+          },
+          {
+            "deadline": "by 6 October 2026",
+            "must": "Send a 'pension savings statement' to the member",
+            "ref": "HS345 – Pension savings statements",
+            "trigger": "Pension input amount for that scheme alone exceeds £60,000 for 2025 to 2026, or money purchase input amount exceeds £10,000 for a flexibly-accessed money purchase arrangement",
+            "who": "Pension scheme administrator"
+          },
+          {
+            "deadline": "n/a",
+            "must": "May ignore boxes 10, 11 and (partly) box 12 when completing the return for the period up to death",
+            "ref": "HS345 – Boxes 10 and 11 annual allowance charge",
+            "trigger": "Death of the taxpayer during the tax year",
+            "who": "Personal representative of someone who died in 2025 to 2026"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "HS345 (2026) explains how to complete the Pension Savings Tax Charges section (page Ai 4, SA101) for members of registered or qualifying overseas pension schemes, focusing on the annual allowance charge for tax year 2025 to 2026. It covers how box 10 (excess pension savings) and box 11 (scheme paying charge) should be completed, how pension input amounts are tested for different arrangement types, and how the standard annual allowance of £60,000 can be increased by unused relief brought forward or reduced via tapering or the money purchase annual allowance. It also notes Making Tax Digital for Income Tax implications and directs users to the Pensions Tax Manual for further detail.",
+        "topics": [
+          "pension-savings-tax-charges",
+          "annual-allowance",
+          "additional-information-pages",
+          "hs345",
+          "money-purchase-annual-allowance",
+          "tapered-annual-allowance"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "e833b00f658e8f17": {
+      "chars": 8092,
+      "heading": "Pension savings — tax charges (Self Assessment helpsheet HS345) > Boxes 13 to 15 Unauthorised payments charge and surcharge > Box 15 Foreign tax paid on an unauthorised payment (in £ sterling)",
+      "index": 4,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Tax on short service refund of contributions",
+            "period": "2025 to 2026",
+            "ref": "HS345 Box 16",
+            "value": "20% on the first £20,000; 50% on any amount over £20,000"
+          }
+        ],
+        "caveats": [
+          "The unauthorised payments charge/surcharge and the short service refund tax charge are not charges on income and therefore not exempted by UK Double Taxation Agreements, though foreign tax credit relief can still be claimed against them.",
+          "Taxable lump sum amounts included in box 17 must not also be included in box 16 on page Ai4, to avoid double counting.",
+          "Drawdown pension taken during temporary non-residence is taxed as arising in the year residence resumes, not the year of withdrawal.",
+          "Figures and rates (e.g. £20,000 threshold, 20%/50% rates) apply specifically to 2025 to 2026 as stated in the source."
+        ],
+        "cross_references": [
+          "PTM045000 - Contributions: refunds of contributions",
+          "PTM113210 - International: UK tax charges on non-UK schemes: member payment charges: basic principles",
+          "PTM063500 - trivial commutation lump sum",
+          "PTM063600 - winding-up lump sum",
+          "PTM063400 - serious ill-health lump sum",
+          "PTM063300 - uncrystallised funds pension lump sum",
+          "PTM073000 - lump sum death benefits",
+          "PTM062500 - drawdown pension rules immediately before 6 April 2015",
+          "PTM062700 - drawdown pension rules applying from 6 April 2015",
+          "EIM75450 - Employment Income Manual on temporary non-residence tax charge",
+          "SA106 foreign pages page F2",
+          "SA110 Tax calculation summary box 6 / box A335",
+          "Self Assessment main tax return box 11 (pension section), box 17 (other taxable income), page Ai4 box 16"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Broadly occurs where a person left the UK to take up residence abroad, later resumes UK residence, and was solely tax resident in the UK for any part of at least 4 of the 7 tax years immediately preceding the year of departure, and not solely resident in the UK for a period of less than 5 full tax years",
+            "ref": "HS345 Drawdown pension during a period of 'temporary' non-residence",
+            "term": "Temporary non-residence"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Enter the sterling equivalent of foreign tax paid in box 15, converted using the spot rate for the date of the tax payment",
+            "ref": "HS345 Box 15",
+            "trigger": "Foreign tax paid on an unauthorised payment",
+            "who": "Taxpayer who paid foreign tax on a payment entered in box 13 or 14"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter the amount of the refund at box 16, converted to sterling using the spot rate for the date of payment",
+            "ref": "HS345 Box 16",
+            "trigger": "Left pensionable service in an overseas scheme and received a refund of UK tax-relieved contributions",
+            "who": "Taxpayer who received a refund of UK tax-relieved contributions from an overseas pension scheme in 2025 to 2026"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Enter the sterling equivalent of foreign tax paid at box 18, converting at the rate prevailing on the date of each tax payment; add amounts together if more than one payment",
+            "ref": "HS345 Box 18",
+            "trigger": "Foreign tax paid on a payment entered in box 16",
+            "who": "Taxpayer who paid foreign tax on a box 16 refund"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include the taxable amount in box 17 'other taxable income' on page TR 3, and not also include it in box 16 on page Ai4",
+            "ref": "HS345 Income Tax on other lump sums",
+            "trigger": "Receipt of such a lump sum from an overseas pension scheme",
+            "who": "Taxpayer who received a taxable lump sum (trivial commutation, winding-up, serious ill-health, UFPLS, or certain death benefits) from an overseas pension scheme in 2025 to 2026"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include amounts withdrawn from a registered pension scheme in box 11 of the pension section on the main SA return, or amounts from an overseas scheme in the 'overseas pensions' boxes on page F2 of the foreign pages",
+            "ref": "HS345 Drawdown pension during a period of 'temporary' non-residence",
+            "trigger": "Drawdown pension taken during temporary non-residence, taxable in the year UK residence resumes",
+            "who": "Taxpayer who takes drawdown pension during a period of temporary non-residence"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make a claim for an appropriate adjustment to UK tax liability",
+            "ref": "HS345 Box 15 / Box 18",
+            "trigger": "Foreign tax paid after return submission relating to a previously charged payment",
+            "who": "Taxpayer who pays foreign tax after submitting the return on a payment already charged UK unauthorised payments charge/surcharge or the box 16 charge"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk explains HS345 boxes 15-18 covering foreign tax credit relief against UK unauthorised payments charges and surcharges, and taxable short service refunds from overseas pension schemes with a two-tier tax rate. It also covers Income Tax treatment of other overseas pension lump sums (trivial commutation, winding-up, serious ill-health, uncrystallised funds pension lump sum, and death benefits), directing taxable amounts to box 17 on the main return. A separate section addresses drawdown pension taken during a period of temporary non-residence, which becomes taxable in the year UK residence resumes, subject to specific residence tests, with credit given for overseas tax paid.",
+        "topics": [
+          "pension-savings-tax-charges",
+          "unauthorised-payments-charge",
+          "foreign-tax-credit",
+          "overseas-pension-schemes",
+          "lump-sum-payments",
+          "temporary-non-residence",
+          "HS345"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/customer-facing-guidance/helpsheets/pension-savings-tax-charges-self-assessment-helpsheet-hs345.md",
+  "source_id": "sa-helpsheets:5f67defe-7631-11e4-a3cb-005056011aef",
+  "source_url": "https://www.gov.uk/government/publications/pensions-tax-charges-on-any-excess-over-the-lifetime-allowance-annual-allowance-special-annual-allowance-and-on-unauthorised-payments-hs345-self"
+}

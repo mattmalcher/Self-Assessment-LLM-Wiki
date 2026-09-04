@@ -1,0 +1,1324 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation.manuals",
+  "chunks": {
+    "06f9337fc8e3532f": {
+      "chars": 11909,
+      "heading": "Self Assessment manual (SAM) > C > CT Partnerships",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Daily penalty rate (up to 5 April 2011)",
+            "period": "up to 5 April 2011",
+            "ref": "Daily penalties",
+            "value": "not exceeding £60 per day (in partnership cases up to £60 a day on each partner)"
+          },
+          {
+            "name": "Daily penalty rate (from 6 April 2011)",
+            "period": "from 6 April 2011",
+            "ref": "Daily penalties",
+            "value": "£10 a day up to a maximum of 90 days"
+          },
+          {
+            "name": "EMPREF length",
+            "period": "n/a",
+            "ref": "EMPREF",
+            "value": "not more than 7 characters"
+          }
+        ],
+        "caveats": [
+          "The £60/day daily penalty regime under s.93(3)/93A(3) TMA 1970 applied only up to 5 April 2011.",
+          "The £10/day, 90-day maximum daily penalty regime applies from 6 April 2011 where a return has not been filed 3 months after the return due date.",
+          "A deferred filing date does not alter the due date for payment, so interest/payment obligations remain unaffected even if filing is deferred.",
+          "There is no right of appeal against a Revenue determination; it can only be displaced by submission of the taxpayer's actual Self Assessment within the stated time limits."
+        ],
+        "cross_references": [
+          "TMA 1970 s.93(3)",
+          "TMA 1970 s.93A(3)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "SA taxpayers",
+            "name": "First payment on account",
+            "ref": "Due dates",
+            "rule": "31 January before the end of the year of self assessment"
+          },
+          {
+            "applies_to": "SA taxpayers",
+            "name": "Second payment on account",
+            "ref": "Due dates",
+            "rule": "31 July after the year of self assessment"
+          },
+          {
+            "applies_to": "SA taxpayers",
+            "name": "Balancing payment",
+            "ref": "Due dates",
+            "rule": "31 January after the year of self assessment"
+          },
+          {
+            "applies_to": "Taxpayers subject to a Revenue determination",
+            "name": "Displacement of Revenue determination",
+            "ref": "Determination",
+            "rule": "Within 3 years from the filing date, or if later, within 12 months from the date of issue of the Revenue determination"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A partnership that consists only of persons liable to Corporation Tax.",
+            "ref": "CT Partnerships",
+            "term": "CT Partnership"
+          },
+          {
+            "meaning": "Any charge with a due date (value date) that is not a future date.",
+            "ref": "Current charge",
+            "term": "Current charge"
+          },
+          {
+            "meaning": "All the taxpayer's unsettled SA liabilities that are overdue on the statement date.",
+            "ref": "Current liabilities",
+            "term": "Current liabilities"
+          },
+          {
+            "meaning": "The original payment amount less any returned payment.",
+            "ref": "Current payment amount",
+            "term": "Current payment amount"
+          },
+          {
+            "meaning": "Advice given to a taxpayer on completion of the return, entered via CAPTURE RETURN/AMEND RETURN and printed on the Revenue Calculation; max 10 messages, otherwise sent in a separate letter.",
+            "ref": "Customer Service Message",
+            "term": "Customer Service Message"
+          },
+          {
+            "meaning": "Office number (up to 3 numerals) plus Register number (2-6 numerals, may be followed by 1-2 letters), e.g. 56/51051A.",
+            "ref": "D ref",
+            "term": "D ref"
+          },
+          {
+            "meaning": "Debt and Return Management.",
+            "ref": "DARM",
+            "term": "DARM"
+          },
+          {
+            "meaning": "Officers appointed per Executive Office/Division to ensure Data Protection Act compliance; first point of contact for DPU.",
+            "ref": "Data Protection Officers",
+            "term": "Data Protection Officers"
+          },
+          {
+            "meaning": "Responsible for administrative aspects of operating the DPA, including registrations, subject access enquiries, and liaison with the Data Registrar's Office.",
+            "ref": "Data Protection Unit",
+            "term": "Data Protection Unit"
+          },
+          {
+            "meaning": "Used in SA to validate certain claims to deductions, reliefs and allowances; captured via Local Data Capture and updates the SA record.",
+            "ref": "Date of birth",
+            "term": "Date of birth"
+          },
+          {
+            "meaning": "Includes Local Debt Management Offices, EIS, Banking Operations Tracing Units, Review Unit, and Public Department Collection; excludes RGO and other Banking Operations areas.",
+            "ref": "Debt Management Office",
+            "term": "Debt Management Office"
+          },
+          {
+            "meaning": "Office split across East Kilbride, Cumbernauld and Shipley making/receiving calls to pursue outstanding debts and returns.",
+            "ref": "Debt Management Telephone Centre",
+            "term": "Debt Management Telephone Centre"
+          },
+          {
+            "meaning": "Computer software used to access SA Data Mart information for profiling, used by Compliance Managers to select cases for review.",
+            "ref": "Decision Support System",
+            "term": "Decision Support System"
+          },
+          {
+            "meaning": "A later filing date agreed where the taxpayer/agent shows reasonable excuse; filing within it avoids fixed late-filing penalties; does not change the payment due date.",
+            "ref": "Deferred filing date",
+            "term": "Deferred filing date"
+          },
+          {
+            "meaning": "A predetermined amount below which a charge will not be raised.",
+            "ref": "Deminimis limit",
+            "term": "Deminimis limit"
+          },
+          {
+            "meaning": "A Revenue estimate of Income/Capital Gains Tax liability made when no SA return is filed by the filing date; no right of appeal but can be displaced by the taxpayer's Self Assessment within specified time limits.",
+            "ref": "Determination",
+            "term": "Determination"
+          },
+          {
+            "meaning": "Includes CHAPS, Paymaster, and other payments made directly to a Banking Operations account; shown as Bank Giro payments in SA.",
+            "ref": "Direct Credit",
+            "term": "Direct Credit"
+          },
+          {
+            "meaning": "Payment method where a bank/building society customer authorises regular payments collected by a payee; instructions processed via Banking Operations; shown as BACS in SA.",
+            "ref": "Direct Debit",
+            "term": "Direct Debit"
+          },
+          {
+            "meaning": "Can be claimed against lump sum payments received where the taxpayer's job ended because of disability.",
+            "ref": "Disability exemption",
+            "term": "Disability exemption"
+          },
+          {
+            "meaning": "A trust in which income may be accumulated or paid at the discretion of the trustees or another person.",
+            "ref": "Discretionary trust",
+            "term": "Discretionary trust"
+          },
+          {
+            "meaning": "Repayments issued through SA created with status 'Draft', later amended to 'Selected' (checking) or 'Authorised' (auto-issued).",
+            "ref": "Draft repayments",
+            "term": "Draft repayments"
+          },
+          {
+            "meaning": "An incomplete working version of a captured partnership return used for enquiry discussion proposals; only one may exist per partnership per return year; error-checked only on printout request or full capture.",
+            "ref": "Draft return",
+            "term": "Draft return"
+          },
+          {
+            "meaning": "Normal SA payment due dates: first payment on account 31 January before end of year of self assessment; second payment on account 31 July after; balancing payment 31 January after.",
+            "ref": "Due dates",
+            "term": "Due dates"
+          },
+          {
+            "meaning": "A reissued return (e.g. because original was mislaid/damaged), carrying the same issue date and filing date as the original.",
+            "ref": "Duplicate return",
+            "term": "Duplicate return"
+          },
+          {
+            "meaning": "The date on which a payment is effective for determining liability to interest and establishing repayment supplement entitlement.",
+            "ref": "Effective date of payment (EDP)",
+            "term": "Effective date of payment (EDP)"
+          },
+          {
+            "meaning": "Handles queries on SA Online/PAYE Online/CT Online registration and use, approval of electronic filers, printouts of e-filed returns, and Magnetic Media queries.",
+            "ref": "Electronic Business Unit",
+            "term": "Electronic Business Unit"
+          },
+          {
+            "meaning": "A database of employer and employment records held together for each taxpayer.",
+            "ref": "Employments Framework",
+            "term": "Employments Framework"
+          },
+          {
+            "meaning": "Employer reference of not more than 7 characters, first character a letter or number 0-9, e.g. A123, B789123, 024C.",
+            "ref": "EMPREF",
+            "term": "EMPREF"
+          },
+          {
+            "meaning": "Comprises Enforcement Office (Belfast), Enforcement and Insolvency Service (Worthing, including Voluntary Arrangement and Insolvency Service), and Enforcement Office (Scotland, including Civil Recovery Section).",
+            "ref": "Enforcement & Insolvency Service (EIS)",
+            "term": "Enforcement & Insolvency Service (EIS)"
+          },
+          {
+            "meaning": "Amendments to a return following an enquiry (Jeopardy amendment or Revenue amendment), described on the statement as 'Enquiry amendment for yy/yy' (new item) or 'Enquiry amendment on dd/mm/yy' (existing item amended).",
+            "ref": "Enquiry amendments",
+            "term": "Enquiry amendments"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Seek a Tribunal direction to impose daily penalties where a return has not been filed by the filing date",
+            "ref": "Section 93(3) or 93A(3) TMA 1970",
+            "trigger": "Return not filed by filing date, up to 5 April 2011",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "Deferred filing date",
+            "must": "File SA return by the deferred filing date if one has been agreed",
+            "ref": "Deferred filing date",
+            "trigger": "Reasonable excuse for not filing by standard filing date accepted by HMRC",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "Within 3 years from the filing date, or if later, within 12 months from the date of issue of the Revenue determination",
+            "must": "Displace a Revenue determination with their own Self Assessment",
+            "ref": "Determination",
+            "trigger": "HMRC has issued a Revenue determination due to no return filed by filing date",
+            "who": "Taxpayer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Daily penalties at a rate not exceeding £60 per day (up to £60 a day on each partner in partnership cases)",
+            "ref": "Daily penalties",
+            "trigger": "Return not filed by filing date (up to 5 April 2011), following a Tribunal direction"
+          },
+          {
+            "consequence": "Daily penalties of £10 a day up to a maximum of 90 days, charged up to and including date of filing if filed within the 90 days",
+            "ref": "Daily penalties",
+            "trigger": "Return not filed 3 months after the return due date (from 6 April 2011)"
+          },
+          {
+            "consequence": "Fixed penalties for late filing will be applied, based on the original filing date",
+            "ref": "Deferred filing date",
+            "trigger": "Return not filed within the extended (deferred) filing period"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This is a glossary section (C-E) from HMRC's Self Assessment Manual defining SA terminology and administrative concepts, including daily penalties for late filing, Revenue determinations, standard SA due dates, deferred filing dates, and various procedural/system terms (D ref, EDP, draft return, direct debit, etc.).",
+        "topics": [
+          "glossary",
+          "daily-penalties",
+          "determinations",
+          "due-dates",
+          "payments-on-account",
+          "deferred-filing-date",
+          "draft-return",
+          "partnerships"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "473405f6d914d7cb": {
+      "chars": 11924,
+      "heading": "Self Assessment manual (SAM) > C > Certificates of Tax Deposit",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Note that before October 1997, the due date shown for a charge was the original or statutory due date, not the latest relevant due date, so historic records may differ.",
+          "These entries are internal HMRC operational/glossary guidance rather than legislation, describing administrative processes rather than legal obligations on taxpayers directly."
+        ],
+        "cross_references": [
+          "TMA 1970 s.9A",
+          "TMA 1970 s.28A(5)",
+          "TMA 1970 s.28A(6)",
+          "TMA 1970 s.12AC",
+          "SAM function VIEW STATEMENT",
+          "SAM function CASE SUMMARY",
+          "form 125/125(Z)",
+          "form PS1(AZ)/(BZ)",
+          "form AZ34"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Certificate of Tax Deposit; process for handling receipt, transfer to Finance/Banking Operations, and taxpayer acknowledgement including interest treatment.",
+            "ref": "SAM (Certificates of Tax Deposit / CTD)",
+            "term": "CTD"
+          },
+          {
+            "meaning": "Computerised Environment for Self Assessment.",
+            "ref": "SAM (CESA)",
+            "term": "CESA"
+          },
+          {
+            "meaning": "Facility enabling an office that cannot bank payments to accept cash by drawing a cheque on a designated account equivalent to cash received.",
+            "ref": "SAM (CFC / Cheque for Cash)",
+            "term": "CFC / Cheque for Cash"
+          },
+          {
+            "meaning": "Process where Banking Operations notifies a change of SA address via form AZ34 to the processing office.",
+            "ref": "SAM (Change of address by A&PS)",
+            "term": "Change of address by A&PS"
+          },
+          {
+            "meaning": "Clearing House Automated Payment System; facility for same-day electronic payment transfer, notified to Banking Operations same day.",
+            "ref": "SAM (CHAPS)",
+            "term": "CHAPS"
+          },
+          {
+            "meaning": "Any liability recorded on an SA record and payable by the taxpayer, including interest; due date shown is the latest relevant due date (pre-Oct 1997 it was the original/statutory due date).",
+            "ref": "SAM (Charge)",
+            "term": "Charge"
+          },
+          {
+            "meaning": "Made when total liability for a tax year changes; may affect following year's payments on account; shown as 'AMD' or 'INT-AMD' in VIEW STATEMENT.",
+            "ref": "SAM (Charge amendment)",
+            "term": "Charge amendment"
+          },
+          {
+            "meaning": "Origin of a charge: Assessment, Return, or Determination.",
+            "ref": "SAM (Charge origin)",
+            "term": "Charge origin"
+          },
+          {
+            "meaning": "Examples: Payments on account, Balancing charges, Interest charges, Surcharges and Penalties, Revenue Assessments, Determinations.",
+            "ref": "SAM (Charge type)",
+            "term": "Charge type"
+          },
+          {
+            "meaning": "Checks/enquiries other than limited 'Process Now' corrections must be carried out under the enquiry provisions of Section 9A TMA 1970.",
+            "ref": "SAM (Check later)",
+            "term": "Check later"
+          },
+          {
+            "meaning": "Cheque number (6 digits), bank sort code (6 digits), account number (7-8 digits), plus amount entered by operator.",
+            "ref": "SAM (Cheque codeline)",
+            "term": "Cheque codeline"
+          },
+          {
+            "meaning": "Bank sort code, account number, cheque serial number; blank where full details missing (e.g. mutilated cheque); repeated entries indicate multiple cheque transaction.",
+            "ref": "SAM (Cheque data)",
+            "term": "Cheque data"
+          },
+          {
+            "meaning": "Includes cash or postal order payments, converted into cheques before processing.",
+            "ref": "SAM (Cheque payment)",
+            "term": "Cheque payment"
+          },
+          {
+            "meaning": "Made where taxpayer believes liability after tax suffered at source will be less than originally calculated or nil; can also adjust an earlier claim.",
+            "ref": "SAM (Claim to adjust payment on account)",
+            "term": "Claim to adjust payment on account"
+          },
+          {
+            "meaning": "Made after a claim to reduce payments on account is realised to have been excessive; ensures correct allocation and interest calculation.",
+            "ref": "SAM (Claim to increase payment on account)",
+            "term": "Claim to increase payment on account"
+          },
+          {
+            "meaning": "Categorisation of remission cases for accounting/quality monitoring purposes based on circumstances.",
+            "ref": "SAM (Classes of remission)",
+            "term": "Classes of remission"
+          },
+          {
+            "meaning": "Giro payments notified on paper: all Girobank payments and certain Bank Giro payments (most Bank Giro notified via magnetic tape).",
+            "ref": "SAM (Clerical Giro)",
+            "term": "Clerical Giro"
+          },
+          {
+            "meaning": "A company broadly controlled by five or fewer participators, or any number of participators who are directors.",
+            "ref": "SAM (Close company)",
+            "term": "Close company"
+          },
+          {
+            "meaning": "For a charge, amount collectible is zero; for a credit, all credit is set against one or more charges.",
+            "ref": "SAM (Closed item or transaction)",
+            "term": "Closed item or transaction"
+          },
+          {
+            "meaning": "Date on which the closure notice is issued to the taxpayer, issued when HMRC considers enquiries complete (S28A(5) TMA 1970) or Tribunal directs (S28A(6) TMA 1970).",
+            "ref": "SAM (Closure date); TMA 1970 s.28A(5), s.28A(6)",
+            "term": "Closure date"
+          },
+          {
+            "meaning": "Notice sent when all aspects of a S9A enquiry (or S12AC partnership enquiry) are concluded, advising completion, explaining treatment of amendments, and giving HMRC's view of correct tax.",
+            "ref": "SAM (Closure notice); TMA 1970 s.9A, s.12AC",
+            "term": "Closure notice"
+          },
+          {
+            "meaning": "Accounting period for Balance and Disposal accounts, ending the last Friday in October (most systems close one day earlier, the preceding Thursday).",
+            "ref": "SAM (Collection Account Year)",
+            "term": "Collection Account Year"
+          },
+          {
+            "meaning": "Address to which correspondence is sent by computer in absence of a capacity; entered only where it differs from base address.",
+            "ref": "SAM (Communication address)",
+            "term": "Communication address"
+          },
+          {
+            "meaning": "Name under which taxpayer requests correspondence be issued, if different from the name under which the SA record is held.",
+            "ref": "SAM (Communication name)",
+            "term": "Communication name"
+          },
+          {
+            "meaning": "Guidance to consider inhibiting statement issue where a taxpayer grievance exists or continued statements could embarrass the Department during complaint investigation.",
+            "ref": "SAM (Complaint cases)",
+            "term": "Complaint cases"
+          },
+          {
+            "meaning": "Conclusion of a successful investigation into understated income via a written letter of offer agreed by the taxpayer, potentially paid by instalments; handled manually by Network Unit of Banking Operations.",
+            "ref": "SAM (Contract settlement)",
+            "term": "Contract settlement"
+          },
+          {
+            "meaning": "The address (base, business, capacity, or communication) to which the taxpayer's SA output is sent.",
+            "ref": "SAM (Correspondence address)",
+            "term": "Correspondence address"
+          },
+          {
+            "meaning": "Exists where current payments exceed current charges; made up of unallocated amounts, amounts allocated to a future-dated liability, and/or overpayments.",
+            "ref": "SAM (Credit balance)",
+            "term": "Credit balance"
+          },
+          {
+            "meaning": "Centre for Research and Intelligence.",
+            "ref": "SAM (CRI)",
+            "term": "CRI"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "record the Revenue amendment to the return on the taxpayer's SA record at the same time as issuing the closure notice",
+            "ref": "SAM (Closure notice)",
+            "trigger": "issuing a closure notice in a S9A enquiry",
+            "who": "HMRC enquiry officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "record the Revenue amendment to the partnership statement on the partnership SA record at the same time as issuing the closure notice",
+            "ref": "SAM (Closure notice)",
+            "trigger": "issuing a closure notice in a S12AC partnership enquiry",
+            "who": "HMRC enquiry officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "submit a further claim to increase payments on account if a reduction claim was excessive",
+            "ref": "SAM (Claim to increase payment on account)",
+            "trigger": "realising a claim to reduce payments on account was excessive",
+            "who": "Taxpayer or agent"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Interest charge raised will not take the extra payment into consideration; risk of penalty if payment not made promptly",
+            "ref": "SAM (Claim to increase payment on account)",
+            "trigger": "Extra payment made without a formal claim to increase payments on account, or late/insufficient payment"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This is a glossary section of HMRC's internal Self Assessment Manual defining terms C, covering internal banking/payment processing (CTD, CFC, CHAPS, Clerical Giro, cheque handling), SA record concepts (charge, charge amendment/origin/type, credit balance, closed item), and enquiry-related terms (Check Later, closure date, closure notice) with references to TMA 1970 enquiry provisions. It also defines claims to adjust/increase payments on account and their interest/penalty implications.",
+        "topics": [
+          "glossary",
+          "payments",
+          "certificates-of-tax-deposit",
+          "enquiries",
+          "closure-notice",
+          "payments-on-account",
+          "internal-hmrc-process"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "624addb83576106f": {
+      "chars": 11319,
+      "heading": "Self Assessment manual (SAM)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Additional surcharge",
+            "period": "2009-10 and earlier",
+            "ref": "SAM001 - Additional surcharge",
+            "value": "5% of all SA duty unpaid"
+          }
+        ],
+        "caveats": [
+          "This chunk is only the glossary (SAM001), covering terms A through part of 'Automatic Remittance Processing'; the rest of the manual (~997 more sections, capped at max_sections: 120) was not mirrored in this run.",
+          "Additional surcharge definition applies only to tax years 2009-10 and earlier.",
+          "Appeal rights for penalties/surcharge differ by tax year (2009-10 and earlier vs 2010-11 onwards).",
+          "Content is HMRC internal operational/process guidance describing computer systems and staff procedures, not primary legislation."
+        ],
+        "cross_references": [
+          "Full manual at https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual",
+          "pipeline/sources.yml (max_sections cap note)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "An address is not abroad if it is within the United Kingdom, Isle of Man or Channel Islands.",
+            "ref": "SAM001",
+            "term": "Abroad"
+          },
+          {
+            "meaning": "Interest calculated to 'today's date' (or statement date) on any overdue interest-bearing liability; no interest charge is created until the related liability is paid in full; deminimis limit introduced November 1999 below which it is not shown.",
+            "ref": "SAM001",
+            "term": "Accruing interest"
+          },
+          {
+            "meaning": "Computer-determined allocation of responsibility for four areas of Revenue activity (processing, technical, recovery, accounting) between offices, distinguishing active from passive responsibility.",
+            "ref": "SAM001",
+            "term": "Active responsibility"
+          },
+          {
+            "meaning": "For tax years 2009-10 and earlier, a further 5% surcharge on SA duty unpaid more than 6 months after the balancing payment due date.",
+            "ref": "SAM001",
+            "term": "Additional surcharge"
+          },
+          {
+            "meaning": "HMRC's power to make a determination establishing liability where a taxpayer fails to file by the filing date; cannot be appealed, only displaced when a return is filed and a return charge captured/created.",
+            "ref": "SAM001",
+            "term": "Adjustment to a determination"
+          },
+          {
+            "meaning": "SA taxpayer records can accept payment ahead of a charge, including excess credit; taxpayers may make voluntary smaller payments ahead of due dates.",
+            "ref": "SAM001",
+            "term": "Advance payment"
+          },
+          {
+            "meaning": "An accountant, auditor, solicitor, group tax department or other person/firm preparing returns/accounts or advising/acting for a taxpayer in tax matters; excludes persons appointed by Taxes Acts requirement (e.g. trustee, administrator, executor).",
+            "ref": "SAM001",
+            "term": "Agent"
+          },
+          {
+            "meaning": "Unique code on the national agent file identifying an agent, format: one letter + four numbers + one letter, or five numbers + one letter.",
+            "ref": "SAM001",
+            "term": "Agent Identity"
+          },
+          {
+            "meaning": "Person nominated for creating and maintaining agents records.",
+            "ref": "SAM001",
+            "term": "Agent Maintainer"
+          },
+          {
+            "meaning": "Expenses spent solely to earn income, not for private/personal reasons, and not to buy something to be kept (capital items may attract capital allowances instead).",
+            "ref": "SAM001",
+            "term": "Allowable expenses"
+          },
+          {
+            "meaning": "Charges, including payments on account, payable in the future; only amounts due within next 35 days shown on computer-issued statement.",
+            "ref": "SAM001",
+            "term": "Amounts becoming due"
+          },
+          {
+            "meaning": "SA charges subject to appeal include penalties/surcharge (2009-10 and earlier), late payment/late filing penalties (2010-11 onwards), Revenue assessments, Revenue amendments to a return, and jeopardy amendments; taxpayers can also appeal non-charge-based HMRC actions such as Revenue amendment of a partnership statement.",
+            "ref": "SAM001",
+            "term": "Appeal"
+          },
+          {
+            "meaning": "Automatic Remittance Processing - equipment/workstations at Accounts Offices for processing cheque and payslip payments at high volume.",
+            "ref": "SAM001",
+            "term": "ARP"
+          },
+          {
+            "meaning": "An enquiry falling short of full examination of a whole return, concentrating on one or more aspects; may develop into a full enquiry.",
+            "ref": "SAM001",
+            "term": "Aspect enquiry"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "obtain manager authority before changing Automatic Move status to 'N'",
+            "ref": "SAM001 - Automatic move",
+            "trigger": "wanting to prevent automatic transfer of responsibility for a taxpayer record",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "provide means for taxpayer to make advance payments if requested",
+            "ref": "SAM001 - Advance payment",
+            "trigger": "taxpayer asks to make advance payments",
+            "who": "HMRC"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "additional surcharge of 5% of all SA duty unpaid at that date",
+            "ref": "SAM001 - Additional surcharge",
+            "trigger": "SA liability still unpaid more than 6 months after the balancing payment due date (tax years 2009-10 and earlier)"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This is the glossary section (SAM001) of HMRC's internal Self Assessment manual, defining terms A-Z used in SA processing systems and procedures. It covers concepts like determinations, appeals, surcharges, advance payments, agent codes, and internal computer functions used by HMRC staff administering SA records. The chunk only covers terms from A through part of 'Automatic Remittance Processing'; the note at the top indicates most of the manual (~997 more sections) was not mirrored in this pipeline run.",
+        "topics": [
+          "glossary",
+          "definitions",
+          "hmrc-internal-processes",
+          "appeals",
+          "surcharges",
+          "determinations",
+          "advance-payments"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "6ae64b1ea21a47be": {
+      "chars": 11699,
+      "heading": "Self Assessment manual (SAM) > A > Automatic Selection Process",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Delayed balancing payment due dates apply only where the return is issued after 31 October following the tax year end with no failure to notify, or where a return issued and submitted within the time limit for Revenue Calculation is captured late",
+          "Automatic setting of delayed due dates applies only to the late-issue scenario; late-capture scenario requires manual amendment",
+          "If a return has already been issued for the year, a further original return cannot be issued for that year"
+        ],
+        "cross_references": [
+          "Function RECORD RETURN REQUEST",
+          "Function AMEND RELEVANT DATES",
+          "Function VIEW REPAYMENT"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Balancing charge",
+            "name": "Balancing charge due date",
+            "ref": "Balancing charge",
+            "rule": "normally 31 January following the end of the tax year"
+          },
+          {
+            "applies_to": "Balancing payment",
+            "name": "Balancing payment due date",
+            "ref": "Balancing payment due date",
+            "rule": "normally due on 31 January after the end of the tax year"
+          },
+          {
+            "applies_to": "Balancing payment where return issued late and no failure to notify",
+            "name": "Delayed balancing payment due date (return issued after 31 October)",
+            "ref": "Balancing payment due date",
+            "rule": "3 months and 7 days after return issue if the return was issued after 31 October"
+          },
+          {
+            "applies_to": "Balancing payment where return issued and submitted within Revenue Calculation time limit but captured late",
+            "name": "Delayed balancing payment due date (return captured late)",
+            "ref": "Balancing payment due date",
+            "rule": "30 days after the amounts due are notified to the taxpayer if the return is captured late"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "The annual selection by the computer of cases where a return is required for the year, run mid to late February",
+            "ref": "Automatic Selection Process",
+            "term": "ITAR / Automatic Selection Process"
+          },
+          {
+            "meaning": "The original credit amount less any amounts previously transferred to OAS, returned by the bank (returned payments) or repaid",
+            "ref": "Available amount",
+            "term": "Available amount"
+          },
+          {
+            "meaning": "Ascending value list - a daily list of payments arranged in ascending value",
+            "ref": "AVL",
+            "term": "AVL"
+          },
+          {
+            "meaning": "A legal process for dealing with individuals unable or unwilling to pay their debts, made by the Courts following a petition",
+            "ref": "Award of Sequestration",
+            "term": "Award of Sequestration (Scotland)"
+          },
+          {
+            "meaning": "Automated service operated by banks/building societies for clearing payments electronically",
+            "ref": "BACS",
+            "term": "BACS"
+          },
+          {
+            "meaning": "Received when a taxpayer reclaims the value of a BACS payment",
+            "ref": "BACS recall",
+            "term": "BACS recall"
+          },
+          {
+            "meaning": "Arises where the total net liability for the year is greater than the amounts of any payments on account based on the previous year's liability",
+            "ref": "Balancing charge",
+            "term": "Balancing charge"
+          },
+          {
+            "meaning": "Created when a return is captured and deductions at source exceed the SA liability for the year",
+            "ref": "Balancing charge credit",
+            "term": "Balancing charge credit"
+          },
+          {
+            "meaning": "The balancing payment due by the taxpayer calculated when the return is captured",
+            "ref": "Balancing charge debit",
+            "term": "Balancing charge debit"
+          },
+          {
+            "meaning": "The total amount of liability from the return less any payments on account already made; can include unpaid payments on account but not interest or penalties",
+            "ref": "Balancing payment",
+            "term": "Balancing payment"
+          },
+          {
+            "meaning": "A credit transfer system enabling payment through a bank branch, credited to an HMRC account with Royal Bank of Scotland Group",
+            "ref": "Bank Giro",
+            "term": "Bank Giro"
+          },
+          {
+            "meaning": "A credit or debit posted on the taxpayer record representing the difference between actual cheque value and amount posted on the record",
+            "ref": "Bank lodgement adjustment",
+            "term": "Bank lodgement adjustment (BLA)"
+          },
+          {
+            "meaning": "Legal process for dealing with individuals unable/unwilling to pay debts, ordered by Courts following petition",
+            "ref": "Bankruptcy / BY",
+            "term": "Bankruptcy / BY"
+          },
+          {
+            "meaning": "A trust where beneficiaries have immediate absolute title to income, gains and capital and trustees are not liable to pay tax out of trust income",
+            "ref": "Bare trust",
+            "term": "Bare trust"
+          },
+          {
+            "meaning": "Varies by taxpayer type: individual's private address, trust's first named trustee address, partnership's business address or first named partner's address, company's Registered Office, personal representative's address",
+            "ref": "Base address",
+            "term": "Base address"
+          },
+          {
+            "meaning": "The period used to identify the profits taxable in any particular year; normally the 12 month period up to the annual accounting date",
+            "ref": "Basis period",
+            "term": "Basis period"
+          },
+          {
+            "meaning": "An automatic process that runs overnight and cannot be accessed online by an operator",
+            "ref": "Batch function",
+            "term": "Batch function/process/update"
+          },
+          {
+            "meaning": "Business Review of the Collection Service",
+            "ref": "BROCS",
+            "term": "BROCS"
+          },
+          {
+            "meaning": "A facility enabling selected SA taxpayers to spread payment via regular quarterly or monthly payments; voluntary",
+            "ref": "Budget payment plan",
+            "term": "Budget payment plan"
+          },
+          {
+            "meaning": "Address of any business for which a trade has been set up on the SA record",
+            "ref": "Business address",
+            "term": "Business address"
+          },
+          {
+            "meaning": "The name under which the taxpayer trades, if different to the name the SA record is held under",
+            "ref": "Business name",
+            "term": "Business name"
+          },
+          {
+            "meaning": "Exists where a person or body is appointed to act for a taxpayer and the Taxes Acts require returns, assessments and other statutory notices to be served on that person/body (e.g. trustee, power of attorney, receiver, personal representative)",
+            "ref": "Capacity",
+            "term": "Capacity"
+          },
+          {
+            "meaning": "The address of a capacity appointed to handle a taxpayer's affairs; SA system accepts up to five persons/bodies, first entered treated as main capacity",
+            "ref": "Capacity address",
+            "term": "Capacity address"
+          },
+          {
+            "meaning": "Payments counted in the presence of a witness, recorded in Book 23, checked against payslips and exchanged for a cheque via the Cheque for Cash (CFC) facility",
+            "ref": "Cash payments",
+            "term": "Cash payments"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Use Function AMEND RELEVANT DATES to manually amend the balancing payment due date and review/amend payments on account due dates for the following SA year",
+            "ref": "Balancing payment due date",
+            "trigger": "Return captured late (within Revenue Calculation time limit)",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This is a glossary section of HMRC's Self Assessment Manual covering terms A-C, including the automatic annual selection process (ITAR) for issuing SA returns, definitions of balancing charge/payment and their due dates (normally 31 January after the tax year end, with delayed due dates in certain circumstances), and various administrative/banking terms (BACS, Bank Giro, bank lodgement adjustments, capacity, base address rules by taxpayer type, basis period, budget payment plans, bankruptcy/sequestration). Most entries are definitional but the Balancing payment due date entry contains substantive SA compliance rules on delayed due dates.",
+        "topics": [
+          "glossary",
+          "return-issue",
+          "balancing-payment",
+          "due-dates",
+          "payments-on-account",
+          "banking-processes"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "9bf2dfda47df46ed": {
+      "chars": 11716,
+      "heading": "Self Assessment manual (SAM) > F > Further surcharge \\- applies to tax years 2010\\-11 and earlier. Superseded by Late Payment Penalties for tax years 2010\\-11 and later",
+      "index": 5,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Initial surcharge",
+            "period": "tax years 2009-10 and earlier",
+            "ref": "Initial surcharge",
+            "value": "5% of all the SA duty unpaid at that date"
+          },
+          {
+            "name": "Further surcharge",
+            "period": "tax years 2010-11 and earlier",
+            "ref": "Further surcharge",
+            "value": "5% of all the SA duty unpaid at that date"
+          },
+          {
+            "name": "High risk overdue/upcoming amount threshold",
+            "period": "n/a",
+            "ref": "High risk",
+            "value": "£100,000 or more"
+          },
+          {
+            "name": "Gift aid declaration backdating",
+            "period": "n/a",
+            "ref": "Gift aid - Gift aid rules",
+            "value": "up to 6 years before the date of the declaration, provided donation made after 6 April 2000"
+          }
+        ],
+        "caveats": [
+          "The initial surcharge described applies only to tax years 2009-10 and earlier and is superseded by Late Payment Penalties for 2010-11 and later",
+          "The further surcharge described applies only to tax years 2010-11 and earlier and is superseded by Late Payment Penalties for 2010-11 and later",
+          "This is a glossary/reference section, not the operative penalty legislation itself"
+        ],
+        "cross_references": [
+          "S9A enquiry",
+          "Late Payment Penalties (2010-11 and later)",
+          "Fixed Automatic Penalty (FAP)",
+          "PRISE (Prototype Returns Initial Screening Exercise)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "SA liability unpaid, tax years 2009-10 and earlier",
+            "name": "Initial surcharge trigger point",
+            "ref": "Initial surcharge",
+            "rule": "more than 28 days after the balancing payment due date"
+          },
+          {
+            "applies_to": "SA liability unpaid, tax years 2010-11 and earlier",
+            "name": "Further surcharge trigger point",
+            "ref": "Further surcharge",
+            "rule": "more than 6 months after the balancing payment due date"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A 5% surcharge on all SA duty unpaid more than 6 months after the balancing payment due date; applies to tax years 2010-11 and earlier, superseded by Late Payment Penalties for 2010-11 and later",
+            "ref": "Further surcharge",
+            "term": "Further surcharge"
+          },
+          {
+            "meaning": "Tax relief on money donated to UK charities; treated as if donor deducted basic rate tax, which the charity reclaims",
+            "ref": "Gift aid",
+            "term": "Gift aid"
+          },
+          {
+            "meaning": "A credit transfer system allowing payment via Girobank Transfer or Post Office Transcash, with daily notification to Banking Operations",
+            "ref": "Girobank",
+            "term": "Girobank"
+          },
+          {
+            "meaning": "Term for a Government tax, e.g. Income Tax, PAYE, Corporation Tax, Capital Gains Tax",
+            "ref": "Heads of Duty",
+            "term": "Heads of Duty"
+          },
+          {
+            "meaning": "Cases with £100,000+ due within 7 days or overdue, PCA signal set, three or more returns outstanding, or referred to DMTC",
+            "ref": "High risk",
+            "term": "High risk"
+          },
+          {
+            "meaning": "Integrated Debt Management System - computer support for handling outstanding debt cases requiring local action",
+            "ref": "IDMS",
+            "term": "IDMS"
+          },
+          {
+            "meaning": "Loans mainly for students entering higher education after August 1998, repaid based on income rather than fixed rate",
+            "ref": "Income contingent student loans",
+            "term": "Income contingent student loans and/or postgraduate loans"
+          },
+          {
+            "meaning": "A formal agreement between debtor and creditors regarding payment of debts, prepared by a Nominee/Trustee and implemented by a Supervisor",
+            "ref": "Individual Voluntary Arrangement",
+            "term": "Individual Voluntary Arrangement"
+          },
+          {
+            "meaning": "Amount described as 'Included in contract settlement', collected under a contract settlement",
+            "ref": "Informal Discharge",
+            "term": "Informal Discharge"
+          },
+          {
+            "meaning": "Recorded suspension of collection on an unpaid amount where justified, e.g. MP complaint, over-repayment, appeal without legal right to postpone",
+            "ref": "Informally stoodover",
+            "term": "Informally stoodover"
+          },
+          {
+            "meaning": "5% surcharge on SA duty unpaid more than 28 days after balancing payment due date; applies to 2009-10 and earlier, superseded by Late Payment penalties from 2010-11",
+            "ref": "Initial surcharge",
+            "term": "Initial surcharge"
+          },
+          {
+            "meaning": "Reference allocated to a bankrupt or VA taxpayer, format BY/VA + 4-digit case number + 2-digit collection accounting year, e.g. BY 1538/98",
+            "ref": "Insolvency reference",
+            "term": "Insolvency reference"
+          },
+          {
+            "meaning": "Automatic charge amendments to interest charges, e.g. when the relevant due date of a late-paid interest-bearing charge changes",
+            "ref": "Interest discharges",
+            "term": "Interest discharges"
+          },
+          {
+            "meaning": "Accruing interest calculated to today's date on overdue interest-bearing liability; no charge created until liability paid in full",
+            "ref": "Interest not charged",
+            "term": "Interest not charged"
+          },
+          {
+            "meaning": "Unit in Banking Operations Cumbernauld with delegated authority over interest decisions, handles objections and advises on Reasonable Excuse appeals for FAP/Surcharge",
+            "ref": "Interest Review Unit",
+            "term": "Interest Review Unit"
+          },
+          {
+            "meaning": "Court order suspending current and future proceedings, applicable only in VA cases",
+            "ref": "Interim order",
+            "term": "Interim order"
+          },
+          {
+            "meaning": "Inland Revenue Information Service - system for Banking Operations to view/update taxpayer records and calculate interest and repayment supplement",
+            "ref": "IRIS",
+            "term": "IRIS"
+          },
+          {
+            "meaning": "A payment requiring remedial action, accompanied by correspondence/return, or needing return/forwarding (potential payments)",
+            "ref": "Irregular payment",
+            "term": "Irregular payment"
+          },
+          {
+            "meaning": "For a charge, the latest relevant due date; for an Open Item credit, the effective date of payment (EDP)",
+            "ref": "Item date",
+            "term": "Item date"
+          },
+          {
+            "meaning": "Input Via Terminal - function to update Banking Operations computer records via screen input",
+            "ref": "IVT",
+            "term": "IVT"
+          },
+          {
+            "meaning": "An amendment to a self assessment during an open S9A enquiry (no closure notice sent) where the assessment is insufficient and there is likely to be a loss of tax unless amended immediately",
+            "ref": "Jeopardy amendment",
+            "term": "Jeopardy amendment"
+          },
+          {
+            "meaning": "Software containing risk rules and scoring for automatic risk assessment, derived from PRISE, reviewed annually",
+            "ref": "Knowledge based system",
+            "term": "Knowledge based system (KBS)"
+          },
+          {
+            "meaning": "Signal set when a return is not required after a certain date; prevents issue of return/notice to file and calculation of payments on account for following year",
+            "ref": "Last SA Return",
+            "term": "Last SA Return"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Enter gift aid donations in the gift aid box on the SA return",
+            "ref": "Gift aid - Tax relief",
+            "trigger": "Donor pays higher rate tax and wants additional relief",
+            "who": "Donor claiming higher rate relief"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Pay enough UK income tax and/or capital gains tax to cover the amount the charity will reclaim, and give the charity a gift aid declaration",
+            "ref": "Gift aid - Gift aid rules",
+            "trigger": "Making a donation under gift aid",
+            "who": "Donor using gift aid"
+          },
+          {
+            "deadline": "n/a",
+            "must": "May make a jeopardy amendment to a self assessment if in their opinion the assessment is insufficient and there is likely to be a loss of tax unless amended immediately",
+            "ref": "Jeopardy amendment",
+            "trigger": "Open S9A enquiry with no closure notice sent, insufficiency of self assessment",
+            "who": "HMRC officer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Initial surcharge of 5% of unpaid SA duty",
+            "ref": "Initial surcharge",
+            "trigger": "SA liability unpaid more than 28 days after the balancing payment due date (2009-10 and earlier)"
+          },
+          {
+            "consequence": "Further surcharge of 5% of unpaid SA duty",
+            "ref": "Further surcharge",
+            "trigger": "SA liability unpaid more than 6 months after the balancing payment due date (2010-11 and earlier)"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This is a glossary section (F–L) of HMRC's Self Assessment Manual defining terms used in SA administration. It covers the now-superseded initial and further surcharge regime for late payment (applicable to tax years up to 2010-11/2009-10), Gift Aid mechanics and relief claims, various debt management and banking operations terms (IDMS, IRU, informal standover, interest discharges/reviews), insolvency reference formats, and the jeopardy amendment provision allowing HMRC to amend a self assessment during an open enquiry where tax is at risk.",
+        "topics": [
+          "glossary",
+          "surcharges",
+          "late-payment-penalties",
+          "gift-aid",
+          "interest",
+          "debt-management",
+          "jeopardy-amendment",
+          "insolvency"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "b38821ae6d9ec444": {
+      "chars": 11832,
+      "heading": "Self Assessment manual (SAM) > E > Enquiry type",
+      "index": 4,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "First fixed automatic penalty",
+            "period": "2009-10 and earlier",
+            "ref": "Fixed automatic penalties - s.93 TMA 1970",
+            "value": "£100"
+          },
+          {
+            "name": "Second fixed automatic penalty",
+            "period": "2009-10 and earlier",
+            "ref": "Fixed automatic penalties - s.93 TMA 1970",
+            "value": "£100 (making £200 in total)"
+          },
+          {
+            "name": "First fixed automatic penalty per partner (partnership return)",
+            "period": "2009-10 and earlier",
+            "ref": "Fixed automatic penalties - s.93 TMA 1970",
+            "value": "£100"
+          },
+          {
+            "name": "Second fixed automatic penalty per partner (partnership return)",
+            "period": "2009-10 and earlier",
+            "ref": "Fixed automatic penalties - s.93 TMA 1970",
+            "value": "£100 (making £200 in total)"
+          }
+        ],
+        "caveats": [
+          "Fixed automatic penalties (s.93 TMA 1970) apply only to tax years 2009-10 and earlier, superseded by Late Filing Penalty for 2010-11 and later.",
+          "Fixed penalty entry likewise applies only to 2009-10 and earlier tax years.",
+          "Enquiry window rules differ significantly between years up to 2006-07 and 2007-08 onward.",
+          "Filing date computation for returns issued late may produce an incorrect last enquiry date due to a computer/batch quirk (7 days sometimes not utilised); manual check advised.",
+          "If HMRC issues a return late due to its own error, balancing charge and payment-on-account due dates are amended accordingly; if late issue is due to taxpayer non-compliance, due dates remain unchanged.",
+          "Exceptions to standard online/paper filing dates apply to non-resident companies (SA700), registered pension scheme trustees (SA970), and certain elected representatives (MP, MSP, Welsh Assembly Member, NI Assembly Member)."
+        ],
+        "cross_references": [
+          "TMA 1970 s.93",
+          "PAYE Manual",
+          "Late Filing Penalty (2010-11 and later)",
+          "SA700",
+          "SA970"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Returns up to and including 2006-07",
+            "name": "Enquiry window - up to 2006-07, filed on time",
+            "ref": "Enquiry window",
+            "rule": "12 months from the filing date"
+          },
+          {
+            "applies_to": "Returns up to and including 2000-01",
+            "name": "Enquiry window - up to 2000-01, 31 January filing date",
+            "ref": "Enquiry window",
+            "rule": "last date for enquiry is 30 January of the following year"
+          },
+          {
+            "applies_to": "2001-02 to 2006-07 returns",
+            "name": "Enquiry window - 2001-02 and later (pre-2007-08), 31 January filing date",
+            "ref": "Enquiry window",
+            "rule": "last date for enquiry is 31 January of the following year"
+          },
+          {
+            "applies_to": "Returns up to and including 2006-07 filed after filing date",
+            "name": "Enquiry window - return filed late (pre-2007-08)",
+            "ref": "Enquiry window",
+            "rule": "ends on the quarter date following the first anniversary of the date the return was filed"
+          },
+          {
+            "applies_to": "Returns for 2007-08 and later years",
+            "name": "Enquiry window - 2007-08 and later",
+            "ref": "Enquiry window",
+            "rule": "12 months from the date the return was received"
+          },
+          {
+            "applies_to": "Paper returns 2007-08 onward",
+            "name": "Filing date - paper (2007-08 and later)",
+            "ref": "Filing date - 2007-08 and later years",
+            "rule": "31 October following end of return year, unless issued after 31 July (then 3 months and 7 days after issue date)"
+          },
+          {
+            "applies_to": "Online returns and excepted paper returns, 2007-08 onward",
+            "name": "Filing date - online (2007-08 and later)",
+            "ref": "Filing date - 2007-08 and later years",
+            "rule": "31 January following end of return year, unless issued after 31 July (then 3 months and 7 days after issue date)"
+          },
+          {
+            "applies_to": "Returns up to 2006-07",
+            "name": "Filing date - up to 2006-07, issued on/before 31 October",
+            "ref": "Filing date - 2006-07 and earlier years",
+            "rule": "31 January following end of return year"
+          },
+          {
+            "applies_to": "Returns up to 2006-07",
+            "name": "Filing date - up to 2006-07, issued after 31 October",
+            "ref": "Filing date - 2006-07 and earlier years",
+            "rule": "3 months and 7 days after the return issue date"
+          },
+          {
+            "applies_to": "Taxpayers who failed to notify chargeability by 5 October",
+            "name": "Failure to Notify - balancing charge due date",
+            "ref": "Failure to Notify",
+            "rule": "31 January after end of the tax year"
+          },
+          {
+            "applies_to": "Fixed automatic/fixed penalties (2009-10 and earlier)",
+            "name": "Fixed penalty appeal deadline",
+            "ref": "Fixed penalty",
+            "rule": "within 30 days of the penalty notice"
+          },
+          {
+            "applies_to": "Fixed automatic/fixed penalties (2009-10 and earlier)",
+            "name": "Fixed penalty due and payable date",
+            "ref": "Fixed penalty",
+            "rule": "30 days after the date on the notice"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "An enquiry concentrating on one or more aspects of the return; may develop into a full enquiry.",
+            "ref": "Enquiry type",
+            "term": "Aspect enquiry"
+          },
+          {
+            "meaning": "An enquiry considering all aspects of the return, checking items using taxpayer's own records and third party information; should not be changed to an aspect enquiry.",
+            "ref": "Full enquiry",
+            "term": "Full enquiry"
+          },
+          {
+            "meaning": "The time during which HMRC has the opportunity to start an enquiry into a return for a particular year.",
+            "ref": "Enquiry window",
+            "term": "Enquiry window"
+          },
+          {
+            "meaning": "Finance Act.",
+            "ref": "FA",
+            "term": "FA"
+          },
+          {
+            "meaning": "Applies where taxpayer failed to notify HMRC of chargeability by 5 October following the end of the tax year, resulting in the return being issued after that date.",
+            "ref": "Failure to Notify",
+            "term": "Failure to Notify"
+          },
+          {
+            "meaning": "The date by which a Self Assessment return must be filed, varying by year, filing method and issue date of the return.",
+            "ref": "Filing date",
+            "term": "Filing date"
+          },
+          {
+            "meaning": "For open-ended arrangements (Budget Payment Plans, Scottish Sharefishermen) a far-future date is entered; for Statutory Instalment/Time to Pay cases, the expected settlement date, with a suggested maximum two-week margin.",
+            "ref": "Final payment date",
+            "term": "Final payment date"
+          },
+          {
+            "meaning": "A commercially purchased financial and management accounting/information package for SA offering a structured General Ledger and flexible reporting.",
+            "ref": "FINEST",
+            "term": "FINEST"
+          },
+          {
+            "meaning": "Penalties under s.93 TMA 1970 for late filing, applying to tax years 2009-10 and earlier.",
+            "ref": "Fixed automatic penalties - s.93 TMA 1970",
+            "term": "Fixed automatic penalties"
+          },
+          {
+            "meaning": "The statutorily fixed filing date used for purposes such as calculating repayment supplement, varying by year and filing method.",
+            "ref": "Fixed filing date",
+            "term": "Fixed filing date"
+          },
+          {
+            "meaning": "Penalty imposed for late filing, applying to tax years 2009-10 and earlier, superseded by the Late Filing Penalty for 2010-11 and later.",
+            "ref": "Fixed penalty",
+            "term": "Fixed penalty"
+          },
+          {
+            "meaning": "Amounts of expenses agreed between HMRC and a Trade Union or other body to cover costs of maintaining or replacing tools or special working clothes.",
+            "ref": "Flat rate expenses",
+            "term": "Flat rate expenses"
+          },
+          {
+            "meaning": "Report giving details of clearance dates HMRC receives credit for different payment types processed by Banking Operations, excluding Network Unit payments.",
+            "ref": "Forecast Clearance Report",
+            "term": "Forecast Clearance Report"
+          },
+          {
+            "meaning": "A trust not made and administered under the laws of the United Kingdom.",
+            "ref": "Foreign trust",
+            "term": "Foreign trust"
+          },
+          {
+            "meaning": "Remission authority form used to record written consent for a remission against an outstanding debt on a taxpayer's SA record, or to cancel a remission.",
+            "ref": "Form C495",
+            "term": "Form C495"
+          },
+          {
+            "meaning": "A charge stoodover following receipt of an application for postponement of payment of tax charged on a Revenue assessment or amendment.",
+            "ref": "Formally stoodover",
+            "term": "Formally stoodover"
+          },
+          {
+            "meaning": "A credit entered on the taxpayer record where a taxpayer is due a credit not held on another SA record or in OAS, using function CREATE FREESTANDING CREDIT.",
+            "ref": "Freestanding credit",
+            "term": "Freestanding credit"
+          },
+          {
+            "meaning": "Completing capture of all information from a return during one session.",
+            "ref": "Fully capture",
+            "term": "Fully capture"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "31 January following end of return year (2007-08 and later)",
+            "must": "File Self Assessment return online",
+            "ref": "Filing date - 2007-08 and later years",
+            "trigger": "Choice of filing method",
+            "who": "Individual/taxpayer filing online"
+          },
+          {
+            "deadline": "31 October following end of return year (2007-08 and later)",
+            "must": "File paper Self Assessment return",
+            "ref": "Filing date - 2007-08 and later years",
+            "trigger": "Choice of filing method, subject to exceptions",
+            "who": "Individual/taxpayer filing paper return"
+          },
+          {
+            "deadline": "31 January after end of tax year (balancing charge unchanged)",
+            "must": "Pay balancing charge and payments on account as normal",
+            "ref": "Failure to Notify",
+            "trigger": "Failure to Notify chargeability by 5 October following end of tax year",
+            "who": "Taxpayer who is chargeable but return issued after 5 October"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Not change a full enquiry to an aspect enquiry",
+            "ref": "Enquiry type / Full enquiry",
+            "trigger": "Enquiry type designation",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Register and enrol via HMRC website before using online filing service",
+            "ref": "Filing returns online",
+            "trigger": "Intention to file online",
+            "who": "Individual wishing to file online"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "First fixed automatic penalty of £100, charged after filing date; £100 per partner for partnership returns",
+            "ref": "Fixed automatic penalties - s.93 TMA 1970",
+            "trigger": "Filing date has passed and no return received"
+          },
+          {
+            "consequence": "Second fixed automatic penalty of £100 (£200 total); £100 per partner for partnership returns",
+            "ref": "Fixed automatic penalties - s.93 TMA 1970",
+            "trigger": "Return still not filed six months after filing date and Daily Penalties not being charged"
+          },
+          {
+            "consequence": "First fixed penalty arises after 31 January; formal notice issued; due and payable 30 days after notice date; similar penalties per partner for partnership returns",
+            "ref": "Fixed penalty",
+            "trigger": "Return not filed by filing date (2009-10 and earlier)"
+          },
+          {
+            "consequence": "Second fixed penalty imposed",
+            "ref": "Fixed penalty",
+            "trigger": "Return still outstanding 6 months after filing date"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk defines aspect vs full enquiries and sets out the enquiry window (12 months from filing date, or from date filed if late, for years to 2006-07; 12 months from date received for 2007-08 onward). It details filing dates for paper (31 October) and online (31 January) returns for 2007-08 onward, with exceptions for non-resident companies, pension scheme trustees and certain elected representatives, and explains how late issue of returns shifts the filing date. It also describes fixed automatic penalties under s.93 TMA 1970 (£100 initial, further £100 at 6 months) applicable to 2009-10 and earlier, superseded by Late Filing Penalty from 2010-11, plus related SAM glossary entries on Failure to Notify, Final payment date, and other operational terms.",
+        "topics": [
+          "enquiries",
+          "enquiry-window",
+          "filing-deadlines",
+          "failure-to-notify",
+          "penalties",
+          "fixed-penalties",
+          "online-filing",
+          "flat-rate-expenses"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/manuals/sam.md",
+  "source_id": "hmrc-manual-sam",
+  "source_url": "https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual"
+}
