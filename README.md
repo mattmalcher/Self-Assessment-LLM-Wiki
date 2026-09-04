@@ -1,5 +1,10 @@
 # Self Assessment LLM Wiki
 
+> **Unofficial.** This is an independent personal project. It is not HMRC, is
+> not endorsed by or affiliated with HMRC or any government body, and nothing
+> in it is tax advice. Every page is written by a language model. Official
+> guidance is at <https://www.gov.uk/self-assessment-tax-returns>.
+
 An **LLM-written** reference on UK Self Assessment (Income Tax), published to
 GitHub Pages, condensed from a continuously refreshed mirror of the primary
 material — legislation, tribunal decisions, HMRC manuals and policy
@@ -103,9 +108,11 @@ generated pages (`rules-inventory`, `data-requirements`) exist specifically to
 inventory what such a system would need. The implementation itself is not
 started.
 
-## Not legal advice
+## Not official, not legal advice
 
-Two failure modes, both real: the mirror can lag upstream, and the pages are
-written by a language model. The prompts forbid using knowledge outside the
+Nothing here is an HMRC publication or is reviewed, endorsed or approved by
+HMRC. HMRC material is quoted and linked as a source; the words on the pages
+are not HMRC's. Two failure modes, both real: the mirror can lag upstream,
+and the pages are written by a language model. The prompts forbid using knowledge outside the
 supplied source notes and require a citation for every rule and figure, but
 check anything you rely on against the cited source.

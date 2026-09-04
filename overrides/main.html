@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{#
+  A visitor arriving from a search engine lands on a deep page, not the home
+  page, so the disclaimer has to travel with every page rather than living in
+  index.md. Material renders this bar above the header on all pages.
+#}
+{% block announce %}
+  <strong>Unofficial.</strong> This site is not HMRC, is not endorsed by or
+  affiliated with HMRC or any government body, and is not tax advice. Every
+  page is written by a language model from mirrored source material and may be
+  wrong or out of date &mdash; check the cited source. For official guidance
+  see <a href="https://www.gov.uk/self-assessment-tax-returns">GOV.UK</a>.
+{% endblock %}

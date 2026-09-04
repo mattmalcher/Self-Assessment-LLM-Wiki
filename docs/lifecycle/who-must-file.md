@@ -9,8 +9,17 @@ sources:
 - hmrc-manual-salf
 - si-ftt-tax-chamber-rules-2009
 ---
-
 # Who must file a Self Assessment return
+
+!!! danger "Unofficial - not HMRC, not advice, written by an LLM"
+
+    This page is **not** an HMRC publication and has no connection to HMRC or
+    any government body. It was **written by a language model** from mirrored
+    source material, and can be wrong, incomplete or out of date. It is not
+    tax advice. Check every figure, date and rule against the cited source
+    before relying on it, and see
+    [GOV.UK](https://www.gov.uk/self-assessment-tax-returns) for official
+    guidance.
 
 Self Assessment obligations do not arise from being "self-employed" or "a higher rate taxpayer" as such: the return obligation is created by a notice to file under s.8 TMA 1970, and a separate statutory duty to notify chargeability under s.7 TMA 1970 catches people HMRC has not written to. This page sets out both mechanisms, who they apply to, what the supplied sources say about HMRC's operational selection of taxpayers, and what happens when either obligation is missed. It relies only on the source notes listed; where the notes are thin (notably on HMRC's published entry criteria and on withdrawal of a notice), that is flagged at the end.
 
