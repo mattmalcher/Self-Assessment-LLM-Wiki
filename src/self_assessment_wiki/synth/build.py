@@ -1,10 +1,13 @@
 #!/usr/bin/env python3
 """Entrypoint for the LLM layer.
 
-    python -m self_assessment_wiki.synth.build status                 # what's stale, no model calls
-    python -m self_assessment_wiki.synth.build extract                # corpus -> extracts/ (cached)
-    python -m self_assessment_wiki.synth.build compose                # extracts/ -> docs/
-    python -m self_assessment_wiki.synth.build all                    # both, in order
+    uv run status                 # what's stale, no model calls
+    uv run extract                # corpus -> extracts/ (cached)
+    uv run compose                # extracts/ -> docs/
+    uv run synth all              # both, in order
+
+`uv run synth <command>` is the same CLI; the single-word scripts above are
+shorthands for its subcommands.
 
 Run this locally: it is deliberately not part of the scheduled GitHub
 Actions refresh, so it can use whatever Claude or OpenAI subscription you
@@ -14,6 +17,7 @@ from __future__ import annotations
 
 import argparse
 import sys
+from pathlib import Path
 
 from . import compose, extract
 from .config import DEFAULT_BACKEND, DEFAULT_CONCURRENCY, DEFAULT_MODELS
@@ -95,10 +99,12 @@ def cmd_all(args) -> int:
     return cmd_compose(args)
 
 
-def main(argv: list[str] | None = None) -> int:
-    parser = argparse.ArgumentParser(prog="synth.build", description=__doc__,
+def main(argv: list[str] | None = None, command: str | None = None) -> int:
+    prog = Path(sys.argv[0]).name if command else "synth"
+    parser = argparse.ArgumentParser(prog=prog, description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
-    parser.add_argument("command", choices=["status", "extract", "compose", "all"])
+    if command is None:
+        parser.add_argument("command", choices=["status", "extract", "compose", "all"])
     parser.add_argument("--only", nargs="*", help="extract: corpus paths; compose: page ids")
     parser.add_argument("--backend", default=DEFAULT_BACKEND, choices=BACKENDS,
                         help=f"default {DEFAULT_BACKEND} (uses your Claude Code subscription)")
@@ -112,6 +118,8 @@ def main(argv: list[str] | None = None) -> int:
     parser.add_argument("--timeout", type=int, default=900, help="per-call timeout, seconds")
     parser.add_argument("--keep-going", action="store_true", help="all: compose even if extract failed")
     args = parser.parse_args(argv)
+    if command is not None:
+        args.command = command
 
     try:
         return {"status": cmd_status, "extract": cmd_extract,
@@ -119,6 +127,20 @@ def main(argv: list[str] | None = None) -> int:
     except LLMError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
+
+
+# Console-script shorthands (see [project.scripts] in pyproject.toml), so the
+# common commands are `uv run extract` rather than a module path to remember.
+def status() -> int:
+    return main(command="status")
+
+
+def extract_cmd() -> int:
+    return main(command="extract")
+
+
+def compose_cmd() -> int:
+    return main(command="compose")
 
 
 if __name__ == "__main__":

@@ -36,9 +36,9 @@ def render(sources: list[dict], manifest: dict) -> str:
         "",
         "Generated from `pipeline/sources.yml` - **do not hand-edit this "
         "file**, it is overwritten on every pipeline run "
-        "(`python -m self_assessment_wiki.pipeline.render_sources_index`, or "
+        "(`uv run sources-index`, or "
         "automatically at the end of "
-        "`python -m self_assessment_wiki.pipeline.fetch`).",
+        "`uv run fetch`).",
         "",
         "These are the *raw* sources. The fetch pipeline mirrors them into "
         "`corpus/` in the repository; the wiki pages you are reading are "

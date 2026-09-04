@@ -34,7 +34,7 @@ jobs:
       - run: uv sync --locked
 
       - name: Fetch sources
-        run: uv run python -m self_assessment_wiki.pipeline.fetch
+        run: uv run fetch
 
       - name: Report what this makes stale
         run: |
@@ -46,14 +46,14 @@ jobs:
             echo 'Run locally on the merged branch:'
             echo
             echo '```bash'
-            echo 'uv run python -m self_assessment_wiki.synth.build extract   # fills the extract cache for changed chunks'
-            echo 'uv run python -m self_assessment_wiki.synth.build compose   # rewrites only the pages whose inputs moved'
+            echo 'uv run extract   # fills the extract cache for changed chunks'
+            echo 'uv run compose   # rewrites only the pages whose inputs moved'
             echo '```'
             echo
             echo '<details><summary>Current plan</summary>'
             echo
             echo '```'
-            uv run python -m self_assessment_wiki.synth.build status || true
+            uv run status || true
             echo '```'
             echo
             echo '</details>'
