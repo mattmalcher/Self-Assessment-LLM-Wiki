@@ -17,6 +17,7 @@ from __future__ import annotations
 
 import json
 import os
+import re
 import shutil
 import subprocess
 import tempfile
@@ -25,9 +26,21 @@ from pathlib import Path
 
 BACKENDS = ("claude-cli", "codex-cli", "anthropic", "openai")
 
+# Seconds to wait after a rate-limit refusal, per attempt. Subscription
+# windows reset on the order of minutes, so 3/6/9s just burns the retries.
+RATE_LIMIT_BACKOFF = (60, 300, 600, 900)
+_RATE_LIMIT = re.compile(
+    r"rate.?limit|429|quota|usage limit|too many requests|overloaded|resource.?exhausted",
+    re.IGNORECASE,
+)
+
 
 class LLMError(RuntimeError):
     pass
+
+
+def is_rate_limit(exc: Exception | None) -> bool:
+    return exc is not None and bool(_RATE_LIMIT.search(str(exc)))
 
 
 class Backend:
@@ -40,9 +53,14 @@ class Backend:
     def complete(self, system: str, prompt: str) -> str:
         raise NotImplementedError
 
-    def call(self, system: str, prompt: str, *, retries: int = 3) -> str:
+    def call(self, system: str, prompt: str, *, retries: int = 5) -> str:
         """complete() with backoff; transient CLI/API failures are common
-        enough over a few hundred chunks that one flake shouldn't sink a run."""
+        enough over a few hundred chunks that one flake shouldn't sink a run.
+
+        A subscription rate limit is not a flake - it clears in minutes, not
+        seconds - so those back off far harder than an ordinary error, which
+        is the difference between an unattended run and a babysat one.
+        """
         last: Exception | None = None
         for attempt in range(retries):
             try:
@@ -52,7 +70,11 @@ class Backend:
                 last = LLMError("empty response")
             except Exception as exc:  # noqa: BLE001 - re-raised below
                 last = exc
-            time.sleep(3 * (attempt + 1))
+            if attempt == retries - 1:
+                break
+            delay = RATE_LIMIT_BACKOFF[min(attempt, len(RATE_LIMIT_BACKOFF) - 1)] \
+                if is_rate_limit(last) else 3 * (attempt + 1)
+            time.sleep(delay)
         raise LLMError(f"{self.name}: failed after {retries} attempts: {last}")
 
 
@@ -71,9 +93,18 @@ class ClaudeCLI(Backend):
             "--output-format", "json",
             "--model", self.model,
             "--system-prompt-file", system_file,
-            # No tool use is wanted here: this is pure text-in/text-out.
+            # Pure text-in/text-out. --restricted still leaves Read/Glob/Grep,
+            # so the model can spend turns exploring the repo it happens to be
+            # run from; --tools "" removes them outright.
             "--restricted",
+            "--tools", "",
             "--strict-mcp-config",
+            # Skip hooks, CLAUDE.md discovery and memory - none of it belongs
+            # in an extraction prompt, and all of it costs tokens.
+            "--bare",
+            # One session transcript per chunk would leave 500+ of them in
+            # ~/.claude/projects for a single run.
+            "--no-session-persistence",
         ]
         cmd += [a for a in os.environ.get("SYNTH_CLAUDE_CLI_ARGS", "").split() if a]
         try:
@@ -82,14 +113,21 @@ class ClaudeCLI(Backend):
             )
         finally:
             Path(system_file).unlink(missing_ok=True)
-        if proc.returncode != 0:
-            raise LLMError(f"claude exited {proc.returncode}: {proc.stderr.strip()[:2000]}")
         try:
             payload = json.loads(proc.stdout)
         except json.JSONDecodeError:
+            payload = None
+        # A failing exit still writes the JSON result to stdout and leaves
+        # stderr empty ("Not logged in", a rate limit), so read stdout first
+        # or the run reports a bare exit code and nothing to act on.
+        if payload is None:
+            if proc.returncode != 0:
+                raise LLMError(f"claude exited {proc.returncode}: "
+                               f"{(proc.stderr.strip() or proc.stdout.strip())[:2000]}")
             return proc.stdout  # older CLIs that ignore --output-format
-        if payload.get("is_error"):
-            raise LLMError(f"claude reported an error: {str(payload.get('result'))[:2000]}")
+        if payload.get("is_error") or proc.returncode != 0:
+            raise LLMError(f"claude reported an error (exit {proc.returncode}): "
+                           f"{str(payload.get('result') or proc.stderr.strip())[:2000]}")
         return payload.get("result", "")
 
 
