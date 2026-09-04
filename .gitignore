@@ -3,3 +3,4 @@ site/
 __pycache__/
 *.pyc
 pipeline/last_run_summary.md
+pipeline/pr_body.md

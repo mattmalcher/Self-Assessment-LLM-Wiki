@@ -9,13 +9,15 @@ from pathlib import Path
 
 REPO_ROOT = Path(__file__).parent.parent
 OUTPUT = REPO_ROOT / "docs" / "meta" / "sources.md"
+GITHUB_BLOB = "https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main"
 
 
 def _link(source: dict) -> str:
     output = source.get("output")
     if output:
-        rel = Path(output).relative_to("docs")
-        return f"[{source['id']}](../{rel.as_posix()})"
+        # The mirror lives in corpus/, which is not part of the published
+        # site, so link it on GitHub rather than as a site-relative page.
+        return f"[{source['id']}]({GITHUB_BLOB}/{Path(output).as_posix()})"
     return source["id"]
 
 
@@ -35,6 +37,11 @@ def render(sources: list[dict], manifest: dict) -> str:
         "file**, it is overwritten on every pipeline run "
         "(`python -m pipeline.render_sources_index`, or automatically at "
         "the end of `python -m pipeline.fetch`).",
+        "",
+        "These are the *raw* sources. The fetch pipeline mirrors them into "
+        "`corpus/` in the repository; the wiki pages you are reading are "
+        "written from that mirror by the synthesis layer - see "
+        "[How this wiki stays current](refresh-process.md).",
         "",
         f"{len(sources)} registered sources: "
         f"{sum(1 for s in sources if s.get('status') == 'fetch')} mirrored, "

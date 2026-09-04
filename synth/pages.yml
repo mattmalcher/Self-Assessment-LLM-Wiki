@@ -1,0 +1,347 @@
+# The wiki's page plan.
+#
+# Each entry is one LLM-written page in docs/. `select` decides, without any
+# model call, which extract notes feed it - that selection is also what
+# decides staleness: change the corpus, the brief or the model and only the
+# affected pages recompose.
+#
+#   id       stable key, used by --only and by synth/manifest.json
+#   section  nav section title for the page's docs/ directory; `synth.report`
+#            writes the .pages nav files from this, in the order below
+#   output   path written (must live under docs/)
+#   brief    the instruction handed to the composer alongside the notes
+#   select:
+#     docs        corpus-relative path prefixes to draw from (omit = all)
+#     relevance   which extract tiers to admit: core / related / none
+#     match       case-insensitive regexes over each note's heading, summary,
+#                 topics and refs; a note must hit at least one. Notes are
+#                 ranked by how many patterns they hit.
+#     max_notes   cap on notes handed to the composer (cost control)
+
+# ---------------------------------------------------------------------------
+# The Self Assessment lifecycle - the spine of the wiki
+# ---------------------------------------------------------------------------
+
+- id: who-must-file
+  title: Who must file a Self Assessment return
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/who-must-file.md
+  brief: >-
+    Set out who is brought into Self Assessment and how. Cover the notice to
+    file as the thing that actually creates the obligation, the statutory
+    obligation to notify chargeability, who HMRC issues notices to and why,
+    the criteria and thresholds that pull someone in, who can be taken out
+    again, and how a notice can be withdrawn. Distinguish carefully between
+    the statutory position and HMRC's operational criteria.
+  select:
+    relevance: [core, related]
+    match:
+      - notice to file|notice requiring|section 8|s\.8
+      - chargeab|notify|notification
+      - who (must|should|needs)|criteria|register(ing|ed)? for
+      - withdraw
+    max_notes: 80
+
+- id: the-return
+  title: The return itself - content, formats and schedules
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/the-return.md
+  brief: >-
+    Describe what a Self Assessment return legally is and what it must
+    contain: the main return, supplementary pages and the income sources they
+    correspond to, what "delivering" a return means, electronic vs paper
+    filing, the self-assessment (calculation) that forms part of it, and
+    HMRC's power to determine the form. Include the helpsheet families that
+    support particular schedules.
+  select:
+    relevance: [core, related]
+    match:
+      - return|SA1\d\d|supplementary page|schedule
+      - electronic|online|paper
+      - self.?assessment of tax|calculat
+    max_notes: 90
+
+- id: deadlines-and-amendments
+  title: Deadlines, amendments and corrections
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/deadlines-and-amendments.md
+  brief: >-
+    A precise, tabulated account of every Self Assessment date: filing
+    deadlines (paper and online), the notice-issued-late variants, the
+    taxpayer's amendment window, HMRC's correction power, and how each date
+    is computed from the end of the tax year or from the date of the notice.
+    Express each as a rule an implementation could evaluate.
+  select:
+    relevance: [core, related]
+    match:
+      - 31 (january|october)|deadline|filing date|due date
+      - amend|correct
+      - three months|12 months|nine months|time limit
+    max_notes: 80
+
+- id: payments-and-collection
+  title: Payments, payments on account and collection
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/payments-and-collection.md
+  brief: >-
+    How the money moves: balancing payment, payments on account and how they
+    are calculated and reduced, the de minimis and majority-of-tax-deducted
+    exclusions, collection through PAYE coding, time to pay, and interest on
+    late and overpaid tax. Give the arithmetic explicitly wherever the
+    sources state it.
+  select:
+    relevance: [core, related]
+    match:
+      - payment on account|balancing payment|payments? on account
+      - interest|repayment supplement|late payment
+      - collect|coding out|PAYE code|time to pay
+    max_notes: 80
+
+- id: records-and-information
+  title: Records, information powers and inspections
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/records-and-information.md
+  brief: >-
+    What records a Self Assessment taxpayer must keep, for how long, and what
+    happens if they don't. Then HMRC's information and inspection powers as
+    they apply to Self Assessment - information notices, third-party notices,
+    approvals, safeguards, and the penalties for non-compliance.
+  select:
+    relevance: [core, related]
+    match:
+      - record|retention|keep|preserve
+      - information notice|inspect|schedule 36|third.?party
+    max_notes: 70
+
+- id: enquiries
+  title: Enquiries into a return
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/enquiries.md
+  brief: >-
+    The enquiry regime end to end: the enquiry window and how it is
+    calculated, what opening an enquiry does, the scope of an enquiry into an
+    amendment, information gathering during it, partial and final closure
+    notices, applications to the tribunal to close an enquiry, and the
+    interaction with discovery. Contrast the statute with HMRC's own guidance
+    on how it runs enquiries.
+  select:
+    relevance: [core, related]
+    match:
+      - enquir|9A|closure notice|28A|28B
+      - open|window
+    max_notes: 80
+
+- id: assessments-and-discovery
+  title: Assessments, discovery and time limits
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/assessments-and-discovery.md
+  brief: >-
+    Determinations where no return is filed, discovery assessments and the
+    conditions that unlock them, the staleness and protection arguments, and
+    the whole ladder of assessing time limits (ordinary, careless,
+    deliberate, offshore). Present the time limits as a table keyed on
+    behaviour.
+  select:
+    relevance: [core, related]
+    match:
+      - discovery|29|determination|assessment
+      - time limit|four years|six years|twenty years|20 years
+      - careless|deliberate|offshore
+    max_notes: 80
+
+- id: penalties
+  title: Penalties
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/penalties.md
+  brief: >-
+    Every penalty a Self Assessment taxpayer can incur, as tables: late
+    filing (including the daily and 6/12-month tiers), late payment,
+    failure to notify, inaccuracy penalties keyed on behaviour and
+    disclosure, and record-keeping penalties. Cover reductions for
+    disclosure, suspension, special reduction, and reasonable excuse - what
+    it is, what the sources say it is not, and how it is established.
+  select:
+    relevance: [core, related]
+    match:
+      - penalt|surcharge
+      - reasonable excuse|mitigat|suspend|special reduction
+      - careless|deliberate|conceal|disclosure
+    max_notes: 90
+
+- id: appeals-and-reviews
+  title: Appeals, reviews and the tribunals
+  section: The Self Assessment lifecycle
+  output: docs/lifecycle/appeals-and-reviews.md
+  brief: >-
+    What can be appealed and what cannot, how and when an appeal is made,
+    late appeals, HMRC's internal review (offered and required), postponement
+    of tax pending appeal, ADR, and the route to the First-tier Tribunal and
+    onward. Include the FTT procedure rules that govern how such an appeal
+    actually runs - categorisation, directions, hearings, costs.
+  select:
+    relevance: [core, related]
+    match:
+      - appeal|review|tribunal|hearing
+      - postpone|ADR|alternative dispute
+      - rule \d|categor|direction
+    max_notes: 80
+
+# ---------------------------------------------------------------------------
+# What the return has to compute
+# ---------------------------------------------------------------------------
+
+- id: income-charges
+  title: What income is charged, and where it goes on the return
+  section: What the return computes
+  output: docs/computation/income-charges.md
+  brief: >-
+    Map the income types a Self Assessment return has to handle onto the
+    provisions that charge them and the helpsheets that explain them:
+    employment income and benefits, pensions, trading and property income
+    (including furnished holiday lettings), savings and dividends, foreign
+    income and the remittance/FIG position, chargeable event gains, and other
+    taxable income. For each, say what determines the amount charged.
+  select:
+    relevance: [core, related]
+    match:
+      - employment income|earnings|benefit|pension
+      - propert|trading|self.?employ|holiday letting
+      - savings|dividend|interest income
+      - foreign|remittance|FIG
+      - chargeable event|life (insurance|policy)|other taxable income
+    max_notes: 100
+
+- id: reliefs-and-claims
+  title: Reliefs, claims and elections
+  section: What the return computes
+  output: docs/computation/reliefs-and-claims.md
+  brief: >-
+    The reliefs and claims a Self Assessment return commonly carries: EIS,
+    SEIS, CITR, charitable giving, qualifying loan interest, averaging,
+    qualifying care relief, negligible value claims and share loss relief,
+    pension savings charges, and the cap on income tax reliefs. For each,
+    give the conditions, the limits, and the claim mechanism and time limit.
+    Also cover the general machinery for claims made in and outside a return.
+  select:
+    relevance: [core, related]
+    match:
+      - relief|claim|election
+      - EIS|SEIS|CITR|gift aid|charitab
+      - averaging|qualifying care|negligible value|share loss
+      - annual allowance|lifetime allowance|pension saving
+      - cap on|limit on income tax reliefs
+    max_notes: 100
+
+- id: rates-and-thresholds
+  title: Rates, allowances and thresholds
+  section: What the return computes
+  output: docs/computation/rates-and-thresholds.md
+  brief: >-
+    Tabulate the rates, allowances and thresholds the sources give, keyed by
+    tax year, with the source and its date for each. Where the mirrored
+    sources only point at a live GOV.UK page rather than stating figures,
+    say so plainly and link it - do not supply figures from your own
+    knowledge. Flag any figure whose tax year the source does not state.
+  select:
+    relevance: [core, related]
+    match:
+      - rate|allowance|threshold|band|limit
+      - tax year|20\d\d-\d\d
+    max_notes: 80
+
+# ---------------------------------------------------------------------------
+# HMRC's own position, and how the law moves
+# ---------------------------------------------------------------------------
+
+- id: hmrc-interpretation
+  title: HMRC's published interpretation - manuals, SPs, briefs and concessions
+  section: HMRC's published position
+  output: docs/hmrc/interpretation.md
+  brief: >-
+    Explain the status and weight of each kind of HMRC publication -
+    internal manuals, Statements of Practice, Revenue & Customs Briefs,
+    Extra-Statutory Concessions - what each binds, what it doesn't, and how
+    a reader should treat a conflict between a manual and the statute. Then
+    summarise which of them bear on Self Assessment and what they say.
+  select:
+    docs: [hmrc-publications]
+    relevance: [core, related]
+    match:
+      - statement of practice|concession|brief|manual
+      - status|binding|legitimate expectation
+      - .
+    max_notes: 70
+
+- id: case-law-themes
+  title: Case law - what the tribunals are deciding
+  section: Case law
+  output: docs/case-law/themes.md
+  brief: >-
+    From the mirrored tribunal decision listings, describe the recurring
+    themes in Self Assessment litigation - reasonable excuse, discovery,
+    validity of notices, penalty quantum, late appeals - and name the
+    decisions the sources actually list. Be explicit that these are recent
+    listings, not a comprehensive or precedential survey, and that the
+    mirror captures decision metadata rather than full judgments.
+  select:
+    docs: [legal-system/case-law]
+    relevance: [core, related, none]
+    match: [.]
+    max_notes: 60
+
+- id: making-tax-digital
+  title: Making Tax Digital for Income Tax
+  section: Changes ahead
+  output: docs/change/making-tax-digital.md
+  brief: >-
+    What the mirrored sources say about MTD for Income Tax Self Assessment -
+    who is in scope and from when, the thresholds, quarterly updates and the
+    final declaration, and how it changes the obligations described elsewhere
+    in this wiki. Where the sources are thin or out of date on MTD, say so
+    rather than filling the gap.
+  select:
+    relevance: [core, related]
+    match:
+      - making tax digital|MTD|quarterly update|digital record
+    max_notes: 50
+
+# ---------------------------------------------------------------------------
+# Groundwork for the head-of-duty reference implementation
+# ---------------------------------------------------------------------------
+
+- id: rules-inventory
+  title: Rules inventory - the machine-implementable rules found in the sources
+  section: Reference implementation
+  output: docs/reference-implementation/rules-inventory.md
+  brief: >-
+    Produce an inventory, as tables, of every rule in the notes that could be
+    implemented in code. Group by lifecycle stage (notification, filing,
+    payment, enquiry, assessment, penalty, appeal). For each rule give: the
+    inputs it needs, the condition, the result, and the citation. Then list
+    the rules that are stated too vaguely to implement and say what
+    additional source detail would be needed. This page is the bridge from
+    the wiki to a head-of-duty implementation, so favour completeness and
+    precision over readability.
+  select:
+    relevance: [core]
+    match:
+      - must|shall|required|deadline|penalt|time limit|threshold|rate|calculat
+    max_notes: 120
+
+- id: data-requirements
+  title: Data requirements for a head-of-duty implementation
+  section: Reference implementation
+  output: docs/reference-implementation/data-requirements.md
+  brief: >-
+    Working only from the notes, derive what a head-of-duty system for Self
+    Assessment would need to hold: the entities (taxpayer, notice, return,
+    schedule, payment, enquiry, assessment, penalty, appeal), the attributes
+    each needs to evaluate the rules found in the sources, the lifecycle
+    state transitions and what triggers each, and the reference data
+    (rates, thresholds, dates) that must be versioned by tax year. End with
+    the open questions the sources do not answer.
+  select:
+    relevance: [core]
+    match:
+      - .
+    max_notes: 110

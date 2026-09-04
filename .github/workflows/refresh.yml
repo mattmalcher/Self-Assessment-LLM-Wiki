@@ -1,4 +1,11 @@
-name: Refresh sources
+# Stage 1 only: refresh the raw corpus/ mirror.
+#
+# The LLM stages (extract + compose) deliberately do NOT run here. They are
+# meant to run locally against the maintainer's own Claude or OpenAI
+# subscription - see synth/README.md - so CI never needs an API key and
+# never spends one. What this workflow does instead is tell you, in the PR it
+# opens, exactly which wiki pages the corpus change has made stale.
+name: Refresh corpus
 
 on:
   schedule:
@@ -11,7 +18,7 @@ permissions:
   pull-requests: write
 
 concurrency:
-  group: refresh-sources
+  group: refresh-corpus
   cancel-in-progress: false
 
 jobs:
@@ -27,13 +34,36 @@ jobs:
 
       - run: pip install -r requirements.txt
 
-      - name: Run fetch pipeline
+      - name: Fetch sources
         run: python -m pipeline.fetch
+
+      - name: Report what this makes stale
+        run: |
+          {
+            cat pipeline/last_run_summary.md
+            echo
+            echo '### Synthesis work this creates'
+            echo
+            echo 'Run locally on the merged branch:'
+            echo
+            echo '```bash'
+            echo 'python -m synth.build extract   # fills the extract cache for changed chunks'
+            echo 'python -m synth.build compose   # rewrites only the pages whose inputs moved'
+            echo '```'
+            echo
+            echo '<details><summary>Current plan</summary>'
+            echo
+            echo '```'
+            python -m synth.build status || true
+            echo '```'
+            echo
+            echo '</details>'
+          } > pipeline/pr_body.md
 
       - name: Check for changes
         id: diff
         run: |
-          if git diff --quiet -- docs pipeline/manifest.json; then
+          if git diff --quiet -- corpus pipeline/manifest.json docs/meta/sources.md; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -43,11 +73,12 @@ jobs:
         if: steps.diff.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
-          commit-message: "Refresh sources"
-          title: "Scheduled source refresh"
-          body-path: pipeline/last_run_summary.md
-          branch: automated/refresh-sources
+          commit-message: "Refresh corpus"
+          title: "Scheduled corpus refresh"
+          body-path: pipeline/pr_body.md
+          branch: automated/refresh-corpus
           delete-branch: true
           add-paths: |
-            docs
+            corpus
+            docs/meta/sources.md
             pipeline/manifest.json

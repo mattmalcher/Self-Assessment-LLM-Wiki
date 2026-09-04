@@ -1,0 +1,5 @@
+# Written by `python -m synth.report` - do not hand-edit.
+title: The Self Assessment lifecycle
+nav:
+  - who-must-file.md
+  - ...

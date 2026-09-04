@@ -1,58 +1,81 @@
 # Self Assessment LLM Wiki
 
-A reference covering the legal and HMRC-publication landscape around UK
-**Self Assessment** (Income Tax): the primary and secondary legislation that
-creates the obligations, the case law that interprets them, and HMRC's own
-policy, guidance, and customer-facing publications that implement them.
+A reference on UK **Self Assessment** (Income Tax), written by an LLM from a
+continuously refreshed mirror of the primary material: the legislation that
+creates the obligations, the tribunal decisions that interpret it, HMRC's own
+manuals and policy publications, and the customer-facing guidance that
+implements it.
 
-It exists to be a single, well-cited place an LLM (or a person) can draw on
-when reasoning about Self Assessment — not a restatement in HMRC's or
-Parliament's words, but the actual sourced text, kept current.
+Every page here is generated. Nothing on it is written from the model's own
+knowledge of tax law — each page is composed only from structured notes
+extracted from mirrored source documents, and every rule, figure and deadline
+carries a citation back to the provision it came from. Pages list the sources
+they drew on at the foot.
 
-## Why this exists
+## How to read this site
 
-Tax obligations for Self Assessment come from several layers that don't
-live in one place upstream:
+Use the navigation. The sections, in order:
 
-- **Primary legislation** — Acts of Parliament setting the high-level
-  obligations (e.g. [Taxes Management Act 1970](legal-system/primary-legislation/acts/tma-1970.md),
-  [ITEPA 2003](legal-system/primary-legislation/acts/itepa-2003.md)).
-- **Secondary legislation** — Statutory Instruments filling in detail.
-- **Case law** — Tribunal and court decisions interpreting both.
-- **HMRC policy and interpretation** — manuals, Statements of Practice,
-  Revenue & Customs Briefs, and Extra-Statutory Concessions: HMRC's own
-  reading of the above, and how it intends to apply it.
-- **Customer-facing guidance** — GOV.UK guidance, helpsheets, and tools:
-  HMRC's plain-language explanation for taxpayers.
+- **The Self Assessment lifecycle** is the spine: who is brought in, what the
+  return is, when it is due, how the money is paid, and what follows through
+  enquiry, assessment, penalty and appeal.
+- **What the return computes** covers the income charges, the reliefs and
+  claims, and the rates and thresholds.
+- **HMRC's published position** is about status: what a manual, a Statement of
+  Practice or a concession actually binds.
+- **Reference implementation** is the forward-looking part — see
+  [data model notes](reference-implementation/data-model-notes.md).
+- **Meta** explains the machinery
+  ([how this wiki stays current](meta/refresh-process.md)), lists every
+  [tracked source](meta/sources.md), and reports
+  [how much of the corpus has been read](meta/wiki-status.md) so far.
 
-This wiki mirrors all five layers into one searchable, citation-preserving
-site, refreshed automatically as sources change. See
-[How this wiki stays current](meta/refresh-process.md) for the mechanism,
-and [Sources](meta/sources.md) for the full registry of tracked and
-registered-but-not-yet-fetched sources.
+Sections whose pages have not been composed yet do not appear in the
+navigation at all; [wiki status](meta/wiki-status.md) lists every planned page
+and whether it exists.
 
-## Scope note
+## Three layers, not one
 
-Coverage is prioritised for **Self Assessment** specifically. Some
-collections referenced in the source registry (e.g. the full HMRC manuals
-index, VAT notices) are **registered** — tracked so they can be pulled in
-cheaply later — without being fully mirrored yet. Pages built from
-registered-but-unfetched sources are marked as such.
+```
+upstream sources          corpus/              extracts/            docs/
+legislation.gov.uk   ->   raw mirrored    ->   structured JSON  ->  this wiki
+GOV.UK Content API        markdown,            notes per chunk,     (LLM-written,
+HMRC manuals              deterministic        cached by hash       cited)
+Find Case Law             fetch                (LLM)                (LLM)
+```
 
-## Looking ahead: a "head of duty" reference implementation
+The mirror and the notes both live in the repository. That matters for two
+reasons: you can always check what a page was written from, and a refresh
+only re-reads the chunks that actually changed. See
+[How this wiki stays current](meta/refresh-process.md).
 
-The eventual goal beyond this wiki is a reference implementation that can
-compute Self Assessment obligations directly (who must file, what's owed,
-by when, and what happens if it's late or wrong). This wiki is the
-groundwork for that — see
-[Reference implementation: data model notes](reference-implementation/data-model-notes.md)
-for what such a system would need to extract from these sources. That
+## Scope
+
+Coverage is prioritised for Self Assessment specifically. Some sources are
+**registered** — tracked in the registry so they can be pulled in cheaply —
+without being mirrored yet; [Sources](meta/sources.md) marks which.
+[Wiki status](meta/wiki-status.md) shows what proportion of the mirrored
+corpus has actually been read by the extraction stage, which is the honest
+measure of how complete these pages are.
+
+## Looking ahead: a head-of-duty reference implementation
+
+The goal beyond this wiki is a reference implementation that can compute Self
+Assessment obligations directly — who must file, what is owed, by when, and
+what follows if it is late or wrong. The rules inventory and data requirements
+pages in the reference implementation section are generated specifically to
+feed that, alongside the hand-written
+[data model notes](reference-implementation/data-model-notes.md). That
 implementation is **not** started here.
 
-## Not legal advice
+## Not legal advice, and LLM-written
 
-This is a research aid. Content is mirrored from primary and official
-sources with provenance metadata (source URL, upstream update date, last
-checked date) on every page, but interpretation, currency, and correctness
-for any specific situation should always be checked against the original
-source.
+This is a research aid with two distinct failure modes, and both matter:
+
+1. The mirror can be stale or incomplete relative to upstream.
+2. The pages are **written by a language model**. The prompts forbid adding
+   facts not present in the source notes and require a citation for every
+   figure, but summarisation errors, missed conditions and dropped edge cases
+   are still possible.
+
+Check any figure, date or rule against the cited source before relying on it.

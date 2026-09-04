@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Entrypoint: read pipeline/sources.yml, fetch every `status: fetch` source,
-write changed markdown into docs/, and update pipeline/manifest.json.
+write changed markdown into corpus/, and update pipeline/manifest.json.
+
+This is stage 1 of three: it mirrors sources deterministically. Stages 2 and
+3 (synth/) read corpus/ and write the wiki in docs/.
 
 Usage:
     python -m pipeline.fetch                 # fetch everything due

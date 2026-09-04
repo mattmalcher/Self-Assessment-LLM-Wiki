@@ -1,85 +1,116 @@
+---
+title: How this wiki stays current
+---
+
 # How this wiki stays current
 
-Every source this wiki mirrors is registered once, in
-[`pipeline/sources.yml`](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/pipeline/sources.yml),
-and refreshed by a small Python pipeline rather than by hand. This page is
-for anyone extending the wiki - it explains the mechanism and how to add a
-source.
+The wiki is built in three stages. Only the first runs in CI; the two LLM
+stages run locally, on the maintainer's own Claude or OpenAI subscription.
 
-## The pipeline
+```
+  (1) FETCH                (2) EXTRACT               (3) COMPOSE
+  deterministic            LLM, cached by            LLM, cached by
+  HTTP, in CI              chunk hash                page input hash
 
-`pipeline/fetch.py` reads the registry and, for every source marked
-`status: fetch`, calls the fetcher named by its `type`
-(`pipeline/fetchers/`). Each fetcher:
+  legislation.gov.uk
+  GOV.UK Content API  -->  corpus/*.md    -->   extracts/*.json   -->  docs/*.md
+  Find Case Law            (raw mirror)         (structured notes)     (this wiki)
+  other sites
+```
 
-1. Requests the source (using conditional GET - `If-None-Match` /
-   `If-Modified-Since` - where the upstream supports it, so an unchanged
-   source costs one cheap round trip rather than a full re-download).
-2. Converts what comes back into markdown with a front-matter block
-   recording `source_url`, `source_id`, `category`, and where available the
-   upstream's own `upstream_updated_at`.
-3. Hashes the result and compares it against
-   [`pipeline/manifest.json`](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/pipeline/manifest.json)
-   (committed, one entry per source id). Only a changed hash triggers a
-   write to `docs/`.
+Each stage is separately cached, and every cache is content-addressed, so a
+refresh costs work only in proportion to what actually changed upstream.
 
-That hash comparison is what makes "efficient refresh" mean something
-concrete: a scheduled run touches every registered source, but only
-**writes** (and therefore only shows up in a PR diff) the ones that
-actually changed. `pipeline/render_sources_index.py` then regenerates
-[Sources](sources.md) from the registry + manifest, so that table is always
-in sync.
+## Stage 1 — fetch (deterministic, runs in CI)
 
-### Source types
+`pipeline/sources.yml` is the registry of every tracked source. `pipeline/fetch.py`
+dispatches each entry to a fetcher by `type` and writes markdown into `corpus/`.
 
-| `type` | Covers | How change is detected |
-|---|---|---|
-| `legislation` | Acts, SIs (legislation.gov.uk) | Part-level fetch, `Last-Modified`/hash |
-| `govuk_content` | A single GOV.UK guidance/policy page | Content-API `public_updated_at` + hash |
-| `govuk_content_collection` | A GOV.UK `document_collection` (index of documents, e.g. helpsheets, R&C Briefs) | Same, one index page (optionally with `expand_items: true` to also mirror each member document) |
-| `govuk_content_manual` | An HMRC internal manual (a section tree) | Walks `child_section_groups` breadth-first, capped at `max_sections` fetches per run |
-| `caselaw_feed` | A tribunal's Atom feed on Find Case Law | Feed `ETag`/`Last-Modified`; writes a recent-decisions index, not full judgment text |
-| `web_page` | A plain HTML page (used for non-API, non-government sources) | `ETag`/`Last-Modified` + hash |
+Change detection is layered:
 
-### Automation
+1. **HTTP validators.** Every request sends `If-None-Match` / `If-Modified-Since`
+   from the previous run's `ETag` / `Last-Modified`, stored in
+   `pipeline/manifest.json`. A `304` ends the work for that source.
+2. **Upstream timestamps.** The GOV.UK Content API reports `public_updated_at`;
+   the pipeline compares it before re-rendering.
+3. **Content hash.** The rendered markdown is SHA-256'd and compared to the
+   stored hash. Unchanged content is never rewritten, so it never shows up in
+   a diff and never invalidates the LLM stages downstream.
+4. **Cursors.** Case law feeds are read incrementally from the last-seen entry.
 
-- **`.github/workflows/refresh.yml`** runs the pipeline weekly (and on
-  manual dispatch). If anything changed, it opens a pull request with a
-  summary of what changed, generated from `pipeline/last_run_summary.md`.
-  Nothing is ever pushed straight to `main` - a human merges the PR.
-- **`.github/workflows/pages.yml`** builds and deploys the site with MkDocs
-  whenever `main` changes under `docs/` or `mkdocs.yml`.
+This runs weekly under `.github/workflows/refresh.yml`, which opens a pull
+request when the corpus moves — and tells you in the PR body which wiki pages
+the change has made stale.
 
-A source that fails to fetch (site down, blocked, schema changed) doesn't
-stop the run - it's logged and left as previously fetched, and shows up in
-the PR/run summary as a failure to investigate. See
-`litrg-self-assessment` in the registry for a real example: LITRG blocks
-non-browser requests, so that source is `status: registered` with a plain
-link in [External explainers](../external-explainers.md) instead of a
-perpetually-failing fetch.
+## Stage 2 — extract (LLM, cached per chunk)
 
-## Adding a source
+Corpus documents are far too large to summarise in one pass: the Taxes
+Management Act 1970 mirror alone is ~2MB. So each document is split into
+heading-aware chunks (`synth/chunk.py`), and each chunk is passed to a model
+that returns a **structured JSON note** — not prose:
 
-1. Add an entry to `pipeline/sources.yml` with a unique `id`, the right
-   `type`, and `status: registered` if you're not ready to mirror it yet.
-2. To actually pull it, set `status: fetch` and an `output` path under
-   `docs/`.
-3. Run `python -m pipeline.fetch --only <id>` locally to check the result
-   before committing.
-4. If no existing `type` fits (a new upstream shape), add a fetcher module
-   under `pipeline/fetchers/` and register it in `_DISPATCH` in
-   `pipeline/fetch.py`.
+- a relevance judgement (`core` / `related` / `none`, for Self Assessment
+  specifically)
+- topic tags and a short summary
+- lists of obligations, deadlines, amounts, penalties, definitions,
+  cross-references and caveats, each carrying a citation `ref`
 
-## Known limitations
+Notes land in `extracts/`, one JSON file per corpus document, **keyed by the
+SHA-256 of the chunk text**. That key is the whole efficiency mechanism:
+chunk boundaries follow headings, so amending three sections of an Act changes
+three chunk hashes and leaves the rest cached. The next run re-reads three
+chunks, not 141. Notes whose chunk no longer exists are pruned automatically.
 
-- `govuk_content_manual` sections are capped per run (`max_sections`) so
-  the very large manuals (Enquiry Manual, Compliance Handbook) are
-  partially mirrored - the most central sections first, since traversal is
-  breadth-first from the manual root. Raise the cap in `sources.yml` and
-  re-run to pull further.
-- `caselaw_feed` sources are a recent-decisions index (title, citation,
-  date, link), not full judgment text - judgments are long and
-  unevenly structured; the source link is the citable copy.
-- Sites with bot protection (e.g. LITRG) can't be mirrored without a
-  headless browser, which this pipeline deliberately doesn't carry. Such
-  sources stay `registered` with a direct link instead.
+The extract files are committed. They are both the cache and the structured
+intermediate that a future head-of-duty implementation would consume directly
+— see the [data model notes](../reference-implementation/data-model-notes.md).
+
+## Stage 3 — compose (LLM, cached per page)
+
+`synth/pages.yml` defines each wiki page: its title, output path, a brief, and
+a **deterministic selector** — which corpus paths to draw from, which relevance
+tiers to admit, and regexes that a note's heading, summary, topics or citations
+must match. Selection involves no model call, which is what makes staleness
+cheap to compute:
+
+> A page's `input_hash` is the SHA-256 of its brief, the compose prompt, the
+> model name, and the sorted set of chunk hashes selected for it. If that hash
+> matches `synth/manifest.json`, the page is up to date and is skipped.
+
+So a corpus change only recomposes the pages whose selected notes actually
+moved. Editing one page's brief recomposes that page alone.
+
+The composer is told to use **only** the supplied notes, to cite every rule and
+figure, to distinguish statute from HMRC interpretation from customer guidance,
+and to declare gaps rather than fill them from its own knowledge. Each page is
+written with front matter recording the model, date, input hash and note count,
+and a footer listing every source it drew on.
+
+## Running it
+
+```bash
+python -m pipeline.fetch          # stage 1 — no API access needed
+python -m synth.build status      # what's stale, no model calls
+python -m synth.build extract     # stage 2
+python -m synth.build compose     # stage 3
+python -m synth.report            # regenerate this site's status page
+```
+
+`synth.build` defaults to `--backend claude-cli`, which shells out to the
+`claude` CLI and therefore runs on a Claude Code subscription with no API key.
+`--backend codex-cli` does the same through `codex exec`; `--backend anthropic`
+and `--backend openai` use API keys instead. See the repository's
+`synth/README.md` for the full set of options and cost controls.
+
+## Adding a source, or a page
+
+- **A source:** add an entry to `pipeline/sources.yml` with a unique `id`,
+  a `type` matching a fetcher, `status: fetch` and an `output` path under
+  `corpus/`. Run `python -m pipeline.fetch --only <id>`.
+- **A page:** add an entry to `synth/pages.yml` with an `id`, `title`,
+  `output` under `docs/`, a `brief`, and a `select` block. Check the selector
+  with `python -m synth.build compose --dry-run`, which reports how many notes
+  it picks up, before spending a model call on it.
+
+[Wiki status](wiki-status.md) reports how much of the corpus has been through
+stage 2 and when each page last went through stage 3.

@@ -38,7 +38,7 @@
   title: Income Tax (Earnings and Pensions) Act 2003
   url: https://www.legislation.gov.uk/ukpga/2003/1
   status: fetch
-  output: docs/legal-system/primary-legislation/acts/itepa-2003.md
+  output: corpus/legal-system/primary-legislation/acts/itepa-2003.md
   note: Defines employment income, pensions and social security income charged to Income Tax.
 
 - id: crca-2005
@@ -47,7 +47,7 @@
   title: Commissioners for Revenue and Customs Act 2005
   url: https://www.legislation.gov.uk/ukpga/2005/11
   status: fetch
-  output: docs/legal-system/primary-legislation/acts/crca-2005.md
+  output: corpus/legal-system/primary-legislation/acts/crca-2005.md
   note: Establishes HMRC and the Commissioners' powers and duties.
 
 - id: tma-1970
@@ -56,7 +56,7 @@
   title: Taxes Management Act 1970
   url: https://www.legislation.gov.uk/ukpga/1970/9
   status: fetch
-  output: docs/legal-system/primary-legislation/acts/tma-1970.md
+  output: corpus/legal-system/primary-legislation/acts/tma-1970.md
   note: >-
     Not in the original brief, added because it is the actual Self Assessment
     administration act: returns, enquiries, assessments, appeals, and
@@ -73,7 +73,7 @@
   title: Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009
   url: https://www.legislation.gov.uk/uksi/2009/273
   status: fetch
-  output: docs/legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md
+  output: corpus/legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md
   note: Governs how Self Assessment appeals are actually litigated at the FTT.
 
 - id: si-search-tax
@@ -97,7 +97,7 @@
   title: Upper Tribunal (Tax and Chancery Chamber) decisions
   url: https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukut/tcc
   status: fetch
-  output: docs/legal-system/case-law/upper-tribunal-tax-chancery.md
+  output: corpus/legal-system/case-law/upper-tribunal-tax-chancery.md
   max_items: 40
 
 - id: caselaw-ftt-tc
@@ -106,7 +106,7 @@
   title: First-tier Tribunal (Tax Chamber) decisions
   url: https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukftt/tc
   status: fetch
-  output: docs/legal-system/case-law/first-tier-tribunal-tax-chamber.md
+  output: corpus/legal-system/case-law/first-tier-tribunal-tax-chamber.md
   max_items: 40
 
 # ---------------------------------------------------------------------------
@@ -119,7 +119,7 @@
   title: Self Assessment Legal Framework manual (SALF)
   url: /hmrc-internal-manuals/self-assessment-legal-framework
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/manuals/salf.md
+  output: corpus/hmrc-publications/policy-and-interpretation/manuals/salf.md
   max_sections: 100
 
 - id: hmrc-manual-sam
@@ -128,7 +128,7 @@
   title: Self Assessment manual (SAM)
   url: /hmrc-internal-manuals/self-assessment-manual
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/manuals/sam.md
+  output: corpus/hmrc-publications/policy-and-interpretation/manuals/sam.md
   max_sections: 120
   note: Added - HMRC's own operational manual for running Self Assessment (not in original brief).
 
@@ -138,7 +138,7 @@
   title: Enquiry Manual (EM)
   url: /hmrc-internal-manuals/enquiry-manual
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/manuals/em.md
+  output: corpus/hmrc-publications/policy-and-interpretation/manuals/em.md
   max_sections: 100
 
 - id: hmrc-manual-ch
@@ -147,7 +147,7 @@
   title: Compliance Handbook (CH)
   url: /hmrc-internal-manuals/compliance-handbook
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/manuals/ch.md
+  output: corpus/hmrc-publications/policy-and-interpretation/manuals/ch.md
   max_sections: 100
   note: Penalties and time limits - key for the future penalty/interest engine.
 
@@ -157,7 +157,7 @@
   title: Appeals, Reviews and Tribunals Guidance (ARTG)
   url: /hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/manuals/artg.md
+  output: corpus/hmrc-publications/policy-and-interpretation/manuals/artg.md
   max_sections: 80
 
 - id: hmrc-manuals-index
@@ -166,7 +166,7 @@
   title: HMRC manuals (full index)
   url: /government/collections/hmrc-manuals
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/manuals/index.md
+  output: corpus/hmrc-publications/policy-and-interpretation/manuals/index.md
   note: Full index of every HMRC manual, for visibility. Only the five above are mirrored in full.
 
 # ---------------------------------------------------------------------------
@@ -179,7 +179,7 @@
   title: HMRC Statements of Practice
   url: /government/collections/statements-of-practice
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/statements-of-practice.md
+  output: corpus/hmrc-publications/policy-and-interpretation/statements-of-practice.md
 
 - id: hmrc-rc-briefs
   category: hmrc-publications.policy-and-interpretation
@@ -187,7 +187,7 @@
   title: Revenue and Customs Briefs
   url: /government/collections/revenue-and-customs-briefs
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/revenue-and-customs-briefs.md
+  output: corpus/hmrc-publications/policy-and-interpretation/revenue-and-customs-briefs.md
 
 - id: hmrc-escs
   category: hmrc-publications.policy-and-interpretation
@@ -195,7 +195,7 @@
   title: Extra-Statutory Concessions
   url: /government/collections/extra-statutory-concessions
   status: fetch
-  output: docs/hmrc-publications/policy-and-interpretation/extra-statutory-concessions.md
+  output: corpus/hmrc-publications/policy-and-interpretation/extra-statutory-concessions.md
 
 # ---------------------------------------------------------------------------
 # HMRC publications > Rates & allowances
@@ -207,7 +207,7 @@
   title: HMRC rates and allowances
   url: /government/collections/rates-and-allowances-hm-revenue-and-customs
   status: fetch
-  output: docs/hmrc-publications/rates-and-allowances.md
+  output: corpus/hmrc-publications/rates-and-allowances.md
 
 # ---------------------------------------------------------------------------
 # HMRC publications > Customer facing guidance
@@ -219,7 +219,7 @@
   title: "Self Assessment: detailed information"
   url: /government/collections/self-assessment-detailed-information
   status: fetch
-  output: docs/hmrc-publications/customer-facing-guidance/govuk-guidance.md
+  output: corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md
   note: The GOV.UK guidance hub for Self Assessment.
 
 - id: hmrc-vat-notices
@@ -236,7 +236,7 @@
   title: Self Assessment tax return helpsheets
   url: /government/collections/self-assessment-helpsheets-main-self-assessment-tax-return
   status: fetch
-  output: docs/hmrc-publications/customer-facing-guidance/helpsheets/index.md
+  output: corpus/hmrc-publications/customer-facing-guidance/helpsheets/index.md
   expand_items: true
   items_dir: docs/hmrc-publications/customer-facing-guidance/helpsheets
 
@@ -250,7 +250,7 @@
   title: HMRC tools and calculators
   url: /guidance/hmrc-tools-and-calculators
   status: fetch
-  output: docs/hmrc-publications/customer-facing-tools.md
+  output: corpus/hmrc-publications/customer-facing-tools.md
 
 # ---------------------------------------------------------------------------
 # External explainers (not HMRC/government - reputable, independent)
@@ -275,5 +275,5 @@
   title: Self Assessment advice - TaxAid
   url: https://taxaid.org.uk/tax-information/self-assessment-tax-return
   status: fetch
-  output: docs/external-explainers.md
+  output: corpus/external-explainers.md
   section: taxaid

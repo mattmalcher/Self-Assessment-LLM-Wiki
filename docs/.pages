@@ -1,0 +1,8 @@
+# Written by `python -m synth.report` - do not hand-edit.
+nav:
+  - index.md
+  - lifecycle
+  - reference-implementation
+  - external-explainers.md
+  - meta
+  - ...
