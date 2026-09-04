@@ -99,12 +99,14 @@ class ClaudeCLI(Backend):
             "--restricted",
             "--tools", "",
             "--strict-mcp-config",
-            # Skip hooks, CLAUDE.md discovery and memory - none of it belongs
-            # in an extraction prompt, and all of it costs tokens.
-            "--bare",
-            # One session transcript per chunk would leave 500+ of them in
+            # One session transcript per chunk would leave 400+ of them in
             # ~/.claude/projects for a single run.
             "--no-session-persistence",
+            # NOT --bare. It skips config loading, and the subscription
+            # credentials live there: every call fails instantly with
+            # "Not logged in - Please run /login" (claude 2.1.260). It would
+            # only have saved the hooks/CLAUDE.md context anyway, and
+            # --system-prompt-file already replaces the system prompt.
         ]
         cmd += [a for a in os.environ.get("SYNTH_CLAUDE_CLI_ARGS", "").split() if a]
         try:
