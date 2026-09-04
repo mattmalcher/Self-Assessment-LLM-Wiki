@@ -1,0 +1,78 @@
+"""Regenerate docs/meta/sources.md from pipeline/sources.yml + manifest.json.
+
+Run automatically at the end of fetch.py so the published registry table
+never drifts from the actual sources.yml / manifest state.
+"""
+from __future__ import annotations
+
+from pathlib import Path
+
+REPO_ROOT = Path(__file__).parent.parent
+OUTPUT = REPO_ROOT / "docs" / "meta" / "sources.md"
+
+
+def _link(source: dict) -> str:
+    output = source.get("output")
+    if output:
+        rel = Path(output).relative_to("docs")
+        return f"[{source['id']}](../{rel.as_posix()})"
+    return source["id"]
+
+
+def render(sources: list[dict], manifest: dict) -> str:
+    by_category: dict[str, list[dict]] = {}
+    for s in sources:
+        by_category.setdefault(s["category"], []).append(s)
+
+    lines = [
+        "---",
+        "title: Sources",
+        "---",
+        "",
+        "# Sources",
+        "",
+        "Generated from `pipeline/sources.yml` - **do not hand-edit this "
+        "file**, it is overwritten on every pipeline run "
+        "(`python -m pipeline.render_sources_index`, or automatically at "
+        "the end of `python -m pipeline.fetch`).",
+        "",
+        f"{len(sources)} registered sources: "
+        f"{sum(1 for s in sources if s.get('status') == 'fetch')} mirrored, "
+        f"{sum(1 for s in sources if s.get('status') == 'registered')} registered-only.",
+        "",
+    ]
+
+    for category in sorted(by_category):
+        lines.append(f"## {category}")
+        lines.append("")
+        lines.append("| Source | Status | Type | Last checked | Upstream updated |")
+        lines.append("|---|---|---|---|---|")
+        for s in sorted(by_category[category], key=lambda s: s["title"]):
+            m = manifest.get(s["id"], {})
+            status = s.get("status", "?")
+            page = _link(s) if status == "fetch" else s["title"]
+            last_checked = m.get("last_checked", "-") if status == "fetch" else "-"
+            upstream = m.get("upstream_updated_at", "-") if status == "fetch" else "-"
+            lines.append(f"| {page} | {status} | `{s['type']}` | {last_checked} | {upstream} |")
+        lines.append("")
+
+    return "\n".join(lines) + "\n"
+
+
+def main() -> None:
+    import yaml
+
+    sources = yaml.safe_load((REPO_ROOT / "pipeline" / "sources.yml").read_text())
+    manifest = {}
+    manifest_path = REPO_ROOT / "pipeline" / "manifest.json"
+    if manifest_path.exists():
+        import json
+
+        manifest = json.loads(manifest_path.read_text())
+
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
+    OUTPUT.write_text(render(sources, manifest))
+
+
+if __name__ == "__main__":
+    main()

@@ -1,0 +1,279 @@
+# Source registry for the Self Assessment LLM Wiki.
+#
+# This is the single source of truth for every tracked source. `fetch.py`
+# reads this file, dispatches each entry to the fetcher named by `type`,
+# and writes/updates the markdown file at `output`.
+#
+# status:
+#   fetch      - pipeline pulls real content for this source on every run
+#   registered - tracked for visibility/future use, not fetched yet.
+#                Flip to `fetch` and add an `output` path to bring it in.
+#
+# type (see pipeline/fetchers/):
+#   legislation             - legislation.gov.uk Act/SI, via data.xml
+#   govuk_content            - single GOV.UK Content API document (guidance,
+#                               a manual section, a helpsheet, etc.)
+#   govuk_content_collection - a GOV.UK "document_collection", written out
+#                               as an index page of its member documents
+#   govuk_content_manual      - a GOV.UK "manual" hub: walks the manual's
+#                               section tree breadth-first, fetching every
+#                               leaf section's body, capped at `max_sections`
+#                               fetches per run (raise it to pull more).
+#   caselaw_feed              - caselaw.nationalarchives.gov.uk Atom feed,
+#                               incremental by cursor, written as an index
+#                               of recent decisions
+#   web_page                  - generic HTML page, hashed for change
+#                               detection (used for non-gov.uk sources)
+#
+# Every `fetch` entry gets cache-validator + hash state written back into
+# pipeline/manifest.json (not here) so re-runs can skip unchanged sources.
+
+# ---------------------------------------------------------------------------
+# Legal system > Primary legislation
+# ---------------------------------------------------------------------------
+
+- id: itepa-2003
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Income Tax (Earnings and Pensions) Act 2003
+  url: https://www.legislation.gov.uk/ukpga/2003/1
+  status: fetch
+  output: docs/legal-system/primary-legislation/acts/itepa-2003.md
+  note: Defines employment income, pensions and social security income charged to Income Tax.
+
+- id: crca-2005
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Commissioners for Revenue and Customs Act 2005
+  url: https://www.legislation.gov.uk/ukpga/2005/11
+  status: fetch
+  output: docs/legal-system/primary-legislation/acts/crca-2005.md
+  note: Establishes HMRC and the Commissioners' powers and duties.
+
+- id: tma-1970
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Taxes Management Act 1970
+  url: https://www.legislation.gov.uk/ukpga/1970/9
+  status: fetch
+  output: docs/legal-system/primary-legislation/acts/tma-1970.md
+  note: >-
+    Not in the original brief, added because it is the actual Self Assessment
+    administration act: returns, enquiries, assessments, appeals, and
+    penalties (s.7-9, s.28A-28C, s.29-36, s.34-43, s.93-98, Sch 1A/1AB).
+    Central to any future "head of duty" implementation.
+
+# ---------------------------------------------------------------------------
+# Legal system > Secondary legislation
+# ---------------------------------------------------------------------------
+
+- id: si-ftt-tax-chamber-rules-2009
+  category: legal-system.secondary-legislation
+  type: legislation
+  title: Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009
+  url: https://www.legislation.gov.uk/uksi/2009/273
+  status: fetch
+  output: docs/legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md
+  note: Governs how Self Assessment appeals are actually litigated at the FTT.
+
+- id: si-search-tax
+  category: legal-system.secondary-legislation
+  type: web_page
+  title: Statutory Instruments search (tax)
+  url: https://statutoryinstruments.parliament.uk/?SearchTerm=tax
+  status: registered
+  note: >-
+    Live search, not a stable document - not auto-mirrored. Linked directly
+    from docs/legal-system/secondary-legislation/statutory-instruments.md.
+    Individual SIs of interest should be added above as `legislation` entries.
+
+# ---------------------------------------------------------------------------
+# Legal system > Case law
+# ---------------------------------------------------------------------------
+
+- id: caselaw-ut-tcc
+  category: legal-system.case-law
+  type: caselaw_feed
+  title: Upper Tribunal (Tax and Chancery Chamber) decisions
+  url: https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukut/tcc
+  status: fetch
+  output: docs/legal-system/case-law/upper-tribunal-tax-chancery.md
+  max_items: 40
+
+- id: caselaw-ftt-tc
+  category: legal-system.case-law
+  type: caselaw_feed
+  title: First-tier Tribunal (Tax Chamber) decisions
+  url: https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukftt/tc
+  status: fetch
+  output: docs/legal-system/case-law/first-tier-tribunal-tax-chamber.md
+  max_items: 40
+
+# ---------------------------------------------------------------------------
+# HMRC publications > Policy & formal interpretations > Tax manuals
+# ---------------------------------------------------------------------------
+
+- id: hmrc-manual-salf
+  category: hmrc-publications.policy-and-interpretation.manuals
+  type: govuk_content_manual
+  title: Self Assessment Legal Framework manual (SALF)
+  url: /hmrc-internal-manuals/self-assessment-legal-framework
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/manuals/salf.md
+  max_sections: 100
+
+- id: hmrc-manual-sam
+  category: hmrc-publications.policy-and-interpretation.manuals
+  type: govuk_content_manual
+  title: Self Assessment manual (SAM)
+  url: /hmrc-internal-manuals/self-assessment-manual
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/manuals/sam.md
+  max_sections: 120
+  note: Added - HMRC's own operational manual for running Self Assessment (not in original brief).
+
+- id: hmrc-manual-em
+  category: hmrc-publications.policy-and-interpretation.manuals
+  type: govuk_content_manual
+  title: Enquiry Manual (EM)
+  url: /hmrc-internal-manuals/enquiry-manual
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/manuals/em.md
+  max_sections: 100
+
+- id: hmrc-manual-ch
+  category: hmrc-publications.policy-and-interpretation.manuals
+  type: govuk_content_manual
+  title: Compliance Handbook (CH)
+  url: /hmrc-internal-manuals/compliance-handbook
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/manuals/ch.md
+  max_sections: 100
+  note: Penalties and time limits - key for the future penalty/interest engine.
+
+- id: hmrc-manual-artg
+  category: hmrc-publications.policy-and-interpretation.manuals
+  type: govuk_content_manual
+  title: Appeals, Reviews and Tribunals Guidance (ARTG)
+  url: /hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/manuals/artg.md
+  max_sections: 80
+
+- id: hmrc-manuals-index
+  category: hmrc-publications.policy-and-interpretation.manuals
+  type: govuk_content_collection
+  title: HMRC manuals (full index)
+  url: /government/collections/hmrc-manuals
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/manuals/index.md
+  note: Full index of every HMRC manual, for visibility. Only the five above are mirrored in full.
+
+# ---------------------------------------------------------------------------
+# HMRC publications > Policy & formal interpretations > everything else
+# ---------------------------------------------------------------------------
+
+- id: hmrc-statements-of-practice
+  category: hmrc-publications.policy-and-interpretation
+  type: govuk_content_collection
+  title: HMRC Statements of Practice
+  url: /government/collections/statements-of-practice
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/statements-of-practice.md
+
+- id: hmrc-rc-briefs
+  category: hmrc-publications.policy-and-interpretation
+  type: govuk_content_collection
+  title: Revenue and Customs Briefs
+  url: /government/collections/revenue-and-customs-briefs
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/revenue-and-customs-briefs.md
+
+- id: hmrc-escs
+  category: hmrc-publications.policy-and-interpretation
+  type: govuk_content_collection
+  title: Extra-Statutory Concessions
+  url: /government/collections/extra-statutory-concessions
+  status: fetch
+  output: docs/hmrc-publications/policy-and-interpretation/extra-statutory-concessions.md
+
+# ---------------------------------------------------------------------------
+# HMRC publications > Rates & allowances
+# ---------------------------------------------------------------------------
+
+- id: hmrc-rates-allowances
+  category: hmrc-publications.rates-and-allowances
+  type: govuk_content_collection
+  title: HMRC rates and allowances
+  url: /government/collections/rates-and-allowances-hm-revenue-and-customs
+  status: fetch
+  output: docs/hmrc-publications/rates-and-allowances.md
+
+# ---------------------------------------------------------------------------
+# HMRC publications > Customer facing guidance
+# ---------------------------------------------------------------------------
+
+- id: govuk-sa-detailed-information
+  category: hmrc-publications.customer-facing-guidance
+  type: govuk_content_collection
+  title: "Self Assessment: detailed information"
+  url: /government/collections/self-assessment-detailed-information
+  status: fetch
+  output: docs/hmrc-publications/customer-facing-guidance/govuk-guidance.md
+  note: The GOV.UK guidance hub for Self Assessment.
+
+- id: hmrc-vat-notices
+  category: hmrc-publications.customer-facing-guidance
+  type: govuk_content_collection
+  title: VAT notices (numerical order)
+  url: /government/collections/vat-notices-numerical-order
+  status: registered
+  note: Out of Self Assessment (Income Tax) scope; registered for completeness only.
+
+- id: sa-helpsheets
+  category: hmrc-publications.customer-facing-guidance
+  type: govuk_content_collection
+  title: Self Assessment tax return helpsheets
+  url: /government/collections/self-assessment-helpsheets-main-self-assessment-tax-return
+  status: fetch
+  output: docs/hmrc-publications/customer-facing-guidance/helpsheets/index.md
+  expand_items: true
+  items_dir: docs/hmrc-publications/customer-facing-guidance/helpsheets
+
+# ---------------------------------------------------------------------------
+# HMRC publications > Customer facing tools
+# ---------------------------------------------------------------------------
+
+- id: hmrc-tools-calculators
+  category: hmrc-publications.customer-facing-tools
+  type: govuk_content
+  title: HMRC tools and calculators
+  url: /guidance/hmrc-tools-and-calculators
+  status: fetch
+  output: docs/hmrc-publications/customer-facing-tools.md
+
+# ---------------------------------------------------------------------------
+# External explainers (not HMRC/government - reputable, independent)
+# ---------------------------------------------------------------------------
+
+- id: litrg-self-assessment
+  category: external-explainers
+  type: web_page
+  title: "Self assessment and tax returns - Low Incomes Tax Reform Group (LITRG)"
+  url: https://www.litrg.org.uk/tax-nic/how-tax-collected/self-assessment-and-tax-returns
+  status: registered
+  note: >-
+    LITRG's site returns HTTP 403 to non-browser requests (bot protection),
+    confirmed during initial fetch - not something worth working around for
+    one external explainer. Linked directly (not mirrored) from
+    docs/external-explainers.md instead. Re-check periodically; flip to
+    `fetch` if that ever changes.
+
+- id: taxaid-self-assessment
+  category: external-explainers
+  type: web_page
+  title: Self Assessment advice - TaxAid
+  url: https://taxaid.org.uk/tax-information/self-assessment-tax-return
+  status: fetch
+  output: docs/external-explainers.md
+  section: taxaid

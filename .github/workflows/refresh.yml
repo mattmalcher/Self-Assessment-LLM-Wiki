@@ -1,0 +1,53 @@
+name: Refresh sources
+
+on:
+  schedule:
+    # Mondays 06:00 UTC
+    - cron: "0 6 * * 1"
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+  pull-requests: write
+
+concurrency:
+  group: refresh-sources
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - run: pip install -r requirements.txt
+
+      - name: Run fetch pipeline
+        run: python -m pipeline.fetch
+
+      - name: Check for changes
+        id: diff
+        run: |
+          if git diff --quiet -- docs pipeline/manifest.json; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Open pull request
+        if: steps.diff.outputs.changed == 'true'
+        uses: peter-evans/create-pull-request@v7
+        with:
+          commit-message: "Refresh sources"
+          title: "Scheduled source refresh"
+          body-path: pipeline/last_run_summary.md
+          branch: automated/refresh-sources
+          delete-branch: true
+          add-paths: |
+            docs
+            pipeline/manifest.json

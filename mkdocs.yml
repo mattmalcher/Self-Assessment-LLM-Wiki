@@ -1,0 +1,49 @@
+site_name: Self Assessment LLM Wiki
+site_description: >-
+  A continuously refreshed reference covering the legal and HMRC-publication
+  landscape around UK Self Assessment: primary and secondary legislation,
+  case law, HMRC manuals and policy publications, rates and allowances, and
+  customer-facing guidance.
+site_url: https://mattmalcher.github.io/Self-Assessment-LLM-Wiki/
+repo_url: https://github.com/mattmalcher/Self-Assessment-LLM-Wiki
+repo_name: mattmalcher/Self-Assessment-LLM-Wiki
+edit_uri: ""
+docs_dir: docs
+
+theme:
+  name: material
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+  - awesome-pages
+
+markdown_extensions:
+  - tables
+  - toc:
+      permalink: true
+  - admonition
+  - def_list
+  - footnotes
+  - attr_list
