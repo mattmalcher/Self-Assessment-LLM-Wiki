@@ -7,7 +7,8 @@ from __future__ import annotations
 
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).parent.parent
+PIPELINE_DIR = Path(__file__).parent
+REPO_ROOT = PIPELINE_DIR.parent.parent.parent
 OUTPUT = REPO_ROOT / "docs" / "meta" / "sources.md"
 GITHUB_BLOB = "https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main"
 
@@ -35,8 +36,9 @@ def render(sources: list[dict], manifest: dict) -> str:
         "",
         "Generated from `pipeline/sources.yml` - **do not hand-edit this "
         "file**, it is overwritten on every pipeline run "
-        "(`python -m pipeline.render_sources_index`, or automatically at "
-        "the end of `python -m pipeline.fetch`).",
+        "(`python -m self_assessment_wiki.pipeline.render_sources_index`, or "
+        "automatically at the end of "
+        "`python -m self_assessment_wiki.pipeline.fetch`).",
         "",
         "These are the *raw* sources. The fetch pipeline mirrors them into "
         "`corpus/` in the repository; the wiki pages you are reading are "
@@ -69,9 +71,9 @@ def render(sources: list[dict], manifest: dict) -> str:
 def main() -> None:
     import yaml
 
-    sources = yaml.safe_load((REPO_ROOT / "pipeline" / "sources.yml").read_text())
+    sources = yaml.safe_load((PIPELINE_DIR / "sources.yml").read_text())
     manifest = {}
-    manifest_path = REPO_ROOT / "pipeline" / "manifest.json"
+    manifest_path = PIPELINE_DIR / "manifest.json"
     if manifest_path.exists():
         import json
 

@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """Entrypoint for the LLM layer.
 
-    python -m synth.build status                 # what's stale, no model calls
-    python -m synth.build extract                # corpus -> extracts/ (cached)
-    python -m synth.build compose                # extracts/ -> docs/
-    python -m synth.build all                    # both, in order
+    python -m self_assessment_wiki.synth.build status                 # what's stale, no model calls
+    python -m self_assessment_wiki.synth.build extract                # corpus -> extracts/ (cached)
+    python -m self_assessment_wiki.synth.build compose                # extracts/ -> docs/
+    python -m self_assessment_wiki.synth.build all                    # both, in order
 
 Run this locally: it is deliberately not part of the scheduled GitHub
 Actions refresh, so it can use whatever Claude or OpenAI subscription you

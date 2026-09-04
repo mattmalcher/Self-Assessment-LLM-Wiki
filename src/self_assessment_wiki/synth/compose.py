@@ -211,7 +211,7 @@ def run(backend: Backend, model: str, *, only: list[str] | None = None, force: b
             continue
         if not work.notes:
             print(f"! {spec['id']}: no extract notes match its selector - "
-                  f"run `python -m synth.build extract` first, or widen `select:`")
+                  f"run `python -m self_assessment_wiki.synth.build extract` first, or widen `select:`")
             failed += 1
             continue
         if verbose:

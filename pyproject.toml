@@ -1,0 +1,33 @@
+[project]
+name = "self-assessment-llm-wiki"
+version = "0.1.0"
+description = "LLM-written reference on UK Self Assessment (Income Tax)"
+requires-python = ">=3.12"
+dependencies = [
+    "mkdocs==1.6.1",
+    "mkdocs-material==9.5.49",
+    "mkdocs-awesome-pages-plugin==2.9.3",
+    "pyyaml==6.0.2",
+    "requests==2.32.3",
+    "markdownify==0.13.1",
+    "beautifulsoup4==4.12.3",
+]
+
+[project.optional-dependencies]
+# Only needed for the API backends of the synthesis layer
+# (`--backend anthropic` / `--backend openai`).
+#
+# The default backend, `claude-cli`, shells out to the `claude` CLI and needs
+# nothing from here - likewise `codex-cli` and the `codex` CLI. Both run on a
+# subscription rather than an API key, which is the point.
+synth = [
+    "anthropic>=0.40",
+    "openai>=1.60",
+]
+
+[tool.uv.build-backend]
+module-name = "self_assessment_wiki"
+
+[build-system]
+requires = ["uv_build>=0.12,<0.13"]
+build-backend = "uv_build"

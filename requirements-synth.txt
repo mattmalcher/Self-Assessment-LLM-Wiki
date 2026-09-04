@@ -1,8 +1,0 @@
-# Only needed for the API backends of the synthesis layer
-# (`--backend anthropic` / `--backend openai`).
-#
-# The default backend, `claude-cli`, shells out to the `claude` CLI and needs
-# nothing from here - likewise `codex-cli` and the `codex` CLI. Both run on a
-# subscription rather than an API key, which is the point.
-anthropic>=0.40
-openai>=1.60

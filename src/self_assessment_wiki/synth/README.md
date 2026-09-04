@@ -16,16 +16,16 @@ corpus/*.md  --[extract]-->  extracts/*.json  --[compose]-->  docs/*.md
 ## Quick start
 
 ```bash
-python -m synth.build status              # what's stale — costs nothing
-python -m synth.build extract --limit 20  # try 20 chunks first
-python -m synth.build compose --only who-must-file
+uv run python -m self_assessment_wiki.synth.build status              # what's stale — costs nothing
+uv run python -m self_assessment_wiki.synth.build extract --limit 20  # try 20 chunks first
+uv run python -m self_assessment_wiki.synth.build compose --only who-must-file
 ```
 
 Then the full run:
 
 ```bash
-python -m synth.build all
-python -m synth.report                    # refresh docs/meta/wiki-status.md
+uv run python -m self_assessment_wiki.synth.build all
+uv run python -m self_assessment_wiki.synth.report                    # refresh docs/meta/wiki-status.md
 ```
 
 ## Backends
@@ -34,8 +34,8 @@ python -m synth.report                    # refresh docs/meta/wiki-status.md
 |---|---|---|
 | `claude-cli` (default) | the `claude` CLI on PATH | your Claude Code subscription — no API key |
 | `codex-cli` | the `codex` CLI on PATH | your ChatGPT subscription — no API key |
-| `anthropic` | `pip install -r requirements-synth.txt` | `ANTHROPIC_API_KEY` |
-| `openai` | `pip install -r requirements-synth.txt` | `OPENAI_API_KEY` |
+| `anthropic` | `uv sync --extra synth` | `ANTHROPIC_API_KEY` |
+| `openai` | `uv sync --extra synth` | `OPENAI_API_KEY` |
 
 Each backend has a per-stage default model (cheap tier for extraction, strong
 tier for composition — see `DEFAULT_MODELS` in `config.py`); `--model` overrides

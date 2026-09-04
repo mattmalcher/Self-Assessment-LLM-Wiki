@@ -6,9 +6,9 @@ This is stage 1 of three: it mirrors sources deterministically. Stages 2 and
 3 (synth/) read corpus/ and write the wiki in docs/.
 
 Usage:
-    python -m pipeline.fetch                 # fetch everything due
-    python -m pipeline.fetch --only itepa-2003 tma-1970
-    python -m pipeline.fetch --dry-run        # resolve URLs, fetch nothing
+    python -m self_assessment_wiki.pipeline.fetch                 # fetch everything due
+    python -m self_assessment_wiki.pipeline.fetch --only itepa-2003 tma-1970
+    python -m self_assessment_wiki.pipeline.fetch --dry-run        # resolve URLs, fetch nothing
 """
 from __future__ import annotations
 
@@ -24,8 +24,8 @@ from . import manifest as manifest_store
 from . import render_sources_index
 from .fetchers import caselaw, govuk_content, legislation, web_page
 
-REPO_ROOT = Path(__file__).parent.parent
-SOURCES_PATH = Path(__file__).parent / "sources.yml"
+PIPELINE_DIR = Path(__file__).parent
+SOURCES_PATH = PIPELINE_DIR / "sources.yml"
 
 _DISPATCH = {
     "legislation": legislation.fetch,
@@ -99,7 +99,7 @@ def main() -> int:
             print(f"  - {source_id}: {err}")
 
     # Emit a summary file for the GitHub Actions workflow to use as a PR body.
-    summary_path = REPO_ROOT / "pipeline" / "last_run_summary.md"
+    summary_path = PIPELINE_DIR / "last_run_summary.md"
     lines = [f"Refreshed {len(sources)} registered sources; {len(changed)} changed.", ""]
     if changed:
         lines.append("### Changed")

@@ -4,12 +4,12 @@ from __future__ import annotations
 import os
 from pathlib import Path
 
-REPO_ROOT = Path(__file__).resolve().parent.parent
+SYNTH_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SYNTH_DIR.parent.parent.parent
 
 CORPUS_DIR = REPO_ROOT / "corpus"
 EXTRACTS_DIR = REPO_ROOT / "extracts"
 DOCS_DIR = REPO_ROOT / "docs"
-SYNTH_DIR = REPO_ROOT / "synth"
 PAGES_PATH = SYNTH_DIR / "pages.yml"
 PROMPTS_DIR = SYNTH_DIR / "prompts"
 MANIFEST_PATH = SYNTH_DIR / "manifest.json"
