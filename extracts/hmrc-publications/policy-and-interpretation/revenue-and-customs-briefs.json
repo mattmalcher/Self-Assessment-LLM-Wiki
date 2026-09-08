@@ -1,0 +1,29 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation",
+  "chunks": {
+    "8c116812ce5113e6": {
+      "chars": 17625,
+      "heading": "Revenue and Customs Briefs",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This is purely a navigational index/collection page, not substantive tax guidance; all listed briefs concern VAT, alcohol duty, or other indirect taxes, none address Self Assessment Income Tax."
+        ],
+        "cross_references": [],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "none",
+        "summary": "This chunk is an index of Revenue and Customs Briefs from GOV.UK, listing 64 documents almost entirely concerning VAT, alcohol duty, and other indirect tax topics. None of the listed briefs relate to UK Self Assessment (Income Tax) filing, deadlines, penalties, or returns.",
+        "topics": []
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/revenue-and-customs-briefs.md",
+  "source_id": "hmrc-rc-briefs",
+  "source_url": "https://www.gov.uk/government/collections/revenue-and-customs-briefs"
+}

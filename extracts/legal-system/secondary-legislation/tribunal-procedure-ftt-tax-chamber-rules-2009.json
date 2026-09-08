@@ -1,221 +1,330 @@
 {
   "category": "legal-system.secondary-legislation",
   "chunks": {
-    "13e0290f710e1fd2": {
-      "chars": 10540,
-      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 1**U.K.Introduction > Overriding objective and parties' obligation to co\\-operate with the TribunalU.K.",
-      "index": 1,
+    "2cbba230e142c516": {
+      "chars": 9098,
+      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3** Procedure before the Tribunal (U.K.) > CHAPTER 3 Hearings (U.K.) > Hearings in a party's absence (U.K.)",
+      "index": 4,
       "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
-          "Rule 5A is a temporary coronavirus provision inserted 10.4.2020 allowing decisions without a hearing in urgent cases where a hearing is not reasonably practicable and it is in the interests of justice.",
-          "Rule 4(1) reflects amendments made by SI 2020/651 (in force 21.7.2020); rule 4(2) was omitted and words in rule 4(3) omitted by the same instrument.",
-          "This is general tribunal procedure, not SA-specific; relevant only as background for how tax appeals before the FTT are managed, not for SA filing/payment/enquiry obligations themselves."
+          "Text contains amendment markers (e.g. [F14], [F17], [F1]) indicating this version reflects amendments to the original 2009 rules; original wording may differ.",
+          "Rule 35(3A), inserted by amendment, disapplies the requirement for written findings/reasons where the Tribunal has already given oral reasons at a hearing.",
+          "Rule 39(2A) allows the Tribunal to direct that the 56-day period for permission to appeal against a preliminary issue decision runs from the date the decision disposing of all issues is made, altering the general rule.",
+          "These rules concern Tax Chamber tribunal procedure generally, not Self Assessment filing/payment obligations specifically; relevant only where an SA-related HMRC decision has been appealed to the Tribunal."
         ],
         "cross_references": [
-          "2007 Act (Tribunals, Courts and Enforcement Act 2007) s.40(1)",
-          "2007 Act Schedule 5 paragraph 3(3)",
-          "2007 Act s.25",
-          "Courts Act 2003 s.2(1)",
-          "Arbitration Act 1996 Part 1",
-          "SI 2009/273 rule 8 (striking out)",
-          "SI 2009/273 rule 18 (lead cases)",
-          "SI 2009/273 rule 24(2)",
-          "SI 2009/273 rule 26(7)",
-          "SI 2009/273 rule 29",
-          "SI 2020/651 (Tribunal Procedure (Amendment) Rules 2020)",
-          "SI 2020/416 (Tribunal Procedure (Coronavirus) (Amendment) Rules 2020)"
-        ],
-        "deadlines": [],
-        "definitions": [],
-        "obligations": [],
-        "penalties": [],
-        "relevance": "none",
-        "summary": "This chunk sets out general First-tier Tribunal (Tax Chamber) procedural rules: the overriding objective of dealing with cases fairly and justly, alternative dispute resolution, delegation of judicial functions to staff, general case management powers, a temporary coronavirus rule on paper decisions, procedure for applying for directions, and consequences of failing to comply with the Rules. It is generic tribunal procedure applicable to all Tax Chamber cases, not specific to Self Assessment filing, payment, enquiry or penalty obligations.",
-        "topics": []
-      },
-      "prompt_hash": "2ff1133f3478bd79"
-    },
-    "1cf0fc5da92e694c": {
-      "chars": 5538,
-      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 4**U.K.Correcting, setting aside, reviewing and appealing Tribunal decisions > Application for permission to appealU.K.",
-      "index": 7,
-      "model": "claude-cli:sonnet",
-      "note": {
-        "amounts": [],
-        "caveats": [
-          "Rule 39(2)(za) and the substituted rule 39(2)(a) and inserted rule 39(2A) were amendments effective 1.4.2013 (S.I. 2013/477) — earlier decisions may be subject to a differently worded rule.",
-          "The date in rule 39(2)(c) (unsuccessful set-aside application) only counts if the set-aside application itself was made within the rule 38 time limit or an extension of it.",
-          "Rule 40 review is only available where the Tribunal is satisfied there was an error of law in the decision (rule 41(1)(b)).",
-          "This chunk concerns FTT Tax Chamber procedural rules generally, not specific to Self Assessment; relevant to SA only insofar as SA appeals proceed through the FTT Tax Chamber."
-        ],
-        "cross_references": [
-          "rule 2 (overriding objective)",
-          "rule 5(3)(a) (power to extend time)",
           "rule 5(3)(e)",
+          "rule 2 (overriding objective)",
           "rule 38 (setting aside a decision which disposes of proceedings)",
+          "rule 39 (application for permission to appeal)",
           "rule 40(1) (review on application for permission to appeal)",
-          "The Tribunal Procedure (Amendment) Rules 2013 (S.I. 2013/477)"
+          "rule 41 (review of a decision)",
+          "rule 5(3)(a) (power to extend time)",
+          "section 9 of the 2007 Act"
         ],
         "deadlines": [
           {
-            "applies_to": "Party seeking permission to appeal a Tribunal decision",
+            "applies_to": "party wanting full reasons where only summary/no reasons given",
+            "name": "Application for full written findings and reasons",
+            "ref": "SI 2009/273 r.35(5)",
+            "rule": "within 14 days after the date the Tribunal sent or otherwise provided the decision notice"
+          },
+          {
+            "applies_to": "party applying to set aside a decision disposing of proceedings",
+            "name": "Application to set aside a decision",
+            "ref": "SI 2009/273 r.38(3)",
+            "rule": "no later than 28 days after the date on which the Tribunal sent notice of the decision"
+          },
+          {
+            "applies_to": "person seeking permission to appeal a Tribunal decision",
             "name": "Application for permission to appeal",
             "ref": "SI 2009/273 r.39(2)",
-            "rule": "No later than 56 days after the latest of: the relevant decision notice; full written reasons for the decision (where it disposes of all issues, or subject to (2A), a preliminary issue under rule 5(3)(e)); notification of amended/corrected reasons following review; or notification that a set-aside application was unsuccessful"
+            "rule": "no later than 56 days after the latest of: decision notice, full written reasons, amended reasons on review, or notification that set-aside application unsuccessful"
           }
         ],
-        "definitions": [],
+        "definitions": [
+          {
+            "meaning": "the exercise of a right of appeal against a decision of the Tribunal",
+            "ref": "SI 2009/273 r.36",
+            "term": "appeal"
+          },
+          {
+            "meaning": "the review of a decision by the Tribunal under section 9 of the 2007 Act",
+            "ref": "SI 2009/273 r.36",
+            "term": "review"
+          }
+        ],
         "obligations": [
           {
-            "deadline": "n/a",
-            "must": "Make a written application to the Tribunal for permission to appeal",
-            "ref": "SI 2009/273 r.39(1)",
-            "trigger": "Wishing to appeal a Tribunal decision",
-            "who": "Person seeking permission to appeal"
+            "deadline": "as soon as reasonably practicable",
+            "must": "provide each party a decision notice stating the decision and notifying rights of appeal",
+            "ref": "SI 2009/273 r.35(2)",
+            "trigger": "after making a decision that finally disposes of all issues or a preliminary issue dealt with following a direction under rule 5(3)(e)",
+            "who": "Tribunal"
           },
           {
-            "deadline": "56 days after the latest relevant date",
-            "must": "Send or deliver the application so it is received no later than 56 days after the latest of specified trigger dates",
+            "deadline": "n/a",
+            "must": "include summary or full written findings of fact and reasons with the decision notice",
+            "ref": "SI 2009/273 r.35(3)",
+            "trigger": "issuing a decision notice",
+            "who": "Tribunal"
+          },
+          {
+            "deadline": "within 14 days after the Tribunal sent the decision notice",
+            "must": "apply in writing for full written findings and reasons before applying for permission to appeal, if only summary/no reasons were given",
+            "ref": "SI 2009/273 r.35(4)-(5)",
+            "trigger": "receipt of decision notice with no or summary reasons",
+            "who": "party"
+          },
+          {
+            "deadline": "as soon as reasonably practicable",
+            "must": "send full written statement of findings and reasons to each party",
+            "ref": "SI 2009/273 r.35(6)",
+            "trigger": "receiving a valid application under r.35(4)-(5)",
+            "who": "Tribunal"
+          },
+          {
+            "deadline": "no later than 28 days after the date the Tribunal sent notice of the decision",
+            "must": "make written application to the Tribunal",
+            "ref": "SI 2009/273 r.38(3)",
+            "trigger": "wishing to set aside a decision disposing of proceedings on grounds in r.38(2)",
+            "who": "party seeking to set aside a decision"
+          },
+          {
+            "deadline": "as soon as practicable",
+            "must": "notify parties in writing of setting aside of a decision",
+            "ref": "SI 2009/273 r.38(4)",
+            "trigger": "decision set aside under r.38",
+            "who": "Tribunal"
+          },
+          {
+            "deadline": "no later than 56 days after the latest of specified trigger dates (decision notice, full written reasons, amended reasons on review, or notice that set-aside application unsuccessful)",
+            "must": "make written application to the Tribunal",
             "ref": "SI 2009/273 r.39(2)",
-            "trigger": "Receipt of decision notice, full written reasons, notification of amended/corrected reasons following review, or notification that a set-aside application was unsuccessful",
-            "who": "Person seeking permission to appeal"
+            "trigger": "seeking permission to appeal a Tribunal decision",
+            "who": "person seeking permission to appeal"
           },
           {
             "deadline": "n/a",
-            "must": "Include in the application a request for an extension of time and the reason the application was not provided in time",
-            "ref": "SI 2009/273 r.39(4)(a)",
-            "trigger": "Application sent later than the time required by paragraph (2) or any extension under rule 5(3)(a)",
-            "who": "Person seeking permission to appeal (late application)"
+            "must": "include a request for extension of time and reasons for lateness in the application",
+            "ref": "SI 2009/273 r.39(4)",
+            "trigger": "application sent later than the r.39(2) deadline",
+            "who": "person seeking permission to appeal out of time"
           },
           {
             "deadline": "n/a",
-            "must": "Not admit a late application unless it extends time under rule 5(3)(a)",
-            "ref": "SI 2009/273 r.39(4)(b)",
-            "trigger": "Late application for permission to appeal",
-            "who": "Tribunal"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Identify the decision to which the application relates, identify the alleged error(s), and state the result sought",
-            "ref": "SI 2009/273 r.39(5)",
-            "trigger": "Making an application for permission to appeal",
-            "who": "Applicant"
-          },
-          {
-            "deadline": "n/a",
-            "must": "First consider, taking into account the overriding objective, whether to review the decision",
+            "must": "first consider whether to review the decision, taking into account the overriding objective",
             "ref": "SI 2009/273 r.40(1)",
-            "trigger": "Receipt of an application for permission to appeal",
+            "trigger": "receiving an application for permission to appeal",
             "who": "Tribunal"
           },
           {
-            "deadline": "n/a",
-            "must": "Consider whether to give permission to appeal if it decides not to review, or reviews and takes no action",
-            "ref": "SI 2009/273 r.40(2)",
-            "trigger": "Decision not to review or no action taken after review",
-            "who": "Tribunal"
-          },
-          {
-            "deadline": "As soon as practicable",
-            "must": "Send a record of its decision to the parties",
+            "deadline": "as soon as practicable",
+            "must": "send a record of its decision on permission to appeal to the parties",
             "ref": "SI 2009/273 r.40(3)",
-            "trigger": "Decision on permission to appeal made",
+            "trigger": "after deciding whether to give permission to appeal",
             "who": "Tribunal"
           },
           {
-            "deadline": "n/a",
-            "must": "Send a statement of reasons for refusal and notification of the right/method/time to apply to the Upper Tribunal for permission",
+            "deadline": "with the record of its decision",
+            "must": "send statement of reasons for refusal and notification of right to apply to Upper Tribunal for permission",
             "ref": "SI 2009/273 r.40(4)",
-            "trigger": "Refusal of permission to appeal",
+            "trigger": "Tribunal refuses permission to appeal",
             "who": "Tribunal"
           },
           {
             "deadline": "n/a",
-            "must": "Notify parties in writing of the outcome of any review",
+            "must": "notify parties in writing of outcome of any review",
             "ref": "SI 2009/273 r.41(2)",
-            "trigger": "A review is undertaken (unless Tribunal decides to take no action)",
-            "who": "Tribunal"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Give every party an opportunity to make representations before taking action following a review",
-            "ref": "SI 2009/273 r.41(3)",
-            "trigger": "Proposed action following a review",
+            "trigger": "review undertaken, unless Tribunal decides to take no action",
             "who": "Tribunal"
           }
         ],
         "penalties": [
           {
-            "consequence": "The Tribunal must not admit the application",
+            "consequence": "the Tribunal must not admit the application",
             "ref": "SI 2009/273 r.39(4)(b)",
-            "trigger": "Application for permission to appeal is late and Tribunal does not extend time under rule 5(3)(a)"
+            "trigger": "application for permission to appeal sent later than the time required by r.39(2) without extension being granted"
           }
         ],
         "relevance": "related",
-        "summary": "This chunk sets out FTT Tax Chamber rules governing applications for permission to appeal a Tribunal decision (rule 39), the Tribunal's handling of such applications including a mandatory prior consideration of review (rule 40), the scope of review of a decision (rule 41), and the Tribunal's power to re-characterise an application (rule 42). It specifies the 56-day time limit for applications, what triggers that limit, content requirements for the application, and procedure where the application is late.",
+        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules covering hearings in a party's absence, consent orders, notice of decisions and reasons, correcting clerical mistakes, setting aside decisions, applying for permission to appeal, the Tribunal's consideration of such applications, review of decisions, and the power to recharacterise applications. It governs the procedural mechanics after a Tax Chamber decision, including deadlines for requesting full reasons, setting aside, and seeking permission to appeal. This is generally relevant background for taxpayers who have appealed an HMRC decision to the Tax Tribunal rather than the Self Assessment filing/payment process itself.",
         "topics": [
-          "ftt-appeals",
-          "permission-to-appeal",
-          "tribunal-review",
-          "procedure"
+          "tribunal-procedure",
+          "appeals",
+          "ftt-decisions",
+          "review-of-decisions",
+          "setting-aside-decisions"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
-    "1dc61bd616687fb0": {
-      "chars": 11932,
-      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 2**U.K.General powers and provisions > RepresentativesU.K.",
-      "index": 3,
+    "485c9afa389a80ec": {
+      "chars": 11061,
+      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 2** General powers and provisions (U.K.) > Use of documents and information (U.K.)",
+      "index": 2,
       "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
-          "Rule 11(7) definition of 'legal representative' reflects a textual amendment (F14) made by SI 2010/43 effective 18.1.2010 - original wording differs.",
-          "Rule 17(1)(a) and (2) reflect textual amendments (F15-F17) made by SI 2013/477 effective 1.4.2013, including omission and insertion of words.",
-          "These are general procedural rules of the Tax Chamber and do not themselves establish Self Assessment obligations, deadlines or penalties - relevance is confined to appeal/enquiry proceedings before the Tribunal."
+          "Rule 20(1) and other provisions show textual amendments (F1, F2, F3, F15-F17 markers) indicating this is the amended, not original, text of the SI.",
+          "Rule 21(3A) disapplies the Tribunal's power to extend time for starting proceedings in a 'CAA case', a defined term not explained in this chunk.",
+          "Rule 22 (hardship) only applies where the relevant enactment imposes a pay-first requirement in some form - the specific tax appeal contexts where this applies are not detailed in this chunk."
         ],
         "cross_references": [
           "SI 2009/273 r.5(1) and (2) (case management powers)",
-          "Legal Services Act 2007",
-          "Banking and Financial Dealings Act 1971 s.1",
-          "The Tribunal Procedure (Amendment) Rules 2010 (S.I. 2010/43)",
-          "The Tribunal Procedure (Amendment) Rules 2013 (S.I. 2013/477)"
+          "SI 2009/273 r.5(3)(a) (power to extend time)"
         ],
         "deadlines": [
           {
-            "applies_to": "any act required by the Rules, a practice direction or a direction",
-            "name": "Time to act on a specified day",
-            "ref": "SI 2009/273 r.12(1)",
-            "rule": "must be done before 5pm on that day"
+            "applies_to": "Party who has withdrawn a case",
+            "name": "Reinstatement application after withdrawal",
+            "ref": "SI 2009/273 r.17(4)",
+            "rule": "within 28 days after the date the Tribunal received the withdrawal notice, or the date of the hearing at which withdrawn orally"
           },
           {
-            "applies_to": "acts required under the Rules",
-            "name": "Non-working day extension",
-            "ref": "SI 2009/273 r.12(2)",
-            "rule": "if the specified time ends on a day other than a working day, the act is done in time if done on the next working day"
+            "applies_to": "Party to a related case",
+            "name": "Objection to lead case decision applying",
+            "ref": "SI 2009/273 r.18(4)",
+            "rule": "within 28 days after the date the Tribunal sent a copy of the decision"
           },
           {
-            "applies_to": "person summoned/cited to attend as a witness",
+            "applies_to": "Person summoned as witness",
             "name": "Witness summons notice period",
             "ref": "SI 2009/273 r.16(2)(a)",
             "rule": "at least 14 days' notice of the hearing, or such shorter period as the Tribunal may direct"
-          },
-          {
-            "applies_to": "party who withdrew a case",
-            "name": "Application to reinstate withdrawn case",
-            "ref": "SI 2009/273 r.17(4)",
-            "rule": "within 28 days after Tribunal's receipt of written withdrawal notice, or the hearing date if withdrawn orally"
-          },
-          {
-            "applies_to": "party in a related (stayed) case",
-            "name": "Application re lead case decision not binding",
-            "ref": "SI 2009/273 r.18(4)",
-            "rule": "within 28 days after the date the Tribunal sent a copy of the decision"
           }
         ],
         "definitions": [
+          {
+            "meaning": "One or more cases specified by Tribunal direction from a group of cases with common or related issues of fact or law, whose decision on those issues binds the parties in related (stayed) cases",
+            "ref": "SI 2009/273 r.18",
+            "term": "Lead case"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a (time limit set by relevant enactment)",
+            "must": "Start proceedings by sending or delivering a notice of appeal to the Tribunal, including name/address, representative details, decision details, desired result and grounds",
+            "ref": "SI 2009/273 r.20(1)-(2)",
+            "trigger": "Making or notifying an appeal under any enactment",
+            "who": "Appellant"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Provide a copy of any written record of the decision appealed against and any statement of reasons",
+            "ref": "SI 2009/273 r.20(3)",
+            "trigger": "Submitting notice of appeal",
+            "who": "Appellant"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include in the notice of appeal a request for permission to appeal late and the reason for lateness",
+            "ref": "SI 2009/273 r.20(4)",
+            "trigger": "Notice of appeal provided after the period specified in the relevant enactment",
+            "who": "Appellant (late notice)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Give notice of the proceedings to the respondent",
+            "ref": "SI 2009/273 r.20(5)",
+            "trigger": "Receipt of notice of appeal",
+            "who": "Tribunal"
+          },
+          {
+            "deadline": "As set by relevant enactment",
+            "must": "Provide an application notice or notice of reference within any time limit imposed by the enactment",
+            "ref": "SI 2009/273 r.21(1)",
+            "trigger": "Enactment provides for originating application or reference",
+            "who": "Appellant (originating application/reference)"
+          },
+          {
+            "deadline": "At time of starting proceedings",
+            "must": "Where hardship rule applies, state whether the disputed amount has been paid, and if not, status of any HMRC consent application (or apply to Tribunal for consent if HMRC refused)",
+            "ref": "SI 2009/273 r.22(1)-(3)",
+            "trigger": "Enactment provides appeal may not proceed unless disputed liability is paid or consent given",
+            "who": "Appellant"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Stay proceedings until HMRC/Tribunal consent applications are determined",
+            "ref": "SI 2009/273 r.22(4)",
+            "trigger": "Appellant requires consent before appeal may proceed",
+            "who": "Tribunal"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules covering disclosure orders, evidence and submissions directions, summoning witnesses, case withdrawal and reinstatement, lead case procedure, and the mechanics of starting appeal proceedings, originating applications, and hardship applications where tax is unpaid. Rule 20 requires appellants to start proceedings by sending a notice of appeal with specified content, including grounds and details of the decision appealed, and late notices require Tribunal permission. Rule 22 covers the common SA/tax scenario where an appeal cannot proceed unless the disputed tax is paid or HMRC/Tribunal consent to hardship.",
+        "topics": [
+          "tribunal-procedure",
+          "appeals",
+          "evidence",
+          "witnesses",
+          "withdrawal",
+          "lead-cases",
+          "starting-proceedings",
+          "hardship-applications"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "6a2e5ad98b9c9089": {
+      "chars": 11716,
+      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 2** General powers and provisions (U.K.) > Striking out a party's case (U.K.)",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Text includes textual amendments marked [F7]-[F14], indicating this is an amended, consolidated version, not the original 2009 text.",
+          "Costs rules (rule 10) generally restrict costs awards except in specified circumstances (wasted costs, unreasonable conduct, Complex cases without opt-out) — the Tax Chamber does not operate general 'loser pays' costs shifting outside these categories.",
+          "Rule 8(4) requires the Tribunal to give the appellant an opportunity to make representations before striking out under paragraphs (2), (3)(b) or (3)(c), but not necessarily under (3)(a).",
+          "This is Tribunal procedure, not primary Self Assessment legislation; relevant only once a taxpayer appeal reaches the FTT Tax Chamber."
+        ],
+        "cross_references": [
+          "section 29(4) of the 2007 Act (wasted costs)",
+          "rule 5(3)(k)(i) (transfer to another court or tribunal)",
+          "rule 23 (allocation of cases to categories)",
+          "rule 17(2) (withdrawal notice)",
+          "Civil Procedure Rules 1998 (S.I. 1998/3132)",
+          "Legal Services Act 2007",
+          "Banking and Financial Dealings Act 1971 s.1"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Appellant or respondent whose case/participation was struck out or barred",
+            "name": "Application for reinstatement after striking out/barring",
+            "ref": "SI 2009/273 r.8(6)",
+            "rule": "must be received within 28 days after the date the Tribunal sent notification of the striking out"
+          },
+          {
+            "applies_to": "Taxpayer (or MP expenses case appellant)",
+            "name": "Request to opt out of Complex case costs liability",
+            "ref": "SI 2009/273 r.10(1)(c)-(d)",
+            "rule": "within 28 days of receiving notice that the case had been allocated as a Complex case"
+          },
+          {
+            "applies_to": "Party seeking costs/expenses order",
+            "name": "Application for costs order",
+            "ref": "SI 2009/273 r.10(4)",
+            "rule": "may not be made later than 28 days after the date the Tribunal sends the final decision notice or withdrawal notice"
+          },
+          {
+            "applies_to": "Any act required under the Rules",
+            "name": "Deadline for acts under Rules/directions",
+            "ref": "SI 2009/273 r.12(1)-(2)",
+            "rule": "must be done before 5pm on the specified day; if the day is not a working day, next working day suffices"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "a party who is liable to pay, or has paid, the tax, duty, levy or penalty to which the proceedings relate or part of such tax, duty, levy or penalty, or whose liability to do so is in issue in the proceedings",
+            "ref": "SI 2009/273 r.10(8)",
+            "term": "taxpayer"
+          },
           {
             "meaning": "a person who, for the purposes of the Legal Services Act 2007, is an authorised person in relation to an activity which constitutes the exercise of a right of audience or the conduct of litigation within the meaning of that Act, an advocate or solicitor in Scotland, or a barrister or solicitor in Northern Ireland",
             "ref": "SI 2009/273 r.11(7)",
@@ -225,370 +334,350 @@
             "meaning": "any day except a Saturday or Sunday, Christmas Day, Good Friday or a bank holiday under section 1 of the Banking and Financial Dealings Act 1971",
             "ref": "SI 2009/273 r.12(3)",
             "term": "working day"
+          },
+          {
+            "meaning": "the person against whom a costs order is made (paying person) and the person entitled to receive costs (receiving person)",
+            "ref": "SI 2009/273 r.10(5)-(6)",
+            "term": "paying person / receiving person"
           }
         ],
         "obligations": [
           {
             "deadline": "n/a",
-            "must": "send or deliver to the Tribunal and each other party written notice of the representative's name and address",
+            "must": "Comply with Tribunal directions or risk striking out/barring",
+            "ref": "SI 2009/273 r.8(1)",
+            "trigger": "Direction stating non-compliance leads to striking out",
+            "who": "Appellant or respondent"
+          },
+          {
+            "deadline": "within 28 days after date Tribunal sent notification of striking out",
+            "must": "Apply in writing for reinstatement",
+            "ref": "SI 2009/273 r.8(5)-(6)",
+            "trigger": "Proceedings struck out under r.8(1) or (3)(a)",
+            "who": "Appellant whose case is struck out"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Send or deliver written notice of representative's name and address to Tribunal and other parties",
             "ref": "SI 2009/273 r.11(2)",
-            "trigger": "appointment of a representative",
+            "trigger": "Appointment of a representative",
             "who": "Party appointing a representative"
           },
           {
-            "deadline": "as soon as reasonably practicable",
-            "must": "make the application as soon as reasonably practicable after receiving notice",
-            "ref": "SI 2009/273 r.16(5)",
-            "trigger": "receipt of summons/citation/order without prior opportunity to object",
-            "who": "Person applying to vary/set aside a summons, citation or order"
+            "deadline": "within 28 days of receiving notice of Complex case allocation",
+            "must": "Send written request to be excluded from costs liability",
+            "ref": "SI 2009/273 r.10(1)(c)(ii)",
+            "trigger": "Notice that proceedings allocated as Complex case",
+            "who": "Taxpayer in a Complex case"
           },
           {
-            "deadline": "28 days after date of Tribunal's receipt of withdrawal notice, or date of hearing where withdrawn orally",
-            "must": "apply in writing, received by the Tribunal within 28 days",
-            "ref": "SI 2009/273 r.17(4)",
-            "trigger": "withdrawal of case under r.17",
-            "who": "Party wishing to reinstate a withdrawn case"
+            "deadline": "not later than 28 days after decision notice or withdrawal notice",
+            "must": "Send written application and schedule of costs to Tribunal and opposing party",
+            "ref": "SI 2009/273 r.10(3)-(4)",
+            "trigger": "Wish to claim costs under r.10(1)",
+            "who": "Person applying for costs order"
           },
           {
-            "deadline": "within 28 days after the date the Tribunal sent the decision",
-            "must": "apply in writing if seeking a direction that the decision not apply",
-            "ref": "SI 2009/273 r.18(4)",
-            "trigger": "Tribunal sends copy of lead case decision",
-            "who": "Party to a related case bound by a lead case decision"
+            "deadline": "n/a",
+            "must": "Accept delivery of documents by that electronic method (unless opted out)",
+            "ref": "SI 2009/273 r.13(2)-(3)",
+            "trigger": "Provision of fax/email details",
+            "who": "Party or representative providing electronic contact details"
           }
         ],
-        "penalties": [],
+        "penalties": [
+          {
+            "consequence": "Proceedings (or part) automatically struck out",
+            "ref": "SI 2009/273 r.8(1)",
+            "trigger": "Failure to comply with a direction stating that non-compliance would lead to striking out"
+          },
+          {
+            "consequence": "Tribunal must strike out whole or part of proceedings",
+            "ref": "SI 2009/273 r.8(2)",
+            "trigger": "Tribunal lacks jurisdiction and does not transfer case under r.5(3)(k)(i)"
+          },
+          {
+            "consequence": "Tribunal may strike out whole or part of proceedings",
+            "ref": "SI 2009/273 r.8(3)",
+            "trigger": "Appellant fails to comply with a direction (where non-compliance could lead to striking out), fails to cooperate so Tribunal cannot deal with case fairly/justly, or case has no reasonable prospect of success"
+          },
+          {
+            "consequence": "Tribunal need not consider respondent's submissions and may summarily determine issues against them",
+            "ref": "SI 2009/273 r.8(8)",
+            "trigger": "Respondent barred from taking further part in proceedings and bar not lifted"
+          },
+          {
+            "consequence": "Tribunal may order party to pay costs/expenses",
+            "ref": "SI 2009/273 r.10(1)",
+            "trigger": "Wasted costs, unreasonable conduct, or Complex case without opt-out"
+          }
+        ],
         "relevance": "related",
-        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules on appointing representatives, calculating time limits, sending/delivery of documents, confidentiality orders, evidence and submissions directions, summoning witnesses, withdrawal of cases, and lead case procedure. These rules govern how a taxpayer appeal (e.g. against an HMRC Self Assessment decision or penalty) is conducted once it reaches the Tax Chamber, rather than the Self Assessment filing/payment regime itself. They are general tribunal management provisions applicable across tax appeals, not specific to Self Assessment.",
+        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules on striking out a party's case for non-compliance, lack of jurisdiction, or no reasonable prospect of success (rule 8); substitution and addition of parties (rule 9); costs orders including wasted costs, unreasonable conduct, and Complex case cost-shifting (rule 10); appointing representatives (rule 11); calculating time limits (rule 12); and methods for sending/delivering documents to the Tribunal (rule 13). These rules govern conduct of tax appeals before the Tax Chamber, relevant to SA appeals against HMRC decisions once a case reaches the Tribunal.",
         "topics": [
+          "ftt-tax-chamber",
+          "appeals",
           "tribunal-procedure",
+          "striking-out",
+          "costs",
           "representatives",
-          "evidence",
-          "witnesses",
-          "withdrawal",
-          "lead-cases",
-          "document-service"
+          "time-limits",
+          "service-of-documents"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
-    "250fb2cc3901ca1f": {
-      "chars": 11612,
+    "6c09bae74dfefb0a": {
+      "chars": 11718,
       "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009",
       "index": 0,
       "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
-          "Rule 1(2) was substituted in 2010; multiple definitions in rule 1(3) have been inserted, substituted or omitted by amending SIs from 2010 through 2024, so the text shown reflects the current consolidated version, not the 2009 original.",
-          "This chunk is procedural/tribunal-focused rather than SA-specific; it is only 'related' because SA appeals to the FTT Tax Chamber are governed by these rules."
+          "Text contains multiple amendment markers (F1-F17) indicating this version reflects amendments made after the original 2009 instrument; some original wording has been substituted or repealed and replaced.",
+          "This chunk is procedural tribunal rules of general application, not specific to Self Assessment appeals, though the Tax Chamber hears SA-related appeals; relevance to SA is indirect (procedural framework for disputing HMRC SA decisions) rather than substantive SA law.",
+          "Rule 5A is a 'Coronavirus temporary rule' - its continued applicability/temporal scope is not stated in this chunk and should be checked."
         ],
         "cross_references": [
+          "Tribunals, Courts and Enforcement Act 2007",
           "rule 9 (substitution and addition of parties)",
           "rule 23 (allocation of cases to categories)",
-          "Tribunals, Courts and Enforcement Act 2007 s.23",
-          "section 563 Capital Allowances Act 2001",
-          "section 317 Proceeds of Crime Act 2002",
-          "section 7 Borders, Citizenship and Immigration Act 2009",
-          "Part 3 Finance Act 2022",
-          "Schedule 7 Counter-Terrorism Act 2008",
-          "Parliamentary Standards Act 2009"
+          "rule 18 (lead cases)",
+          "rule 24(2) (basic cases)",
+          "rule 26(7) (further steps in a default paper case)",
+          "rule 29 (determination with or without a hearing)",
+          "rule 8 (striking out a party's case)",
+          "section 40(1) of the 2007 Act",
+          "section 2(1) of the Courts Act 2003",
+          "Schedule 5 to the 2007 Act",
+          "section 23 of the 2007 Act (practice directions)",
+          "section 25 of the 2007 Act (Upper Tribunal powers of High Court/Court of Session)",
+          "Part 1 of the Arbitration Act 1996",
+          "Capital Allowances Act 2001 s.563",
+          "Counter-Terrorism Act 2008 Sch.7 paras 26(3)/28(1)",
+          "Parliamentary Standards Act 2009",
+          "Proceeds of Crime Act 2002 s.317",
+          "Borders, Citizenship and Immigration Act 2009 s.7",
+          "Finance Act 2022 Part 3"
         ],
-        "deadlines": [],
+        "deadlines": [
+          {
+            "applies_to": "parties affected by a delegated staff decision",
+            "name": "Application to reconsider a staff decision",
+            "ref": "SI 2009/273 r.4(3)",
+            "rule": "within 14 days after the date that the Tribunal sends notice of a decision made by a member of staff"
+          }
+        ],
         "definitions": [
           {
-            "meaning": "the person who starts proceedings (whether by bringing or notifying an appeal, by making an originating application, by a reference, or otherwise); in proceedings started jointly by more than one person, such persons acting jointly or each such person, as the context requires; or a person substituted as an appellant under rule 9",
+            "meaning": "The person who starts proceedings (by bringing/notifying an appeal, originating application, reference, or otherwise), including joint appellants or a person substituted as appellant under rule 9.",
             "ref": "SI 2009/273 r.1(3)",
             "term": "appellant"
           },
           {
-            "meaning": "a case allocated to the Basic category under rule 23 (allocation of cases to categories)",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "Basic case"
-          },
-          {
-            "meaning": "a case allocated to the Complex category under rule 23",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "Complex case"
-          },
-          {
-            "meaning": "a case allocated to the Standard category under rule 23",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "Standard case"
-          },
-          {
-            "meaning": "a case allocated to the Default Paper category under rule 23",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "Default Paper case"
-          },
-          {
-            "meaning": "anything in which information is recorded in any form, and an obligation to provide or allow access to a document means an obligation to provide or allow access in a legible form or a form readily made legible, unless the Tribunal directs otherwise",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "document"
-          },
-          {
-            "meaning": "an oral hearing, including a hearing conducted in whole or in part by video link, telephone or other means of instantaneous two-way electronic communication",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "hearing"
-          },
-          {
-            "meaning": "His Majesty's Revenue and Customs, also including the Serious Organised Crime Agency (functions under s.317 Proceeds of Crime Act 2002), the Director of Border Revenue (functions under s.7 Borders, Citizenship and Immigration Act 2009), and the Gambling Commission (functions under Part 3 Finance Act 2022, economic crime (anti-money laundering) levy)",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "HMRC"
-          },
-          {
-            "meaning": "a person who is (or was at the time the Tribunal disposed of the proceedings) an appellant or respondent in proceedings before the Tribunal",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "party"
-          },
-          {
-            "meaning": "in a case other than an MP expenses case or devolved Welsh case: HMRC (where not an appellant), or in proceedings brought by HMRC alone, the person against whom proceedings are brought; in an MP expenses case, the Compliance Officer; in a devolved Welsh case, WRA (where not an appellant) or the person against whom proceedings are brought; or a person substituted/added under rule 9",
+            "meaning": "In a case other than an MP expenses case or devolved Welsh case: HMRC (where not appellant), or in proceedings brought by HMRC alone, the person against whom proceedings are brought; in an MP expenses case, the Compliance Officer; in a devolved Welsh case, WRA; also any person substituted or added as respondent under rule 9.",
             "ref": "SI 2009/273 r.1(3)",
             "term": "respondent"
           },
           {
-            "meaning": "the First-tier Tribunal",
+            "meaning": "His Majesty's Revenue and Customs, also including the Serious Organised Crime Agency (POCA functions), the Director of Border Revenue, and the Gambling Commission (economic crime levy functions) in specified contexts.",
+            "ref": "SI 2009/273 r.1(3)",
+            "term": "HMRC"
+          },
+          {
+            "meaning": "The First-tier Tribunal.",
             "ref": "SI 2009/273 r.1(3)",
             "term": "Tribunal"
           },
           {
-            "meaning": "the Tribunals, Courts and Enforcement Act 2007",
+            "meaning": "Cases allocated to the respective category under rule 23 (allocation of cases to categories).",
             "ref": "SI 2009/273 r.1(3)",
-            "term": "the 2007 Act"
+            "term": "Basic case / Standard case / Complex case / Default Paper case"
           },
           {
-            "meaning": "a direction given under section 23 of the 2007 Act",
+            "meaning": "Anything in which information is recorded in any form; obligations to provide/allow access to a document mean access in legible form unless the Tribunal directs otherwise.",
             "ref": "SI 2009/273 r.1(3)",
-            "term": "practice direction"
+            "term": "document"
           },
           {
-            "meaning": "an application under section 563 of the Capital Allowances Act 2001",
+            "meaning": "An oral hearing, including one conducted in whole or part by video link, telephone or other instantaneous two-way electronic communication.",
             "ref": "SI 2009/273 r.1(3)",
-            "term": "CAA case"
-          },
-          {
-            "meaning": "an appeal, referral or application under a Measure or Act of the National Assembly for Wales, or an instrument made under one",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "devolved Welsh case"
-          },
-          {
-            "meaning": "an appeal under paragraph 26(3) or 28(1) of Schedule 7 to the Counter-Terrorism Act 2008",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "financial restrictions civil penalty case"
-          },
-          {
-            "meaning": "the Welsh Revenue Authority",
-            "ref": "SI 2009/273 r.1(3)",
-            "term": "WRA"
+            "term": "hearing"
           }
         ],
-        "obligations": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "help the Tribunal further the overriding objective and co-operate with the Tribunal generally",
+            "ref": "SI 2009/273 r.2(4)",
+            "trigger": "being a party to proceedings before the Tax Chamber",
+            "who": "Parties to Tribunal proceedings"
+          },
+          {
+            "deadline": "n/a",
+            "must": "include the reasons for making the application",
+            "ref": "SI 2009/273 r.6(3)",
+            "trigger": "making an application for a direction",
+            "who": "A party applying for a Tribunal direction"
+          },
+          {
+            "deadline": "within 14 days after the date the Tribunal sends notice of the decision",
+            "must": "make a written application to the Tribunal requiring the decision to be considered afresh by a judge",
+            "ref": "SI 2009/273 r.4(3)",
+            "trigger": "notice of a decision made by a member of staff under delegated authority",
+            "who": "A party wishing a staff decision reconsidered by a judge"
+          }
+        ],
         "penalties": [],
         "relevance": "related",
-        "summary": "This is Rule 1 of the Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009, covering citation, commencement (1 April 2009), application to Tax Chamber proceedings, and key definitions including 'appellant', 'respondent', 'HMRC', 'party', 'Basic/Standard/Complex/Default Paper case' (linked to case allocation under rule 23), and 'WRA'. These rules govern procedure once a tax matter (including a Self Assessment appeal) reaches the First-tier Tribunal Tax Chamber, rather than the SA filing/assessment process itself. The definitions are heavily amended by multiple subsequent SIs (2010, 2011, 2013, 2017, 2023, 2024).",
+        "summary": "This is Part 1 and the start of Part 2 of the Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009, which govern proceedings before the Tax Chamber of the First-tier Tribunal (the body that hears appeals against HMRC decisions, including Self Assessment enquiry closures, assessments and penalty determinations). It sets out key definitions (appellant, respondent, HMRC, case categories), the overriding objective of dealing with cases fairly and justly, and general case-management powers including directions, striking out, and consequences of non-compliance with rules or directions.",
         "topics": [
           "tribunal-procedure",
-          "definitions",
-          "appeals"
+          "appeals",
+          "first-tier-tribunal",
+          "case-management",
+          "definitions"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
-    "51efffc66edbbcc1": {
-      "chars": 11648,
-      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3**U.K.Procedure before the Tribunal > CHAPTER 2U.K.Procedure after allocation of cases to categories > Further steps in a Default Paper caseU.K.",
-      "index": 5,
+    "c4d57390ca66e2cf": {
+      "chars": 11684,
+      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3** Procedure before the Tribunal (U.K.) > CHAPTER 1 Starting proceedings and allocation of cases to categories (U.K.) > Allocation of cases to categories (U.K.)",
+      "index": 3,
       "model": "claude-cli:sonnet",
       "note": {
         "amounts": [],
         "caveats": [
-          "General FTT Tax Chamber procedural rules applicable to tax appeals generally, not specific to Self Assessment obligations",
-          "Rule 32(2A) and rule 32A were temporary insertions related to coronavirus arrangements",
-          "Textual amendment history included but not substantively relevant"
-        ],
-        "cross_references": [],
-        "deadlines": [],
-        "definitions": [],
-        "obligations": [],
-        "penalties": [],
-        "relevance": "none",
-        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules on further steps after allocation to case categories, transfer of Complex cases to the Upper Tribunal, and hearings (notice, public/private, attendance, recording, absence). It concerns general tribunal appeal procedure, not the Self Assessment filing/payment/enquiry/penalty regime.",
-        "topics": []
-      },
-      "prompt_hash": "2ff1133f3478bd79"
-    },
-    "ae08c75097c765fc": {
-      "chars": 8886,
-      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3**U.K.Procedure before the Tribunal > CHAPTER 4U.K.Decisions > Consent ordersU.K.",
-      "index": 6,
-      "model": "claude-cli:sonnet",
-      "note": {
-        "amounts": [],
-        "caveats": [
-          "Rule 35 has been amended multiple times (e.g. by SI 2013/477, SI 2026/115) with textual substitutions/insertions/omissions noted but not shown inline in this chunk.",
-          "Rule 38(1) was amended by SI 2025/561 to allow the Tribunal to set aside a decision on its own initiative, not just on application of a party.",
-          "This is general Tax Chamber procedural rules, not SA-specific; relevant only as background context for how SA appeals before the FTT are decided/corrected, not for filing/payment/penalty rules themselves."
-        ],
-        "cross_references": [],
-        "deadlines": [],
-        "definitions": [],
-        "obligations": [],
-        "penalties": [],
-        "relevance": "none",
-        "summary": "This chunk covers First-tier Tribunal (Tax Chamber) procedural rules on consent orders, notice of decisions and reasons, correction of clerical mistakes, and setting aside decisions that dispose of proceedings. It is generic tribunal procedure applicable across all Tax Chamber cases, not specific to Self Assessment.",
-        "topics": []
-      },
-      "prompt_hash": "2ff1133f3478bd79"
-    },
-    "f0d3d14e5038bc7b": {
-      "chars": 10955,
-      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 3**U.K.Procedure before the Tribunal > CHAPTER 1U.K.Starting proceedings and allocation of cases to categories > Proceedings without notice to a respondentU.K.",
-      "index": 4,
-      "model": "claude-cli:sonnet",
-      "note": {
-        "amounts": [],
-        "caveats": [
-          "Rule 20(1) and 20(4) were substituted by S.I. 2010/2653 with effect from 29.11.2010; earlier wording differs.",
-          "Rule 21(3A) (disapplying power to extend time for CAA cases) was inserted by S.I. 2013/477 with effect from 1.4.2013.",
-          "Rule 23(1) was substituted by S.I. 2010/2653 (29.11.2010), and further amended by S.I. 2013/477 (1.4.2013) to add financial restrictions civil penalty and CAA cases.",
-          "Rule 25(1) was substituted by S.I. 2010/2653 (29.11.2010); check for any later amendments not shown in this chunk.",
-          "This chunk concerns general FTT Tax Chamber procedure applicable to appeals against HMRC decisions generally, not SA-specific; relevance to SA is indirect (e.g. appeals against SA enquiry/assessment decisions would follow these rules)."
+          "Text contains textual amendments (marked F4-F13) reflecting later statutory changes, including insertions for MP expenses cases, financial restrictions civil penalty cases, CAA cases, and coronavirus temporary rules on recording remote hearings.",
+          "Rule 32A is a coronavirus-era temporary rule and may not reflect current standing procedure.",
+          "This SI governs Tribunal procedure generally, not Self Assessment substantive rules; relevance to SA is only via the appeals process for SA-related disputes."
         ],
         "cross_references": [
-          "SI 2009/273 r.5(3)(a) (power to extend time)",
           "SI 2009/273 r.10(1)(c) (costs in Complex cases)",
-          "SI 2009/273 r.28 (transfer of Complex cases to the Upper Tribunal)",
-          "The Tribunal Procedure (Amendment No. 3) Rules 2010 (S.I. 2010/2653)",
-          "The Tribunal Procedure (Amendment) Rules 2013 (S.I. 2013/477)"
+          "SI 2009/273 r.28 (transfer of Complex cases to Upper Tribunal)",
+          "SI 2009/273 r.5(3)(a) (power to extend time)",
+          "SI 2009/273 r.8 (striking out a party's case)",
+          "SI 2009/273 r.19 (proceedings without notice to a respondent)",
+          "SI 2009/273 r.32(4) (exclusion from a hearing)",
+          "SI 2009/273 Part 4 (correcting, setting aside, reviewing and appealing Tribunal decisions)",
+          "SI 2009/273 r.32(2A) (private hearings - video/audio proceedings)"
         ],
         "deadlines": [
           {
-            "applies_to": "Respondent in Default Paper cases",
-            "name": "Default Paper case statement of case",
+            "applies_to": "Default Paper cases",
+            "name": "Respondent's statement of case (Default Paper)",
             "ref": "SI 2009/273 r.25(1)(a)",
-            "rule": "within 42 days after the Tribunal sent the notice of appeal or a copy of the application notice or notice of reference"
+            "rule": "within 42 days after the Tribunal sent the notice of appeal or copy of application/reference notice"
           },
           {
-            "applies_to": "Respondent in MP expenses cases",
-            "name": "MP expenses case statement of case",
+            "applies_to": "MP expenses cases",
+            "name": "Respondent's statement of case (MP expenses case)",
             "ref": "SI 2009/273 r.25(1)(b)",
             "rule": "within 28 days after the Tribunal sent the notice of appeal"
           },
           {
-            "applies_to": "Respondent in Standard or Complex cases other than MP expenses cases",
-            "name": "Standard or Complex case statement of case",
+            "applies_to": "Standard or Complex cases other than MP expenses case",
+            "name": "Respondent's statement of case (Standard/Complex)",
             "ref": "SI 2009/273 r.25(1)(c)",
-            "rule": "within 60 days after the Tribunal sent the notice of appeal or a copy of the application notice or notice of reference"
+            "rule": "within 60 days after the Tribunal sent the notice of appeal or copy of application/reference notice"
+          },
+          {
+            "applies_to": "Default Paper cases",
+            "name": "Appellant's written reply (Default Paper)",
+            "ref": "SI 2009/273 r.26(2)",
+            "rule": "within 30 days after respondent sent the statement of case"
+          },
+          {
+            "applies_to": "Standard and Complex cases",
+            "name": "List of documents (Standard/Complex)",
+            "ref": "SI 2009/273 r.27(2)",
+            "rule": "within 42 days after respondent sent statement of case (or final statement of case), subject to contrary direction"
+          },
+          {
+            "applies_to": "hearings to consider disposal of proceedings",
+            "name": "Notice of hearing for disposal",
+            "ref": "SI 2009/273 r.31(2)",
+            "rule": "at least 14 days' notice, unless parties consent or urgent/exceptional circumstances"
           }
         ],
-        "definitions": [],
+        "definitions": [
+          {
+            "meaning": "Cases which will usually be disposed of without a hearing",
+            "ref": "SI 2009/273 r.23(2)(a)",
+            "term": "Default Paper cases"
+          },
+          {
+            "meaning": "Cases which will usually be disposed of after a hearing, with minimal exchange of documents before the hearing",
+            "ref": "SI 2009/273 r.23(2)(b)",
+            "term": "Basic cases"
+          },
+          {
+            "meaning": "Cases which will usually be subject to more detailed case management and be disposed of after a hearing",
+            "ref": "SI 2009/273 r.23(2)(c)",
+            "term": "Standard cases"
+          },
+          {
+            "meaning": "Cases allocated as such where the Tribunal considers they require lengthy or complex evidence/hearing, involve a complex or important principle/issue, or involve a large financial sum",
+            "ref": "SI 2009/273 r.23(2)(d), r.23(4)",
+            "term": "Complex cases"
+          }
+        ],
         "obligations": [
           {
-            "deadline": "Within any period specified in the relevant enactment",
-            "must": "Start proceedings by sending or delivering a notice of appeal to the Tribunal, including name/address, representative details, address for documents, details of decision appealed, result sought, and grounds",
-            "ref": "SI 2009/273 r.20(1)-(2)",
-            "trigger": "Wishing to appeal a decision under an enactment",
-            "who": "Person appealing to the Tribunal"
-          },
-          {
             "deadline": "n/a",
-            "must": "Provide with the notice of appeal a copy of any written record of the decision appealed against and any statement of reasons, if reasonably obtainable",
-            "ref": "SI 2009/273 r.20(3)",
-            "trigger": "Making an appeal",
-            "who": "Appellant"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Include in the notice of appeal a request for permission to appeal late and the reason for lateness; Tribunal must not admit the appeal unless it gives permission",
-            "ref": "SI 2009/273 r.20(4)",
-            "trigger": "Notice of appeal provided after the specified period",
-            "who": "Appellant filing late"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Give notice of the proceedings to the respondent (e.g. HMRC) on receiving a notice of appeal",
-            "ref": "SI 2009/273 r.20(5)",
-            "trigger": "Receipt of notice of appeal",
+            "must": "give a direction allocating the case to a category on receipt of notice of appeal, application notice or notice of reference",
+            "ref": "SI 2009/273 r.23(1)",
+            "trigger": "receipt of notice of appeal/application/reference",
             "who": "Tribunal"
           },
           {
-            "deadline": "n/a",
-            "must": "State whether the amount in dispute has been paid, and if not, the status of any HMRC hardship application, and if refused, apply to the Tribunal for consent",
-            "ref": "SI 2009/273 r.22(1)-(3)",
-            "trigger": "Enactment requires liability paid or consent obtained before appeal can proceed",
-            "who": "Appellant subject to a hardship condition"
+            "deadline": "42 days (Default Paper); 28 days (MP expenses case); 60 days (Standard or Complex, other than MP expenses case)",
+            "must": "send or deliver a statement of case to the Tribunal, appellant and other respondents",
+            "ref": "SI 2009/273 r.25(1)",
+            "trigger": "notice of appeal sent by Tribunal",
+            "who": "Respondent"
           },
           {
-            "deadline": "n/a",
-            "must": "Stay proceedings until hardship applications to HMRC or the Tribunal are determined",
-            "ref": "SI 2009/273 r.22(4)",
-            "trigger": "Appellant requires HMRC or Tribunal consent before appeal may proceed",
-            "who": "Tribunal"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Give a direction allocating a received case to a category (Default Paper, Basic, Standard, Complex)",
-            "ref": "SI 2009/273 r.23(1)-(2)",
-            "trigger": "Receipt of notice of appeal, application notice or notice of reference",
-            "who": "Tribunal"
-          },
-          {
-            "deadline": "As soon as reasonably practicable",
-            "must": "Notify appellant of any new grounds for contesting proceedings not previously communicated, as soon as reasonably practicable and in sufficient detail",
+            "deadline": "as soon as reasonably practicable, in sufficient detail",
+            "must": "notify appellant of any new grounds for contesting proceedings not previously communicated",
             "ref": "SI 2009/273 r.24(3)-(4)",
-            "trigger": "Respondent intends to raise new grounds at the hearing",
-            "who": "Respondent (e.g. HMRC) in a Basic case"
+            "trigger": "respondent becomes aware of intention to raise such grounds before hearing",
+            "who": "Respondent (Basic case)"
           },
           {
-            "deadline": "42 days (Default Paper case) / 28 days (MP expenses case) / 60 days (Standard or Complex case) after the Tribunal sent the notice of appeal or application/reference notice",
-            "must": "Send or deliver a statement of case to the Tribunal, appellant and any other respondent, stating the legislative provision under which the decision was made and the respondent's position",
-            "ref": "SI 2009/273 r.25(1)-(2)",
-            "trigger": "Case allocated other than under rule 24 exemption",
-            "who": "Respondent (e.g. HMRC)"
-          }
-        ],
-        "penalties": [
-          {
-            "consequence": "Tribunal must not admit the appeal",
-            "ref": "SI 2009/273 r.20(4)(b)",
-            "trigger": "Notice of appeal provided late without the Tribunal granting permission"
+            "deadline": "within 30 days after respondent sent the statement of case",
+            "must": "may send a written reply to the statement of case",
+            "ref": "SI 2009/273 r.26(2)",
+            "trigger": "receipt of respondent's statement of case",
+            "who": "Appellant (Default Paper case)"
           },
           {
-            "consequence": "Tribunal must not admit the application notice or notice of reference",
-            "ref": "SI 2009/273 r.21(3)(b)",
-            "trigger": "Application notice or notice of reference provided late without an extension of time being granted"
+            "deadline": "within 42 days, subject to direction to the contrary",
+            "must": "send a list of documents to the Tribunal and other parties and allow inspection/copying",
+            "ref": "SI 2009/273 r.27(2)-(3)",
+            "trigger": "respondent sent statement of case (or final statement of case)",
+            "who": "Each party (Standard/Complex case)"
+          },
+          {
+            "deadline": "at least 14 days for a disposal hearing (unless consent or urgent/exceptional circumstances)",
+            "must": "give reasonable notice of time and place of hearings",
+            "ref": "SI 2009/273 r.31",
+            "trigger": "any hearing listed",
+            "who": "Tribunal"
           }
         ],
+        "penalties": [],
         "relevance": "related",
-        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules for starting appeal proceedings, originating applications and references, hardship applications where tax is unpaid, and allocation of cases into Default Paper, Basic, Standard and Complex categories. It specifies contents required in a notice of appeal, time limits and late-notice permission requirements, HMRC hardship consent procedure, and deadlines for a respondent's (HMRC's) statement of case. These rules govern Tribunal appeals against decisions (including SA-related HMRC decisions) rather than the Self Assessment filing/payment regime itself.",
+        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules on allocating appeals to case categories (Default Paper, Basic, Standard, Complex), the procedure following allocation including respondent's statements of case and document lists, transfer of Complex cases to the Upper Tribunal, and rules governing hearings (notice, public/private, exclusion, recording). These rules govern how a Self Assessment appeal proceeds once notified to the Tribunal, but do not themselves impose Self Assessment filing or payment obligations.",
         "topics": [
           "tribunal-procedure",
           "appeals",
-          "case-allocation",
-          "hardship-applications",
-          "statement-of-case"
+          "ftt-tax-chamber",
+          "case-categories",
+          "hearings"
         ]
-      },
-      "prompt_hash": "2ff1133f3478bd79"
-    },
-    "fbc77d4748b8ad7f": {
-      "chars": 10789,
-      "heading": "Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 > **PART 2**U.K.General powers and provisions > Striking out a party's caseU.K.",
-      "index": 2,
-      "model": "claude-cli:sonnet",
-      "note": {
-        "amounts": [],
-        "caveats": [
-          "Relates to Tax Chamber tribunal procedure generally (costs, striking out, parties), not specific to Self Assessment appeals or HMRC administration of Income Tax."
-        ],
-        "cross_references": [],
-        "deadlines": [],
-        "definitions": [],
-        "obligations": [],
-        "penalties": [],
-        "relevance": "none",
-        "summary": "This chunk sets out First-tier Tribunal (Tax Chamber) procedural rules on striking out a party's case (rule 8), substitution and addition of parties (rule 9), and orders for costs/expenses (rule 10), including Complex case cost-shifting and assessment procedures. It concerns tribunal litigation procedure after an appeal has been lodged, not Self Assessment filing, payment, enquiry or penalty obligations.",
-        "topics": []
       },
       "prompt_hash": "2ff1133f3478bd79"
     }

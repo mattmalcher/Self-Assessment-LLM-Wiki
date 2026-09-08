@@ -1,0 +1,36 @@
+{
+  "category": "legal-system.case-law",
+  "chunks": {
+    "e1d40b37bbb355f1": {
+      "chars": 6804,
+      "heading": "First-tier Tribunal (Tax Chamber) decisions",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This is an index/listing page only; full judgment text and any Self Assessment-relevant findings are not present in this chunk and would require following the individual links.",
+          "Case names alone do not indicate whether a decision concerns Self Assessment specifically (some may relate to VAT, PAYE, corporation tax, etc.)."
+        ],
+        "cross_references": [
+          "https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukftt/tc"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is an index listing the 40 most recent First-tier Tribunal (Tax Chamber) decisions, sourced from the Find Case Law Atom feed, covering dates from 2026-07-22 to 2026-08-28. Each entry gives a decision date, neutral citation, case name, and a link to the full judgment hosted externally. No substantive legal content, reasoning, or holdings are included in this chunk; it is purely a navigational listing.",
+        "topics": [
+          "case-law-index",
+          "ftt-tax-chamber",
+          "tribunal-decisions"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "legal-system/case-law/first-tier-tribunal-tax-chamber.md",
+  "source_id": "caselaw-ftt-tc",
+  "source_url": "https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukftt/tc"
+}

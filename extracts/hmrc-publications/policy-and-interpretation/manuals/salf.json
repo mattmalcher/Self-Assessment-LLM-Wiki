@@ -1295,182 +1295,6 @@
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
-    "2a4ea4feced1e7a8": {
-      "chars": 9546,
-      "heading": "Self Assessment Legal Framework manual (SALF)",
-      "index": 0,
-      "model": "claude-cli:sonnet",
-      "note": {
-        "amounts": [
-          {
-            "name": "Penalty for failure to comply with digital record keeping requirements",
-            "period": "n/a",
-            "ref": "SALF1200",
-            "value": "up to £3,000"
-          }
-        ],
-        "caveats": [
-          "This guidance does not deal with corporation tax Self Assessment (CTSA), which applies to company accounting periods ending on or after 1 July 1999.",
-          "SA has applied since tax year 1996-97, though for some partnerships full application was delayed until 1997-98.",
-          "Where a return is filed after 31 October (paper) it must contain the taxpayer's own self-assessment calculation, rather than relying on HMRC's calculation undertaking.",
-          "This chunk notes the manual as mirrored is incomplete (max_sections cap in the pipeline), so further SALF sections beyond those shown are not covered here.",
-          "SALF1200/SALF1300 concern Making Tax Digital for Income Tax digital record-keeping obligations, which are additional to, not a replacement for, other record-keeping requirements (e.g. s.12B TMA 1970) and apply specifically to 'digital obligation tax years' for 'relevant persons' — terms not fully defined in this chunk."
-        ],
-        "cross_references": [
-          "TMA 1970 (generally)",
-          "TMA 1970 s.12B",
-          "TMA 1970 s.12B(5)",
-          "SALF200",
-          "SALF300",
-          "SALF400",
-          "SALF500",
-          "SALF600",
-          "SALF700",
-          "SALF800",
-          "Digital record keeping notice for Making Tax Digital for Income Tax (GOV.UK)"
-        ],
-        "deadlines": [
-          {
-            "applies_to": "paper Self Assessment returns",
-            "name": "Paper return filing deadline",
-            "ref": "SALF100",
-            "rule": "31 October following the end of the tax year"
-          },
-          {
-            "applies_to": "electronic Self Assessment returns",
-            "name": "Electronic return filing deadline",
-            "ref": "SALF100",
-            "rule": "31 January"
-          },
-          {
-            "applies_to": "customers receiving late notices to file",
-            "name": "Filing deadline for late-issued notices to file",
-            "ref": "SALF100",
-            "rule": "three months from date of issue or 31 January if later (electronic filing) for notices issued after 31 July following the end of the tax year"
-          },
-          {
-            "applies_to": "customers not receiving a notice to file",
-            "name": "Notification of untaxed income/capital gain",
-            "ref": "SALF100",
-            "rule": "5 October following the end of the tax year"
-          },
-          {
-            "applies_to": "self-employed taxpayers",
-            "name": "First payment on account",
-            "ref": "SALF100",
-            "rule": "31 January in the tax year"
-          },
-          {
-            "applies_to": "self-employed taxpayers",
-            "name": "Second payment on account",
-            "ref": "SALF100",
-            "rule": "31 July following"
-          },
-          {
-            "applies_to": "residual income tax, CGT, Student Loan repayment",
-            "name": "Balancing payment",
-            "ref": "SALF100",
-            "rule": "31 January following the end of the tax year"
-          },
-          {
-            "applies_to": "returns filed on paper by 31 October",
-            "name": "HMRC calculation undertaking",
-            "ref": "SALF100",
-            "rule": "HMRC calculates and notifies tax liability before 31 January where return received by 31 October following the end of the tax year"
-          },
-          {
-            "applies_to": "MTD for Income Tax digital records/quarterly updates",
-            "name": "Digital record correction deadline",
-            "ref": "SALF1300",
-            "rule": "by the day on which the next quarterly update is required; for errors in the fourth quarterly update or the period containing the digital termination date, no later than the filing date for the return for that digital obligation tax year"
-          }
-        ],
-        "definitions": [],
-        "obligations": [
-          {
-            "deadline": "5 October following the end of the tax year",
-            "must": "inform HMRC",
-            "ref": "SALF100",
-            "trigger": "receipt of untaxed income or a capital gain in the tax year",
-            "who": "Customer who does not receive a notice to file but has received untaxed income or made a capital gain"
-          },
-          {
-            "deadline": "as soon as they start or within the first three months of self-employment",
-            "must": "notify HMRC (for National Insurance purposes)",
-            "ref": "SALF100",
-            "trigger": "starting self-employment",
-            "who": "Customer starting a new self-employment"
-          },
-          {
-            "deadline": "31 January in the tax year",
-            "must": "pay an initial payment on account of income tax due",
-            "ref": "SALF100",
-            "trigger": "each tax year",
-            "who": "Self-employed taxpayers"
-          },
-          {
-            "deadline": "31 July following",
-            "must": "pay a second payment on account",
-            "ref": "SALF100",
-            "trigger": "following the first payment on account",
-            "who": "Taxpayer"
-          },
-          {
-            "deadline": "31 January following the end of the tax year",
-            "must": "pay a final balancing payment of residual income tax, capital gains tax and Student Loan repayment",
-            "ref": "SALF100",
-            "trigger": "after return submitted / tax year end",
-            "who": "Taxpayer"
-          },
-          {
-            "deadline": "n/a",
-            "must": "keep digital records for each digital obligation tax year using functional compatible software",
-            "ref": "SALF1200",
-            "trigger": "being within Making Tax Digital for Income Tax",
-            "who": "Relevant person (MTD for Income Tax)"
-          },
-          {
-            "deadline": "see rule",
-            "must": "record digital records by specified deadlines: quarterly update records no later than the date the update is given or required to be given (whichever earlier); other records no later than the date the tax return is delivered or required to be delivered (whichever earlier)",
-            "ref": "SALF1200",
-            "trigger": "digital obligation tax year",
-            "who": "Relevant person (MTD for Income Tax)"
-          },
-          {
-            "deadline": "by the day the next quarterly update is required (or, for the fourth quarterly update/period containing the digital termination date, no later than the filing date for the return)",
-            "must": "use functional compatible software to correct the error or omission as soon as possible",
-            "ref": "SALF1300",
-            "trigger": "discovery of error or omission",
-            "who": "Relevant person who discovers an error or omission in a digital record or quarterly update"
-          }
-        ],
-        "penalties": [
-          {
-            "consequence": "automatic sanctions apply (described generally, not quantified in this chunk)",
-            "ref": "SALF100",
-            "trigger": "failure to comply with filing deadline"
-          },
-          {
-            "consequence": "penalty of up to £3,000; not liable if a penalty is already charged under s.12B(5) TMA 1970 for that period",
-            "ref": "SALF1200",
-            "trigger": "failure to comply with digital record keeping requirements set out in regulations"
-          }
-        ],
-        "relevance": "core",
-        "summary": "This chunk is the SALF manual introduction (SALF100), giving a high-level overview of the Self Assessment legal framework under TMA 1970, who SA affects, key filing and payment deadlines, and the manual's structure. It also includes SALF1200 and SALF1300, which set out Making Tax Digital for Income Tax obligations to keep digital records and correct errors in digital records or quarterly updates using functional compatible software.",
-        "topics": [
-          "overview",
-          "filing-deadlines",
-          "payments-on-account",
-          "digital-record-keeping",
-          "making-tax-digital",
-          "penalties",
-          "enquiries",
-          "partnerships"
-        ]
-      },
-      "prompt_hash": "2ff1133f3478bd79"
-    },
     "30c6d9290b702cf3": {
       "chars": 11378,
       "heading": "Self Assessment Legal Framework manual (SALF) > SALF1020 — Digital Termination Date",
@@ -1656,93 +1480,6 @@
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
-    "3ddbec9806ce6bcd": {
-      "chars": 2643,
-      "heading": "Self Assessment Legal Framework manual (SALF) > SALF1420 — Exemptions where an exclusion notice is in place - Exclusion exemption",
-      "index": 24,
-      "model": "claude-cli:sonnet",
-      "note": {
-        "amounts": [],
-        "caveats": [
-          "It is anticipated that it will be rare for the digital exclusion conditions to be met (SALF1420).",
-          "Some exemptions apply automatically; others require the person to notify HMRC and/or HMRC to issue an exclusion notice (SALF1430)."
-        ],
-        "cross_references": [],
-        "deadlines": [
-          {
-            "applies_to": "Person who did not initially specify an end date in the exclusion notice",
-            "name": "Notification of ceasing to be excluded",
-            "ref": "SALF1430",
-            "rule": "Within 3 months of first having reason to believe they ceased to be excluded"
-          }
-        ],
-        "definitions": [
-          {
-            "meaning": "A person or partner may be excluded from digital obligations if HMRC are satisfied that they are a practising member of a religious society whose beliefs do not allow using electronic communications or keeping electronic records, or that it is not reasonably possible for them to use electronic communications or keep electronic records (e.g. because of age, disability, or where they live); also excluded if unable to meet any condition relating to verification of identity.",
-            "ref": "SALF1420",
-            "term": "Digital exclusion (conditions)"
-          },
-          {
-            "meaning": "A notice HMRC must issue if satisfied a person is or was excluded, stating the date the person became excluded and the date (if any) they ceased to be excluded; it is 'in place' from the date the person became excluded until the date the Commissioners consider the person ceased to be excluded (if any).",
-            "ref": "SALF1430",
-            "term": "Exclusion notice"
-          }
-        ],
-        "obligations": [
-          {
-            "deadline": "n/a",
-            "must": "Write to HMRC and apply for an exemption",
-            "ref": "SALF1420",
-            "trigger": "Belief that they meet a digital exclusion condition",
-            "who": "Person or partner seeking digital exclusion exemption"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Notify HMRC stating the reason and date they believe they became excluded, and the date (if any) they believe they ceased to be excluded",
-            "ref": "SALF1430",
-            "trigger": "Belief of exclusion or cessation of exclusion",
-            "who": "Relevant person believing they are or were excluded"
-          },
-          {
-            "deadline": "Within 3 months of first having reason to believe they ceased to be excluded",
-            "must": "Give further notice of the date they believe they ceased to be excluded",
-            "ref": "SALF1430",
-            "trigger": "First having reason to believe they ceased to be excluded",
-            "who": "Relevant person who did not specify an end date and later believes they ceased to be excluded"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Decide if they agree the person is or was excluded, and if not, give notice of the decision",
-            "ref": "SALF1430",
-            "trigger": "Person's notification of belief of exclusion",
-            "who": "HMRC"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Issue an exclusion notice stating the date the person became excluded and the date (if any) they ceased to be excluded",
-            "ref": "SALF1430",
-            "trigger": "HMRC satisfied the person is or was excluded (regardless of whether the person notified them)",
-            "who": "HMRC"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Issue a further notice with the cessation date",
-            "ref": "SALF1430",
-            "trigger": "An exclusion notice previously given without an end date is found to have ceased to apply",
-            "who": "HMRC"
-          }
-        ],
-        "penalties": [],
-        "relevance": "related",
-        "summary": "This chunk covers exemptions from digital obligations (e.g. Making Tax Digital) that require HMRC to issue an exclusion notice, rather than applying automatically. A person qualifies for digital exclusion if they are a practising member of a religious society whose beliefs bar electronic communications/records, if it is not reasonably possible for them to use electronic communications or keep electronic records (e.g. age, disability, location), or if they cannot meet identity verification conditions. It also describes the notification process: the excluded person can notify HMRC of the reason and dates of exclusion (and must notify within 3 months if they later believe they ceased to be excluded), and HMRC must decide and issue an exclusion notice recording the start and end dates of exclusion, which is 'in place' from the believed start date until the Commissioners consider it ceased.",
-        "topics": [
-          "digital-exclusion",
-          "mtd-exemption",
-          "exclusion-notice"
-        ]
-      },
-      "prompt_hash": "2ff1133f3478bd79"
-    },
     "6bcd27a00fe5abcd": {
       "chars": 11432,
       "heading": "Self Assessment Legal Framework manual (SALF) > Discovery and partnerships",
@@ -1854,6 +1591,193 @@
           "provisional-figures",
           "paye-coding-claims",
           "time-limits"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "73897da22f07cea7": {
+      "chars": 9287,
+      "heading": "Self Assessment Legal Framework manual (SALF)",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Penalty for failure to comply with digital record keeping requirements",
+            "period": "n/a",
+            "ref": "SALF1200",
+            "value": "up to £3,000"
+          }
+        ],
+        "caveats": [
+          "This guidance does not deal with Corporation Tax Self Assessment (CTSA), which applies to company accounting periods ending on or after 1 July 1999.",
+          "SA has applied since tax year 1996-97, though for some partnerships full rules did not apply until 1997-98.",
+          "The £3,000 digital record-keeping penalty does not apply if a penalty is already charged under s.12B(5) TMA 1970 for the same period, avoiding double penalty.",
+          "Digital record-keeping obligations (SALF1200, SALF1300) apply only to 'relevant persons' for a 'digital obligation tax year' under Making Tax Digital rules, not to all SA taxpayers.",
+          "All statutory references in the manual are to TMA 1970 unless otherwise indicated."
+        ],
+        "cross_references": [
+          "SALF200",
+          "SALF300",
+          "SALF400",
+          "SALF500",
+          "SALF600",
+          "SALF700",
+          "SALF800",
+          "TMA 1970 s.12B",
+          "TMA 1970 s.12B(5)",
+          "Digital record keeping notice for Making Tax Digital for Income Tax (GOV.UK)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Customers not receiving a notice to file but with untaxed income or capital gains",
+            "name": "Untaxed income/capital gain notification",
+            "ref": "SALF100",
+            "rule": "5 October following the end of the tax year"
+          },
+          {
+            "applies_to": "Individuals starting self-employment",
+            "name": "New self-employment notification (NI)",
+            "ref": "SALF100",
+            "rule": "As soon as started or within first three months"
+          },
+          {
+            "applies_to": "Paper Self Assessment returns",
+            "name": "Paper return filing deadline",
+            "ref": "SALF100",
+            "rule": "31 October following the end of the tax year"
+          },
+          {
+            "applies_to": "Electronic Self Assessment returns",
+            "name": "Electronic return filing deadline",
+            "ref": "SALF100",
+            "rule": "31 January"
+          },
+          {
+            "applies_to": "Notices to file issued after 31 July following end of tax year",
+            "name": "Late-issued notice filing deadline",
+            "ref": "SALF100",
+            "rule": "Three months from date of issue or 31 January if later and filed electronically"
+          },
+          {
+            "applies_to": "Self-employed taxpayers",
+            "name": "First payment on account",
+            "ref": "SALF100",
+            "rule": "31 January in the tax year"
+          },
+          {
+            "applies_to": "Self-employed taxpayers",
+            "name": "Second payment on account",
+            "ref": "SALF100",
+            "rule": "31 July following the tax year"
+          },
+          {
+            "applies_to": "Residual income tax, capital gains tax, Student Loan repayment",
+            "name": "Balancing payment",
+            "ref": "SALF100",
+            "rule": "31 January following the end of the tax year"
+          },
+          {
+            "applies_to": "Returns filed by 31 October",
+            "name": "HMRC calculation undertaking deadline",
+            "ref": "SALF100",
+            "rule": "Before 31 January, where return received by 31 October following end of tax year"
+          },
+          {
+            "applies_to": "MTD digital records/quarterly updates",
+            "name": "Digital record correction deadline",
+            "ref": "SALF1300",
+            "rule": "By the day the next quarterly update is required to be given"
+          },
+          {
+            "applies_to": "MTD fourth quarterly update or period containing digital termination date",
+            "name": "Fourth quarter/termination period correction deadline",
+            "ref": "SALF1300",
+            "rule": "No later than the filing date for the return for that digital obligation tax year"
+          }
+        ],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "5 October following the end of the tax year",
+            "must": "Inform HMRC",
+            "ref": "SALF100",
+            "trigger": "Receipt of untaxed income or capital gain in the tax year",
+            "who": "Customers who do not receive a notice to file but have untaxed income or a capital gain"
+          },
+          {
+            "deadline": "As soon as they start or within the first three months of self-employment (for National Insurance purposes)",
+            "must": "Notify HMRC",
+            "ref": "SALF100",
+            "trigger": "Starting self-employment",
+            "who": "Individual starting a new self-employment"
+          },
+          {
+            "deadline": "31 October following the end of the tax year",
+            "must": "File tax return",
+            "ref": "SALF100",
+            "trigger": "End of tax year",
+            "who": "Taxpayer filing a paper return"
+          },
+          {
+            "deadline": "31 January",
+            "must": "File tax return",
+            "ref": "SALF100",
+            "trigger": "End of tax year",
+            "who": "Taxpayer filing electronically"
+          },
+          {
+            "deadline": "Three months from date of issue, or 31 January if later and filed electronically",
+            "must": "File tax return",
+            "ref": "SALF100",
+            "trigger": "Issue of notice to file",
+            "who": "Customer receiving notice to file issued after 31 July following the end of the tax year"
+          },
+          {
+            "deadline": "First payment on account 31 January in the tax year; second payment on account 31 July following; balancing payment 31 January following the end of the tax year",
+            "must": "Make payments on account and balancing payment",
+            "ref": "SALF100",
+            "trigger": "Income tax due for the tax year",
+            "who": "Self-employed taxpayer"
+          },
+          {
+            "deadline": "Quarterly updates: no later than the date the update is given/required, whichever earlier; other records: no later than the date the tax return is delivered/required, whichever earlier",
+            "must": "Keep digital records for each digital obligation tax year using functional compatible software",
+            "ref": "SALF1200",
+            "trigger": "Being a relevant person for a digital obligation tax year",
+            "who": "Relevant person (MTD for Income Tax)"
+          },
+          {
+            "deadline": "By the day the next quarterly update is required; for errors relating to the fourth quarterly update or the period in which the digital termination date falls, no later than the filing date for the return for that digital obligation tax year",
+            "must": "Correct errors or omissions in digital records or quarterly updates using functional compatible software",
+            "ref": "SALF1300",
+            "trigger": "Discovery of an error or omission",
+            "who": "Relevant person (MTD for Income Tax)"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Penalty of up to £3,000, unless a penalty is charged under s.12B(5) TMA 1970 for the same period",
+            "ref": "SALF1200",
+            "trigger": "Failure to comply with record keeping requirements set out in regulations (MTD digital records)"
+          },
+          {
+            "consequence": "Automatic sanctions apply (not detailed in this chunk)",
+            "ref": "SALF100",
+            "trigger": "Failure to comply with the filing deadline"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk introduces the SALF manual covering the legal framework for Income Tax Self Assessment under TMA 1970, its scope (individuals, partnerships, trustees, some non-resident companies) and key deadlines for filing and payment. It also sets out obligations under Making Tax Digital for Income Tax: relevant persons must keep digital records using functional compatible software, meet specific deadlines for quarterly updates and other records, and correct errors in digital records or quarterly updates by set deadlines, with a penalty of up to £3,000 for non-compliance (subject to overlap relief with the s.12B(5) TMA penalty).",
+        "topics": [
+          "overview",
+          "filing-deadlines",
+          "payment-on-account",
+          "digital-record-keeping",
+          "making-tax-digital",
+          "penalties",
+          "enquiries",
+          "partnerships"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"
@@ -2320,6 +2244,111 @@
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
+    "96c274ef3c3ac431": {
+      "chars": 6972,
+      "heading": "Self Assessment Legal Framework manual (SALF) > SALF1500 — Exemption for persons based on claim to relief or chargeability to tax",
+      "index": 25,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "The Commissioners' power to create further exemptions (SALF1530) has not currently been exercised.",
+          "SALF1510 and SALF1520 exemptions are described as 'temporary' and specific to tax year 2026-27, implying they may not apply to later years.",
+          "Entitlement to a listed allowance arising after a digital obligation has already arisen for tax year Y causes the obligation to be treated as never having arisen (retrospective effect) per SALF1500.",
+          "MTD volunteer status means statutory MTD obligations (and their penalties) do not apply, but this does not remove the separate, pre-existing SA return deadline obligation/penalty.",
+          "Example given (obligations commencing 6 April 2027, volunteering for 2026-27) indicates MTD mandation timing is still being phased in and may affect applicability of these exemption rules."
+        ],
+        "cross_references": [
+          "ITA 2007 s.45(1)",
+          "ITA 2007 s.46(1)",
+          "ITA 2007 s.38(1)",
+          "ITA 2007 s.39(2)",
+          "ITTOIA 2005 s.619(1)",
+          "ITTOIA 2005 s.649(1)",
+          "ITTOIA 2005 s.13(1)",
+          "ITTOIA 2005 s.804(1)",
+          "ITTOIA 2005 Part 2 Chapter 16",
+          "Schedule 45 Finance Act 2013 Part 3",
+          "TIOPA 2010 Part 2",
+          "ITA 2007 s.809VA",
+          "ITEPA 2003 s.41M",
+          "ITTOIA 2005 s.845A",
+          "Schedule D1 1992 Act paragraph 1",
+          "Schedule 10 Finance Act 2025 paragraph 1(6)",
+          "ITA 2007 s.809I",
+          "ITTOIA Part 2 (trading income)",
+          "Compliance Handbook (penalties and penalty reform)",
+          "MTD Income Tax (Digital Obligations) Regulations"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "A person potentially subject to digital obligations who may qualify for exemption based on chargeability to tax, allowances, or other listed conditions",
+            "ref": "SALF1500",
+            "term": "Relevant person (exemption context)"
+          },
+          {
+            "meaning": "The tax year to which a digital obligation under MTD relates",
+            "ref": "SALF1500",
+            "term": "Digital obligation tax year"
+          },
+          {
+            "meaning": "Customers (formerly 'participants') who sign up for Making Tax Digital before being required to use it; earliest year available was 2024-25",
+            "ref": "SALF1630",
+            "term": "MTD Volunteers"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Meet identity verification conditions set out by Commissioners direction",
+            "ref": "SALF1610",
+            "trigger": "Compliance with digital obligations",
+            "who": "Relevant person subject to MTD digital obligations"
+          },
+          {
+            "deadline": "As specified by Commissioners direction where Regulations do not set a specific time",
+            "must": "Give notice in the form and by the method specified by Commissioners direction, accompanied by any specified evidence, within any timeframe specified",
+            "ref": "SALF1620",
+            "trigger": "Requirement or permission to give notice under the Regulations",
+            "who": "Relevant person giving a notice under MTD Income Tax (Digital Obligations) Regulations"
+          },
+          {
+            "deadline": "Standard SA return deadline (not created by MTD legislation)",
+            "must": "Still meet the tax return deadline despite not being subject to statutory MTD obligations",
+            "ref": "SALF1630",
+            "trigger": "Voluntary sign-up to MTD before mandation",
+            "who": "MTD volunteer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Penalties will still be charged, as this deadline is not an obligation created by MTD legislation",
+            "ref": "SALF1630",
+            "trigger": "MTD volunteer misses the tax return deadline"
+          },
+          {
+            "consequence": "No penalty, since none of the statutory MTD obligations apply to volunteers",
+            "ref": "SALF1630",
+            "trigger": "MTD volunteer misses a 'late' quarterly update"
+          }
+        ],
+        "relevance": "related",
+        "summary": "This chunk covers exemptions from Making Tax Digital (MTD) digital obligations under the SALF manual: general exemptions based on allowances/reliefs (marriage allowance, blind person's allowance) or company status; temporary exemptions specific to tax year 2026-27 for trust/settlement/estate income, visiting performers, qualifying care providers, and farmers/creative artists averaging claims; temporary residence and foreign income/gains exemptions for 2026-27 (non-residence, split year, non-resident personal allowance claims, dual residence, remittance basis provisions, new-resident reliefs, temporary repatriation facility); a Commissioners' power to create further exemptions (not yet exercised); identity verification and notice-giving requirements set by Commissioners direction; and rules on MTD volunteers, who are not subject to statutory MTD penalties but remain liable for standard SA return deadline penalties.",
+        "topics": [
+          "making-tax-digital",
+          "digital-obligations",
+          "exemptions",
+          "residence",
+          "foreign-income",
+          "remittance-basis",
+          "verification-of-identity",
+          "notices",
+          "mtd-volunteers"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
     "a4d2a8f1eb52b32e": {
       "chars": 11318,
       "heading": "Self Assessment Legal Framework manual (SALF) > Fixed penalties > Example: Restriction of fixed penalties where tax due minimal",
@@ -2489,6 +2518,158 @@
           "appeals",
           "reasonable-excuse",
           "special-reduction"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "a991378e9da8c973": {
+      "chars": 11658,
+      "heading": "Self Assessment Legal Framework manual (SALF) > SALF1420 — Exemptions where an exclusion notice is in place - Exclusion exemption",
+      "index": 24,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Qualifying amount for 2024-25",
+            "period": "2024-25",
+            "ref": "SALF1440",
+            "value": "£50,000"
+          },
+          {
+            "name": "Qualifying amount for 2025-26",
+            "period": "2025-26",
+            "ref": "SALF1440",
+            "value": "£30,000"
+          },
+          {
+            "name": "Qualifying amount for 2026-27 and subsequent",
+            "period": "2026-27 onwards",
+            "ref": "SALF1440",
+            "value": "£20,000"
+          }
+        ],
+        "caveats": [
+          "It is anticipated that it will be rare for the digital exclusion conditions in SALF1420 to be met.",
+          "MTD phased introduction dates (April 2026, 2027, 2028) and thresholds depend on qualifying income two tax years prior (Y-2).",
+          "Continuity rule from 2029-30 onwards means a person subject to digital obligation remains subject to it until three consecutive years below the qualifying amount.",
+          "Specified-description exemptions (powers of attorney etc.) do not apply if the power has been revoked, come to an end, or (in certain circumstances) the donor is still capable of providing financial information to HMRC.",
+          "Where the specified-description exemption applies, any obligation which has arisen is treated as never having arisen.",
+          "If the tax year has ended and no notice to file has yet been given, qualifying income depends on whether quarterly updates were required; otherwise qualifying income is treated as zero."
+        ],
+        "cross_references": [
+          "ITTOIA 2005 s.13",
+          "ITTOIA 2005 Chapter 2 of Part 7",
+          "Mental Capacity Act 2005 s.9(1)",
+          "Mental Capacity Act 2005 Schedule 4",
+          "Mental Capacity Act 2005 s.16(2)(b)",
+          "Adults with Incapacity (Scotland) Act 2000 s.15(1)",
+          "Adults with Incapacity (Scotland) Act 2000 s.16(1)",
+          "Adults with Incapacity (Scotland) Act 2000 s.58(1)",
+          "Enduring Powers of Attorney (Northern Ireland) Order 1987 Article 4(1)",
+          "Mental Health (Northern Ireland) Order 1986 Article 101(1)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Persons with an exclusion notice lacking an end date",
+            "name": "Further exclusion cessation notice",
+            "ref": "SALF1430",
+            "rule": "Within 3 months of first having reason to believe they ceased to be excluded"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A notice HMRC must issue if satisfied a person is or was digitally excluded, stating the date the person became excluded and the date (if any) they ceased to be excluded; it is 'in place' from the start date until the cessation date (if any)",
+            "ref": "SALF1430",
+            "term": "Exclusion notice"
+          },
+          {
+            "meaning": "Either the total gross amount from all relevant activities included in the return before deductions, or (if no requirement for gross amount) the net amount after deductions; excludes trustee receipts, visiting performer payments (ITTOIA 2005 s.13), and qualifying care receipts (ITTOIA 2005 Ch.2 Pt.7); adjusted proportionately for periods other than 12 months; post-notice-to-file amendments increasing income are disregarded if made after start of the relevant tax year",
+            "ref": "SALF1450",
+            "term": "Qualifying income"
+          },
+          {
+            "meaning": "The income threshold for a tax year below which MTD digital obligations do not apply: £50,000 (2024-25), £30,000 (2025-26), £20,000 (2026-27 and subsequent)",
+            "ref": "SALF1440",
+            "term": "Qualifying amount"
+          },
+          {
+            "meaning": "Relevant activity carried on wholly outside the UK, or the outside-UK part where carried on partly outside the UK",
+            "ref": "SALF1470",
+            "term": "Overseas activity"
+          },
+          {
+            "meaning": "A person resident in the UK for tax year Y-2 but not resident, or reasonably expecting not to be resident, in the UK for tax year Y, who has given notice satisfying HMRC of these facts",
+            "ref": "SALF1470",
+            "term": "New non-resident"
+          },
+          {
+            "meaning": "The latest tax year the person was required to deliver a return and had to do so before the start of the tax year (depends on when notice to file was given)",
+            "ref": "SALF1480",
+            "term": "Previous filing tax year"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Write to HMRC and apply for an exemption",
+            "ref": "SALF1420",
+            "trigger": "Meeting religious society, practical inability, or identity verification exclusion conditions",
+            "who": "Person believing they are digitally excluded (non-automatic grounds)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Notify HMRC stating the reason and date they believe they became excluded and date (if any) they believe they ceased to be excluded",
+            "ref": "SALF1430",
+            "trigger": "Belief of exclusion status",
+            "who": "Relevant person who believes they are or were excluded"
+          },
+          {
+            "deadline": "Within 3 months of first having reason to believe they ceased to be excluded",
+            "must": "Give further notice of the date they believe they ceased to be excluded",
+            "ref": "SALF1430",
+            "trigger": "Belief that exclusion has ceased",
+            "who": "Person who did not specify an end date in exclusion notice but later believes no longer excluded"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Decide if they agree person is or was excluded and give notice of decision if not agreed; issue exclusion notice if satisfied person is/was excluded, regardless of notification",
+            "ref": "SALF1430",
+            "trigger": "Notification received or HMRC's own satisfaction of exclusion",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Give notice to HMRC that the relevant activity falls within specified descriptions",
+            "ref": "SALF1460",
+            "trigger": "Wishing to claim exemption for that activity",
+            "who": "Relevant person claiming exemption for relevant activity (trustee, visiting performer, qualifying care)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Give notice satisfying HMRC of non-residence facts",
+            "ref": "SALF1470",
+            "trigger": "Ceasing/expecting to cease UK residence after being resident in year Y-2",
+            "who": "New non-resident claiming overseas activity exemption"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Give notice satisfying HMRC of the fact",
+            "ref": "SALF1480",
+            "trigger": "Becoming a person of specified description after end of previous filing tax year",
+            "who": "Person in specified description category (e.g. donor of power of attorney) starting after previous filing tax year"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk covers Making Tax Digital (MTD) for Income Tax exemptions and thresholds: digital exclusion for religious belief, practical inability, or identity verification issues (requiring an exclusion notice from HMRC); the phased income thresholds triggering MTD obligations from April 2026-2028; how qualifying income is calculated and what is excluded; exemptions for trustees, visiting performers, and qualifying care providers; exemptions for overseas activities of non-residents; exemptions for donors under powers of attorney, ministers of religion, and Lloyd's underwriters; and exemption for those without a National Insurance number.",
+        "topics": [
+          "making-tax-digital",
+          "digital-exclusion",
+          "exemptions",
+          "qualifying-income",
+          "overseas-activities",
+          "power-of-attorney",
+          "national-insurance-number"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"

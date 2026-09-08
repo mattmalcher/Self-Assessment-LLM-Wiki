@@ -1,0 +1,38 @@
+{
+  "chunks": {
+    "d2503ca0625db518": {
+      "chars": 1346,
+      "heading": "Statutory Instruments",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This wiki does not mirror all SIs relevant to tax/Self Assessment, only a small structurally central set; other SIs are only accessible via a live external search that is not snapshotted.",
+          "The mirrored SI set may grow over time via the process described (adding entries to pipeline/sources.yml)."
+        ],
+        "cross_references": [
+          "../primary-legislation/acts/tma-1970.md",
+          "tribunal-procedure-ftt-tax-chamber-rules-2009.md",
+          "pipeline/sources.yml",
+          "../../meta/refresh-process.md",
+          "https://statutoryinstruments.parliament.uk/?SearchTerm=tax"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk is a navigational/scope page explaining that secondary legislation (SIs) implements detail under powers granted by Acts, and that this wiki only fully mirrors SIs structurally central to Self Assessment procedure rather than all tax-related SIs. It links to a live search for other SIs and lists the Tribunal Procedure (First-tier Tribunal) (Tax Chamber) Rules 2009 as the sole mirrored SI, governing how Self Assessment appeals proceed at tribunal (time limits, case categorisation, evidence, costs). It also explains how to add further SIs to the mirrored set via a pipeline configuration file.",
+        "topics": [
+          "secondary-legislation",
+          "statutory-instruments",
+          "tribunal-procedure",
+          "wiki-scope"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "legal-system/secondary-legislation/statutory-instruments.md"
+}
