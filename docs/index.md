@@ -17,6 +17,14 @@ creates the obligations, the tribunal decisions that interpret it, HMRC's own
 manuals and policy publications, and the customer-facing guidance that
 implements it.
 
+!!! warning "Current law only"
+
+    This wiki describes the current consolidated law and latest guidance held
+    in its mirror. It does **not** preserve a complete historical version set
+    and must not be used to determine which rules, rates, forms or guidance
+    applied to an earlier tax year. Historical and backdated calculations are
+    out of scope for both the wiki and the proposed reference implementation.
+
 Every page here is generated. Nothing on it is written from the model's own
 knowledge of tax law — each page is composed only from structured notes
 extracted from mirrored source documents, and every rule, figure and deadline
@@ -77,7 +85,9 @@ what follows if it is late or wrong. The rules inventory and data requirements
 pages in the reference implementation section are generated specifically to
 feed that, alongside the hand-written
 [data model notes](reference-implementation/data-model-notes.md). That
-implementation is **not** started here.
+implementation is **not** started here. Its initial scope is current law only;
+support for historical positions would require separately versioned sources and
+rules with explicit effective periods.
 
 ## Not official, not advice, LLM-written
 

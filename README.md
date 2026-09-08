@@ -10,6 +10,17 @@ GitHub Pages, condensed from a continuously refreshed mirror of the primary
 material — legislation, tribunal decisions, HMRC manuals and policy
 publications, and customer-facing guidance.
 
+## Temporal scope: current law only
+
+For now, this project describes the **current consolidated law and the latest
+guidance mirrored by the pipeline**. It is not a historical tax-year research
+tool and must not be used to decide what law, guidance, rates or forms applied
+at an earlier date. The corpus does not preserve a complete version history,
+and the extraction stage is not designed to reconstruct superseded rules from
+amendment annotations. Any future head-of-duty implementation built from this
+work is likewise current-only unless and until dated source snapshots and
+effective-period rules are added explicitly.
+
 **Site:** https://mattmalcher.github.io/Self-Assessment-LLM-Wiki/ (enable
 GitHub Pages under Settings → Pages → Source: GitHub Actions, and Settings →
 Actions → General → Workflow permissions: Read and write, for the first deploy)
@@ -106,7 +117,8 @@ system for Self Assessment. The extract schema is shaped for it — obligations,
 deadlines, amounts, penalties and definitions, each with a citation — and two
 generated pages (`rules-inventory`, `data-requirements`) exist specifically to
 inventory what such a system would need. The implementation itself is not
-started.
+started. Its present scope is current law only; historical or backdated
+calculations are out of scope.
 
 ## Not official, not legal advice
 

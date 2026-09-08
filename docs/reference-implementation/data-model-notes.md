@@ -19,6 +19,16 @@ consequences of getting it wrong) - and records what such a system would
 need to pull from the sources this wiki mirrors, and where each piece
 lives. It's a reading list with structure, not a spec.
 
+## Temporal scope
+
+The proposed first implementation is **current-law only**. The repository
+mirrors current consolidated legislation and generally the latest available
+guidance or helpsheet; it does not retain the complete source history needed to
+reconstruct the position for an earlier tax year. Historical/backdated
+calculations are therefore out of scope. Adding them later would require dated
+source snapshots and rules with explicit effective-from/effective-to periods,
+commencement provisions and transition handling.
+
 A head of duty engine needs each of the following as **queryable facts with
 a validity period and a citation**, not as prose. The gap between what this
 wiki currently holds (mirrored documents) and what the engine would need

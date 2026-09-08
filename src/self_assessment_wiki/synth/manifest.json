@@ -1,10 +1,45 @@
 {
+  "assessments-and-discovery": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-08",
+    "input_hash": "97647c241799c37a",
+    "note_count": 80,
+    "output": "docs/lifecycle/assessments-and-discovery.md"
+  },
   "deadlines-and-amendments": {
     "generated_by": "claude-cli:opus",
     "generated_on": "2026-09-08",
     "input_hash": "5bc2f08d143fa4ce",
     "note_count": 80,
     "output": "docs/lifecycle/deadlines-and-amendments.md"
+  },
+  "enquiries": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-08",
+    "input_hash": "f3dbff2c4b47c26e",
+    "note_count": 80,
+    "output": "docs/lifecycle/enquiries.md"
+  },
+  "payments-and-collection": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-08",
+    "input_hash": "7a79e88fd10472c8",
+    "note_count": 80,
+    "output": "docs/lifecycle/payments-and-collection.md"
+  },
+  "penalties": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-08",
+    "input_hash": "5c0e43bda8c53a14",
+    "note_count": 90,
+    "output": "docs/lifecycle/penalties.md"
+  },
+  "records-and-information": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-08",
+    "input_hash": "f528ef242022b8f5",
+    "note_count": 70,
+    "output": "docs/lifecycle/records-and-information.md"
   },
   "the-return": {
     "generated_by": "claude-cli:opus",
