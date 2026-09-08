@@ -1,16 +1,23 @@
 {
+  "deadlines-and-amendments": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-08",
+    "input_hash": "5bc2f08d143fa4ce",
+    "note_count": 80,
+    "output": "docs/lifecycle/deadlines-and-amendments.md"
+  },
   "the-return": {
     "generated_by": "claude-cli:opus",
-    "generated_on": "2026-09-04",
-    "input_hash": "dc769e21a5712266",
+    "generated_on": "2026-09-08",
+    "input_hash": "a51688ca673d3d4d",
     "note_count": 90,
     "output": "docs/lifecycle/the-return.md"
   },
   "who-must-file": {
     "generated_by": "claude-cli:opus",
-    "generated_on": "2026-09-04",
-    "input_hash": "b1fa40a58374ef7a",
-    "note_count": 39,
+    "generated_on": "2026-09-08",
+    "input_hash": "501939e373afc890",
+    "note_count": 80,
     "output": "docs/lifecycle/who-must-file.md"
   }
 }

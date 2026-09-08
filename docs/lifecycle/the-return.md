@@ -1,9 +1,9 @@
 ---
 title: The return itself - content, formats and schedules
 generated: true
-generated_on: '2026-09-04'
+generated_on: '2026-09-08'
 generated_by: claude-cli:opus
-input_hash: dc769e21a5712266
+input_hash: a51688ca673d3d4d
 note_count: 90
 sources:
 - govuk-sa-detailed-information
@@ -12,30 +12,16 @@ sources:
 - hmrc-manual-em
 - hmrc-manual-salf
 - hmrc-manual-sam
-- hmrc-manuals-index
-- hmrc-tools-calculators
-- sa-helpsheets
-- sa-helpsheets:5f67c90c-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67cd23-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67ceae-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67cefb-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67cf48-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67d29a-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67d41e-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67d46f-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67d5b1-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67db85-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67dbe3-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67dc31-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67dcd2-7631-11e4-a3cb-005056011aef
-- sa-helpsheets:5f67dd70-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67ddc2-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67defe-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67dfee-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67e282-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:5f67e327-7631-11e4-a3cb-005056011aef
 - sa-helpsheets:f689f4a2-7da1-41a3-b37d-b18c346219ed
-- si-ftt-tax-chamber-rules-2009
 ---
 
 # The return itself - content, formats and schedules
@@ -50,189 +36,250 @@ sources:
     [GOV.UK](https://www.gov.uk/self-assessment-tax-returns) for official
     guidance.
 
-This page describes what a Self Assessment personal tax return is as a matter of law, what it must contain, how the main return relates to supplementary pages, what "delivering" a return means, and how the self-assessment calculation fits in. It is an unofficial reference compiled from legislation, HMRC internal manuals and HMRC's published helpsheets; where a proposition comes only from an HMRC manual or helpsheet, that is stated. It does not restate rates or reliefs except where they identify a particular schedule.
+This page covers what a Self Assessment return legally consists of under TMA 1970 — the main return, the self assessment (calculation) that forms part of it, the supplementary pages for particular income sources, and what "delivering" a return means in paper and electronic form. It draws on the statute, HMRC's Self Assessment Legal Framework (SALF) and Self Assessment (SAM) manuals, and the helpsheet families that support individual schedules. It is an unofficial reference and is not approved by HMRC.
 
 ---
 
-## 1. What the return legally is
+## 1. What triggers the obligation
 
-A personal tax return exists because an officer of HMRC gives a **notice to file** under TMA 1970 s.8. SALF203 describes the notice as one "issued to the taxpayer by 'an officer of the Board'", and notes that some taxpayers receive a paper return that itself contains the notice to file (SALF203). Parallel obligations exist for trustees (s.8A) and for personal representatives, who make a return of income and gains arising to the estate (SALF806, s.8 TMA); partnerships are dealt with under s.12AA (SALF502).
+The obligation to make a return is not free-standing: it arises from a notice.
 
-Three statutory components make up a complete individual return:
-
-| Component | Requirement | Source |
+| Input | Condition | Result |
 |---|---|---|
-| Information | Such information as is reasonably required to establish the income tax and CGT liability | TMA 1970 s.8(1); SALF (specification of information required) |
-| Declaration | A declaration that the return is correct and complete to the best of the taxpayer's knowledge | TMA 1970 s.8(2) |
-| Self assessment | An assessment of the tax due for the year, based on the return information, after reliefs/allowances claimed and tax deducted at source | TMA 1970 s.9(1) |
+| Notice to file given by an officer of the Board | Notice served on the taxpayer (or a paper return containing the notice is issued) | Taxpayer must deliver a completed return for the year of assessment (TMA 1970 s.8(1)) |
+| Return delivered with no notice given | Received on date D | Treated as made in response to a notice given on D — a "voluntary return" (SALF202) |
 
-**Scope of "total income."** SALF203 describes the return as covering *all* sources of taxable income in a single return, returned net of relief or allowance claimed and net of tax deducted (or treated as deducted or paid) at source (TMA 1970 s.8(1), (1AA), (5)).
+SALF203 records HMRC's reading of s.8: the notice is issued "to the taxpayer by an officer of the Board", and some taxpayers receive a paper return that itself contains the notice to file (SALF203 / TMA 1970 s.8).
 
-**Partnership income.** A partner must include their share of partnership profits, losses, credits or charges in their own personal return (TMA 1970 s.8(1B), (1C); SALF204). SALF502 states that an individual partner must include *exactly* the same profit share as allocated in the partnership statement and cannot adjust it. The partnership return itself contains a **partnership statement** rather than a self assessment: total income, losses, credits and charges for each period of account, plus each partner's share (TMA 1970 s.12AB(1)).
+Voluntary-return treatment was put beyond doubt by law introduced with retrospective and prospective effect **from 12 February 2019** (SALF202; SAM123140). Because the notice is deemed given on the date of receipt, a voluntary return is always treated as delivered on or before its filing date, so no late-filing penalty arises (SALF202 / SALF203; EM Voluntary Returns).
+
+If HMRC agrees to **withdraw** a notice to file, late filing penalties already charged are cancelled (CH61700). SAM121141 notes that this only concerns whether the document counts as a return: information that "purports to be a return but is not in proper form / lacks proper declaration" is rejected and an official return issued instead (SAM121141 step 14).
 
 ---
 
-## 2. The self assessment (calculation) as part of the return
+## 2. What the return must contain
 
-- Every return must include a self assessment of tax due, **even where the result is nil or a repayment** (TMA 1970 s.9(1); SALF204).
-- A taxpayer may instead ask HMRC to calculate the tax, by filing the information section in time (TMA 1970 s.9(2)). Where the return is filed within that limit, an officer calculates the tax and issues a copy of the calculation before the payment due date (TMA 1970 s.9(3)). SALF202 treats an HMRC calculation as if it were a self assessment.
-- SALF204 says a return filed **without** a calculation outside the s.9(2) limits is "in strictness unsatisfactory"; HMRC may still calculate it in practice but does not guarantee timely notification, and interest and penalties still apply to tax paid late. That is HMRC's stated practice, not a statutory entitlement.
-- SALF204 records an HMRC concession: if HMRC exceptionally fails to notify tax due in time despite a return filed within the s.9(2) window, interest or penalty for the period of HMRC delay will be waived.
-- A self assessment may not be made more than four years after the end of the tax year (TMA 1970 s.34A).
+### 2.1 Total income
 
-**Deadlines for asking HMRC to calculate:**
+A personal return must cover **all sources of taxable income** the taxpayer has for the year, returned net of relief or allowance claimed and net of tax deducted (or treated as deducted or paid) at source (SALF203 / TMA 1970 s.8(1), (1AA), (5)).
 
-| Situation | Deadline | Source |
+A partner must include their share of partnership profits, losses, credits or charges in their **own** return (TMA 1970 s.8(1B), (1C); SALF204), and must enter **exactly the same figure** as their share shown on the partnership return (EM7503 / TMA 1970 s.12AA). Where partners genuinely disagree about the allocation, HMRC's position for returns from 2018-19 onward is that the disputing partner still enters the figure shown on the partnership return and refers the dispute to the Tribunal Service (SAM, Partner disputes).
+
+### 2.2 The declaration
+
+The taxpayer must declare that the return is correct and complete to the best of their knowledge (TMA 1970 s.8(2)). HMRC's view in EM4802 is that this responsibility is non-delegable: the taxpayer must "take the necessary trouble to read the return form and notes", must sign their own return personally, and "cannot delegate responsibility for its accuracy". Trust and Estate returns, and Registered Pension Scheme trustee returns, must be signed by the trustee or person acting in that capacity; unsigned returns are unlogged and sent back for signature (SAM123040 — Signatures).
+
+### 2.3 The self assessment (calculation)
+
+Every return must include a **self assessment** — the taxpayer's own calculation of the tax due, forming part of the return (TMA 1970 s.9(1); SALF202). SALF204 states this is required even where the figure is nil or a repayment is due.
+
+Section 9(1) splits the self assessment into two elements:
+
+| Element | Content | Ref |
 |---|---|---|
-| Notice to file issued before 31 July | 31 October following the tax year | TMA 1970 s.9(2); SALF202 |
-| Notice given after 31 August following the tax year | 2 months beginning with the day the notice is given | TMA 1970 s.9(2); SALF202 |
+| s.9(1)(a) | Assessment of the amounts on which the person is chargeable to income tax and CGT for the year, on the basis of the return information and any relief or allowance claimed in the return | TMA 1970 s.9(1)(a) |
+| s.9(1)(b) | Assessment of the amount *payable* by way of income tax: the s.9(1)(a) amount less income tax deducted at source and tax credits within s.397(1) ITTOIA 2005 | TMA 1970 s.9(1)(b) |
 
----
+Class 4 NICs are brought within this machinery by s.15 et seq. Social Security Contributions and Benefits Act 1992, with s.16(1) applying Income Tax Acts provisions to Class 4 as if they were income tax (EM manual, TMA70/S9 section).
 
-## 3. "Delivering" the return
+### 2.4 HMRC calculating instead
 
-SALF203 glosses "deliver to the officer" (TMA 1970 s.8(1)(a)) as meaning the return is **received at an HMRC office on or before the relevant day**, with delivery accepted up to midnight, including returns found in the post box at the start of the next day. HMRC's acceptance of midnight delivery derives from *Steeden v Carver* (SpC 212), which SALF208 treats as a reasonable excuse point: a return arriving one day after the statutory date does not attract the (old regime) initial fixed penalty, but is still "late" for other legislative purposes such as enquiry time limits.
+A return may be delivered without the calculation if it is filed early enough for HMRC to compute the tax (TMA 1970 s.9(2)). The resulting HMRC calculation is treated as if it were a self assessment (SALF202).
 
-A **voluntary return** — one sent without a notice to file — is treated (from law put beyond doubt on 12 February 2019, with retrospective and prospective effect) as made in response to a notice to file given on the date the return was received (SALF202). Consequence: a voluntary return is always treated as delivered on or before the filing date, so no late-filing penalty arises (SALF202/SALF203).
-
----
-
-## 4. Formats: paper, electronic, and MTD software
-
-### 4.1 Filing dates by format
-
-| Case | Filing date | Source |
+| Situation | Deadline for delivering the return | Ref |
 |---|---|---|
-| Paper return, notice given before 31 July | 31 October following the end of the year of assessment | TMA 1970 s.8(1)(a) |
-| Electronic return, notice given before 31 July | 31 January following the end of the year of assessment | TMA 1970 s.8(1)(a) |
-| Notice (or return containing it) given after 31 July | 3 months beginning with the date of the notice, or 31 January if later (electronic filing) | TMA 1970 s.8(1D)–(1G) |
-| Voluntary paper return | 31 October following the tax year, unless received after 31 July — then 3 months after receipt | SALF202 |
-| Voluntary electronic return | 31 January following the tax year, unless received after 31 October — then 3 months after receipt | SALF202 |
+| Notice to file issued before 31 July following the tax year | 31 October following the end of the tax year | TMA 1970 s.9(2); SALF202/SALF204 |
+| Notice to file (or return containing it) given after 31 August following the tax year | Within 2 months beginning with the day the notice is given | TMA 1970 s.9(2); SALF202/SALF204 |
 
-**Sources disagree on late-issued notices.** SALF203/s.8(1D)–(1G) give "3 months from the date of the notice". HMRC's operational SAM manual states the filing date for returns issued after 31 July is "3 months and 7 days after issue date" (SAM glossary, *Filing date – 2007-08 and later years*), and separately warns that a computer/batch quirk may mean the 7 days is not always applied to the derived last enquiry date, advising a manual check. Implementers should treat the SAM figure as HMRC's administrative practice and s.8(1D)–(1G) as the statutory rule.
+Where HMRC calculates, an officer must compute the tax from the return information and issue a copy of the calculation before the due date for payment (TMA 1970 s.9(3)). SALF204 notes that a return filed without a calculation *outside* these limits is "in strictness unsatisfactory"; HMRC may still calculate it, but does not guarantee timely notification, and interest and penalties run on any tax paid late (s.9(3); SALF204). Exceptionally, where HMRC fails to notify the tax due in time despite the taxpayer filing within the s.9(2) window, HMRC's stated practice is to waive interest or penalty attributable to its own delay (SALF204).
 
-### 4.2 Exceptions to the standard paper/online split
+SAM70080 (customer-facing help policy) states that a paper return filed after 31 October attracts an automatic late filing penalty regardless, and that HMRC sends reminder forms SA309A (individuals) or SA309C (trusts) in December where a return filed after 31 October has not been processed by early December.
 
-SAM lists exceptions to the standard online/paper filing dates for non-resident companies (**SA700**), registered pension scheme trustees (**SA970**), and certain elected representatives (MP, MSP, Welsh Assembly Member, NI Assembly Member). SAM also states that an individual wishing to file online must register and enrol via the HMRC website first.
-
-### 4.3 Making Tax Digital for Income Tax
-
-For a **digital obligation tax year**, SALF1110 states that a relevant person must use **functional compatible software (FCS)** — software interacting with HMRC through the API platform — to keep and correct digital records, send quarterly updates and corrections, and *deliver returns in response to a s.8 TMA 1970 notice to file*. SALF1110 adds that a return submitted through any other channel "would not be a valid return", the obligation to file would remain, and a failure-to-make-a-return penalty may arise. This is HMRC's stated reading of the requirement, set out in the manual.
-
-Mandation thresholds (SALF910): qualifying income over **£50,000** in the 2024-25 return → MTD from 6 April 2026; over **£30,000** → 6 April 2027; over **£20,000** → 6 April 2028. Exemptions include digital exclusion (religious belief, or where use of electronic communications/digital records is not reasonably possible because of age, disability or location, or where identity-verification conditions cannot be met), which requires the person to apply and HMRC to issue an **exclusion notice** (SALF1420, SALF1430). SALF1420 says HMRC anticipates it will be rare for the exclusion conditions to be met.
-
-Many helpsheets carry a standing note that MTD users make claims and adjustments **through compatible software instead of the Self Assessment boxes** the helpsheet references (e.g. HS204, HS234, HS286, HS325, HS340, HS343).
+**Machine-implementable:** for a return filed online, HMRC's processing treats it as a self-calculation case in all cases — "Individual and Trust returns filed online are always treated as Self Calculation cases" (SAM124080).
 
 ---
 
-## 5. Supplementary pages and the income sources they correspond to
+## 3. Formats: paper, electronic and substitutes
 
-The notes identify the following schedules through helpsheet cross-references. Box references are those given by the 2025-26 (2026 version) helpsheets.
+### 3.1 The form families
 
-| Page | Covers | Helpsheets that reference it |
+| Form | Used for | Ref |
 |---|---|---|
-| **SA100** (main return) | Core return: TR 3 dividends (box 4) and other UK income (boxes 17–18); TR 4 charitable giving (boxes 5–10); TR 7 "Any other information" (box 19) | HS342 (Gift Aid, gifts of shares/land), HS325 (other taxable income), HS237 & HS393 (investment details in box 19), HS305 (dividend shares, box 4) |
-| **SA101** Additional information | Share schemes (Ai 2 box 1); other tax reliefs (Ai 2 boxes 3, 5, 10); employment lump sums (Ai 2 boxes 3–10); gross interest incl. Accrued Income Scheme (Ai 1 box 3); pension savings tax charges (Ai 4 boxes 10–18) | HS305, HS340, HS237, HS393, HS325, HS343, HS345, HS342 (Payroll Giving), HS204 |
-| **SA102** Employment | Employment income, benefits, post-P45 share income | HS305, HS207, HS342 |
-| **SA103S / SA103F** Self-employment (short/full) | Sole trade profits; qualifying care relief; averaging | HS236, HS234, HS204 |
-| **SA103L** Lloyd's underwriters | Lloyd's income | HS204 (box 56) |
-| **SA104S / SA104F** Partnership (short/full) | Partnership profit share; averaging adjustment | HS234, HS204, HS266 |
-| **SA105** UK property | UK property business | HS204 (box 42), HS292 (via UK property notes) |
-| **SA106** Foreign | Foreign income, foreign tax credit relief, remitted income, foreign life policy gains, AIS on overseas securities | HS321, HS264, HS266, HS343, HS204 |
-| **SA107** Trusts etc | Trust and estate income | HS266 |
-| **SA108** Capital gains summary | Chargeable gains, losses, claims and elections (codes in boxes 8/20/28/36; details in box 54) | HS286, HS287, HS292, HS393, HS282 |
-| **SA109** Residence and foreign income and gains (FIG) regime etc | FIG regime claims (boxes 28–30), business investment relief (box 38), TRF designation (boxes 50–54) | HS266, HS264, HS305 |
-| **SA110** Tax calculation summary | Tax calculation adjustments (e.g. TC 2 box 15; averaging boxes 14–15; pension charges box 6) | HS286, HS234, HS345 |
+| SA100 | Main individual return | SAM120040; SAM121030 |
+| SA200 | Short Tax Return (individuals) | SAM121030; SAM120040 |
+| SA316 | Notice to file (issued instead of a paper return) | SAM70090; SAM120040 |
+| SA700 | Non-resident company return | SAM121030; SAM "E > Enquiry type" |
+| SA900 | Trust and Estate return | SAM121030 |
+| SA970 | Return for Trustees of Registered Pension Schemes | SAM121030 |
 
-Other return forms named in the notes: **SA700** (non-resident company), **SA970** (registered pension scheme trustees), **SA900** (Trust and Estate) and **SA904** (Trust and Estate Foreign) (SAM; HS320; HS321).
+### 3.2 Restrictions on which form may be used
 
-### Helpsheet families
+- **SA200 turnover exclusion:** from 2024/25 onward, turnover of £90,000 or more from self-employment, or £90,000 or more from land and property, may not be included on a Short Tax Return; HMRC issues an SA100 instead (SAM121030; SAM "All cases"/SAM121261).
+- **SA200 after 31 July:** a Short Tax Return should not be issued for a return issued after 31 July following the end of the relevant year, nor for CY-2 or earlier or duplicate cases, because it lacks the Notice detailing extended filing dates (SAM120040, Automatic issue Notes).
+- **SA200 must not be reissued:** where a short return is inadequate, form SA100 is issued instead, with the "Inhibit Issue of Short Tax Return" signal set (SAM120040).
+- **Registered Pension Scheme trustee returns cannot be filed online**, so only one filing date calculation applies (SAM — Registered Pension Schemes).
+- **Bankruptcy-year returns cannot be filed online**: the return for the year of the bankruptcy or IVA order is issued manually, noted "BY Year", and must be processed on the pre-bankruptcy SA record (SAM121270; SAM106030).
+- **Deceased customers:** from July 2020, online filing on behalf of deceased customers is no longer available; paper returns are required for all outstanding returns (SAM, "Filing online" under deceased procedures).
 
-The published helpsheet collection (GOV.UK, *Self Assessment tax return helpsheets*) groups broadly by schedule:
+### 3.3 Substitute (computer-generated) paper returns
 
-- **HS2xx — reliefs, losses, employment and CGT basics:** HS204 (limit on Income Tax reliefs), HS207 (non-taxable payments/benefits, SA102), HS234 (averaging, SA103F/SA104), HS236 (qualifying care relief, SA103S/F), HS237 (CITR, SA101), HS253 (furnished holiday lettings), HS264/HS266 (remittance basis; FIG regime, SA106/SA109), HS282/HS286/HS287/HS292 (CGT, SA108).
-- **HS3xx — shares, insurance, pensions and specialist income:** HS305 (employment-related securities, SA101 Ai 2 box 1, with working sheets 1–19), HS320/HS321 (UK and foreign life insurance gains), HS325 (other taxable income), HS340 (qualifying loan interest, SA101 Ai 2 box 5), HS341/HS393 (EIS/SEIS), HS342 (charitable giving, TR 4), HS343 (Accrued Income Scheme, Ai 1 box 3), HS345 (pension savings tax charges, Ai 4).
+HMRC will accept a computer-generated version of a paper return only if it is **"identical"** to the official form. SAM122013 defines this by reference to layout, page numbers, graphical elements, printing colour/greyscale, page binding/order, answer box size, absence of on-screen guidance material and absence of extraneous elements (detailed criteria partly withheld under FOIA). Non-identical versions are returned as unsatisfactory using SEES letter SA602 (SAM122013).
 
-Helpsheets are customer-facing guidance: they are simplified, year-specific, and several explicitly say they do not cover every case (e.g. HS286 says complex cases may need a tax adviser; HS343 says special rules require further guidance).
+Associated HMRC operational rules:
+
+- Copies of computer-generated returns on digital media (CD or disk) must not be accepted (SAM121030, Identical criteria Note 4).
+- Requests to print computer-generated returns using HMRC office equipment must not be accepted (Note 5).
+- A computer-generated version without an original signature must not be accepted (Note 6).
+- Returns showing an **altered tax year**, submitted as a substitute for another year, must not be logged; they are returned immediately with SEES letter SA604 and the correct version issued (SAM121021).
+- Manuscript entries or amendments on an otherwise identical third-party-software paper return must be initialled by the taxpayer; uninitialled entries are clarified with the taxpayer before capture, but clarification is limited to unclear handwriting or arithmetic errors, not substantive changes to figures supplied (SAM121460).
+
+### 3.4 Electronic filing
+
+Statute contemplates electronic delivery: TMA 1970 Schedule 3A concerns the Electronic Lodgement Service (SAM, TMA 1970 index). The practical consequence of format choice is the filing date (see §5) and, per SAM124080, the treatment of the return as a self-calculation case.
+
+Note the asymmetry: filing an online return does **not** cure a late paper return. SAM125050 states that once a return is filed for a year, any further submission is treated as an amendment, and that a taxpayer who filed a paper return after 31 October "remains liable to the penalty even if a duplicate online return is later filed".
+
+### 3.5 Making Tax Digital for Income Tax
+
+For a digital obligation tax year, SALF1110 states that quarterly updates, corrections, returns delivered in response to a s.8 TMA 1970 notice, and digital record-keeping must all be done through **functional compatible software (FCS)** — software interacting with HMRC via the API platform. SALF1110 adds that a return submitted through any other channel "would not be a valid return as the FCS element of the legal requirement would not be met", the filing obligation would remain, and a failure-to-make-a-return penalty may arise. Several helpsheets carry a corresponding note that under MTD, claims and adjustments are made through compatible software instead of the SA return boxes they describe (HS204; HS343; HS342).
 
 ---
 
-## 6. HMRC's power to determine the form and extent of the return
+## 4. Supplementary pages and the income sources they correspond to
 
-- The content of an individual return is set by the notice: s.8(1) requires such information as is reasonably required to establish the income tax and CGT liability, with the extent of information governed by s.8(3) and (4) (SALF204 cross-references TMA70/S8(3) & (4)).
-- For partnerships, s.12AA(6) and (10) require partner names, addresses (or registered office) and tax references plus a declaration of correctness; s.12AA(7) requires the details needed to calculate chargeable gains on partnership assets but **not** full CGT computations; s.12AA(9) allows the notice to require different information for different partner types, so a mixed partnership must provide **at least two free-standing profit calculations** (income tax basis and corporation tax basis).
-- For claims made outside a return, Schedule 1A para 2 requires the claim to be made in the **prescribed form** where one exists, with documentary proof of tax paid for repayment claims.
-- Under MTD, the *channel* is prescribed as well as the content (SALF1110).
+The notes identify the following supplementary pages by reference. This list is assembled from the helpsheets and manuals cited; it is not a complete schedule inventory (see Gaps).
 
-## 7. Provisional and judgmental figures
+| Page | Income source / subject | Evidence in notes |
+|---|---|---|
+| SA101 Additional information | Employment-related securities; other tax reliefs; Payroll Giving; accrued income; unauthorised pension payments | HS305; HS204 ("Other tax reliefs" boxes 5 and 6); HS342 §4; HS343 §1 (box 3, page Ai 1); SAM121507 (boxes 13 and 15, page Ai4) |
+| SA102 Employment | Employment income | HS342 cross-reference |
+| SA103S Self-employment (short) | Self-employment; qualifying care relief | HS204 (boxes 33, 34); HS236 §3.1, §3.4 |
+| SA103F Self-employment (full) | Self-employment (full), profit method for carers | HS204 (boxes 78, 79); HS236 §3.3; HS266 |
+| SA103L Lloyd's underwriters | Lloyd's underwriting | HS204 (box 56) |
+| SA104S / SA104F Partnership | Partnership income | HS204 (boxes 22, 23; box 39); HS266 (SA104F) |
+| SA105 UK property | UK land and property | HS204 (box 42); SAM121560 |
+| SA106 Foreign | Foreign income; AIS adjustments on overseas securities | HS204 (box 31); HS343 §4; HS266 |
+| SA107 Trusts etc | Trust/estate income | HS266 |
+| SA108 Capital gains summary | Chargeable gains, share loss relief, SEIS reliefs | HS204; HS286; HS393 §3.3 |
+| SA109 Residence and FIG regime etc | Residence; FIG regime claims; TRF designations; business investment relief | HS266 §3 (boxes 28, 29, 30); HS264 §4.3.2 (boxes 50, 51, 52, 54); HS305 (IMEs) |
+| SA110 Tax calculation summary | The calculation element | HS286 (2024 claims, box 15 page TC 2); HS345 (box 6) |
+| Trade pages / TT2 / TT3, TL1–TL2 (trusts) | Trust trade and land/property income and expenses | SAM123240; SAM123211 |
 
-SALF (specification of information) records HMRC's position that where final information cannot be produced within statutory time limits, a **"best estimate"** may be included, **clearly identified as provisional**, and the correct figure notified without delay with any amended self assessment. HMRC's view is that unjustified or unreasonable use of a provisional figure, or unreasonable delay in supplying the final figure, can attract a careless or deliberate inaccuracy penalty. Judgmental or valuation figures that are "final" rather than provisional remain subject to HMRC's enquiry right and the taxpayer's right to amend or claim overpayment relief.
+**Standard Accounts Information (SAI)** is accounts data submitted with the return for a business, for each period of account relating to the basis period (SAM123240; SAM121480). Where multiple SAI sets are submitted for one basis period, HMRC's internal instruction is to capture only the SAI for the latest period of account and take basis period information only from those latest pages (SAM121481; SAM123241). Divergent entries across multiple self-employment or trade pages are referred to a Higher Officer and repaired as an obvious error (SAM121480; SAM123240).
 
-## 8. Fixing the contents after delivery
+### 4.1 Accounting period vs basis period boxes
 
-| Action | Who | Window | Source |
+A recurring structural feature of the trading schedules is the pairing of two distinct date ranges:
+
+| Concept | Meaning | Where captured |
+|---|---|---|
+| Accounting period | The period to which the income, expenses, tax adjustments and balance sheet relate | SEF1 boxes 8/9; SA200 box 3.4 (end date only); Trust Trade pages boxes 1.4/1.5 (SAM121150; SAM123150) |
+| Basis period | The period used to identify the profits taxable in a particular tax year, normally the 12 months to the annual accounting date | SEF4 boxes 64/65; SA200 boxes 3.12A/3.12B; Trust boxes 1.74/1.75 (SAM121150; SAM123150) |
+
+SAM121141 records HMRC's view that it is **not** reasonable to reject a return solely because accounting or basis period dates appear in one set of boxes but not the other.
+
+### 4.2 Helpsheet families supporting particular schedules
+
+| Helpsheet | Subject | Schedule(s) it feeds |
+|---|---|---|
+| HS204 | Limit on Income Tax reliefs — greater of £50,000 or 25% of adjusted total income (from 6 April 2013; stated for 2025-26 and later); adjusted total income only needs calculating if total income exceeds £200,000 | SA103S/F, SA103L, SA104S/F, SA105, SA106, SA101, SA108 |
+| HS236 | Qualifying care relief — fixed amount £19,690 per household per full year, plus £415/week (child under 11) and £495/week (child 11+ or adult) | SA103S (simplified method), SA103F (profit method) |
+| HS264 | Remittance basis; Temporary Repatriation Facility, flat 12% charge for 2025-26 | SA109 boxes 50, 51, 52, 54 |
+| HS266 | FIG regime for qualifying new residents (from 6 April 2025) | SA109 boxes 28/29/30, plus SA103F, SA104F, SA106, SA107, SA108 |
+| HS286 | Negligible value claims and share loss relief; cap of £50,000 or 25% of income | SA108 (box 41 for 2025-26 losses; box 43 for 2024-25), SA110 box 15 (2024-25) |
+| HS305 | Employment-related securities; formula UMV × (IUP − PCP − OP) − CE; working sheets 12–19 | SA101 box 1 (page Ai 2); SA109 for TRF-designated income |
+| HS342 | Charitable giving — Gift Aid, gifts of shares/securities, gifts of land, Payroll Giving | Main return page TR 4 boxes 5–10; SA101 for Payroll Giving |
+| HS343 | Accrued Income Scheme; £5,000 small holdings exemption | SA101 page Ai 1 box 3; SA106 for overseas securities |
+| HS345 | Pension savings tax charges; annual allowance £60,000 for 2025-26, tapered by £1 per £2 of adjusted income above £260,000 to a £10,000 floor; MPAA £10,000 | Main return boxes 10, 11, 11.1, 11.2; SA110 box 6 |
+| HS393 | SEIS reliefs; reinvestment relief capped at 50% of the amount receiving SEIS Income Tax relief, max £100,000 | SA108 (code 'OTH' in box 28 page CG 2; box 40; box 54) |
+| HS222 | How to calculate taxable profits | Cross-referenced by HS236 |
+| HS227 | Losses | Cross-referenced by HS266 |
+| HS252 | Capital allowances and balancing charges | Cross-referenced by HS236 |
+
+Helpsheets are customer-facing guidance. HS343 states expressly that it "covers most cases but not everything", and HS342 tells readers to check the online guide or a tax adviser before completing boxes 5–10 because reliefs may change and not be reflected in the helpsheet. They are not law and should not be treated as exhaustive of the statutory position.
+
+---
+
+## 5. "Delivering" the return
+
+### 5.1 Meaning of delivery
+
+SALF203's gloss on "deliver to the officer" (TMA 1970 s.8(1)(a)) is that it "generally means the tax return is received at an HMRC office on or before the relevant day", with delivery accepted up to midnight, including returns found in the post box at the start of the next day.
+
+That gloss has been overtaken operationally. SAM122013/SAM121030 record that "the practice based on *Steeden v Carver* (Sp C 212) no longer applies", and SAM123040 preserves the older rule (return in post box before 7:30am next day treated as received the previous day) only for the trust-logging context. For individual paper returns from 2010-11 onward, SAM121030 and SAM122020 state that any return delivered after 31 October is late, and a return received on **1 November** attracts a late filing penalty — a change of practice from October 2011, distinguishing it from returns received 10–31 October (SAM123040, Signatures Note 1).
+
+**Sources disagree here.** SALF203 describes delivery in terms of midnight and post-box collection; SAM121030/SAM122020 apply a hard 1 November cut-off and disavow *Steeden v Carver*. The SAM position is the later and more specific.
+
+Operationally, HMRC stamps the date of receipt on the return on the day it is received, clear of the barcode (SAM121030; SAM122020), and records it using function LOG RETURN (SAM123040). Where a return is re-logged, SAM notes the original date of receipt is preserved, which affects penalty calculation (SAM — Late issued returns).
+
+### 5.2 Filing dates
+
+| Case | Paper | Electronic | Ref |
 |---|---|---|---|
-| Correction of obvious errors or omissions | HMRC officer | 9 months beginning with the date the completed return was made and delivered | TMA 1970 s.9ZB; SALF202/204 |
-| Rejection of an HMRC correction | Taxpayer | 30 days of receiving the correction | TMA 1970 s.9ZB |
-| Amendment of the return | Taxpayer | From sending the return until 12 months after the statutory filing date | TMA 1970 s.9ZA |
-| Amendment while under enquiry | Taxpayer | May be made in time, but takes effect only when the enquiry is completed | TMA 1970 s.9B; EM1906 |
-| Overpayment relief | Taxpayer | Not later than 4 years after the end of the tax year | TMA 1970 s.33, Sch 1AB |
+| Notice given before 31 July following end of tax year | 31 October following end of year of assessment | 31 January following end of year of assessment | TMA 1970 s.8(1)(a) |
+| Notice given after 31 July following end of tax year | Later of the normal date or 3 months from date of notice | Later of 3 months from date of notice, or 31 January | TMA 1970 s.8(1D)–(1G); SAM121025 |
+| Voluntary return | 31 October, unless received after 31 July — then 3 months after date received | 31 January, unless received after 31 October — then 3 months after date received | SALF202; SAM121141 step 16; SAM123141 step 8 |
 
-SALF204 stresses that the 9-month correction window runs from the **date of delivery**, not the statutory filing date, so late filing shortens it; late filing separately shortens nothing for the taxpayer's 12-month s.9ZA window, which runs from the statutory filing date. Where no return is delivered at all, HMRC may make a **determination** to the best of the officer's information and belief, treated as a self assessment until superseded (TMA 1970 s.28C; SALF209).
+SAM121025 and SAM — Late issued returns record a practical system allowance of **three months and seven days** from issue, to allow for printing, issue and postal delivery. SAM describes this expressly as a computer system feature, not the strict statutory rule.
 
-## 9. Records supporting the return
+Filing dates may be **deferred in exceptional circumstances** (e.g. major illness), entered via MAINTAIN RETURN SUMMARY; where the paper date is deferred beyond 31 January, the online date is deferred to the same later date (SAM121025; SAM — Deferred filing dates).
 
-| Taxpayer | Retention period | Source |
+A small number of taxpayers who cannot file online for technical or operational reasons may file on paper up to 31 January without the penalty that would otherwise apply after 31 October (SAM122013).
+
+### 5.3 Limits on how late HMRC can issue
+
+| Rule | Value | Ref |
 |---|---|---|
-| Person in business | Fifth anniversary of 31 January next following the year of assessment | TMA 1970 s.12B(1)(b), (2); SALF211 |
-| Person not in business | First anniversary of 31 January next following the year of assessment | TMA 1970 s.12B(1)(b), (2); SALF211 |
-| Either | Extended until an enquiry is complete, or until an enquiry can no longer be started, if later | TMA 1970 s.12B; SALF211 |
-
-Copies are generally acceptable, but certain originals — e.g. certificates of tax deducted and tax credit vouchers — must be kept in original form (TMA 1970 s.12B(4A)).
+| Latest date HMRC may issue a return for a tax year | Not later than 23 December three years after the end of that tax year | SAM120040 |
+| Latest filing date HMRC may impose | Cannot ask a taxpayer to make a self assessment where the filing date would fall more than 4 years after the end of the tax year, except in exceptional circumstances | SAM120040 |
+| Ordinary time limit for a self assessment in a return | Not more than 4 years following the end of the tax year to which it relates | TMA 1970 s.34A |
 
 ---
 
-## 10. Machine-implementable statements
+## 6. Once delivered: corrections, amendments and repairs
 
-```
-is_return_required(person, year):
-    TRUE if a notice to file under TMA 1970 s.8 has been given
-    (or a paper return containing that notice has been issued).
+| Actor | Power | Window | Ref |
+|---|---|---|---|
+| HMRC officer | Correct obvious errors or omissions, or anything the officer has reason to believe is incorrect from information already held | 9 months beginning with the date the return was made and delivered | TMA 1970 s.9ZB; SALF202; SALF204 |
+| Taxpayer | Reject a s.9ZB correction by notice | 30 days of receiving the correction | TMA 1970 s.9ZB |
+| Taxpayer | Amend the return | From sending in the return up to 12 months following the statutory filing date | TMA 1970 s.9ZA; SALF204 |
+| HMRC officer | Repair an amendment | 9 months from receipt of the taxpayer amendment | SAM "General" |
 
-filing_date(notice_date, year_end, format):
-    if notice_date <= 31 July following year_end:
-        return 31 Oct following year_end   if format == PAPER
-        return 31 Jan following year_end   if format == ELECTRONIC
-    else:
-        return max(notice_date + 3 months, 31 Jan following year_end)   # s.8(1D)-(1G)
-        # SAM operational variant: notice_date + 3 months + 7 days
+For s.9ZA purposes the **statutory filing date** is the later of 31 January following the end of the tax year, or the last day of three months from the date the notice to file was given if given after 31 October following the end of the tax year; for voluntary returns, 31 January if received by 31 October, otherwise three months from delivery (TMA 1970 s.9ZA; SALF204).
 
-voluntary_return_filing_date(received_date, year_end, format):
-    PAPER:       31 Oct following year_end, unless received_date > 31 July
-                 then received_date + 3 months
-    ELECTRONIC:  31 Jan following year_end, unless received_date > 31 Oct
-                 then received_date + 3 months
-    # a voluntary return is never late (SALF202)
+HMRC's internal term for a s.9ZA correction made in preference to opening an enquiry is a **"repair"** (SAM124110). Where a return is under enquiry, taxpayer amendments can still be made within the normal time limit but do not take effect until the enquiry is completed (TMA 1970 s.9B; SALF204).
 
-is_delivered(receipt_timestamp, filing_date):
-    TRUE if received at an HMRC office at or before 23:59:59 on filing_date,
-    including items found in the post box at the start of the next day (SALF203).
+If a return is **unsatisfactory** it is treated as not a return at all, so HMRC "can only correct an actual return, not repair a non-return" (SAM "All cases"). Unsatisfactory returns are rejected and returned, with SEES letters SA602–SA606, and a 21-day period of grace applies before the filing date where the defect is genuine oversight — but not where the return was deliberately made unsatisfactory (e.g. omitting supplementary pages or the signature) to buy time (SAM "All cases").
 
-return_is_valid_channel(person, year, channel):
-    if year is a digital obligation tax year for person:
-        return channel == FUNCTIONAL_COMPATIBLE_SOFTWARE   # SALF1110
-    else:
-        return channel in {PAPER, ELECTRONIC}
+---
 
-self_assessment_required(return):
-    TRUE always (s.9(1)), UNLESS the information section was delivered by
-    31 Oct following year_end (notice before 31 July), or within 2 months of a
-    notice given after 31 August — in which case HMRC calculates (s.9(2), s.9(3)).
+## 7. Consequences of not delivering
 
-hmrc_correction_deadline(delivery_date)  = delivery_date + 9 months     # s.9ZB
-taxpayer_amendment_deadline(statutory_filing_date)
-                                         = statutory_filing_date + 12 months  # s.9ZA
-```
+| Consequence | Trigger | Ref |
+|---|---|---|
+| Initial fixed penalty £100 | Return not filed by filing date | FA 2009 Sch 55 para 3; CH62100 |
+| Daily penalties £10/day, max 90 days (£900) | Return outstanding 3 months after penalty date, with written notice specifying the start date | FA 2009 Sch 55 para 4; CH62120 |
+| Greater of 5% of tax liability or £300 | Return outstanding 6 months after penalty date | FA 2009 Sch 55 para 5; CH62140 |
+| Greater of 5% / 70% / 100% of liability (or £300) depending on behaviour | Return outstanding 12 months after penalty date | FA 2009 Sch 55 paras 6, 11, 17; CH62080, CH63600 |
+| HMRC determination of tax due | Failure to file by the filing date where a notice was given | TMA 1970 s.28C; SALF209 |
+
+The **penalty date** is the day after the filing date (FA 2009 Sch 55 para 1; CH61160). For ITSA the Schedule 55 regime commenced with returns for the year ended 5 April 2011, due 31 October 2011 (paper) or 31 January 2012 (electronic), subject to exceptions at SAM121025 (CH61120). For 2009-10 and earlier, the older TMA 1970 s.93 regime applied (£100 fixed, daily penalties up to £60/day, further £100 after 6 months, and up to the tax liability after 12 months).
+
+A determination under s.28C must be raised before the end of 3 years from the filing date, and a self assessment can supersede it only before the end of 12 months from the date of the determination (TMA 1970 s.28C(5)). A determination stands for all purposes as if it were a self assessment, and there is no right of appeal or postponement against it (EM, s.28C TMA70).
+
+---
+
+## 8. HMRC's power over the form
+
+The notes do not contain the statutory provision conferring power to prescribe the form of the return, but they do show HMRC exercising control over form and content in three distinct ways:
+
+1. **Prescribing which form is issued** — SA100 vs SA200 vs SA316 vs SA700/SA900/SA970, with the SA200 turnover and late-issue restrictions above (SAM120040; SAM121030).
+2. **Setting acceptance criteria for substitutes** — the "identical" criteria and the prohibitions on digital media, unsigned versions and altered tax years (SAM122013; SAM121030; SAM121021).
+3. **Rejecting non-conforming submissions as "not a return"** — where the document lacks proper form or a proper declaration, HMRC writes explaining that the information does not constitute a return and encloses an official return, recording the date of clerical issue (SAM121141 step 14; SAM123140).
+
+TMA 1970 s.8(3) and (4) are cited in SALF204 as governing the extent of information required in a return, but the notes do not reproduce their text.
+
+Pre-population of certain fields on online returns (from sources including the PAYE Service/NPS) is described at CH206225 for 2015-16 returns; where pre-populated data is present, the customer must tick a mandatory box confirming "I have viewed the information HMRC holds about me" before starting to file. CH206225 flags that the description is specific to 2015-16 and that data sources may not reflect current practice.
 
 ---
 
@@ -240,14 +287,15 @@ taxpayer_amendment_deadline(statutory_filing_date)
 
 The supplied notes do not cover, and this page therefore does not state:
 
-- **The statutory text of TMA 1970 s.8(1), s.8(3) and s.8(4)** themselves. They are only cited second-hand through SALF, so the precise wording of HMRC's power to specify the form and extent of the return (and any separate form-approval provision) is not reproduced here.
-- **Any explicit statutory power to prescribe the design of the return form** for individuals (as opposed to the Schedule 1A "prescribed form" rule for claims outside a return, and s.12AA(9) for partnerships).
-- **The partnership return's form reference** (the notes describe s.12AA partnership returns but do not name an SA800 or equivalent form number).
-- **A complete list of supplementary pages.** The table in section 5 is assembled from helpsheet cross-references only; pages not referenced by any supplied helpsheet — for example any Ministers of Religion, Lloyd's (beyond SA103L), or Short Tax Return variants — are not covered.
-- **The full "Notes" documents** accompanying each supplementary page (SA100 Notes, SA106 Foreign notes etc.) beyond scattered page references (e.g. FN 1, FN 9, AiN 2–AiN 4, UKPN 4, CGN 2).
-- **Signature, agent authorisation and joint filing mechanics**, and the detailed rules on who signs the s.8(2) declaration.
-- **HS253 (furnished holiday lettings) and HS341 (EIS Income Tax relief)** appear in the helpsheet index but no substantive notes were supplied, so the schedules they attach to are not stated here.
-- **Whether the SAM "3 months and 7 days" filing date reflects a statutory extension or an administrative allowance** — the notes state both figures but not how HMRC reconciles them.
+- The statutory provision expressly empowering HMRC (or the Commissioners) to **prescribe the form and content** of the return, or to specify approved methods of electronic delivery. TMA 1970 s.8(3)–(4) and Sch 3A are referenced but not reproduced.
+- A **complete list of supplementary pages**. The table in §4 is assembled only from pages named in the notes. Pages that plainly exist but are not evidenced here (for example any dedicated pages for ministers of religion, employment expenses beyond SA102, or the charity/CASC schedules) are omitted deliberately.
+- The **partnership return (SA800)** content requirements under TMA 1970 s.12AA/s.12AB beyond filing dates and the nominated partner's role; the notes cover partnership filing deadlines and penalties in detail but not what the partnership return must contain.
+- Box-level content of the **main return TR pages** other than TR 3 (state pension lump sum, boxes 8/9), TR 4 (charitable giving, boxes 5–10), TR 5 (student loan/PGL) and TR 6 (provisional figures, boxes 19/20).
+- Current-year **rates, allowances and thresholds** generally. Figures given are those stated in the notes for the years the notes specify.
+- The mechanics and legal status of **provisional figures** beyond the note that they are flagged at box 20 page TR 6 with explanation at box 19 (SAM121600), and that SAM124090 on final figures has been archived with no substantive content.
+- Whether, and on what statutory basis, an **electronic return is treated as "delivered"** at the moment of successful submission as opposed to receipt at an HMRC office.
+
+Several cited SAM and CH passages are expressly **withheld under Freedom of Information Act 2000 exemptions**, so HMRC's internal guidance is incomplete as published in a number of the areas above.
 
 ---
 
@@ -256,32 +304,18 @@ The supplied notes do not cover, and this page therefore does not state:
 This page was written by an LLM from structured notes extracted from the mirrored sources below. Always check the upstream source before relying on any figure or deadline.
 
 - [govuk-sa-detailed-information](https://www.gov.uk/government/collections/self-assessment-detailed-information) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md`
-- [sa-helpsheets:5f67dfee-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/accrued-income-scheme-hs343-self-assessment-helpsheet) - 2 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/accrued-income-scheme-self-assessment-helpsheet-hs343.md`
-- [sa-helpsheets:5f67ceae-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/averaging-for-creators-of-literary-or-artistic-works-hs234-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/averaging-for-creators-of-literary-or-artistic-works-self-assessment-helpsheet-hs234.md`
-- [sa-helpsheets:5f67d41e-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/employee-share-and-security-schemes-and-capital-gains-tax-hs287-self-assessment-helpsheet) - 2 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-and-employee-share-schemes-self-assessment-helpsheet-hs287.md`
-- [sa-helpsheets:5f67d5b1-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/land-and-leases-the-valuation-of-land-and-capital-gains-tax-hs292-self-assessment-helpsheet) - 3 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-land-and-leases-self-assessment-helpsheet-hs292.md`
-- [sa-helpsheets:5f67d29a-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/death-personal-representatives-and-legatees-hs282-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-when-someone-dies-self-assessment-helpsheet-hs282.md`
+- [sa-helpsheets:5f67dfee-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/accrued-income-scheme-hs343-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/accrued-income-scheme-self-assessment-helpsheet-hs343.md`
 - [sa-helpsheets:5f67ddc2-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/charitable-giving-hs342-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/charitable-giving-tax-relief-self-assessment-helpsheet-hs342.md`
-- [sa-helpsheets:5f67cf48-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/community-investment-tax-relief-hs237-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/community-investment-tax-relief-self-assessment-helpsheet-hs237.md`
-- [sa-helpsheets:5f67dc31-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/employee-shares-and-securities-further-guidance-hs305-self-assessment-helpsheet) - 4 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/employment-related-shares-and-securities-self-assessment-helpsheet-hs305.md`
+- [sa-helpsheets:5f67dc31-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/employee-shares-and-securities-further-guidance-hs305-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/employment-related-shares-and-securities-self-assessment-helpsheet-hs305.md`
 - [sa-helpsheets:f689f4a2-7da1-41a3-b37d-b18c346219ed](https://www.gov.uk/government/publications/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/foreign-income-and-gains-fig-regime-self-assessment-helpsheet-hs266.md`
-- [sa-helpsheets:5f67db85-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/gains-on-foreign-life-insurance-policies-hs321-self-assessment-helpsheet) - 2 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/gains-on-foreign-life-insurance-policies-self-assessment-helpsheet-hs321.md`
-- [sa-helpsheets:5f67dcd2-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/gains-on-uk-life-insurance-policies-hs320-self-assessment-helpsheet) - 4 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/gains-on-uk-life-insurance-policies-self-assessment-helpsheet-hs320.md`
-- [sa-helpsheets](https://www.gov.uk/government/collections/self-assessment-helpsheets-main-self-assessment-tax-return) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/index.md`
-- [sa-helpsheets:5f67dd70-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/interest-and-alternative-finance-payments-eligible-for-relief-on-qualifying-loans-and-alternative-finance-arrangements-hs340-self-assessment-helpshee) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/interest-and-alternative-finance-payments-eligible-for-relief-on-qualifying-loans-and-alternative-finance-arrangements-self-assessment-helpsheet-hs340.md`
 - [sa-helpsheets:5f67e282-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/limit-on-income-tax-reliefs-hs204-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/limit-on-income-tax-reliefs-self-assessment-helpsheet-hs204.md`
-- [sa-helpsheets:5f67d46f-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/negligible-value-claims-and-income-tax-losses-on-disposals-of-shares-you-have-subscribed-for-in-qualifying-trading-companies-hs286-self-assessment-he) - 3 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/negligible-value-claims-and-income-tax-losses-on-disposal-of-shares-self-assessment-helpsheet-hs286.md`
-- [sa-helpsheets:5f67c90c-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/non-taxable-payments-or-benefits-for-employees-hs207-self-assessment-helpsheet) - 3 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/non-taxable-payments-or-benefits-for-employees-self-assessment-helpsheet-hs207.md`
-- [sa-helpsheets:5f67dbe3-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/other-taxable-income-hs325-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/other-taxable-income-for-self-assessment-helpsheet-hs325.md`
-- [sa-helpsheets:5f67cefb-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet) - 4 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/paying-tax-on-the-remittance-basis-self-assessment-helpsheet-hs264.md`
-- [sa-helpsheets:5f67defe-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/pensions-tax-charges-on-any-excess-over-the-lifetime-allowance-annual-allowance-special-annual-allowance-and-on-unauthorised-payments-hs345-self) - 5 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/pension-savings-tax-charges-self-assessment-helpsheet-hs345.md`
+- [sa-helpsheets:5f67d46f-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/negligible-value-claims-and-income-tax-losses-on-disposals-of-shares-you-have-subscribed-for-in-qualifying-trading-companies-hs286-self-assessment-he) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/negligible-value-claims-and-income-tax-losses-on-disposal-of-shares-self-assessment-helpsheet-hs286.md`
+- [sa-helpsheets:5f67cefb-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/remittance-basis-hs264-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/paying-tax-on-the-remittance-basis-self-assessment-helpsheet-hs264.md`
+- [sa-helpsheets:5f67defe-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/pensions-tax-charges-on-any-excess-over-the-lifetime-allowance-annual-allowance-special-annual-allowance-and-on-unauthorised-payments-hs345-self) - 2 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/pension-savings-tax-charges-self-assessment-helpsheet-hs345.md`
 - [sa-helpsheets:5f67cd23-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/qualifying-care-relief-foster-carers-adult-placement-carers-kinship-carers-and-staying-put-carers-hs236-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/qualifying-care-relief-for-carers-self-assessment-helpsheet-hs236.md`
-- [sa-helpsheets:5f67e327-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-hs393-self-assessment-helpsheet) - 2 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-self-assessment-helpsheet-hs393.md`
-- [hmrc-tools-calculators](https://www.gov.uk/guidance/hmrc-tools-and-calculators) - 2 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-tools.md`
-- [hmrc-manual-artg](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance) - 3 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/artg.md`
-- [hmrc-manual-ch](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook) - 4 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/ch.md`
-- [hmrc-manual-em](https://www.gov.uk/hmrc-internal-manuals/enquiry-manual) - 8 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/em.md`
-- [hmrc-manuals-index](https://www.gov.uk/government/collections/hmrc-manuals) - 1 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/index.md`
-- [hmrc-manual-salf](https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework) - 21 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/salf.md`
-- [hmrc-manual-sam](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual) - 3 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/sam.md`
-- [si-ftt-tax-chamber-rules-2009](https://www.legislation.gov.uk/uksi/2009/273/contents) - 3 note(s) - mirrored at `corpus/legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md`
+- [sa-helpsheets:5f67e327-7631-11e4-a3cb-005056011aef](https://www.gov.uk/government/publications/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-hs393-self-assessment-helpsheet) - 1 note(s) - mirrored at `corpus/hmrc-publications/customer-facing-guidance/helpsheets/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-self-assessment-helpsheet-hs393.md`
+- [hmrc-manual-artg](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance) - 1 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/artg.md`
+- [hmrc-manual-ch](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook) - 17 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/ch.md`
+- [hmrc-manual-em](https://www.gov.uk/hmrc-internal-manuals/enquiry-manual) - 11 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/em.md`
+- [hmrc-manual-salf](https://www.gov.uk/hmrc-internal-manuals/self-assessment-legal-framework) - 5 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/salf.md`
+- [hmrc-manual-sam](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual) - 44 note(s) - mirrored at `corpus/hmrc-publications/policy-and-interpretation/manuals/sam.md`
