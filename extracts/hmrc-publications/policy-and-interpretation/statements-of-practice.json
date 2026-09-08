@@ -1,0 +1,50 @@
+{
+  "category": "hmrc-publications.policy-and-interpretation",
+  "chunks": {
+    "f6336c87bb5964a5": {
+      "chars": 18414,
+      "heading": "HMRC Statements of Practice",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This chunk is only an index/collection listing; it contains no substantive text of any individual Statement of Practice.",
+          "Several 'obsolete' collections are listed, indicating some statements no longer reflect current practice.",
+          "Individual statements would need to be reviewed separately to determine relevance to Self Assessment specifically.",
+          "Some upstream dates appear to be future-dated (e.g. 2026-05-29 for SP 1 (2001)), which may reflect a review/republish date rather than original issue date."
+        ],
+        "cross_references": [
+          "Obsolete miscellaneous Statements of Practice",
+          "Obsolete statements applicable to companies etc (Corporation Tax and Income Tax)",
+          "Obsolete statements applicable to individuals (Income Tax and interest on tax)",
+          "Obsolete statements applicable to individuals and companies (Income Tax and Corporation Tax)",
+          "Obsolete statements of administrative practice and procedure",
+          "Obsolete statements relating to Inheritance Tax",
+          "Obsolete statements relating to tax on Capital Gains",
+          "Statement of Practice 1 (1979) through Statement of Practice 9 (1992)",
+          "Statement of Practice A6, A8, A13, A16, A32, A33",
+          "Statement of Practice B1, B6",
+          "Statement of Practice C1, C6, C10",
+          "Statement of Practice D1, D3, D6, D7, D10, D11, D12, D18, D19, D21, D23",
+          "Statement of Practice E1, E3, E5, E6, E7, E9, E13, E14, E15, E18"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is a full index listing of 135 HMRC Statements of Practice documents from GOV.UK, spanning publication dates from 1965 to 2026, including both obsolete/withdrawn collections and numbered/lettered individual statements. It provides titles, upstream last-updated dates, and links but no substantive tax content itself. Statements of Practice set out HMRC's interpretation of tax law and administrative practice, which may be relevant to Self Assessment matters covered in specific statements not detailed in this chunk.",
+        "topics": [
+          "statements-of-practice",
+          "index",
+          "hmrc-guidance"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/policy-and-interpretation/statements-of-practice.md",
+  "source_id": "hmrc-statements-of-practice",
+  "source_url": "https://www.gov.uk/government/collections/statements-of-practice"
+}

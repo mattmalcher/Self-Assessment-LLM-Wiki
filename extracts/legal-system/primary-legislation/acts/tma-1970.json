@@ -1,0 +1,1236 @@
+{
+  "category": "legal-system.primary-legislation",
+  "chunks": {
+    "02b7a433eada52ef": {
+      "chars": 8636,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > Income tax (U.K.) > \\[F38 8A Trustee’s return. (U.K.)",
+      "index": 3,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Penalty for failing to comply with s.8A(1G) information requirement",
+            "period": "n/a",
+            "ref": "TMA 1970 s.8A(1I)",
+            "value": "£60"
+          },
+          {
+            "name": "CGT simplified reporting disposal consideration threshold",
+            "period": "n/a",
+            "ref": "TMA 1970 s.8C(1)(b)",
+            "value": "£50,000"
+          }
+        ],
+        "caveats": [
+          "Text contains multiple textual amendment markers (F38, F52-F75 etc.) indicating substituted/inserted/repealed provisions; some subsections (e.g. 1A, parts of 8C(4), 8C(1)(c)) have been repealed and left blank.",
+          "Two differently-worded versions of s.8B(8) appear in the source (one referencing FA 2009 Sch.55 para 17A, another referencing FA 2021 Sch.24 para 21 and Sch.25 para 16), reflecting successive amendments - readers should check which is currently in force.",
+          "The £50,000 CGT disposal threshold and other figures are as amended (marked F72 etc.); earlier historical thresholds are not shown in this chunk.",
+          "Modifications (C16, C17) apply s.8A subject to specific provisions of the Taxation (International and Other Provisions) Act 2010."
+        ],
+        "cross_references": [
+          "TMA 1970 s.8",
+          "TMA 1970 s.9",
+          "TMA 1970 s.28C",
+          "TMA 1970 s.29",
+          "Schedule 55 to FA 2009 (paragraph 17A)",
+          "Schedule 24 and Schedule 25 to Finance Act 2021 (paragraph 21 and paragraph 16)",
+          "Taxation (International and Other Provisions) Act 2010 ss.140(6)(7), 381(1), Sch.9 paras 1-9, 22",
+          "Taxation (International and Other Provisions) Act 2010 ss.137(5)(7), 381(1), Sch.9 paras 1-9, 22",
+          "Taxation of Chargeable Gains Act 1992 s.1K (annual exempt amount)",
+          "Taxation of Chargeable Gains Act 1992 s.58 (spouses and civil partners)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Trustee's return for Year 1 (standard case)",
+            "name": "Non-electronic trustee return",
+            "ref": "TMA 1970 s.8A(1B)(a)",
+            "rule": "on or before 31st October in Year 2"
+          },
+          {
+            "applies_to": "Trustee's return for Year 1 (standard case)",
+            "name": "Electronic trustee return",
+            "ref": "TMA 1970 s.8A(1B)(b)",
+            "rule": "on or before 31st January in Year 2"
+          },
+          {
+            "applies_to": "Trustee's return where notice given late",
+            "name": "Trustee return - Exception 1 (notice given after 31 July, on or before 31 October in Year 2)",
+            "ref": "TMA 1970 s.8A(1D)",
+            "rule": "non-electronic: within 3 months of date of notice; electronic: on or before 31st January"
+          },
+          {
+            "applies_to": "Trustee's return where notice given very late",
+            "name": "Trustee return - Exception 2 (notice given after 31 October in Year 2)",
+            "ref": "TMA 1970 s.8A(1E)",
+            "rule": "within 3 months beginning with the date of the notice (electronic or not)"
+          },
+          {
+            "applies_to": "HMRC's power to withdraw a s.8 or 8A notice",
+            "name": "Withdrawal period for s.8/8A notice",
+            "ref": "TMA 1970 s.8B(6)",
+            "rule": "2 years beginning with the end of the year of assessment to which the notice relates, or extended period in exceptional circumstances"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A return whose form/manner is prescribed by the Commissioners as constituting an electronic return; Commissioners may make different provision for different cases",
+            "ref": "TMA 1970 s.8A(1F)",
+            "term": "Electronic return"
+          },
+          {
+            "meaning": "The period of 2 years beginning with the end of the year of assessment to which the s.8/8A notice relates, or, in exceptional circumstances, such extended period as HMRC may determine",
+            "ref": "TMA 1970 s.8B(6)",
+            "term": "Withdrawal period"
+          },
+          {
+            "meaning": "Every disposal other than one on which any gain accruing is not a chargeable gain, and other than a disposal to which s.58 of the 1992 Act (spouses and civil partners) applies",
+            "ref": "TMA 1970 s.8C(3)",
+            "term": "Chargeable disposal (for s.8C purposes)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "See deadlines list",
+            "must": "Make and deliver a return containing required information, plus accounts/statements/documents",
+            "ref": "TMA 1970 s.8A(1)",
+            "trigger": "Notice given under s.8A",
+            "who": "Relevant trustee(s) of a settlement given notice by an officer of the Board"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include a declaration that the return is to the best of their knowledge correct and complete",
+            "ref": "TMA 1970 s.8A(2)",
+            "trigger": "Making a return under s.8A",
+            "who": "Person making a return under s.8A"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include specified/described information in the return",
+            "ref": "TMA 1970 s.8A(1G)",
+            "trigger": "Regulations made by the Commissioners under s.8A(1G)",
+            "who": "Person required to include additional information under regulations"
+          },
+          {
+            "deadline": "Within the withdrawal period (generally 2 years from end of relevant tax year, or extended in exceptional circumstances)",
+            "must": "Give the person a notice specifying the date the s.8/8A notice is withdrawn",
+            "ref": "TMA 1970 s.8B(4)-(6)",
+            "trigger": "Decision to withdraw a notice under s.8 or 8A",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "n/a",
+            "must": "May make a statement confirming gains are within the annual exempt amount/nil and disposal consideration does not exceed £50,000, instead of full CGT computation",
+            "ref": "TMA 1970 s.8C(1)-(2)",
+            "trigger": "Notice under s.8 or 8A requiring CGT information",
+            "who": "Person with small chargeable gains given a CGT-related notice under s.8/8A"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Liable to a penalty of £60",
+            "ref": "TMA 1970 s.8A(1I)",
+            "trigger": "Failure to comply with a requirement imposed under s.8A(1G) to include specified information in a trustee return"
+          }
+        ],
+        "relevance": "core",
+        "summary": "Section 8A requires relevant trustees of a settlement to file a return (with accounts/statements) to establish income tax and capital gains tax liabilities, with deadlines of 31 October (non-electronic) or 31 January (electronic) following the tax year, subject to shortened periods where notice is given late. Section 8B allows HMRC to withdraw a notice under section 8 or 8A within a defined withdrawal period, generally 2 years from the end of the relevant tax year, unless a return has already been made or a s.28C determination served. Section 8C provides that trustees/individuals with small capital gains (within the annual exempt amount and disposal proceeds under £50,000) can satisfy CGT return requirements by making a simple confirmatory statement instead of full computation.",
+        "topics": [
+          "trustee-return",
+          "filing-deadlines",
+          "notice-withdrawal",
+          "capital-gains-simplified-reporting",
+          "penalties"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "06d4deedf85ffc8e": {
+      "chars": 9993,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > \\[F126 Partnerships (U.K.) > \\[F147 12AB Partnership return to include partnership statement. (U.K.)",
+      "index": 7,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Multiple subsections (F154, F155, F160-F165) have been repealed/omitted and left blank, indicated by strikethrough markers.",
+          "Subsections (1A)-(1D) and section 12ABZA/12ABZAA are inserted provisions (marked F-numbers) reflecting later amendments to the original 1970 Act text.",
+          "The residence/status assumptions in s.12AB(1B) can be partially disapplied under (1D) depending on information disclosed under (1C), so not all four assumptions always apply."
+        ],
+        "cross_references": [
+          "TMA 1970 s.12AA (partnership return, tax reference declaration, indirect partner)",
+          "TMA 1970 s.12AA(1C)",
+          "TMA 1970 s.12AA(6)(a)",
+          "TMA 1970 s.42(7)",
+          "TMA 1970 s.12AC (enquiries into partnership returns)",
+          "TMA 1970 s.28B",
+          "TMA 1970 s.12ABA",
+          "International Tax Compliance Regulations 2015 (S.I. 2015/878)",
+          "Part 4 of FA 2014 (follower notices and accelerated payment notices)",
+          "ITTOIA 2005 s.863",
+          "CTA 2009 s.1273"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Partner required to make/deliver the partnership return, or successor",
+            "name": "Notice of tax reference where overseas-partner exemption reliance fails",
+            "ref": "TMA 1970 s.12ABZA(4)",
+            "rule": "within the period of 12 months beginning with the filing date for the partnership return"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Construed in accordance with section 12AA(1C)",
+            "ref": "TMA 1970 s.12AB(5)",
+            "term": "indirect partner"
+          },
+          {
+            "meaning": "The partnership to which the partnership statement referred to in subsection (1) relates",
+            "ref": "TMA 1970 s.12AB(5)",
+            "term": "reporting partnership"
+          },
+          {
+            "meaning": "A claim under any of the provisions mentioned in section 42(7) of this Act",
+            "ref": "TMA 1970 s.12AB(5)",
+            "term": "section 42(7) claim"
+          },
+          {
+            "meaning": "A return under the International Tax Compliance Regulations 2015 (S.I. 2015/878)",
+            "ref": "TMA 1970 s.12ABZA(2)",
+            "term": "relevant return"
+          },
+          {
+            "meaning": "Has the same meaning as in section 12ABA",
+            "ref": "TMA 1970 s.12ABZA(7)",
+            "term": "filing date"
+          },
+          {
+            "meaning": "Includes trade or profession",
+            "ref": "TMA 1970 s.12ABZAA(5)",
+            "term": "business"
+          },
+          {
+            "meaning": "A corresponding case in which the LLP carries on a business with a view to profit in the relevant period",
+            "ref": "TMA 1970 s.12ABZAA(5)",
+            "term": "corresponding partnership case"
+          },
+          {
+            "meaning": "Any person who was a member of the LLP in the relevant period",
+            "ref": "TMA 1970 s.12ABZAA(5)",
+            "term": "purported partner"
+          },
+          {
+            "meaning": "Anything that purports to be a partnership return and is in a form, and delivered in a way, that a partnership return could have been made and delivered in a corresponding partnership case",
+            "ref": "TMA 1970 s.12ABZAA(5)",
+            "term": "purported partnership return"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Include a partnership statement showing income/loss, consideration on disposals, and tax deducted for the return period and each period of account, and each partner's share",
+            "ref": "TMA 1970 s.12AB(1)",
+            "trigger": "Making a partnership return",
+            "who": "Person required to make and deliver a partnership return"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Treat income, consideration and tax from the other partnership as a separate source and include the reporting partnership's share as stated in that other partnership's statement, plus a statement of which residence/status assumption was applied",
+            "ref": "TMA 1970 s.12AB(1A)",
+            "trigger": "Reporting partnership is a partner in another partnership carrying on a trade, profession or business",
+            "who": "Reporting partnership with a partner that is itself a partnership"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Calculate partners' shares applying each of four assumptions (UK resident individual, non-UK resident individual, UK resident company, non-UK resident company) unless certain information disapplies some assumptions",
+            "ref": "TMA 1970 s.12AB(1B)-(1D)",
+            "trigger": "Partnership includes a partner which is itself a partnership",
+            "who": "Reporting partnership including a participating partnership as a partner"
+          },
+          {
+            "deadline": "within 12 months beginning with the filing date for the partnership return",
+            "must": "Give notice to HMRC specifying the tax reference of a person if reliance on s.12ABZA(1) was placed but the partnership failed to comply with the relevant-return reporting requirement",
+            "ref": "TMA 1970 s.12ABZA(3)-(4)",
+            "trigger": "Partnership does not comply with requirement in s.12ABZA(1)(c) despite return relying on the exemption",
+            "who": "Partner required to make and deliver the partnership return (or successor)"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk sets out the requirement (TMA 1970 s.12AB) for a partnership return to include a partnership statement showing income/loss, disposal consideration, and tax deducted per source, plus each partner's share, including special rules for tiered partnerships (a partnership as partner in another partnership) and required assumptions about UK/non-UK residence and individual/company status of participating partnerships. Section 12ABZA removes the requirement to declare a partner's tax reference in certain overseas-investor scenarios where equivalent information is reported under the International Tax Compliance Regulations 2015, but requires notification to HMRC within 12 months of the filing date if that reliance later fails. Section 12ABZAA treats a purported partnership return for an LLP not actually carrying on business with a view to profit as a partnership return for purposes of enquiry and follower notice/accelerated payment provisions, extending partner/partnership terminology to LLP members and the purported partnership.",
+        "topics": [
+          "partnership-returns",
+          "partnership-statement",
+          "partners-shares",
+          "tiered-partnerships",
+          "overseas-partners",
+          "llp-returns"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "0f0b535087f66758": {
+      "chars": 11263,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > Income tax (U.K.) > \\[F100 9A Notice of enquiry (U.K.)",
+      "index": 5,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "A return may only be the subject of one notice of enquiry, except one given in consequence of an amendment under s.9ZA (s.9A(3)).",
+          "Where notice of enquiry follows an amendment under s.9ZA outside the normal window, or after a final/partial closure notice, the enquiry is limited to matters relating to or affected by the amendment (s.9A(5)).",
+          "Sections 9D, 10, 11, 11A, 11AA-11AE, 12, and 12ZA-12ZN are shown as repealed/empty in this chunk (marked F120-F125) and contain no substantive text.",
+          "Text contains multiple textual amendment markers (e.g. F100-F119) indicating substituted or inserted wording; original historical text not shown.",
+          "Concept of 'partial closure notice' referenced throughout reflects amendments (post-2017) splitting closure notices into partial and final; older enquiries may only reference final closure notices."
+        ],
+        "cross_references": [
+          "TMA 1970 s.8",
+          "TMA 1970 s.8A",
+          "TMA 1970 s.9ZA",
+          "TIOPA 2010 s.168(1)",
+          "TIOPA 2010 s.81(2)",
+          "Finance Act 2014, Chapter 2 of Part 4",
+          "TMA 1970 s.9A(5)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "returns delivered on or before the filing date",
+            "name": "Notice of enquiry - return delivered on/before filing date",
+            "ref": "TMA 1970 s.9A(2)(a)",
+            "rule": "up to the end of the period of twelve months after the day on which the return was delivered"
+          },
+          {
+            "applies_to": "returns delivered after the filing date",
+            "name": "Notice of enquiry - return delivered late",
+            "ref": "TMA 1970 s.9A(2)(b)",
+            "rule": "up to and including the quarter day next following the first anniversary of the day on which the return was delivered"
+          },
+          {
+            "applies_to": "returns amended under s.9ZA",
+            "name": "Notice of enquiry - amended return",
+            "ref": "TMA 1970 s.9A(2)(c)",
+            "rule": "up to and including the quarter day next following the first anniversary of the day on which the amendment was made"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "notice given by an officer of the Board of intention to enquire into a return under s.8 or 8A",
+            "ref": "TMA 1970 s.9A(1)",
+            "term": "notice of enquiry"
+          },
+          {
+            "meaning": "in relation to a return, the last day for delivering it in accordance with section 8 or 8A",
+            "ref": "TMA 1970 s.9A(6)",
+            "term": "the filing date"
+          },
+          {
+            "meaning": "31st January, 30th April, 31st July and 31st October",
+            "ref": "TMA 1970 s.9A(2)",
+            "term": "quarter days"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "see deadlines list",
+            "must": "give notice of enquiry to the taxpayer within the time allowed to enquire into a return",
+            "ref": "TMA 1970 s.9A(1)-(2)",
+            "trigger": "wish to enquire into a return delivered under s.8 or 8A",
+            "who": "Officer of the Board"
+          },
+          {
+            "deadline": "while enquiry in progress",
+            "must": "may amend the self-assessment to make good a deficiency if insufficient tax stated and loss of tax to Crown likely",
+            "ref": "TMA 1970 s.9C(2)",
+            "trigger": "enquiry in progress under s.9A(1) and officer forms opinion of insufficiency and risk of loss of tax",
+            "who": "Officer of the Board"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "Section 9A sets out HMRC's power and time limits to give notice of enquiry into a self assessment return, running generally to 12 months after delivery (or to the quarter day following the first anniversary if delivered late or amended), and defines what an enquiry can extend to, including transfer pricing and double taxation relief counteraction notices. Section 9B governs taxpayer amendments made during an enquiry, which do not restrict its scope and do not take effect on the self-assessed tax amount until a closure notice is issued. Section 9C allows an officer to amend a self-assessment mid-enquiry to prevent loss of tax if they believe the stated tax is insufficient. Sections 9D, 10-12ZN (corporation tax, capital gains, NRCGT returns) are repealed/empty in this chunk.",
+        "topics": [
+          "enquiry-notice",
+          "enquiry-window",
+          "amendment-during-enquiry",
+          "closure-notice",
+          "self-assessment-amendment"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "4a488cb1c97df5c9": {
+      "chars": 8402,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > Income tax (U.K.) > \\[F1 7 Notice of liability to income tax and capital gains tax. (U.K.)",
+      "index": 1,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Section heavily amended (multiple F-numbered textual amendments); text as shown is the current amended version, not original 1970 wording.",
+          "Subsection (8) has been repealed and is now blank.",
+          "Section 7A is entirely repealed/blank ('Disregard of certain NRCGT gains for purposes of section 7') and has no current substantive content.",
+          "Subsection (3) exemption is conditional on all three of (a), (b) and (c) being satisfied; failing any one restores the notification obligation.",
+          "Various rate references (Scottish, Welsh, dividend, savings rates) in subsection (6) reflect devolved/differentiated tax rates and require care depending on the taxpayer's residence/status.",
+          "Modifications listed (C6-C9) apply the section with alterations for specific years or contexts (1995-96, TIOPA 2010, Finance Act 2020 SEISS-related Sch.16)."
+        ],
+        "cross_references": [
+          "TMA 1970 s.8",
+          "TMA 1970 s.8A",
+          "TMA 1970 s.8B",
+          "TMA 1970 s.9",
+          "ITA 2007 s.30",
+          "ITA 2007 s.18",
+          "ITA 2007 s.19",
+          "ITTOIA 2005 s.832",
+          "ITTOIA 2005 Chapter 9 of Part 4",
+          "ITEPA 2003 Chapter 9 of Part 10",
+          "PAYE regulations",
+          "Finance Act 1995 Sch.21 para.1",
+          "Taxation (International and Other Provisions) Act 2010 ss.137, 140, 381, Sch.9",
+          "Finance Act 2020 Sch.16 para.12",
+          "Finance Act 2022 s.98"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Person falling within subsection (1A)",
+            "name": "Notification period - no s.8 notice received",
+            "ref": "TMA 1970 s.7(1C)(a)",
+            "rule": "The period of 6 months from the end of the year of assessment"
+          },
+          {
+            "applies_to": "Person falling within subsection (1B)",
+            "name": "Notification period - s.8 notice withdrawn",
+            "ref": "TMA 1970 s.7(1C)(b)",
+            "rule": "Whichever ends later of: 6 months from end of the year of assessment, or 30 days beginning with the day after the s.8 notice was withdrawn"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Defined in subsection (1C): for subsection (1A) persons, 6 months from end of year of assessment; for subsection (1B) persons, the later of 6 months from end of year of assessment or 30 days from withdrawal of the s.8 notice",
+            "ref": "TMA 1970 s.7(1C)",
+            "term": "the notification period"
+          },
+          {
+            "meaning": "In relation to income (other than gains under Ch.9 Pt.4 ITTOIA 2005), persons who are trustees when income arises and any who subsequently become trustees; in relation to such gains, trustees in the year the gains arise and any who subsequently become trustees; in relation to chargeable gains, trustees in the year the gains accrue and any who subsequently become trustees",
+            "ref": "TMA 1970 s.7(9)",
+            "term": "relevant trustees of a settlement"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "Within 'the notification period' as defined in subsection (1C)",
+            "must": "Give notice to an officer of the Board that they are chargeable",
+            "ref": "TMA 1970 s.7(1)",
+            "trigger": "Being chargeable to income tax or CGT for a year of assessment and falling within subsection (1A) or (1B)",
+            "who": "Person chargeable to income tax or capital gains tax who has not received a s.8 notice to file, or whose s.8 notice was withdrawn"
+          },
+          {
+            "deadline": "Notification period as in s.7(1C), adapted",
+            "must": "Give notice of chargeability (with references to s.8 notice read as references to s.8A notice)",
+            "ref": "TMA 1970 s.7(2)",
+            "trigger": "Being chargeable as relevant trustees of a settlement",
+            "who": "Trustees chargeable as relevant trustees of a settlement"
+          },
+          {
+            "deadline": "n/a (notification period applies if triggered)",
+            "must": "Give notice under subsection (1) only if chargeable to an amount of tax not included in the simple assessment",
+            "ref": "TMA 1970 s.7(2A)",
+            "trigger": "Notification of a simple assessment for the year",
+            "who": "Person notified of a simple assessment who falls within subsection (1A) or (1B)"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "Section 7 TMA 1970 requires a person chargeable to income tax or capital gains tax for a year of assessment, who has not received (or has had withdrawn) a notice to file under section 8, to notify HMRC of chargeability within a specified notification period. The notification period is 6 months from the end of the year of assessment, or, where a section 8 notice was withdrawn, the later of that 6-month period or 30 days from withdrawal. Subsection (3) exempts persons whose total income is entirely from sources already taxed at source or under PAYE, who have no chargeable gains, and who owe no additional tax under section 30 ITA 2007 (other than the winter fuel payment charge). Special provisions extend rules to trustees of settlements and define 'relevant trustees'. Persons notified of a simple assessment need not give notice unless additional tax/CGT is owed outside that assessment.",
+        "topics": [
+          "notification-of-chargeability",
+          "self-assessment-registration",
+          "exemptions-from-notification",
+          "trustees",
+          "deadlines"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "7dcad622a854ae03": {
+      "chars": 11431,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > \\[F126 Partnerships (U.K.) > 12AA Partnership return. (U.K.)",
+      "index": 6,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Penalty for failing to comply with information requirement under s.12AA(5F)",
+            "period": "n/a",
+            "ref": "TMA 1970 s.12AA(5H)",
+            "value": "£60"
+          }
+        ],
+        "caveats": [
+          "Text contains multiple textual amendments (marked F126-F146) reflecting substitutions/insertions over time; the version shown is the current amended text.",
+          "Subsection (7)(b) has been repealed and is shown as blank/struck-through.",
+          "Section 12AAA appears to have two subsections both numbered (9), reflecting successive amendments (one referencing FA 2009 Schedule 55, the other FA 2021 Schedules 24/25) - readers should check which applies to the relevant period.",
+          "The £60 penalty in s.12AA(5H) applies only to the information requirement under s.12AA(5F), not to the return itself."
+        ],
+        "cross_references": [
+          "TMA 1970 s.1",
+          "TMA 1970 s.12ABZA",
+          "TMA 1970 s.12AA(11)",
+          "Finance Act 1998 s.56(7)(b)",
+          "Schedule 55 to FA 2009 (paragraph 17B)",
+          "Schedule 24 and Schedule 25 to Finance Act 2021 (paragraph 21 / paragraph 16)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "partnership including one or more individuals",
+            "name": "Non-electronic partnership return (individuals)",
+            "ref": "TMA 1970 s.12AA(4A)",
+            "rule": "must not be earlier than 31st October of Year 2"
+          },
+          {
+            "applies_to": "partnership including one or more individuals",
+            "name": "Electronic partnership return (individuals)",
+            "ref": "TMA 1970 s.12AA(4B)",
+            "rule": "must not be earlier than 31st January of Year 2"
+          },
+          {
+            "applies_to": "partnership including one or more individuals",
+            "name": "Late notice exception 1 (individuals)",
+            "ref": "TMA 1970 s.12AA(4D)",
+            "rule": "if notice given after 31 July but on or before 31 October in Year 2: non-electronic return day must be after end of 3-month period from date of notice; electronic return day not earlier than 31 January"
+          },
+          {
+            "applies_to": "partnership including one or more individuals",
+            "name": "Late notice exception 2 (individuals)",
+            "ref": "TMA 1970 s.12AA(4E)",
+            "rule": "if notice given after 31 October in Year 2, day specified (electronic or not) must be after end of 3-month period beginning with date of notice"
+          },
+          {
+            "applies_to": "partnership including one or more companies",
+            "name": "Non-electronic partnership return (companies)",
+            "ref": "TMA 1970 s.12AA(5A)",
+            "rule": "must not be earlier than end of period of nine months beginning at the end of the relevant period"
+          },
+          {
+            "applies_to": "partnership including one or more companies",
+            "name": "Electronic partnership return (companies)",
+            "ref": "TMA 1970 s.12AA(5B)",
+            "rule": "must not be earlier than the first anniversary of the end of the relevant period"
+          },
+          {
+            "applies_to": "partnership including one or more companies",
+            "name": "Late notice exception (companies)",
+            "ref": "TMA 1970 s.12AA(5C)",
+            "rule": "where notice given more than nine months after end of relevant period, day specified must be after end of 3-month period beginning with date of notice"
+          },
+          {
+            "applies_to": "partner wishing to request withdrawal of s.12AA notice",
+            "name": "Withdrawal request period",
+            "ref": "TMA 1970 s.12AAA(6)",
+            "rule": "2 years beginning with the end of the relevant period (companies) or end of the year of assessment (other partnerships), or an extended period agreed by HMRC in exceptional circumstances"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "a person who is a partner in a partnership which is itself a partner in the reporting partnership, or in any partnership which is itself an indirect partner by successive application of this rule",
+            "ref": "TMA 1970 s.12AA(1B)-(1C)",
+            "term": "indirect partner"
+          },
+          {
+            "meaning": "its registered office",
+            "ref": "TMA 1970 s.12AA(10)",
+            "term": "residence (of a company)"
+          },
+          {
+            "meaning": "a return in pursuance of a notice under subsection (2) or (3) of s.12AA",
+            "ref": "TMA 1970 s.12AA(10A)",
+            "term": "partnership return"
+          },
+          {
+            "meaning": "in relation to a person required to make/deliver a partnership return who is no longer available: the partner nominated by majority of relevant partners, or, if none, the partner identified/nominated per rules in the notice or by an officer of the Board",
+            "ref": "TMA 1970 s.12AA(11)",
+            "term": "successor"
+          },
+          {
+            "meaning": "a person who was a partner at any time during the period for which the return was made or required, or the personal representatives of such a person",
+            "ref": "TMA 1970 s.12AA(13)",
+            "term": "relevant partner"
+          },
+          {
+            "meaning": "the period in respect of which the return is required",
+            "ref": "TMA 1970 s.12AA(5D)",
+            "term": "relevant period"
+          },
+          {
+            "meaning": "for companies: 2 years from end of relevant period; for other partnerships: 2 years from end of year of assessment; or such extended period as HMRC may agree in exceptional circumstances",
+            "ref": "TMA 1970 s.12AAA(6)",
+            "term": "withdrawal period"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "may give notice to partners requiring a partnership return",
+            "ref": "TMA 1970 s.12AA(2)-(3)",
+            "trigger": "need to establish partners' chargeable amounts to income tax or corporation tax",
+            "who": "Officer of the Board (HMRC)"
+          },
+          {
+            "deadline": "as specified in notice, subject to s.12AA(4)-(5E) rules",
+            "must": "make and deliver a return containing required information, accounts, statements and documents",
+            "ref": "TMA 1970 s.12AA(2)-(3)",
+            "trigger": "notice given under s.12AA(2) or (3)",
+            "who": "Person identified/nominated to make partnership return"
+          },
+          {
+            "deadline": "n/a",
+            "must": "include declaration of name, residence and tax reference of each partner for relevant period, and a declaration that the return is correct and complete",
+            "ref": "TMA 1970 s.12AA(6)",
+            "trigger": "making a partnership return",
+            "who": "Person making the return"
+          },
+          {
+            "deadline": "n/a",
+            "must": "include any information specified/described in regulations made by the Commissioners if required by an officer of HMRC",
+            "ref": "TMA 1970 s.12AA(5F)-(5G)",
+            "trigger": "requirement imposed under s.12AA(5F)",
+            "who": "Person required to make and deliver a return under s.12AA"
+          },
+          {
+            "deadline": "within the withdrawal period (generally 2 years from end of relevant period/year of assessment)",
+            "must": "may request HMRC to withdraw the notice before the end of the withdrawal period, provided no return has yet been delivered",
+            "ref": "TMA 1970 s.12AAA(2)-(3),(6)",
+            "trigger": "receipt of s.12AA notice",
+            "who": "Partner required by s.12AA notice to deliver a return"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "liable to a penalty of £60",
+            "ref": "TMA 1970 s.12AA(5H)",
+            "trigger": "Failure to comply with a requirement to include specified information in a partnership return under s.12AA(5F)"
+          },
+          {
+            "consequence": "cancellation of liability to penalty under those Schedules possible via provision in a s.12AAA withdrawal notice",
+            "ref": "TMA 1970 s.12AAA(9)",
+            "trigger": "Reference to penalties under Schedule 55 FA 2009 and Schedule 24/25 FA 2021 in connection with withdrawal notices"
+          }
+        ],
+        "relevance": "core",
+        "summary": "Section 12AA sets out HMRC's power to require a partnership return, establishing each partner's chargeable income/corporation tax amounts, including for indirect partners in tiered partnerships. It prescribes filing deadlines that differ for electronic vs non-electronic returns and for partnerships including individuals versus companies, plus exceptions where notice is given late. It also requires declarations of partners' details and correctness, allows HMRC to demand additional information by regulation (subject to a £60 penalty for non-compliance), and defines terms like 'successor', 'relevant partner' and 'partnership return'. Section 12AAA (new) allows a partner to request withdrawal of a s.12AA notice within a specified withdrawal period, with conditions and interaction with penalty-cancellation provisions.",
+        "topics": [
+          "partnership-return",
+          "filing-deadlines",
+          "penalties",
+          "hmrc-notice",
+          "withdrawal-of-notice",
+          "records-and-information"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "7e7b65a864348587": {
+      "chars": 10348,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > Income tax (U.K.) > \\[F76 9 Returns to include self\\-assessment. (U.K.)",
+      "index": 4,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Subsection (1) is subject to subsections (1A) and (2) exceptions.",
+          "Text contains multiple textual amendments (F-notes) indicating historical repeals/insertions; some words have been repealed and are shown as omitted (e.g. F79, F81, F84, F85, F93, F95).",
+          "Subsections (4), (5) and (6) of s.9 have been repealed and are empty.",
+          "S.9(1A) exclusions relate to specific pension scheme administrators and employer-financed retirement benefits schemes and are subject to further modification by later regulations (e.g. S.I. 2025/52, S.I. 2026/698).",
+          "Various modifications to s.9 apply in specific contexts (electronic communications, international provisions, student loans, pensions) per listed C-notes."
+        ],
+        "cross_references": [
+          "TMA 1970 s.8",
+          "TMA 1970 s.8A",
+          "TMA 1970 s.9ZA",
+          "TMA 1970 s.9ZB",
+          "Finance Act 2004 Part 4",
+          "ITEPA 2003 s.394(2)",
+          "ITEPA 2003 s.626",
+          "ITTOIA 2005 s.530(1)",
+          "Finance Act 2019 Sch. 2 para. 19",
+          "Taxation (International and Other Provisions) Act 2010 ss.137, 140",
+          "S.I. 2000/945",
+          "S.I. 2005/3454",
+          "S.I. 2025/52"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Returns under s.8 or 8A where taxpayer wants HMRC to calculate tax",
+            "name": "Self-assessment exemption deadline",
+            "ref": "TMA 1970 s.9(2)(a)",
+            "rule": "on or before the 31st October next following the year"
+          },
+          {
+            "applies_to": "Returns issued late",
+            "name": "Self-assessment exemption deadline (late notice)",
+            "ref": "TMA 1970 s.9(2)(b)",
+            "rule": "within two months beginning with the day the notice is given, where notice under s.8/8A given after 31st August next following the year"
+          },
+          {
+            "applies_to": "Taxpayer amendments to personal/trustee returns",
+            "name": "Amendment deadline",
+            "ref": "TMA 1970 s.9ZA(2)(3)",
+            "rule": "not more than twelve months after the filing date (31 January of Year 2, or three months from notice if given after 31 October Year 2)"
+          },
+          {
+            "applies_to": "HMRC corrections to returns",
+            "name": "Revenue correction deadline",
+            "ref": "TMA 1970 s.9ZB(3)",
+            "rule": "not more than nine months after the day the return was delivered, or after an amendment under s.9ZA was made"
+          },
+          {
+            "applies_to": "Taxpayer rejecting HMRC correction",
+            "name": "Rejection of correction deadline",
+            "ref": "TMA 1970 s.9ZB(5)(b)",
+            "rule": "before the end of the period of 30 days beginning with the date of issue of the notice of correction"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "An assessment included in a return comprising (a) the amounts of income tax and CGT chargeable for the year based on the return's information and claimed reliefs/allowances, and (b) the amount payable being the difference between that assessed tax and tax already deducted at source",
+            "ref": "TMA 1970 s.9(1)",
+            "term": "self-assessment"
+          },
+          {
+            "meaning": "For a return for year of assessment (Year 1): 31st January of Year 2, or if notice under s.8/8A given after 31st October of Year 2, the last day of the period of three months beginning with the date of the notice",
+            "ref": "TMA 1970 s.9ZA(3)",
+            "term": "the filing date"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a (unless filed by dates in s.9(2))",
+            "must": "Include a self-assessment of income tax and CGT chargeable and amount payable",
+            "ref": "TMA 1970 s.9(1)",
+            "trigger": "Filing a return under s.8 or 8A",
+            "who": "Person delivering a return under s.8 or 8A"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Make the assessment on the taxpayer's behalf based on the return, and send a copy",
+            "ref": "TMA 1970 s.9(3)",
+            "trigger": "Taxpayer does not comply with s.9(1) self-assessment requirement",
+            "who": "Officer of the Board"
+          },
+          {
+            "deadline": "not more than twelve months after the filing date",
+            "must": "May amend personal or trustee return by notice to an officer of the Board",
+            "ref": "TMA 1970 s.9ZA(1)(2)",
+            "trigger": "Wish to amend return",
+            "who": "Taxpayer"
+          },
+          {
+            "deadline": "not more than nine months after return delivered (or after amendment under s.9ZA)",
+            "must": "May amend a return to correct obvious errors/omissions or other believed-incorrect items",
+            "ref": "TMA 1970 s.9ZB(1)(3)",
+            "trigger": "Identification of error in return",
+            "who": "Officer of the Board"
+          },
+          {
+            "deadline": "before the end of 30 days beginning with the date of issue of the notice of correction",
+            "must": "May give notice rejecting a Revenue correction",
+            "ref": "TMA 1970 s.9ZB(4)(5)",
+            "trigger": "Receipt of correction notice under s.9ZB",
+            "who": "Taxpayer"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "Section 9 requires returns under section 8 or 8A to include a self-assessment of income tax and capital gains tax chargeable, and of the balance payable after deducting tax deducted at source, subject to exceptions for certain pension scheme and employer-financed retirement benefits scheme tax. Taxpayers are excused from self-assessing if they file by 31 October following the year of assessment, or within two months of a notice issued after 31 August. Section 9ZA allows a taxpayer to amend their personal or trustee return within twelve months of the filing date (31 January of Year 2, or three months from a late notice). Section 9ZB allows an HMRC officer to correct obvious errors, omissions, or other incorrect matters in a return within nine months of delivery (or of a taxpayer amendment), subject to the taxpayer's right to reject the correction within 30 days.",
+        "topics": [
+          "self-assessment",
+          "return-amendment",
+          "revenue-correction",
+          "filing-deadlines",
+          "tax-calculation"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "b9c16d142cd919d6": {
+      "chars": 8283,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > Income tax (U.K.) > \\[F38 8 Personal return. (U.K.)",
+      "index": 2,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [
+          {
+            "name": "Penalty for failing to comply with information requirement under s.8(1I)",
+            "period": "n/a",
+            "ref": "TMA 1970 s.8(1K)",
+            "value": "£60"
+          }
+        ],
+        "caveats": [
+          "Subsection (1A) has been repealed and is now blank text",
+          "Subsections marked with F-prefixed numbers (e.g. F38-F51) indicate textual amendments/substitutions - the current text reflects amended law, not the original 1970 enactment",
+          "Deadlines in (1D) are subject to two exceptions in (1F) and (1G) depending on when notice is given",
+          "The £60 penalty in (1K) applies specifically to failure to comply with information requirements under the newer (1I) regulation-making power, not to late filing generally",
+          "Section 8(4A)-(4B) and 8ZA apply only to a specific category of persons (certain non-UK-resident-employer arrangements) as narrowly defined by conditions A-C"
+        ],
+        "cross_references": [
+          "TMA 1970 s.12AB",
+          "TMA 1970 s.8A",
+          "TMA 1970 s.9",
+          "TMA 1970 s.12AA",
+          "TMA 1970 s.1",
+          "ITEPA 2003 s.7(3)",
+          "TMA 1970 s.8(4A)",
+          "Taxation of Chargeable Gains Act 1992 ss.3(6)(b), 289",
+          "Finance Act 1998 s.56(7)(a)",
+          "Income Tax (Electronic Communications) Regulations 2000 (S.I. 2000/945)",
+          "Taxation (International and Other Provisions) Act 2010 ss.137, 140, 381(1), Sch.9"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Year 1 personal return delivered non-electronically",
+            "name": "Non-electronic personal return deadline",
+            "ref": "TMA 1970 s.8(1D)(a)",
+            "rule": "on or before 31st October in Year 2"
+          },
+          {
+            "applies_to": "Year 1 personal return delivered electronically",
+            "name": "Electronic personal return deadline",
+            "ref": "TMA 1970 s.8(1D)(b)",
+            "rule": "on or before 31st January in Year 2"
+          },
+          {
+            "applies_to": "Return where notice for Year 1 given after 31 July but on or before 31 October in Year 2",
+            "name": "Exception 1 - notice given late (after 31 July, on/before 31 October)",
+            "ref": "TMA 1970 s.8(1F)",
+            "rule": "non-electronic: within 3 months beginning with date of notice; electronic: on or before 31 January"
+          },
+          {
+            "applies_to": "Return where notice for Year 1 given after 31 October in Year 2",
+            "name": "Exception 2 - notice given after 31 October",
+            "ref": "TMA 1970 s.8(1G)",
+            "rule": "return (electronic or not) due within 3 months beginning with the date of the notice"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A statement which, as respects the partnership, falls to be made under section 12AB of this Act for a period which includes, or includes any part of, the year of assessment",
+            "ref": "TMA 1970 s.8(1C)",
+            "term": "Relevant statement"
+          },
+          {
+            "meaning": "In s.8, 8A, 9 and 12AA, a reference to income tax deducted or treated as deducted from any income or treated as paid on any income",
+            "ref": "TMA 1970 s.8(5)",
+            "term": "Income tax deducted at source"
+          },
+          {
+            "meaning": "A person meeting conditions A-C: performs UK duties of office/employment continuously for 30+ days (Condition A); office/employment is under/with a person not resident in UK but resident outside UK (Condition B); duties performed for benefit of a UK-resident person or one carrying on trade/profession/vocation in UK (Condition C)",
+            "ref": "TMA 1970 s.8ZA",
+            "term": "Person within section 8ZA (F)"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a - see deadlines section",
+            "must": "Make and deliver a return containing required information, plus accounts/statements/documents",
+            "ref": "TMA 1970 s.8(1)",
+            "trigger": "Notice given under s.8(1)",
+            "who": "Person given notice by an officer of the Board"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include in return each amount stated as their share of income, loss, tax, credit or charge per the relevant partnership statement",
+            "ref": "TMA 1970 s.8(1B)-(1C)",
+            "trigger": "Partnership statement made under s.12AB for a period including/overlapping the year of assessment",
+            "who": "Person carrying on trade/profession/business in partnership"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include a declaration that the return is to the best of their knowledge correct and complete",
+            "ref": "TMA 1970 s.8(2)",
+            "trigger": "Making a return under s.8",
+            "who": "Person making a return under s.8"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include any information specified/described in Commissioners' regulations if required by an officer",
+            "ref": "TMA 1970 s.8(1I)",
+            "trigger": "Requirement imposed by officer under s.8(1I)",
+            "who": "Person required to deliver a return under s.8"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "Liable to a penalty of £60",
+            "ref": "TMA 1970 s.8(1K)",
+            "trigger": "Failure to comply with a requirement to include specified information imposed under subsection (1I)"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This is TMA 1970 s.8, the core provision requiring an individual to make a personal Self Assessment return when given a notice by an officer of the Board, to establish income tax and CGT liability and tax payable. It sets statutory filing deadlines (31 October for non-electronic, 31 January for electronic returns) with exceptions for late-issued notices, requires a declaration of correctness, allows different requirements for different persons/periods, and imposes a £60 penalty for failing to provide additional information requested under new regulatory powers (subsection (1I)). Section 8ZA defines who counts as a person 'within section 8(4A)' for cross-border employment cases.",
+        "topics": [
+          "personal-return",
+          "filing-deadlines",
+          "penalties",
+          "partnership-returns",
+          "record-requirements"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "b9edcc36220a6d94": {
+      "chars": 8072,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > \\[F126 Partnerships (U.K.) > \\[F174 12AD Amendment of partnership return by taxpayer \\[F182 , or referral of dispute,] during enquiry (U.K.)",
+      "index": 9,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Section 12AD text has multiple textual amendments (F-markers) reflecting insertion of partial closure notice concepts and dispute referral provisions - not all amendments may be in force for all periods.",
+          "Section 12AE (Choice between different Cases of Schedule D) has been repealed and is now empty.",
+          "S.12AD(3) is excluded for accounting periods beginning on or after 1.1.2026 by Finance Act 2010 Sch. A1 para. 6(6) as inserted by Finance Act 2026 - a prospective modification.",
+          "Section heading 'Records' appears at the end, indicating the next section of the Act (not covered in this chunk) concerns record-keeping."
+        ],
+        "cross_references": [
+          "TMA 1970 s.12ABA (amendment of partnership return by taxpayer / consequential amendment of partners' returns)",
+          "TMA 1970 s.12ABZB(3) (referral of dispute to tribunal)",
+          "TMA 1970 s.28B(4) (amendment of partners' returns consequential on amendment of partnership return by closure notice)",
+          "ITTOIA 2005 s.863H-863K",
+          "Council Regulation (EEC) No. 2137/85 of 25 July 1985",
+          "European Economic Interest Grouping Regulations 1989, reg.5(1)",
+          "Finance Act 2010 c.8 Sch. A1 para. 6(6)",
+          "Finance Act 2026 c.11 s.46(2), Sch. 5 para. 1(2)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "partnership return amendments made during an enquiry",
+            "name": "Deferred amendment effective date",
+            "ref": "TMA 1970 s.12AD(3)",
+            "rule": "amendment affecting partnership statement does not take effect while enquiry in progress; takes effect when a partial closure notice is issued in relation to the matters, or if none, a final closure notice"
+          },
+          {
+            "applies_to": "partnerships that elected under ITTOIA 2005 s.863H",
+            "name": "AIFM information notice deadline",
+            "ref": "TMA 1970 s.12ADA(2)",
+            "rule": "such reasonable time as the officer may specify in the notice"
+          },
+          {
+            "applies_to": "UK Economic Interest Groupings and EEIGs",
+            "name": "Grouping return deadline",
+            "ref": "TMA 1970 s.12A(3)-(4)",
+            "rule": "within the time limited by the notice"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "a UK Economic Interest Grouping, or a grouping registered in a member State formed under Council Regulation (EEC) No. 2137/85 of 25 July 1985 (a European Economic Interest Grouping)",
+            "ref": "TMA 1970 s.12A(1)",
+            "term": "grouping"
+          },
+          {
+            "meaning": "the whole period beginning with the day notice of enquiry is given and ending with the day a partial closure notice is issued in relation to the matter, or if none, a final closure notice is issued",
+            "ref": "TMA 1970 s.12AD(5)",
+            "term": "period during which an enquiry is in progress"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "within such reasonable time as the officer may specify in the notice",
+            "must": "may require a partnership that made an election under ITTOIA 2005 s.863H to provide information for purposes connected with ss.863H-863K",
+            "ref": "TMA 1970 s.12ADA",
+            "trigger": "reasonable requirement connected with operation of ITTOIA 2005 ss.863H-863K",
+            "who": "Officer of Revenue and Customs"
+          },
+          {
+            "deadline": "within the time limited by the notice",
+            "must": "make and deliver a return with required information, accounts and statements",
+            "ref": "TMA 1970 s.12A(3)",
+            "trigger": "notice given by inspector under s.12A(3)",
+            "who": "UK Economic Interest Grouping or EEIG with establishment registered in GB or NI"
+          },
+          {
+            "deadline": "within the time limited by the notice",
+            "must": "make and deliver a return with required information, accounts and statements",
+            "ref": "TMA 1970 s.12A(4)",
+            "trigger": "notice given by inspector under s.12A(4)",
+            "who": "Member of a grouping resident in UK (or, if none, any member)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "include a declaration that the return is to the best of the maker's knowledge correct and complete",
+            "ref": "TMA 1970 s.12A(5)",
+            "trigger": "making a return under s.12A",
+            "who": "Grouping or member making a return under s.12A"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "Section 12AD governs the effect of a taxpayer amendment to a partnership return (or referral of a dispute to the tribunal) made while an enquiry into that return is in progress: the amendment does not restrict the enquiry's scope but is taken into account, and any effect on the partnership statement is deferred until a partial or final closure notice is issued, with specific rules on when the amendment does or does not take effect. Section 12ADA allows an officer to require AIFM partnerships that elected under ITTOIA 2005 s.863H to provide information. Section 12AE has been repealed. Section 12A sets out return obligations for UK Economic Interest Groupings and European Economic Interest Groupings, including who must file, declaration requirements, and representative/manager rules.",
+        "topics": [
+          "partnership-returns",
+          "enquiries",
+          "amendment-of-return",
+          "closure-notice",
+          "eeig",
+          "aifm-firms"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "c4a5000c6abf5790": {
+      "chars": 6018,
+      "heading": "Taxes Management Act 1970",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Sections 2, 2A, 3, 3A, 4, 4A, 5 and 6 are repealed/empty (marked F2-F12) and contain no current text",
+          "Section 1 text is substituted (marked F1) - reflects current law but was amended from original enactment",
+          "This chunk ends before any substantive text of Part II is given; only the heading 'Income tax' appears"
+        ],
+        "cross_references": [
+          "Finance Act 2003 (c. 14) Sch. 17 para. 1",
+          "The Education (Student Loans) (Repayment) Regulations 2009 (S.I. 2009/944)",
+          "The Education (Student Loans) (Repayment) Regulations (Northern Ireland) 2009 (S.R. 2009/128)",
+          "The Education (Postgraduate Masters Degree Loans) Regulations 2016 (S.I. 2016/606)",
+          "Social Security Contributions and Benefits (Northern Ireland) Act 1992 (c. 7) s.11A",
+          "Social Security Contributions and Benefits Act 1992 (c. 4) s.11A",
+          "National Insurance Contributions Act 2015 (c. 5) Sch. 1",
+          "The Public Service Pension Schemes (Rectification of Unlawful Discrimination) (Tax) (No. 2) Regulations 2023 (S.I. 2023/912)",
+          "The Social Security (Class 2 National Insurance Contributions) (Consequential Amendments and Savings) Regulations 2024 (S.I. 2024/377)",
+          "TMA 1970 Part II Returns of Income and Gains"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "be responsible for the collection and management of income tax, corporation tax, and capital gains tax",
+            "ref": "TMA 1970 s.1",
+            "trigger": "n/a",
+            "who": "Commissioners for Her Majesty's Revenue and Customs"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk contains the opening of the Taxes Management Act 1970, including s.1 which assigns HMRC Commissioners responsibility for collecting and managing income tax, corporation tax and capital gains tax. Sections 2 to 6, dealing with General and Special Commissioners, their declarations, clerks and indemnity, have been repealed and are now blank. The chunk ends at the start of Part II 'Returns of Income and Gains', under the heading 'Income tax', with no substantive text yet given.",
+        "topics": [
+          "administration",
+          "hmrc-powers",
+          "commissioners",
+          "act-structure"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "c6d41e04fcf15a25": {
+      "chars": 11061,
+      "heading": "Taxes Management Act 1970 > PART II RETURNS OF INCOME AND GAINS (U.K.) > \\[F126 Partnerships (U.K.) > \\[F168 12ABZB Partnership return conclusive as to partnership shares (U.K.)",
+      "index": 8,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Section 12ABZB dispute mechanism does not cover disputes in substance about the amount (before sharing) of the partnership's profits or losses.",
+          "A partnership return subject to one referral under s.12ABZB(3) generally cannot be the subject of another, except in limited circumstances following an amendment under s.12ABA.",
+          "A partnership return subject to one enquiry notice generally cannot be subject to another, except following amendment under s.12ABA or referral under s.12ABZB(3).",
+          "Enquiry scope is limited to matters relating to the amendment or dispute if notice is given after the general enquiry window has closed or after a closure notice has issued.",
+          "Text contains multiple textual amendments (marked with F-prefixed footnote markers) indicating substituted or inserted provisions; original enactment wording may differ.",
+          "A correction under s.12ABB has no effect if rejected by the partner within 30 days."
+        ],
+        "cross_references": [
+          "TMA 1970 s.12ABA (amendment of partnership return by taxpayer)",
+          "TMA 1970 s.12ABZB (partnership return conclusive as to shares)",
+          "TMA 1970 s.8 / s.8A (individual returns)",
+          "TMA 1970 s.9A(1) (notice of enquiry into individual return)",
+          "TMA 1970 s.12AA (partnership return notice/filing date)",
+          "Finance Act 1998 Sch. 18 para. 24 (company tax return enquiry)",
+          "Crossrail Act 2008 c.18 Sch. 13 para. 44(2)-(4)"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Disputes about partnership shares under s.12ABZB",
+            "name": "Tribunal referral of partnership share dispute",
+            "ref": "TMA 1970 s.12ABZB(5)",
+            "rule": "12 months beginning with the day after delivery of the return, or after the amendment was made"
+          },
+          {
+            "applies_to": "Agreements under s.12ABZB(9)",
+            "name": "Repudiation/objection to agreement in lieu of tribunal determination",
+            "ref": "TMA 1970 s.12ABZB(10)",
+            "rule": "30 days beginning with date of the agreement (party) or date HMRC receives notice of agreement (HMRC)"
+          },
+          {
+            "applies_to": "Partnership returns",
+            "name": "Amendment of partnership return by taxpayer",
+            "ref": "TMA 1970 s.12ABA(2)",
+            "rule": "not more than twelve months after the filing date"
+          },
+          {
+            "applies_to": "Partnerships including one or more individuals",
+            "name": "Filing date for partnership return (individuals)",
+            "ref": "TMA 1970 s.12ABA(4)(a)",
+            "rule": "31st January of Year 2, or if notice under s.12AA given after 31 October Year 2, last day of period of three months beginning with date of notice"
+          },
+          {
+            "applies_to": "Partnerships including one or more companies",
+            "name": "Filing date for partnership return (companies)",
+            "ref": "TMA 1970 s.12ABA(4)(b)",
+            "rule": "end of the period specified in section 12AA(5B) or (5C)"
+          },
+          {
+            "applies_to": "Partnership returns",
+            "name": "Revenue correction of partnership return",
+            "ref": "TMA 1970 s.12ABB(3)",
+            "rule": "not more than nine months after the day the return was delivered, or after amendment under s.12ABA"
+          },
+          {
+            "applies_to": "Corrections under s.12ABB",
+            "name": "Rejection of Revenue correction",
+            "ref": "TMA 1970 s.12ABB(5)",
+            "rule": "before end of 30 days beginning with date of issue of notice of correction"
+          },
+          {
+            "applies_to": "Partnership returns",
+            "name": "Notice of enquiry into partnership return (delivered on/before filing date)",
+            "ref": "TMA 1970 s.12AC(2)(a)",
+            "rule": "up to end of period of twelve months after the day on which the return was delivered"
+          },
+          {
+            "applies_to": "Partnership returns",
+            "name": "Notice of enquiry into partnership return (delivered after filing date)",
+            "ref": "TMA 1970 s.12AC(2)(b)",
+            "rule": "up to and including the quarter day next following the first anniversary of the day on which the return was delivered"
+          },
+          {
+            "applies_to": "Amended partnership returns",
+            "name": "Notice of enquiry following amendment under s.12ABA",
+            "ref": "TMA 1970 s.12AC(2)(c)",
+            "rule": "up to and including the quarter day next following the first anniversary of the day on which the amendment was made"
+          },
+          {
+            "applies_to": "Partnership returns subject to s.12ABZB(3) referral",
+            "name": "Notice of enquiry following tribunal referral",
+            "ref": "TMA 1970 s.12AC(2)(d)",
+            "rule": "up to and including the quarter day next following the first anniversary of the day on which HMRC received notification of the referral"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "the partner who made and delivered the partnership return or that partner's successor",
+            "ref": "TMA 1970 s.12ABZB(12)",
+            "term": "reporting partner"
+          },
+          {
+            "meaning": "a person who was a partner in the partnership at any time during the period in respect of which the partnership return was made",
+            "ref": "TMA 1970 s.12ABZB(12)",
+            "term": "partner (in s.12ABZB)"
+          },
+          {
+            "meaning": "for partnerships with individuals: 31 January of Year 2 (or 3 months from notice if notice given after 31 October Year 2); for partnerships with companies: end of period specified in s.12AA(5B) or (5C)",
+            "ref": "TMA 1970 s.12ABA(4)",
+            "term": "the filing date (s.12ABA)"
+          },
+          {
+            "meaning": "the day specified in the notice under section 12AA(2) or subsection (3) of that section",
+            "ref": "TMA 1970 s.12AC(7)",
+            "term": "the filing date (s.12AC)"
+          },
+          {
+            "meaning": "31st January, 30th April, 31st July and 31st October",
+            "ref": "TMA 1970 s.12AC(2)",
+            "term": "quarter days"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "12 months beginning with the day after the return was delivered, or after the amendment was made",
+            "must": "Refer the dispute to the tribunal for determination",
+            "ref": "TMA 1970 s.12ABZB(3),(5)",
+            "trigger": "Disagreement about whether the partnership return correctly states a person's share of profits/losses",
+            "who": "Party to a dispute about partnership shares"
+          },
+          {
+            "deadline": "at the same time as referral",
+            "must": "Give notice of the referral to HMRC and the reporting partner",
+            "ref": "TMA 1970 s.12ABZB(6)(a)",
+            "trigger": "Referral of dispute under s.12ABZB(3)",
+            "who": "Party referring a dispute to tribunal"
+          },
+          {
+            "deadline": "not specified",
+            "must": "Give notice of the referral to every other partner and any other person appearing to be a party to the dispute",
+            "ref": "TMA 1970 s.12ABZB(6)(b)",
+            "trigger": "Receipt of referral notice",
+            "who": "Reporting partner"
+          },
+          {
+            "deadline": "not specified",
+            "must": "Amend the partnership return to reflect tribunal determination",
+            "ref": "TMA 1970 s.12ABZB(7)(b)",
+            "trigger": "Tribunal determines return is incorrect as to shares",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "not specified",
+            "must": "Amend individual partners' returns (s.8/8A) or company tax returns to give effect to amendment of partnership return",
+            "ref": "TMA 1970 s.12ABZB(8)",
+            "trigger": "Amendment of partnership return under s.12ABZB(7)(b)",
+            "who": "HMRC"
+          },
+          {
+            "deadline": "not more than 12 months after the filing date",
+            "must": "May amend the partnership return by notice to an officer",
+            "ref": "TMA 1970 s.12ABA(2)",
+            "trigger": "Discretionary, within time limit",
+            "who": "Partner who made and delivered partnership return (or successor)"
+          },
+          {
+            "deadline": "not specified",
+            "must": "Amend each partner's return under s.8/8A or company tax return by notice",
+            "ref": "TMA 1970 s.12ABA(3)",
+            "trigger": "Amendment of partnership return under s.12ABA",
+            "who": "Officer of the Board"
+          },
+          {
+            "deadline": "not more than 9 months after the day the return was delivered (or after amendment under s.12ABA)",
+            "must": "May amend a partnership return to correct obvious errors/omissions or other incorrect items",
+            "ref": "TMA 1970 s.12ABB(1),(3)",
+            "trigger": "Discretionary, within time limit",
+            "who": "Officer of the Board"
+          },
+          {
+            "deadline": "before end of period of 30 days beginning with date of issue of notice of correction",
+            "must": "May give notice rejecting the correction",
+            "ref": "TMA 1970 s.12ABB(4),(5)",
+            "trigger": "Receipt of notice of correction under s.12ABB",
+            "who": "Partner (or successor) receiving a correction notice"
+          },
+          {
+            "deadline": "within time allowed per s.12AC(2)",
+            "must": "Give notice of enquiry into a partnership return to the partner who made and delivered it (or successor)",
+            "ref": "TMA 1970 s.12AC(1)",
+            "trigger": "Officer's decision to enquire",
+            "who": "Officer of the Board"
+          }
+        ],
+        "penalties": [],
+        "relevance": "core",
+        "summary": "This chunk sets out rules for partnership returns under Self Assessment: a partnership return is conclusive as to partnership shares (s.12ABZB), subject to a tribunal referral process for disputes about shares (not profit amounts) within 12 months of delivery/amendment. It also covers taxpayer amendment of partnership returns (s.12ABA, within 12 months of filing date), Revenue correction of obvious errors or other incorrect matters (s.12ABB, within 9 months, subject to taxpayer rejection within 30 days), and HMRC's power to give notice of enquiry into partnership returns (s.12AC), including time limits, scope limitations following amendments/referrals, and deemed enquiry notices to individual partners.",
+        "topics": [
+          "partnership-returns",
+          "partnership-shares",
+          "amendment-of-returns",
+          "correction-by-revenue",
+          "enquiry-notice",
+          "tribunal-referral",
+          "closure-notices"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "legal-system/primary-legislation/acts/tma-1970.md",
+  "source_id": "tma-1970",
+  "source_url": "https://www.legislation.gov.uk/ukpga/1970/9/contents"
+}

@@ -225,6 +225,70 @@
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
+    "047190b511bee25c": {
+      "chars": 9299,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG8557 — Payment of tax > Hardship (indirect tax)",
+      "index": 44,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Related cases with a hardship application cannot be considered together with other related cases and remain stayed until disputed tax is paid or hardship is agreed",
+          "Applications for further lead/related case directions cannot be made until the potential lead case(s) have actually appealed/notified to the tribunal",
+          "Information disclosure to tribunal/customers must be anonymised and all related cases treated equally",
+          "This section primarily addresses indirect tax and large-scale/avoidance litigation management, not standard SA appeal procedure"
+        ],
+        "cross_references": [
+          "ARTG3330",
+          "ARTG9060",
+          "ARTG8390",
+          "ARTG8556",
+          "ARTG8320",
+          "Section 18(2) CRCA 2005",
+          "IDG47020",
+          "Rule 5",
+          "Rule 18"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Not required to pay NICs pending appeal, but may pay some or all to limit interest accruing",
+            "ref": "ARTG8557",
+            "trigger": "Appeal against a National Insurance Contributions decision",
+            "who": "Customer appealing NICs decision"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Apply to tribunal to direct Rule 5/Rule 18 applies once two or more related cases have appealed, one being a potential lead case",
+            "ref": "ARTG8558",
+            "trigger": "Two or more related cases notified/appealed to tribunal",
+            "who": "Litigator/Solicitor's Office"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Include statement identifying common/related issues of fact or law and explain how they apply, when making Rule 18 application",
+            "ref": "ARTG8561",
+            "trigger": "Application under Rule 18",
+            "who": "Litigator"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk covers tribunal procedural guidance mainly relevant to indirect tax and complex multi-case litigation: hardship applications where disputed tax cannot be paid before a tribunal hearing, NIC appeal payment rules, and detailed process for Rule 5/Rule 18 lead case directions, disclosure of information under CRCA 2005 s.18(2), statements of case, and directions hearings. It is largely about HMRC internal litigation management rather than core Self Assessment filing/payment obligations, though the NIC and hardship payment points and lead-case procedures could be relevant to SA appeals bound up in group litigation.",
+        "topics": [
+          "appeals",
+          "tribunal-procedure",
+          "hardship-application",
+          "lead-cases",
+          "related-cases",
+          "disclosure-of-information",
+          "national-insurance-contributions"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
     "0502dd62ab375a35": {
       "chars": 8689,
       "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG4300 — Late acceptance of a review offer",
@@ -2533,6 +2597,98 @@
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
+    "80a3ae9a1b16d0d6": {
+      "chars": 11579,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > ARTG8553 — Lead cases - Rule 5(3)(b) and (j)",
+      "index": 43,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Direct tax appeals: parties cannot apply for a Rule 18 direction if the customer has appealed to HMRC but not yet notified the appeal to the tribunal.",
+          "Rule 5 lead case decisions are not binding on stayed cases, only persuasive; stayed customers retain the right to pursue their own case despite the lead case outcome.",
+          "This is internal HMRC guidance (ARTG), not primary legislation, and concerns tribunal case management rather than Self Assessment filing/payment obligations directly, though it affects how disputed SA-related appeals in large groups are handled.",
+          "Normal tax payment/postponement rules apply to both lead and stayed cases regardless of lead case status."
+        ],
+        "cross_references": [
+          "ARTG8554",
+          "ARTG8553",
+          "ARTG8350",
+          "ARTG8555",
+          "ARTG8400",
+          "ARTG9060",
+          "ARTG8551",
+          "ARTG8557",
+          "ARTG8558",
+          "ARTG2510",
+          "ARTG2500",
+          "CH910000",
+          "Rule 5(3)(b) and (j) tribunal rules",
+          "Rule 18 tribunal rules"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Related parties in a Rule 18 lead case group seeking non-binding status",
+            "name": "Application under Rule 18(4)",
+            "ref": "ARTG8554",
+            "rule": "must be made in writing within 28 days of the date the tribunal sent a copy of its decision to the parties"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "A case directed by the tribunal under Rule 5(3)(b) to be treated as a lead case, with related cases stayed under Rule 5(3)(j); the decision is not binding on stayed cases, only potentially persuasive",
+            "ref": "ARTG8553",
+            "term": "Rule 5 lead case"
+          },
+          {
+            "meaning": "A case directed by the tribunal under Rule 18(2)(a) to be a lead case, with related cases stayed under Rule 18(2)(b); the decision binds all related parties unless they successfully apply under Rule 18(4)",
+            "ref": "ARTG8554",
+            "term": "Rule 18 lead case"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Include a copy of the lead case application (with confidential details removed) and the tribunal's direction when applying for further cases to be covered by a Rule 5 lead case direction",
+            "ref": "ARTG8553",
+            "trigger": "Applying for additional cases to be bound by an existing Rule 5 lead case direction",
+            "who": "Litigator"
+          },
+          {
+            "deadline": "within 28 days of the date the tribunal sent a copy of its decision to the parties",
+            "must": "Apply in writing for a direction that the lead case decision does not bind them",
+            "ref": "ARTG8554 / Rule 18(4)",
+            "trigger": "Disagreement with binding effect of Rule 18 lead case decision",
+            "who": "Related party (Rule 18 case)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Consider staggering issue of appealable decisions (e.g. closure notices) and warn review teams of upcoming volumes of related cases",
+            "ref": "ARTG8556",
+            "trigger": "Dispute arising that could affect a number of related cases",
+            "who": "Decision maker/litigator"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Nominate a single point of contact for the Tribunals Service and inform the technical specialist for appeals",
+            "ref": "ARTG8556",
+            "trigger": "Managing a group of related cases in litigation",
+            "who": "Litigator"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk explains tribunal procedures for managing large numbers of related appeals via 'lead case' directions under Rule 5(3)(b)/(j) and Rule 18 of the tribunal rules, contrasting their binding effect on stayed/follower cases. It also covers HMRC's operational management of related cases (e.g. staggering decisions, single points of contact) and confirms that normal payment/postponement rules for disputed tax continue to apply regardless of lead case status.",
+        "topics": [
+          "tribunal-procedure",
+          "lead-cases",
+          "appeals",
+          "stayed-cases",
+          "postponement-of-tax"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
     "81c12c858260bacc": {
       "chars": 11733,
       "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > Review officer action during review",
@@ -3598,6 +3754,108 @@
           "statement-of-case",
           "notice-of-appeal",
           "hmrc-litigation"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    },
+    "c4f4ac05c6813381": {
+      "chars": 9953,
+      "heading": "Appeals, Reviews and Tribunals Guidance (ARTG) > Rule 18 directions",
+      "index": 42,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "A Rule 5(3)(b) lead case decision is NOT binding on related cases; only a Rule 18 direction decision is binding in principle.",
+          "Related case customers have no right of appeal against a Rule 5(3)(b) lead decision but do have a right of appeal under s.11 TCEA against a Rule 18 lead decision.",
+          "Payment/repayment obligations and settlement approaches differ significantly depending on whether the lead case was appointed under Rule 5 or Rule 18.",
+          "NIC refund time limit extension (treating ongoing litigation as reasonable excuse) applies specifically where claims are made outside normal six-year time limit for Class 1 NICs.",
+          "This guidance concerns general tribunal appeals procedure, not Self Assessment filing/payment obligations directly, though payment-following-decision principles may apply to SA disputes under appeal."
+        ],
+        "cross_references": [
+          "ARTG8554",
+          "ARTG8930",
+          "ARTG8400",
+          "ARTG8500",
+          "ARTG8553",
+          "ARTG8580",
+          "NIM37000",
+          "NIM37003",
+          "Rule 5(3)(b) SI 273/2009",
+          "Rule 18 SI 273/2009",
+          "s.11 TCEA"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Customer in lead case or related case under rule 18 direction",
+            "name": "Permission to appeal (Rule 18 related case)",
+            "ref": "ARTG9060",
+            "rule": "within 56 days of the date the decision on the related issues under rule 18 is notified"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Two or more cases before the First-tier Tribunal with similar issues of fact or law",
+            "ref": "ARTG8551",
+            "term": "Related cases"
+          },
+          {
+            "meaning": "A case treated as representative under case management powers; decision not binding on related cases, which retain their own right of appeal",
+            "ref": "ARTG9060",
+            "term": "Lead case (Rule 5(3)(b))"
+          },
+          {
+            "meaning": "A case subject to a rule 18(2)(a) direction; decision in principle binding on all related cases, subject to successful rule 18(4) application",
+            "ref": "ARTG9060; ARTG8551",
+            "term": "Lead case (Rule 18)"
+          },
+          {
+            "meaning": "Direction under rule 5(3)(b) that related cases are consolidated or heard together, each determined and binding as if decided alone, with individual rights of appeal",
+            "ref": "ARTG8552",
+            "term": "Consolidation of cases"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "Give directions for disposal or further steps in stayed related cases",
+            "ref": "Rule 18(3) and (5)",
+            "trigger": "Decision made on common/related issues under Rule 18",
+            "who": "Tribunal"
+          },
+          {
+            "deadline": "56 days of the date the decision on the related issues under rule 18 is notified",
+            "must": "Apply for permission to appeal within the specified time limit",
+            "ref": "ARTG9060",
+            "trigger": "Tribunal decides in favour of HMRC in a rule 18 lead case",
+            "who": "Customer (related case, Rule 18)"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Pay/repay tax in line with tribunal's decision",
+            "ref": "ARTG8930; ARTG9060",
+            "trigger": "Tribunal decides the matter",
+            "who": "HMRC/decision maker"
+          },
+          {
+            "deadline": "n/a",
+            "must": "Avoid entering settlements on related cases until further appeals resolved (except where customer insists)",
+            "ref": "ARTG9060",
+            "trigger": "Further appeal pending after Rule 18 decision",
+            "who": "Decision maker"
+          }
+        ],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk covers HMRC's ARTG guidance on managing groups of related tribunal cases, distinguishing Rule 5(3)(b) lead cases (non-binding on related cases, no right of appeal for related parties) from Rule 18 lead case directions (binding, related customers have a right of appeal under s.11 TCEA within 56 days). It explains that tax must be paid/repaid in line with the tribunal decision once made, subject to Rule 18(4) applications, and sets out special treatment for NIC refund claims where litigation is treated as reasonable excuse for late claims. It also describes consolidation of cases under rule 5(3)(b) as an alternative to lead case procedures.",
+        "topics": [
+          "appeals",
+          "tribunal-procedure",
+          "lead-cases",
+          "rule-18-directions",
+          "rule-5-directions",
+          "nic-appeals",
+          "tax-payment-on-appeal"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"

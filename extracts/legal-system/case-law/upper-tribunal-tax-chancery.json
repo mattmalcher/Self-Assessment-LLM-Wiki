@@ -1,0 +1,77 @@
+{
+  "category": "legal-system.case-law",
+  "chunks": {
+    "15b50a0f6b4c5978": {
+      "chars": 6793,
+      "heading": "Upper Tribunal (Tax and Chancery Chamber) decisions",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This is an index/tracking page only; full judgment text and any Self Assessment-relevant legal reasoning must be retrieved from the linked source pages, not this chunk.",
+          "List reflects only the 40 most recent decisions at time of retrieval and will change as new decisions are issued.",
+          "Some listed cases involve the Financial Conduct Authority rather than HMRC and may not relate to tax at all."
+        ],
+        "cross_references": [
+          "https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukut/tcc",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/343",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/342",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/335",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/333",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/330",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/329",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/324",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/304",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/306",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/305",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/300",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/290",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/289",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/288",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/285",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/284",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/281",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/282",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/275",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/271",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/259",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/258",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/256",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/249",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/297",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/246",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/248",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/261",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/227",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/223",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/217",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/219",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/216",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/213",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/212",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/211",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/195",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/193",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/194",
+          "https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/173"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This is an index listing of the 40 most recent Upper Tribunal (Tax and Chancery Chamber) decisions, sourced from a Find Case Law Atom feed, covering judgments dated 2026-05-05 to 2026-09-03. Each entry lists the decision date, neutral citation, case name (typically an individual or company versus HMRC or the FCA), and a link to the full judgment text hosted elsewhere. No judgment content, legal reasoning, or Self Assessment-specific detail is included in this chunk.",
+        "topics": [
+          "case-law-index",
+          "upper-tribunal",
+          "tax-chancery-chamber"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "legal-system/case-law/upper-tribunal-tax-chancery.md",
+  "source_id": "caselaw-ut-tcc",
+  "source_url": "https://caselaw.nationalarchives.gov.uk/atom.xml?tribunal=ukut/tcc"
+}

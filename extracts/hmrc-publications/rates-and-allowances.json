@@ -1,0 +1,43 @@
+{
+  "category": "hmrc-publications.rates-and-allowances",
+  "chunks": {
+    "fa542b3a11dd1b75": {
+      "chars": 4757,
+      "heading": "HMRC rates and allowances",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "This is a navigational index only; no substantive rate or threshold figures are given in this chunk itself. Actual values must be sourced from the individual linked pages."
+        ],
+        "cross_references": [
+          "Rates and allowances for Income Tax",
+          "Capital Gains Tax rates and allowances",
+          "Rates and allowances: National Insurance contributions",
+          "Rates and allowances: HMRC interest rates for late and early payments",
+          "Rates and allowances: beneficial loan arrangements",
+          "Rates and allowances: travel — mileage and fuel allowances",
+          "Rates and allowances for Corporation Tax"
+        ],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk is an index page listing 29 GOV.UK documents in the HMRC rates and allowances collection, covering various UK taxes including Income Tax, Capital Gains Tax, Corporation Tax, National Insurance, VAT, and others. It provides titles, upstream last-updated dates, and links but no substantive rate figures itself. Several linked documents (Income Tax rates, CGT rates, NIC rates, HMRC interest rates) are directly relevant to Self Assessment calculations.",
+        "topics": [
+          "rates-and-allowances-index",
+          "income-tax-rates",
+          "capital-gains-tax",
+          "national-insurance",
+          "hmrc-interest-rates"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "hmrc-publications/rates-and-allowances.md",
+  "source_id": "hmrc-rates-allowances",
+  "source_url": "https://www.gov.uk/government/collections/rates-and-allowances-hm-revenue-and-customs"
+}
