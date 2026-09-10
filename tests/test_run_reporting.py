@@ -207,6 +207,10 @@ def test_a_complete_compose_is_ok(compose_env):
 def synth_env(monkeypatch, tmp_path):
     monkeypatch.setattr(build, "RUN_REPORT_PATH", tmp_path / "last_run.json")
     monkeypatch.setattr(build, "get_backend", lambda *a, **k: FakeBackend())
+    # The CLI resyncs the status page and nav after any run that wrote
+    # something; keep that off the real docs/ tree. `test_report_sync.py`
+    # covers the resync itself.
+    monkeypatch.setattr(build.report, "write_all", list)
     return tmp_path / "last_run.json"
 
 

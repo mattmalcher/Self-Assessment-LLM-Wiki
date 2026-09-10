@@ -2,6 +2,10 @@
 nav:
   - index.md
   - lifecycle
+  - computation
+  - hmrc
+  - case-law
+  - change
   - reference-implementation
   - external-explainers.md
   - meta

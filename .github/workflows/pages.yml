@@ -6,7 +6,8 @@ on:
     paths:
       - "docs/**"
       - "corpus/**"
-      - "src/self_assessment_wiki/pipeline/**"
+      - "extracts/**"
+      - "src/self_assessment_wiki/**"
       - "mkdocs.yml"
       - "pyproject.toml"
       - "uv.lock"
@@ -39,6 +40,13 @@ jobs:
       # outputs, to its own section) before anything is published.
       - name: Reconcile fetched sources with corpus artifacts
         run: uv run reconcile
+
+      # The status page and the nav are generated from the corpus, the
+      # extracts and the page plan. If what is committed no longer matches
+      # them, the site would publish a stale claim about its own coverage -
+      # so fail here rather than deploy it.
+      - name: Check the status page and nav are in sync
+        run: uv run report --check
 
       - run: uv run mkdocs build --strict
 

@@ -45,6 +45,12 @@ jobs:
             echo "partial=true" >> "$GITHUB_OUTPUT"
           fi
 
+      # A corpus change moves the chunk counts and can move the nav, so the
+      # published status has to travel in the same PR as the corpus that
+      # caused it - otherwise the sync check fails on main after the merge.
+      - name: Regenerate the status page and nav
+        run: uv run report
+
       - name: Report what this makes stale
         run: |
           {
@@ -71,7 +77,7 @@ jobs:
       - name: Check for changes
         id: diff
         run: |
-          if git diff --quiet -- corpus src/self_assessment_wiki/pipeline/manifest.json docs/meta/sources.md; then
+          if git diff --quiet -- corpus src/self_assessment_wiki/pipeline/manifest.json docs; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
             echo "changed=true" >> "$GITHUB_OUTPUT"
@@ -97,6 +103,9 @@ jobs:
           add-paths: |
             corpus
             docs/meta/sources.md
+            docs/meta/wiki-status.md
+            docs/.pages
+            docs/*/.pages
             src/self_assessment_wiki/pipeline/manifest.json
 
       # Last, so a partial refresh still opens its PR - but the run is red and

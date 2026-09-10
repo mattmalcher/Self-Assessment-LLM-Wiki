@@ -74,6 +74,7 @@ mkdocs.yml      site config (Material theme)
 .github/workflows/
   refresh.yml   weekly: refreshes corpus/, opens a PR, reports stale pages
   pages.yml     builds + deploys docs/ to GitHub Pages on push to main
+  status-sync.yml  fails a PR whose committed status page or nav is stale
 ```
 
 Nothing under `corpus/`, `extracts/`, `docs/` (except `docs/index.md`,
@@ -102,8 +103,14 @@ uv run status                       # what's stale; costs nothing
 uv run extract --limit 20           # try 20 chunks first
 uv run compose --only who-must-file
 uv run synth all                    # the full run
-uv run report                       # refresh docs/meta/wiki-status.md
+uv run report                       # refresh the status page and the nav
+uv run report --check               # what CI checks: is either of them stale?
 ```
+
+`extract` and `compose` regenerate `docs/meta/wiki-status.md` and the `.pages`
+nav files themselves once they have written anything, so the published status
+of the wiki cannot fall behind the extracts and pages committed beside it. CI
+runs `uv run report --check` on every pull request and fails on drift.
 
 `synth` defaults to `--backend claude-cli` (the `claude` CLI, so your
 Claude Code subscription, no API key). `--backend codex-cli` uses `codex exec`;
