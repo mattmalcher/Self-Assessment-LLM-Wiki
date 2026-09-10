@@ -33,8 +33,17 @@ jobs:
 
       - run: uv sync --locked
 
+      # `fetch` exits non-zero if any source failed, and writes its report
+      # either way. Remember that here rather than stopping: the sources that
+      # did change should still reach a PR, and the job fails at the end.
       - name: Fetch sources
-        run: uv run fetch
+        id: fetch
+        run: |
+          if uv run fetch; then
+            echo "partial=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "partial=true" >> "$GITHUB_OUTPUT"
+          fi
 
       - name: Report what this makes stale
         run: |
@@ -68,12 +77,20 @@ jobs:
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
 
+      - name: Upload the run report
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: fetch-run-report
+          path: src/self_assessment_wiki/pipeline/last_run.json
+          if-no-files-found: warn
+
       - name: Open pull request
         if: steps.diff.outputs.changed == 'true'
         uses: peter-evans/create-pull-request@v7
         with:
           commit-message: "Refresh corpus"
-          title: "Scheduled corpus refresh"
+          title: ${{ steps.fetch.outputs.partial == 'true' && 'Scheduled corpus refresh (PARTIAL - some sources failed)' || 'Scheduled corpus refresh' }}
           body-path: src/self_assessment_wiki/pipeline/pr_body.md
           branch: automated/refresh-corpus
           delete-branch: true
@@ -81,3 +98,11 @@ jobs:
             corpus
             docs/meta/sources.md
             src/self_assessment_wiki/pipeline/manifest.json
+
+      # Last, so a partial refresh still opens its PR - but the run is red and
+      # the PR title says why.
+      - name: Fail on a partial refresh
+        if: steps.fetch.outputs.partial == 'true'
+        run: |
+          echo "::error::partial refresh - see last_run.json and the PR body"
+          exit 1

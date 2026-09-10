@@ -12,6 +12,10 @@ shorthands for its subcommands.
 Run this locally: it is deliberately not part of the scheduled GitHub
 Actions refresh, so it can use whatever Claude or OpenAI subscription you
 already have (see --backend) rather than a CI API key.
+
+A failed chunk or page makes the command exit non-zero; pass --keep-going for
+best-effort behaviour. Either way `synth/last_run.json` records what was
+attempted, what succeeded, what failed and what is still outstanding.
 """
 from __future__ import annotations
 
@@ -19,9 +23,22 @@ import argparse
 import sys
 from pathlib import Path
 
+from .. import runlog
 from . import compose, extract
-from .config import DEFAULT_BACKEND, DEFAULT_CONCURRENCY, DEFAULT_MODELS
+from .config import DEFAULT_BACKEND, DEFAULT_CONCURRENCY, DEFAULT_MODELS, SYNTH_DIR
 from .llm import BACKENDS, LLMError, get_backend
+
+RUN_REPORT_PATH = SYNTH_DIR / "last_run.json"
+
+
+def _finish(args, reports: list[runlog.StageReport]) -> int:
+    """Record the run, say plainly whether it was complete, and set the exit code."""
+    runlog.write(RUN_REPORT_PATH, reports)
+    for report in reports:
+        print(report.verdict(keep_going=args.keep_going))
+        for failure in report.failed:
+            print(f"  ! {failure['unit']}: {failure['error']}", file=sys.stderr)
+    return max(r.exit_code(keep_going=args.keep_going) for r in reports)
 
 
 def _model(args, stage: str) -> str:
@@ -77,10 +94,10 @@ def cmd_extract(args) -> int:
                 print(f"  {doc}: {n}")
         return 0
     backend = get_backend(args.backend, model, timeout=args.timeout)
-    done, failed = extract.run(backend, only=args.only, limit=args.limit,
-                               concurrency=args.concurrency, stale_prompt=args.stale_prompt)
-    print(f"\nextracted {done} chunk(s), {failed} failed")
-    return 1 if failed and not done else 0
+    report = extract.run(backend, only=args.only, limit=args.limit,
+                         concurrency=args.concurrency, stale_prompt=args.stale_prompt)
+    print(f"\nextracted {len(report.succeeded)} chunk(s), {len(report.failed)} failed")
+    return _finish(args, [report])
 
 
 def cmd_compose(args) -> int:
@@ -90,17 +107,30 @@ def cmd_compose(args) -> int:
             print(f"{'*' if w.stale else '='} {w.spec['id']:<24} {len(w.notes):>4} notes  {w.reason}")
         return 0
     backend = get_backend(args.backend, model, timeout=args.timeout)
-    written, failed = compose.run(backend, model, only=args.only, force=args.force)
-    print(f"\nwrote {written} page(s), {failed} failed")
-    return 1 if failed and not written else 0
+    report = compose.run(backend, model, only=args.only, force=args.force)
+    print(f"\nwrote {len(report.succeeded)} page(s), {len(report.failed)} failed")
+    return _finish(args, [report])
 
 
 def cmd_all(args) -> int:
-    rc = cmd_extract(args)
-    if rc and not args.keep_going:
-        return rc
+    """Extract, then compose. A failed extract stops the run: composing on top
+    of notes that are known to be missing would bake the gap into the site."""
+    model = _model(args, "extract")
+    if args.dry_run:
+        rc = cmd_extract(args)
+        return rc or cmd_compose(args)
+    backend = get_backend(args.backend, model, timeout=args.timeout)
+    extracted = extract.run(backend, only=args.only, limit=args.limit,
+                            concurrency=args.concurrency, stale_prompt=args.stale_prompt)
+    print(f"\nextracted {len(extracted.succeeded)} chunk(s), {len(extracted.failed)} failed")
+    if not extracted.ok and not args.keep_going:
+        return _finish(args, [extracted])
     args.only = None  # --only applies to whichever stage was named, not both
-    return cmd_compose(args)
+    model = _model(args, "compose")
+    backend = get_backend(args.backend, model, timeout=args.timeout)
+    composed = compose.run(backend, model, force=args.force)
+    print(f"\nwrote {len(composed.succeeded)} page(s), {len(composed.failed)} failed")
+    return _finish(args, [extracted, composed])
 
 
 def main(argv: list[str] | None = None, command: str | None = None) -> int:
@@ -120,7 +150,9 @@ def main(argv: list[str] | None = None, command: str | None = None) -> int:
     parser.add_argument("--force", action="store_true", help="compose: rewrite even if up to date")
     parser.add_argument("--dry-run", action="store_true", help="plan only, no model calls")
     parser.add_argument("--timeout", type=int, default=900, help="per-call timeout, seconds")
-    parser.add_argument("--keep-going", action="store_true", help="all: compose even if extract failed")
+    parser.add_argument("--keep-going", action="store_true",
+                        help="best effort: report failed chunks/pages but still exit 0 "
+                             "(and, for `all`, compose even if extract failed)")
     args = parser.parse_args(argv)
     if command is not None:
         args.command = command

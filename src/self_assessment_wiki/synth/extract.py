@@ -7,6 +7,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
 
+from .. import runlog
 from . import schema, store
 from .chunk import Chunk, chunk_file
 from .config import CORPUS_DIR, PROMPTS_DIR
@@ -124,9 +125,18 @@ def extract_note(backend: Backend, chunk: Chunk, meta: dict) -> dict:
                    f"{'; '.join(errors[:5])}")
 
 
+def _unit(doc: str, chunk: Chunk) -> str:
+    return f"{doc}#{chunk.index}"
+
+
 def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = None,
-        concurrency: int = 4, stale_prompt: bool = False, verbose: bool = True) -> tuple[int, int]:
-    """Extract every uncached chunk. Returns (extracted, failed).
+        concurrency: int = 4, stale_prompt: bool = False,
+        verbose: bool = True) -> runlog.StageReport:
+    """Extract every uncached chunk. Returns a report of what happened.
+
+    A chunk the model never produced a valid note for is a failure, and the
+    caller turns that into a non-zero exit. Chunks left untouched by `--limit`
+    are `remaining`, not failures: stopping early is what was asked for.
 
     The extract file is written after every completed chunk, not once per
     document: ITEPA is 238 chunks and a run can take hours, so a Ctrl-C or a
@@ -134,13 +144,16 @@ def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = 
     """
     plans = plan(only)
     budget = limit
-    extracted = failed = 0
+    report = runlog.StageReport(stage="extract", unit="chunk")
+    pruned_total = 0
 
-    for p in plans:
+    for position, p in enumerate(plans):
         data = store.load(p.doc)
         pruned = store.prune_orphans(p.doc, data, {c.hash for c in p.chunks})
         work = p.todo + (p.stale_prompt if stale_prompt else [])
         todo = work if budget is None else work[:max(budget, 0)]
+        pruned_total += pruned
+        report.remaining += [_unit(p.doc, c) for c in work[len(todo):]]
         if not todo and not pruned:
             continue
         if verbose:
@@ -170,8 +183,8 @@ def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = 
                         chunk = futures[future]
                         try:
                             note = future.result()
-                        except Exception as exc:  # one bad chunk shouldn't sink the doc
-                            failed += 1
+                        except Exception as exc:  # carry on; the run still fails at the end
+                            report.fail(_unit(p.doc, chunk), exc)
                             print(f"  ! {p.doc} chunk {chunk.index}: {exc}", file=sys.stderr)
                             continue
                         data["chunks"][chunk.hash] = {
@@ -182,7 +195,7 @@ def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = 
                             "model": f"{backend.name}:{backend.model}",
                             "note": note,
                         }
-                        extracted += 1
+                        report.succeed(_unit(p.doc, chunk))
                         store.save(p.doc, data)  # checkpoint: never lose a paid-for chunk
                         if verbose:
                             rel = note.get("relevance", "?")
@@ -192,13 +205,19 @@ def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = 
                         future.cancel()
                     if data["chunks"]:
                         store.save(p.doc, data)
-                    print(f"\ninterrupted; {extracted} chunk(s) saved", file=sys.stderr, flush=True)
+                    print(f"\ninterrupted; {len(report.succeeded)} chunk(s) saved",
+                          file=sys.stderr, flush=True)
                     raise
 
         if budget is not None:
             budget -= len(todo)
             if budget <= 0:
-                print(f"\nreached --limit; stopping (more chunks remain)", flush=True)
+                print("\nreached --limit; stopping (more chunks remain)", flush=True)
+                report.remaining += [_unit(later.doc, c)
+                                     for later in plans[position + 1:]
+                                     for c in later.todo +
+                                     (later.stale_prompt if stale_prompt else [])]
                 break
 
-    return extracted, failed
+    report.extra["pruned"] = pruned_total
+    return report
