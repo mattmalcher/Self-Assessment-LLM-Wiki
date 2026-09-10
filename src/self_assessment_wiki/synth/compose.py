@@ -18,6 +18,7 @@ from pathlib import Path
 
 import yaml
 
+from .. import runlog
 from . import schema, store
 from .config import DOCS_DIR, MANIFEST_PATH, PAGES_PATH, PROMPTS_DIR, REPO_ROOT
 from .llm import Backend
@@ -281,19 +282,27 @@ def plan(model: str, *, only: list[str] | None = None, force: bool = False) -> l
 
 
 def run(backend: Backend, model: str, *, only: list[str] | None = None, force: bool = False,
-        verbose: bool = True) -> tuple[int, int]:
+        verbose: bool = True) -> runlog.StageReport:
+    """Write every stale page. Returns a report of what happened.
+
+    A page whose selector matches nothing, or whose model call failed, is a
+    failure: the site would otherwise keep serving the last version of a page
+    nobody was told had stopped being regenerated.
+    """
     manifest = load_manifest()
-    written = failed = 0
+    report = runlog.StageReport(stage="compose", unit="page")
+    skipped: list[str] = []
     for work in plan(model, only=only, force=force):
         spec = work.spec
         if not work.stale:
             if verbose:
                 print(f"= {spec['id']}: {work.reason}")
+            skipped.append(spec["id"])
             continue
         if not work.notes:
             print(f"! {spec['id']}: no extract notes match its selector - "
                   f"run `uv run extract` first, or widen `select:`")
-            failed += 1
+            report.fail(spec["id"], "no extract notes match its selector")
             continue
         if verbose:
             print(f"* {spec['id']}: composing from {len(work.notes)} notes ({work.reason}) ...", flush=True)
@@ -301,7 +310,7 @@ def run(backend: Backend, model: str, *, only: list[str] | None = None, force: b
             body = backend.call(SYSTEM, build_prompt(spec, work.notes)).strip()
         except Exception as exc:  # noqa: BLE001
             print(f"! {spec['id']}: {exc}")
-            failed += 1
+            report.fail(spec["id"], exc)
             continue
         if body.startswith("```"):
             body = body.split("\n", 1)[1].rsplit("```", 1)[0].strip()
@@ -318,7 +327,8 @@ def run(backend: Backend, model: str, *, only: list[str] | None = None, force: b
             "note_count": len(work.notes),
         }
         save_manifest(manifest)
-        written += 1
+        report.succeed(spec["id"])
         if verbose:
             print(f"  -> {spec['output']}")
-    return written, failed
+    report.extra["up_to_date"] = skipped
+    return report

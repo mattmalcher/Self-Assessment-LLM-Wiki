@@ -46,6 +46,7 @@ uv run mkdocs build --strict   # what CI deploys; strict, so nav must resolve
 
 uv run fetch --dry-run         # stage 1, no API access needed
 uv run fetch --only <source-id>
+uv run fetch --keep-going      # best effort; any failure exits non-zero without it
 
 uv run status                  # what's stale; free
 uv run extract --limit 20      # stages 2-3, cost money
@@ -56,6 +57,11 @@ uv run report                  # refresh docs/meta/wiki-status.md
 
 Prefer `--dry-run` / `status` / `--limit` when verifying a change; never kick
 off a full `synth all` unasked.
+
+Any failed source, chunk or page makes its command exit non-zero and lands in
+`pipeline/last_run.json` or `synth/last_run.json` (both gitignored). Pass
+`--keep-going` for best-effort behaviour - `synth all` also needs it to compose
+after a failed extract.
 
 ## Layout
 

@@ -9,6 +9,11 @@ Usage:
     uv run fetch                 # fetch everything due
     uv run fetch --only itepa-2003 tma-1970
     uv run fetch --dry-run   # resolve URLs, fetch nothing
+    uv run fetch --keep-going  # best effort: report failures, still exit 0
+
+Any source that fails makes the command exit non-zero, so a scheduled run
+cannot pass off a partial refresh as a complete one. `last_run.json` records
+what was attempted, what succeeded and what failed.
 """
 from __future__ import annotations
 
@@ -20,6 +25,7 @@ from pathlib import Path
 
 import yaml
 
+from .. import runlog
 from . import manifest as manifest_store
 from . import render_sources_index
 from .fetchers import caselaw, govuk_content, legislation, web_page
@@ -45,6 +51,8 @@ def main() -> int:
     parser = argparse.ArgumentParser()
     parser.add_argument("--only", nargs="*", help="only fetch these source ids")
     parser.add_argument("--dry-run", action="store_true", help="resolve config, fetch nothing")
+    parser.add_argument("--keep-going", action="store_true",
+                        help="exit 0 even if some sources failed (never the CI default)")
     args = parser.parse_args()
 
     sources = load_sources()
@@ -55,18 +63,17 @@ def main() -> int:
         return 1
 
     manifest = manifest_store.load()
+    report = runlog.StageReport(stage="fetch", unit="source")
     changed: list[str] = []
-    failed: list[tuple[str, str]] = []
+    due = [s for s in sources
+           if s.get("status") == "fetch" and not (args.only and s["id"] not in args.only)]
+    if args.dry_run:
+        report.remaining = [s["id"] for s in due]
 
-    for source in sources:
-        if source.get("status") != "fetch":
-            continue
-        if args.only and source["id"] not in args.only:
-            continue
-
+    for source in due:
         fetcher = _DISPATCH.get(source["type"])
         if fetcher is None:
-            failed.append((source["id"], f"no fetcher for type={source['type']}"))
+            report.fail(source["id"], f"no fetcher for type={source['type']}")
             continue
 
         print(f"fetching {source['id']} ({source['type']}) ...", flush=True)
@@ -81,8 +88,9 @@ def main() -> int:
             else:
                 print("  -> unchanged")
             m_entry["last_checked"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        except Exception as exc:  # keep going - one bad source shouldn't sink the run
-            failed.append((source["id"], str(exc)))
+            report.succeed(source["id"])
+        except Exception as exc:  # carry on - the run still fails at the end
+            report.fail(source["id"], exc)
             print(f"  -> FAILED: {exc}", file=sys.stderr)
             traceback.print_exc()
 
@@ -90,27 +98,38 @@ def main() -> int:
         manifest_store.save(manifest)
         render_sources_index.main()
 
-    print(f"\n{len(changed)} source(s) changed, {len(failed)} failed.")
+    report.extra["changed"] = changed
+    runlog.write(PIPELINE_DIR / "last_run.json", [report])
+
+    print(f"\n{len(changed)} source(s) changed, {len(report.failed)} failed.")
     if changed:
         print("Changed:", ", ".join(changed))
-    if failed:
+    if report.failed:
         print("Failed:")
-        for source_id, err in failed:
-            print(f"  - {source_id}: {err}")
+        for failure in report.failed:
+            print(f"  - {failure['unit']}: {failure['error']}")
+    print(report.verdict(keep_going=args.keep_going))
 
     # Emit a summary file for the GitHub Actions workflow to use as a PR body.
+    # A partial refresh says so in its first line: the PR is the only place
+    # most readers will ever look.
     summary_path = PIPELINE_DIR / "last_run_summary.md"
-    lines = [f"Refreshed {len(sources)} registered sources; {len(changed)} changed.", ""]
+    lines = []
+    if report.failed:
+        lines += ["> [!WARNING]", f"> **Partial refresh: {len(report.failed)} of "
+                  f"{report.attempted} source(s) failed.** The corpus below is "
+                  f"incomplete; the failed sources are left as previously fetched.", ""]
+    lines += [f"Refreshed {len(sources)} registered sources; {len(changed)} changed.", ""]
     if changed:
         lines.append("### Changed")
         lines += [f"- `{c}`" for c in changed]
         lines.append("")
-    if failed:
+    if report.failed:
         lines.append("### Failed (left as previously fetched)")
-        lines += [f"- `{i}`: {e}" for i, e in failed]
+        lines += runlog.failure_lines([report])
     summary_path.write_text("\n".join(lines) + "\n")
 
-    return 1 if failed and not changed and len(failed) == len([s for s in sources if s.get("status") == "fetch"]) else 0
+    return report.exit_code(keep_going=args.keep_going)
 
 
 if __name__ == "__main__":

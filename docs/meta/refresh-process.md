@@ -96,6 +96,14 @@ uv run compose   # stage 3
 uv run report    # regenerate this site's status page
 ```
 
+Every stage fails loudly. A source, chunk or page that could not be completed
+makes its command exit non-zero and is listed by name — with its error — in a
+machine-readable run report (`last_run.json` beside the pipeline and synth
+packages). Pass `--keep-going` for best-effort behaviour when you want the run
+to finish regardless. The weekly refresh workflow keeps that distinction: a
+partial refresh is labelled in the pull request title and body, and its job
+fails.
+
 `synth` defaults to `--backend claude-cli`, which shells out to the
 `claude` CLI and therefore runs on a Claude Code subscription with no API key.
 `--backend codex-cli` does the same through `codex exec`; `--backend anthropic`

@@ -125,6 +125,21 @@ A cached note that fails the schema now shows up as work to do - `status`
 counts it under "invalid" and the next `extract` run re-asks for that chunk, no
 flag needed.
 
+## Partial runs
+
+Every stage keeps a report of the units it attempted - a source for `fetch`, a
+chunk for `extract`, a page for `compose` - and one failed unit makes the
+command exit non-zero. Best effort exists, but you have to ask for it:
+`--keep-going` reports the same failures and exits 0 anyway. Work left over
+because of `--limit` is `remaining`, not failed, and never fails the run.
+
+The report is written to `pipeline/last_run.json` (fetch) and
+`synth/last_run.json` (extract/compose, both stages when you run `synth all`),
+listing what succeeded, what failed with which error, and what is outstanding.
+Both files are gitignored; the refresh workflow uploads its copy as a job
+artifact, flags a partial refresh at the top of the PR body and in the PR
+title, and then fails the job.
+
 ## The invalidation contract
 
 A page's `input_hash` in `manifest.json` decides whether composing it again
