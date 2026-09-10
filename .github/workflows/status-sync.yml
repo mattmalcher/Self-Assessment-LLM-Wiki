@@ -1,0 +1,28 @@
+# The status page and the nav are generated files that are also committed, so
+# they can drift from the corpus, extracts and page plan they describe. `uv
+# run report` regenerates them from committed state alone - no network, no
+# model calls - so CI can simply check that what is committed is what the
+# repository implies, on the pull request rather than after the merge.
+name: Status and nav sync
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+  workflow_dispatch: {}
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: astral-sh/setup-uv@v5
+        with:
+          python-version: "3.12"
+
+      - run: uv sync --locked
+
+      - name: Check the status page and nav are in sync
+        run: uv run report --check

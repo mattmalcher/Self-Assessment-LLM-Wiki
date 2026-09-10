@@ -16,6 +16,10 @@ already have (see --backend) rather than a CI API key.
 A failed chunk or page makes the command exit non-zero; pass --keep-going for
 best-effort behaviour. Either way `synth/last_run.json` records what was
 attempted, what succeeded, what failed and what is still outstanding.
+
+Any run that wrote something also regenerates docs/meta/wiki-status.md and
+the .pages nav files, so the published status of the wiki cannot fall behind
+the extracts and pages committed beside it.
 """
 from __future__ import annotations
 
@@ -26,8 +30,9 @@ from pathlib import Path
 from .. import configcheck, runlog
 from ..pipeline import fetch as pipeline_fetch
 from ..pipeline import reconcile
-from . import compose, extract
-from .config import DEFAULT_BACKEND, DEFAULT_CONCURRENCY, DEFAULT_MODELS, SYNTH_DIR
+from . import compose, extract, report
+from .config import (DEFAULT_BACKEND, DEFAULT_CONCURRENCY, DEFAULT_MODELS, REPO_ROOT,
+                     SYNTH_DIR)
 from .llm import BACKENDS, LLMError, get_backend
 
 RUN_REPORT_PATH = SYNTH_DIR / "last_run.json"
@@ -36,11 +41,27 @@ RUN_REPORT_PATH = SYNTH_DIR / "last_run.json"
 def _finish(args, reports: list[runlog.StageReport]) -> int:
     """Record the run, say plainly whether it was complete, and set the exit code."""
     runlog.write(RUN_REPORT_PATH, reports)
-    for report in reports:
-        print(report.verdict(keep_going=args.keep_going))
-        for failure in report.failed:
+    for stage in reports:
+        print(stage.verdict(keep_going=args.keep_going))
+        for failure in stage.failed:
             print(f"  ! {failure['unit']}: {failure['error']}", file=sys.stderr)
+    _resync(reports)
     return max(r.exit_code(keep_going=args.keep_going) for r in reports)
+
+
+def _resync(reports: list[runlog.StageReport]) -> None:
+    """Bring the status page and the nav back in line with what just changed.
+
+    Regeneration is free and offline, so it belongs at the end of the work
+    that invalidated it rather than in a step someone has to remember. A
+    partial run counts: the notes and pages it did write are on disk, and the
+    published status should describe the tree as it now stands - including
+    what failed. Nothing changed means nothing to resync.
+    """
+    if not any(stage.succeeded for stage in reports):
+        return
+    for path in report.write_all():
+        print(f"wrote {path.relative_to(REPO_ROOT).as_posix()}")
 
 
 def _model(args, stage: str) -> str:
@@ -104,10 +125,10 @@ def cmd_extract(args) -> int:
                 print(f"  {doc}: {n}")
         return 0
     backend = get_backend(args.backend, model, timeout=args.timeout)
-    report = extract.run(backend, only=args.only, limit=args.limit,
-                         concurrency=args.concurrency, stale_prompt=args.stale_prompt)
-    print(f"\nextracted {len(report.succeeded)} chunk(s), {len(report.failed)} failed")
-    return _finish(args, [report])
+    extracted = extract.run(backend, only=args.only, limit=args.limit,
+                            concurrency=args.concurrency, stale_prompt=args.stale_prompt)
+    print(f"\nextracted {len(extracted.succeeded)} chunk(s), {len(extracted.failed)} failed")
+    return _finish(args, [extracted])
 
 
 def cmd_compose(args) -> int:
@@ -117,9 +138,9 @@ def cmd_compose(args) -> int:
             print(f"{'*' if w.stale else '='} {w.spec['id']:<24} {len(w.notes):>4} notes  {w.reason}")
         return 0
     backend = get_backend(args.backend, model, timeout=args.timeout)
-    report = compose.run(backend, model, only=args.only, force=args.force)
-    print(f"\nwrote {len(report.succeeded)} page(s), {len(report.failed)} failed")
-    return _finish(args, [report])
+    composed = compose.run(backend, model, only=args.only, force=args.force)
+    print(f"\nwrote {len(composed.succeeded)} page(s), {len(composed.failed)} failed")
+    return _finish(args, [composed])
 
 
 def cmd_all(args) -> int:

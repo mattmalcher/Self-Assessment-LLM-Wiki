@@ -1,2 +1,6 @@
 # Written by `uv run report` - do not hand-edit.
 title: Reference implementation
+nav:
+  - rules-inventory.md
+  - data-requirements.md
+  - ...

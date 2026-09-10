@@ -25,8 +25,20 @@ Then the full run:
 
 ```bash
 uv run synth all
-uv run report   # refresh docs/meta/wiki-status.md
 ```
+
+`extract` and `compose` regenerate `docs/meta/wiki-status.md` and the `.pages`
+nav files at the end of any run that wrote something, so neither can be left
+describing a tree that has moved on. `uv run report` does it on its own, and
+`uv run report --check` writes nothing and exits non-zero if what is committed
+is out of date - which is how CI catches drift on a pull request.
+
+The status page is derived entirely from committed state - the corpus, the
+extract cache, both manifests and the page plan - and nothing from the clock,
+so the same tree always produces the same bytes. It reports valid cache
+entries separately from the malformed ones, names any fetched source with no
+artifact, and says plainly whether the committed artifacts are the output of a
+complete end-to-end run or what is still outstanding.
 
 ## Backends
 
@@ -179,7 +191,8 @@ bumping it restages every page.
 | `extract.py` | stage 2 driver + cache planning |
 | `compose.py` | stage 3: note selection, staleness, page assembly |
 | `store.py` | read/write/prune `extracts/` |
-| `report.py` | writes `docs/meta/wiki-status.md` |
+| `report.py` | writes `docs/meta/wiki-status.md`; `--check` gates drift in CI |
+| `nav.py` | writes the `.pages` nav files, in `pages.yml` order |
 | `build.py` | the CLI |
 | `manifest.json` | per-page input hashes — machine-written, do not edit |
 

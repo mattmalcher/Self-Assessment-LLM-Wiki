@@ -1,0 +1,7 @@
+# Written by `uv run report` - do not hand-edit.
+title: What the return computes
+nav:
+  - income-charges.md
+  - reliefs-and-claims.md
+  - rates-and-thresholds.md
+  - ...

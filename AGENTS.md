@@ -53,7 +53,8 @@ uv run status                  # what's stale; free
 uv run extract --limit 20      # stages 2-3, cost money
 uv run compose --only <page-id>
 uv run synth all
-uv run report                  # refresh docs/meta/wiki-status.md
+uv run report                  # refresh docs/meta/wiki-status.md + the nav
+uv run report --check          # CI's drift gate; writes nothing
 ```
 
 Prefer `--dry-run` / `status` / `--limit` when verifying a change; never kick
@@ -64,6 +65,12 @@ wrote no file (or, for a shared output, no `<!-- section:ID -->` block) fails
 the run. A missing artifact makes the fetchers drop their cache validators, so
 a warm cache rebuilds the file rather than reporting "unchanged" forever.
 `uv run reconcile` runs that audit on its own, and gates the Pages workflow.
+
+`extract` and `compose` regenerate the status page and the `.pages` nav files
+themselves once they have written anything, so a successful run cannot leave
+either stale. Both are derived from committed state only - no clock, no
+network - and `uv run report --check` fails CI on any drift, so a corpus
+refresh has to carry the regenerated status in its own PR.
 
 `sources.yml` and `pages.yml` are validated before any command does work:
 required fields, types, enums, unique ids, compilable `match` regexes, and
@@ -85,6 +92,7 @@ after a failed extract.
 | `src/self_assessment_wiki/synth/` | stages 2-3: `pages.yml`, `prompts/`, `chunk.py`, `extract.py`, `compose.py`, `llm.py`, `build.py`, `nav.py` |
 | `mkdocs.yml`, `overrides/` | Material theme site config |
 | `.github/workflows/refresh.yml` | weekly corpus refresh → PR + staleness report |
+| `.github/workflows/status-sync.yml` | PR gate: committed status/nav match the repo |
 | `.github/workflows/pages.yml` | build + deploy on push to `main` |
 
 Deeper detail on backends, caching and cost control:
