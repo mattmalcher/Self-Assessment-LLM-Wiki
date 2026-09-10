@@ -48,6 +48,9 @@ uv run fetch --dry-run         # stage 1, no API access needed
 uv run fetch --only <source-id>
 uv run fetch --keep-going      # best effort; any failure exits non-zero without it
 uv run reconcile               # audit corpus/ against sources.yml; free, offline
+uv run audit                   # full artifact audit; free, offline, gates CI
+uv run audit --only pages citations
+uv run audit --strict          # warnings (citations, malformed notes) fail too
 
 uv run status                  # what's stale; free
 uv run extract --limit 20      # stages 2-3, cost money
@@ -72,6 +75,21 @@ either stale. Both are derived from committed state only - no clock, no
 network - and `uv run report --check` fails CI on any drift, so a corpus
 refresh has to carry the regenerated status in its own PR.
 
+`uv run audit` is the offline gate over the published artifacts themselves,
+and runs in all three workflows alongside `uv run pytest`. It re-checks the
+config, the corpus artifacts, every cached note, both manifests, the status
+page and nav, and the structure of every generated page (one H1 matching the
+page plan, the disclaimer, the provenance footer, no footer entry without a
+corpus file behind it). It also reads the citations on each page and reports
+any statutory section or HMRC manual reference that appears in none of the
+notes that page selects - `citations.py` explains what is recognised.
+
+Severity matters: a **broken artifact** is an error and fails the run; an
+**unsupported citation or a malformed cached note** is a warning, because
+both are outstanding work already reported by `uv run status` and neither is
+a reason to block the deploy of the pages that are sound. `--strict` promotes
+warnings to errors. Findings land in `last_audit.json` (gitignored).
+
 `sources.yml` and `pages.yml` are validated before any command does work:
 required fields, types, enums, unique ids, compilable `match` regexes, and
 output paths contained under `corpus/` (fetched) or `docs/` (composed). Two
@@ -89,10 +107,11 @@ after a failed extract.
 | Path | What |
 |---|---|
 | `src/self_assessment_wiki/pipeline/` | stage 1: `sources.yml`, `fetchers/`, `fetch.py` |
+| `src/self_assessment_wiki/audit.py`, `citations.py` | offline artifact audit and citation provenance |
 | `src/self_assessment_wiki/synth/` | stages 2-3: `pages.yml`, `prompts/`, `chunk.py`, `extract.py`, `compose.py`, `llm.py`, `build.py`, `nav.py` |
 | `mkdocs.yml`, `overrides/` | Material theme site config |
 | `.github/workflows/refresh.yml` | weekly corpus refresh → PR + staleness report |
-| `.github/workflows/status-sync.yml` | PR gate: committed status/nav match the repo |
+| `.github/workflows/status-sync.yml` | PR gate: tests, status/nav sync, artifact audit |
 | `.github/workflows/pages.yml` | build + deploy on push to `main` |
 
 Deeper detail on backends, caching and cost control:

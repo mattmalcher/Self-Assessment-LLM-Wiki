@@ -24,5 +24,13 @@ jobs:
 
       - run: uv sync --locked
 
+      - name: Offline regression tests
+        run: uv run pytest -q
+
       - name: Check the status page and nav are in sync
         run: uv run report --check
+
+      # Full artifact audit on the pull request, so a page defect is found
+      # before the merge rather than by the deploy.
+      - name: Audit the published artifacts
+        run: uv run audit

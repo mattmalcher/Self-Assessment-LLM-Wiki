@@ -7,3 +7,4 @@ src/self_assessment_wiki/pipeline/pr_body.md
 src/self_assessment_wiki/pipeline/last_run.json
 src/self_assessment_wiki/synth/last_run.json
 src/self_assessment_wiki/pipeline/last_reconcile.json
+src/self_assessment_wiki/last_audit.json
