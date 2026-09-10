@@ -1,10 +1,24 @@
 {
+  "appeals-and-reviews": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "9a158d4216bd0e30",
+    "note_count": 80,
+    "output": "docs/lifecycle/appeals-and-reviews.md"
+  },
   "assessments-and-discovery": {
     "generated_by": "claude-cli:opus",
     "generated_on": "2026-09-08",
     "input_hash": "97647c241799c37a",
     "note_count": 80,
     "output": "docs/lifecycle/assessments-and-discovery.md"
+  },
+  "case-law-themes": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "2166a8a261fb0daa",
+    "note_count": 2,
+    "output": "docs/case-law/themes.md"
   },
   "deadlines-and-amendments": {
     "generated_by": "claude-cli:opus",
@@ -20,6 +34,27 @@
     "note_count": 80,
     "output": "docs/lifecycle/enquiries.md"
   },
+  "hmrc-interpretation": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "3de4e95122eef7cb",
+    "note_count": 70,
+    "output": "docs/hmrc/interpretation.md"
+  },
+  "income-charges": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "067e755371f5e20a",
+    "note_count": 100,
+    "output": "docs/computation/income-charges.md"
+  },
+  "making-tax-digital": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "d65b16166f311ff9",
+    "note_count": 14,
+    "output": "docs/change/making-tax-digital.md"
+  },
   "payments-and-collection": {
     "generated_by": "claude-cli:opus",
     "generated_on": "2026-09-08",
@@ -34,12 +69,33 @@
     "note_count": 90,
     "output": "docs/lifecycle/penalties.md"
   },
+  "rates-and-thresholds": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "076cc4e278dc88db",
+    "note_count": 80,
+    "output": "docs/computation/rates-and-thresholds.md"
+  },
   "records-and-information": {
     "generated_by": "claude-cli:opus",
     "generated_on": "2026-09-08",
     "input_hash": "f528ef242022b8f5",
     "note_count": 70,
     "output": "docs/lifecycle/records-and-information.md"
+  },
+  "reliefs-and-claims": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "8c38647fcbd0078f",
+    "note_count": 100,
+    "output": "docs/computation/reliefs-and-claims.md"
+  },
+  "rules-inventory": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-09",
+    "input_hash": "e2c8dc1c8e164565",
+    "note_count": 120,
+    "output": "docs/reference-implementation/rules-inventory.md"
   },
   "the-return": {
     "generated_by": "claude-cli:opus",
