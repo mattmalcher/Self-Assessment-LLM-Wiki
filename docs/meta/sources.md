@@ -14,7 +14,7 @@ These are the *raw* sources. The fetch pipeline mirrors them into `corpus/` in t
 
 | Source | Status | Type | Last checked | Upstream updated |
 |---|---|---|---|---|
-| [taxaid-self-assessment](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/external-explainers.md) | fetch | `web_page` | 2026-09-04 | - |
+| [taxaid-self-assessment](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/external-explainers.md) | fetch | `web_page` | 2026-09-10 | - |
 | Self assessment and tax returns - Low Incomes Tax Reform Group (LITRG) | registered | `web_page` | - | - |
 
 ## hmrc-publications.customer-facing-guidance

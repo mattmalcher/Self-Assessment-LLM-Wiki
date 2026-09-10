@@ -5,6 +5,8 @@ on:
     branches: [main]
     paths:
       - "docs/**"
+      - "corpus/**"
+      - "src/self_assessment_wiki/pipeline/**"
       - "mkdocs.yml"
       - "pyproject.toml"
       - "uv.lock"
@@ -31,6 +33,12 @@ jobs:
           python-version: "3.12"
 
       - run: uv sync --locked
+
+      # The site must not claim a source it does not actually mirror: every
+      # `status: fetch` entry has to reconcile to a file (and, for shared
+      # outputs, to its own section) before anything is published.
+      - name: Reconcile fetched sources with corpus artifacts
+        run: uv run reconcile
 
       - run: uv run mkdocs build --strict
 

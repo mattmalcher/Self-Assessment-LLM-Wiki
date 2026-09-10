@@ -17,6 +17,7 @@ import re
 from bs4 import BeautifulSoup, NavigableString, Tag
 
 from ..common import conditional_get
+from ..reconcile import artifact_missing
 from ..render import build_page, html_to_markdown, write_if_changed
 
 _PART_LINK_RE = re.compile(r'href="/[a-z]+/\d+/\d+/part/([A-Za-z0-9]+)"')
@@ -92,8 +93,13 @@ def tidy_legislation_html(html: str) -> str:
 def fetch(entry: dict, manifest_entry: dict) -> bool:
     base_url = entry["url"].rstrip("/")
 
-    contents = conditional_get(f"{base_url}/contents", manifest_entry.setdefault("http", {}))
-    if not contents.changed and manifest_entry.get("content_hash"):
+    # An unchanged contents page only licenses a skip while the page it
+    # produced is still on disk; otherwise re-fetch it in full to restore it.
+    restoring = artifact_missing(entry)
+    http_cache = {} if restoring else manifest_entry.setdefault("http", {})
+
+    contents = conditional_get(f"{base_url}/contents", http_cache)
+    if not contents.changed and manifest_entry.get("content_hash") and not restoring:
         return False  # contents page unchanged - assume body unchanged too
 
     part_ids = list(dict.fromkeys(_PART_LINK_RE.findall(contents.text or "")))
