@@ -18,6 +18,7 @@ dependencies = [
 fetch = "self_assessment_wiki.pipeline.fetch:main"
 sources-index = "self_assessment_wiki.pipeline.render_sources_index:main"
 reconcile = "self_assessment_wiki.pipeline.reconcile:main"
+audit = "self_assessment_wiki.audit:main"
 synth = "self_assessment_wiki.synth.build:main"
 status = "self_assessment_wiki.synth.build:status"
 extract = "self_assessment_wiki.synth.build:extract_cmd"

@@ -92,6 +92,7 @@ Requires [`uv`](https://docs.astral.sh/uv/).
 uv sync                                     # base deps only
 
 uv run mkdocs serve                         # http://127.0.0.1:8000
+uv run pytest                               # offline tests; no network, no model calls
 
 # stage 1 — no API access needed
 uv run fetch --dry-run          # check the registry resolves
@@ -105,12 +106,30 @@ uv run compose --only who-must-file
 uv run synth all                    # the full run
 uv run report                       # refresh the status page and the nav
 uv run report --check               # what CI checks: is either of them stale?
+
+# free, offline, and run in CI on every pull request and deploy
+uv run reconcile                    # does every fetched source have its file?
+uv run audit                        # the full artifact audit; --strict, --only, --list
 ```
 
 `extract` and `compose` regenerate `docs/meta/wiki-status.md` and the `.pages`
 nav files themselves once they have written anything, so the published status
 of the wiki cannot fall behind the extracts and pages committed beside it. CI
 runs `uv run report --check` on every pull request and fails on drift.
+
+`uv run audit` is the wider gate: it re-reads what is actually published —
+the two config files, the corpus artifacts, every cached note, both
+manifests, the status page and nav, and the structure of every generated
+page — and reports everything wrong with them at once. It also checks the one
+thing about LLM-written prose that can be checked mechanically: that each
+statutory section and HMRC manual reference cited on a page appears somewhere
+in the notes that page was composed from.
+
+A broken artifact is an error and fails CI. A citation with no note behind it,
+or a cached note that fails the extract schema, is a **warning**: outstanding
+work for the maintainer to resolve with a re-extract, a re-compose or an edit
+to the page plan, but not a reason to block the deploy of the pages that are
+sound. `uv run audit --strict` treats warnings as errors too.
 
 `synth` defaults to `--backend claude-cli` (the `claude` CLI, so your
 Claude Code subscription, no API key). `--backend codex-cli` uses `codex exec`;

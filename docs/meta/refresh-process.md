@@ -104,6 +104,28 @@ to finish regardless. The weekly refresh workflow keeps that distinction: a
 partial refresh is labelled in the pull request title and body, and its job
 fails.
 
+## What is checked before anything is published
+
+Two gates run offline — no network, no model calls — on every pull request
+and before every deploy:
+
+- `uv run pytest`, a regression suite over the fetchers, chunking, note
+  selection, the caches, the schemas and the audit itself;
+- `uv run audit`, which re-reads the published artifacts: both config files,
+  every mirrored source's file, every cached note, both manifests, this
+  status page and the site navigation, and the structure of each generated
+  page — a single H1 matching the page plan, the unofficial/not-advice
+  disclaimer, and a provenance footer whose every entry has a mirrored file
+  behind it.
+
+The audit also checks the citations. Each statutory section and HMRC manual
+reference on a page is looked for in the notes that page was composed from,
+and any that appears in none of them is reported. That is a warning rather
+than a build failure: the pipeline cannot tell an invented citation from one
+the model drew from a note that has since been re-selected, so it is flagged
+for a human rather than acted on automatically. It is one more reason to
+check anything you rely on against the cited source.
+
 `synth` defaults to `--backend claude-cli`, which shells out to the
 `claude` CLI and therefore runs on a Claude Code subscription with no API key.
 `--backend codex-cli` does the same through `codex exec`; `--backend anthropic`

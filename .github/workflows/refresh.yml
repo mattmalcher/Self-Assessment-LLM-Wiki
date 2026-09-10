@@ -33,6 +33,11 @@ jobs:
 
       - run: uv sync --locked
 
+      # Before spending any network calls: the suite is offline and takes
+      # under a second, and a refresh built on broken code is wasted work.
+      - name: Offline regression tests
+        run: uv run pytest -q
+
       # `fetch` exits non-zero if any source failed, and writes its report
       # either way. Remember that here rather than stopping: the sources that
       # did change should still reach a PR, and the job fails at the end.
@@ -74,6 +79,14 @@ jobs:
             echo '</details>'
           } > src/self_assessment_wiki/pipeline/pr_body.md
 
+      # Non-fatal here so a refresh that damaged an artifact still reaches a
+      # PR someone can look at; the job is failed at the end instead. The
+      # report is uploaded with the fetch report below.
+      - name: Audit the refreshed artifacts
+        id: audit
+        continue-on-error: true
+        run: uv run audit
+
       - name: Check for changes
         id: diff
         run: |
@@ -88,7 +101,9 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: fetch-run-report
-          path: src/self_assessment_wiki/pipeline/last_run.json
+          path: |
+            src/self_assessment_wiki/pipeline/last_run.json
+            src/self_assessment_wiki/last_audit.json
           if-no-files-found: warn
 
       - name: Open pull request
@@ -114,4 +129,10 @@ jobs:
         if: steps.fetch.outputs.partial == 'true'
         run: |
           echo "::error::partial refresh - see last_run.json and the PR body"
+          exit 1
+
+      - name: Fail on a broken artifact
+        if: steps.audit.outcome == 'failure'
+        run: |
+          echo "::error::the artifact audit found an error - see last_audit.json"
           exit 1

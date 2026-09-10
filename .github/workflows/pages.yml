@@ -35,18 +35,19 @@ jobs:
 
       - run: uv sync --locked
 
-      # The site must not claim a source it does not actually mirror: every
-      # `status: fetch` entry has to reconcile to a file (and, for shared
-      # outputs, to its own section) before anything is published.
-      - name: Reconcile fetched sources with corpus artifacts
-        run: uv run reconcile
+      # No network and no model calls, so this is the cheapest gate there is
+      # and it runs before anything is published.
+      - name: Offline regression tests
+        run: uv run pytest -q
 
-      # The status page and the nav are generated from the corpus, the
-      # extracts and the page plan. If what is committed no longer matches
-      # them, the site would publish a stale claim about its own coverage -
-      # so fail here rather than deploy it.
-      - name: Check the status page and nav are in sync
-        run: uv run report --check
+      # The audit walks everything the site rests on - the registry, the
+      # corpus artifacts (as `uv run reconcile` does), the extract cache,
+      # both manifests, the status page and nav (as `uv run report --check`
+      # does), the structure of every generated page, and the provenance of
+      # the citations on them. A broken artifact fails the deploy; content
+      # findings are printed as warnings and land in the run report.
+      - name: Audit the published artifacts
+        run: uv run audit
 
       - run: uv run mkdocs build --strict
 
