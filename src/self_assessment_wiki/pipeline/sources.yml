@@ -26,6 +26,11 @@
 #
 # Every `fetch` entry gets cache-validator + hash state written back into
 # pipeline/manifest.json (not here) so re-runs can skip unchanged sources.
+#
+# Every entry is validated against `configcheck.validate_sources` before any
+# command runs, so a bad `type`, a duplicate id or an `output` outside
+# `corpus/` fails the command rather than a fetcher. `url` is an absolute URL
+# except for the govuk_* types, which take a GOV.UK Content API path.
 
 # ---------------------------------------------------------------------------
 # Legal system > Primary legislation

@@ -65,6 +65,13 @@ the run. A missing artifact makes the fetchers drop their cache validators, so
 a warm cache rebuilds the file rather than reporting "unchanged" forever.
 `uv run reconcile` runs that audit on its own, and gates the Pages workflow.
 
+`sources.yml` and `pages.yml` are validated before any command does work:
+required fields, types, enums, unique ids, compilable `match` regexes, and
+output paths contained under `corpus/` (fetched) or `docs/` (composed). Two
+sources may share one output only as `web_page` `section:` blocks, and no page
+may target a hand-written file. An invalid entry exits non-zero with every
+problem listed, before any network or model call - see `configcheck.py`.
+
 Any failed source, chunk or page makes its command exit non-zero and lands in
 `pipeline/last_run.json` or `synth/last_run.json` (both gitignored). Pass
 `--keep-going` for best-effort behaviour - `synth all` also needs it to compose
