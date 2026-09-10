@@ -47,6 +47,7 @@ uv run mkdocs build --strict   # what CI deploys; strict, so nav must resolve
 uv run fetch --dry-run         # stage 1, no API access needed
 uv run fetch --only <source-id>
 uv run fetch --keep-going      # best effort; any failure exits non-zero without it
+uv run reconcile               # audit corpus/ against sources.yml; free, offline
 
 uv run status                  # what's stale; free
 uv run extract --limit 20      # stages 2-3, cost money
@@ -57,6 +58,12 @@ uv run report                  # refresh docs/meta/wiki-status.md
 
 Prefer `--dry-run` / `status` / `--limit` when verifying a change; never kick
 off a full `synth all` unasked.
+
+`fetch` also audits what it left behind: a source that reported success but
+wrote no file (or, for a shared output, no `<!-- section:ID -->` block) fails
+the run. A missing artifact makes the fetchers drop their cache validators, so
+a warm cache rebuilds the file rather than reporting "unchanged" forever.
+`uv run reconcile` runs that audit on its own, and gates the Pages workflow.
 
 Any failed source, chunk or page makes its command exit non-zero and lands in
 `pipeline/last_run.json` or `synth/last_run.json` (both gitignored). Pass

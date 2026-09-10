@@ -27,7 +27,7 @@ import yaml
 
 from .. import runlog
 from . import manifest as manifest_store
-from . import render_sources_index
+from . import reconcile, render_sources_index
 from .fetchers import caselaw, govuk_content, legislation, web_page
 
 PIPELINE_DIR = Path(__file__).parent
@@ -99,7 +99,15 @@ def main() -> int:
         render_sources_index.main()
 
     report.extra["changed"] = changed
-    runlog.write(PIPELINE_DIR / "last_run.json", [report])
+
+    # Fetching "successfully" is not the same as having the file. Audit what
+    # the run was supposed to leave behind before calling it complete.
+    reports = [report]
+    if not args.dry_run:
+        # Only what claimed success: a source that already failed is reported
+        # once, as a failure, not twice.
+        reports.append(reconcile.audit(sources, only=report.succeeded))
+    runlog.write(PIPELINE_DIR / "last_run.json", reports)
 
     print(f"\n{len(changed)} source(s) changed, {len(report.failed)} failed.")
     if changed:
@@ -108,6 +116,12 @@ def main() -> int:
         print("Failed:")
         for failure in report.failed:
             print(f"  - {failure['unit']}: {failure['error']}")
+    for extra_report in reports[1:]:
+        if extra_report.failed:
+            print("Did not reconcile to an artifact:")
+            for failure in extra_report.failed:
+                print(f"  - {failure['unit']}: {failure['error']}")
+        print(extra_report.verdict(keep_going=args.keep_going))
     print(report.verdict(keep_going=args.keep_going))
 
     # Emit a summary file for the GitHub Actions workflow to use as a PR body.
@@ -115,10 +129,15 @@ def main() -> int:
     # most readers will ever look.
     summary_path = PIPELINE_DIR / "last_run_summary.md"
     lines = []
+    unreconciled = [f for r in reports[1:] for f in r.failed]
     if report.failed:
         lines += ["> [!WARNING]", f"> **Partial refresh: {len(report.failed)} of "
                   f"{report.attempted} source(s) failed.** The corpus below is "
                   f"incomplete; the failed sources are left as previously fetched.", ""]
+    if unreconciled:
+        lines += ["> [!WARNING]", f"> **{len(unreconciled)} source(s) fetched without "
+                  f"leaving the artifact they are configured to write.** The registry "
+                  f"claims more of the corpus than is actually mirrored.", ""]
     lines += [f"Refreshed {len(sources)} registered sources; {len(changed)} changed.", ""]
     if changed:
         lines.append("### Changed")
@@ -127,9 +146,13 @@ def main() -> int:
     if report.failed:
         lines.append("### Failed (left as previously fetched)")
         lines += runlog.failure_lines([report])
+        lines.append("")
+    if unreconciled:
+        lines.append("### Configured but missing from the corpus")
+        lines += runlog.failure_lines(reports[1:])
     summary_path.write_text("\n".join(lines) + "\n")
 
-    return report.exit_code(keep_going=args.keep_going)
+    return max(r.exit_code(keep_going=args.keep_going) for r in reports)
 
 
 if __name__ == "__main__":

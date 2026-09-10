@@ -24,6 +24,8 @@ import sys
 from pathlib import Path
 
 from .. import runlog
+from ..pipeline import fetch as pipeline_fetch
+from ..pipeline import reconcile
 from . import compose, extract
 from .config import DEFAULT_BACKEND, DEFAULT_CONCURRENCY, DEFAULT_MODELS, SYNTH_DIR
 from .llm import BACKENDS, LLMError, get_backend
@@ -48,6 +50,14 @@ def _model(args, stage: str) -> str:
 
 
 def cmd_status(args) -> int:
+    gaps = reconcile.audit(pipeline_fetch.load_sources()).failed
+    if gaps:
+        print(f"Corpus integrity: {len(gaps)} fetched source(s) have no artifact "
+              f"(`uv run reconcile` for detail)")
+        for failure in gaps:
+            print(f"  ! {failure['unit']}: {failure['error']}")
+        print()
+
     plans = extract.plan(args.only if args.command == "status" else None)
     todo = sum(len(p.todo) for p in plans)
     cached = sum(len(p.chunks) - len(p.todo) for p in plans)

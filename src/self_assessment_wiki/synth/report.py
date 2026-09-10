@@ -10,6 +10,8 @@ from __future__ import annotations
 
 from datetime import date
 
+from ..pipeline import fetch as pipeline_fetch
+from ..pipeline import reconcile
 from . import compose, extract, nav, schema, store
 from .config import DOCS_DIR
 
@@ -71,6 +73,17 @@ def render() -> str:
     ]
     for p in plans:
         lines.append(f"| `corpus/{p.doc}` | {len(p.chunks)} | {len(p.chunks) - len(p.todo)} |")
+
+    gaps = reconcile.audit(pipeline_fetch.load_sources()).failed
+    lines += ["", "## Corpus integrity", ""]
+    if gaps:
+        lines += [f"{len(gaps)} source(s) are registered as fetched but have no "
+                  f"artifact in `corpus/`, so the coverage figures above cover "
+                  f"less than the registry claims:", ""]
+        lines += [f"- `{g['unit']}`: {g['error']}" for g in gaps]
+    else:
+        lines.append("Every source registered as fetched has the artifact it "
+                     "is configured to write.")
 
     lines += ["", "## Pages", "", "| Page | Notes used | Written | By |", "|---|---|---|---|"]
     for spec in specs:

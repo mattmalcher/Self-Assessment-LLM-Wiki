@@ -10,13 +10,20 @@ import re
 from pathlib import Path
 
 from ..common import conditional_get
+from ..reconcile import artifact_missing
 from ..render import html_to_markdown, sha256
 
 _SECTION_RE_TEMPLATE = r"<!-- section:{sid} -->.*?<!-- /section:{sid} -->\n?"
 
 
 def fetch(entry: dict, manifest_entry: dict) -> bool:
-    result = conditional_get(entry["url"], manifest_entry.setdefault("http", {}))
+    # A cache hit is only trustworthy while the block it produced is still in
+    # the shared file. If it is gone, drop the validators so the upstream has
+    # to send the body again, and rewrite it.
+    restoring = artifact_missing(entry)
+    http_cache = {} if restoring else manifest_entry.setdefault("http", {})
+
+    result = conditional_get(entry["url"], http_cache)
     if not result.changed:
         return False
     manifest_entry["http"] = {"etag": result.etag, "last_modified": result.last_modified}
@@ -32,7 +39,7 @@ def fetch(entry: dict, manifest_entry: dict) -> bool:
     )
 
     new_hash = sha256(block)
-    if manifest_entry.get("content_hash") == new_hash:
+    if manifest_entry.get("content_hash") == new_hash and not restoring:
         return False
     manifest_entry["content_hash"] = new_hash
 

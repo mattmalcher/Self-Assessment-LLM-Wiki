@@ -11,6 +11,7 @@ from __future__ import annotations
 import xml.etree.ElementTree as ET
 
 from ..common import conditional_get
+from ..reconcile import artifact_missing
 from ..render import build_page, write_if_changed
 
 ATOM_NS = "{http://www.w3.org/2005/Atom}"
@@ -38,7 +39,11 @@ def _parse_entries(xml_text: str) -> list[dict]:
 
 
 def fetch(entry: dict, manifest_entry: dict) -> bool:
-    result = conditional_get(entry["url"], manifest_entry.setdefault("http", {}))
+    # A 304 means nothing if the index page it wrote has since gone missing:
+    # forget the validators and rebuild it from a full response.
+    http_cache = {} if artifact_missing(entry) else manifest_entry.setdefault("http", {})
+
+    result = conditional_get(entry["url"], http_cache)
     if not result.changed:
         return False
 

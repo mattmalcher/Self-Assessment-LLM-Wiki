@@ -47,6 +47,7 @@ class FakeBackend(Backend):
 @pytest.fixture
 def fetch_env(monkeypatch, tmp_path):
     """`fetch.main` against a fake registry, writing its reports to tmp_path."""
+    monkeypatch.chdir(tmp_path)  # sources write their output relative to cwd
     monkeypatch.setattr(fetch, "PIPELINE_DIR", tmp_path)
     monkeypatch.setattr(fetch, "load_sources", lambda: SOURCES)
     monkeypatch.setattr(fetch.manifest_store, "load", lambda: {})
@@ -56,6 +57,10 @@ def fetch_env(monkeypatch, tmp_path):
     def fetcher(source, entry):
         if source["id"] == "bad-source":
             raise RuntimeError("upstream returned 503")
+        output = tmp_path / source["output"]
+        output.parent.mkdir(parents=True, exist_ok=True)
+        sid = source["id"]
+        output.write_text(f"<!-- section:{sid} -->\n# {sid}\n<!-- /section:{sid} -->\n")
         return True
 
     monkeypatch.setitem(fetch._DISPATCH, "web_page", fetcher)
