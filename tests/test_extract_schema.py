@@ -125,19 +125,14 @@ def test_entry_is_valid_reads_the_note():
     assert not schema.entry_is_valid("not an entry")
 
 
-@pytest.mark.xfail(strict=True, reason="7 records predate the validator; "
-                                       "re-extract them, then delete this marker")
 def test_committed_extracts_all_validate():
     """Every note in `extracts/` passes the schema.
 
     This is the gate the three malformed records in `codex_review.md` failed,
     plus four quieter ones (`may` for `must`, `meaine` for `meaning`, a stray
-    `meaning_ref`). They cannot be fixed by hand - a note is what the model
-    said about a chunk - so they stay until `uv run extract` re-asks for those
-    seven chunks. `uv run status` lists them.
-
-    Marked strict, so it fails again the moment they are re-extracted: that is
-    the reminder to drop the marker in the same commit.
+    `meaning_ref`). All seven have been re-extracted. A note is what the model
+    said about a chunk, so a failure here is fixed by re-running
+    `uv run extract` for the chunks `uv run status` lists, never by hand.
     """
     bad = []
     for path in sorted(EXTRACTS_DIR.rglob("*.json")):
