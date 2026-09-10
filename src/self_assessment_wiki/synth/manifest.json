@@ -20,6 +20,13 @@
     "note_count": 2,
     "output": "docs/case-law/themes.md"
   },
+  "data-requirements": {
+    "generated_by": "claude-cli:opus",
+    "generated_on": "2026-09-10",
+    "input_hash": "d4fe0163cfdc5548",
+    "note_count": 110,
+    "output": "docs/reference-implementation/data-requirements.md"
+  },
   "deadlines-and-amendments": {
     "generated_by": "claude-cli:opus",
     "generated_on": "2026-09-08",
