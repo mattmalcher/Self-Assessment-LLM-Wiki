@@ -19,6 +19,7 @@ from pathlib import Path
 import yaml
 
 from .. import configcheck, runlog
+from ..pipeline import fetch as pipeline_fetch
 from . import schema, store
 from .config import DOCS_DIR, MANIFEST_PATH, PAGES_PATH, PROMPTS_DIR, REPO_ROOT
 from .llm import Backend
@@ -50,13 +51,41 @@ class PageWork:
     input_hash: str = ""
     stale: bool = True
     reason: str = ""
+    excluded_notes: int = 0
+    coverage: "AuthorityCoverage" | None = None
+
+
+@dataclass(frozen=True)
+class AuthorityCoverage:
+    """Whether the selected evidence includes every authority a page requires."""
+
+    required: tuple[str, ...]
+    covered: tuple[str, ...]
+    missing: tuple[str, ...]
+
+    @property
+    def complete(self) -> bool:
+        return not self.missing
+
+
+@dataclass
+class SelectionResult:
+    """Selected notes plus the relevant matches hidden by the cost cap."""
+
+    notes: list[Selected]
+    excluded: list[Selected]
 
 
 def load_pages() -> list[dict]:
     """The validated page plan. Raises `configcheck.ConfigError` rather than
     letting, say, a misspelled relevance tier select nothing and compose a
     page out of no notes."""
-    return configcheck.load_pages(PAGES_PATH)
+    pages = configcheck.load_pages(PAGES_PATH)
+    errors = configcheck.validate_authority_references(
+        pages, pipeline_fetch.load_sources())
+    if errors:
+        raise configcheck.ConfigError("pages.yml (authority matrix)", errors)
+    return pages
 
 
 def load_manifest() -> dict:
@@ -84,7 +113,11 @@ def _matches(patterns: list[re.Pattern], selected: Selected) -> int:
     return sum(1 for p in patterns if p.search(haystack))
 
 
-def select(spec: dict, extracts: dict[str, dict]) -> list[Selected]:
+def _source_satisfies(required_id: str, source_id: str) -> bool:
+    return source_id == required_id or source_id.startswith(required_id + ":")
+
+
+def selection(spec: dict, extracts: dict[str, dict]) -> SelectionResult:
     prefixes = spec.get("select", {}).get("docs") or []
     tiers = set(spec.get("select", {}).get("relevance") or ["core"])
     patterns = [re.compile(p, re.IGNORECASE) for p in spec.get("select", {}).get("match") or []]
@@ -114,7 +147,47 @@ def select(spec: dict, extracts: dict[str, dict]) -> list[Selected]:
             out.append(sel)
 
     out.sort(key=lambda s: (-s.score, RELEVANCE_ORDER.get(s.note.get("relevance", "none"), 9), s.doc, s.heading))
-    return out[:max_notes]
+    chosen: list[Selected] = []
+    chosen_keys: set[tuple[str, str]] = set()
+    for required_id in spec.get("authorities") or []:
+        match = next((note for note in out
+                      if _source_satisfies(required_id, note.source_id)), None)
+        if match and len(chosen) < max_notes:
+            chosen.append(match)
+            chosen_keys.add((match.doc, match.chunk_hash))
+    for note in out:
+        key = (note.doc, note.chunk_hash)
+        if len(chosen) >= max_notes:
+            break
+        if key not in chosen_keys:
+            chosen.append(note)
+            chosen_keys.add(key)
+    excluded = [note for note in out if (note.doc, note.chunk_hash) not in chosen_keys]
+    return SelectionResult(notes=chosen, excluded=excluded)
+
+
+def select(spec: dict, extracts: dict[str, dict]) -> list[Selected]:
+    """Compatibility wrapper returning the notes handed to the composer."""
+    return selection(spec, extracts).notes
+
+
+def authority_coverage(spec: dict, notes: list[Selected]) -> AuthorityCoverage:
+    """Compare a page's minimum authority set with its selected evidence.
+
+    Expanded GOV.UK collection members use ``parent-id:<content-id>`` as
+    their source ID, so requiring the parent source covers both its index and
+    any substantive member documents selected for the page.
+    """
+    required = tuple(spec.get("authorities") or ())
+    selected_ids = {note.source_id for note in notes if note.source_id}
+
+    def present(required_id: str) -> bool:
+        return any(_source_satisfies(required_id, source_id)
+                   for source_id in selected_ids)
+
+    covered = tuple(source_id for source_id in required if present(source_id))
+    missing = tuple(source_id for source_id in required if source_id not in covered)
+    return AuthorityCoverage(required=required, covered=covered, missing=missing)
 
 
 # Spec keys that affect navigation only, not the page's content - changing
@@ -191,10 +264,19 @@ def _render_notes(notes: list[Selected]) -> str:
 
 
 def build_prompt(spec: dict, notes: list[Selected]) -> str:
+    coverage = authority_coverage(spec, notes)
+    coverage_instruction = (
+        "All declared minimum authorities are represented in the selected notes."
+        if coverage.complete else
+        "The selected notes do not represent these declared minimum authorities: "
+        + ", ".join(coverage.missing)
+        + ". Do not fill those gaps from general knowledge or imply complete coverage."
+    )
     return (
         f"# Page to write\n\n"
         f"Title: {spec['title']}\n\n"
         f"Brief:\n{textwrap.dedent(spec.get('brief', '')).strip()}\n\n"
+        f"Authority coverage:\n{coverage_instruction}\n\n"
         f"# Source notes ({len(notes)})\n\n"
         f"{_render_notes(notes)}\n\n"
         f"Write the page now, in Markdown, starting with `# {spec['title']}`."
@@ -203,6 +285,7 @@ def build_prompt(spec: dict, notes: list[Selected]) -> str:
 
 def _front_matter(spec: dict, notes: list[Selected], model: str, backend: str, ihash: str) -> str:
     sources = sorted({(s.source_id or s.doc) for s in notes})
+    coverage = authority_coverage(spec, notes)
     fm = {
         "title": spec["title"],
         "generated": True,
@@ -211,6 +294,8 @@ def _front_matter(spec: dict, notes: list[Selected], model: str, backend: str, i
         "input_hash": ihash,
         "note_count": len(notes),
         "sources": sources,
+        "authority_coverage": "complete" if coverage.complete else "incomplete",
+        "missing_authorities": list(coverage.missing),
     }
     return "---\n" + yaml.safe_dump(fm, sort_keys=False, default_flow_style=False).strip() + "\n---\n\n"
 
@@ -241,6 +326,22 @@ def _with_disclaimer(body: str) -> str:
     return DISCLAIMER + body
 
 
+def _coverage_notice(coverage: AuthorityCoverage) -> str:
+    if coverage.complete:
+        detail = ("The selected source notes include every minimum authority "
+                  "declared for this page in `pages.yml`.")
+        title = "Minimum authority coverage satisfied"
+        kind = "success"
+    else:
+        missing = ", ".join(f"`{source_id}`" for source_id in coverage.missing)
+        detail = ("This page is missing, or did not select, required source "
+                  f"material: {missing}. Treat it as incomplete until the source "
+                  "is mirrored, extracted and selected.")
+        title = "Minimum authority coverage incomplete"
+        kind = "warning"
+    return f'\n!!! {kind} "{title}"\n\n    {detail}\n'
+
+
 def _provenance(notes: list[Selected]) -> str:
     """A closing block linking every corpus document the page drew on."""
     by_doc: dict[str, Selected] = {}
@@ -266,7 +367,9 @@ def plan(model: str, *, only: list[str] | None = None, force: bool = False) -> l
     for spec in load_pages():
         if only and spec["id"] not in only:
             continue
-        notes = select(spec, extracts)
+        picked = selection(spec, extracts)
+        notes = picked.notes
+        coverage = authority_coverage(spec, notes)
         ihash = input_hash(spec, notes, model)
         recorded = manifest.get(spec["id"], {})
         exists = (REPO_ROOT / spec["output"]).exists()
@@ -280,7 +383,9 @@ def plan(model: str, *, only: list[str] | None = None, force: bool = False) -> l
             stale, reason = False, "no notes selected"
         else:
             stale, reason = False, "up to date"
-        works.append(PageWork(spec=spec, notes=notes, input_hash=ihash, stale=stale, reason=reason))
+        works.append(PageWork(spec=spec, notes=notes, input_hash=ihash, stale=stale,
+                              reason=reason, excluded_notes=len(picked.excluded),
+                              coverage=coverage))
     return works
 
 
@@ -317,8 +422,10 @@ def run(backend: Backend, model: str, *, only: list[str] | None = None, force: b
             continue
         if body.startswith("```"):
             body = body.split("\n", 1)[1].rsplit("```", 1)[0].strip()
+        coverage = work.coverage or authority_coverage(spec, work.notes)
         page = (_front_matter(spec, work.notes, model, backend.name, work.input_hash)
-                + _with_disclaimer(body) + "\n" + _provenance(work.notes))
+                + _with_disclaimer(body) + _coverage_notice(coverage)
+                + "\n" + _provenance(work.notes))
         out = REPO_ROOT / spec["output"]
         out.parent.mkdir(parents=True, exist_ok=True)
         out.write_text(page)

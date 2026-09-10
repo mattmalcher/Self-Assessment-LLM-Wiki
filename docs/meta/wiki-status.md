@@ -15,11 +15,13 @@ It is derived entirely from what is committed - the corpus, the extract cache, b
 
 **No complete end-to-end run is represented by the committed artifacts.** Outstanding:
 
+- 694 chunk(s) have never been extracted
 - 17 page(s) are stale or missing: `who-must-file`, `the-return`, `deadlines-and-amendments`, `payments-and-collection`, `records-and-information`, `enquiries`, `assessments-and-discovery`, `penalties`, `appeals-and-reviews`, `income-charges`, `reliefs-and-claims`, `rates-and-thresholds`, `hmrc-interpretation`, `case-law-themes`, `making-tax-digital`, `rules-inventory`, `data-requirements`
+- 9 page(s) lack minimum authority coverage: `records-and-information`, `penalties`, `income-charges`, `reliefs-and-claims`, `rates-and-thresholds`, `hmrc-interpretation`, `making-tax-digital`, `rules-inventory`, `data-requirements`
 
 ## Extraction coverage
 
-1265 of 1265 corpus chunks extracted (100%), across 43 mirrored documents. Only notes that pass the extract schema count as extracted.
+1263 of 1957 corpus chunks extracted (65%), across 98 mirrored documents. Only notes that pass the extract schema count as extracted.
 
 Chunks by Self Assessment relevance, as judged at extraction:
 
@@ -32,7 +34,22 @@ Chunks by Self Assessment relevance, as judged at extraction:
 | Document | Chunks | Extracted |
 |---|---|---|
 | `corpus/external-explainers.md` | 1 | 1 |
-| `corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md` | 1 | 1 |
+| `corpus/hmrc-publications/advisory-fuel-rates.md` | 1 | 0 |
+| `corpus/hmrc-publications/alcohol-duty-rates.md` | 1 | 0 |
+| `corpus/hmrc-publications/capital-gains-tax-rates-and-allowances.md` | 1 | 0 |
+| `corpus/hmrc-publications/climate-change-levy-rates.md` | 1 | 0 |
+| `corpus/hmrc-publications/converting-foreign-currency-amounts-to-include-in-the-customs-value.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/check-how-to-claim-a-tax-refund.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/check-if-you-need-to-send-a-self-assessment-tax-return.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/check-when-you-can-expect-a-reply-from-hmrc.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/disagree-with-a-tax-decision-or-penalty.md` | 2 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/estimate-your-penalty-for-late-self-assessment-tax-returns-and-payments.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/file-your-self-assessment-tax-return-online.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/get-help-filling-in-your-self-assessment-tax-return.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/get-help-with-tax.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/get-your-sa302-tax-calculation.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/help-online-with-self-assessment.md` | 1 | 0 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/accrued-income-scheme-self-assessment-helpsheet-hs343.md` | 2 | 2 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/averaging-for-creators-of-literary-or-artistic-works-self-assessment-helpsheet-hs234.md` | 1 | 1 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-and-employee-share-schemes-self-assessment-helpsheet-hs287.md` | 2 | 2 |
@@ -56,7 +73,17 @@ Chunks by Self Assessment relevance, as judged at extraction:
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/pension-savings-tax-charges-self-assessment-helpsheet-hs345.md` | 5 | 5 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/qualifying-care-relief-for-carers-self-assessment-helpsheet-hs236.md` | 1 | 1 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-self-assessment-helpsheet-hs393.md` | 2 | 2 |
+| `corpus/hmrc-publications/customer-facing-guidance/hmrc-email-updates-videos-and-webinars-for-self-assessment.md` | 2 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/if-you-cannot-pay-your-tax-bill-on-time.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/keeping-your-pay-and-tax-records.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/making-tax-digital-income-tax.md` | 8 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/pay-your-self-assessment-tax-bill.md` | 2 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/self-assessment-tax-returns.md` | 3 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/understand-your-self-assessment-tax-bill.md` | 1 | 0 |
+| `corpus/hmrc-publications/customer-facing-guidance/use-software-to-help-complete-your-self-assessment-tax-return.md` | 1 | 0 |
 | `corpus/hmrc-publications/customer-facing-tools.md` | 2 | 2 |
+| `corpus/hmrc-publications/excise-duty-hydrocarbon-oils-rates-and-allowances.md` | 1 | 0 |
+| `corpus/hmrc-publications/monthly-euro-conversion-rates-for-calculating-customs-duty.md` | 1 | 0 |
 | `corpus/hmrc-publications/policy-and-interpretation/extra-statutory-concessions.md` | 1 | 1 |
 | `corpus/hmrc-publications/policy-and-interpretation/manuals/artg.md` | 45 | 45 |
 | `corpus/hmrc-publications/policy-and-interpretation/manuals/ch.md` | 383 | 383 |
@@ -66,12 +93,42 @@ Chunks by Self Assessment relevance, as judged at extraction:
 | `corpus/hmrc-publications/policy-and-interpretation/manuals/sam.md` | 338 | 338 |
 | `corpus/hmrc-publications/policy-and-interpretation/revenue-and-customs-briefs.md` | 1 | 1 |
 | `corpus/hmrc-publications/policy-and-interpretation/statements-of-practice.md` | 1 | 1 |
-| `corpus/hmrc-publications/rates-and-allowances.md` | 1 | 1 |
+| `corpus/hmrc-publications/rates-and-allowances-aggregates-levy.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-beneficial-loan-arrangements.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-child-benefit-guardian-s-allowance-and-tax-credits.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-excise-duty-gambling-duty.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-for-corporation-tax.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-for-income-tax.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-for-landfill-tax.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-for-tobacco-products-duty.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-hmrc-interest-rates-for-late-and-early-payments.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-insurance-premium-tax.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-national-insurance-contributions.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances-travel-mileage-and-fuel-allowances.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-allowances.md` | 1 | 0 |
+| `corpus/hmrc-publications/rates-and-thresholds-for-employers-2020-to-2021.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-and-thresholds-for-employers-2021-to-2022.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-and-thresholds-for-employers-2022-to-2023.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-and-thresholds-for-employers-2023-to-2024.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-and-thresholds-for-employers-2024-to-2025.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-and-thresholds-for-employers-2025-to-2026.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-and-thresholds-for-employers-2026-to-2027.md` | 2 | 0 |
+| `corpus/hmrc-publications/rates-for-air-passenger-duty.md` | 1 | 0 |
+| `corpus/hmrc-publications/stamp-duty-land-tax-rates-from-1-december-2003-to-31-march-2025.md` | 1 | 0 |
+| `corpus/hmrc-publications/vat-rates-on-different-goods-and-services.md` | 3 | 0 |
 | `corpus/legal-system/case-law/first-tier-tribunal-tax-chamber.md` | 1 | 1 |
 | `corpus/legal-system/case-law/upper-tribunal-tax-chancery.md` | 1 | 1 |
 | `corpus/legal-system/primary-legislation/acts/crca-2005.md` | 23 | 23 |
+| `corpus/legal-system/primary-legislation/acts/finance-act-2008.md` | 18 | 0 |
+| `corpus/legal-system/primary-legislation/acts/finance-act-2009.md` | 16 | 0 |
+| `corpus/legal-system/primary-legislation/acts/finance-act-2021.md` | 22 | 0 |
+| `corpus/legal-system/primary-legislation/acts/ita-2007.md` | 212 | 0 |
 | `corpus/legal-system/primary-legislation/acts/itepa-2003.md` | 152 | 152 |
+| `corpus/legal-system/primary-legislation/acts/ittoia-2005.md` | 129 | 0 |
+| `corpus/legal-system/primary-legislation/acts/sscba-1992.md` | 66 | 0 |
+| `corpus/legal-system/primary-legislation/acts/tcga-1992.md` | 159 | 0 |
 | `corpus/legal-system/primary-legislation/acts/tma-1970.md` | 75 | 75 |
+| `corpus/legal-system/secondary-legislation/income-tax-digital-requirements-regulations-2021.md` | 1 | 0 |
 | `corpus/legal-system/secondary-legislation/statutory-instruments.md` | 1 | 1 |
 | `corpus/legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md` | 5 | 5 |
 
@@ -79,26 +136,26 @@ Chunks by Self Assessment relevance, as judged at extraction:
 
 Every source registered as fetched has the artifact it is configured to write.
 
-## Pages
+## Page authority coverage
 
-In the order the site navigation lists them.
+Each row compares the page's minimum authority set in `pages.yml` with the notes its selector actually hands to composition. A source is not covered merely because it is registered or mirrored.
 
-| Page | Notes used | Written | By | State |
-|---|---|---|---|---|
-| [Who must file a Self Assessment return](../lifecycle/who-must-file.md) | 80 | 2026-09-08 | `claude-cli:opus` | stale |
-| [The return itself - content, formats and schedules](../lifecycle/the-return.md) | 90 | 2026-09-08 | `claude-cli:opus` | stale |
-| [Deadlines, amendments and corrections](../lifecycle/deadlines-and-amendments.md) | 80 | 2026-09-08 | `claude-cli:opus` | stale |
-| [Payments, payments on account and collection](../lifecycle/payments-and-collection.md) | 80 | 2026-09-08 | `claude-cli:opus` | stale |
-| [Records, information powers and inspections](../lifecycle/records-and-information.md) | 70 | 2026-09-08 | `claude-cli:opus` | stale |
-| [Enquiries into a return](../lifecycle/enquiries.md) | 80 | 2026-09-08 | `claude-cli:opus` | stale |
-| [Assessments, discovery and time limits](../lifecycle/assessments-and-discovery.md) | 80 | 2026-09-08 | `claude-cli:opus` | stale |
-| [Penalties](../lifecycle/penalties.md) | 90 | 2026-09-08 | `claude-cli:opus` | stale |
-| [Appeals, reviews and the tribunals](../lifecycle/appeals-and-reviews.md) | 80 | 2026-09-09 | `claude-cli:opus` | stale |
-| [What income is charged, and where it goes on the return](../computation/income-charges.md) | 100 | 2026-09-09 | `claude-cli:opus` | stale |
-| [Reliefs, claims and elections](../computation/reliefs-and-claims.md) | 100 | 2026-09-09 | `claude-cli:opus` | stale |
-| [Rates, allowances and thresholds](../computation/rates-and-thresholds.md) | 80 | 2026-09-09 | `claude-cli:opus` | stale |
-| [HMRC's published interpretation - manuals, SPs, briefs and concessions](../hmrc/interpretation.md) | 70 | 2026-09-09 | `claude-cli:opus` | stale |
-| [Case law - what the tribunals are deciding](../case-law/themes.md) | 2 | 2026-09-09 | `claude-cli:opus` | stale |
-| [Making Tax Digital for Income Tax](../change/making-tax-digital.md) | 14 | 2026-09-09 | `claude-cli:opus` | stale |
-| [Rules inventory - the machine-implementable rules found in the sources](../reference-implementation/rules-inventory.md) | 120 | 2026-09-09 | `claude-cli:opus` | stale |
-| [Data requirements for a head-of-duty implementation](../reference-implementation/data-requirements.md) | 110 | 2026-09-10 | `claude-cli:opus` | stale |
+| Page | Authorities | Missing | Notes used | Excluded by cap | Written | By | State |
+|---|---|---|---|---|---|---|---|
+| [Who must file a Self Assessment return](../lifecycle/who-must-file.md) | 1/1 | - | 80 | 229 | 2026-09-08 | `claude-cli:opus` | stale |
+| [The return itself - content, formats and schedules](../lifecycle/the-return.md) | 1/1 | - | 90 | 704 | 2026-09-08 | `claude-cli:opus` | stale |
+| [Deadlines, amendments and corrections](../lifecycle/deadlines-and-amendments.md) | 1/1 | - | 80 | 415 | 2026-09-08 | `claude-cli:opus` | stale |
+| [Payments, payments on account and collection](../lifecycle/payments-and-collection.md) | 1/1 | - | 80 | 193 | 2026-09-08 | `claude-cli:opus` | stale |
+| [Records, information powers and inspections](../lifecycle/records-and-information.md) | 1/2 | `finance-act-2008` | 70 | 310 | 2026-09-08 | `claude-cli:opus` | stale |
+| [Enquiries into a return](../lifecycle/enquiries.md) | 1/1 | - | 80 | 300 | 2026-09-08 | `claude-cli:opus` | stale |
+| [Assessments, discovery and time limits](../lifecycle/assessments-and-discovery.md) | 1/1 | - | 80 | 854 | 2026-09-08 | `claude-cli:opus` | stale |
+| [Penalties](../lifecycle/penalties.md) | 0/3 | `finance-act-2008`, `finance-act-2009`, `finance-act-2021` | 90 | 505 | 2026-09-08 | `claude-cli:opus` | stale |
+| [Appeals, reviews and the tribunals](../lifecycle/appeals-and-reviews.md) | 2/2 | - | 80 | 369 | 2026-09-09 | `claude-cli:opus` | stale |
+| [What income is charged, and where it goes on the return](../computation/income-charges.md) | 1/5 | `ittoia-2005`, `ita-2007`, `tcga-1992`, `sscba-1992` | 100 | 286 | 2026-09-09 | `claude-cli:opus` | stale |
+| [Reliefs, claims and elections](../computation/reliefs-and-claims.md) | 0/2 | `ita-2007`, `tcga-1992` | 100 | 185 | 2026-09-09 | `claude-cli:opus` | stale |
+| [Rates, allowances and thresholds](../computation/rates-and-thresholds.md) | 1/2 | `ita-2007` | 80 | 567 | 2026-09-09 | `claude-cli:opus` | stale |
+| [HMRC's published interpretation - manuals, SPs, briefs and concessions](../hmrc/interpretation.md) | 4/5 | `hmrc-rc-briefs` | 70 | 866 | 2026-09-09 | `claude-cli:opus` | stale |
+| [Case law - what the tribunals are deciding](../case-law/themes.md) | 2/2 | - | 2 | 0 | 2026-09-09 | `claude-cli:opus` | stale |
+| [Making Tax Digital for Income Tax](../change/making-tax-digital.md) | 0/3 | `tma-1970`, `si-income-tax-digital-requirements-2021`, `govuk-mtd-income-tax-guide` | 14 | 0 | 2026-09-09 | `claude-cli:opus` | stale |
+| [Rules inventory - the machine-implementable rules found in the sources](../reference-implementation/rules-inventory.md) | 2/8 | `ittoia-2005`, `ita-2007`, `tcga-1992`, `finance-act-2008`, `finance-act-2009`, `finance-act-2021` | 120 | 335 | 2026-09-09 | `claude-cli:opus` | stale |
+| [Data requirements for a head-of-duty implementation](../reference-implementation/data-requirements.md) | 2/5 | `ittoia-2005`, `ita-2007`, `tcga-1992` | 110 | 400 | 2026-09-10 | `claude-cli:opus` | stale |

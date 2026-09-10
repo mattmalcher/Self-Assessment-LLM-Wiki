@@ -182,7 +182,7 @@ bumping it restages every page.
 
 | Path | What it is |
 |---|---|
-| `pages.yml` | the page plan: title, output, brief and note selector per page |
+| `pages.yml` | the page plan: title, output, brief, minimum authorities and note selector per page |
 | `prompts/extract.md` | system prompt for stage 2 — defines the note schema |
 | `prompts/compose.md` | system prompt for stage 3 — citation and sourcing rules |
 | `chunk.py` | heading-aware chunker, stable hashes |
@@ -202,9 +202,14 @@ Two levers, and neither involves editing `docs/` by hand (anything you write
 there is overwritten on the next compose):
 
 1. **`pages.yml`** — the brief steers what a page argues and how it's laid out;
-   the `select` block steers what evidence it sees. Widen `match`, add
-   `related` to `relevance`, or raise `max_notes` if a page is coming out thin.
-   `--dry-run` shows the note count before you spend anything.
+   `authorities` declares the minimum source IDs its selected evidence must
+   contain, and the `select` block steers what evidence it sees. Selection
+   reserves one matching note per required authority before filling
+   `max_notes`; any other matching notes hidden by that cap are counted in
+   `status`, compose `--dry-run`, and the generated wiki status page. Missing
+   authorities visibly label the next composed page as incomplete. Widen
+   `match`, add `related` to `relevance`, or raise `max_notes` if a page is
+   coming out thin.
 2. **`prompts/`** — the house style and the sourcing rules for every page.
    Changing `compose.md` invalidates every page's input hash, so the next
    compose run rewrites the whole site.

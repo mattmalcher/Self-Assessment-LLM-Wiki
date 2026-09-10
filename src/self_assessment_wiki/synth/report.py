@@ -38,6 +38,8 @@ class PageState:
     spec: dict
     record: dict | None
     status: str  # up to date / stale / missing / not yet generated
+    coverage: compose.AuthorityCoverage | None = None
+    excluded_notes: int = 0
 
     @property
     def written(self) -> bool:
@@ -58,16 +60,21 @@ def page_states(extracts: dict[str, dict], manifest: dict,
     states: list[PageState] = []
     for spec in specs:
         record = manifest.get(spec["id"])
+        picked = compose.selection(spec, extracts)
+        coverage = compose.authority_coverage(spec, picked.notes)
         if not record:
-            states.append(PageState(spec, None, "not yet generated"))
+            states.append(PageState(spec, None, "not yet generated", coverage,
+                                    len(picked.excluded)))
             continue
         if not (REPO_ROOT / spec["output"]).exists():
-            states.append(PageState(spec, record, "missing"))
+            states.append(PageState(spec, record, "missing", coverage,
+                                    len(picked.excluded)))
             continue
         model = str(record.get("generated_by", "")).split(":", 1)[-1]
-        ihash = compose.input_hash(spec, compose.select(spec, extracts), model)
+        ihash = compose.input_hash(spec, picked.notes, model)
         status = "up to date" if ihash == record.get("input_hash") else "stale"
-        states.append(PageState(spec, record, status))
+        states.append(PageState(spec, record, status, coverage,
+                                len(picked.excluded)))
     return states
 
 
@@ -105,6 +112,10 @@ def _completeness(*, outstanding: int, invalid: int, gaps: list[dict],
     if ungenerated:
         problems.append(f"{len(ungenerated)} planned page(s) have never been composed: "
                         + ", ".join(f"`{s.spec['id']}`" for s in ungenerated))
+    uncovered = [s for s in states if s.coverage and not s.coverage.complete]
+    if uncovered:
+        problems.append(f"{len(uncovered)} page(s) lack minimum authority coverage: "
+                        + ", ".join(f"`{s.spec['id']}`" for s in uncovered))
 
     if not problems:
         return [f"**The committed corpus, extracts and pages are the output of a "
@@ -212,19 +223,27 @@ def render() -> str:
         lines.append("Every source registered as fetched has the artifact it "
                      "is configured to write.")
 
-    lines += ["", "## Pages", "",
-              "In the order the site navigation lists them.", "",
-              "| Page | Notes used | Written | By | State |", "|---|---|---|---|---|"]
+    lines += ["", "## Page authority coverage", "",
+              "Each row compares the page's minimum authority set in `pages.yml` "
+              "with the notes its selector actually hands to composition. A source "
+              "is not covered merely because it is registered or mirrored.", "",
+              "| Page | Authorities | Missing | Notes used | Excluded by cap | Written | By | State |",
+              "|---|---|---|---|---|---|---|---|"]
     for state in states:
         spec, record = state.spec, state.record
+        coverage = state.coverage or compose.authority_coverage(spec, [])
+        authority_count = f"{len(coverage.covered)}/{len(coverage.required)}"
+        missing = ", ".join(f"`{source_id}`" for source_id in coverage.missing) or "-"
         if record:
             rel = spec["output"].removeprefix("docs/").removesuffix(".md")
             page = f"[{spec['title']}](../{rel}.md)"
-            lines.append(f"| {page} | {record.get('note_count', '-')} | "
+            lines.append(f"| {page} | {authority_count} | {missing} | "
+                         f"{record.get('note_count', '-')} | {state.excluded_notes} | "
                          f"{record.get('generated_on', '-')} | "
                          f"`{record.get('generated_by', '-')}` | {state.status} |")
         else:
-            lines.append(f"| {spec['title']} | - | - | - | {state.status} |")
+            lines.append(f"| {spec['title']} | {authority_count} | {missing} | - | "
+                         f"{state.excluded_notes} | - | - | {state.status} |")
     lines.append("")
     return "\n".join(lines)
 

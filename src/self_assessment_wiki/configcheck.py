@@ -66,7 +66,7 @@ SOURCE_TYPE_KEYS: dict[str, tuple[str, ...]] = {
     "web_page": ("section",),
 }
 
-PAGE_REQUIRED = ("id", "title", "section", "output", "brief")
+PAGE_REQUIRED = ("id", "title", "section", "output", "brief", "authorities")
 PAGE_OPTIONAL = ("select",)
 SELECT_KEYS = ("docs", "relevance", "match", "max_notes")
 RELEVANCE_TIERS = ("core", "related", "none")
@@ -312,6 +312,20 @@ def validate_pages(pages: object) -> list[str]:
                 errors.append(f"{where}: {key} must be a non-empty string, "
                               f"got {entry[key]!r}")
 
+        authorities = entry.get("authorities")
+        if "authorities" in entry and (not isinstance(authorities, list) or not authorities):
+            errors.append(f"{where}: authorities must be a non-empty list of source ids")
+        elif isinstance(authorities, list):
+            seen_authorities: set[str] = set()
+            for authority in authorities:
+                if not _is_str(authority) or not ID_RE.match(authority):
+                    errors.append(f"{where}: authorities entries must be lowercase source "
+                                  f"id slugs, got {authority!r}")
+                elif authority in seen_authorities:
+                    errors.append(f"{where}: duplicate authority {authority!r}")
+                else:
+                    seen_authorities.add(authority)
+
         output = entry.get("output")
         if output is not None:
             issue = path_problem(output, DOCS_ROOT)
@@ -385,6 +399,20 @@ def _load(path, validator, label: str):
     if errors:
         raise ConfigError(label, errors)
     return data
+
+
+def validate_authority_references(pages: list[dict], sources: list[dict]) -> list[str]:
+    """Authorities in the page matrix must name a registered source."""
+    known = {source.get("id") for source in sources if isinstance(source, dict)}
+    errors = []
+    for page in pages:
+        if not isinstance(page, dict):
+            continue
+        for source_id in page.get("authorities") or []:
+            if source_id not in known:
+                errors.append(f"{page.get('id', '<unknown>')}: authority {source_id!r} "
+                              "is not present in sources.yml")
+    return errors
 
 
 def load_sources(path) -> list[dict]:

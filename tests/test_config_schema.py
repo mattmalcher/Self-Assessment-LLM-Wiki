@@ -27,6 +27,7 @@ SOURCE = {"id": "tma-1970", "category": "legal-system.primary-legislation",
           "status": "fetch", "output": "corpus/acts/tma-1970.md"}
 PAGE = {"id": "who-must-file", "title": "Who must file", "section": "Lifecycle",
         "output": "docs/lifecycle/who-must-file.md", "brief": "Say who must file.",
+        "authorities": ["tma-1970"],
         "select": {"relevance": ["core"], "match": ["notice to file"], "max_notes": 80}}
 
 
@@ -83,6 +84,20 @@ def test_missing_required_page_key_is_reported(key):
     entry = page()
     del entry[key]
     assert any(repr(key) in e for e in configcheck.validate_pages([entry]))
+
+
+@pytest.mark.parametrize("authorities", [None, [], "tma-1970", ["TMA 1970"],
+                                           ["tma-1970", "tma-1970"]])
+def test_authorities_must_be_a_non_empty_unique_list_of_source_ids(authorities):
+    assert any("authorit" in error for error in errors_for_page(authorities=authorities))
+
+
+def test_page_authorities_must_name_registered_sources():
+    assert configcheck.validate_authority_references([PAGE], [SOURCE]) == []
+    errors = configcheck.validate_authority_references(
+        [page(authorities=["missing-act"])], [SOURCE])
+    assert errors == [
+        "who-must-file: authority 'missing-act' is not present in sources.yml"]
 
 
 def test_unknown_keys_are_rejected():
@@ -327,5 +342,6 @@ def test_load_returns_the_parsed_config(tmp_path):
                     "  title: Who must file\n"
                     "  section: Lifecycle\n"
                     "  output: docs/lifecycle/who-must-file.md\n"
-                    "  brief: Say who must file.\n")
+                    "  brief: Say who must file.\n"
+                    "  authorities: [tma-1970]\n")
     assert configcheck.load_pages(path)[0]["id"] == "who-must-file"

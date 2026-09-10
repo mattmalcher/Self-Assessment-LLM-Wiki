@@ -10,6 +10,9 @@
 #            writes the .pages nav files from this, in the order below
 #   output   path written (must live under docs/)
 #   brief    the instruction handed to the composer alongside the notes
+#   authorities
+#            source ids that must occur in the selected notes before the page
+#            may claim its minimum authority coverage is satisfied
 #   select:
 #     docs        corpus-relative path prefixes to draw from (omit = all)
 #     relevance   which extract tiers to admit: core / related / none
@@ -30,6 +33,7 @@
   title: Who must file a Self Assessment return
   section: The Self Assessment lifecycle
   output: docs/lifecycle/who-must-file.md
+  authorities: [tma-1970]
   brief: >-
     Set out who is brought into Self Assessment and how. Cover the notice to
     file as the thing that actually creates the obligation, the statutory
@@ -50,6 +54,7 @@
   title: The return itself - content, formats and schedules
   section: The Self Assessment lifecycle
   output: docs/lifecycle/the-return.md
+  authorities: [tma-1970]
   brief: >-
     Describe what a Self Assessment return legally is and what it must
     contain: the main return, supplementary pages and the income sources they
@@ -69,6 +74,7 @@
   title: Deadlines, amendments and corrections
   section: The Self Assessment lifecycle
   output: docs/lifecycle/deadlines-and-amendments.md
+  authorities: [tma-1970]
   brief: >-
     A precise, tabulated account of every Self Assessment date: filing
     deadlines (paper and online), the notice-issued-late variants, the
@@ -87,6 +93,7 @@
   title: Payments, payments on account and collection
   section: The Self Assessment lifecycle
   output: docs/lifecycle/payments-and-collection.md
+  authorities: [tma-1970]
   brief: >-
     How the money moves: balancing payment, payments on account and how they
     are calculated and reduced, the de minimis and majority-of-tax-deducted
@@ -105,6 +112,7 @@
   title: Records, information powers and inspections
   section: The Self Assessment lifecycle
   output: docs/lifecycle/records-and-information.md
+  authorities: [tma-1970, finance-act-2008]
   brief: >-
     What records a Self Assessment taxpayer must keep, for how long, and what
     happens if they don't. Then HMRC's information and inspection powers as
@@ -121,6 +129,7 @@
   title: Enquiries into a return
   section: The Self Assessment lifecycle
   output: docs/lifecycle/enquiries.md
+  authorities: [tma-1970]
   brief: >-
     The enquiry regime end to end: the enquiry window and how it is
     calculated, what opening an enquiry does, the scope of an enquiry into an
@@ -139,6 +148,7 @@
   title: Assessments, discovery and time limits
   section: The Self Assessment lifecycle
   output: docs/lifecycle/assessments-and-discovery.md
+  authorities: [tma-1970]
   brief: >-
     Determinations where no return is filed, discovery assessments and the
     conditions that unlock them, the staleness and protection arguments, and
@@ -157,6 +167,7 @@
   title: Penalties
   section: The Self Assessment lifecycle
   output: docs/lifecycle/penalties.md
+  authorities: [finance-act-2008, finance-act-2009, finance-act-2021]
   brief: >-
     Every penalty a Self Assessment taxpayer can incur, as tables: late
     filing (including the daily and 6/12-month tiers), late payment,
@@ -176,6 +187,7 @@
   title: Appeals, reviews and the tribunals
   section: The Self Assessment lifecycle
   output: docs/lifecycle/appeals-and-reviews.md
+  authorities: [tma-1970, si-ftt-tax-chamber-rules-2009]
   brief: >-
     What can be appealed and what cannot, how and when an appeal is made,
     late appeals, HMRC's internal review (offered and required), postponement
@@ -198,6 +210,7 @@
   title: What income is charged, and where it goes on the return
   section: What the return computes
   output: docs/computation/income-charges.md
+  authorities: [itepa-2003, ittoia-2005, ita-2007, tcga-1992, sscba-1992]
   brief: >-
     Map the income types a Self Assessment return has to handle onto the
     provisions that charge them and the helpsheets that explain them:
@@ -219,6 +232,7 @@
   title: Reliefs, claims and elections
   section: What the return computes
   output: docs/computation/reliefs-and-claims.md
+  authorities: [ita-2007, tcga-1992]
   brief: >-
     The reliefs and claims a Self Assessment return commonly carries: EIS,
     SEIS, CITR, charitable giving, qualifying loan interest, averaging,
@@ -240,6 +254,7 @@
   title: Rates, allowances and thresholds
   section: What the return computes
   output: docs/computation/rates-and-thresholds.md
+  authorities: [ita-2007, hmrc-rates-allowances]
   brief: >-
     Tabulate the rates, allowances and thresholds the sources give, keyed by
     tax year, with the source and its date for each. Where the mirrored
@@ -261,6 +276,7 @@
   title: HMRC's published interpretation - manuals, SPs, briefs and concessions
   section: HMRC's published position
   output: docs/hmrc/interpretation.md
+  authorities: [hmrc-manual-salf, hmrc-manual-sam, hmrc-statements-of-practice, hmrc-rc-briefs, hmrc-escs]
   brief: >-
     Explain the status and weight of each kind of HMRC publication -
     internal manuals, Statements of Practice, Revenue & Customs Briefs,
@@ -280,13 +296,13 @@
   title: Case law - what the tribunals are deciding
   section: Case law
   output: docs/case-law/themes.md
+  authorities: [caselaw-ftt-tc, caselaw-ut-tcc]
   brief: >-
-    From the mirrored tribunal decision listings, describe the recurring
-    themes in Self Assessment litigation - reasonable excuse, discovery,
-    validity of notices, penalty quantum, late appeals - and name the
-    decisions the sources actually list. Be explicit that these are recent
-    listings, not a comprehensive or precedential survey, and that the
-    mirror captures decision metadata rather than full judgments.
+    The mirrored tribunal feeds contain titles, dates, citations and links,
+    not judgment text. Produce a recent-decisions listing and explain how to
+    read the linked judgments at the source. Do not infer themes, holdings,
+    reasoning, statutory interpretation or precedential weight from titles.
+    Be explicit that this is not a comprehensive or precedential survey.
   select:
     docs: [legal-system/case-law]
     relevance: [core, related, none]
@@ -297,6 +313,7 @@
   title: Making Tax Digital for Income Tax
   section: Changes ahead
   output: docs/change/making-tax-digital.md
+  authorities: [tma-1970, si-income-tax-digital-requirements-2021, govuk-mtd-income-tax-guide]
   brief: >-
     What the mirrored sources say about MTD for Income Tax Self Assessment -
     who is in scope and from when, the thresholds, quarterly updates and the
@@ -317,6 +334,7 @@
   title: Rules inventory - the machine-implementable rules found in the sources
   section: Reference implementation
   output: docs/reference-implementation/rules-inventory.md
+  authorities: [tma-1970, itepa-2003, ittoia-2005, ita-2007, tcga-1992, finance-act-2008, finance-act-2009, finance-act-2021]
   brief: >-
     Produce an inventory, as tables, of every rule in the notes that could be
     implemented in code. Group by lifecycle stage (notification, filing,
@@ -336,6 +354,7 @@
   title: Data requirements for a head-of-duty implementation
   section: Reference implementation
   output: docs/reference-implementation/data-requirements.md
+  authorities: [tma-1970, itepa-2003, ittoia-2005, ita-2007, tcga-1992]
   brief: >-
     Working only from the notes, derive what a head-of-duty system for Self
     Assessment would need to hold: the entities (taxpayer, notice, return,

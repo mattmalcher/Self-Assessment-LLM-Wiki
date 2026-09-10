@@ -139,6 +139,20 @@ def test_an_empty_body_still_produces_a_page(monkeypatch, tmp_path):
     assert "*(no body content)*" in (tmp_path / ENTRY["output"]).read_text()
 
 
+def test_a_multipart_govuk_guide_includes_every_part(monkeypatch, tmp_path):
+    guide = doc("/guidance/self-assessment", "Self Assessment", "",
+                details={"parts": [
+                    {"title": "Register", "body": "<p>Tell HMRC.</p>"},
+                    {"title": "File", "body": "<p>Send the return.</p>"},
+                ]})
+    monkeypatch.setattr(govuk_content, "conditional_get",
+                        FakeApi({"/guidance/self-assessment": guide}))
+    govuk_content.fetch_single(ENTRY, {})
+    text = (tmp_path / ENTRY["output"]).read_text()
+    assert "## Register" in text and "Tell HMRC." in text
+    assert "## File" in text and "Send the return." in text
+
+
 # --- GOV.UK: html attachments (helpsheets) ---------------------------------
 
 def attachment(url: str, title: str) -> dict:

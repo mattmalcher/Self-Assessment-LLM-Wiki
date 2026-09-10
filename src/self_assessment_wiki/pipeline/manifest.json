@@ -23,9 +23,107 @@
     },
     "last_checked": "2026-09-04"
   },
+  "finance-act-2008": {
+    "content_hash": "06278942b3d5d91f6c84647fbac2534b5125119dce469b3a58a7a788b17b575b",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+    },
+    "last_checked": "2026-09-10"
+  },
+  "finance-act-2009": {
+    "content_hash": "00c048eb568726fece829d35a1a7a1ca17249307755852ca2ea461f4ef4d06cb",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+    },
+    "last_checked": "2026-09-10"
+  },
+  "finance-act-2021": {
+    "content_hash": "4f354b41962b8b1522c9736f43e2acc2d82f54c0ed4bb43c790ec1fa4ee49fee",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+    },
+    "last_checked": "2026-09-10"
+  },
+  "govuk-mtd-income-tax-guide": {
+    "content_hash": "ce9ceb4662e9a6dab462dd7b98bac75b269408063b638223c2c3fd8e7cf552d4",
+    "last_checked": "2026-09-10"
+  },
   "govuk-sa-detailed-information": {
-    "content_hash": "d96d31f2ed6a51c3c3beef0e47be35c14f57659fcacd817f29cb284c6affd011",
-    "last_checked": "2026-09-04",
+    "content_hash": "c9bef32c45bd50b5f54dd1bbe2cb272dde6a0b0ba8f099940e7fec2a7ed293ed",
+    "items": {
+      "10673e65-387e-4c50-99c8-b550cd2fdcd2": {
+        "content_hash": "7962354c0a8356f0ba01694286c1d6bae70569d8a599f8a10d186a3b8e4c8369",
+        "upstream_updated_at": "2026-07-08T12:48:19+01:00"
+      },
+      "2df6d0c1-c3d4-4c44-ae5e-ee046446819e": {
+        "content_hash": "8a7643a2cfd48e3b9dea1180b661a92cc9c629457a3cbe0435d13e627045182e",
+        "upstream_updated_at": "2024-12-17T09:38:48+00:00"
+      },
+      "32b54f44-fca1-4480-b13b-ddeb0b0238e1": {
+        "content_hash": "3676c44e0f89d8d920ad477e90b46ba339ee64ec0c45050916b677e340ae2bb0",
+        "upstream_updated_at": "2021-06-16T09:18:52+01:00"
+      },
+      "37858d69-98a3-456a-b34a-4372fa127aff": {
+        "content_hash": "209497662f5fb6ea172f05ce8bea17f9163aaee20da2f9eee024c34deee56e31",
+        "upstream_updated_at": "2019-05-01T11:33:10+01:00"
+      },
+      "3d01627a-1185-4253-b21b-ec379255a717": {
+        "content_hash": "0d7c291c95951855ff70e2b66d3df7907b9388998a8a65c1104ccf477b443ff7",
+        "upstream_updated_at": "2024-12-17T09:27:06+00:00"
+      },
+      "40dab11d-12c3-4c55-a429-74138c6f7132": {
+        "content_hash": "c8f8562a984cf8474dd73633619f212e81800f43905cc0a2bbb60ed1bea2145e",
+        "upstream_updated_at": "2024-10-29T15:36:42+00:00"
+      },
+      "55ebfdd7-dea5-4158-885c-3e5f13493b6f": {
+        "content_hash": "1493b9c2d7479753d41927de9c590dbd4f0953775bf64ce5c7ba1ec82ee9c251",
+        "upstream_updated_at": "2014-11-24T15:05:09+00:00"
+      },
+      "6a2bf66e-2313-4204-afd5-9940de5e1d66": {
+        "content_hash": "f1b31b8dc8cf321d2b3460a2f3be4e7ea326ec615cf141249b39416d00e3b7bf",
+        "upstream_updated_at": "2015-01-15T16:17:28+00:00"
+      },
+      "6aef8ea0-2d0b-4008-9a96-2afdbb41795c": {
+        "content_hash": "1df2471f7e859f7937eac7880c058cc000c48382b43e0f24b146532daf59baa8",
+        "upstream_updated_at": "2025-06-02T15:19:43+01:00"
+      },
+      "7103766a-fc9a-4acd-9040-d6cca9e9e7df": {
+        "content_hash": "bac67bebe7f4b7e608de1179807d174deec6efe07eaa4c412f7f486645b41314",
+        "upstream_updated_at": "2026-07-01T14:37:55+01:00"
+      },
+      "778f10f6-bc1a-48e2-ad30-516ad9f04ccb": {
+        "content_hash": "945f13b545cd320b84380c743fe7ded3e0c88a26b505152751074223e51790b7",
+        "upstream_updated_at": "2015-06-17T14:42:46+01:00"
+      },
+      "7a0cd1a5-5492-4c3d-8757-f994c22f69c5": {
+        "content_hash": "4abfcb30de788fde282d084b8d9e4cccc9f643484a091ab687a51b32dc3c0635",
+        "upstream_updated_at": "2014-12-11T15:45:20+00:00"
+      },
+      "91fef6f6-3a59-42ab-a14d-42c4e5eee1a1": {
+        "content_hash": "e3b88c84245fca13e8b017d7dd6e002c0733a5e6a389e9e46da48cc715773037",
+        "upstream_updated_at": "2024-11-03T10:54:30+00:00"
+      },
+      "999dd0f5-41d3-4a63-8bb9-f00a68c129a8": {
+        "content_hash": "66f54be7aa0a448fa2ef6996c7e4b7f3d189d83ed5a732bda06cd40392ab0c17",
+        "upstream_updated_at": "2024-11-22T15:06:29+00:00"
+      },
+      "a7aef437-da3d-4d93-90b9-cbb10ab9a7ab": {
+        "content_hash": "9e5cba5e31fcbd0bb96e7b49cda8ac613a6be2873d0e8596c6ae8ff0aa02fb6c",
+        "upstream_updated_at": "2015-03-23T15:44:11+00:00"
+      },
+      "b46205c0-b021-4550-9214-ad3758a70090": {
+        "content_hash": "75e8f0fa5f7f320625da73d02770036ccfb7ebfcd15cc128dd7cbbd1612e0a84",
+        "upstream_updated_at": "2025-12-16T13:58:43+00:00"
+      },
+      "f29ca4a8-8ed9-4b0f-bb6a-11e373095dee": {
+        "content_hash": "8495338cd4f8b37bfe2ad032fd264d7bb41b4ae9071257a8a4c5d111180d483f",
+        "upstream_updated_at": "2024-11-05T16:46:12+00:00"
+      }
+    },
+    "last_checked": "2026-09-10",
     "upstream_updated_at": "2024-02-12T00:00:00+00:00"
   },
   "hmrc-escs": {
@@ -59,8 +157,126 @@
     "upstream_updated_at": "2026-09-02T11:39:31+01:00"
   },
   "hmrc-rates-allowances": {
-    "content_hash": "1723b8ba64c68efed7a3d775738ffaf186969d72b83b9e7886a2e1ed03f9d110",
-    "last_checked": "2026-09-04",
+    "content_hash": "d84f768f22bd9484632d2889a7c385df3a5e4618aadda00fb51ac5b79bd11ef4",
+    "items": {
+      "2402bb51-bd99-4e6c-aee5-50189c96abd4": {
+        "content_hash": "1496a4c910f84d1b4bc85a082cad3ef24bdcd7220eb80f5feb352bad0c532e0b",
+        "upstream_updated_at": "2026-08-21T09:00:00+01:00"
+      },
+      "38f74cbd-814f-46d6-8d9a-b1ef79aa79a9": {
+        "content_hash": "733bc84f51fed70d6599313beb41305db772dbd4df58fa3a1f2388d25c9763dd",
+        "upstream_updated_at": "2020-03-27T16:28:35+00:00"
+      },
+      "394599a9-d7b4-4adc-9036-cf8b0b914e21": {
+        "content_hash": "540044a1e94946302b688f2c18b2c8fffca3a49a8f8e9b47a92c05eb2d1e0e02",
+        "upstream_updated_at": "2025-10-15T07:00:00+01:00"
+      },
+      "5ef6c7ce-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "7c5f19bc8ffb63264255fd9748ce6a329f796cdfb523557050eec3ddf585a578",
+        "upstream_updated_at": "2026-07-10T11:11:54+01:00"
+      },
+      "5fe614f9-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "1c8b00a4709489e29805dcb5979f9bc56edc645a0f5d25298fa85bc87cc82de4",
+        "upstream_updated_at": "2026-03-09T13:45:19+00:00"
+      },
+      "5fe8fb7c-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "09a4a55d2b6953701d4751dab005310d4e2bc6177ca8c0119febabd6ed0e7ccf",
+        "upstream_updated_at": "2026-04-06T00:15:04+01:00"
+      },
+      "5fe9086e-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "10360cc47943819f2096437e12523001a5d33e1e34b0dcddc550141d0fb07a2f",
+        "upstream_updated_at": "2026-04-06T00:15:13+01:00"
+      },
+      "5fe92c38-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "9a05a1eead495dbe864b81f7b2cff980487f56ad8dd58ce08067c5eeb6128fc2",
+        "upstream_updated_at": "2025-04-01T08:28:36+01:00"
+      },
+      "5fe93558-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "c7db2e4ccc7ca4e7e73db8c9d0d21e15a66cced89f8a61ae5406be6664510d72",
+        "upstream_updated_at": "2026-04-01T14:03:33+01:00"
+      },
+      "5fe93b39-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "ab9c17b01515147a2de86d85e2dc87dd37bd3259ecc41deb131163c5e3c0b2c6",
+        "upstream_updated_at": "2017-08-04T15:52:47+01:00"
+      },
+      "5fe93cb6-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "8e741bc2010d8188f0e675c69ce21988f5a709be13adb6851f112348b257fcd1",
+        "upstream_updated_at": "2025-11-26T14:11:56+00:00"
+      },
+      "5fe9653c-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "042313ab44948f690cb129634b8f17dcfdb645477f77614a3d57a4ca9d98cd70",
+        "upstream_updated_at": "2026-04-01T14:02:33+01:00"
+      },
+      "5fe97587-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "7a27be9922cd7c79cd9d38aabea07e89f7428b93fdbe69ecfdc75c4811ee3df4",
+        "upstream_updated_at": "2026-08-12T12:53:51+01:00"
+      },
+      "5fe97a58-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "d38fec5c3d3b6eef0afbf6af5871132f63a24ecb28c1be55c3fd0c5db77b5f45",
+        "upstream_updated_at": "2025-11-26T20:48:35+00:00"
+      },
+      "5fe9d687-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "562cafe7d1341600008df69d3d5c207e274fee073ef2c711693ff4e3940a1074",
+        "upstream_updated_at": "2025-12-23T15:24:21+00:00"
+      },
+      "5feb6b64-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "99d039523bbf8d4dd406f7e370abf6bbc45b83d2c4e4be023528c2ba8bcc127c",
+        "upstream_updated_at": "2020-12-01T10:06:22+00:00"
+      },
+      "5fed2ac6-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "242d0af82669c461a1a39e626bff4c19487b68f6d9e11f51484392d5e3d5d169",
+        "upstream_updated_at": "2026-05-21T14:00:04+01:00"
+      },
+      "5fee0760-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "70830056735e27bae8590c820370bb19c39affa2241fbf9cd6d7b709aaccf63a",
+        "upstream_updated_at": "2026-04-01T14:03:05+01:00"
+      },
+      "60283327-7631-11e4-a3cb-005056011aef": {
+        "content_hash": "451282211c648f2ec1e3e31982548a89a20ce61d468ba1be750f4b415377d684",
+        "upstream_updated_at": "2026-03-06T09:08:13+00:00"
+      },
+      "702f1678-48a6-49b1-b8c5-c569d7ec9258": {
+        "content_hash": "d5d4307d8bebdc61ae998bc641263909cf818758a6268863f31fcecb073733f1",
+        "upstream_updated_at": "2026-09-01T00:15:03+01:00"
+      },
+      "84649e2f-9695-4f2d-8e35-1bb69dfc03ca": {
+        "content_hash": "977906d4849554b4028799fc65805d4526969e3fdd24be6b42613c7334cc72fe",
+        "upstream_updated_at": "2022-11-03T00:00:00+00:00"
+      },
+      "967caf7c-a4eb-4cec-9a37-a29be057738e": {
+        "content_hash": "ae0e08e048dfff21f2b5b21e288f38b5644496a1094c3a3a1fb7d68ec4563938",
+        "upstream_updated_at": "2025-10-15T07:00:00+01:00"
+      },
+      "9bb279ec-104c-40a8-9c7b-7c62cfbae6a7": {
+        "content_hash": "65363ea4a3c1a3dfd9efa48433c3dbb055b7222f03a797f0703e3c6408449783",
+        "upstream_updated_at": "2026-03-01T00:01:02+00:00"
+      },
+      "a254c6f2-e551-4332-9bfc-bbcfa286626b": {
+        "content_hash": "ab13a6fef34434883590050c6cd72cfd4a57289be5098ae697b13469f091e753",
+        "upstream_updated_at": "2026-04-13T15:20:57+01:00"
+      },
+      "c6ebe9cd-1abd-416c-8cfb-d7ede48e5dca": {
+        "content_hash": "e0a9bda823ae1ac0033f1fcf45724743f5db952786bcda19ddd47bc8da607659",
+        "upstream_updated_at": "2025-11-27T14:23:14+00:00"
+      },
+      "d10cd955-7d62-460b-8e5d-dd03ce89ff8a": {
+        "content_hash": "065e371d3f317aec932e8ac87c4c8fe3fc853bc25fbff3bcdbf1c9b9c23187e6",
+        "upstream_updated_at": "2026-02-01T00:15:01+00:00"
+      },
+      "d757681e-4ff7-43d4-91e4-a287ebf2ef58": {
+        "content_hash": "472227cefcb442041eae13eda9a7ea65729d599911dfa6ccaddd37a5b834f48c",
+        "upstream_updated_at": "2025-10-15T07:00:00+01:00"
+      },
+      "eb031ebb-7078-4879-a124-33753c4ca0bd": {
+        "content_hash": "ecf87ffda50d808c477c76053be9facb75e4dfe6a4e7e8591bb1cf4ded08ca0c",
+        "upstream_updated_at": "2026-04-01T00:15:02+01:00"
+      },
+      "f15311fc-5dca-494e-b388-4b3c7f346a19": {
+        "content_hash": "1ea0fac019d05a34d200e4bf2cb90058babf6634e0bf80b09608a87e97ea6586",
+        "upstream_updated_at": "2022-02-07T15:13:13+00:00"
+      }
+    },
+    "last_checked": "2026-09-10",
     "upstream_updated_at": "2025-08-22T11:48:48+01:00"
   },
   "hmrc-rc-briefs": {
@@ -78,6 +294,14 @@
     "last_checked": "2026-09-04",
     "upstream_updated_at": "2026-08-14T10:54:46+01:00"
   },
+  "ita-2007": {
+    "content_hash": "32af4217f9a2272027882ca01246d8b8ba19590b0748c40514ea2698347e787b",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+    },
+    "last_checked": "2026-09-10"
+  },
   "itepa-2003": {
     "content_hash": "92d577c4352b6ef49ec7a45e0560643956dab4b7672464e69b504fd0ba3c8c7e",
     "http": {
@@ -85,6 +309,14 @@
       "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
     },
     "last_checked": "2026-09-04"
+  },
+  "ittoia-2005": {
+    "content_hash": "6d5469fc090aa499c9e0e91b58a6271dd9863cc88d319f1a3a87ace5f5942aee",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+    },
+    "last_checked": "2026-09-10"
   },
   "sa-helpsheets": {
     "content_hash": "505298386934501660e6cee377a3c8f5674661905b80a9190d71c86a663dcc39",
@@ -189,11 +421,35 @@
     },
     "last_checked": "2026-09-04"
   },
+  "si-income-tax-digital-requirements-2021": {
+    "content_hash": "1dfcfef091e2dde908a6ae908231aca63e905fc952ce06d0a12fb90473c1e2b4",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+    },
+    "last_checked": "2026-09-10"
+  },
+  "sscba-1992": {
+    "content_hash": "d5fb729ad83a454f0e78a37da5aa574ce235f25c556c7ea0015fec5add61d06d",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+    },
+    "last_checked": "2026-09-10"
+  },
   "taxaid-self-assessment": {
     "content_hash": "23cfea070c40fe8966c13eef7849391b1d6655618be5cdd480eacf6c376978b4",
     "http": {
       "etag": null,
       "last_modified": null
+    },
+    "last_checked": "2026-09-10"
+  },
+  "tcga-1992": {
+    "content_hash": "a0e379eb99784f122361509cf7874e6ae68afce2729e7ee9bd10679c6480ca4c",
+    "http": {
+      "etag": null,
+      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
     },
     "last_checked": "2026-09-10"
   },

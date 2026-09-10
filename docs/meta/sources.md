@@ -8,7 +8,7 @@ Generated from `pipeline/sources.yml` - **do not hand-edit this file**, it is ov
 
 These are the *raw* sources. The fetch pipeline mirrors them into `corpus/` in the repository; the wiki pages you are reading are written from that mirror by the synthesis layer - see [How this wiki stays current](refresh-process.md).
 
-23 registered sources: 20 mirrored, 3 registered-only.
+32 registered sources: 29 mirrored, 3 registered-only.
 
 ## external-explainers
 
@@ -22,7 +22,8 @@ These are the *raw* sources. The fetch pipeline mirrors them into `corpus/` in t
 | Source | Status | Type | Last checked | Upstream updated |
 |---|---|---|---|---|
 | [sa-helpsheets](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/hmrc-publications/customer-facing-guidance/helpsheets/index.md) | fetch | `govuk_content_collection` | 2026-09-04 | 2014-07-04T00:00:00+01:00 |
-| [govuk-sa-detailed-information](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md) | fetch | `govuk_content_collection` | 2026-09-04 | 2024-02-12T00:00:00+00:00 |
+| [govuk-sa-detailed-information](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md) | fetch | `govuk_content_collection` | 2026-09-10 | 2024-02-12T00:00:00+00:00 |
+| [govuk-mtd-income-tax-guide](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/hmrc-publications/customer-facing-guidance/making-tax-digital-income-tax.md) | fetch | `govuk_content_manual` | 2026-09-10 | - |
 | VAT notices (numerical order) | registered | `govuk_content_collection` | - | - |
 
 ## hmrc-publications.customer-facing-tools
@@ -54,7 +55,7 @@ These are the *raw* sources. The fetch pipeline mirrors them into `corpus/` in t
 
 | Source | Status | Type | Last checked | Upstream updated |
 |---|---|---|---|---|
-| [hmrc-rates-allowances](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/hmrc-publications/rates-and-allowances.md) | fetch | `govuk_content_collection` | 2026-09-04 | 2025-08-22T11:48:48+01:00 |
+| [hmrc-rates-allowances](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/hmrc-publications/rates-and-allowances.md) | fetch | `govuk_content_collection` | 2026-09-10 | 2025-08-22T11:48:48+01:00 |
 
 ## legal-system.case-law
 
@@ -68,13 +69,21 @@ These are the *raw* sources. The fetch pipeline mirrors them into `corpus/` in t
 | Source | Status | Type | Last checked | Upstream updated |
 |---|---|---|---|---|
 | [crca-2005](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/crca-2005.md) | fetch | `legislation` | 2026-09-04 | - |
+| [finance-act-2008](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/finance-act-2008.md) | fetch | `legislation` | 2026-09-10 | - |
+| [finance-act-2009](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/finance-act-2009.md) | fetch | `legislation` | 2026-09-10 | - |
+| [finance-act-2021](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/finance-act-2021.md) | fetch | `legislation` | 2026-09-10 | - |
 | [itepa-2003](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/itepa-2003.md) | fetch | `legislation` | 2026-09-04 | - |
+| [ittoia-2005](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/ittoia-2005.md) | fetch | `legislation` | 2026-09-10 | - |
+| [ita-2007](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/ita-2007.md) | fetch | `legislation` | 2026-09-10 | - |
+| [sscba-1992](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/sscba-1992.md) | fetch | `legislation` | 2026-09-10 | - |
+| [tcga-1992](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/tcga-1992.md) | fetch | `legislation` | 2026-09-10 | - |
 | [tma-1970](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/primary-legislation/acts/tma-1970.md) | fetch | `legislation` | 2026-09-04 | - |
 
 ## legal-system.secondary-legislation
 
 | Source | Status | Type | Last checked | Upstream updated |
 |---|---|---|---|---|
+| [si-income-tax-digital-requirements-2021](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/secondary-legislation/income-tax-digital-requirements-regulations-2021.md) | fetch | `legislation` | 2026-09-10 | - |
 | Statutory Instruments search (tax) | registered | `web_page` | - | - |
 | [si-ftt-tax-chamber-rules-2009](https://github.com/mattmalcher/Self-Assessment-LLM-Wiki/blob/main/corpus/legal-system/secondary-legislation/tribunal-procedure-ftt-tax-chamber-rules-2009.md) | fetch | `legislation` | 2026-09-04 | - |
 
