@@ -10,7 +10,7 @@ from __future__ import annotations
 
 from datetime import date
 
-from . import compose, extract, nav, store
+from . import compose, extract, nav, schema, store
 from .config import DOCS_DIR
 
 OUTPUT = DOCS_DIR / "meta" / "wiki-status.md"
@@ -24,10 +24,14 @@ def render() -> str:
 
     total = sum(len(p.chunks) for p in plans)
     done = sum(len(p.chunks) - len(p.todo) for p in plans)
+    invalid = sum(len(p.invalid) for p in plans)
     relevance: dict[str, int] = {}
     for data in extracts.values():
         for entry in data.get("chunks", {}).values():
-            key = (entry.get("note") or {}).get("relevance", "unknown")
+            # An unusable note is counted as invalid, not as a relevance
+            # judgement it never made.
+            key = ("invalid" if not schema.entry_is_valid(entry)
+                   else (entry.get("note") or {}).get("relevance", "unknown"))
             relevance[key] = relevance.get(key, 0) + 1
 
     lines = [
@@ -47,14 +51,17 @@ def render() -> str:
         "",
         f"{done} of {total} corpus chunks extracted "
         f"({(100 * done / total) if total else 0:.0f}%), across "
-        f"{len(plans)} mirrored documents.",
+        f"{len(plans)} mirrored documents. Only notes that pass the extract "
+        f"schema count as extracted"
+        + (f"; {invalid} cached note(s) do not, and are queued for "
+           f"re-extraction." if invalid else "."),
         "",
         "Chunks by Self Assessment relevance, as judged at extraction:",
         "",
         "| Relevance | Chunks |",
         "|---|---|",
     ]
-    for key in ("core", "related", "none", "unknown"):
+    for key in ("core", "related", "none", "unknown", "invalid"):
         if relevance.get(key):
             lines.append(f"| {key} | {relevance[key]} |")
     lines += [

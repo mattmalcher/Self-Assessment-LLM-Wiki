@@ -7,12 +7,18 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from dataclasses import dataclass, field
 from pathlib import Path
 
-from . import store
+from . import schema, store
 from .chunk import Chunk, chunk_file
 from .config import CORPUS_DIR, PROMPTS_DIR
-from .llm import Backend, extract_json
+from .llm import Backend, LLMError, extract_json
 
 SYSTEM = (PROMPTS_DIR / "extract.md").read_text()
+
+# How many times a chunk is re-asked when the model returns something that
+# isn't a valid note. Each attempt is a fresh `backend.call` (which has its own
+# backoff for transport failures) with the validator's complaints appended, so
+# this is a schema-repair budget, not a flake budget.
+VALIDATION_ATTEMPTS = 3
 
 # Recorded on every cached note. The chunk hash alone cannot tell a note
 # written under an older prompt (or a weaker model) from a current one, so
@@ -28,6 +34,9 @@ class Plan:
     todo: list[Chunk]
     orphans: int
     stale_prompt: list[Chunk] = field(default_factory=list)
+    # Cached chunks whose note fails `schema.validate_note`. They are a subset
+    # of `todo`: a malformed note is work outstanding, not coverage.
+    invalid: list[Chunk] = field(default_factory=list)
 
 
 def corpus_docs(only: list[str] | None) -> list[Path]:
@@ -48,13 +57,17 @@ def plan(only: list[str] | None = None) -> list[Plan]:
         doc_rel = path.relative_to(CORPUS_DIR).as_posix()
         data = store.load(doc_rel)
         live = {c.hash for c in chunks}
-        orphans = len([h for h in data["chunks"] if h not in live])
-        todo = [c for c in chunks if c.hash not in data["chunks"]]
+        cached = data["chunks"]
+        orphans = len([h for h in cached if h not in live])
+        invalid = [c for c in chunks
+                   if c.hash in cached and not schema.entry_is_valid(cached[c.hash])]
+        invalid_hashes = {c.hash for c in invalid}
+        todo = [c for c in chunks if c.hash not in cached or c.hash in invalid_hashes]
         stale_prompt = [c for c in chunks
-                        if c.hash in data["chunks"]
-                        and data["chunks"][c.hash].get("prompt_hash") != PROMPT_HASH]
+                        if c.hash in cached and c.hash not in invalid_hashes
+                        and cached[c.hash].get("prompt_hash") != PROMPT_HASH]
         plans.append(Plan(doc=doc_rel, meta=meta, chunks=chunks, todo=todo, orphans=orphans,
-                          stale_prompt=stale_prompt))
+                          stale_prompt=stale_prompt, invalid=invalid))
     return plans
 
 
@@ -70,6 +83,45 @@ def _prompt(chunk: Chunk, meta: dict) -> str:
         "--- END SOURCE CHUNK ---\n\n"
         "Return the JSON object now."
     )
+
+
+def _repair_prompt(base: str, errors: list[str]) -> str:
+    """Re-ask for the same chunk, quoting what was wrong with the last answer."""
+    complaints = "\n".join(f"- {e}" for e in errors[:10])
+    return (
+        f"{base}\n\n"
+        "Your previous answer for this chunk did not match the required "
+        f"schema:\n{complaints}\n\n"
+        "Return the complete JSON object again, with every documented key "
+        "present, every value a string, no extra keys, and a non-empty `ref` "
+        "on every obligation, deadline, amount, penalty and definition."
+    )
+
+
+def extract_note(backend: Backend, chunk: Chunk, meta: dict) -> dict:
+    """One chunk -> one *valid* note, or an LLMError.
+
+    A response that isn't JSON, or is JSON of the wrong shape, is a model
+    failure the model can fix, so it goes back with the validator's complaints
+    rather than being cached as-is. Nothing invalid ever reaches the caller.
+    """
+    base = _prompt(chunk, meta)
+    prompt = base
+    errors: list[str] = []
+    for attempt in range(VALIDATION_ATTEMPTS):
+        raw = backend.call(SYSTEM, prompt)
+        try:
+            note = extract_json(raw)
+        except LLMError as exc:
+            errors = [f"note: {exc}"]
+        else:
+            errors = schema.validate_note(note)
+            if not errors:
+                return note
+        if attempt < VALIDATION_ATTEMPTS - 1:
+            prompt = _repair_prompt(base, errors)
+    raise LLMError(f"invalid note after {VALIDATION_ATTEMPTS} attempts: "
+                   f"{'; '.join(errors[:5])}")
 
 
 def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = None,
@@ -92,9 +144,15 @@ def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = 
         if not todo and not pruned:
             continue
         if verbose:
-            restale = len([c for c in todo if c.hash in data["chunks"]])
+            invalid_hashes = {c.hash for c in p.invalid}
+            broken = len([c for c in todo if c.hash in invalid_hashes])
+            restale = len([c for c in todo if c.hash in data["chunks"]]) - broken
+            extra = ", ".join(part for part in (
+                f"{broken} re-run for a malformed cached note" if broken else "",
+                f"{restale} re-run for a stale prompt" if restale else "",
+            ) if part)
             print(f"{p.doc}: {len(todo)} to extract"
-                  f"{f' ({restale} re-run for a stale prompt)' if restale else ''}, "
+                  f"{f' ({extra})' if extra else ''}, "
                   f"{len(p.chunks) - len(p.todo)} cached, {pruned} pruned", flush=True)
 
         data["doc"] = p.doc
@@ -106,12 +164,12 @@ def run(backend: Backend, *, only: list[str] | None = None, limit: int | None = 
 
         if todo:
             with ThreadPoolExecutor(max_workers=concurrency) as pool:
-                futures = {pool.submit(backend.call, SYSTEM, _prompt(c, p.meta)): c for c in todo}
+                futures = {pool.submit(extract_note, backend, c, p.meta): c for c in todo}
                 try:
                     for future in as_completed(futures):
                         chunk = futures[future]
                         try:
-                            note = extract_json(future.result())
+                            note = future.result()
                         except Exception as exc:  # one bad chunk shouldn't sink the doc
                             failed += 1
                             print(f"  ! {p.doc} chunk {chunk.index}: {exc}", file=sys.stderr)

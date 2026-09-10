@@ -51,7 +51,10 @@ the model can spend turns exploring whatever repo it is run from), plus
 `~/.claude/projects`).
 
 Failures retry with backoff; a chunk that fails five times is reported and
-skipped rather than sinking the run. A refusal that looks like a rate limit
+skipped rather than sinking the run. A response that parses but isn't a valid
+note is a separate, cheaper failure: it goes back to the model up to
+`extract.VALIDATION_ATTEMPTS` times with the validator's complaints appended
+(see "The note schema" below). A refusal that looks like a rate limit
 backs off 60s → 5min → 10min → 15min rather than the few seconds an ordinary
 flake gets, because a subscription window resets in minutes — the difference
 between an unattended overnight run and a babysat one.
@@ -103,6 +106,25 @@ big run, not after.
 Composition is ~17 calls for the whole site, and only runs for pages whose
 selected notes changed.
 
+## The note schema
+
+`prompts/extract.md` describes the note shape; `schema.py` enforces it. A note
+that fails validation is not a note: it is never written to `extracts/`, never
+counted as cached by `status`/`report`, and never selected for a page.
+
+Validation is strict on purpose - every documented key present, every value a
+string, every `ref` non-empty, and no keys the prompt never asked for. Before
+it existed, `llm.extract_json` returned the first balanced `{...}` it found and
+`extract.run` cached it: three committed records turned out to be a single
+nested obligation object rather than a note, and because their chunk hash was
+present the planner counted them as done while the selector silently dropped
+them. Their source text had disappeared between stages with `status` reporting
+full coverage.
+
+A cached note that fails the schema now shows up as work to do - `status`
+counts it under "invalid" and the next `extract` run re-asks for that chunk, no
+flag needed.
+
 ## The invalidation contract
 
 A page's `input_hash` in `manifest.json` decides whether composing it again
@@ -137,6 +159,7 @@ bumping it restages every page.
 | `prompts/extract.md` | system prompt for stage 2 — defines the note schema |
 | `prompts/compose.md` | system prompt for stage 3 — citation and sourcing rules |
 | `chunk.py` | heading-aware chunker, stable hashes |
+| `schema.py` | the note schema, enforced - nothing invalid is ever cached |
 | `llm.py` | the four backends behind one `complete()` |
 | `extract.py` | stage 2 driver + cache planning |
 | `compose.py` | stage 3: note selection, staleness, page assembly |
