@@ -12,3 +12,20 @@
   wrong or out of date &mdash; check the cited source. For official guidance
   see <a href="https://www.gov.uk/self-assessment-tax-returns">GOV.UK</a>.
 {% endblock %}
+
+{#
+  Pages composed before the authority contract have no coverage field. Until
+  paid recomposition adds the deterministic page-level notice, fail visibly
+  and conservatively instead of letting an old page imply complete coverage.
+#}
+{% block content %}
+  {% if page and page.meta and page.meta.generated and not page.meta.authority_coverage %}
+    <div class="admonition warning">
+      <p class="admonition-title">Minimum authority coverage not yet assessed</p>
+      <p>This generated page predates the source-coverage contract. Treat it as
+      incomplete and check the <a href="{{ 'meta/wiki-status.md' | url }}">wiki
+      status</a> for its current source gaps.</p>
+    </div>
+  {% endif %}
+  {{ super() }}
+{% endblock %}

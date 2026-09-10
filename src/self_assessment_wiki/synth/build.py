@@ -70,6 +70,19 @@ def _model(args, stage: str) -> str:
     return DEFAULT_MODELS.get(args.backend, {}).get(stage, "")
 
 
+def _page_detail(work: compose.PageWork) -> str:
+    parts = [f"{len(work.notes)} notes"]
+    if work.excluded_notes:
+        parts.append(f"{work.excluded_notes} excluded by max_notes")
+    coverage = work.coverage
+    if coverage:
+        parts.append(f"authorities {len(coverage.covered)}/{len(coverage.required)}")
+        if coverage.missing:
+            parts.append("missing " + ", ".join(coverage.missing))
+    parts.append(work.reason)
+    return "  ".join(parts)
+
+
 def cmd_status(args) -> int:
     gaps = reconcile.audit(pipeline_fetch.load_sources()).failed
     if gaps:
@@ -106,7 +119,7 @@ def cmd_status(args) -> int:
     print(f"  {len(works)} pages, {len(stale)} stale")
     for w in works:
         mark = "*" if w.stale else "="
-        print(f"    {mark} {w.spec['id']:<24} {len(w.notes):>4} notes  {w.reason}")
+        print(f"    {mark} {w.spec['id']:<24} {_page_detail(w)}")
     if todo:
         print("\nCompose reads only what extract has already written - "
               "run `extract` first for the full picture.")
@@ -135,7 +148,7 @@ def cmd_compose(args) -> int:
     model = _model(args, "compose")
     if args.dry_run:
         for w in compose.plan(model, only=args.only, force=args.force):
-            print(f"{'*' if w.stale else '='} {w.spec['id']:<24} {len(w.notes):>4} notes  {w.reason}")
+            print(f"{'*' if w.stale else '='} {w.spec['id']:<24} {_page_detail(w)}")
         return 0
     backend = get_backend(args.backend, model, timeout=args.timeout)
     composed = compose.run(backend, model, only=args.only, force=args.force)

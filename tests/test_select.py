@@ -127,6 +127,23 @@ def test_max_notes_caps_the_selection():
     assert len(compose.select(spec(max_notes=4), data)) == 4
 
 
+
+def test_cap_exclusions_are_reported_separately_from_selected_notes():
+    data = extracts(("acts/tma-1970.md", {f"h{i}": note() for i in range(10)}))
+    result = compose.selection(spec(max_notes=4), data)
+    assert len(result.notes) == 4
+    assert len(result.excluded) == 6
+
+
+def test_authority_coverage_uses_selected_evidence_and_collection_children():
+    data = extracts(("guidance/member.md", {"h1": note()}))
+    data["guidance/member.md"]["source_id"] = "sa-guidance:content-id"
+    page = {**spec(), "authorities": ["sa-guidance", "tma-1970"]}
+    coverage = compose.authority_coverage(page, compose.select(page, data))
+    assert coverage.covered == ("sa-guidance",)
+    assert coverage.missing == ("tma-1970",)
+    assert coverage.complete is False
+
 def test_selection_is_deterministic():
     data = extracts(("acts/tma-1970.md", {f"h{i}": note() for i in range(10)}))
     first = compose.select(spec(max_notes=4), data)

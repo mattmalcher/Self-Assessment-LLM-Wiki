@@ -23,13 +23,13 @@ NOTE = {"relevance": "core", "summary": "A person must deliver a return.",
 SPECS = [
     {"id": "who-must-file", "title": "Who must file", "section": "The lifecycle",
      "output": "docs/lifecycle/who-must-file.md", "brief": "Who is brought in.",
-     "select": {"relevance": ["core"]}},
+     "authorities": ["tma-1970"], "select": {"relevance": ["core"]}},
     {"id": "deadlines", "title": "Deadlines", "section": "The lifecycle",
      "output": "docs/lifecycle/deadlines.md", "brief": "When things are due.",
-     "select": {"relevance": ["core"]}},
+     "authorities": ["tma-1970"], "select": {"relevance": ["core"]}},
     {"id": "penalties", "title": "Penalties", "section": "The lifecycle",
      "output": "docs/lifecycle/penalties.md", "brief": "What it costs.",
-     "select": {"relevance": ["core"]}},
+     "authorities": ["tma-1970"], "select": {"relevance": ["core"]}},
 ]
 
 
@@ -108,6 +108,13 @@ def test_a_complete_pipeline_is_reported_as_one(repo):
     assert "finished 2026-09-01" in text
     assert "Corpus last checked upstream: 2026-09-02" in text
 
+
+
+def test_status_contains_the_source_to_page_authority_matrix(repo):
+    text = status_text(repo)
+    assert "## Page authority coverage" in text
+    assert "| Page | Authorities | Missing |" in text
+    assert text.count("| 1/1 | - |") == len(SPECS)
 
 def test_an_unextracted_chunk_withdraws_the_completeness_claim(repo):
     repo.plan.todo = repo.plan.chunks[:1]

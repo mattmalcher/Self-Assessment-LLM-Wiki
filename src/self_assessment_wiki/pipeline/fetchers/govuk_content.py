@@ -68,13 +68,28 @@ def _html_attachments(details: dict, mode: str) -> list[dict]:
     return [a for a in html if year(a) == newest] if newest else html[:1]
 
 
+def _document_parts(details: dict) -> list[str]:
+    """Render both body documents and multipart GOV.UK guides."""
+    rendered = []
+    body = details.get("body", "") or ""
+    if body.strip():
+        rendered.append(html_to_markdown(body))
+    for part in details.get("parts", []) or []:
+        part_body = part.get("body", "") or ""
+        if not part_body.strip():
+            continue
+        if part.get("title"):
+            rendered.append(f"## {part['title']}")
+        rendered.append(html_to_markdown(part_body))
+    return rendered
+
+
 def fetch_single(entry: dict, manifest_entry: dict) -> bool:
     doc = _get_doc(entry["url"])
     if doc is None:
         return False
     details = doc.get("details", {})
-    body_html = details.get("body", "") or ""
-    parts = [html_to_markdown(body_html)] if body_html.strip() else []
+    parts = _document_parts(details)
     for att in _html_attachments(details, entry.get("html_attachments", "latest")):
         att_doc = _get_doc(att["url"] if att["url"].startswith("/") else att["url"].replace(WEB_BASE, ""))
         att_body = (att_doc or {}).get("details", {}).get("body", "") or ""

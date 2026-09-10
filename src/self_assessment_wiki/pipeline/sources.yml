@@ -36,6 +36,62 @@
 # Legal system > Primary legislation
 # ---------------------------------------------------------------------------
 
+- id: ittoia-2005
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Income Tax (Trading and Other Income) Act 2005
+  url: https://www.legislation.gov.uk/ukpga/2005/5
+  status: fetch
+  output: corpus/legal-system/primary-legislation/acts/ittoia-2005.md
+
+- id: ita-2007
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Income Tax Act 2007
+  url: https://www.legislation.gov.uk/ukpga/2007/3
+  status: fetch
+  output: corpus/legal-system/primary-legislation/acts/ita-2007.md
+
+- id: tcga-1992
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Taxation of Chargeable Gains Act 1992
+  url: https://www.legislation.gov.uk/ukpga/1992/12
+  status: fetch
+  output: corpus/legal-system/primary-legislation/acts/tcga-1992.md
+
+- id: sscba-1992
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Social Security Contributions and Benefits Act 1992
+  url: https://www.legislation.gov.uk/ukpga/1992/4
+  status: fetch
+  output: corpus/legal-system/primary-legislation/acts/sscba-1992.md
+
+- id: finance-act-2008
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Finance Act 2008
+  url: https://www.legislation.gov.uk/ukpga/2008/9
+  status: fetch
+  output: corpus/legal-system/primary-legislation/acts/finance-act-2008.md
+
+- id: finance-act-2009
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Finance Act 2009
+  url: https://www.legislation.gov.uk/ukpga/2009/10
+  status: fetch
+  output: corpus/legal-system/primary-legislation/acts/finance-act-2009.md
+
+- id: finance-act-2021
+  category: legal-system.primary-legislation
+  type: legislation
+  title: Finance Act 2021
+  url: https://www.legislation.gov.uk/ukpga/2021/26
+  status: fetch
+  output: corpus/legal-system/primary-legislation/acts/finance-act-2021.md
+
 - id: itepa-2003
   category: legal-system.primary-legislation
   type: legislation
@@ -70,6 +126,14 @@
 # ---------------------------------------------------------------------------
 # Legal system > Secondary legislation
 # ---------------------------------------------------------------------------
+
+- id: si-income-tax-digital-requirements-2021
+  category: legal-system.secondary-legislation
+  type: legislation
+  title: Income Tax (Digital Requirements) Regulations 2021
+  url: https://www.legislation.gov.uk/uksi/2021/1076
+  status: fetch
+  output: corpus/legal-system/secondary-legislation/income-tax-digital-requirements-regulations-2021.md
 
 - id: si-ftt-tax-chamber-rules-2009
   category: legal-system.secondary-legislation
@@ -207,10 +271,20 @@
   url: /government/collections/rates-and-allowances-hm-revenue-and-customs
   status: fetch
   output: corpus/hmrc-publications/rates-and-allowances.md
+  expand_items: true
+  items_dir: corpus/hmrc-publications
 
 # ---------------------------------------------------------------------------
 # HMRC publications > Customer facing guidance
 # ---------------------------------------------------------------------------
+
+- id: govuk-mtd-income-tax-guide
+  category: hmrc-publications.customer-facing-guidance
+  type: govuk_content_manual
+  title: Use Making Tax Digital for Income Tax
+  url: /guidance/use-making-tax-digital-for-income-tax
+  status: fetch
+  output: corpus/hmrc-publications/customer-facing-guidance/making-tax-digital-income-tax.md
 
 - id: govuk-sa-detailed-information
   category: hmrc-publications.customer-facing-guidance
@@ -219,6 +293,8 @@
   url: /government/collections/self-assessment-detailed-information
   status: fetch
   output: corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md
+  expand_items: true
+  items_dir: corpus/hmrc-publications/customer-facing-guidance
   note: The GOV.UK guidance hub for Self Assessment.
 
 - id: hmrc-vat-notices

@@ -161,9 +161,11 @@ def test_limit_leaves_remaining_work_without_failing(extract_env):
 
 SPECS = [
     {"id": "filing-deadlines", "title": "Filing deadlines", "output": "docs/filing.md",
-     "brief": "Explain the deadlines.", "select": {"relevance": ["core"]}},
+     "brief": "Explain the deadlines.", "authorities": ["tma-1970"],
+     "select": {"relevance": ["core"]}},
     {"id": "penalties", "title": "Penalties", "output": "docs/penalties.md",
-     "brief": "Explain the penalties.", "select": {"relevance": ["core"]}},
+     "brief": "Explain the penalties.", "authorities": ["tma-1970"],
+     "select": {"relevance": ["core"]}},
 ]
 
 
@@ -172,7 +174,7 @@ def compose_env(monkeypatch, tmp_path):
     """Two stale pages with notes, written under tmp_path."""
     notes = [compose.Selected(doc="legislation/tma-1970.md", chunk_hash="aaa111",
                               heading="s.8", note=dict(NOTE), source_id="tma-1970")]
-    works = [compose.PageWork(spec=spec, notes=notes, input_hash="h", stale=True,
+    works = [compose.PageWork(spec=dict(spec), notes=notes, input_hash="h", stale=True,
                               reason="inputs changed") for spec in SPECS]
     monkeypatch.setattr(compose, "plan", lambda model, only=None, force=False: works)
     monkeypatch.setattr(compose, "load_manifest", lambda: {})
@@ -198,6 +200,26 @@ def test_a_page_with_no_notes_is_a_failure(compose_env):
 
 def test_a_complete_compose_is_ok(compose_env):
     report = compose.run(FakeBackend(answer="# Filing\n\nBody."), "fake-model", verbose=False)
+
+
+def test_composed_pages_declare_their_authority_coverage(compose_env, tmp_path):
+    report = compose.run(FakeBackend(answer="# Filing\n\nBody."),
+                         "fake-model", verbose=False)
+    assert report.ok
+    text = (tmp_path / "docs/filing.md").read_text()
+    assert "authority_coverage: complete" in text
+    assert "Minimum authority coverage satisfied" in text
+
+
+def test_missing_authorities_visibly_label_the_composed_page(compose_env, tmp_path):
+    compose_env[0].spec["authorities"] = ["missing-act"]
+    report = compose.run(FakeBackend(answer="# Filing\n\nBody."),
+                         "fake-model", verbose=False)
+    assert report.ok
+    text = (tmp_path / "docs/filing.md").read_text()
+    assert "authority_coverage: incomplete" in text
+    assert "Minimum authority coverage incomplete" in text
+    assert "`missing-act`" in text
     assert report.ok and report.exit_code() == 0
 
 
