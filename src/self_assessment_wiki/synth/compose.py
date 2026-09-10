@@ -2,8 +2,9 @@
 
 Selection is deterministic (path prefixes, relevance tier, regexes over the
 heading/summary/topics of each note), so a page's staleness can be decided
-without a model call: hash the brief, the prompt, the model and the set of
-chunk hashes that feed it, and skip the page when that hash is unchanged.
+without a model call: hash the brief, the prompt, the compose model and a
+fingerprint of every selected note, and skip the page when that hash is
+unchanged. See `input_hash` for the invalidation contract.
 """
 from __future__ import annotations
 
@@ -34,6 +35,11 @@ class Selected:
     source_id: str = ""
     source_url: str = ""
     score: int = 0
+    # How the note was produced: the hash of prompts/extract.md (which defines
+    # the note schema) and the backend:model that answered it. Both are
+    # recorded per chunk by the extract stage.
+    prompt_hash: str = ""
+    model: str = ""
 
 
 @dataclass
@@ -90,7 +96,9 @@ def select(spec: dict, extracts: dict[str, dict]) -> list[Selected]:
                 continue
             sel = Selected(doc=doc, chunk_hash=chunk_hash, heading=entry.get("heading", ""),
                            note=note, source_id=data.get("source_id", ""),
-                           source_url=data.get("source_url", ""))
+                           source_url=data.get("source_url", ""),
+                           prompt_hash=entry.get("prompt_hash", "") or "",
+                           model=entry.get("model", "") or "")
             sel.score = _matches(patterns, sel) if patterns else 1
             if patterns and sel.score == 0:
                 continue
@@ -105,14 +113,56 @@ def select(spec: dict, extracts: dict[str, dict]) -> list[Selected]:
 NAV_ONLY_KEYS = ("section",)
 
 
+# Bumped when the fingerprint layout below changes shape, so an old manifest
+# entry can never collide with a new one. Bumping it restages every page.
+NOTE_FINGERPRINT_VERSION = 1
+
+
+def note_fingerprint(sel: Selected) -> str:
+    """Canonical serialization of one selected note, as the page sees it.
+
+    Everything that reaches the compose prompt (`_render_notes`) or the page's
+    provenance block is in here, plus the provenance of the note itself: the
+    chunk it came from, the extraction prompt/schema version that shaped it,
+    and the model that wrote it. Sorted keys and compact separators keep the
+    encoding stable across Python versions and dict insertion order.
+    """
+    payload = {
+        "v": NOTE_FINGERPRINT_VERSION,
+        "doc": sel.doc,
+        "chunk_hash": sel.chunk_hash,
+        "heading": sel.heading,
+        "source_id": sel.source_id,
+        "source_url": sel.source_url,
+        "prompt_hash": sel.prompt_hash,
+        "model": sel.model,
+        "note": sel.note,
+    }
+    blob = json.dumps(payload, sort_keys=True, ensure_ascii=False, separators=(",", ":"))
+    return hashlib.sha256(blob.encode("utf-8")).hexdigest()
+
+
 def input_hash(spec: dict, notes: list[Selected], model: str) -> str:
+    """The staleness key for a page. Changes iff its output should change.
+
+    Invalidation contract - a page is stale when any of these move:
+
+    - `prompts/compose.md`, or the page's spec in `pages.yml` (bar the
+      nav-only keys, which don't reach the prompt);
+    - the compose model;
+    - the *set* of notes the selector picks, or the content of any picked
+      note - including a re-extraction that rewrote it under a new
+      `prompts/extract.md` or a different extraction model.
+
+    A note the selector does not pick has no effect, whatever happens to it.
+    """
     h = hashlib.sha256()
     h.update(SYSTEM.encode())
     h.update(json.dumps({k: v for k, v in spec.items() if k not in NAV_ONLY_KEYS},
                         sort_keys=True).encode())
     h.update(model.encode())
     for note in sorted(notes, key=lambda s: (s.doc, s.chunk_hash)):
-        h.update(f"{note.doc}:{note.chunk_hash}".encode())
+        h.update(note_fingerprint(note).encode())
     return h.hexdigest()[:16]
 
 

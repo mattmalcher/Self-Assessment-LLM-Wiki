@@ -28,14 +28,17 @@ To change a page's content, edit its brief/selector in
 
 Changing `prompts/compose.md` invalidates every page; changing `chunk._clean`
 invalidates the whole extract cache. Both mean a full re-run — flag the cost
-before doing it.
+before doing it. A page is also stale when any note it selects changes content,
+extract prompt or extraction model — see "The invalidation contract" in
+`src/self_assessment_wiki/synth/README.md`.
 
 ## Commands
 
-Requires [`uv`](https://docs.astral.sh/uv/). No test suite, no linter config.
+Requires [`uv`](https://docs.astral.sh/uv/). No linter config.
 
 ```bash
 uv sync
+uv run pytest                  # offline regression tests; no model calls
 uv run mkdocs serve            # local preview
 uv run mkdocs build --strict   # what CI deploys; strict, so nav must resolve
 
