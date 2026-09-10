@@ -26,7 +26,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from .. import runlog
+from .. import configcheck, runlog
 
 PIPELINE_DIR = Path(__file__).parent
 REPORT_PATH = PIPELINE_DIR / "last_reconcile.json"
@@ -102,7 +102,13 @@ def main() -> int:
     parser.add_argument("--only", nargs="*", help="only audit these source ids")
     args = parser.parse_args()
 
-    report = audit(load_sources(), args.only)
+    try:
+        sources = load_sources()
+    except configcheck.ConfigError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
+    report = audit(sources, args.only)
     runlog.write(REPORT_PATH, [report])
 
     for failure in report.failed:

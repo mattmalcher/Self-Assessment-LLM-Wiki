@@ -69,9 +69,9 @@ def render(sources: list[dict], manifest: dict) -> str:
 
 
 def main() -> None:
-    import yaml
+    from .fetch import load_sources  # local: fetch imports this module
 
-    sources = yaml.safe_load((PIPELINE_DIR / "sources.yml").read_text())
+    sources = load_sources()
     manifest = {}
     manifest_path = PIPELINE_DIR / "manifest.json"
     if manifest_path.exists():

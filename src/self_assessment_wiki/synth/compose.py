@@ -18,7 +18,7 @@ from pathlib import Path
 
 import yaml
 
-from .. import runlog
+from .. import configcheck, runlog
 from . import schema, store
 from .config import DOCS_DIR, MANIFEST_PATH, PAGES_PATH, PROMPTS_DIR, REPO_ROOT
 from .llm import Backend
@@ -53,7 +53,10 @@ class PageWork:
 
 
 def load_pages() -> list[dict]:
-    return yaml.safe_load(PAGES_PATH.read_text())
+    """The validated page plan. Raises `configcheck.ConfigError` rather than
+    letting, say, a misspelled relevance tier select nothing and compose a
+    page out of no notes."""
+    return configcheck.load_pages(PAGES_PATH)
 
 
 def load_manifest() -> dict:

@@ -23,9 +23,7 @@ import traceback
 from datetime import datetime, timezone
 from pathlib import Path
 
-import yaml
-
-from .. import runlog
+from .. import configcheck, runlog
 from . import manifest as manifest_store
 from . import reconcile, render_sources_index
 from .fetchers import caselaw, govuk_content, legislation, web_page
@@ -44,7 +42,10 @@ _DISPATCH = {
 
 
 def load_sources() -> list[dict]:
-    return yaml.safe_load(SOURCES_PATH.read_text())
+    """The validated source registry. Raises `configcheck.ConfigError` on a
+    registry that could not be acted on safely - every reader goes through
+    here, so a bad entry never reaches a fetcher."""
+    return configcheck.load_sources(SOURCES_PATH)
 
 
 def main() -> int:
@@ -55,11 +56,12 @@ def main() -> int:
                         help="exit 0 even if some sources failed (never the CI default)")
     args = parser.parse_args()
 
-    sources = load_sources()
-    ids = {s["id"] for s in sources}
-    dupes = [i for i in ids if [s["id"] for s in sources].count(i) > 1]
-    if dupes:
-        print(f"ERROR: duplicate source ids in sources.yml: {dupes}", file=sys.stderr)
+    # Before any network access: a registry that does not validate cannot be
+    # fetched, and a half-fetched corpus is worse than an unfetched one.
+    try:
+        sources = load_sources()
+    except configcheck.ConfigError as exc:
+        print(f"ERROR: {exc}", file=sys.stderr)
         return 1
 
     manifest = manifest_store.load()

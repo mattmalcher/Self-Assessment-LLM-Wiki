@@ -8,8 +8,10 @@ Run at the end of `uv run extract` / `uv run compose`, or on its own:
 """
 from __future__ import annotations
 
+import sys
 from datetime import date
 
+from .. import configcheck
 from ..pipeline import fetch as pipeline_fetch
 from ..pipeline import reconcile
 from . import compose, extract, nav, schema, store
@@ -99,13 +101,24 @@ def render() -> str:
     return "\n".join(lines)
 
 
-def main() -> None:
+def main() -> int:
+    # The report and the nav are published claims about the registry and the
+    # page plan; if either does not validate, say so rather than publish a
+    # reading of it.
+    try:
+        pipeline_fetch.load_sources()
+        compose.load_pages()
+    except configcheck.ConfigError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
+
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(render())
     print(f"wrote {OUTPUT.relative_to(OUTPUT.parents[2])}")
     for path in nav.write():
         print(f"wrote {path.relative_to(OUTPUT.parents[2])}")
+    return 0
 
 
 if __name__ == "__main__":
-    main()
+    sys.exit(main())

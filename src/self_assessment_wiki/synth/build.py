@@ -23,7 +23,7 @@ import argparse
 import sys
 from pathlib import Path
 
-from .. import runlog
+from .. import configcheck, runlog
 from ..pipeline import fetch as pipeline_fetch
 from ..pipeline import reconcile
 from . import compose, extract
@@ -168,8 +168,15 @@ def main(argv: list[str] | None = None, command: str | None = None) -> int:
         args.command = command
 
     try:
+        # Both configs up front, before any model call or page write: a page
+        # plan that does not validate is not worth spending a model call on.
+        pipeline_fetch.load_sources()
+        compose.load_pages()
         return {"status": cmd_status, "extract": cmd_extract,
                 "compose": cmd_compose, "all": cmd_all}[args.command](args)
+    except configcheck.ConfigError as exc:
+        print(f"error: {exc}", file=sys.stderr)
+        return 2
     except LLMError as exc:
         print(f"error: {exc}", file=sys.stderr)
         return 2
