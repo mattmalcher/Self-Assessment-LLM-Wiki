@@ -11401,11 +11401,104 @@
       "index": 112,
       "model": "claude-cli:sonnet",
       "note": {
-        "deadline": "n/a",
-        "must": "Submit a written request for payment by statutory instalments",
-        "ref": "SAM80077 step 1",
-        "trigger": "Enquiry about statutory instalment arrangement not made in writing",
-        "who": "Taxpayer requesting SIA"
+        "amounts": [],
+        "caveats": [
+          "Early settlement request procedure described applied for tax years up to and including 2010-11.",
+          "From 6 April 2012 the requirement to complete an SA return in every deceased case was reconsidered; form R27 process introduced instead.",
+          "From 6 April 2014 the process was revised again: full in-year returns issued for year of death, no end-of-year return required.",
+          "Form R27 was decommissioned from October 2014 and replaced with new letters requesting Personal Representative and agent details.",
+          "SAM90010 in this chunk is only a table of contents/heading list with no substantive content yet."
+        ],
+        "cross_references": [
+          "S299 ITTOIA 2005",
+          "S34(8) ICTA 1988",
+          "TSEM7204",
+          "DMBM220000",
+          "DMBM234510",
+          "DMBM207000",
+          "SAM90010",
+          "Collection of Student Loans (CSL) manual"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "taxpayers with an approved statutory instalment arrangement",
+            "name": "First SIA instalment payment",
+            "ref": "SAM80077 step 7",
+            "rule": "on or before the instalment due date"
+          }
+        ],
+        "definitions": [
+          {
+            "meaning": "Arrangement under S299 ITTOIA 2005 (instalments in accordance with S34(8) ICTA 1988) allowing payment of certain Capital Gains Tax liability by instalments",
+            "ref": "SAM80077",
+            "term": "Statutory Instalment Arrangement (SIA)"
+          },
+          {
+            "meaning": "An adjustment made by DM Banking where an error is discovered with a cheque payment, e.g. discrepancy between amount posted and amount lodged",
+            "ref": "SAM80090",
+            "term": "Bank lodgment adjustment (BLA)"
+          },
+          {
+            "meaning": "A request during the year (for years up to and including 2010-11) to settle a taxpayer's liability, including earlier years, following permanent cessation of all UK taxable income/gains sources, e.g. due to death, emigration or winding up of administration",
+            "ref": "SAM90001",
+            "term": "Early settlement"
+          },
+          {
+            "meaning": "Confirmation by a Compliance Officer that no enquiry will be opened into a deceased taxpayer's return; distinct from early settlement and not given in emigration cases since emigration may not be permanent",
+            "ref": "SAM90001",
+            "term": "Early finality"
+          }
+        ],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "submit a written request for payment by statutory instalments to the office with SA technical responsibility",
+            "ref": "SAM80077 step 1",
+            "trigger": "wish to pay CGT liability by instalments under S299 ITTOIA 2005",
+            "who": "Taxpayer requesting statutory instalment arrangement"
+          },
+          {
+            "deadline": "n/a",
+            "must": "refer written SIA application to office with SA technical responsibility and follow steps 1-10 to set up/monitor arrangement",
+            "ref": "SAM80077",
+            "trigger": "receipt of SIA enquiry/application",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "provide information (previously via form R27, now via letters requesting PR/agent details) to enable finalisation of tax affairs",
+            "ref": "SAM90001",
+            "trigger": "notification of taxpayer's death",
+            "who": "Personal Representative of deceased taxpayer"
+          }
+        ],
+        "penalties": [
+          {
+            "consequence": "interest will be charged on any instalment paid late",
+            "ref": "SAM80077 step 7",
+            "trigger": "instalment paid late under SIA"
+          },
+          {
+            "consequence": "normal course of action taken to recover the unpaid amount",
+            "ref": "SAM80077 step 10",
+            "trigger": "instalment not paid"
+          }
+        ],
+        "relevance": "core",
+        "summary": "This chunk covers several SAM procedural topics: an action guide (SAM80077) for HMRC staff setting up statutory instalment arrangements (SIA) under S299 ITTOIA 2005/S34(8) ICTA 1988 for Capital Gains Tax liabilities; brief notes on Sharefishermen's voluntary deduction schemes, bank lodgment adjustments and returned payments (mostly pointing to Debt Management & Banking Manual); and an introduction (SAM90001) to handling SA affairs on death or emigration, including early settlement, changes to deceased-case procedures over 2012-2014 (R27 form decommissioned, in-year returns introduced from 6 April 2014), and treatment of unsolicited returns for the final year. SAM90010 is presented as a contents/index list only.",
+        "topics": [
+          "statutory-instalments",
+          "capital-gains-tax",
+          "payment-arrangements",
+          "sharefishermen",
+          "bank-lodgment",
+          "returned-payments",
+          "death-of-taxpayer",
+          "emigration",
+          "personal-representatives",
+          "early-settlement",
+          "unsolicited-returns"
+        ]
       },
       "prompt_hash": "2ff1133f3478bd79"
     },

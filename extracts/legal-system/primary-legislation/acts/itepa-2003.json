@@ -8204,11 +8204,111 @@
       "index": 70,
       "model": "claude-cli:sonnet",
       "note": {
-        "deadline": "n/a",
-        "must": "Include the amount of the benefit as employment income for the relevant tax year",
-        "ref": "ITEPA 2003 s.394(1),(1A)",
-        "trigger": "Receipt of a relevant benefit under such a scheme exceeding £100 in the tax year",
-        "who": "Individual receiving a benefit under an employer-financed retirement benefits scheme"
+        "amounts": [
+          {
+            "name": "De minimis threshold for benefits under employer-financed retirement benefits scheme",
+            "period": "n/a",
+            "ref": "ITEPA 2003 s.394(1A)",
+            "value": "£100"
+          },
+          {
+            "name": "Rate of tax on benefit charged on responsible person (non-individual recipient)",
+            "period": "n/a",
+            "ref": "ITEPA 2003 s.394(4)",
+            "value": "45%"
+          }
+        ],
+        "caveats": [
+          "Sections 386-392 (Chapter 1 of Part 6, non-approved retirement benefits schemes) are repealed/empty in this chunk.",
+          "Numerous provisions carry [F-prefixed] textual amendment markers indicating substituted or inserted text (e.g. s.381(c)-(d), s.384(2)(aa), s.385, ss.393-393B, s.394 subsections), meaning current wording may differ from originally enacted text.",
+          "Section 385 (meaning of 'ship') is itself a substituted provision ([F99]).",
+          "The £100 de minimis and 45% rate are as stated in the text but subject to amendment by Treasury order (s.394(4)) or other legislative change; the source does not specify a tax year for these figures.",
+          "Section 393 defines terms 'employer-financed retirement benefits scheme' and 'relevant benefits' by cross-reference to ss.393A-393B, both inserted provisions."
+        ],
+        "cross_references": [
+          "ITEPA 2003 s.378 (deduction from seafarers' earnings: eligibility)",
+          "ITEPA 2003 s.379",
+          "ITEPA 2003 s.24(4)-(5) (limit on chargeable overseas earnings)",
+          "ITEPA 2003 s.232 (mileage allowance relief)",
+          "ITEPA 2003 Part 5 Chapters 2-5",
+          "CAA 2001 s.262",
+          "FA 2004 ss.188-194",
+          "ITEPA 2003 s.40 (duties on board vessel or aircraft)",
+          "ITEPA 2003 s.39 (duties in UK merely incidental to duties outside UK)",
+          "Continental Shelf Act 1964 s.1(7)",
+          "ITEPA 2003 Part 9 (pension income)",
+          "ITEPA 2003 ss.573(2A)/(2B), 646D, 646E, 574A(3)",
+          "FA 2004 Schedule 34",
+          "ITTOIA 2005 ss.480-482",
+          "WRPA 1999 s.28(1)",
+          "WRP(NI)O 1999 Art.25(1)",
+          "ITEPA 2003 Part 7A Chapter 2",
+          "ITEPA 2003 s.554Z5",
+          "ICTA s.615(3)"
+        ],
+        "deadlines": [],
+        "definitions": [
+          {
+            "meaning": "Employments with the same employer or with associated employers, for purposes of the seafarers' earnings limit; same rules for determining associated employers as apply under section 24(4)/(5)",
+            "ref": "ITEPA 2003 s.380(3)-(4)",
+            "term": "Associated employments"
+          },
+          {
+            "meaning": "An employment (other than Crown employment) consisting of the performance of duties on a ship or of such duties and others incidental to them",
+            "ref": "ITEPA 2003 s.384(1)",
+            "term": "Employment 'as a seafarer'"
+          },
+          {
+            "meaning": "Employment under the Crown which is of a public nature (and not employment in the Royal Fleet Auxiliary Service) and the earnings from which are payable out of the public revenue of the UK or Northern Ireland",
+            "ref": "ITEPA 2003 s.384(2)",
+            "term": "Crown employment (for s.384)"
+          },
+          {
+            "meaning": "Does not include an offshore installation",
+            "ref": "ITEPA 2003 s.385",
+            "term": "Ship"
+          },
+          {
+            "meaning": "A scheme for the provision of benefits consisting of or including relevant benefits to or in respect of employees or former employees of an employer, excluding registered pension schemes and section 615(3) schemes",
+            "ref": "ITEPA 2003 s.393A",
+            "term": "Employer-financed retirement benefits scheme"
+          },
+          {
+            "meaning": "Any lump sum, gratuity or other benefit (including non-cash) provided on/in anticipation of retirement, on death, after retirement/death in connection with past service, on change in nature of service, or under a pension sharing order, excluding certain pension-taxed amounts and excluded benefits",
+            "ref": "ITEPA 2003 s.393B",
+            "term": "Relevant benefits"
+          },
+          {
+            "meaning": "Benefits for ill-health/disablement during service, death by accident during service, benefits under a relevant life policy, and benefits prescribed by regulations",
+            "ref": "ITEPA 2003 s.393B(3)",
+            "term": "Excluded benefits"
+          },
+          {
+            "meaning": "An excepted group life policy as defined in section 480 ITTOIA 2005, or a policy of life insurance meeting specified conditions in sections 481-482 ITTOIA 2005, or a policy that would qualify but for providing an already-excluded benefit",
+            "ref": "ITEPA 2003 s.393B(4)",
+            "term": "Relevant life policy"
+          },
+          {
+            "meaning": "The tax year in which the benefit is received",
+            "ref": "ITEPA 2003 s.394(3)",
+            "term": "Relevant tax year (for s.394 charge)"
+          },
+          {
+            "meaning": "General earnings chargeable to income tax, amounts counting as employment income under Chapter 2 Part 7A (or that would but for section 554Z5), or amounts that would fall within these but for non-UK residence or a split year",
+            "ref": "ITEPA 2003 s.394(4C)",
+            "term": "Other relevant income"
+          }
+        ],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk sets out detailed rules for the seafarers' earnings deduction under Chapter 6 of Part 5 ITEPA 2003, including a limit where UK duties make the full deduction unreasonable (s.380), interaction with other deductions (s.381), rules on where duties are treated as performed (ss.382-383), and definitions of 'as a seafarer' and 'ship' (ss.384-385). It then moves into Part 6 Chapter 2, covering employer-financed retirement benefits schemes (EFRBS), defining the scheme and 'relevant benefits' (ss.393-393B), and the charge on benefits received under such schemes (s.394), including a £100 de minimis, a 45% charge rate where the recipient is not an individual, and rules preventing double taxation with other employment income charges.",
+        "topics": [
+          "seafarers-earnings-deduction",
+          "employment-income",
+          "employer-financed-retirement-benefits-schemes",
+          "deductions-from-earnings"
+        ]
       },
       "prompt_hash": "2ff1133f3478bd79"
     },

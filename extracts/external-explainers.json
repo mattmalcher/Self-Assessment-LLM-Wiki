@@ -1,0 +1,56 @@
+{
+  "chunks": {
+    "0280439bc8a2c9b4": {
+      "chars": 5346,
+      "heading": "External explainers",
+      "index": 0,
+      "model": "claude-cli:sonnet",
+      "note": {
+        "amounts": [],
+        "caveats": [
+          "Source is explicitly noted as not HMRC/government content; it is an independent charity explainer and should not be treated as authoritative on legal rules.",
+          "This chunk is purely a menu/landing page with link text and short taglines; it does not itself state Self Assessment rules, thresholds or deadlines beyond the MTD start date mention."
+        ],
+        "cross_references": [
+          "TaxAid: Making Tax Digital",
+          "TaxAid: What is Self Assessment?",
+          "TaxAid: Do I need to complete a Self Assessment tax return?",
+          "TaxAid: How to register for Self Assessment",
+          "TaxAid: Preparing for Self Assessment",
+          "TaxAid: Need help completing your tax return",
+          "TaxAid: Late tax returns (deadlines and penalties)",
+          "TaxAid: How will I know what tax to pay",
+          "TaxAid: Enquiries and other problems with returns",
+          "TaxAid: Simple Assessment",
+          "TaxAid: Capital Gains Tax",
+          "TaxAid: Employment, pension and benefit income",
+          "TaxAid: Foreign income",
+          "TaxAid: Self-employment, buying and selling or providing services",
+          "TaxAid: Savings and investments",
+          "TaxAid: Property rentals",
+          "TaxAid: Where to find help"
+        ],
+        "deadlines": [
+          {
+            "applies_to": "Self Assessment taxpayers affected by MTD",
+            "name": "Making Tax Digital start date",
+            "ref": "taxaid - Making Tax Digital",
+            "rule": "MTD starts on 6 April 2026"
+          }
+        ],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "related",
+        "summary": "This chunk is a navigation/landing page from TaxAid, an independent (non-HMRC) charity website, listing links to its own explainer articles on Self Assessment topics such as registration, filing, deadlines and penalties, paying tax, mistakes/enquiries, Simple Assessment, and income-specific pages (capital gains, employment income, foreign income, self-employment, savings, property). It contains no substantive tax rules, figures, or deadlines itself, only signposting text and one date reference to Making Tax Digital starting 6 April 2026.",
+        "topics": [
+          "third-party-guidance",
+          "navigation-page",
+          "self-assessment-overview"
+        ]
+      },
+      "prompt_hash": "2ff1133f3478bd79"
+    }
+  },
+  "doc": "external-explainers.md"
+}

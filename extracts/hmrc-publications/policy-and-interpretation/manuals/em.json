@@ -2768,87 +2768,79 @@
       "note": {
         "amounts": [],
         "caveats": [
-          "For Failure to Notify only, for ITSA discovery assessments for 2008-2009 or earlier, or CTSA assessments for accounting periods ending before 1 April 2010, HMRC must show negligent conduct (not carelessness) with a direct link between the failure to notify and the loss of tax - a different, older standard.",
-          "S30B(2) TMA 1970 consequential amendments to partners' returns have no time limit, but officers should still try to make them within the same time limit where possible.",
-          "Neither s29(4) nor s29(5) conditions need to be satisfied if the taxpayer did not submit a return or there is a failure-to-notify situation.",
-          "The burden of proof for 'practice generally prevailing' rests on the person asserting it (typically the taxpayer), not HMRC.",
-          "Following HMRC v Tooth, there is no collective knowledge principle within HMRC - one officer's knowledge is not imputed to another, and a discovery can be made afresh by a different officer."
+          "The Failure to Notify negligent-conduct (rather than careless) standard only applies to older years: ITSA discovery assessments for 2008-2009 or earlier, or CTSA assessments for accounting periods ending before 1 April 2010.",
+          "s30B(2) TMA 1970 consequential amendments to partners' returns have no time limit, unlike the s30B(1) discovery amendment itself.",
+          "Neither s29(4) nor s29(5) conditions need to be satisfied if no return was submitted or there is a failure-to-notify situation.",
+          "Burden of proof for 'practice generally prevailing' rests on the taxpayer, not HMRC."
         ],
         "cross_references": [
           "CH53520",
           "CH53530",
           "CH53540",
-          "S30B(1) TMA 1970",
-          "S30B(2) TMA 1970",
-          "SAM20061",
-          "s113(1B) TMA 1970",
+          "S29(1) TMA 1970",
           "s29(4) TMA 1970",
           "s29(5) TMA 1970",
-          "Para 43/44 Sch 18 FA 1998",
+          "s29(6) TMA 1970",
+          "s29(7) TMA 1970",
+          "s30B(1) TMA 1970",
+          "s30B(2) TMA 1970",
+          "s113(1B) TMA 1970",
+          "Para 41 Sch 18 FA1998",
+          "Para 43 Sch 18 FA1998",
+          "Para 44 Sch 18 FA1998",
+          "Section 309/310/313 FA04",
+          "Section 253 Finance Act 2014",
+          "SAM20061",
           "EM3220",
-          "EM21000",
           "EM3235",
-          "FA04 s309, s310, s313",
-          "FA2014 s253",
+          "EM21000",
           "HMRC v Tooth [2021] UKSC 17",
           "HMRC v John Hicks [2020] UKUT 0012",
-          "Bessie Taube v HMRC [2010] UKFTT 473"
+          "Trustees of the Bessie Taube v HMRC [2010] UKFTT 473"
         ],
         "deadlines": [
           {
-            "applies_to": "discovery assessments where loss of tax caused by carelessness of taxpayer or person acting on their behalf",
-            "name": "Standard extended time limit - carelessness",
-            "ref": "EM Time Limits - Extended Time Limits",
+            "applies_to": "loss of tax caused by carelessness of taxpayer or person acting on their behalf",
+            "name": "Careless behaviour discovery assessment time limit",
+            "ref": "Extended Time Limits",
             "rule": "6 years"
           },
           {
-            "applies_to": "income tax, CGT and IHT involving offshore matters or offshore transfers",
-            "name": "Offshore extended time limit",
-            "ref": "EM Time Limits - Extended Time Limits; see CH53520, CH53530, CH53540",
+            "applies_to": "income tax, capital gains tax, inheritance tax involving offshore matters or offshore transfers",
+            "name": "Offshore matters discovery assessment time limit",
+            "ref": "Extended Time Limits; CH53520; CH53530; CH53540",
             "rule": "12 years"
           },
           {
-            "applies_to": "loss of tax brought about deliberately with intent to mislead, failure to notify chargeability, avoidance scheme non-disclosure under FA04 s309/310/313, or non-notification under FA2014 s253 (promoter reference number)",
-            "name": "Deliberate/failure to notify/avoidance extended time limit",
-            "ref": "EM Time Limits - Extended Time Limits",
+            "applies_to": "deliberate loss of tax with intent to mislead; failure to notify chargeability; avoidance scheme non-disclosure under s309/310/313 FA04; non-notification under s253 FA2014 (promoter reference number)",
+            "name": "Deliberate/failure to notify/avoidance non-disclosure discovery assessment time limit",
+            "ref": "Extended Time Limits",
             "rule": "20 years"
-          },
-          {
-            "applies_to": "discovery amendments to partnership returns",
-            "name": "s30B(1) TMA 1970 discovery amendment time limit",
-            "ref": "S30B(1) TMA 1970",
-            "rule": "Must be done before end of relevant time limit (6/12/20 years as applicable)"
           }
         ],
         "definitions": [
           {
-            "meaning": "Made where an officer of HMRC reaches a conclusion that there is tax which ought to have been assessed but has not been, an assessment is or has become insufficient, or relief given is or has become excessive; must be more than mere suspicion, requiring reasonable belief; no new facts required, just a new conclusion; must be made by an individual officer, not 'HMRC' or a team.",
-            "meaning_ref": null,
+            "meaning": "Made where an HMRC officer reaches a conclusion that there is tax which ought to have been assessed but has not been, an assessment is or has become insufficient, or relief given is or has become excessive; must be more than mere suspicion, requiring reasonable belief; no new facts/information required, and only an individual officer (not 'HMRC' or a team) can make a discovery.",
             "ref": "EM3231",
             "term": "Discovery"
           },
           {
-            "meaning": "A person who takes steps that the taxpayer himself could take or would otherwise be responsible for taking, commonly including completing/filing a return, correspondence with HMRC, providing documents, or seeking external advice; must represent, not merely advise, the taxpayer.",
-            "ref": "EM3232, citing Bessie Taube v HMRC [2010] UKFTT 473, approved in HMRC v John Hicks [2020] UKUT 0012",
-            "term": "Person acting on behalf"
+            "meaning": "A person who takes steps that the taxpayer himself could take, or would otherwise be responsible for taking, e.g. completing/filing a return, correspondence with HMRC, providing documents, seeking advice; must represent, not merely advise, the taxpayer (per Bessie Taube v HMRC, approved in HMRC v John Hicks).",
+            "ref": "EM3232",
+            "term": "Person acting on their behalf"
           },
           {
-            "meaning": "Information contained in a relevant return or accompanying accounts/statements/documents, in a relevant claim or accompanying documents, in documents/accounts/particulars supplied in connection with an enquiry, or information reasonably inferable from the above or notified in writing by the taxpayer.",
-            "ref": "EM3233, S29(5),(6),(7) TMA 1970",
+            "meaning": "Information contained in a relevant return/accompanying documents, a relevant claim, enquiry documents, or reasonably inferable from such information or written taxpayer notification; 'relevant' returns/claims cover the year of assessment and two immediately preceding years.",
+            "ref": "EM3233; s29(5),(6),(7) TMA 1970",
             "term": "Information made available"
           },
           {
-            "meaning": "The taxpayer's returns and claims for the year of assessment and each of the two immediately preceding years of assessment (or accounting periods for CTSA).",
-            "ref": "EM3233",
-            "term": "Relevant returns and claims"
-          },
-          {
-            "meaning": "Deemed to have general competence, knowledge and skills needed to understand the return in front of them, including knowledge of court decisions and HMRC publications.",
+            "meaning": "Deemed to have general competence, knowledge and skills needed to understand the return, including knowledge of court decisions and HMRC publications, used to test whether insufficiency should have been identified.",
             "ref": "EM3233",
             "term": "Hypothetical officer"
           },
           {
-            "meaning": "A practice that is relatively long-established, readily ascertainable and accepted by HMRC, agents and taxpayers; if HMRC has not agreed to a practice it cannot be inferred to be generally prevailing.",
+            "meaning": "A relatively long-established, readily ascertainable practice accepted by HMRC, agents and taxpayers; if HMRC has not agreed to a practice it cannot be inferred as generally prevailing; prevents HMRC issuing a discovery assessment where followed.",
             "ref": "EM3234",
             "term": "Practice generally prevailing"
           }
@@ -2856,38 +2848,45 @@
         "obligations": [
           {
             "deadline": "n/a",
-            "must": "Record when they reached their conclusion that there is a loss of tax and the basis for that conclusion",
+            "must": "record when they reached their discovery conclusion and the basis for it",
             "ref": "EM3232",
-            "trigger": "making a discovery",
+            "trigger": "making a discovery under s29(1) TMA 1970",
             "who": "HMRC officer"
           },
           {
             "deadline": "n/a",
-            "must": "Identify what behaviour brought about the loss, why it was careless or deliberate, and supporting evidence",
-            "ref": "EM3232, S29(1) TMA 1970",
-            "trigger": "making a discovery assessment based on careless/deliberate behaviour",
+            "must": "identify what behaviour brought about the loss, why it was careless or deliberate, and supporting evidence",
+            "ref": "EM3232",
+            "trigger": "making a discovery assessment on grounds of careless/deliberate behaviour",
             "who": "HMRC officer"
           },
           {
-            "deadline": "end of relevant time limit (6/12/20 years)",
-            "must": "Make discovery amendments under s30B(1) TMA 1970 before the end of the relevant time limit",
-            "ref": "S30B(1) TMA 1970",
-            "trigger": "discovery relating to a partnership",
-            "who": "HMRC"
+            "deadline": "within the applicable 6/12/20 year time limit",
+            "must": "make discovery amendments under s30B(1) TMA 1970 within the relevant time limit and attempt to amend partners' returns within the same period",
+            "ref": "s30B(1) TMA 1970",
+            "trigger": "discovery relating to partnership return",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "bear the burden of proving the practice existed",
+            "ref": "EM3234",
+            "trigger": "taxpayer claims protection from discovery assessment via practice generally prevailing",
+            "who": "Taxpayer asserting practice generally prevailing"
           }
         ],
         "penalties": [],
         "relevance": "core",
-        "summary": "This chunk sets out the extended time limits for HMRC discovery assessments (6, 12 and 20 years depending on behaviour and circumstances) and covers the qualifying conditions for making such assessments under s29 TMA 1970. It explains who can make a discovery, the careless/deliberate behaviour test, the s29(5) 'information made available' test involving a hypothetical officer, and the 'practice generally prevailing' defence. It also references discovery amendments under s30B TMA 1970 for partnerships.",
+        "summary": "This chunk sets out HMRC's extended time limits for discovery assessments: 6 years for carelessness, 12 years for offshore matters/transfers, and 20 years for deliberate loss of tax, failure to notify, or non-disclosure under DOTAS-related obligations. It also details how discoveries are made (EM3231), the qualifying conditions under s29(4)/s29(5) TMA 1970 (EM3232-3233), including HMRC v Tooth and HMRC v John Hicks case law, and the 'practice generally prevailing' defence (EM3234).",
         "topics": [
-          "discovery-assessments",
+          "discovery-assessment",
           "time-limits",
-          "carelessness",
+          "extended-time-limits",
+          "careless-behaviour",
           "deliberate-behaviour",
           "offshore-matters",
           "failure-to-notify",
-          "practice-generally-prevailing",
-          "enquiry-powers"
+          "enquiry-manual"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"

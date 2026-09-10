@@ -1955,9 +1955,19 @@
       "index": 53,
       "model": "claude-cli:sonnet",
       "note": {
-        "consequence": "Penalty under section 98 of the Taxes Management Act 1970 (as specified in the body of s.98, not reproduced in this chunk)",
-        "ref": "TMA 1970 s.98 Table",
-        "trigger": "Failure to comply with a provision listed in column 1 or 2 of this Table"
+        "amounts": [],
+        "caveats": [
+          "Most table entries are repealed or omitted (indicated by 'F' footnote markers with '. . .'), leaving no operative content extractable from this chunk",
+          "Table entries reference numerous other Acts and regulations (e.g. ITA 2007, CTA 2010, ITEPA 2003, Finance Acts) which are not SA-specific provisions themselves"
+        ],
+        "cross_references": [],
+        "deadlines": [],
+        "definitions": [],
+        "obligations": [],
+        "penalties": [],
+        "relevance": "none",
+        "summary": "This chunk is a heavily amended reference table listing provisions to which TMA 1970 s.98 (penalties for special returns, information notices and regulations) applies, alongside modification notes from other instruments; most rows are repealed/omitted (marked F-numbered) and the content is not readable substantive law but a cross-reference index.",
+        "topics": []
       },
       "prompt_hash": "2ff1133f3478bd79"
     },
@@ -3072,28 +3082,28 @@
       "note": {
         "amounts": [],
         "caveats": [
-          "Sections 28AA and 28AB have been repealed and are now blank (marked '. . .')",
-          "Text shown incorporates multiple textual amendments (marked F1-F28) reflecting insertion of the partial/final closure notice regime; earlier versions of these sections used a single 'closure notice' concept",
-          "This chunk also contains numerous 'Modifications etc.' notes (C1-C13) listing other statutory instruments/Acts that apply Part 4 or s.28A with modifications - these are cross-references, not substantive SA rules, and are context-dependent (e.g. student loans, PAYE, tax credits, postgraduate loans)"
+          "Sections 28AA and 28AB have been repealed (F15) and their text is blank - not currently in force.",
+          "Text shown reflects amendments (F2-F28 markers) introducing the partial/final closure notice regime, replacing an earlier single closure notice concept.",
+          "This chunk is dense with modification notes (C1-C13) about other statutory instruments applying Part 4 with modifications, which are procedural cross-references rather than substantive SA rules."
         ],
         "cross_references": [
-          "TMA 1970 s.9A(1) (enquiry into personal or trustee return)",
+          "TMA 1970 s.9A(1) (enquiry into personal/trustee return)",
           "TMA 1970 s.12AC (enquiry into partnership return)",
-          "TMA 1970 s.8, s.8A (partner's return)",
-          "TMA 1970 s.48(2)(b) (Part 5 provisions applicable to tribunal applications)",
-          "TMA 1970 s.12ABZB(7)(b) (amendment of partnership return following reference to tribunal)",
-          "Finance Act 2019 c.1, Sch. 2 para. 20(7) (modified application of s.28A)"
+          "TMA 1970 Part 5, s.48(2)(b) (appeals provisions applying to tribunal applications)",
+          "TMA 1970 s.8, s.8A (personal returns)",
+          "TMA 1970 s.12ABZB(7)(b) (amendment of partnership return following tribunal reference)",
+          "Finance Act 2019 c.1 Sch.2 para.20(7) (modified application of s.28A)"
         ],
         "deadlines": [],
         "definitions": [
           {
-            "meaning": "Notice by which an officer informs the taxpayer that enquiries into a particular matter (of an enquiry) have been completed",
-            "ref": "TMA 1970 s.28A(1A)/s.28B(1A)",
+            "meaning": "Notice by an officer of Revenue and Customs informing the taxpayer that the officer has completed enquiries into a particular matter to which an enquiry relates",
+            "ref": "TMA 1970 s.28A(1A); s.28B(1A)",
             "term": "partial closure notice"
           },
           {
-            "meaning": "Notice by which an officer informs the taxpayer that the enquiry (or, if partial closure notices already given, the remaining enquiries) has been completed",
-            "ref": "TMA 1970 s.28A(1B)/s.28B(1B)",
+            "meaning": "Notice by an officer of Revenue and Customs informing the taxpayer that the officer has completed enquiries (or remaining enquiries, if partial closure notices already given)",
+            "ref": "TMA 1970 s.28A(1B); s.28B(1B)",
             "term": "final closure notice"
           },
           {
@@ -3107,63 +3117,43 @@
             "term": "the taxpayer (s.28B)"
           },
           {
-            "meaning": "In the Taxes Acts, references to a closure notice under s.28A/s.28B mean a partial or final closure notice under that section",
-            "ref": "TMA 1970 s.28A(8)/s.28B(9)",
+            "meaning": "In the Taxes Acts, references to a closure notice under s.28A or s.28B are to a partial or final closure notice under that section",
+            "ref": "TMA 1970 s.28A(8); s.28B(9)",
             "term": "closure notice"
           }
         ],
         "obligations": [
           {
-            "deadline": "n/a (no fixed deadline unless directed by tribunal)",
-            "must": "Issue a partial closure notice stating completion of enquiries into a matter, or a final closure notice stating completion of remaining enquiries",
-            "ref": "TMA 1970 s.28A(1A)-(1B)",
-            "trigger": "Completion of enquiry (or part of enquiry) under s.9A(1) into a personal or trustee return",
+            "deadline": "n/a (no fixed deadline unless tribunal directs one)",
+            "must": "Inform the taxpayer by notice (partial or final closure notice) that enquiries into a matter, or the enquiry as a whole, are complete, stating conclusions and either confirming no amendment is required or making amendments to give effect to conclusions",
+            "ref": "TMA 1970 s.28A(1A)-(2); s.28B(1A)-(2)",
+            "trigger": "Completion of an enquiry (or part of an enquiry) under s.9A (personal/trustee return) or s.12AC (partnership return)",
             "who": "Officer of Revenue and Customs"
           },
           {
             "deadline": "n/a",
-            "must": "State officer's conclusions and either confirm no amendment required or make amendments to give effect to conclusions",
-            "ref": "TMA 1970 s.28A(2)",
-            "trigger": "Issuing a partial or final closure notice",
-            "who": "Officer of Revenue and Customs"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Issue partial/final closure notice for enquiry under s.12AC into a partnership return, stating conclusions and amendments (if any)",
-            "ref": "TMA 1970 s.28B(1A)-(2)",
-            "trigger": "Completion of enquiry into partnership return",
-            "who": "Officer of Revenue and Customs"
-          },
-          {
-            "deadline": "n/a",
-            "must": "By notice to each partner, amend the partner's return under s.8/8A or company tax return to give effect to amendments of the partnership return",
+            "must": "Where a partnership return is amended under s.28B(2), amend each partner's return under s.8/8A or company tax return by notice to give effect to the partnership amendments",
             "ref": "TMA 1970 s.28B(4)",
-            "trigger": "Partnership return amended under s.28B(2)",
+            "trigger": "Amendment of partnership return under s.28B(2)",
             "who": "Officer of Revenue and Customs"
           },
           {
-            "deadline": "n/a",
-            "may": "Apply to the tribunal for a direction requiring an officer to issue a partial or final closure notice within a specified period",
-            "ref": "TMA 1970 s.28A(4)/s.28B(5)",
-            "trigger": "Enquiry ongoing",
-            "who": "Taxpayer (person given notice of enquiry, or successor for partnerships)"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Give the direction applied for unless satisfied there are reasonable grounds for not issuing the closure notice within a specified period",
-            "ref": "TMA 1970 s.28A(6)/s.28B(7)",
-            "trigger": "Application by taxpayer under s.28A(4)/s.28B(5)",
+            "deadline": "n/a - subject to tribunal being satisfied there are no reasonable grounds for delay",
+            "must": "Give a direction requiring an officer to issue a partial or final closure notice within a specified period",
+            "ref": "TMA 1970 s.28A(4)-(6); s.28B(5)-(7)",
+            "trigger": "Application by the taxpayer under s.28A(4) or s.28B(5)",
             "who": "Tribunal"
           }
         ],
         "penalties": [],
         "relevance": "core",
-        "summary": "This chunk sets out TMA 1970 s.28A (completion of enquiry into personal or trustee return) and s.28B (completion of enquiry into partnership return), including the mechanism of partial and final closure notices. It also notes ss.28AA and 28AB have been repealed and left blank. A closure notice must either state no amendment is required or make amendments to give effect to the officer's conclusions, and takes effect when issued. Taxpayers can apply to the tribunal for a direction requiring an officer to issue a closure notice within a specified period, and the tribunal must grant this unless satisfied there are reasonable grounds for not doing so.",
+        "summary": "This chunk sets out how HMRC enquiries into personal/trustee returns (s.28A, enquiries under s.9A) and partnership returns (s.28B, enquiries under s.12AC) are brought to an end, via partial closure notices (for specific matters) and final closure notices (for the whole enquiry). A closure notice must state the officer's conclusions and either confirm no amendment is needed or make amendments to give effect to those conclusions, taking effect on issue. Taxpayers may apply to the tribunal for a direction requiring an officer to issue a closure notice within a specified period, and the tribunal must grant this unless satisfied there are reasonable grounds for not doing so. For partnerships, amendment of the partnership return under s.28B triggers consequential amendments to each partner's own return or company tax return. Sections 28AA and 28AB have been repealed and are now blank.",
         "topics": [
-          "enquiries",
-          "closure-notices",
-          "partnership-return",
-          "appeals-tribunal"
+          "enquiry-closure",
+          "closure-notice",
+          "partnership-enquiry",
+          "tribunal-direction",
+          "amendment-of-return"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"

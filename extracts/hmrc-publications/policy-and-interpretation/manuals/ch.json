@@ -2311,66 +2311,66 @@
       "note": {
         "amounts": [
           {
-            "name": "Telling weighting",
+            "name": "Telling element weighting",
             "period": "n/a",
             "ref": "CH82430",
             "value": "30%"
           },
           {
-            "name": "Helping weighting",
+            "name": "Helping element weighting",
             "period": "n/a",
             "ref": "CH82430",
             "value": "40%"
           },
           {
-            "name": "Giving access weighting",
+            "name": "Giving access element weighting",
             "period": "n/a",
             "ref": "CH82430",
             "value": "30%"
           },
           {
-            "name": "Example 1 - maximum penalty (deliberate not concealed, unprompted, onshore)",
+            "name": "Example 1 - maximum penalty (deliberate, not concealed, non-offshore)",
             "period": "n/a",
-            "ref": "CH82432",
+            "ref": "CH82432 Example 1 / CH82470",
             "value": "70%"
           },
           {
-            "name": "Example 1 - minimum penalty (deliberate not concealed, unprompted, onshore)",
+            "name": "Example 1 - minimum penalty",
             "period": "n/a",
-            "ref": "CH82432",
+            "ref": "CH82432 Example 1 / CH82470",
             "value": "20%"
           },
           {
-            "name": "Example 1 - quality of disclosure achieved",
+            "name": "Example 1 - calculated quality of disclosure",
             "period": "n/a",
-            "ref": "CH82432",
+            "ref": "CH82432 Example 1",
             "value": "65%"
           },
           {
             "name": "Example 2 - maximum penalty (deliberate, category 2 jurisdiction, pre-2016-17)",
-            "period": "pre-2016-17",
-            "ref": "CH82432",
+            "period": "before 2016-17",
+            "ref": "CH82432 Example 2",
             "value": "105%"
           },
           {
-            "name": "Example 2 - minimum penalty (deliberate, category 2 jurisdiction, pre-2016-17)",
-            "period": "pre-2016-17",
-            "ref": "CH82432",
+            "name": "Example 2 - minimum penalty",
+            "period": "before 2016-17",
+            "ref": "CH82432 Example 2",
             "value": "40%"
           },
           {
-            "name": "Example 2 - HMRC floor on reduction despite full cooperation",
-            "period": "2012-13 disclosure",
-            "ref": "CH82432",
+            "name": "Example 2 - floor applied due to delay",
+            "period": "n/a",
+            "ref": "CH82432 Example 2",
             "value": "30%"
           }
         ],
         "caveats": [
-          "Applicable dates for these rules must be checked per tax/duty per CH81011.",
-          "The 'additional information' element for offshore matters only applies from 2016-17 onward.",
-          "Penalty percentage must sit between statutory maximum and minimum levels for the relevant behaviour category.",
-          "Example 2 involves pre-2016-17 rules with different (higher) maximum/minimum penalty percentages than post-2016-17 offshore rules referenced at CH82480+.",
-          "This is HMRC internal compliance guidance for staff calculating penalties, not primarily an SA filing/return provision, though relevant to SA penalty calculations for inaccuracies."
+          "Rules described apply under the FA07/Sch24 penalty regime; applicability depends on the tax/duty and period, per CH81011 - readers must check this before relying on percentages.",
+          "The 105%/40% penalty range in Example 2 applies only to category 2 jurisdiction deliberate inaccuracies for periods before 2016-17; different (higher) maxima/minima may apply for offshore matters involving income tax/CGT per CH82480+.",
+          "The 'additional information' fourth element for offshore matters only applies for years 2016-17 and later, introduced by Schedule 21 FA 2016.",
+          "The percentage weightings (30/40/30) are described as 'a guide' rather than a fixed rule.",
+          "This content concerns penalties generally (not SA-specific) but is directly relevant where SA taxpayers make disclosures of inaccuracies, including offshore income."
         ],
         "cross_references": [
           "CH81011",
@@ -2383,9 +2383,9 @@
           "CH82431",
           "CH82432",
           "CH82465",
-          "CH82510",
           "CH82470",
-          "CH82480",
+          "CH82480+",
+          "CH82510",
           "FA07/SCH24/PARA9(1)",
           "FA07/SCH24/PARA9(3)",
           "Schedule 21 FA 2016"
@@ -2393,67 +2393,72 @@
         "deadlines": [],
         "definitions": [
           {
-            "meaning": "Replaces the terms 'abatement' and 'mitigation' used in previous penalty regimes; the extent to which a penalty is reduced based on quality of disclosure",
+            "meaning": "term replacing 'abatement' and 'mitigation' from previous penalty regimes; the reduction in penalty given for the quality of a person's disclosure",
             "ref": "CH82430",
-            "term": "Reduction for disclosure"
+            "term": "reduction for disclosure"
           },
           {
-            "meaine": "Assessed by reference to timing, nature and extent of telling, helping and giving access (and additional information for offshore matters)",
-            "ref": "CH82431",
-            "term": "Quality of disclosure"
+            "meaning": "assessed by reference to three elements - telling, helping, giving access - weighted 30%/40%/30%; for offshore matters/transfers from 2016-17, a fourth element of 'additional information' also applies",
+            "ref": "CH82430",
+            "term": "quality of disclosure"
           },
           {
-            "meaning": "Normally considered to be over 3 years but may be less where the overall disclosure covers a longer period",
-            "ref": "CH82430; CH82431; CH82450",
-            "term": "Significant period"
+            "meaning": "normally considered to be over 3 years, but may be less where the overall disclosure covers a longer period; relevant to whether full reduction for quality of disclosure is available",
+            "ref": "CH82430/CH82431/CH82450",
+            "term": "significant period"
           },
           {
-            "meaning": "Giving reasonable help in quantifying the inaccuracy or under-assessment, including positive assistance, active engagement, and volunteering relevant information",
+            "meaning": "giving reasonable help in quantifying the inaccuracy, positive assistance rather than passive acceptance or obstruction, actively engaging to quantify inaccuracies, volunteering relevant information; assessed by timing, nature and extent",
             "ref": "CH82450",
-            "term": "Helping"
+            "term": "helping"
           },
           {
-            "meaning": "A fourth element (alongside telling, helping, giving access) taken into account for quality of disclosure where an offshore matter or offshore transfer is a factor, for years 2016-17 and later, introduced by Schedule 21 FA 2016",
-            "ref": "CH82430",
-            "term": "Additional information"
+            "meaning": "illustrated by Example 9: a disclosure made when the person had no reason to believe HMRC was about to discover the undisclosed income, even if HMRC would not otherwise receive the information (e.g. via CRS)",
+            "ref": "Example 9",
+            "term": "unprompted disclosure"
           }
         ],
-        "obligations": [],
+        "obligations": [
+          {
+            "deadline": "n/a",
+            "must": "check the date from which the disclosure quality rules apply for the tax/duty concerned",
+            "ref": "CH81011",
+            "trigger": "assessing a penalty reduction for disclosure",
+            "who": "HMRC officer"
+          },
+          {
+            "deadline": "n/a",
+            "must": "tell, help, and give access to records to qualify for penalty reduction",
+            "ref": "CH82430",
+            "trigger": "making a disclosure of an inaccuracy or under-assessment",
+            "who": "person disclosing an inaccuracy"
+          }
+        ],
         "penalties": [
           {
-            "consequence": "Penalty reduced based on quality of disclosure (telling, helping, giving access, and for offshore matters from 2016-17 also 'additional information'), weighted 30%/40%/30%",
-            "ref": "CH82430",
-            "trigger": "Inaccuracy/under-assessment disclosed to HMRC"
+            "consequence": "penalty range 20% to 70%, reduced according to quality of disclosure",
+            "ref": "CH82432 Example 1",
+            "trigger": "deliberate but not concealed inaccuracy, unprompted disclosure, non-offshore"
           },
           {
-            "consequence": "Full reduction for quality of disclosure no longer available; HMRC may impose a floor below which the penalty will not be reduced even with full cooperation (e.g. 30% floor in Example 2)",
-            "ref": "CH82430; CH82465",
-            "trigger": "Person takes a 'significant period' (normally over 3 years) to correct non-compliance, or could previously have used an offshore disclosure facility"
+            "consequence": "penalty range 40% to 105%; if person waited a significant period before disclosing and had access to targeted offshore disclosure facilities, reduction will not go below 30% even with full cooperation; further non-cooperation after disclosure may increase penalty further",
+            "ref": "CH82432 Example 2",
+            "trigger": "deliberate inaccuracy involving offshore category 2 jurisdiction for a period before 2016-17, unprompted disclosure"
           },
           {
-            "consequence": "Penalty range 20% to 70% (Example 1)",
-            "ref": "CH82432",
-            "trigger": "Deliberate but not concealed inaccuracy, unprompted disclosure, non-offshore"
-          },
-          {
-            "consequence": "Penalty range 40% to 105% (Example 2)",
-            "ref": "CH82432",
-            "trigger": "Deliberate inaccuracy involving category 2 offshore jurisdiction, period before 2016-17"
-          },
-          {
-            "consequence": "Even higher penalties may be due",
-            "ref": "CH82432",
-            "trigger": "Failure to cooperate fully after submitting a disclosure"
+            "consequence": "person can no longer expect the full reduction for quality of disclosure",
+            "ref": "CH82430; CH82431; CH82450; CH82465",
+            "trigger": "taking a 'significant period' (normally over 3 years) to correct non-compliance, or having had access to an offshore disclosure facility"
           }
         ],
         "relevance": "related",
-        "summary": "This chunk from HMRC's Compliance Handbook explains how penalty reductions for disclosure of inaccuracies are calculated, based on three elements: telling (30%), helping (40%) and giving access (30%). It notes that offshore matters/transfers from 2016-17 onward add a fourth 'additional information' element under Schedule 21 FA 2016. It describes how a 'significant period' (normally over 3 years) of delay in correcting non-compliance, or eligibility for a prior offshore disclosure facility, limits the maximum reduction available, and gives worked examples of calculating penalty percentages for deliberate inaccuracies, including offshore cases.",
+        "summary": "This chunk from HMRC's Compliance Handbook explains how penalty reductions for 'quality of disclosure' are calculated under FA07/SCH24, based on three elements: telling (up to 30%), helping (up to 40%), and giving access to records (up to 30%). For offshore matters from 2016-17 onwards, a fourth 'additional information' element applies under FA2016/Sch21. It notes that taking a 'significant period' (normally over 3 years) to correct non-compliance limits the maximum reduction available, and gives worked examples of penalty percentage calculations for deliberate inaccuracies, including higher penalties for offshore category 2 jurisdictions.",
         "topics": [
           "penalties",
           "disclosure",
           "offshore-matters",
-          "quality-of-disclosure",
-          "unprompted-disclosure"
+          "reduction-for-disclosure",
+          "compliance-checks"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"
@@ -5874,29 +5879,27 @@
       "note": {
         "amounts": [
           {
-            "name": "Loss carry-back overpayment example (Benjamin)",
+            "name": "Loss carry-back overpayment (example)",
             "period": "2012-13",
             "ref": "CH146300",
             "value": "£25,000"
           },
           {
-            "name": "Averaging claim repayment example (Farmer Brown)",
+            "name": "Averaging claim repayment (example)",
             "period": "2013-14",
             "ref": "CH146300",
             "value": "£3,400"
           }
         ],
         "caveats": [
-          "Users must first check whether and from what date the FA2009 interest rules apply before applying these special provisions (see CH140160)",
-          "MIR and MIRAS were withdrawn from 6 April 2000; home income plan relief for new loans withdrawn from 9 March 1999 - only existing pre-9 March 1999 home income plans continue to attract the special provision",
-          "The special provision for income accumulated under certain trusts refers to a 1952-era provision (ITA 1952 s.228) and requires referral to a specific specialist team",
-          "Examples given (Antonio, Benjamin, Farmer Brown, Kate) use historic tax years (2012-13 etc.) purely for illustration"
+          "MIR and MIRAS scheme were withdrawn from 6 April 2000; relief for new home income plan loans withdrawn from 9 March 1999, but existing pre-9 March 1999 home income plans continue to qualify",
+          "The special provisions apply only after confirming (per CH140160) that the FA2009 interest rules apply to the specific tax/duty and date in question",
+          "VAT-specific special provisions (CH146410-CH146490) are listed but not detailed in this chunk"
         ],
         "cross_references": [
           "CH140160",
           "CH146040",
           "CH146120",
-          "CH146220",
           "CH146240",
           "CH146260",
           "CH146280",
@@ -5918,87 +5921,68 @@
           "ITTOIA 2005 s.397(1)/s.397A(2)",
           "ICTA88/S369",
           "ICTA88/S375(8)(c)",
-          "ITA 1952 s.228",
-          "FA09/SCH54/PARA6",
-          "FA09/SCH54/PARA7",
-          "FA09/SCH54/PARA8",
-          "FA09/SCH54/PARA9"
+          "section 228 ITA 1952",
+          "FA09/SCH54"
         ],
         "deadlines": [
           {
-            "applies_to": "Income tax deducted at source (e.g. PAYE, net annuities, net royalties)",
+            "applies_to": "Income tax deducted or treated as deducted at source (e.g. PAYE, net annuities, net royalties)",
             "name": "Repayment interest start date - income tax deducted at source",
-            "ref": "FA09/SCH54/PARA6; CH146240",
+            "ref": "CH146240 / FA09/SCH54/PARA6",
             "rule": "31 January of the year following the year to which the income tax relates"
           },
           {
-            "applies_to": "Claims to carry back losses (TMA70/SCH1B/PARA2) or average farmers' profits (ITTOIA05/PART2/CHAPTER16)",
-            "name": "Repayment interest start date - loss relief carry back / averaging",
-            "ref": "FA09/SCH54/PARA7; CH146280",
+            "applies_to": "Claims under TMA70/SCH1B/PARA2 (loss relief) and ITTOIA05/PART2/CHAPTER16 (farmers' averaging)",
+            "name": "Repayment interest start date - loss relief carry-back and averaging",
+            "ref": "CH146280 / FA09/SCH54/PARA7",
             "rule": "31 January following the year that is the 'later year' in relation to the claim"
           },
           {
-            "applies_to": "Pre-9 March 1999 home income plans where deduction not made",
+            "applies_to": "Payments on pre-9 March 1999 home income plans made without deduction",
             "name": "Repayment interest start date - MIRAS home income plans",
-            "ref": "FA09/SCH54/PARA8; ICTA88/S375(8)(c)",
+            "ref": "CH146320 / FA09/SCH54/PARA8; ICTA88/S375(8)(c)",
             "rule": "31 January next following the tax year in which the deduction could have been made"
           }
         ],
         "definitions": [
           {
-            "meaning": "Where a person making a payment to another is required to deduct tax from that payment; for repayment interest start date purposes includes income tax deducted (or treated as deducted/paid) on income in respect of a year, and tax credits under ITTOIA 2005 s.397(1) or s.397A(2), but excludes amounts deducted at source under PAYE regulations in respect of previous years",
-            "meaning_ref": "CH146240",
-            "ref": "FA09/SCH54/PARA6",
+            "meaning": "Where a person making a payment to another is required to deduct tax from that payment; includes income tax deducted/treated as deducted or treated as paid in respect of a year, and tax credits under ITTOIA 2005 s.397(1)/s.397A(2), but excludes amounts deducted under PAYE regulations in respect of previous years",
+            "ref": "CH146240 / FA09/SCH54/PARA6",
             "term": "Income tax deducted at source"
           },
           {
-            "meaning": "Mortgage Interest Relief at Source under ICTA88/S369, allowing a qualifying borrower to deduct and retain tax from certain loan repayments; MIR and MIRAS withdrawn from 6 April 2000, with home income plan relief for new loans withdrawn from 9 March 1999 (existing plans continue to qualify)",
-            "ref": "CH146320",
+            "meaning": "Mortgage Interest Relief at Source under ICTA88/S369, permitting a qualifying borrower to deduct and retain tax from certain loan repayments; MIR and MIRAS withdrawn from 6 April 2000, with home income plan relief for new loans withdrawn from 9 March 1999 (existing plans continue to qualify)",
+            "ref": "CH146320 / FA09/SCH54/PARA8",
             "term": "MIRAS"
           }
         ],
         "obligations": [
           {
             "deadline": "n/a",
-            "must": "Check whether, and from which date, the FA 2009 interest rules apply to the tax or duty being dealt with",
+            "must": "Check whether and from which date the FA 2009 interest rules apply to the tax or duty being dealt with",
             "ref": "CH140160",
-            "trigger": "Handling a repayment interest case",
-            "who": "HMRC officer/caseworker"
+            "trigger": "Dealing with repayment interest on tax or duty",
+            "who": "HMRC officer"
           },
           {
             "deadline": "n/a",
-            "must": "Allocate an ITSA overpayment first to the balancing payment, then in equal parts to payments on account, then to overpaid PAYE tax",
-            "ref": "CH146120",
-            "trigger": "Overpayment arising from amended SA return",
-            "who": "HMRC"
-          },
-          {
-            "deadline": "n/a",
-            "must": "May receive a refund equal to tax that could have been deducted if payment made without deduction",
-            "ref": "ICTA88/S375(8)(c)",
-            "trigger": "Payment made on a home income plan without making the deduction",
-            "who": "Claimant with a pre-9 March 1999 home income plan"
-          },
-          {
-            "deadline": "n/a",
-            "must": "Refer claims under section 228 ITA 1952 for income accumulated under certain trusts to HMRC Trusts Edinburgh",
-            "ref": "CH146360; RM5516",
-            "trigger": "Claim for income tax to be repaid under s.228 ITA 1952",
-            "who": "HMRC caseworker"
+            "must": "Refer claims for repayment under section 228 ITA 1952 relating to income accumulated under certain trusts to HMRC Trusts Edinburgh",
+            "ref": "CH146360 / RM5516",
+            "trigger": "Receipt of a claim under section 228 ITA 1952",
+            "who": "HMRC officer"
           }
         ],
         "penalties": [],
-        "relevance": "core",
-        "summary": "This chunk sets out special provisions under FA2009/SCH54 that alter the general repayment interest start date for particular circumstances relevant to Self Assessment. For income tax deducted at source (e.g. PAYE, net annuities, net royalties), the repayment interest start date is 31 January following the tax year to which the income relates, illustrated by a worked example involving overpayment allocation. For claims to carry back losses to an earlier year or to average farmers' profits, the start date is 31 January following the 'later year' of the claim, again illustrated with worked examples. Special (now largely historic) provisions also cover MIRAS home income plans and income accumulated under certain trusts (ITA 1952 s.228), with the latter to be referred to HMRC Trusts Edinburgh. A general caveat throughout is that users must first check whether and from what date the FA2009 interest rules apply (CH140160).",
+        "relevance": "related",
+        "summary": "This chunk covers HMRC's Compliance Handbook guidance on special provisions under FA2009/Sch54 that change the repayment interest start date away from the general rule (CH146040) for specific circumstances: income tax deducted at source (e.g. PAYE), carry-back of losses and farmers' averaging claims, MIRAS home income plans, and income accumulated under certain trusts. Each provision sets a fixed repayment interest start date of 31 January following a specified tax year, illustrated with worked ITSA examples (Antonio, Benjamin, Farmer Brown, Kate). It also lists related VAT-specific special provisions covered elsewhere (CH146410-CH146490).",
         "topics": [
           "repayment-interest",
           "interest-start-date",
-          "income-tax-deducted-at-source",
-          "loss-relief-carry-back",
-          "averaging-relief",
+          "paye",
+          "loss-relief",
+          "averaging",
           "miras",
-          "trust-income-accumulation",
-          "overpayment-allocation"
+          "trusts"
         ]
       },
       "prompt_hash": "2ff1133f3478bd79"
