@@ -36,16 +36,20 @@ def cmd_status(args) -> int:
     cached = sum(len(p.chunks) - len(p.todo) for p in plans)
     orphans = sum(p.orphans for p in plans)
     stale_prompt = sum(len(p.stale_prompt) for p in plans)
+    invalid = sum(len(p.invalid) for p in plans)
     print("Extract stage (corpus -> extracts/)")
     print(f"  {len(plans)} corpus documents, {cached + todo} chunks")
     print(f"  {cached} cached, {todo} need extracting, {orphans} stale cache entries to prune")
+    if invalid:
+        print(f"  {invalid} cached note(s) fail the schema and count as work to do "
+              f"(re-run with `extract`)")
     if stale_prompt:
         print(f"  {stale_prompt} cached under an older extract prompt "
               f"(re-run with `extract --stale-prompt`)")
     for p in plans:
         if p.todo or p.orphans or p.stale_prompt:
-            print(f"    {p.doc}: {len(p.todo)} new, {p.orphans} stale, "
-                  f"{len(p.stale_prompt)} old-prompt")
+            print(f"    {p.doc}: {len(p.todo) - len(p.invalid)} new, {p.orphans} stale, "
+                  f"{len(p.stale_prompt)} old-prompt, {len(p.invalid)} invalid")
 
     model = _model(args, "compose")
     works = compose.plan(model)

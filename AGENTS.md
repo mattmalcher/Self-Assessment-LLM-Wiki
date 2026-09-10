@@ -11,7 +11,9 @@ sources.yml -> corpus/*.md -> extracts/*.json -> docs/*.md -> mkdocs site
 ```
 
 Every stage is content-addressed: fetch skips on 304/hash, extract is keyed on
-chunk SHA-256, compose on brief+prompt+model+chunk hashes. Stages 2-3 never run
+chunk SHA-256, compose on brief+prompt+model+chunk hashes. An extracted note
+only counts as cached if it passes `synth/schema.py`; a malformed one is
+reported by `status` and re-extracted on the next run. Stages 2-3 never run
 in CI — they cost model calls on the maintainer's own subscription.
 
 ## Do not hand-edit

@@ -18,7 +18,7 @@ from pathlib import Path
 
 import yaml
 
-from . import store
+from . import schema, store
 from .config import DOCS_DIR, MANIFEST_PATH, PAGES_PATH, PROMPTS_DIR, REPO_ROOT
 from .llm import Backend
 
@@ -92,6 +92,11 @@ def select(spec: dict, extracts: dict[str, dict]) -> list[Selected]:
             continue
         for chunk_hash, entry in data.get("chunks", {}).items():
             note = entry.get("note") or {}
+            # A note that fails the schema is not evidence: the extract stage
+            # already treats it as work outstanding, so a page must not quietly
+            # compose around a half-written one. See `synth/schema.py`.
+            if not schema.is_valid(note):
+                continue
             if note.get("relevance", "none") not in tiers:
                 continue
             sel = Selected(doc=doc, chunk_hash=chunk_hash, heading=entry.get("heading", ""),
