@@ -103,6 +103,32 @@ big run, not after.
 Composition is ~17 calls for the whole site, and only runs for pages whose
 selected notes changed.
 
+## The invalidation contract
+
+A page's `input_hash` in `manifest.json` decides whether composing it again
+would change anything. It covers, and only covers:
+
+- `prompts/compose.md`;
+- the page's entry in `pages.yml`, minus the nav-only keys (`section`), which
+  never reach the prompt;
+- the compose model;
+- every note the selector picks, fingerprinted by `compose.note_fingerprint`:
+  the note's full content, its heading, source id and URL, the chunk hash it
+  came from, the hash of `prompts/extract.md` it was written under, and the
+  extraction `backend:model` that wrote it.
+
+So a re-extracted or hand-corrected note makes every page that selects it
+stale, even though its chunk hash is unchanged — as does re-extracting under a
+new extract prompt or a different extraction model. Notes the selector does
+**not** pick have no effect on the page, whatever happens to them.
+
+Fingerprints are combined in a fixed `(doc, chunk_hash)` order and serialized
+as compact sorted-key JSON, so the hash depends on note content rather than on
+dict insertion order or the order `select()` happened to return.
+
+`compose.NOTE_FINGERPRINT_VERSION` is bumped if that layout ever changes shape;
+bumping it restages every page.
+
 ## Files
 
 | Path | What it is |
