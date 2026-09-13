@@ -43,7 +43,10 @@ Every layer is content-addressed and cached, so a refresh costs work only in
 proportion to what changed upstream:
 
 - **Fetch** skips on HTTP `304`, on an unchanged upstream timestamp, and on an
-  unchanged content hash.
+  unchanged content hash. Validators are kept per request, not per source, so
+  an unchanged helpsheet attachment, collection member or manual section is a
+  `304` rather than a download — a refresh of a 2,000-section HMRC manual
+  transfers only the sections that moved.
 - **Extract** is keyed on the SHA-256 of each chunk of corpus text. Chunk
   boundaries follow markdown headings, so amending three sections of an Act
   invalidates three chunks — not the 141 that make up the Act.

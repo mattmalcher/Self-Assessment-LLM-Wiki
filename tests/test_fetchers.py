@@ -15,7 +15,7 @@ from __future__ import annotations
 
 import pytest
 
-from self_assessment_wiki.pipeline import render
+from self_assessment_wiki.pipeline import httpcache, render
 from self_assessment_wiki.pipeline.common import FetchResult
 from self_assessment_wiki.pipeline.fetchers import caselaw, govuk_content, web_page
 
@@ -385,3 +385,299 @@ def test_a_re_fetch_replaces_only_its_own_section(monkeypatch, tmp_path):
     assert "LITRG first edition." not in text
     assert "TaxAid says." in text
     assert text.count("<!-- section:litrg -->") == 1
+
+
+# --- GOV.UK: conditional caching -------------------------------------------
+#
+# The fetchers keep validators per API path (pipeline/httpcache.py) and send
+# them on every request. These cover what a second, unchanged run costs, and
+# that the two upstreams that don't cooperate - one that never sends a
+# validator, one that answers 200 to a conditional request anyway - still
+# reach the same "nothing changed" verdict via the timestamp and the content
+# hash.
+
+
+class CachingApi:
+    """`conditional_get` over a dict of path -> document, with ETags.
+
+    Answers `304` when the request carries the ETag this path was last served
+    with, so a test can assert what a warm run actually downloaded rather than
+    only what it wrote. `bump()` republishes a document the way an upstream
+    would: new body, new ETag, new `public_updated_at`.
+    """
+
+    def __init__(self, docs: dict[str, dict], *, validators: bool = True):
+        self.docs = dict(docs)
+        self.etags = {path: "v1" for path in docs}
+        self.validators = validators
+        self.requested: list[str] = []
+        self.not_modified: list[str] = []
+
+    def bump(self, path: str, document: dict) -> None:
+        self.docs[path] = document
+        self.etags[path] = self.etags.get(path, "v1") + "+"
+
+    def reset(self) -> None:
+        self.requested = []
+        self.not_modified = []
+
+    def __call__(self, url, cache, *, as_json=False, retries=3):
+        path = url.replace(govuk_content.API_BASE, "")
+        self.requested.append(path)
+        if path not in self.docs:
+            import requests
+            response = requests.Response()
+            response.status_code = 404
+            raise requests.HTTPError(response=response)
+        etag = self.etags[path] if self.validators else None
+        if etag is not None and cache.get("etag") == etag:
+            self.not_modified.append(path)
+            return FetchResult(changed=False, status_code=304, etag=etag)
+        return FetchResult(changed=True, status_code=200,
+                           json=self.docs[path], etag=etag)
+
+
+HS340 = doc("/p/hs340", "HS340", "<p>Summary.</p>",
+            public_updated_at="2026-01-05T10:00:00Z",
+            details={"attachments": [attachment("/p/hs340/2025", "HS340 (2025)")]})
+HS340_ATTACHMENT = doc("/p/hs340/2025", "HS340 2025", "<p>First edition.</p>")
+HS340_ENTRY = {**ENTRY, "url": "/p/hs340"}
+
+
+def test_a_second_unchanged_run_is_one_304_and_no_attachment_fetch(monkeypatch):
+    api = CachingApi({"/p/hs340": HS340, "/p/hs340/2025": HS340_ATTACHMENT})
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+    docs, manifest = {}, {}
+
+    assert govuk_content.fetch_single(HS340_ENTRY, manifest, docs) is True
+    assert api.requested == ["/p/hs340", "/p/hs340/2025"]
+
+    api.reset()
+    assert govuk_content.fetch_single(HS340_ENTRY, manifest, docs) is False
+    assert api.requested == ["/p/hs340"]
+    assert api.not_modified == ["/p/hs340"]
+
+
+def test_a_server_that_ignores_validators_is_skipped_on_its_own_timestamp(monkeypatch):
+    """GOV.UK reports `public_updated_at`; a 200 that repeats it is a no-op."""
+    api = CachingApi({"/p/hs340": HS340, "/p/hs340/2025": HS340_ATTACHMENT},
+                     validators=False)
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+    docs, manifest = {}, {}
+    govuk_content.fetch_single(HS340_ENTRY, manifest, docs)
+
+    api.reset()
+    assert govuk_content.fetch_single(HS340_ENTRY, manifest, docs) is False
+    assert api.requested == ["/p/hs340"]  # the attachment is never asked for
+
+
+def test_no_validators_and_no_timestamp_still_falls_back_to_the_hash(monkeypatch, tmp_path):
+    api = CachingApi({"/p/x": doc("/p/x", "X", "<p>Body.</p>")}, validators=False)
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+    docs, manifest = {}, {}
+    entry = {**ENTRY, "url": "/p/x"}
+    assert govuk_content.fetch_single(entry, manifest, docs) is True
+    assert govuk_content.fetch_single(entry, manifest, docs) is False
+    assert (tmp_path / entry["output"]).read_text().count("Body.") == 1
+
+
+def test_a_changed_document_re_fetches_its_attachments(monkeypatch, tmp_path):
+    api = CachingApi({"/p/hs340": HS340, "/p/hs340/2025": HS340_ATTACHMENT})
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+    docs, manifest = {}, {}
+    govuk_content.fetch_single(HS340_ENTRY, manifest, docs)
+
+    api.bump("/p/hs340", {**HS340, "public_updated_at": "2026-06-01T10:00:00Z"})
+    api.reset()
+    assert govuk_content.fetch_single(HS340_ENTRY, manifest, docs) is True
+    # The attachment 304s, but the page needs its body: it is asked for again.
+    assert api.not_modified == ["/p/hs340/2025"]
+    assert "First edition." in (tmp_path / HS340_ENTRY["output"]).read_text()
+
+
+def test_a_warm_cache_still_rebuilds_a_deleted_page(monkeypatch, tmp_path):
+    api = CachingApi({"/p/hs340": HS340, "/p/hs340/2025": HS340_ATTACHMENT})
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+    docs, manifest = {}, {}
+    govuk_content.fetch_single(HS340_ENTRY, manifest, docs)
+    (tmp_path / HS340_ENTRY["output"]).unlink()
+
+    api.reset()
+    assert govuk_content.fetch_single(HS340_ENTRY, manifest, docs) is True
+    assert api.not_modified == []  # validators dropped; full responses asked for
+    assert "First edition." in (tmp_path / HS340_ENTRY["output"]).read_text()
+
+
+# --- GOV.UK: caching a manual ----------------------------------------------
+
+MANUAL_DOCS = {
+    "/hmrc-internal-manuals/sam": branch("/hmrc-internal-manuals/sam", "SAM",
+                                         [child("/sam/sam100", "SAM100")]),
+    "/sam/sam100": branch("/sam/sam100", "SAM100",
+                          [child("/sam/sam100050", "SAM100050"),
+                           child("/sam/sam100060", "SAM100060")]),
+    "/sam/sam100050": doc("/sam/sam100050", "SAM100050", "<p>Criteria for SA.</p>"),
+    "/sam/sam100060": doc("/sam/sam100060", "SAM100060", "<p>Notice to file.</p>"),
+}
+
+
+def warm_manual(monkeypatch, docs=None):
+    api = CachingApi(docs or MANUAL_DOCS)
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+    store: dict = {}
+    manifest: dict = {}
+    assert govuk_content.fetch_manual(MANUAL_ENTRY, manifest, store) is True
+    api.reset()
+    return api, store, manifest
+
+
+def test_an_unchanged_manual_costs_304s_and_rewrites_nothing(monkeypatch, tmp_path):
+    api, store, manifest = warm_manual(monkeypatch)
+    before = (tmp_path / MANUAL_ENTRY["output"]).read_text()
+
+    assert govuk_content.fetch_manual(MANUAL_ENTRY, manifest, store) is False
+    # Every section is still checked - and every check is a 304, including the
+    # branch sections, whose children come from the remembered tree.
+    assert set(api.requested) == set(MANUAL_DOCS)
+    assert set(api.not_modified) == set(MANUAL_DOCS)
+    # Reusing the rendered blocks has to be byte-exact: any churn here would
+    # invalidate the extract cache downstream for no upstream change.
+    assert (tmp_path / MANUAL_ENTRY["output"]).read_text() == before
+
+
+def test_only_the_changed_section_of_a_manual_is_re_rendered(monkeypatch, tmp_path):
+    api, store, manifest = warm_manual(monkeypatch)
+    api.bump("/sam/sam100050", doc("/sam/sam100050", "SAM100050", "<p>New criteria.</p>"))
+
+    assert govuk_content.fetch_manual(MANUAL_ENTRY, manifest, store) is True
+    assert "/sam/sam100050" not in api.not_modified
+    assert "/sam/sam100060" in api.not_modified
+
+    text = (tmp_path / MANUAL_ENTRY["output"]).read_text()
+    assert "New criteria." in text and "Criteria for SA." not in text
+    assert "Notice to file." in text  # reused verbatim from the last run
+
+
+def test_a_section_added_under_an_unchanged_branch_is_picked_up(monkeypatch, tmp_path):
+    api, store, manifest = warm_manual(monkeypatch)
+    api.bump("/sam/sam100", branch("/sam/sam100", "SAM100",
+                                   [child("/sam/sam100050", "SAM100050"),
+                                    child("/sam/sam100060", "SAM100060"),
+                                    child("/sam/sam100070", "SAM100070")]))
+    api.bump("/sam/sam100070", doc("/sam/sam100070", "SAM100070", "<p>Late filing.</p>"))
+
+    assert govuk_content.fetch_manual(MANUAL_ENTRY, manifest, store) is True
+    text = (tmp_path / MANUAL_ENTRY["output"]).read_text()
+    assert "Late filing." in text and "Criteria for SA." in text
+
+
+def test_a_deleted_manual_page_is_rebuilt_from_full_responses(monkeypatch, tmp_path):
+    api, store, manifest = warm_manual(monkeypatch)
+    before = (tmp_path / MANUAL_ENTRY["output"]).read_text()
+    (tmp_path / MANUAL_ENTRY["output"]).unlink()
+
+    assert govuk_content.fetch_manual(MANUAL_ENTRY, manifest, store) is True
+    # Only the branch section, which never had a body to restore, still 304s.
+    assert api.not_modified == ["/sam/sam100"]
+    assert (tmp_path / MANUAL_ENTRY["output"]).read_text() == before
+
+
+def test_a_block_that_is_not_the_one_we_wrote_is_not_a_cache_hit(monkeypatch, tmp_path):
+    """The corpus file is the body cache, so each block is hashed into it too;
+    an edited page must not be able to feed a 304 back into the next run."""
+    api, store, manifest = warm_manual(monkeypatch)
+    path = tmp_path / MANUAL_ENTRY["output"]
+    path.write_text(path.read_text().replace("Notice to file.", "Edited by hand."))
+
+    govuk_content.fetch_manual(MANUAL_ENTRY, manifest, store)
+    assert "/sam/sam100060" not in api.not_modified
+    assert "/sam/sam100050" in api.not_modified
+
+
+# --- GOV.UK: caching a collection ------------------------------------------
+
+EXPANDED = {**COLLECTION_ENTRY, "expand_items": True,
+            "items_dir": "corpus/guidance/sa-forms"}
+COLLECTION_DOCS = {
+    "/government/collections/sa-forms": collection(member("/g/sa100", "SA100", "id-1"),
+                                                   member("/g/sa102", "SA102", "id-2")),
+    "/g/sa100": doc("/g/sa100", "SA100", "<p>The main return.</p>"),
+    "/g/sa102": doc("/g/sa102", "SA102", "<p>Employment pages.</p>"),
+}
+
+
+def warm_collection(monkeypatch):
+    api = CachingApi(COLLECTION_DOCS)
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+    store: dict = {}
+    manifest: dict = {}
+    assert govuk_content.fetch_collection(EXPANDED, manifest, store) is True
+    api.reset()
+    return api, store, manifest
+
+
+def test_an_unchanged_collection_still_checks_every_member(monkeypatch):
+    api, store, manifest = warm_collection(monkeypatch)
+    assert govuk_content.fetch_collection(EXPANDED, manifest, store) is False
+    # The index document 304s, so its rows cannot have moved - but the members
+    # are checked on their own validators, from the remembered member list.
+    assert set(api.requested) == set(COLLECTION_DOCS)
+    assert set(api.not_modified) == set(COLLECTION_DOCS)
+
+
+def test_a_changed_member_rewrites_only_its_own_page(monkeypatch, tmp_path):
+    api, store, manifest = warm_collection(monkeypatch)
+    index_before = (tmp_path / EXPANDED["output"]).read_text()
+    sa102_before = (tmp_path / "corpus/guidance/sa-forms/sa102.md").read_text()
+    api.bump("/g/sa100", doc("/g/sa100", "SA100", "<p>The main return, revised.</p>"))
+
+    assert govuk_content.fetch_collection(EXPANDED, manifest, store) is True
+    assert "revised" in (tmp_path / "corpus/guidance/sa-forms/sa100.md").read_text()
+    assert (tmp_path / "corpus/guidance/sa-forms/sa102.md").read_text() == sa102_before
+    assert (tmp_path / EXPANDED["output"]).read_text() == index_before
+
+
+def test_a_deleted_member_page_is_rebuilt_without_touching_the_index(monkeypatch, tmp_path):
+    api, store, manifest = warm_collection(monkeypatch)
+    (tmp_path / "corpus/guidance/sa-forms/sa100.md").unlink()
+
+    assert govuk_content.fetch_collection(EXPANDED, manifest, store) is True
+    assert "The main return." in (tmp_path / "corpus/guidance/sa-forms/sa100.md").read_text()
+
+
+# --- the cache file itself -------------------------------------------------
+
+def test_fetch_persists_validators_per_source(monkeypatch, tmp_path):
+    monkeypatch.setattr(httpcache, "CACHE_DIR", tmp_path / "cache")
+    api = CachingApi(MANUAL_DOCS)
+    monkeypatch.setattr(govuk_content, "conditional_get", api)
+
+    govuk_content.fetch(MANUAL_ENTRY, {})
+    cached = httpcache.load(MANUAL_ENTRY["id"])
+    assert set(cached["documents"]) == set(MANUAL_DOCS)
+    assert cached["documents"]["/sam/sam100050"]["etag"] == "v1"
+    assert [s["path"] for s in cached["manual"]["sections"]] == [
+        "/sam/sam100", "/sam/sam100050", "/sam/sam100060"]
+
+
+def test_a_cache_with_nothing_in_it_leaves_no_file(monkeypatch, tmp_path):
+    monkeypatch.setattr(httpcache, "CACHE_DIR", tmp_path / "cache")
+    httpcache.save("sam", {"documents": {}})
+    assert not httpcache.path_for("sam").exists()
+
+
+def test_a_404_section_is_still_reported_on_a_cached_run(monkeypatch, tmp_path):
+    """Withdrawn sections must not quietly drop out of the page the first time
+    their parent answers 304 - the warning is the only record of the gap."""
+    docs = {**MANUAL_DOCS}
+    docs["/sam/sam100"] = branch("/sam/sam100", "SAM100",
+                                 [child("/sam/sam100050", "SAM100050"),
+                                  child("/sam/sam100060", "SAM100060"),
+                                  child("/sam/withdrawn", "SAM999")])
+    api, store, manifest = warm_manual(monkeypatch, docs)
+    assert "SAM999" in (tmp_path / MANUAL_ENTRY["output"]).read_text()
+
+    assert govuk_content.fetch_manual(MANUAL_ENTRY, manifest, store) is False
+    assert "/sam/withdrawn" in api.requested
+    text = (tmp_path / MANUAL_ENTRY["output"]).read_text()
+    assert "sections_404: 1" in text and "SAM999" in text

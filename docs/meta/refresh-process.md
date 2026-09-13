@@ -29,14 +29,30 @@ dispatches each entry to a fetcher by `type` and writes markdown into `corpus/`.
 Change detection is layered:
 
 1. **HTTP validators.** Every request sends `If-None-Match` / `If-Modified-Since`
-   from the previous run's `ETag` / `Last-Modified`, stored in
-   `src/self_assessment_wiki/pipeline/manifest.json`. A `304` ends the work for that source.
-2. **Upstream timestamps.** The GOV.UK Content API reports `public_updated_at`;
-   the pipeline compares it before re-rendering.
+   from the previous run's `ETag` / `Last-Modified`. One source is often many
+   requests — a helpsheet plus its HTML attachment, a collection plus every
+   member, a manual plus every section of its tree — so validators are stored
+   per request: one entry per source in
+   `src/self_assessment_wiki/pipeline/manifest.json`, and one per API path in
+   `src/self_assessment_wiki/pipeline/cache/<source-id>.json` for the GOV.UK
+   fetchers. A `304` on a whole document ends the work for it; a `304` on one
+   member or section skips only that member or section, and everything else in
+   the source is still checked.
+2. **Upstream timestamps.** The GOV.UK Content API reports `public_updated_at`.
+   It is stored with the source and compared on the way back in, so an upstream
+   that answers `200` to a conditional request anyway still stops the run before
+   it pulls the document's attachments.
 3. **Content hash.** The rendered markdown is SHA-256'd and compared to the
    stored hash. Unchanged content is never rewritten, so it never shows up in
-   a diff and never invalidates the LLM stages downstream.
+   a diff and never invalidates the LLM stages downstream. Each mirrored manual
+   section is hashed individually too: a `304` carries no body, so the section's
+   block in the existing corpus page is reused verbatim — and only if it still
+   hashes to what the last run wrote.
 4. **Cursors.** Case law feeds are read incrementally from the last-seen entry.
+
+Every cache hit is conditional on the artifact still being on disk. A deleted
+corpus file makes the fetcher drop its validators and rebuild the page from
+full responses, so a warm cache can never leave a source permanently missing.
 
 This runs weekly under `.github/workflows/refresh.yml`, which opens a pull
 request when the corpus moves — and tells you in the PR body which wiki pages

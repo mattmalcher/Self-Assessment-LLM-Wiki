@@ -18,7 +18,8 @@ in CI — they cost model calls on the maintainer's own subscription.
 
 ## Do not hand-edit
 
-`corpus/`, `extracts/`, `docs/`, and both `manifest.json` files are generated;
+`corpus/`, `extracts/`, `docs/`, `pipeline/cache/` and both `manifest.json`
+files are generated;
 edits are overwritten. Hand-written exceptions: `docs/index.md`,
 `docs/external-explainers.md`, `docs/reference-implementation/data-model-notes.md`,
 `docs/meta/refresh-process.md`.
@@ -66,7 +67,10 @@ off a full `synth all` unasked.
 `fetch` also audits what it left behind: a source that reported success but
 wrote no file (or, for a shared output, no `<!-- section:ID -->` block) fails
 the run. A missing artifact makes the fetchers drop their cache validators, so
-a warm cache rebuilds the file rather than reporting "unchanged" forever.
+a warm cache rebuilds the file rather than reporting "unchanged" forever. The
+GOV.UK fetchers cache one validator per request in `pipeline/cache/`, which is
+committed - a weekly CI refresh starts from a fresh clone, so an uncommitted
+cache is a cache that never hits.
 `uv run reconcile` runs that audit on its own, and gates the Pages workflow.
 
 `extract` and `compose` regenerate the status page and the `.pages` nav files
@@ -106,7 +110,7 @@ after a failed extract.
 
 | Path | What |
 |---|---|
-| `src/self_assessment_wiki/pipeline/` | stage 1: `sources.yml`, `fetchers/`, `fetch.py` |
+| `src/self_assessment_wiki/pipeline/` | stage 1: `sources.yml`, `fetchers/`, `fetch.py`, `manifest.json` + `cache/` (HTTP cache state) |
 | `src/self_assessment_wiki/audit.py`, `citations.py` | offline artifact audit and citation provenance |
 | `src/self_assessment_wiki/synth/` | stages 2-3: `pages.yml`, `prompts/`, `chunk.py`, `extract.py`, `compose.py`, `llm.py`, `build.py`, `nav.py` |
 | `mkdocs.yml`, `overrides/` | Material theme site config |
