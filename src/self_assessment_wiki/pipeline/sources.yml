@@ -25,7 +25,10 @@
 #                               detection (used for non-gov.uk sources)
 #
 # Every `fetch` entry gets cache-validator + hash state written back into
-# pipeline/manifest.json (not here) so re-runs can skip unchanged sources.
+# pipeline/manifest.json (not here) so re-runs can skip unchanged sources. The
+# govuk_* types make many requests per source (attachments, collection members,
+# manual sections) and keep one validator per request in
+# pipeline/cache/<source-id>.json.
 #
 # Every entry is validated against `configcheck.validate_sources` before any
 # command runs, so a bad `type`, a duplicate id or an `output` outside
