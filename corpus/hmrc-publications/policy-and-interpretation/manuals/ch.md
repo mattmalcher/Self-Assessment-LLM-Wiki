@@ -3,7 +3,7 @@ source_url: https://www.gov.uk/hmrc-internal-manuals/compliance-handbook
 source_id: hmrc-manual-ch
 category: hmrc-publications.policy-and-interpretation.manuals
 document_type: manual
-sections_mirrored: 2133
+sections_mirrored: 2101
 sections_404: 0
 ---
 
@@ -3515,16 +3515,22 @@ A tribunal may
 
 This guidance explains the powers that HMRC can use if we have reasonable grounds to suspect that a tax adviser has engaged in sanctionable conduct.  
   
-A tax adviser is a person who, in the course of a business, assists other people with their tax affairs. A tax adviser may be an individual or an organisation.  
-  
-Sanctionable conduct is where the tax adviser does something (or omits to do something), in the course of assisting clients with their tax affairs, with the intention of bringing about a loss of tax revenue.  
-  
-When we have reasonable grounds to suspect a tax adviser is engaging in, or has engaged in sanctionable conduct, or where they have been convicted of an offence of fraud or dishonesty in relation to tax, we may issue them, or another person holding relevant documents, with a ‘file access notice’. This enables us to obtain relevant documents, so that we can determine whether the tax adviser has in fact engaged in sanctionable conduct, and if so the extent of that conduct. There are certain documents and information that we cannot request using a file access notice. The person can appeal against our issue of a file access notice, provided the notice was not pre\-approved by a tribunal.  
-  
-A person can be charged penalties if they fail to comply with a file access notice or if they provide inaccurate information in response to a file access notice, unless they have a reasonable excuse for the failure.  
-  
-A person can be prosecuted if they conceal, destroy or otherwise dispose of material documents after we have requested it in a file access notice or where we have told them that we are likely to require that document.  
-  
+A tax adviser is a person who, in the course of a business, assists other people with their tax affairs. A tax adviser may be an individual or an organisation. This may include
+individuals who work for organisations.
+
+
+Sanctionable conduct is where the tax adviser does something (or omits to do something), in the course of assisting clients with their tax affairs, with the intention of bringing about a loss of tax revenue.
+
+
+When we have reasonable grounds to suspect a tax adviser is engaging in, or has engaged in sanctionable conduct, or where they have been convicted of an offence of fraud or dishonesty in relation to tax, we may issue them, or another person holding relevant documents, with a ‘file access notice’. This enables us to obtain relevant documents, so that we can determine whether the tax adviser has in fact engaged in sanctionable conduct, and if so the extent of that conduct. There are certain documents and information that we cannot request using a file access notice. The person can appeal against our issue of a file access notice, provided the notice was not pre\-approved by a tribunal.
+
+
+A person can be charged penalties if they fail to comply with a file access notice or if they provide inaccurate information in response to a file access notice, unless they have a reasonable excuse for the failure.
+
+
+A person can be prosecuted if they conceal, destroy or otherwise dispose of material documents after we have requested it in a file access notice or where we have told them that we are likely to require that document.
+
+
 If we determine that a tax adviser is engaging in, or has engaged in, sanctionable conduct, we will issue a 'conduct notice'. The conduct notice notifies the tax adviser of our determination that they have engaged in sanctionable conduct.
 
 
@@ -3542,7 +3548,7 @@ where there is no PLR, the minimum penalty is used.
 
 
 The penalty for
-sanctionable conduct is reduced if the tax adviser makes a disclosure.
+sanctionable conduct is reduced if the tax adviser makes a disclosure. (prompted or unprompted)
 
 
 If
@@ -3579,7 +3585,7 @@ you are reading.
 ## CH176120 — Reason for the legislation
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch176120>*
 
-Tax advisers are people who, in the course of a business, assist other people with their tax affairs. In large, they perform a vital role in the tax system by helping to ensure returns are accurate. However, there are a small number of tax advisers who engage in “sanctionable conduct”; that is, they intentionally seek to facilitate a loss of tax revenue in the tax affairs of their clients.
+Tax advisers are people who, in the course of a business, assist other people with their tax affairs. They perform a vital role in the tax system by helping to ensure returns are accurate. However, there are a small number of tax advisers who engage in “sanctionable conduct”; that is, they intentionally seek to facilitate a loss of tax revenue in the tax affairs of their clients.
 
 
 We need to:
@@ -3624,7 +3630,7 @@ to a tax adviser in relation to sanctionable conduct powers:
 
 
 - penalties for failing to comply with a file access notice
-- penalties for providing a document containing an inaccuracy in response to a file access notice
+- penalties for providing a document containing an inaccuracy in response to a file access notice, and
 - penalties for sanctionable conduct
 
 
@@ -3635,7 +3641,7 @@ Furthermore, a person can be prosecuted for concealing, destroying or otherwise 
 - where we have told them that we are likely to require that document
 
 
-We must publish the tax adviser's details where they have been charged a penalty for sanctionable conduct of more than £7,500\. Where an adviser has been charged a penalty of £7,500 (the minimum penalty) we must **not** publish their details.
+We must publish the tax adviser's details where they have been charged a penalty for sanctionable conduct of more than £7,500\.
 
 
 ---
@@ -3647,7 +3653,7 @@ We can only charge penalties for sanctionable conduct under this guidance where 
   
 However, we can issue a file access notice after 1 April 2026 requesting documents that existed before 1 April 2026\. We can request these earlier documents to allow us to determine whether the test for sanctionable conduct is met. This may include, for example, seeking records to confirm that a person is acting as a tax adviser for a taxpayer where that relationship began before 1 April 2026\.  
   
-This legislation amends Schedule 38 to the Finance Act 2012\. We can charge penalties for dishonest conduct by tax agents prior to 1 April 2026, see [CH180000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch180000).
+This legislation amends Schedule 38 to the Finance Act 2012\. We can continue to charge penalties for ''dishonest conduct'' (see [CH181120](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch181120)) by tax agents prior to 1 April 2026,
 
 
 ---
@@ -3661,14 +3667,55 @@ Schedule 38 to the Finance Act 2012 as amended by section 250 and Schedule 22 of
 the Finance Act 2026\.
 
 
+During the passage of the Finance
+Act 2026, Minister made the following comments explaining the intended scope of the legislation:
+
+
+\[The provisions] …will ensure that HMRC can take
+effective action against tax advisers who intentionally seek to facilitate
+non\-compliance in the tax affairs of their clients. The clauses also introduce
+a new power to allow HMRC to publish details of tax advisers who have been
+suspended or barred by HMRC from acting for clients where it is in the public
+interest to do so.
+
+
+\[The relevant clause] makes amendments to schedule 38 to
+the Finance Act 2012, which introduced powers for HMRC to gather information
+and sanction dishonest tax advisers. It is the Government’s view that those
+powers need to be strengthened. For example, the maximum penalty amount of
+£50,000 is a poor deterrent for rogue advisers who intentionally facilitate
+millions of pounds of tax loss. HMRC needs stronger and more effective powers
+to crack down on the small minority of bad tax advisers who cause such harm to
+the tax system.
+
+
+The changes made by \[the relevant clause] will give HMRC
+those stronger powers. They impose a more effective regime for HMRC to gather
+information from tax advisers suspected of wrongdoing and to issue penalties
+where appropriate. At the same time—and I know hon. Members take an interest in
+this—there are robust safeguards, including appeal rights, and they are being
+maintained to ensure the powers are applied fairly and proportionately.
+
+
+Importantly, the powers will apply only to tax advisers
+who act with the intention of bringing about a loss of tax revenue, such as
+those who knowingly claim a tax repayment for a client who is not entitled to
+it or advise a client to deliberately enter incorrect figures on a tax return.
+This is, rightly, still a high threshold.
+
+
+The powers will not affect advisers who act in good
+faith, or who take a credible view as to what the law requires of their
+clients, including where they use extra\-statutory concessions or HMRC guidance
+to form that view. They also do not affect advisers who make mistakes while
+trying, as the vast majority do, to do the right thing. Where HMRC have
+reasonable grounds to suspect a tax adviser has intentionally sought to cause a
+tax loss, the clause gives HMRC the power to gather information about the tax
+adviser’s advice to their clients.
+
+
 **FA12/SCH38
 as amended**
-
-
-**FA26/S250**
-
-
-**FA26/SCH22**
 
 
 ---
@@ -3725,9 +3772,6 @@ a tax adviser. Information requests and sanctions can also apply to third party
 document\-holders, who may have never been a tax adviser.
 
 
-**FA12/SCH38/PARA2 as amended**
-
-
 ## Examples
 
 
@@ -3741,12 +3785,15 @@ depend on the circumstances of the case. These lists are not exhaustive.
 
 
 - Sole accounting or tax practitioner
-- Organisations providing accountancy or
+- An organisation providing accountancy or
  tax advice, including partnerships and companies
 - Business adviser
 - Director, partner, member, employee or contractor
- of an accountancy or tax practice, however the practice is constituted
+ of an accountancy or tax practice, however the practice is constituted. (see [CH178030](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178030) for further detail on
+when individuals within firms might be subject to sanctionable conduct
+penalties)
 - Tax agent or tax consultant
+- Payroll professional
 - Employee of a bank where that person assists
  another person with their tax affairs
 - Solicitor, barrister or other legal
@@ -3757,7 +3804,7 @@ depend on the circumstances of the case. These lists are not exhaustive.
  contractor of a ‘repayment agent’
 
 
-### Examples of who is not a tax adviser
+### Examples of who typically will not be a tax adviser
 
 
 - An
@@ -3765,14 +3812,19 @@ in\-house tax professional who files tax returns on behalf of the business
 (including partnerships or sole traders) or group of companies for whom they
 work. If the employee’s actions led to an incorrect tax liability for the
 business, we would consider charging inaccuracy penalties on the business,
-see CH84530
+see [CH84530](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch84530)
 - A person who is providing tax advice for
  family members or friends where it is not in the course of their business
-- An employee of Citizens Advice and other
- similar organisations
+- Employee of Citizens Advice and other
+ similar charities and organisations
+- Insolvency practitioner or business recovery specialist
+- Independent auditor
 
 
 **FA12/SCH38/PARA2 as amended**
+
+
+##
 
 
 ---
@@ -4932,6 +4984,9 @@ These penalties listed below include all tax geared penalties where we need to e
 - Late filing penalties for deliberate withholding of information charged under FA09/SCH55/PARA6 and PARA 11\.
 - Follower notice penalties charged under FA14/S208 and FA14/SCH31/PARA4\.
 - Electronic Sale Suppression 'Enabler' penalties charged under Paras 2, 3 and 4 Sch 14, FA22\.
+- Penalties for deliberately withholding information charged under FA21/SCH25/PARA1
+- Penalty for failure to correct relevant offshore tax non\-compliance charged under FA(NO.2\)A18/SCH18/PARA1
+- Asset\-based penalty for offshore inaccuracies and failures charged under FA16/SCH22/PARA1
 
 
 ## Other penalties that we do not need to treat procedurally as if they are ‘criminal’ for Article 6 purposes
@@ -9567,186 +9622,6 @@ For excise, the guidance at [CH26000](https://www.gov.uk/hmrc-internal-manuals/c
 
 ---
 
-## CH28010 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28010>*
-
-We have data\-gathering powers that enable us to collect data from certain third parties for us to use in our compliance activities. These third parties are called ‘relevant data\-holders’ and the data\-gathering powers stipulate the type of relevant data that we may ask for.
-
-
-The data\-gathering powers covered in this chapter differ from the information and inspection powers covered in [CH20000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch20000)\+ because these data\-gathering powers gather specific pieces of information about a group of people for use in risk analysis.
-
-
-The data\-gathering powers cannot be used for checking the tax position of the data\-holder, because the powers in Schedule 36 FA 2008 ([CH20000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch20000)\+) are available for that purpose.
-
-
-## Can I gather information from data\-holders outside the UK?
-
-
-If the data\-holder is outside the UK and schedule 23 is not appropriate, it might be possible to use exchange of information provisions in one of the many international treaties to which the UK is a party.
-
-
-It is possible to make a request under exchange of information provisions where you can identify a group of taxpayers whose individual identities are unknown providing you can demonstrate that the information is likely to be of relevance for UK tax purposes.
-
-
-Please see the guidance on ‘relevance’ in the International Exchange of Information Manual (IEIM) at [IEIM101350](https://www.gov.uk/hmrc-internal-manuals/international-exchange-of-information/ieim101350). See IEIM111030 for details of how to make a request.
-
-
-An exchange of information request can only be made by a competent authority, see [IEIM101400](https://www.gov.uk/hmrc-internal-manuals/international-exchange-of-information/ieim101400).
-
-
-(This content has been withheld because of exemptions in the Freedom of Information Act 2000\)
-
-
-FA11/SCH23  
-
-SI2012/847
-
-
----
-
-## CH28020 — How to use this guidance
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28020>*
-
-After the general introduction pages, this guidance is divided into
-
-
-- details of the data\-gathering powers
-- guidance on the data\-holder notice,
-- who are ‘relevant data\-holders’, and the ‘relevant data’ for each data\-holder
-- the ability to appeal against data\-holder notices, and
-- penalties for failing to comply with a data\-holder notice.
-
-
-Each chapter starts at the most general level of information in the overview and drills down to give more detailed guidance.
-
-
-You can find the meaning of many of the terms used in this chapter in the Glossary, at [CH29950](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29950).
-
-
-For operational guidance see [CH200000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch200000)\+.
-
-
----
-
-## CH28030 — Schedule 23 Finance Act 2011
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28030>*
-
-The link below takes you to the original legislation for data\-gathering powers.
-
-
-[Schedule 23 Finance Act 2011](https://www.legislation.gov.uk/ukpga/2011/11/schedule/23)
-
-
-What is ‘relevant data’ is contained in The Data\-Gathering Powers Regulations 2012\. The link below takes you to the original 2012 Regulations.
-
-
-[SI 2012/847](https://www.legislation.gov.uk/uksi/2012/847/contents) 
-
-
-From 1 April 2015 Schedule 23 is amended to include ‘diverted profits tax’ (only for accounting periods starting on or before 31 December 2025\).
-
-
-From 6 April 2018 Schedule 23 is amended to include 'chargeable soft drinks'.
-
-
-A person who is involved (in any capacity) in any of the following activities is a relevant data\-holder in respect of the Soft Drinks Industry Levy.
-
-
-- producing chargeable soft drinks
-- packaging chargeable soft drinks
-- carrying on a business involving the sale of chargeable soft drinks
-
-
----
-
-## CH29950 — Glossary
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29950>*
-
-The following table provides an explanation of the terms used in the data\-gathering guidance.
-
-
-| Term | Explanation |
-| --- | --- |
-| Accountable person | Within the meaning of the Stamp Duty Reserve Tax Regulations 1986 (SI 1986/1711\). |
-| Address | Includes an electronic address. |
-| Agency contract | Has the same meaning as in Chapter 7 of Part 2 of ITEPA 2003\. |
-| Alternative finance return | Means an alternative finance return within the meaning of Part 10A of ITA 2007, and an alternative finance return within the meaning of Part 6 of CTA 2009\. |
-| Approved payroll agent | Means an agent within the meaning of section 714 ITEPA 2003\. |
-| Assignment | Means an assignation in relation to Scotland, [CH28720](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28720). |
-| Authorised officer | For data\-gathering purposes this is an officer of HMRC who is, or is a member of a class of officers who are, authorised by the Commissioners for the purposes of FA11/SCH23 PARA5, see [CH28280](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28280). |
-| Body of persons | Has the same meanings as in TMA 1970\. |
-| Building society | Means a building society within the meaning of the Building Societies Act 1986\. |
-| Carries on a business | Includes the letting of property, the activities of a charity, and the activities of a government department, a local authority, a local authority association or any other public authority. |
-| Chargeable period | Means a tax year, accounting period or other period for which tax is charged. |
-| Chargeable payment | Means a payment received within the meaning of Chapter 5 of Part 23 of CTA 2010 (company distributions: demergers). |
-| Charity | Has the meaning given by paragraph 1(1\) of Schedule 6 to FA 2010\. |
-| Child trust fund | As defined in section 3 of the Child Trusts Funds Act 2004\. |
-| Company | Has the meaning given by section 288(1\) of TCGA 1992\. |
-| Corporation tax | Includes any amount assessable or chargeable as if it were corporation tax. |
-| Daily default penalties | Where a data\-holder has been charged an initial fixed penalty, and they still do not comply with the data\-holder notice, they are liable to daily default penalties of up to £60 a day. |
-| Data | Includes information held in any form. |
-| Data\-holder | Means a person who is required to provide relevant data to HMRC. |
-| Data\-holder notice | Means a notice issued to a relevant data\-holder to provide ‘relevant data’. |
-| Deeply discounted security | Has the same meaning as in Chapter 8 of Part 4 of ITTOIA 2005\. |
-| Dividend | Includes any type of distribution. |
-| Document | Includes a copy of a document (see also section 114 of FA 2008\). |
-| Employment, employee and employer | Have the same meaning as in Parts 2 to 7 of ITEPA 2003 (see, in particular, sections 4 and 5 of that act). |
-| Fails to comply | Includes concealing, destroying or otherwise disposing of a material document, or arranging for any such concealment, destruction or disposal. |
-| Foreign dividend | Means any annual payment, interest or dividend payable out of, or in respect of the funds or securities of a body of persons that is not resident in the United Kingdom, or a government or public or local authority in a country outside the United Kingdom. |
-| Insurance business | As defined for the purposes of Part 3 of FA 1994\. |
-| Initial fixed penalties | If the person fails to comply with a data\-holder notice, they are liable to an initial fixed penalty of £300\. |
-| Landfill disposal | As defined for the purposes of Part 3 of FA 1996\. |
-| Lease | Includes an agreement for a lease, and any tenancy, but does not include a mortgage or heritable property and ‘lessee’ includes a successor in title of a lease. |
-| Lien | a form of security interest granted over an item of property to secure the payment of a debt or performance of some other obligation. |
-| Local authority | Has the same meaning as in section 999 of ITA 2007\. |
-| Local authority association | Has the meaning given in section 1000 of ITA 2007\. |
-| Machinery provisions of TMA | Include the following provisions of TMA \- Section 108 (responsibility of company officers) / Section 114 (want of form) / Section 115 (delivery and service of documents). |
-| Manages land | Includes a person who markets property to potential tenants, searches for tenants or provides similar services. |
-| Material document | Means, at the time when the data\-holder acts, the data\-holder has received a data\-holder notice requiring them to provide the document or data contained in the document, or not received such a notice but has been informed by HMRC that the data\-holder will do so or is likely to do so. |
-| Merchant account | Means an account held by a retailer with the data\-holder, by reference to which the amount due to be paid by the data\-holder to the retailer in settlement of payment card transactions is calculated. |
-| Merchant acquirer | One of the less than ten companies in the UK that runs the system behind paying for goods and services through the Chip and Pin system for payment cards. |
-| Oil field | Within the meaning of Part 1 of OTA 1975\. |
-| Payment card | Includes a credit card, a charge card and a debit card. |
-| Payment card transaction | Means any transaction in which a payment card is accepted as payment. |
-| Payment derived from securities | Includes, in particular an amount (whether of income or capital) that is payable out of or in respect of securities or rights attaching to securities, and a payment that is representative of any such payment. |
-| Payment derived from bearer securities | Includes the same meaning as ‘payment derived from securities’. |
-| Payment out of public funds | Means a payment, provided directly or indirectly, by the Crown, any government, public or local authority, whether in the UK or elsewhere, or any EU institution. |
-| Placing | Means a placing of shares or securities in a company. |
-| Plan manager | As defined in section 696 of ITTOIA 2005\. |
-| Provide | Includes make available for inspection. |
-| Providing data | Includes preparing and delivering a return, statement or declaration, and providing documents. |
-| Public issue | Means a public issue of shares or securities in a company. |
-| Register | Includes any record or list that a local authority maintains, and any record or list that any other person is required or permitted to maintain by or under an enactment. |
-| Relevant data\-holder | Means a person who is required to provide relevant data to HMRC. |
-| Relevant data | Means data that is specified by Treasury for that type of data\-holder, and can be general data or data relating to particular persons or matters, and may include personal data (such as names and addresses of individuals). |
-| Relevant dormant account | Has the same meaning as in section 39(2\) of the Finance Act 2008\. |
-| Relevant dormant period | Means the period between the time when a dormant account first becomes a relevant dormant account, and the time at which a repayment claim to the balance of the account is settled. |
-| Relevant foreign tax | Means a tax of a member State, other than the UK, which is covered by the provisions for the exchange of information under the Directive of the Council of the European Communities No. 77/799/EEC (as amended from time to time), and any tax or duty which is imposed under the law of a territory in relation to which arrangements having effect by virtue of section 173 of FA 2006 (international tax enforcement arrangements) have been made and which is covered by the arrangements. |
-| Relevant interest | Means interest paid or credited on money received or retained in the United Kingdom, and either without deduction of income tax or after deduction of income tax. |
-| Relevant payments | Means payments for, or in connection with, services provided by persons who are not employed in the business, or periodical or lump sum payments in respect of any copyright, public lending right, right in a registered design or design right. |
-| Remuneration | Has the same meaning as in Chapter 7 of Part 2 of ITEPA 2003\. |
-| Repayment claim | Means a repayment claim mentioned in section 5(6\) of the Dormant Bank and Building Society Accounts Act 2008, and other terms used in this guidance and in that Act have the same meaning as in that Act. |
-| Representative payment (in relation to securities transactions) | Means a payment that is representative of an amount payable out of or in respect of securities or rights attaching to securities. |
-| Responsible person | Within the meaning of Part 1 of OTA 1975\. |
-| Retailer | Means a person who accepts a payment card as payment for any transaction. |
-| Securities | Includes shares and stock, debentures, including debenture stock, loan stock, bonds, certificates of deposit and other instruments creating or acknowledging indebtedness, and warrants or other instruments entitling the holder to subscribe for or otherwise acquire anything within the above, issued by or on behalf of a person resident in, or a government or public or local authority of, any country (including a country outside the UK). |
-| Securities transactions | Means transactions in securities, transactions under which a representative payment has been, is to be, or may be made, or the making or receipt of a representative payment. |
-| Settlement | As defined in section 620 of ITTOIA 2005 (meaning of ‘settlement’ etc). |
-| Shares | Is to be construed in accordance with sections 99 and 103A of TCGA 1992\. |
-| Specify | Includes describe. |
-| Statutory records | For the purposes of data\-gathering powers, data forms part of the data\-holder’s statutory records if they are data that the data\-holder is required to keep and preserve under or by virtue of any enactment relating to tax. Data ceases to form part of a data\-holder’s statutory records when the period for which the data is required to be preserved under or by virtue of that enactment has expired. For further guidance on statutory records see [CH212100](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch212100). |
-| Subjecting aggregate to exploitation in the UK | As defined for the purposes of Part 2 of FA 2001\. |
-| Tangible movable property | See guidance in the Capital Gains manual at CG76550\. |
-| Tax | The data\-gathering powers apply to the following taxes \- Income tax / Capital gains tax / Corporation tax / VAT / Insurance premium tax / Inheritance tax / Stamp duty land tax / Stamp duty reserve tax / Petroleum revenue tax / Aggregates levy / Climate change levy / Landfill tax / Relevant foreign tax. |
-| Tax functions | Means functions relating to tax. |
-| Taxable commodities | As defined for the purposes of Schedule 6 to FA 2000\. |
-| Transactions in securities (in relation to securities transactions) | Means transactions, of whatever description, relating to securities, and includes in particular the purchase, sale or exchange of securities, the issuing or securing and the issue of new securities, applying or subscribing for new securities, and altering or securing the alteration of rights attached to securities. |
-| VAT | Means Value added tax charged in accordance with VATA 1994, and Value added tax charged in accordance with the law of another member state, and includes any amount that is recoverable under paragraph 5(2\) of Schedule 11 to VATA 1994 (amounts shown on invoices as VAT). |
-| VAT number | Means ‘registration number’ as defined in paragraph 1 of regulation 2 of the Value Added Tax Regulations 1995\. |
-
-
----
-
 ## CH28110 — Overview
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28110>*
 
@@ -13645,8 +13520,8 @@ Subject to item 7 below for a deceased person
 #### Legislation
 
 
-FA1996/SCH5/PARA33 (1\) and (2\) not amended by FA09/SCH51
-
+FA1996 SCH5 PARA26   
+ 
 
 #### 5\. Assessment
 
@@ -13667,7 +13542,7 @@ Subject to item 7 below for a deceased person
 #### Legislation
 
 
-FA1996/SCH5/PARA33 (1\) and (2\) not amended by FA09/SCH51
+FA1996 SCH5 PARA27
 
 
 #### 6\. Assessment
@@ -20242,6 +20117,25 @@ See [CH112700](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch11
 
 ---
 
+## CH112101 — Commencement date involving offshore matters
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch112101>*
+
+The section at [CH112000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch112000) currently
+only applies to returns
+
+
+- for income tax, capital gains tax and registered pension
+schemes, that involve an offshore matter, and
+- where the relevant filing obligation arises on or after 6
+April 2012\.
+
+
+It does not apply to the Construction Industry Scheme (CIS),
+see [CH62300](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch62300)\+.
+
+
+---
+
 ## CH112200 — Definition of an offshore matter
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch112200>*
 
@@ -20759,6 +20653,20 @@ These higher maximum and minimum penalty percentages also apply in cases involvi
 
 ---
 
+## CH114101 — Commencement date involving offshore matters
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch114101>*
+
+The section at [CH114000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch114000) currently
+only applies only where
+
+
+- the tax at stake is income tax or capital gains tax, and
+- the failure to notify involves an offshore matter, and
+- the relevant obligation arises on or after 6 April 2012\.
+
+
+---
+
 ## CH114200 — Definition of an offshore matter
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch114200>*
 
@@ -21216,6 +21124,26 @@ Normally, where we impose a penalty on both a person (P) and another person (T) 
 
 
 [CH116600](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch116600) set out the higher maximum and minimum penalty percentages for offshore matters.
+
+
+---
+
+## CH116101 — Commencement date involving offshore matters
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch116101>*
+
+The section at [CH116000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch116000) currently
+only applies only where:
+
+
+- the tax at stake is income tax, capital gains tax or
+inheritance tax, and
+- the inaccuracy involves an offshore matter, and
+- the person gave HMRC an inaccurate return or other document
+which relates to 2011\-12 or a later year on or after 6 April 2011\.
+
+
+It does not apply to the Construction Industry Scheme (CIS),
+see [CH62300](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch62300)\+.
 
 
 ---
@@ -22837,13 +22765,13 @@ A person is not required to pay a penalty before an appeal against the assessmen
 This guidance covers penalties under Schedule 18 FA (No 2\) 2017 known as the ‘Requirement to Correct’ (RTC) certain offshore tax non\-compliance.
 
 
-The RTC legislation has been introduced as part of the Government’s strategy against offshore tax evasion and non\-compliance. This builds on from previous measures in 2012 introducing offshore penalties for persons who deliberately withhold information relating to a tax liability which arises from activities, income and assets held in a territory outside the UK, see [CH111100](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch111100).
+The RTC legislation has been introduced as part of the Government's strategy against offshore tax evasion and non\-compliance. This builds on from previous measures in 2012 introducing offshore penalties for persons who deliberately withhold information relating to a tax liability which arises from activities, income and assets held in a territory outside the UK, see [CH111100](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch111100).
 
 
 ## What is the requirement to correct?
 
 
-Schedule 18 of FA 2017 creates an obligation for anyone who has undeclared UK tax liabilities relating to Income Tax, Capital Gains Tax or Inheritance Tax that involve an offshore matter or transfer to disclose them to HMRC on or before 30 September 2018\.
+Schedule 18 of FA (No 2\)  2017 creates an obligation for anyone who has undeclared UK tax liabilities relating to Income Tax, Capital Gains Tax or Inheritance Tax that involve an offshore matter or transfer to disclose them to HMRC **on or before 30 September 2018\.**
 
 
 The legislation refers to these undeclared liabilities as ‘relevant offshore tax non\-compliance’, see [CH123100](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch123100).
@@ -22864,7 +22792,7 @@ Failure to disclose the relevant information to HMRC on or before 30 September 2
 The new FTC penalty starts at 200% of the tax liability which should have been disclosed to HMRC under the RTC, but was not disclosed. This penalty can be reduced see, [CH123400](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch123400), but cannot be lower than 100% unless there are special circumstances, see [CH123350](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch123350).
 
 
-In addition to the new higher FTC penalties; a person may also be liable to
+**In addition** to the new higher FTC penalties; a person may also be liable to
 
 
 - an asset based penalty up to 10% of the value of the relevant asset where the tax underpaid is more than £25,000 in any year, see [CH122020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch122020)
@@ -25666,321 +25594,321 @@ notice, we may then issue them with a penalty.
 ## CH176520 — What is sanctionable conduct
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch176520>*
 
-## What is sanctionable conduct?
+#### What is sanctionable conduct?
 
 
-A
-tax adviser “engages in sanctionable conduct” if, in the course of acting as a
-tax adviser, they do something (or omit to do something) with the intention of
-bringing about a loss of tax revenue.
+A tax adviser “engages in sanctionable conduct” if, in the
+course of acting as a tax adviser, they do something (or omit to do something)
+with the intention of bringing about a loss of tax revenue.
 
 
-The relevant standard of proof required for
-determining sanctionable conduct is the ordinary civil standard, the balance of
+The relevant standard of proof required for determining
+sanctionable conduct is the ordinary civil standard, the balance of
 probabilities. In other words, is more likely than not (i.e over 50% chance)
 that the conduct is sanctionable. The burden of proof is on HMRC.
 
 
-When
-determining whether a tax adviser has engaged in sanctionable conduct, there
-are two tests.
+When determining whether a tax adviser has engaged in
+sanctionable conduct, there are two tests.
 
 
-**1\.****Was the conduct in question carried out by
-the tax adviser in the course of acting as a tax adviser?**
+#### 1\. Was the conduct in question carried out by the tax
+adviser in the course of acting as a tax adviser?
 
 
-Answering
-this question requires us first to identify specific conduct, or a course of
-conduct. In practice, this could be almost anything that a tax adviser does –
-such as providing a piece of advice to their client, submitting documents to
-HMRC, or failing to submit documents to HMRC. 
+Answering this question requires us first to identify
+specific conduct, or a course of conduct. In practice, this could be almost
+anything that a tax adviser does – such as providing a piece of advice to their
+client, submitting documents to HMRC, or failing to submit documents to HMRC. 
 
 
-The
-conduct must be attributable to the person we are investigating, which could be
-an individual tax adviser or a tax advice firm. 
+The conduct must be attributable to the person we are
+investigating, which could be an individual tax adviser or an organisation.
 
 
-We
-must be satisfied that the person’s conduct was in the course of acting as a
-tax adviser. This means that it was done as part of their business, or if they
-are an employee it was done as part of their employer’s business.
+We must be satisfied that the person’s conduct was in the
+course of acting as a tax adviser. This means that it was done as part of their
+business, or if they are an employee it was done as part of their employer’s
+business.
 
 
-**2\. Was it done with the intention of
-bringing about a loss of tax revenue?**
+#### 2\. Was it done with the intention of bringing about a loss
+of tax revenue?
 
 
-This
-test distinguishes sanctionable conduct from acceptable conduct. It is a **subjective** test – we must ask ourselves whether it was the adviser’s subjective intention
-in doing what they did that it should bring about a loss of tax revenue. We
-must apply this test to the adviser’s knowledge and actions at the time they
-acted. 
+This a **subjective** test – we must ask ourselves whether it was
+the adviser’s subjective intention in doing what they did or omitted to do
+was to bring about a loss of tax revenue. We must apply this test to the
+adviser’s knowledge and actions at the time they acted or omitted to act.
 
 
-It
-does not matter if there is in fact no loss of tax revenue; what matters is
-whether that was the intended consequence of what the adviser did. In other
-words, was it the adviser’s aim to bring about a loss of tax revenue?
+It does not matter if there is in fact no loss of tax
+revenue; what matters is whether that was the intended consequence of what the
+adviser did. In other words, was it the adviser’s aim to bring about a loss of
+tax revenue?
 
 
-When
-determining whether the adviser acted with the intention of bringing about a
-loss of tax revenue, we must consider what the evidence tells us about the
-state of the adviser’s knowledge at the relevant time. To have engaged in
-sanctionable conduct, the adviser must have foreseen that a loss of tax revenue
-could be a consequence of their actions. There must also be some sense in which
-the adviser can be said to have intended to bring about the foreseen
-consequence. The test is not met where the tax adviser did not intend to bring
-about a loss of tax, even if that was the consequence of their actions.
+When determining whether the adviser acted with the intention
+of bringing about a loss of tax revenue, we must consider what the evidence
+tells us about the state of the adviser’s knowledge at the relevant time. To
+have engaged in sanctionable conduct, the adviser must have foreseen that a
+loss of tax revenue could be a consequence of their actions. There must also be
+some sense in which the adviser can be said to have intended to bring about the
+foreseen consequence. The test is not met where the tax adviser did not intend
+to bring about a loss of tax, even if that was the consequence of their
+actions.
 
 
-Each
-case will turn on its own facts and on the quality of the available evidence
-from which an intention to bring about a loss of tax revenue may be found. In
-general, advisers who do any of the following will **not** be engaging in
-sanctionable conduct:
+Each case will turn on its own facts and on the quality of
+the available evidence from which an intention to bring about a loss of tax
+revenue may be found. In general, advisers who do any of the following will not
+be engaging in sanctionable conduct:
 
 
-- Take
-a credible view of what the law requires, even where this might differ from
-HMRC’s own view
-- Follow
-HMRC’s published guidance, even where as a matter of law the guidance proves to
-be incorrect
-- Properly
-rely on a published extra\-statutory concession
-- Make
-a genuine mistake, error, or inaccuracy in their advice or in a document submitted
-to HMRC, even where the error may amount to a failure to take reasonable care
+Take a credible view of what the law requires, even where
+this might differ from HMRC’s own view
 
 
-**FA12/SCH38/PARA3 as amended**
+Follow HMRC’s published guidance, even where as a matter of law
+the guidance proves to be incorrect
 
 
-## Examples
+Properly rely on a published extra\-statutory concession
 
 
-The following examples illustrate sanctionable
-conduct by a tax adviser.
+Make a genuine mistake, error, or inaccuracy in their advice
+or in a document submitted to HMRC, even where the error may amount to a
+failure to take reasonable care
 
 
-The
-following examples show where tax advisers have and have not engaged in
-sanctionable conduct. The examples do not consider whether the taxpayer themselves
-may also be liable to sanctions, as this is not relevant for determining
-sanctionable conduct.
+See also the Exchequer Secretary to the Treasury’s comments
+in Parliament during the passage of the Finance Act 2026 (CH176150:
+Legislation).
 
 
-### Late
-filing – not sanctionable conduct
+Examples
 
 
-Brian’s
-client has a tax return due on 31 January 2027\. Brian is preparing calculations
-for this return, but the client has not provided all the required information.
-Brian tells the client that if they don’t provide that information, Brian won’t
-be able to complete the calculations before the deadline, the client won’t be
-able to submit a complete and correct return, and the client may be liable to
-late filing penalties. The client decides not to submit their return by 31
-January 2027\.
+The following examples show where tax advisers have and have
+not engaged in sanctionable conduct. The examples do not consider whether the
+taxpayer themselves may also be liable to sanctions, as this is not relevant
+for determining sanctionable conduct.
 
 
-The client
-provides Brian with the required information on 1 March 2027\. Brian completes
-the calculations the without undue delay and lets the client know the
+#### Late filing – not sanctionable conduct
+
+
+Brian’s client has a tax return due on 31 January 2027\.
+Brian is preparing calculations for this return, but the client has not
+provided all the required information. Brian tells the client that if they
+don’t provide that information, Brian won’t be able to complete the calculations
+before the deadline, the client won’t be able to submit a complete and correct
+return, and the client may be liable to late filing penalties. The client
+decides not to submit their return by 31 January 2027\.
+
+
+The client provides Brian with the required information on 1
+March 2027\. Brian completes the calculations and lets the client know the
 information they need to submit their complete and correct return. The client
 submits their return on 1 April 2027\. 
 
 
-Brian did
-not do anything to intentionally bring about a tax loss, and has not engaged in
-sanctionable conduct. In fact, Brian actively tried to prevent a tax loss by
-making sure the client was aware of the deadline for submitting the return and
-the consequences of submitting a return late.
+Brian did not do anything to intentionally bring about a tax
+loss, and has not engaged in sanctionable conduct.
 
 
-### Employee –
-sanctionable conduct
+#### Employee – sanctionable conduct
 
 
-Daljit is
-a tax adviser working for a tax advice company. The tax advice company has in
-place clear guidelines about how work should be conducted and regularly reviews
-the work of employees to make sure that those guidelines are followed.
+Daljit is a tax adviser working for a tax advice company.
+The tax advice company has in place clear guidelines about how work should be
+conducted.
 
 
-When
-preparing a return for a client, Daljit agrees with the client to use incorrect
-figures to reduce the liability. Daljit has engaged in sanctionable conduct.
+When preparing a return for a client, Daljit agrees with the
+client to use incorrect figures to reduce the liability. Daljit has engaged in
+sanctionable conduct.
 
 
-During a
-regular review of Daljit’s work, the company finds out about what Daljit has
-done. They fire Daljit for gross misconduct. They also contact the client to
-make them aware of the correct tax position and the risks of using incorrect
-figures. The client refuses to amend their return. The company ceases working
-with the client.
+Daljit is on leave, a colleague takes on his work with the client.
+The colleague notices that the return is incorrect and that Daljit has provided
+incorrect advice against company guidelines. The company subsequently
+investigates Daljit’s work and finds out that Daljit has deliberately provided
+the incorrect advice to create a tax loss, going against company guidelines.   
+
+They fire Daljit for gross misconduct. They also contact the client to make
+them aware of the correct tax position and the risks of using incorrect figures.
+The client refuses to amend their return. The company ceases working with the
+client.
 
 
-The
-company has not engaged in sanctionable conduct as the actions of the company
-didn’t amount to intentional behaviour. They were unaware of the original
-situation despite having clear guidelines in place. They also  took steps to correct the situation as soon
-as possible. Daljit has intentionally brought about a loss of tax and has engaged
-in sanctionable conduct.
+The company has not engaged in sanctionable conduct as the
+actions of the company didn’t amount to intentional behaviour. They were
+unaware of the original situation despite having clear guidelines in place.
+They also  took steps to correct the situation. Daljit has intentionally
+brought about a loss of tax and has engaged in sanctionable conduct.
 
 
-### Using
-guidance/ESCs – sanctionable conduct
+#### Using guidance/ESCs – sanctionable conduct
 
 
-Jose has a
-client who is looking to reduce their tax liability. Jose tells the client that
-they can claim an allowance to transfer some of the partner's Personal
-Allowance to the client. Jose uses excerpts from HMRC guidance on Marriage
-Allowance to show how the client's tax liability could be reduced. Jose knows
-that the client and their partner are not married and will not qualify for
-Marriage Allowance, but does not tell the client this.
+Jose has a client who is looking to reduce their tax
+liability. Jose tells the client that they can claim an allowance to transfer
+some of the partner's Personal Allowance to the client. Jose uses excerpts from
+HMRC guidance on Marriage Allowance to show how the client's tax liability
+could be reduced. Jose knows that the client and their partner are not married
+and will not qualify for Marriage Allowance, but does not tell the client this.
 
 
-The client
-asks Jose to make a claim for the allowance based on the advice Jose has
-provided. Jose makes the claim. When receiving the claim, HMRC finds that the
-client is not married and stops processing the claim. Jose has engaged in
-sanctionable conduct by intentionally trying to bring about a loss of tax
-revenue. It does not matter that the loss of tax was not actually brought
-about.
+The client asks Jose to make a claim for the allowance based
+on the advice Jose has provided. Jose makes the claim. When receiving the
+claim, HMRC finds that the client is not married and stops processing the
+claim. Jose has engaged in sanctionable conduct by intentionally trying to
+bring about a loss of tax revenue. It does not matter that the loss of tax was
+not actually brought about.
 
 
-### Using
-guidance/ESCs – not sanctionable conduct
+#### Using guidance/ESCs – not sanctionable conduct
 
 
-Erika
-provides tax advice to a coin\-vending machine operator in relation to the tax
-point of sales from their vending machines for VAT purposes. Erika tells the
-client that the tax point is the date the machine is used. Erika also tells the
-client that there is an Extra Statutory Concession (ESC) which allows VAT to be
-accounted for when the takings are removed from the machine. 
+Erika provides tax advice to a coin\-vending machine operator
+in relation to the tax point of sales from their vending machines for VAT purposes.
+Erika tells the client that the tax point is the date the machine is used.
+Erika also tells the client that there is an Extra Statutory Concession (ESC)
+which allows VAT to be accounted for when the takings are removed from the
+machine. 
 
 
-The ESC
-allows the tax point to be delayed until the takings are known, and may mean
-that the VAT is accounted for in a later accounting period than the one where
-the machine is used. Ordinarily, and without the ESC applying, this would be a
-loss of tax.
+The ESC allows the tax point to be delayed until the takings
+are known, and may mean that the VAT is accounted for in a later accounting
+period than the one where the machine is used. Ordinarily, and without the ESC
+applying, this would be a loss of tax.
 
 
-Erika has
-correctly followed the ESC for this client and provided correct tax advice, and
-no loss of tax revenue is brought about by this advice. Erika has not engaged
-in sanctionable conduct.
+Erika has correctly followed the ESC for this client and
+provided correct tax advice, and no loss of tax revenue is brought about by
+this advice. Erika has not engaged in sanctionable conduct.
 
 
-### Legal
-interpretation – sanctionable conduct
+#### Legal interpretation – sanctionable conduct
 
 
-Ahmed advises
-a company that it is possible to adjust the way it carries out certain
-transactions to reduce its tax liability. Ahmed knows that this advice has no realistic
-prospect of applying to the company’s circumstances and that there’s a low
-chance that a tribunal or higher court would agree that the adjustments
-lawfully reduce the company’s tax liability. Ahmed does not make the company
-aware of this.
+Ahmed advises a company that it is possible to adjust the
+way it carries out certain transactions to reduce its tax liability. Ahmed
+knows that this advice has no realistic prospect of applying to the company’s circumstances.
+Ahmed does not make the company aware of this, and the company follows Ahmed's
+advice.
 
 
-By deliberately
-failing to make the company aware of the known legal risks when providing his
-advice, Ahmed has intentionally brought about a loss of tax revenue and engaged
-in sanctionable conduct.
+Ahmed has intentionally brought about a loss of tax revenue
+and engaged in sanctionable conduct.
 
 
-### Legal
-interpretation – not sanctionable conduct
+#### Legal interpretation – not sanctionable conduct
 
 
-Katie is
-advising a client on a new area of tax law. The client is unclear how the law
-will apply to their business. Katie reviews the legislation, HMRC guidance, and
-the client's circumstances, and determines that there are two different ways
-the law could apply to the client. Katie explains to the client that either
-treatment could be correct, but that on balance the treatment that resulted in
-a lower tax liability is more likely to succeed in court. The client submits
-their return on this basis.
+Katie is advising a client on a new area of tax law. The
+client is unclear how the law will apply to their business. Katie reviews the
+legislation, HMRC guidance, and the client's circumstances, and determines that
+there are two different ways the law could apply to the client. Katie explains
+to the client that either treatment could be correct, but that on balance her
+view is that the treatment that resulted in a lower tax liability is more
+likely to succeed in court. The client submits their return on this basis.
 
 
-Later,
-HMRC publishes guidance that clarifies HMRC’s view of the treatment. This shows
-that HMRC believes that the treatment that results in a higher tax liability
-applies to the client's circumstances. Katie makes the client aware of this
-change, explaining that this has not yet been tested in courts. Katie tells the
-clients that the treatment with a lower tax liability is still likely to
-succeed in court. The client decides not to amend their return.
+Later, HMRC publishes guidance that clarifies HMRC’s view of
+the treatment. This shows that HMRC believes that the treatment that results in
+a higher tax liability applies to the client's circumstances. Katie has an
+ongoing contract with the client and is aware of the potential impact that
+HMRC's clarificatory guidance might have on the client's submitted return.
+Katie therefore makes the client aware of this but explains this has not yet
+been tested in courts. Katie tells the clients that the treatment with a lower
+tax liability is still credible and could succeed in court. The client decides
+not to amend their return.
 
 
-Although
-Katie's position does not agree with HMRC's position, and that difference
-causes a lower tax liability for the client, Katie has not engaged in
-sanctionable conduct. Katie has made a genuine interpretation of the law and
-has not intentionally brought about a loss of tax revenue.
+Although Katie's position does not agree with HMRC's
+position, and that difference causes a lower tax liability for the client,
+Katie has not engaged in sanctionable conduct. Katie has made a genuine
+interpretation of the law and has not intentionally brought about a loss of tax
+revenue.
 
 
-### Third
-party adviser
+#### Third party adviser\- sanctionable conduct
 
 
-Faith's
-client wants to claim a relief which Faith is unfamiliar with. Faith appoints
-another tax adviser, Gerald, to provide advice on the issue. Gerald claims to
-be an expert on the relief, including having a record of successful claims
-related to the relief. Faith has previously worked with Gerald and in those
-cases the advice provided was correct. 
+Faith's client wants to claim a relief which Faith is
+unfamiliar with. Faith appoints another tax adviser, Gerald, to provide advice on
+the issue. Gerald claims to be an expert on the relief, including having a
+record of successful claims related to the relief. Faith has previously worked
+with Gerald and in those cases the advice provided was correct. 
 
 
-The client
-in this case does not qualify for the relief. Gerald has all the information
-needed to provide the correct advice. In the hope that Faith refers more
-clients, Gerald decides to tell Faith that the client can claim the relief and
-provides the calculations needed to submit the claim. Faith reviews the advice
-from Gerald and it appears correct for the client’s circumstances.
+The client in this case does not qualify for the relief.
+Gerald has all the information needed to provide the correct advice. In the
+hope that Faith refers more clients, Gerald decides to tell Faith that the
+client can claim the relief and provides the calculations needed to submit the claim.
+Faith reviews the advice from Gerald and it appears correct for the client’s
+circumstances.
 
 
-Faith did
-not know that the client could not claim the relief and has not engaged in
-sanctionable conduct. Gerald did know that the client couldn't claim the relief
-and has intentionally brought about a loss of tax. Gerald engaged in
-sanctionable conduct. It does not matter that the client did not appoint Gerald
-directly.
+Faith did not know that the client could not claim the
+relief and has not engaged in sanctionable conduct. Gerald did know that the
+client couldn't claim the relief and has intentionally brought about a loss of
+tax. Gerald engaged in sanctionable conduct. It does not matter that the client
+did not appoint Gerald directly.
 
 
-### Change of
-adviser
+#### Change of adviser \- not sanctionable conduct
 
 
-Hardeep
-provides tax advice to a client on a single issue. The client provides Hardeep
-with information to provide advice, but the information is incomplete. Hardeep
-provides advice on the issue, but makes it clear to the client that it is only
-correct in relation to the information provided and that any changes in
-circumstance may alter the tax position.
+Hardeep provides tax advice to a client on a single issue.
+The client provides Hardeep with information to provide advice, but the
+information is incomplete. Hardeep provides advice on the issue, but makes it
+clear to the client that it is only correct in relation to the information
+provided and that any changes in circumstance may alter the tax position.
 
 
-The client
-then stops using Hardeep's services and appoints a new tax adviser, Isaac. When
-submitting a return, the client asks Isaac to use Hardeep's advice. Isaac
-doesn't check if the advice is correct for the client's circumstances. This
-results in an incorrect return being submitted.
+The client then stops using Hardeep's services and appoints
+a new tax adviser, Isaac. When submitting a return, the client asks Isaac to use
+Hardeep's advice. Isaac doesn't check if the advice is correct for the client's
+circumstances. This results in an incorrect return being submitted.
 
 
-Hardeep did
-not intend to bring about a loss of tax, and took steps to prevent a loss of
-tax by making the client aware of the limitations of the advice. Hardeep did
-not engage in sanctionable conduct. Isaac acted carelessly by not checking the
-advice provided by the clients, but did not intentionally bring about a loss of
-tax. Isaac did not engage in sanctionable conduct.
+Hardeep did not intend to bring about a loss of tax, and
+took steps to prevent a loss of tax by making the client aware of the
+limitations of the advice.
+
+
+Hardeep did not engage in sanctionable
+conduct. Issac did not intentionally bring about a loss of tax. Even if Isaac acted carelessly, he did not engage in
+sanctionable conduct.’
+
+
+#### Change of tax adviser and change of law – not sanctionable
+conduct
+
+
+Luke provides tax advice to a client based on the
+legislation and guidance available at the time. The client submits a return
+following that advice. After submitting the return, the client stops using Luke
+for tax advice and engages a new tax adviser, Marina. Marina was not contracted
+to review any earlier tax positions by the client and will only provide advice
+relating to future tax periods.
+
+
+Later, a new line of case\-law emerges which makes the advice
+previously provided by Luke no longer correct. Luke is aware of this but does
+not inform the client that the previously provided advice is now incorrect.
+Marina also does not inform the client that the change means their previous
+return is now incorrect. Luke and Marina have not engaged in sanctionable
+conduct. Luke’s contract with the client has ceased and he has no
+responsibility to correct that position. Marina has not been contracted to provide
+advice on the earlier tax periods and is not obliged to consider or correct
+those returns.
+
+
+#### FA12/SCH38/PARA3 as amended
 
 
 ---
@@ -26024,6 +25952,57 @@ circumstances. For the purposes of tax adviser sanctionable conduct at least, ac
 in accordance with an ESC means acting in accordance with the law.
 
 
+‘Tax’ means
+any of the following:
+
+
+- income
+tax
+- capital
+gains tax
+- corporation
+tax
+- construction
+industry deductions
+- VAT
+- insurance
+premium tax
+- inheritance
+tax
+- stamp
+duty land tax
+- stamp
+duty reserve tax
+- petroleum
+revenue tax
+- aggregates
+levy
+- climate
+change levy
+- apprenticeship
+levy
+- diverted
+profits tax
+- multinational
+top\-up tax
+- domestic
+top\-up tax
+- annual
+tax on enveloped dwellings
+- plastic
+packaging tax
+- economic
+crime (anti\-money laundering) levy
+- digital
+services tax
+- soft
+drinks industry levy
+- landfill
+tax
+- any
+duty of excise other than vehicle excise duty
+
+
 **FA12/SCH38/PARA3**
 
 
@@ -26059,7 +26038,9 @@ another person that we believe holds relevant documents (the
 
 Where we have decided to issue a file access notice to
 the tax adviser, we may (but don’t have to) first obtain approval from the
-Tribunal. Where approval from the Tribunal is obtained, the tax adviser cannot
+Tribunal. Before seeking tribunal approval, we must tell the
+tax adviser we are planning to do so and give them reasonable opportunity to
+make representations to us. Where approval from the Tribunal is obtained, the tax adviser cannot
 appeal the file access notice. Where approval from the Tribunal is not sought,
 the tax adviser may appeal the file access notice or any requirement within it.
 
@@ -26080,7 +26061,8 @@ If we
 issue a file access notice under Case A, we may only require relevant documents
 relating to the tax adviser’s clients in respect of whom we have reasonable
 grounds to suspect the tax adviser engaged in sanctionable conduct. Those
-clients must be identified in the file access notice.
+clients must be identified in the file access notice, either by name or by reference to a class or
+description of clients.  
 
 
 There are
@@ -26196,12 +26178,29 @@ If either Case A or Case B circumstances exist then we are able to request relev
   
 If we issue a file access notice under Case A, we can only require relevant documents in relation to the tax adviser’s clients in respect of whom we have reasonable grounds to suspect the tax adviser engaged in sanctionable conduct. Those clients must be identified in the file access notice.  
   
-We may obtain tribunal approval before we issue a file access notice in Case A and Case B situations. Before seeking tribunal approval, we must tell the tax adviser that we are planning to do so and give them a reasonable opportunity to make representations to us. We must ensure the tribunal receives a summary of any representations made. The tribunal’s decision to approve a file access notice is final – a file access notice issued to a tax adviser that has been pre\-approved by the Tribunal may not be appealed.  
+We may obtain tribunal approval before we issue a file access notice in Case A and Case B situations.
+
+
+ Before seeking tribunal approval, we must tell the tax adviser that we are planning to do so and give them a reasonable opportunity to make representations to us. We must ensure the tribunal receives a summary of any representations made. The tribunal’s decision to approve a file access notice is final – a file access notice issued to a tax adviser that has been pre\-approved by the Tribunal may not be appealed.  
   
-If we issue a file access notice without Tribunal approval, the tax adviser may appeal the file access notice or any requirement within it.
+
+If we
+issue a file access notice without Tribunal approval, the tax adviser may
+appeal the file access notice or any requirement within it (see CH177240– appeals).
 
 
-We can issue a file access notice after 1 April 2026 requesting documents that existed before 1 April 2026\. Although we can request these earlier documents, we cannot use them to determine the amount of penalty for sanctionable conduct. The information will also help to indicate past pattern of behaviour, indicate the extent of sanctionable conduct and may influence our decision to investigate criminally.
+We can issue a file access notice after 1 April
+2026 requesting documents that existed before 1 April 2026\. We
+can request these earlier documents to allow us to
+determine  whether the test for sanctionable conduct is met. This may include, for example, seeking
+records to confirm that a person is acting as a tax adviser for a taxpayer
+where that relationship began before 1 April 2026\.
+
+
+In
+cases involving tax adviser firms and employees who are themselves tax
+advisers, a file access notice will typically, in the first instance, be more
+appropriately directed to the firm rather than an individual employee.
 
 
 **FA12/SCH38/PARA7 as amended**
@@ -26243,7 +26242,8 @@ These examples have no bearing on the fact that a taxpayer is responsible for th
 ### Example 1
 
 
-During an enquiry into a taxpayer’s tax position, HMRC finds a loss of tax. The taxpayer provides documents showing that they received tax advice about how to record their transactions so that they could pay less tax. The tax adviser told them that this was a valid interpretation of the law and that a tribunal would be likely to agree with the interpretation. The documents indicate that tax adviser’s advice was based on HMRC guidance for a relief that applies only for a specific activity, and that the tax adviser appeared to be aware that the taxpayer did not perform this activity. HMRC has reasonable grounds to suspect that the tax adviser engaged in sanctionable conduct.
+During an enquiry into a taxpayer’s tax position, HMRC finds a loss of tax. The taxpayer provides documents showing that they received tax advice about how to record their transactions so that they could pay less tax. In one of those documents, the tax adviser
+explained to the taxpayer that this was a valid interpretation of the law and that a tribunal would be likely to agree with the interpretation. The documents indicate that tax adviser’s advice was based on HMRC guidance for a relief that applies only for a specific activity, and that the tax adviser appeared to be aware that the taxpayer did not perform this activity. HMRC has reasonable grounds to suspect that the tax adviser engaged in sanctionable conduct.
 
 
 ### Example 2
@@ -26266,33 +26266,1494 @@ The tax adviser provided correct advice based on the information they were provi
 
 ---
 
-## CH178010 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178010>*
+## CH177080 — Power to access tax adviser's files from third parties
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177080>*
 
-If we have
-gathered sufficient evidence to determine on the balance of probabilities that
-a tax adviser is engaging in, or has engaged in, sanctionable conduct, we may issue
-a conduct notice. An authorised officer must approve the decision to issue a
-conduct notice.
-
-
-A conduct
-notice states our determination that the tax adviser is engaging in, or has
-engaged in, sanctionable conduct. It gives tax advisers a final opportunity to
-provide information to demonstrate that they have not engaged in sanctionable
-conduct before we issue a penalty.
+We may issue a file access notice to a person who is not the tax
+adviser. This is where we believe that person may hold relevant documents (a
+third\-party ‘document\-holder’). We
+might decide to issue a file access notice to a third\-party document\-holder
+because, for example:
 
 
-**FA12/SCH38/PARAS 25B and 25C**
+- The tax adviser hasn’t provided the information
+required, or
+- We need to independently check information that
+the tax adviser has provided to us
+
+
+Before
+we request documents from a third party document\-holder, we must first
+obtain approval from the Tribunal. The third party can appeal (to the
+Tribunal) against the file access notice on the grounds that it would be unduly
+onerous to comply with it.
+
+
+As with file access notices issued to tax advisers, we can only issue a
+file access notice to a third\-party document\-holder where Case A or Case B
+circumstances apply – see CH177020\.
+
+
+Before we ask the Tribunal to approve the issue of a file access notice
+to a third party, we’ll normally give both the first party and the third party
+opportunity to tell us about any problem the third party may have in giving us
+the information we intend to request.
+
+
+The third\-party document\-holder may be an individual or an organisation who possesses records relating to a
+taxpayer’s tax affairs. 
+
+
+Third\-party
+document holders may include, for example, financial institutions such as banks, building
+societies and investment managers, holding records or account details.
+
+
+**FA12/SCH38/PARA7
+as amended** 
+
+
+**FA12/SCH38/PARA8
+as amended**
 
 
 ---
 
-## CH178210 — Overview
+## CH177100 — When to issue a file access notice
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177100>*
+
+Where we have reasonable grounds to
+suspect a tax adviser is engaging in, or has engaged in, sanctionable conduct
+(Case A), before issuing a file access notice to the tax adviser, we may
+request tribunal approval. 
+
+
+Whether we seek tribunal approval before
+issuing a file access notice to a tax adviser will be determined on a case by
+case basis and may include scenarios where a tax adviser has a history of
+previous non\-compliance with a file access notice/request for information.
+
+
+We cannot issue a file access notice to
+a person who is not the tax adviser (a third party document holder), unless we have
+first obtained approval from the Tribunal. That person can appeal (to the
+Tribunal) against the file access notice on the grounds that it would be unduly
+onerous to comply with it.
+
+
+Before issuing a file access notice to any other person
+we believe may hold relevant documents (a third\-party document\-holder), we must
+request tribunal approval.
+
+
+Whoever the file access
+notice is issued to, it must be issued in Case A or Case B circumstances, see
+[CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020).
+
+
+### **FA12/SCH38/PARA8**
+
+
+---
+
+## CH177110 — What are relevant documents
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177110>*
+
+A file access notice, see [CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020), enables us to obtain
+‘relevant documents’ from tax advisers and third\-party document\-holders. The
+purpose of obtaining these documents is to investigate and establish whether or
+not the tax adviser has engaged in, or is engaging in, sanctionable conduct.
+
+
+‘Relevant documents’ are the tax adviser’s working papers
+and any other documents that were received, created, prepared or used by the
+tax adviser for the purposes of, or in the course of, assisting clients with
+their tax affairs.
+
+
+When deciding whether something is a relevant document,
+it does not matter
+
+
+- whether the
+document relates to a current client or a former client
+- who owns the
+papers or other documents, or
+- whether the
+documents exist in paper or electronic form.
+
+
+In Case A circumstances (see [CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020)), we may only
+request relevant documents which relate to clients of the adviser with respect
+to whom we have reasonable grounds to suspect the adviser is engaging, or has
+engaged, in sanctionable conduct. In other words, we **cannot** make a
+blanket request for all the tax adviser’s documents relating to all their
+clients, unless we have reasonable grounds to suspect they have engaged in
+sanctionable conduct with every client. Even when requesting documents relating
+to specified clients, we should take care to request only documents which are,
+or may be, relevant to the suspected sanctionable conduct.
+
+
+No such restriction applies in Case B circumstances (see
+[CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020)), meaning in those circumstances we could request relevant documents
+relating to all the adviser’s clients.
+
+
+### **FA12/SCH38/PARA9
+as amended**
+
+
+---
+
+## CH177120 — What are relevant documents - examples
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177120>*
+
+Relevant documents that can be obtained
+with a file access notice are the tax adviser’s working papers, including but
+not necessarily limited to:
+
+
+- journals
+- ledgers
+- trial balances
+- business or any other financial records
+- documents that contain information which provide
+the link between the taxpayer's books and records and the accounts, return or
+other information submitted to HMRC
+- any other documents used to prepare the accounts
+- communications with clients
+- all notes of meetings and notes of telephone
+conversations with the client, or any other person, concerning the client
+- copies of the tax adviser’s time records etc.
+- other files such as company secretarial files, grant
+files or those dealing with any other matter such as regulated financial
+services work or VAT returns, and
+- other documents or records relating to the client
+
+
+The file access notice should
+detail the purpose of the request and the documents requested.
+
+
+See [CH13400](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch13400) for guidance on records
+preserved electronically. 
+
+
+But see [CH177150](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177150) for details of
+documents and information that we cannot request with a file access notice.
+
+
+### **FA12/SCH38/PARA9
+as amende****d**
+
+
+---
+
+## CH177130 — What the file access notice must contain
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177130>*
+
+Our request in the file access notice must be
+reasonable. A file access notice can specify relevant documents to be provided,
+or it can globally request all relevant documents, which are within that
+person’s possession or power.
+
+
+In Case A circumstances (see [CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020)), the file
+access notice must identify the clients of the tax adviser in relation to whom
+relevant documents are to be provided. The notice may identify those clients by
+reference to a class or description of clients (rather than by name). In Case A
+circumstances, we cannot simply request relevant documents in relation to all
+the adviser’s clients, unless we have reasonable grounds to suspect the adviser
+has engaged in sanctionable conduct with every client.
+
+
+A file access notice may require the documents to be
+provided
+
+
+- within a specified period
+- by certain means
+- in a particular form
+- to a particular person, and
+- to a particular place.
+
+
+A person may comply with a file access notice by
+providing copies of the requested relevant documents, unless the file access
+notice states that it requires only original documents. 
+
+
+See [CH177230](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177230) for guidance on how long we can hold the
+documents received under a file access notice.
+
+
+### **FA12/SCH38/PARA10
+as amended**
+
+
+### **FA12/SCH38/PARA11
+as amended**
+
+
+### **FA12/SCH38/PARA12
+as amended**
+
+
+---
+
+## CH177140 — Approval by tribunal
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177140>*
+
+We may issue a file access notice without prior approval
+from the tribunal, provided the notice is issued to the tax adviser. Where we
+want to issue a file access notice to a third\-party document\-holder, we must
+seek prior approval from the tribunal. 
+
+
+Where we seek tribunal
+approval prior to the issue of a file access notice, we must:
+
+
+- tell the document\-holder (whether it be the tax
+adviser or a third party) that we will require relevant documents from them, to
+prevent the documents being destroyed in the interim
+- give the document\-holder a reasonable opportunity to
+make representations to us
+- ensure the application is made by, or with the
+agreement of, an authorised officer,
+- ensure the tribunal is satisfied that the case falls
+within a Case A or Case B situation, see [CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020)
+- ensure the tribunal is satisfied that, in the
+circumstances, the officer giving the notice is justified in doing so
+- provide the
+tribunal with a summary of any representations
+that were made to us by the document\-holder.
+
+
+Prior to seeking tribunal approval, we must also have
+reasonable grounds to suspect a tax adviser is engaging in, or has engaged in,
+sanctionable conduct.
+
+
+The circumstances where we seek tribunal approval to
+issue a tax adviser with a file access notice will be limited and may include
+where a tax adviser has previously not engaged with or responded to a file
+access notice.
+
+
+The tribunal does not have to be satisfied that the tax
+adviser is engaging, or has engaged, in sanctionable conduct for it to approve
+the file access notice. It only needs to be satisfied that either Case A or
+Case B circumstances exist (see [CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020)) and that the file access notice will
+be properly made and comply with formal requirements.
+
+
+The tribunal decision to approve the issue of a file
+access notice does not fall within section 11 (right to appeal to Upper
+Tribunal) and section 13 (right to appeal to Court of Appeal etc) of the
+Tribunals, Courts and Enforcement Act (TCEA) 2007\. This means that there is no
+right of appeal against the tribunal’s decision to approve a file access
+notice.
+
+
+The only exception to this is where a file access notice
+is issued, with tribunal approval, to a third\-party document\-holder. The
+document\-holder in these circumstances may appeal the notice on the ground that
+it would be unduly onerous to comply with it (see [CH177250](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177250)).
+
+
+### **FA12/SCH38/PARA13
+as amended**
+
+
+### **TCEA07/S11**
+
+
+### **TCEA07/S13**
+
+
+---
+
+## CH177150 — Overview
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177150>*
+
+We cannot request certain documents and information
+using a file access notice.
+
+
+We cannot request a document that
+
+
+- is not in the person’s possession or power, see [CH177160](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177160)
+- is over 20 years old, see [CH177200](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177200) or
+- is legally privileged, see [CH177210](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177210)
+
+
+We also cannot request
+
+
+- documents containing information relating to a
+pending tax appeal, see [CH177170](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177170)
+- personal records, see [CH177180](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177180) or
+- journalistic material, see [CH177190](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177190)
+
+
+The documents and information that cannot be
+requested are the same as those in Schedule 36 to FA 2008, see [CH22000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch22000)\+, except that tax advice and auditors’ papers can be requested
+using a file access notice, and the rules for old documents are different.
+
+
+In Case A circumstances (see [CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020)), we also
+cannot use a file access notice
+to request documents or information relating to clients in respect of whom we
+do **not** have reasonable grounds to suspect the tax adviser has engaged in
+sanctionable conduct.
+
+
+### **FA12/SCH38/PARA14**
+
+
+### **FA12/SCH38/PARA15**
+
+
+### **FA12/SCH38/PARA16**
+
+
+### **FA12/SCH38/PARA17**
+
+
+---
+
+## CH177160 — Not in a person's possession or power
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177160>*
+
+We cannot require a person to produce a document
+unless 
+
+
+- the document is in their possession, or
+- they have the power to produce it.
+
+
+‘In their possession’ means that the person has physical
+control over the document. It does not matter who the document belongs to.
+
+
+‘In their power’ means the person has the ability to get the
+document, or a copy of it, from whoever holds it.
+
+
+This ability to get the document can be through
+
+
+- a legal entitlement to make the person holding the document
+give it to them, or
+- the influence that the person has on the person who owns or
+possesses the document.
+
+
+We do not need to be able to prove that a document is in a
+person’s possession or power before requiring them to produce it.
+
+
+However, the person will not have failed to produce the
+document (or a copy of it) if they can satisfactorily show
+
+
+- that it is not in their possession or within their power to
+produce, or
+- why they are unable to produce a document that is within
+their power.
+
+
+The onus is on the person to produce the document.
+
+
+**FA12/SCH38/PARA14**
+
+
+---
+
+## CH177170 — Appeal material
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177170>*
+
+We cannot require a person to provide information or
+produce a document that relates to the conduct of a pending tax appeal.
+
+
+A document that ‘relates to the conduct of a pending
+appeal’ is a document that has been brought into existence as part of the
+preparation for the presentation of a tax appeal.
+
+
+The exclusion does not cover, and therefore we can
+request, information or documents that may be used in presenting the appeal,
+for example as evidence, but which existed before the appeal process began.
+
+
+### **FA12/SCH38/PARA15**
+
+
+---
+
+## CH177180 — Personal records
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177180>*
+
+We cannot require a
+person to
+
+
+- produce personal
+records, or
+- provide information
+from personal records.
+
+
+‘Personal records’
+is more limited than it sounds. It is defined in Section 12 of the Police and
+Criminal Evidence Act 1984 and means records concerning any individual’s
+physical, mental, spiritual or personal welfare.
+
+
+‘Personal records’
+information in itself is not normally required to check a tax position.
+However, some medical professionals keep mixed medical and financial records
+despite advice from their professional bodies to keep them separate.
+
+
+Where ‘personal
+records’ contain mixed information, we can require the person to provide the
+information that does not relate to any individual’s welfare.
+
+
+This can be done by
+omitting the information that makes the document ‘personal records’. If we
+require a ‘personal records’ document to be produced or inspected, the welfare
+information can be covered up, or redacted, so that we cannot see it.
+
+
+Any document that
+contains welfare information is very sensitive. It follows that there is a
+strong presumption in favour of personal privacy. Before you use the
+information or inspection powers to seek access to documents or information
+that may be contained in personal records, you must discuss your case with [Tax
+Administration Litigation Advice](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch910000).
+
+
+**FA12/SCH38/PARA15**
+
+
+---
+
+## CH177190 — Journalistic material
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177190>*
+
+We cannot require a person to produce ‘journalistic
+material’ or provide information from journalistic material.
+
+
+‘Journalistic material’ is self\-explanatory and excuses
+an investigative journalist from disclosing source material.
+
+
+‘Journalistic material’ is defined in Section 13 of the
+Police and Criminal Evidence Act 1984\. It means material acquired or created
+for the purposes of journalism.
+
+
+Material is journalistic material only if it is
+
+
+- in the
+possession of a person who acquired or created it for the purposes of
+journalism, that is a journalist, or
+- unsolicited
+material sent to a person with the intention of it being used for journalism.
+
+
+Material is either journalistic or it is not. There is no
+partial access to journalistic material such as there is to ‘personal records’,
+see [CH177180](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177180).
+
+
+### **FA12/SCH38/PARA15**
+
+
+---
+
+## CH177200 — Old documents
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177200>*
+
+We cannot use a file access notice to require a document
+to be provided, where that document
+
+
+- originated
+before the ‘back stop day’, and
+- no part of the
+document has a bearing on tax periods ending on or after the ‘back stop day’.
+
+
+The ‘back stop day’ is the first day of the 20 year
+period that ends on the day on which the file access notice is given.
+
+
+**Example**
+
+
+We issue a file access notice on 22
+November 2026\. This date becomes the last day of the 20 year period.
+
+
+The ‘back\-stop day’ is 23 November
+2006\.
+
+
+This means that the person does not
+have to provide any documents where
+
+
+- the whole of that document originated before 23 November
+2006, and
+- no part of that document has a bearing on tax periods
+ending or after 23 November 2006\.
+
+
+We can issue a file access notice after 1 April 2026
+requesting documents that existed before 1 April 2026\. We can request these
+earlier documents to allow us to determine whether the test for sanctionable
+conduct is met. This may include, for example, seeking records to confirm that
+a person is acting as a tax adviser for a taxpayer where that relationship began
+before 1 April 2026\. 
+
+
+### **FA12/SCH38/PARA16**
+
+
+---
+
+## CH177210 — Privileged communications
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177210>*
+
+We cannot require a person
+
+
+- to provide
+privileged information, or
+- to produce the
+privileged part of a document.
+
+
+Information is privileged if a claim to legal
+professional privilege or, in Scotland confidentiality of communications, could
+be maintained in legal proceedings.
+
+
+This is a complex area of the law but, broadly speaking,
+privilege attaches to
+
+
+- documents
+containing confidential communications between lawyer and client for the
+purpose of obtaining or giving legal advice, and
+- documents
+produced for the purpose of contemplated or actual litigation.
+
+
+Documents may contain some information that is privileged
+and some that is not. Where a person does not wish to produce that part of a
+document that is privileged, they can produce a copy of the part that is not
+protected. The original document must be made available for us to inspect if we
+need to. The protected parts may be kept covered up at this inspection.
+
+
+Where any claim for legal professional privilege is made
+(or any other matter relating to legal professional privilege arises) a report
+should be made to [Tax Administration, Litigation and Advice (TALA)](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch910000), before any further action is taken.
+
+
+Regulations made under paragraph 23 of Schedule 36 to FA
+2008, which concern resolving disputes regarding privileged communications,
+also apply to disputes regarding legal privilege under these provisions.
+
+
+### **FA12/SCH38/PARA17**
+
+
+### **SI 2009/1916**
+
+
+### **FA08/SCH36/PARA23**
+
+
+---
+
+## CH177220 — Power to copy records
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177220>*
+
+While our general approach is that we will usually
+receive documents electronically as part of our enquiries, there may be
+occasions where we visit premises. When visiting premises in person, we can
+take copies of, or make extracts from, any document that is provided in
+accordance with a file access notice.
+
+
+**Copying**
+
+
+The person the document belongs to does not have to allow
+you to use their copying facilities. If they have no objection to using their
+copying facilities, it is often the simplest approach to ask them to copy the
+document for you. Wherever possible, copying arrangements should be agreed in advance.
+
+
+Where you have not been able to make copying
+arrangements in advance, you will need to consider how you are going to take
+copies if necessary. It may be possible to take suitable copying equipment with
+you, but a more practical solution may be to remove the documents you wish to
+copy.
+
+
+**Extracts**
+
+
+Making an extract means copying only part of a
+document or recording the information in the document onto other media.
+
+
+See [CH210000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch210000)\+ for more guidance on documents and records.
+
+
+### **FA12/SCH38/PARA18**
+
+
+---
+
+## CH177230 — Power to retain records
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177230>*
+
+We can retain any document that is provided in accordance
+with a file access notice for a reasonable period. This is the minimum period
+needed for us to complete the tasks for which it was removed.
+
+
+While a document is retained
+
+
+- the
+document\-holder may, if the document is reasonably required for any purpose,
+request a copy of it, and
+- we must provide
+a copy of the document without charge.
+
+
+We may request production of a document that is covered
+by a lien. A lien is a right to retain someone else’s property until a debt is
+paid. Producing the document to us does not affect the lien.
+
+
+If we lose or damage a document, then we are liable to
+compensate the owner of the document for any expenses reasonably incurred in
+replacing or repairing the document.
+
+
+### **FA12/SCH38/PARA19**
+
+
+---
+
+## CH177240 — Document holder is a tax adviser
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177240>*
+
+A file access
+notice issued to a tax adviser that has been pre\-approved by the Tribunal may
+not be appealed.
+
+
+If we issue a
+file access notice without Tribunal approval, the tax adviser may appeal the
+file access notice or any requirement within it.
+
+
+The notice of
+appeal must be given
+
+
+- in writing to the officer who issued the file access notice, and
+- within 30 days of the file access notice being issued.
+
+
+The notice of
+appeal must state the grounds of appeal.
+
+
+The tribunal
+may confirm, vary or set aside the notice or a requirement in it following an
+appeal. The tribunal’s decision is final.
+
+
+### **FA12/SCH38/PARA20**
+
+
+---
+
+## CH177250 — Document holder is not a tax adviser
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177250>*
+
+A file access
+notice can be issued to a person who is not the tax adviser (a third\-party
+‘document\-holder’). In these instances, the issue of a file access notice must
+be approved by the tribunal before it can be issued to a person.
+
+
+If a file access notice is issued to a third\-party
+document\-holder, then that person can appeal against the file access notice on
+the ground that it would be unduly onerous to comply with it. See [ARTG2100](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2100)\+ for more
+information on appeal rights.
+
+
+The notice of appeal must be given
+
+
+- in writing to
+the officer who issued the file access notice, and
+- within 30 days
+of the file access notice being issued.
+
+
+The notice of appeal must state why complying with the
+file access notice would be unduly onerous.
+
+
+The tribunal
+may confirm, vary or set aside the notice or a requirement in it following an
+appeal by the third\-party document\-holder. The tribunal’s decision is final.
+
+
+**FA12/SCH38/PARA20**
+
+
+---
+
+## CH177260 — Actions available to tribunal
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177260>*
+
+Where a tax adviser or a document holder who is not the
+tax adviser appeals against the file access notice, the tribunal may
+
+
+- confirm
+- vary, or
+- set aside
+
+
+the notice or a requirement in it.
+
+
+The tribunal’s decision is final.
+
+
+### **FA12/SCH38/PARA20**
+
+
+---
+
+## CH177270 — Overview
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177270>*
+
+A person is liable to penalties if they fail to comply
+with a file access notice, see [CH177020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177020).
+
+
+A file access notice can be issued to persons who are not
+tax advisers, see [CH177080](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177080). This means that penalties for failing to comply
+with a file access notice can also be issued to persons who are not tax
+advisers.
+
+
+A person is liable to an initial penalty of £300 if they
+fail to comply with a file access notice, see CH177300\. Failure to comply with
+a notice means that the person did not provide the required documents within
+the timeframe specified in the notice.
+
+
+Failure to comply with a file access notice also includes
+concealing, destroying or otherwise disposing of a required document, or
+arranging for the required document to be concealed, destroyed or disposed of.
+
+
+If the failure to comply continues after the initial £300
+penalty has been issued to the person, then daily penalties of up to £60 per
+day can be charged for as long as the failure continues, see [CH183380](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch183380). 
+
+
+If the failure to comply continues for more than 30 days
+from the point at which the first £60 daily penalty was issued, then we may
+make an application to the tribunal to increase the daily penalty amount up to
+£1,000\.
+
+
+We will not charge initial or daily penalties if we allow
+the person more time to comply with the file access notice and they comply with
+the file access notice within that additional time, see [CH183335](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch183335).
+
+
+A person will not be liable to initial or daily penalties
+if that person has a reasonable excuse for not complying with the file access
+notice, see [CH183500](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch183500). Initial and
+daily penalties cannot be reduced due to the person making a disclosure, see [CH184140](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch184140).
+
+
+A person is liable to a penalty of up to £3,000 if they
+provide a document that contains an inaccuracy in response to a file access
+notice, where that inaccuracy is deliberate or careless. A penalty of up to £3,000
+may be issued for each inaccuracy.
+
+
+### **FA12/SCH38/PARA22**
+
+
+### **FA12/SCH38/PARA23**
+
+
+### **FA12/SCH38/PARA24**
+
+
+---
+
+## CH177280 — Time limits
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177280>*
+
+A file access notice must state the date by which the
+documents must be provided. A person fails to comply with the file access
+notice if, without reasonable excuse, they do not provide all the required
+documents by the required date. Penalties can be charged if a person fails to
+comply with a file access notice.
+
+
+However, we will not charge initial or
+daily penalties if we allow the person more time to comply with the file access
+notice, and they comply with the file access notice within that additional
+time.
+
+
+### 
+
+
+### **FA12/SCH38/PARA24**
+
+
+---
+
+## CH177290 — Initial penalty
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177290>*
+
+A person is liable to an initial penalty of £300 if they
+fail to comply with a file access notice. Failure to comply with a
+notice means that the person, without reasonable excuse, did not provide
+the required documents within the timeframe specified in the
+notice. 
+
+
+Failure to comply with a file access notice also includes
+concealing, destroying or otherwise disposing of a required document, or
+arranging for the required document to be concealed, destroyed or disposed of,
+see [CH177340](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177340). 
+
+
+The person can only be liable to one initial penalty for
+each separate file access notice, even if the file access notice requests
+multiple required documents
+
+
+A required document is a document requested in a file
+access notice but see [CH177340](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177340) for a more detailed description.
+
+
+See [CH177300](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177300) for an example.
+
+
+### **FA12/SCH38/PARA22**
+
+
+---
+
+## CH177300 — Initial penalty - example
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177300>*
+
+We issued a file access notice to Sara, a tax adviser, on
+30 September 2027\. The notice requested the working papers for several of her
+clients who operated certain trading activities.
+
+
+The file access notice requested Sara to provide certain
+documents by 30 October 2027\.
+
+
+Sara did not provide us with all the required documents
+by 30 October 2027\.
+
+
+We may charge Sara an initial penalty of £300 after 30
+October 2027\.
+
+
+### **FA12/SCH38/PARA22**
+
+
+---
+
+## CH177310 — Daily penalties
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177310>*
+
+Once a person has been issued with an initial £300
+penalty, they become liable to daily penalties of up to £60 for each day that
+they continue to fail to comply with the file access notice by not providing
+all the required documents.
+
+
+If the person’s
+failure to comply continues for more than 30 days from the point at
+which the first £60 daily penalty was issued, then we
+may also make an application to the tribunal to increase
+the daily penalty amount up to £1,000\. 
+
+
+Before we make
+an application to the tribunal to increase the daily penalty amount, we must
+first have told the person that we may make such an application. However, we do
+not need to wait to until the person becomes potentially liable to an increased
+daily penalty amount before we tell them we may make an application. It will be
+sufficient for us to tell the person at the time we issue them with their first
+daily penalty of up to £60 that, if their non\-compliance continues for more
+than 30 days from this point, then we may apply to the tribunal to increase the
+daily penalty amount.
+
+
+If the tribunal
+decides that a person should be liable to an increased daily penalty, the
+tribunal will determine that increased penalty amount (and the date from which
+it is to apply). In doing so, the tribunal must have regard to the likely cost
+to the person of complying with the notice and any benefits accruing to the
+person (or another person) through not complying with it. Once the tribunal has
+decided the new penalty amount and the date from which it is to apply, we must
+notify the person of these facts.
+
+
+A person is not liable to daily penalties where they have
+destroyed or otherwise disposed of a required document, or they have arranged
+for someone else to destroy or otherwise dispose of a required document. This
+is because there is no way that the person can now comply with the notice. Instead,
+we would consider prosecuting the person, see [CH177240](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177240).
+
+
+A required document is a document requested in a file
+access notice but see [CH177340](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177340) for a more detailed description.
+
+
+See [CH179020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179020) for guidance on how to process daily penalties
+and see [CH177320](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177320) for an example.
+
+
+### **FA12/SCH38/PARA23**
+
+
+---
+
+## CH177320 — Daily penalties - example
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177320>*
+
+We issued a file access notice to Howard, a tax adviser,
+on 3 October 2029\. The notice requested the working papers for a selection of
+his clients going back three years, when he commenced business.
+
+
+The file access notice requested Howard to provide the
+documents by 3 November 2029\.
+
+
+Howard did not provide all the required documents by 3
+November 2029, so we charged him an initial penalty of £300 on 15 November
+2029\.
+
+
+If Howard still fails to comply with the file access notice,
+we will consider charging daily penalties. Although we would allow a period of
+grace to see whether the initial penalty prompts compliance, we can charge
+daily penalties from 16 November 2029, being the day after the initial penalty.
+
+
+We can charge daily penalties of up to £60 for that and
+each subsequent day that he fails to comply with the file access notice.
+
+
+If Howard continues to fail to comply with the file
+access notice for more than 30 days from the date that we issued with him with
+his first daily penalty, then we may make an application to the tribunal to
+increase the daily penalty amount (up to £1,000\). So, if we issued Howard with
+his first £60 daily penalty on 1 December 2029, then we may make an application
+to the tribunal to increase the daily penalty amount from 31 December 2029
+onwards (provided Howard has not complied with the file access notice in the
+meantime). 
+
+
+Before we make an application to the tribunal for an
+increased daily penalty amount, we must have told Howard that we may do this.
+However, we do not need to wait until 31 December 2029 to tell him this; it
+will be enough to warn him when we issue his first £60 daily penalty that, if
+he continues to fail to comply for more than 30 days, we may make an application
+to the tribunal.
+
+
+### **FA12/SCH38/PARA23**
+
+
+---
+
+## CH177330 — Reasonable excuse
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177330>*
+
+A person will not be liable to a
+penalty for a failure to comply with a file access notice if they have:
+
+
+- a reasonable excuse, and
+- put the failure right without
+unreasonable delay after the excuse had ended.
+
+
+There is no statutory definition of ‘reasonable excuse’ or
+‘unreasonable delay’. Both phrases must be given their ordinary meaning. Each
+case must be considered on the facts, and in view of the person’s abilities and
+circumstances.
+
+
+HMRC considers reasonable excuse to be something that
+stops a person from meeting an obligation despite them having taken reasonable
+care to meet the obligation.
+
+
+To be a reasonable excuse for failing to meet an
+obligation, the excuse must exist on or before the date of the obligation. If
+the excuse arises after that date, the obligation has not been met and it
+cannot be a reasonable excuse for that failure.
+
+
+The onus is on the person who failed to comply to satisfy
+HMRC that they had a reasonable excuse at the time of the failure. Whether the
+person has a reasonable excuse will depend on the circumstances in which the
+failure occurred and the individual experience, knowledge and other attributes
+of the person who has failed.
+
+
+For these purposes:
+
+
+- Insufficient funds is not a reasonable excuse, unless
+attributable to events outside the person control
+- If a person relies on another to do anything, that is not
+a reasonable excuse unless the first person took reasonable care to avoid the
+failure,
+- If the person had a reasonable excuse for the failure but
+the excuse has ceased, the person is to be treated as having continued to have
+the excuse if the failure is remedied without unreasonable delay after the
+excuse ceased.
+
+
+For guidance on Reasonable Excuse, see [CH160000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch160000).
+
+
+**FA1/SCH38/PARA25**
+
+
+---
+
+## CH177340 — Offence of concealment in connection with a file access notice
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177340>*
+
+A person commits an offence if they
+
+
+- conceal,
+destroy or otherwise dispose of a ‘required document’, or
+- arrange for the
+concealment, destruction or disposal of a required document.
+
+
+The meaning of ‘required document’ depends on whether
+that document has been requested in a file access notice.
+
+
+Where the document has been requested in a file access
+notice, ‘required document’ means one in respect of which
+
+
+- the notice has
+not been complied with, or
+- it has been
+complied with, but the person has been told by us, in writing, to continue to
+retain the document, and that notification has not been withdrawn.
+
+
+Where the document has not been requested in a file
+access notice, ‘required document’ means
+
+
+- that we have
+told the person that we are likely to issue them with a file access notice for
+that document, and
+- no more than
+six months have elapsed since the person was, or was last, told.
+
+
+A person commits an offence in respect of each required
+document that has been concealed, destroyed or otherwise disposed of.
+
+
+Because a ‘required document’ can include a document that
+has not been requested in a file access notice, it means that a person can be
+prosecuted for concealing, destroying or otherwise disposing of a document even
+when a file access notice has not been issued.
+
+
+Note that because a file access notice can be issued to
+people who are not tax advisers, see [CH177080](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177080), then the sanctions for not
+complying with a file access notice also apply to people who are not tax
+advisers.
+
+
+The person can be prosecuted for the offence, or charged
+penalties, but not both, see [CH179380](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179380).
+
+
+The burden of proof is on HMRC, and the standard of proof
+is the criminal standard of beyond reasonable doubt.
+
+
+A person who is found guilty of this offence is liable
+
+
+- on summary
+conviction, to a fine not exceeding the statutory maximum, and
+- on conviction
+on indictment, to imprisonment for a term not exceeding two years, or to a
+fine, or both.
+
+
+Even if we decide not to prosecute, we can still charge
+the initial penalty, see [CH177290](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177290). We would be unable to charge the daily
+penalties, see [CH177310](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177310) because the documents no longer exist.
+
+
+### **FA12/SCH38/PARA21**
+
+
+---
+
+## CH177350 — Overview
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177350>*
+
+A person is
+liable to a penalty of up to £3,000 if, in response to a file access notice,
+the person provides a document that contains an inaccuracy. 
+
+
+However, the
+person is only liable to a penalty if:
+
+
+- the inaccuracy is deliberate or due to a failure by the
+person to take reasonable care,
+- the person
+knows of the inaccuracy at the time the document is provided but does not
+inform HMRC at that time, or
+- the
+inaccuracy was not careless or deliberate, but the person discovers the
+inaccuracy sometime later and fails to take reasonable steps to inform HMRC.
+
+
+The maximum penalty is £3,000 but
+we would only consider that amount for very serious cases of deliberate
+inaccuracy. Inaccuracies assessed as careless should typically attract a lesser
+penalty than inaccuracies assessed as deliberate. 
+
+
+Where a
+document contains more than one inaccuracy, a penalty is payable for each
+inaccuracy.
+
+
+We will **not**
+assess a penalty for giving us an inaccurate document if the person
+
+
+- tells us about the inaccuracy at the time they give us
+the document,
+- takes reasonable steps to tell us about the inaccuracy if
+they later discover it, (before HMRC have asked about the inaccuracy).
+
+
+**FA12/SCH38/PARA 25A**
+
+
+---
+
+## CH177360 — Amount of the penalty
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177360>*
+
+The amount of the penalty for an inaccuracy
+in a document produced in response to a file access notice must be
+proportionate to the seriousness of the conduct.
+
+
+The maximum penalty is £3000 but we would
+only consider that amount for very serious cases of deliberate inaccuracy.
+
+
+---
+
+## CH177370 — Time limits
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177370>*
+
+The assessment
+of a penalty for providing, in response to a file access notice, a document
+that contains an inaccuracy must be made within 12 months of the date on which
+the person provided the inaccurate document to us.
+
+
+**FA12/SCH38/PARA30**
+
+
+---
+
+## CH178010 — Conduct notice overview
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178010>*
+
+If we have gathered sufficient evidence to determine on the
+balance of probabilities that a tax adviser is engaging in, or has engaged in,
+sanctionable conduct, then we will issue a conduct notice. An authorised
+officer must approve the decision to issue a conduct notice.
+
+
+We must issue the adviser with a conduct notice before we
+can assess them for a penalty.
+
+
+Once we have issued an adviser with a conduct notice, we
+should give them a reasonable opportunity to make any final representations to
+us before we then issue the penalty. The adviser may, at the conduct notice
+stage, provide information or explanation that changes our determination that
+they have engaged in sanctionable conduct.
+
+
+If they do, we should then withdraw the conduct notice and
+not issue a penalty.
+
+
+If they do not, or if they do not engage with us following
+the issuance of the conduct notice, then we should proceed to assessing the
+adviser for a penalty.
+
+
+Where we have determined that multiple tax advisers have
+engaged in sanctionable conduct in relation to a single tax loss, we may use
+the powers on each of those tax advisers.
+
+
+However, in some cases it may be more appropriate to use the
+powers on a tax adviser who controls or has responsibility for the actions of
+others, such as a company that employs tax advisers who have engaged in
+sanctionable conduct under instruction of their employer. It will always be
+important to make any decision based on the specific facts of the individual
+case. \[See [CH178030](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178030):
+Multiple tax advisers]
+
+
+**FA12/SCH38/PARAS 4\-6 as amended**
+
+
+---
+
+## CH178020 — What is a conduct notice
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178020>*
+
+If we determine
+that a person who is, or was, a tax adviser, has engaged in sanctionable
+conduct, see [CH176520](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch176520),
+we should then issue that person with a ‘conduct notice’.
+
+
+A conduct notice is
+the notification of a determination made by a duly authorised officer of HMRC.
+It must state the reasons why we think the tax adviser is engaging in, or has
+engaged in, sanctionable conduct.
+
+
+**FA12/SCH38/PARA 4**
+
+
+---
+
+## CH178030 — Multiple tax advisers
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178030>*
+
+When
+investigating sanctionable conduct, there may be multiple tax advisers
+involved. This may arise in a number of scenarios, including (but not limited
+to):
+
+
+- a
+taxpayer has directly engaged multiple tax advisersto
+provide advice or services in relation to the same tax affairs
+- a
+tax adviser has engaged another tax adviser to provide advice on their client’s
+tax affairs
+- a
+tax adviser is an employee or contractor of a business that is a tax adviser
+- a
+tax adviser is part of a group of companies where at least some of those other
+companies are tax advisers
+
+
+In some cases,
+multiple tax advisers will have engaged in sanctionable conduct and in those
+cases they should all be assessed for a sanctionable conduct penalty for their
+part in intending to bring about a loss of tax.
+
+
+However, in
+some cases where multiple tax advisers are involved with a taxpayer and a loss
+of tax, some of those advisers may not have engaged in sanctionable conduct
+themselves. In cases like this, it is only the tax advisers who engaged in
+sanctionable conduct who may be assessed a penalty. 
+
+
+Where we have
+reasonable grounds to suspect that multiple tax advisers have engaged in
+sanctionable conduct, information gathered using file access notices can help
+establish whether each tax adviser engaged in sanctionable conduct, and to what
+extent they did so. (In cases involving tax adviser firms and employees who are
+themselves tax advisers, a file access notice will typically, in the first
+instance, be more appropriately directed to the firm rather than an individual
+employee.)
+
+
+Remember that
+to have engaged in sanctionable conduct, a tax adviser must have acted with the
+**intention** of bringing about a loss of tax revenue. An adviser who is
+simply mistaken, or careless, or even negligent, will not have engaged in
+sanctionable conduct. Therefore, when determining whether a tax adviser has
+engaged in sanctionable conduct, we should consider:
+
+
+- The
+extent to which the adviser was acting under another person’s direction or
+control (for example, following employer instructions, scripts, or mandated
+processes)
+- The
+degree of autonomy the adviser had in making decisions, exercising professional
+judgement, challenging ways of working or raising concerns
+- Whether
+the adviser was aware that their actions would bring about a loss of tax
+- Whether
+the adviser deliberately deviated from, ignored, or bypassed processes,
+controls, or escalation requirements they were expected to follow (for example,
+those of their employer)
+- The
+role of the adviser in the end\-to\-end process (for example, whether they were
+undertaking administrative steps or designing/implementing the approach that
+led to the loss)
+
+
+In all cases
+what matters is whether the tax adviser engaged in sanctionable conduct. If
+they have only behaved carelessly, they will not have engaged in sanctionable
+conduct.
+
+
+**Example 1**
+
+
+Pauline is
+employed by a company that specialises in claiming repayments from HMRC.
+Pauline’s role is to call potential clients and tell them they are eligible for
+a refund from HMRC. If they agree, Pauline inputs their details into the
+company’s systems and repayment claims are made automatically. Pauline follows
+a script provided by her employer, calls the numbers her employer has told her
+to, and inputs the information following the employer’s instructions. Pauline
+does not check whether the claim is valid as her employer has not told her to
+do this and has not provided any information about how to do this. Pauline has
+no prior knowledge of repayment claims to make any assessment of whether a
+claim may be valid. 
+
+
+The company has
+previously been told by HMRC that they are making large volumes of ineligible
+claims and that they need to implement checks before submitting claims. The
+company has taken no steps to enact this advice.
+
+
+In this case,
+although Pauline’s actions may have resulted in a loss of tax, they are not sanctionable
+conduct as she was not doing this with the intention of bringing about a loss
+of tax:
+
+
+- she
+was acting under close direction (scripts and instructions),
+- she
+had no autonomy to challenge or assess claims,
+- she
+had no knowledge, and could not reasonably have been expected to know, the
+claims were invalid
+
+
+The repayment
+company is likely engaging in sanctionable conduct as they are deliberately
+making claims knowing that they are ineligible and will result in a loss of
+tax. They have failed to implement controls, indicating knowledge and
+intentional continuation of the behaviour.
+
+
+**Example 2**
+
+
+Ross is
+employed by a tax advice company. Ross is responsible for calculating tax
+liabilities for his clients and advising them on ways to reduce their tax
+liability legally. The company training and guidance tells its tax advisers
+that they must provide advice that is based on all the facts available, using
+reasonable interpretations of the law, guidance and case law. Where Ross is
+using a novel interpretation, he must discuss it with a senior tax adviser and
+agree the chance of success. Ross has completed this training and a record of
+that is kept. 
+
+
+One of Ross’s
+clients asks for a way to reduce their tax liability. Ross advises them that
+there is way to reduce their tax liability using a novel interpretation of the
+law. Ross was aware that the interpretation had a low chance of success but
+chose not to escalate it, intending to secure a tax reduction for the client
+regardless of the risk. This is contrary to the company’s processes. The
+interpretation is later challenged and loses at Tribunal.
+
+
+The company has
+not engaged in sanctionable conduct. Although they may have the contract with
+the client and have employed Ross, they have in place processes to prevent tax
+losses from occurring and there is no evidence it intended to bring about a
+loss of tax.
+
+
+---
+
+## CH178210 — Penalty for sanctionable conduct overview
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178210>*
 
-A tax adviser who engages in sanctionable conduct and who
-has been issued with a conduct notice is liable to a penalty. 
+A tax adviser who engages in sanctionable conduct is liable
+to a penalty. The adviser must have been issued with a conduct notice
+before a penalty can be charged.
 
 
 The penalty is calculated based on the potential lost
@@ -26303,12 +27764,13 @@ maximum penalty is:
 - 70% of the PLR up to £1m for the first penalty
 - 85% of the PLR up to £5m for the second to fifth penalty in
 a 20 year period
-- 100% of the PLR with no maximum amount for the sixth or
-subsequent penalty in a 20 year period
+- 100% of the PLR with no maximum amount for the sixth or subsequent
+penalty in a 20 year period
 
 
-The minimum penalty for sanctionable conduct is £7,500\.  Where the PLR cannot be determined, or there
-is no PLR, the minimum penalty is used.
+The minimum penalty for sanctionable conduct is
+£7,500\.  Where the PLR cannot be determined, or there is no PLR, the
+minimum penalty is used.
 
 
 The penalty for sanctionable conduct is different to and
@@ -26316,8 +27778,8 @@ separate from the penalty for failing to comply with a file access notice or
 providing inaccurate information in response to a file access notice.
 
 
-When deciding the appropriate amount of penalty for sanctionable
-conduct, we must consider:
+When deciding the appropriate amount of penalty for
+sanctionable conduct, we must consider:
 
 
 - whether the tax adviser disclosed the sanctionable conduct
@@ -26327,19 +27789,940 @@ conduct, we must consider:
 access notice that was issued in relation to that sanctionable conduct.
 
 
-The tax adviser can appeal against the issue of and the amount
-of a penalty for sanctionable conduct. We must publish the details of the sanctionable
-conduct where the penalty issued is above £7,500\.
+The tax adviser can appeal against the issue of and the
+amount of a penalty for sanctionable conduct. We must publish the details of
+the sanctionable conduct where the penalty issued is above £7,500\.
 
 
-We may use our discretion to reduce a penalty because of
-special circumstances.
+In special circumstances, we may agree to a special
+reduction.
 
 
-**FA12/SCH38/PARA26 as amended**
+#### FA12/SCH38/PARA26 as amended
 
 
-**FA12/SCH38/PARA27 as amended**
+#### FA12/SCH38/PARA27 as amended
+
+
+---
+
+## CH178220 — Determining attributable potential lost revenue
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178220>*
+
+If we have
+determined that a tax adviser has engaged in sanctionable conduct, then we will
+issue them with a conduct notice. Once we have issued them with a conduct
+notice, we may then assess them for a penalty.
+
+
+The first
+step in determining the amount of the penalty is to determine whether there is
+potential lost revenue “attributable” to the person’s sanctionable conduct. If
+there is no attributable potential lost revenue, then the penalty amount will
+be £7,500 (subject to any special reduction – see [CH178330](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178330).
+
+
+To determine
+if there is attributable potential lost revenue, we must first consider whether
+any of the following have taken place:
+
+
+- The tax adviser’s
+client (or the tax adviser on behalf of the client) has given us a document
+(which is listed in the table in paragraph 1 of [Schedule 24 to the Finance Act 2007](https://www.legislation.gov.uk/ukpga/2007/11/schedule/24)) and that document contains an
+inaccuracy which amounts to, or leads to, an understatement of a liability to
+tax, a false or inflated statement of a loss, or a false or inflated claim to
+repayment of tax.
+- The tax
+adviser’s client has failed to comply with a relevant obligation as defined in
+paragraph 1 of [Schedule 41 to the Finance Act 2008](https://www.legislation.gov.uk/ukpga/2008/9/schedule/41).
+- The tax
+adviser’s client has failed, for more than 12 months, to make or deliver a
+return specified in the table in paragraph 1 of [Schedule 55 to the Finance Act 2009](https://www.legislation.gov.uk/ukpga/2009/10/schedule/55).
+- The tax
+adviser’s client has failed, on or before the due date, to make or deliver a
+return in the third column of the table in paragraph 1 of [Schedule 25 to the Finance Act 2021](https://www.legislation.gov.uk/ukpga/2021/26/schedule/25).
+
+
+These are all
+scenarios in which the taxpayer themselves could be liable to a tax\-geared
+penalty for deliberately doing something – though whether or not the taxpayer
+is liable to a penalty, and of what type or amount, is not relevant for
+determining the tax adviser’s penalty.
+
+
+If one of the
+above scenarios has taken place, then we must determine whether the tax adviser
+is responsible for it, in whole or in part, through their sanctionable conduct.
+This means that the tax adviser did (or failed to do) the act on behalf of
+their client, or advised or assisted the client to do (or to fail to do) the
+act, and in doing so acted with the intention of bringing about a loss of tax
+revenue (see [CH176520](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch176520): what is sanctionable conduct).
+
+
+If we
+determine that the tax adviser is responsible for the act (or omission), then
+there will be attributable potential lost revenue which must be used to
+determine the penalty amount for sanctionable conduct.
+
+
+To determine
+the amount of the potential loss of revenue, we must calculate it using the
+relevant mechanism in the taxpayer penalties legislation – Schedule 24 to the
+Finance Act 2007 for inaccuracies, Schedule 41 to the Finance Act 2008 for
+failures to notify, or Schedule 55 to the Finance Act 2009 or Schedule 25 to
+the Finance Act 2021 for failures to make returns. Refer to other guidance
+([CH60000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch60000), [CH70000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch70000), [CH80000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch80000)) for assistance with this.
+
+
+**FA07/SCH24/PARA
+1, 5\-8**
+
+
+**FA08/SCH41/PARA
+1, 7\-11**
+
+
+**FA09/SCH55/PARA
+1, 24**
+
+
+**FA21/SCH25/PARA
+1, 11**
+
+
+**FA12/SCH38/PARA
+26C**
+
+
+---
+
+## CH178230 — Maximum and minimum penalties
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178230>*
+
+Penalties are calculated based on the potential lost
+revenue (PLR) attributable to the tax adviser’s sanctionable conduct.
+
+
+The minimum penalty for sanctionable conduct is £7,500\.
+Where the PLR cannot be determined, or there is no attributable PLR, the
+minimum penalty of £7,500 should be used.
+
+
+The maximum penalty is
+
+
+- 70% of the PLR up to £1m for the first penalty
+- 85% of the PLR up to £5m for the second to fifth penalty
+in a 20 year period (where no more than four years have elapsed between
+penalties)
+- 100% of the PLR
+with no maximum amount for the sixth or subsequent penalty in a 20 year period
+(where no more than four years have elapsed between penalties)
+
+
+We must also have regard to any disclosure by the tax
+adviser when assessing the penalty amount. A penalty is reduced based on the
+quality of the disclosure. The minimum penalty percentages are:
+
+
+- 35% of the
+PLR for prompted disclosure (see [CH178270](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178270))
+- 20% of the
+PLR for unprompted disclosure (see [CH178270](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178270))
+
+
+Unless there is a special reduction, see [CH178330](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178330), the
+minimum penalty for sanctionable conduct remains £7,500 even where the tax
+adviser makes a disclosure.
+
+
+### **FA12/SCH38/PARA26
+(3\) \- (7\) as amended**
+
+
+---
+
+## CH178240 — Previous penalties
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178240>*
+
+When calculating
+the penalty amount, we must consider whether the adviser we are penalising has
+previously been charged with any sanctionable conduct penalties. 
+
+
+If an adviser has
+been issued with a sanctionable conduct penalty within the last twenty years,
+and no more than four years have elapsed between penalties, then the adviser
+may be liable to a higher penalty:
+
+
+| **Number of penalties** | **Percentage of PLR** | **Maximum penalty amount** |
+| --- | --- | --- |
+| 1 | up to 70% | £1 million |
+| 2 to 5 | up to 85% | £5 million |
+| 6 or more | up to 100% | No maximum amount |
+
+
+If the adviser has
+been issued with multiple penalties within the last twenty years, but the most
+recent of those penalties was issued more than four years ago, then the penalty
+count ‘resets’ and previous penalties are disregarded. All previous penalties
+are disregarded where more than twenty years have elapsed since they were
+issued.
+
+
+**Examples**
+
+
+1\.    A tax adviser received a penalty for
+sanctionable conduct on 2 December 2027\. The adviser engaged in sanctionable
+conduct again on 23 October 2032 and is liable to a penalty. Since the first
+penalty was issued more than four years ago, it is disregarded for the purposes
+of calculating the second penalty amount. This means the second penalty amount
+is up to 70% of the attributable PLR and capped at £1 million.
+
+
+2\.    A tax adviser received a penalty for
+sanctionable conduct on 30 September 2027\. The adviser engaged in sanctionable
+conduct again on 15 October 2028 and is liable to a penalty. Since the first
+penalty was issued less than four years ago, it is taken into account when
+calculating the second penalty amount. This means the second penalty amount is
+up to 85% of the attributable PLR and the cap increases to £5 million.
+
+
+---
+
+## CH178250 — Amount of penalty – before calculating a penalty
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178250>*
+
+If we have
+determined that a tax adviser has engaged in sanctionable conduct, then we will
+issue them with a conduct notice. Once we have issued them with a conduct
+notice, we may then assess them for a penalty.
+
+
+To work out the penalty
+amount we need to have regard to the following:
+
+
+- Whether there is potential lost revenue
+(PLR) “attributable” to the tax adviser’s sanctionable conduct ([CH178220](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178220)).
+- The minimum and maximum penalty amounts
+as set out in the legislation ([CH178230](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178230)).
+- Whether the tax adviser disclosed their
+sanctionable conduct to us ([CH178260](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178260)).
+- If so, the type of disclosure (prompted
+or unprompted) and the quality of that disclosure (telling, helping, giving)
+(CH178280\).
+- Whether the adviser has previously been
+issued with any sanctionable conduct penalties.  
+  
+In special
+circumstances, we may agree to a special reduction, see [CH178330](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178330).   
+   
+  
+**FA12/SCH38/PARA26 as
+amended**   
+  
+**FA12/SCH38/PARA27 as
+amended**
+
+
+---
+
+## CH178260 — Disclosure overview
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178260>*
+
+Once we
+have determined the potential lost revenue (PLR) attributable to the tax
+adviser’s sanctionable conduct, we may need to adjust the penalty amount to
+reflect any disclosure made by the tax adviser. 
+
+
+If the tax
+adviser has made a disclosure, the final penalty amount should be adjusted to
+reflect:
+
+
+- whether the disclosure was unprompted or
+prompted, see [CH178270](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178270), and
+- the quality of the disclosure, [CH178280](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178280).
+
+
+The
+quality of the disclosure is determined by the tax adviser:
+
+
+- telling us about the sanctionable conduct
+(telling), see ( [CH184300](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch184300),)
+- giving us reasonable help in quantifying the
+amount of tax loss because of the sanctionable conduct (helping), see ( [CH184400](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch184400),) and
+- allowing us access to records for the purpose
+of checking how much tax loss is attributable to the sanctionable conduct
+(giving access), see ( [CH184420](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch184420).)
+
+
+Unless
+there is a special reduction (see [CH178330](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178330)) the minimum penalty for
+sanctionable conduct is £7,500, even if the tax adviser makes a disclosure.
+
+
+**FA12/SCH38/PARA26
+(3\) \- (7\) as amended**
+
+
+---
+
+## CH178270 — Unprompted or prompted
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178270>*
+
+A disclosure is
+unprompted if, when the person made it, they had no reason to believe that we
+had discovered or were about to discover the sanctionable conduct.
+
+
+Otherwise, it
+is a prompted disclosure.
+
+
+Whether a
+disclosure is unprompted or prompted is an objective test. The particular facts
+and circumstances which led to the disclosure are the basis of the test, not
+the belief that it was either unprompted or prompted.
+
+
+A disclosure
+may be prompted if a person makes the disclosure after:
+
+
+- they become aware that we have obtained, or were about to
+obtain, information about their sanctionable conduct, or
+- we have contacted them as part of an enquiry into a
+particular client, tax or activity to which the sanctionable conduct relates,
+or
+- we have issued them (or made them aware that we are intended
+to issue them) with a file access notice in response to which the person would
+have been required to provide information which would have disclosed their
+sanctionable conduct.
+
+
+It will be
+exceptional for a disclosure to be unprompted if an investigation into the tax
+adviser’s conduct is in progress. The disclosure will be unprompted only if it
+is about something the investigating officer has not discovered or is not about
+to discover.
+
+
+When we get to
+the point of charging the penalty for sanctionable conduct, we will consider
+the tax adviser’s behaviour/co\-operation with our investigation and any
+subsequent sanctionable conduct, in determining whether any disclosure is
+unprompted or prompted. 
+
+
+If there is a
+prompted disclosure, the minimum penalty percentage is reduced to 35% of the
+potential lost revenue (PLR). If there is an unprompted disclosure, the minimum
+penalty percentage is reduced to 20% of the PLR. If there is no disclosure,
+there is no reduction.
+
+
+**FA12/SCH38/PARA26
+(3\) \- (7\) as amended**
+
+
+---
+
+## CH178280 — Quality of disclosure
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178280>*
+
+As well as
+whether any disclosure was prompted or unprompted, we must consider the quality
+of the person’s disclosure when determining the final penalty amount. 
+
+
+To determine
+the quality of disclosure, we need to consider the three elements of disclosure,
+which means the extent to which the person:
+
+
+- told us about it, see [CH178300](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178300)
+- gave us reasonable help, see [CH178310](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178310) and
+- allowed us access to records, see [CH178320](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178320)
+
+
+The more a
+person tells, helps or gives access to us, the higher the quality of their
+disclosure.
+
+
+As a guide we
+weight the elements of disclosure as follows.
+
+
+| **Element of disclosure** | **Percentage** |
+| --- | --- |
+| Telling | 30% |
+| Helping | 40% |
+| Giving access | 30% |
+| Total | 100% |
+
+
+While we have
+regard to the disclosure when we assess the amount of the penalty, the minimum
+penalty percentages for sanctionable conduct are:
+
+
+- 35% of the PLR for prompted disclosure
+- 20% of the PLR for unprompted disclosure
+
+
+Penalties for
+sanctionable conduct cannot be reduced below these levels, regardless of the
+quality of the disclosure.
+
+
+**FA12/SCH38/PARA26
+(3\) \- (7\) as amended**
+
+
+---
+
+## CH178290 — Determining the quality of the disclosure
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178290>*
+
+To determine
+the quality of disclosure we need to consider the three elements of disclosure
+(telling, helping and giving access.  Do
+this by reference to:
+
+
+- timing
+- nature,
+and
+- extent.
+
+
+As part of this
+we must consider the person’s compliance with any file access notice that we
+issued in connection with the sanctionable conduct.
+
+
+The guidance at
+[CH178300](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178300) for telling, [CH178310](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178310aspx) for helping and [CH178320](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178320) for giving access,
+explains the circumstances that we should take into account when considering
+the quality of a disclosure.
+
+
+When we have
+considered all relevant factors, the amount of the penalty will have regard to
+the three elements of disclosure (telling, helping and giving access). Consider
+any representations made by the person. They may be able to offer evidence that
+leads you to a different view of the disclosure.
+
+
+A person’s
+quality of disclosure will not be disadvantaged if they do not disclose
+documents that they reasonably consider to be privileged, see [CH177210](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177210) or are
+covered by any of the other exclusions.
+
+
+We should also
+bear in mind that tax advisers typically owe contractual and professional duties
+of confidentiality to their clients. Where the adviser is not a legal
+professional, this will not amount to legal professional privilege and so will
+not prevent an adviser from providing documents in compliance with a file
+access notice. However, it may prevent the adviser from voluntarily providing
+documents beyond the scope of those we specifically request.
+
+
+There are
+overlaps between the three elements of disclosure, so we may consider a single
+course of action under more than one heading. Equally, we may consider a
+failure to do something or a misleading action under more than one heading.
+
+
+### **FA12/SCH38/PARA26
+(3\) \- (7\)**
+
+
+---
+
+## CH178300 — Telling
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178300>*
+
+Telling includes
+
+
+- admitting the
+conduct
+- disclosing the
+extent of the conduct
+- explaining how
+and why the conduct occurred, and
+- disclosing the
+existence of any relevant documents.
+
+
+There are no restrictions on how a tax adviser can make a
+disclosure – it could be by phone, in person, by letter or by email. 
+
+
+What is important is the timing, nature and extent of the
+telling. 
+
+
+As to **timing**, this reflects how long it takes for
+the tax adviser to complete the telling, especially once they have been
+prompted.
+
+
+The **nature** of the telling covers
+why the sanctionable conduct occurred. The tax adviser needs to tell us about
+all the circumstances and everything they know about what led to their
+sanctionable conduct and not just react passively to our questions. Answering
+all our questions fully may, however, be sufficient to tell us everything we
+need to know about their sanctionable conduct, or all the person is capable of,
+after taking into account their abilities and circumstances. One particular
+circumstance to bear in mind in this regard is whether the adviser is bound by
+a contractual duty of confidentiality to their client. Such a duty may prevent
+them from going beyond simply responding to the questions and requests we put
+to them.
+
+
+The **extent** of the telling is
+whether everything is disclosed to us. If the tax adviser makes only a partial disclosure,
+then this will be reflected in the quality of disclosure and amount of penalty
+assessed. However, again bear in mind that a tax adviser may be bound by
+contractual and professional duties of confidentiality to their client which
+may prevent them from making disclosures of information we have not explicitly
+requested.
+
+
+There is an overlap here with ‘helping’, see [CH178310](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178310). A
+disclosure that makes no reference to the scale of the sanctionable conduct is
+not a complete disclosure.
+
+
+### **FA12/SCH38/PARA26
+(3\) \- (7\)**
+
+
+---
+
+## CH178310 — Helping
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178310>*
+
+Helping
+includes
+
+
+- giving reasonable help in providing details of the
+sanctionable conduct
+- positive assistance as opposed to passive acceptance or
+obstruction
+- actively engaging in the work to accurately quantify the
+tax liability of the affected clients, and
+- volunteering any information relevant to the disclosure.
+
+
+In considering
+whether a person has given reasonable help, we should always take account of
+the abilities and circumstances of the person, including for example any
+obligation of confidentiality they owe to their client.
+
+
+What is
+important is the timing, nature and extent of the help the person gives in
+providing details of the sanctionable conduct.
+
+
+The **timing** is relevant to the
+period from the time of the sanctionable conduct to the date of disclosure. As
+well as there not being any avoidable delays there should be an active
+approach, providing information and assistance as early as possible. 
+
+
+The **nature** covers whether the
+help is useful and saves us time and effort in establishing the sanctionable
+conduct and any attributable lost revenue. For the tax adviser to just appear
+to be helpful but not actually produce anything of use is not what is required.
+
+
+The **extent** of the help covers
+the whole period of the investigation from start to finish and all aspects of that
+investigation. If help is only received for part of the period or for certain
+aspects, a full reduction would not be given.
+
+
+**FA12/SCH38/PARA26
+(3\) \- (7\)**
+
+
+---
+
+## CH178320 — Giving access
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178320>*
+
+Giving access includes a tax adviser responding
+reasonably promptly and accurately (taking into account their abilities and
+circumstances) to requests for information and documents and allowing access to
+information and documents.
+
+
+Access is needed for us to make sure that the information
+disclosed is complete. What is important is the timing, nature and extent of
+the access given. 
+
+
+The **timing** is relevant because a person should
+give access when requested and there should rarely be a need for us to issue
+reminders for our file access notices, see [CH177010](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177010). If it is not possible to
+produce the records or relevant documents at the time of the request the person
+should give reasons and make reasonable efforts to provide them as soon as
+reasonably possible.
+
+
+The **nature** of the access is
+important. The person should offer access to their records and documents in a
+convenient and agreed manner. If we require copies these should be provided
+where possible. If we encounter difficulties in getting access, then this
+should be reflected in the quality of the disclosure.
+
+
+The **extent** of the access given
+covers what records and documents are made available. Generally, the tax
+adviser would know what records and documents exist or can be obtained and it
+is for them to tell us. If records or documents that the person has within his
+or her power or possession are not offered, then this would be reflected in the
+quality of disclosure.
+
+
+### **FA12/SCH38/PARA26
+(3\) \- (7\)**
+
+
+---
+
+## CH178330 — Special reduction
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178330>*
+
+When we are
+assessing a penalty for sanctionable conduct, we may use our discretion to
+reduce the penalty because of special circumstances. This is called a special
+reduction.
+
+
+Special
+circumstances do not include:
+
+
+- The tax advisers’ ability to pay any penalty, or
+- The fact that a loss of tax revenue from a client is
+balanced by an overpayment by another person (whether a client or not).
+
+
+We may also use
+our discretion to stay the penalty or agree a compromise in relation to
+proceedings for the penalty. 
+
+
+All the
+guidance on special reduction for all relevant taxes is in a separate chapter,
+see [CH170000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch170000).
+
+
+**FA12/SCH38/PARA27
+as amended**
+
+
+---
+
+## CH178340 — How to calculate the penalty amount
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178340>*
+
+Once we have determined the
+potential lost revenue (PLR) attributable to the tax adviser’s sanctionable
+conduct, and any reduction for disclosure, we are ready to determine the final
+penalty amount. The process for doing so is summarised in the following steps:
+
+
+**Step 1** 
+
+
+Determine whether there is PLR
+attributable to the sanctionable conduct. (If not, the penalty amount will be
+£7,500\.) See [CH178220](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178220).
+
+
+**Step 2** 
+
+
+Calculate the amount of the PLR
+by reference to the relevant mechanism in the taxpayer penalties legislation.
+See [CH178220](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178220).
+
+
+**Step 3** 
+
+
+If there has been a disclosure, calculate
+the percentage reduction for the quality of the disclosure (a). See [CH178260](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178260)\+. 
+
+
+**Step 4** 
+
+
+If there has been a disclosure, consider
+whether the disclosure was prompted or unprompted. See [CH178270](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178270).
+
+
+**Step 5** 
+
+
+Determine whether there have been
+other sanctionable conduct penalties issued to the tax adviser within the
+previous 20 years and, if so, when and how many. See [CH178240](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178240).
+
+
+**Step 6**
+
+
+Identify the  
+
+
+- maximum penalty (b), and
+- minimum penalty (c)
+
+
+Where the tax adviser has not
+previously been issued with a sanctionable conduct penalty in the last 20
+years, or more than four years have elapsed since their last penalty, the
+minimum penalty percentages for sanctionable conduct are: 
+
+
+- 70% of the PLR for no disclosure
+- 35% of the PLR for prompted disclosure
+- 20% of the PLR for unprompted disclosure
+
+
+Where the tax adviser has
+previously been issued with between two and five penalties within the last 20
+years, and no more than four years have elapsed between them, the minimum
+penalty percentages are:
+
+
+- 85% of the PLR for no disclosure
+- 35% of the PLR for prompted disclosure
+- 20% of the PLR for unprompted disclosure
+
+
+Where the tax adviser has
+previously been issued with more than six penalties within the last 20 years,
+and no more than four years have elapsed between them, the minimum penalty
+percentages are:
+
+
+- 100% of the PLR for no disclosure
+- 35% of the PLR for prompted disclosure
+- 20% of the PLR for unprompted disclosure
+
+
+**Step 7**
+
+
+Calculate the maximum disclosure
+reduction (d) 
+
+
+Maximum disclosure reduction (d)
+\= (b) \- (c)  
+
+
+**Step 8**
+
+
+Calculate the actual reduction
+percentage for disclosure (e) by multiplying the maximum disclosure reduction
+(d) by the percentage for the quality of the disclosure (a). 
+
+
+Actual reduction percentage for
+disclosure (e) \= (d) x (a) 
+
+
+**Step 9**
+
+
+Calculate the penalty percentage
+(f) by deducting the actual reduction percentage for disclosure (e) from the
+penalty maximum (b). 
+
+
+Penalty percentage to be charged
+(f) \= (b) \- (e) 
+
+
+**Step 10**
+
+
+To arrive at the amount of the
+penalty to be charged (g) apply the penalty percentage (f) to the potential
+lost revenue (PLR) calculated at Step 2\.
+
+
+Penalty chargeable (g) \= PLR x
+(f) 
+
+
+**Step 11** 
+
+
+If the penalty chargeable (g) is
+above the relevant maximum penalty amount, reduce the penalty to that
+amount. 
+
+
+The relevant maximum penalty
+amount is as follows:
+
+
+- **£1
+million**, where the tax adviser has not
+previously been issued with a sanctionable conduct penalty in the last 20
+years, or more than four years have elapsed since their last penalty.
+- **£5
+million**, where the tax adviser has
+previously been issued with between two and five penalties within the last 20
+years, and no more than four years have elapsed between them.
+- **No
+maximum amount**, where
+the tax adviser has previously been issued with more than six penalties within
+the last 20 years, and no more than four years have elapsed between them.
+
+
+If the penalty chargeable (g) is
+below the minimum penalty amount (£7,500\), increase the penalty to the minimum
+penalty amount.
+
+
+**Step 12**
+
+
+Consider whether special
+reduction is appropriate.
+
+
+Unless there is a special
+reduction, see [CH178330](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178330), the minimum penalty for sanctionable conduct is
+£7,500, even if the tax adviser makes a disclosure. 
+
+
+**FA12/SCH38 as amended**
+
+
+---
+
+## CH178350 — Example
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178350>*
+
+Christian, a tax adviser, knowingly provided an
+inaccurate return to HMRC on behalf of his client. The return understated the
+client’s tax liability by £100,000\. Christian has engaged in sanctionable
+conduct. On investigation by HMRC, Christian made a prompted disclosure
+detailing his role in understating his client’s tax liability. Christian has
+not previously been issued with a sanctionable conduct penalty. To calculate
+Christian’s penalty amount:
+
+
+**Step 1**
+
+
+There is PLR attributable to the sanctionable conduct.
+
+
+**Step 2**
+
+
+Since the sanctionable conduct relates to an inaccuracy
+in a document provided to HMRC, the relevant mechanism for calculating PLR is
+found in Schedule 24 to the Finance Act 2007\. Using that mechanism, the
+attributable PLR is calculated as £100,000\.
+
+
+**Step 3**
+
+
+Christian made a disclosure. The percentage reduction for
+the quality of the disclosure **(a)** is calculated as 40%. This is
+calculated by reference to the extent of Christian’s ‘telling’, ‘helping’, and
+‘giving access’ (see [CH178280](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178280)).
+
+
+**Step 4**
+
+
+Christian’s disclosure was prompted.
+
+
+**Step 5**
+
+
+Christian has not previously been issued with any
+sanctionable conduct penalties.
+
+
+**Step 6**
+
+
+The maximum penalty **(b)** is therefore 70% (since
+this is Christian’s first penalty). The minimum penalty **(c)** is 35%
+(since Christian made a prompted disclosure).
+
+
+**Step 7**
+
+
+The maximum disclosure reduction **(d)** is 35%. This
+is calculated by subtracting **(c)** from **(b)**: 70\-35 \= 35\. 
+
+
+**Step 8**
+
+
+The actual reduction percentage for disclosure **(e)**
+is 14%. This is calculated by multiplying **(d)** by **(a)**: 0\.35\*0\.4 \=
+0\.14\.
+
+
+**Step 9**
+
+
+The penalty percentage to be charged **(f)** is 56%.
+This is calculated by subtracting **(e)** from **(b)**: 70\-14 \= 56\. 
+
+
+**Step 10**
+
+
+The penalty chargeable **(g)** is £56,000\. This is
+calculated by multiplying the PLR by **(f)**: 100,000\*0\.56 \= 56,000\.
+
+
+**Step 11**
+
+
+The penalty chargeable is below the relevant maximum
+penalty cap of £1 million and above the minimum penalty amount of £7,500\. 
+
+
+**Step 12**
+
+
+A special
+reduction isn’t appropriate in this case.  Christian’s penalty is therefore set and
+issued at £56,000\.
 
 
 ---
@@ -26385,6 +28768,201 @@ assessment.
 
 ---
 
+## CH179020 — What the assessment must include
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179020>*
+
+We may issue a penalty assessment when a
+person has become liable to
+
+
+- a penalty
+for failing to comply with a file access notice, see [CH177270](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177270),
+- a penalty
+for providing inaccurate information in response to a file access notice, see
+[CH177350](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177350)
+- a penalty
+for sanctionable conduct, see [CH178210](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch178210)\+.
+
+
+There may be situations where a person is
+charged a penalty for failing to comply with a file access notice, providing
+inaccurate information, and/or a penalty for sanctionable conduct.
+
+
+We can only issue an assessment for a penalty
+for sanctionable conduct where we have already issued a conduct notice, see CH179020\.
+
+
+A penalty assessment notice must include
+
+
+- the date
+of the assessment
+- what led
+to the penalty (for example, failure to comply with the file access notice
+dated DD/MM/YYYY)
+- the
+legislation under which the penalty is due
+- the amount
+of the penalty
+- when and
+how they must pay it, and
+- if
+appropriate, the period the penalty relates to.
+
+
+A notice of assessment of daily penalties
+must also show
+
+
+- the period
+to which the assessment relates (date to date inclusive)
+- the number
+of days included
+- the daily
+amount of the penalty, and
+- the total
+amount of the penalties.
+
+
+The notice must also explain the recipient’s
+right to review and appeal, and the process for this.
+
+
+The notice must explain that the penalty must
+be paid within 30 days of the later of
+
+
+- the date
+on which the notice was issued if an appeal is not made, and
+- the date
+on which any appeal is determined or withdrawn.
+
+
+See [CH179030](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179030) for guidance on the time limits
+for assessing a penalty.
+
+
+### **FA12/SCH38/PARA29
+as amended**
+
+
+---
+
+## CH179030 — Time limits for assessing penalties
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179030>*
+
+The time limit for issuing an assessment for a penalty
+depends on which penalty is being assessed.
+
+
+## **Initial and daily penalties for failure to
+comply with a file access notice**
+
+
+We can assess an initial penalty for failing to comply
+with a file access notice within 12 months from when the person first becomes
+liable to the penalty. The person first becomes liable to the initial penalty
+on the day after the date on which the documents should have been provided, see
+[CH177280](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177280).
+
+
+Daily penalties must also be assessed within 12 months
+from when the person becomes liable to the penalty. The person becomes liable
+to daily penalties the day after the day on which the person was charged the
+initial penalty.
+
+
+**Penalty for providing inaccurate information in response
+to a file access notice**
+
+
+We can assess a penalty for providing inaccurate
+information in purported compliance with a file access notice within 12 months
+from when the person first becomes liable to the penalty. The person first becomes
+liable to the penalty on the day on which the inaccurate documents were
+provided.
+
+
+## **Penalty for sanctionable conduct**
+
+
+We can assess a penalty for sanctionable conduct within
+12 months from the later of date one and date two.
+
+
+**Date one**
+
+
+Date one is the first day on which we
+may assess the penalty. This is the day on which a conduct notice was issued to
+the tax adviser.
+
+
+**Date two**
+
+
+Date two depends on whether a loss of
+tax revenue has been brought about by the sanctionable conduct.
+
+
+If a loss of tax revenue has been
+brought about by the sanctionable conduct, date two is
+
+
+- the day after the end of the ‘appeal period’ for the
+assessment, or determination of the tax revenue lost, or, if more than one
+client is involved, the end of the last such period, or
+- if there is no such assessment or determination, the day
+on which the amount of tax revenue lost is ascertained.
+
+
+If no loss of tax revenue was brought
+about by the sanctionable conduct, then date two is the day on which we decide
+that no loss of tax revenue results.
+
+
+The ‘appeal period’ is the period in which
+
+
+- an appeal could
+be made, or
+- an appeal has
+been made, and the end date of that appeal period is when the appeal is
+withdrawn or determined.
+
+
+### 
+
+
+### **FA12/SCH38/PARA30
+as amended**
+
+
+---
+
+## CH179040 — Enforcement of penalties
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179040>*
+
+All penalties must be paid
+
+
+- within 30 days
+from the date when we issue the notice of assessment, or
+- if the person
+appeals against the penalty, within 30 days beginning with the date when the
+appeal is withdrawn or determined.
+
+
+These penalties may be enforced as if they are income tax
+charged in an assessment and due and payable.
+
+
+### **FA12/SCH38/PARA32**
+
+
+---
+
 ## CH179210 — Overview
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179210>*
 
@@ -26393,8 +28971,7 @@ charging. They are:
 
 
 - a penalty for failing to comply with a file access notice,
-- a penalty for providing a document containing an inaccuracy
-in response to a file access notice, and
+- a penalty for providing inaccurate information in response to a file access notice, and
 - a penalty for sanctionable conduct.
 
 
@@ -26427,7 +29004,246 @@ guidance on the review and appeals process, see ARTG2100\+.
 **FA12/SCH38/PARA31 as amended**
 
 
-**FA26/SCH22/PARA23**
+---
+
+## CH179220 — Failing to comply with a file access notice
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179220>*
+
+A person can appeal against the **imposition** and the
+**amount** of penalty that we have charged for failing to comply with a file
+access notice.
+
+
+The notice of appeal must
+
+
+- be given to us
+in writing
+- be given within
+30 days from the penalty assessment, and
+- state the
+grounds of the appeal.
+
+
+If the person notifies their appeal against the **imposition**
+of a penalty for failing to comply with a file access notice to the tribunal,
+the tribunal may confirm or cancel the penalty.
+
+
+If the person notifies their appeal against the **amount**
+of penalty for failing to comply with a file access notice to the tribunal, the
+tribunal may
+
+
+- confirm the
+penalty amount, or
+- substitute a
+different penalty amount that HMRC had the power to make.
+
+
+In practice, the only appeal against the **amount** of
+a penalty will be an appeal against the amount of the initial daily penalty for
+failure to comply with a file access notice (up to £60 per day). This is
+because this is the only penalty amount in relation to failure to comply with
+file access notices over which HMRC has discretion. The initial failure penalty
+is fixed at £300, and there is no right of appeal against a tribunal\-set
+increased daily penalty amount.
+
+
+The person does not have to pay the penalty before we can
+consider an appeal against the assessment of the penalty.
+
+
+For procedural purposes, an appeal against the penalty is
+treated in the same way as an appeal against an assessment to income tax. This
+means that the person appeals to HMRC and has the opportunity to have a review
+or to notify the appeal to the tribunal, either instead of or after the review.
+
+
+The Appeals, Reviews and Tribunals Guidance, contains
+full guidance on the review and appeals process, see [*ARTG2100*](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2100)\+.
+
+
+See [*CH185280*](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch185280) for guidance on appeals against a penalty for sanctionable conduct.
+
+
+### **FA12/SCH38/PARA31
+as amended**
+
+
+---
+
+## CH179230 — Inaccuracies in response to a file access notice
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179230>*
+
+A person can
+appeal against the **imposition** and the **amount** of penalty that we
+have charged for providing a document which contains an inaccuracy in purported
+compliance with a file access notice.
+
+
+The notice of
+appeal must
+
+
+- be given to us in writing
+- be given within 30 days from the penalty assessment, and
+- state the grounds of the appeal.
+
+
+If the person
+notifies their appeal against the **imposition** of a penalty for providing
+inaccurate documents to the tribunal, the tribunal may confirm or cancel the
+penalty.
+
+
+If the person
+notifies their appeal against the **amount** of penalty for providing
+inaccurate documents in response to a file access notice to the tribunal, the
+tribunal may
+
+
+- confirm the penalty amount, or
+- substitute a different penalty amount that HMRC had the
+power to make.
+
+
+The person does not have to pay the
+penalty before we can consider an appeal against the assessment of the penalty.
+
+
+For procedural
+purposes, an appeal against the penalty is treated in the same way as an appeal
+against an income tax assessment. This means that the person appeals to HMRC
+and has the opportunity to have a review or to notify the appeal to the
+tribunal, either instead of or after the review.
+
+
+The Appeals,
+Reviews and Tribunals Guidance, contains full guidance on the review and
+appeals process, see [ARTG2100](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2100)\+.
+
+
+**FA12/SCH38/PARA31
+as amended**
+
+
+---
+
+## CH179240 — Sanctionable conduct
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179240>*
+
+A person can appeal against both the **imposition**
+and the **amount** of penalty that we have charged for sanctionable conduct.
+
+
+The notice of appeal must
+
+
+- be given to us
+in writing
+- be given within
+30 days from the penalty assessment, and
+- state the
+grounds of the appeal.
+
+
+If the person requests an HMRC review, then we should
+review **both** the **imposition** and the **amount** of the penalty.
+
+
+If the person notifies their appeal against the **imposition**
+of a penalty for sanctionable conduct, the tribunal may confirm or cancel the
+penalty.
+
+
+If the person notifies their appeal against the **amount**
+of penalty for sanctionable conduct to the tribunal, the tribunal may
+
+
+- confirm the
+penalty amount, or
+- substitute a
+different penalty amount that HMRC had the power to make.
+
+
+If the tribunal substitutes a different penalty amount,
+the tribunal may rely on the special reduction provisions, see CH178330\.
+
+
+- to the same
+extent as we did when we first decided the penalty, which may mean applying the
+same reduction as we did to a different starting point, or
+- to a different
+extent, but only if the tribunal thinks that our decision was ‘flawed’.
+
+
+Being ‘flawed’ is considered in light of the principles
+applicable in proceedings for judicial review.
+
+
+The person does not have to pay the penalty before we can
+consider an appeal against the assessment of the penalty.
+
+
+For procedural purposes, an appeal against the penalty is
+treated in the same way as an appeal against an assessment to income tax. This
+means that the person appeals to HMRC and has the opportunity to have a review
+or to notify the appeal to the tribunal, either instead of or after the review.
+
+
+The Appeals, Reviews and Tribunals Guidance, ARTG2100\+
+contains full guidance on the review and appeals process, see [*ARTG2100*](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2100)\+.
+
+
+See [*CH185260*](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch185260) for guidance on appeals against a penalty for failing to comply with a
+file access notice.
+
+
+### **FA12/SCH38/PARA31**
+
+
+---
+
+## CH179340 — Interaction with other penalties
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179340>*
+
+A person is not liable to a penalty for sanctionable conduct in respect
+of anything in respect of which they have already been found personally liable
+to a penalty for
+
+
+- errors
+(FA07/Sch24\), see [CH80000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch80000)\+,
+- failing to
+notify etc (FA08/Sch41\), see [CH70000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch70000)\+, or
+- failing to file
+on time (FA09/Sch55, FA21/Sch24 and Sch 25\), see [CH60000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch60000)\+, [CH192000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch192000)\+.
+
+
+This might be relevant where, for
+example, the person is personally liable as a VAT representative.
+
+
+### **FA12/SCH38/PARA34**
+
+
+---
+
+## CH179380 — Double jeopardy
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179380>*
+
+A person is not liable to a penalty for sanctionable
+conduct where that person has been convicted of a criminal offence in respect
+of the same matter.
+
+
+However, concealing, destroying or otherwise disposing of
+required documents relating to file access notices, see [CH177340](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch177340), which results
+in prosecution, will not preclude a sanctionable conduct penalty.
+
+
+### **FA12/SCH38/PARA33**
 
 
 ---
@@ -26436,16 +29252,22 @@ guidance on the review and appeals process, see ARTG2100\+.
 *Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179610>*
 
 We must publish the details of a tax adviser who has
-incurred a penalty for sanctionable conduct of more than £7,500\. Our duty to
+been issued with a penalty for sanctionable conduct of more than £7,500\. Our duty to
 publish these details is similar to our ability to publish details of people
 who are deliberate tax defaulters (FA09/S94\).
+
+
+The
+amount of the penalty for sanctionable conduct that triggers publication is
+considerably less than the amount of the penalty that triggers publication for
+deliberate tax defaulters because tax advisers are in a position of trust.
 
 
 We cannot publish any details where the penalty is set at
 the minimum of £7,500\.
 
 
-As with FA09/S94 there is no right of appeal against the
+ There is no right of appeal against the
 publication of details of the tax adviser.
 
 
@@ -26455,6 +29277,233 @@ organisation.
 
 
 **FA12/SCH38/PARA28 as amended**
+
+
+****FA26/SCH22/PARA20****
+
+
+---
+
+## CH179620 — In what circumstances we must publish details
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179620>*
+
+We must publish the details of a tax adviser
+who has been issued with a penalty for sanctionable conduct of more than
+£7,500\. 
+
+
+We cannot publish any details where the
+penalty has been set at the minimum of £7,500\.
+
+
+There is no right of appeal against our
+decision to publish the details of the tax adviser.
+
+
+See CH179660 for details of what information
+we may publish.
+
+
+### **FA12/SCH38/PARA28
+as amended**
+
+
+**FA26/SCH22/PARA20**
+
+
+---
+
+## CH179630 — Before we publish details
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179630>*
+
+We are under a duty to publish information
+about a tax adviser if we issue them with a penalty of more than £7,500\. 
+
+
+There is therefore no requirement for us to
+allow the tax adviser a reasonable opportunity to make representations about
+whether the information should be published, because such representations would
+make no difference – we are under a duty to publish regardless.
+
+
+Nonetheless, we should – as a matter of a
+good practice – always inform the adviser that we will be publishing their
+information before we do so. We should tell the adviser what information we
+will publish about them and when we will publish it.
+
+
+If the tax adviser is an individual who works
+or worked for an organisation (a company etc.), then we also have the power to
+publish information about that organisation. This is a discretionary power (in
+other words, we are not required to publish information about the
+organisation). We should only use the power where we think it is necessary to
+publish information about the organisation in order to make clear the identity
+of the individual tax adviser who has been penalised. The power is not there as
+a means of ‘naming and shaming’ an organisation who has not itself been
+penalised under the sanctionable conduct provisions.
+
+
+Before publishing any information about the
+organisation, we must
+
+
+- inform the organisation that we are considering doing so,
+and
+- allow the organisation reasonable opportunity to make
+representations about whether the name of that organisation should be
+published, see [CH884400](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch884400).
+
+
+If the tax adviser no longer works for the
+organisation, we should make that clear in the information we publish. We
+should also make it clear that the organisation itself has not been found to
+have engaged in sanctionable conduct, only the individual.
+
+
+Note that the above does not apply where the
+organisation itself has been penalised. In those circumstances, the
+organisation is the tax adviser and so we are under a duty to publish
+information about them.
+
+
+There is no right of appeal to the tribunal
+against the decision to publish information about a tax adviser (or an
+organisation for which they work or worked). However, our decision about what
+information to publish, including any information about an organisation for
+which the adviser works or worked, may be challenged through the judicial
+review process (see [ARTG12010](http://home.active.hmrci/artgmanual/ARTG12010.htm)).
+
+
+**FA12/SCH38/PARA28 as
+amended**
+
+
+---
+
+## CH179640 — Time limits for publishing details
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179640>*
+
+There are two
+relevant time limits for publishing the details of sanctionable conduct.
+
+
+The two time limits are:
+
+
+1. the time limit
+within which we can first publish a tax adviser’s details, and
+2. the time limit
+within which we have to remove a tax adviser’s details from publication.
+
+
+**1\. Time limit to start publication**
+
+
+We must not
+publish information about a tax adviser before the day on which the penalty
+becomes ‘final’, or the latest day on which the penalty becomes ‘final’, and
+the information cannot be published for the first time more than 12 months
+after the date on which the penalty became ‘final’.
+
+
+A penalty
+becomes ‘final’ on
+
+
+- the day after the end of the appeal period if the person
+does not make an appeal, or
+- the date when an appeal is finally determined.  
+  
+  
+**2\.Time limit to
+stop publication**
+
+
+The details can
+only continue to be published by HMRC for one year from the date of initial
+publication.
+
+
+**FA12/SCH38/PARA28
+as amended**  
+**FA09/S94 (7\)**  
+**FA09/S94 (8\)**  
+**FA09/S94 (9\)**
+
+
+---
+
+## CH179650 — Where we will publish
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179650>*
+
+The law requires us to publish the details of tax
+advisers who have been charged a penalty of more than £7,500 for sanctionable
+conduct in any manner that we consider appropriate.
+
+
+We will publish details on the [www.Gov.uk](https://www.gov.uk/) website.
+
+
+### **FA12/SCH38/PARA28****FA09/S94 (5\)**
+
+
+---
+
+## CH179660 — What we may publish
+*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch179660>*
+
+While we are under a duty to publish information about a
+tax adviser who receives a penalty of more than £7,500, we do retain some
+discretion about the specific information we publish, we may publish some or
+all of the following details:
+
+
+- The name of the
+person who incurs the penalty for sanctionable conduct, including any trading
+name, previous name or pseudonym.
+- The person’s
+postcode.
+- The nature of
+any business carried on by the person.
+- The amount of
+the penalty.
+- The periods or
+times to which the sanctionable conduct relates.
+- Any other
+information we consider appropriate to publish to make clear the person’s
+identity.
+- Any link
+between the sanctionable conduct and any inaccuracy, failure or action as a
+result of which information is published under the deliberate tax defaulters’
+provisions (FA09/S94\)
+
+
+As a matter of general practice, where publishing a
+person’s postcode we should only look to publish the first part of the postcode
+(e.g. ‘SW1’) rather than the full postcode. And in cases where we are informed,
+or are otherwise aware, that publishing geographical details about a person
+could cause a serious and verifiable risk to that person’s safety, then we
+should refrain from publishing such details.
+
+
+If, when acting as a tax adviser, an individual works or
+worked for an organisation, then we have the power to publish such information
+about that organisation as necessary to clearly identify the individual tax
+adviser. We should only look to publish information about the organisation if
+it is necessary to identify the individual. The power should not be used as a
+means of ‘naming and shaming’ the organisation itself. If the tax adviser no longer works for the
+organisation, we should make that clear in the information we publish. We
+should also make it clear that the organisation itself has not been found to
+have engaged in sanctionable conduct, only the individual.
+
+
+This does not enable us to publish information if the tax
+adviser is charged a penalty for sanctionable conduct of £7,500 (or less, where
+the special reduction provisions are used).
+
+
+### **FA12/SCH38/PARA28
+as amended**
 
 
 ---
@@ -32262,7 +35311,7 @@ There may be exceptional cases where it is necessary for you to add or amend inf
 In some cases, typed copies of the notes of the meeting will be sent to the person or agent. This action is usually taken when the compliance check involves potential income tax or corporation tax liabilities.
 
 
-Were notes are issued, whether taken electronically or handwritten, they should be issued as soon as possible (normally within 5 working days). Depending on the circumstances, the person or agent may be asked for their agreement and signature, and this should be mentioned during the course of the meeting. Any amendments which the person wishes to make should be set out in a separate document.
+Where notes are issued, whether taken electronically or handwritten, they should be issued as soon as possible (normally within 5 working days). Depending on the circumstances, the person or agent may be asked for their agreement and signature, and this should be mentioned during the course of the meeting. Any amendments which the person wishes to make should be set out in a separate document.
 
 
 Notes must not contain non\-common abbreviations or unsolicited, unprofessional or offensive comments. Any comments which you think are relevant beyond what was actually said must be recorded separately within Caseflow.
@@ -43172,596 +46221,6 @@ Where criminal proceedings have been taken the person will be liable
 
 
 ### CEMA79/S118G(3\)
-
-
----
-
-## CH28110 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28110>*
-
-Data\-gathering powers enable us to collect data about third parties from data\-holders to use in our compliance activities.
-
-
-The legislation identifies categories of data\-holder and the type of data we can request from each data\-holder.
-
-
-We request the data by issuing a data\-holder notice to the data\-holder.
-
-
-Data gathering powers are used in one of two ways.
-
-
-- An individual officer can use the data gathering powers when enquiring into people who received payments from a single entity.
-- [Data Acquisition and Exchange](https://hmrc.sharepoint.com/sites/COM140026262/SitePages/Data-Acquisition-%26-Exchange-(DA%26E).aspx) acquire all bulk third party data from UK relevant data\-holders under Schedule 23 powers on behalf on HMRC. For example, rental income paid by Letting Agents to Landlords of let properties.
-
-
-We have powers to copy and retain documents in certain circumstances.
-
-
-You cannot use the data\-gathering powers to ask for information on the tax position of the data\-holder. The powers in Schedule 36 FA 2008 ([CH20000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch20000)\+) are available for that purpose.
-
-
-FA11/SCH23
-
-
----
-
-## CH28120 — Commencement date
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28120>*
-
-The data\-gathering powers come into force on 1 April 2012 and apply to requests for data made on or after that date. See [CH28270](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28270) for guidance on how far back we can request relevant data.
-
-
-The data\-gathering powers apply to the following taxes from 1 April 2012
-
-
-- income tax
-- capital gains tax
-- corporation tax
-- VAT
-- insurance premium tax
-- inheritance tax
-- stamp duty land tax
-- stamp duty reserve tax
-- petroleum revenue tax
-- aggregates levy
-- climate change levy
-- landfill tax, and
-- relevant foreign tax.
-
-
-From 1 April
-2015 Schedule 23 was amended to include diverted profits tax (only for
-accounting periods starting on or before 31 December 2025\).
-
-
-Many of the equivalent powers that applied to requests made before 1 April 2012 were in Part III of TMA, but they only related to income tax and corporation tax.
-
-
-**FA11/SCH23/PARA65 (1\)**
-
-
----
-
-## CH28130 — Previous powers
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28130>*
-
-For an equivalent request for information or data that was issued before 1 April 2012, the provisions under which that information is required continue to have effect in relation to that requirement. Although these provisions have been repealed, existing notices can be enforced and, where appropriate, penalties issued for them after 1 April 2012\.
-
-
-The previous data\-gathering provisions that Schedule 23 to FA 2011 replaces are:
-
-
-- TMA70/S13 \- persons in receipt of taxable income belonging to others
-- TMA70/S14 \- returns of lodgers and inmates
-- TMA70/S15 \- return of employees’ earnings etc
-- TMA70/S15A \- non\-resident’s staff are UK client’s employees for section 15 purposes
-- TMA70/S16 \- fees, commissions etc
-- TMA70/S16A \- agency workers
-- TMA70/S17 \- interest paid or credited by banks, building societies etc without deduction of income tax
-- TMA70/18 \- interest paid without deduction of income tax
-- TMA70/S18A \- other payments and licences etc
-- TMA70/S19 \- information for purposes of charge on profits of UK property businesses or under Schedule A
-- TMA70/S21 \- stock jobbers’ transactions
-- TMA70/S23 \- power to obtain copies of registers of securities
-- TMA70/S24 \- power to obtain information as to income from securities
-- TMA70/S25 \- issuing houses, stockbrokers, auctioneers etc
-- TMA70/S26 \- nominee shareholders
-- TMA70/S27 \- settled property
-- TMA70/S76 \- protection for certain trustees, agents and receivers, and
-- TMA70/S77I \- information from petroleum licence\-holders.
-
-
-**FA11/SCH23/PARA65 (2\)**
-
-
----
-
-## CH28140 — Relationship with other powers
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28140>*
-
-The data\-gathering powers covered in this section differ from the information and inspection powers covered in [CH20000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch20000) because these data\-gathering powers are for the purpose of collecting data for risk assessment and also for specific tax checks.
-
-
-The data\-gathering powers are not to be used for checking the tax position of the data\-holder, because the powers in Schedule 36 FA 2008 ([CH20000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch20000)) are available for that purpose. However, see [CH28150](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28150) for an exception to this rule.
-
-
-## Can I gather information from data\-holders outside the UK?
-
-
-If the data\-holder is outside the UK and schedule 23 is not appropriate, it might be possible to use exchange of information provisions in one of the many international treaties to which the UK is a party.
-
-
-It is possible to make a request under exchange of information provisions where you can identify a group of taxpayers whose individual identities are unknown providing you can demonstrate that the information is likely to be of relevance for UK tax purposes.
-
-
-Please see the guidance on ‘relevance’ in the International Exchange of Information Manual (IEIM) at [IEIM101350](https://www.gov.uk/hmrc-internal-manuals/international-exchange-of-information/ieim101350). See IEIM111030 for details of how to make a request.
-
-
-An exchange of information request can only be made by a competent authority, see [IEIM101400](https://www.gov.uk/hmrc-internal-manuals/international-exchange-of-information/ieim101400).
-
-
-FA11/SCH23/PARA2
-
-
----
-
-## CH28150 — Purpose and scope of power
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28150>*
-
-The data gathering powers are used by HMRC to gather specific pieces of information about a group of people, for use in risk analysis. See [CH28160](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28160) for more information.
-
-
-The data gathering powers cannot be used for checking the tax position of the ‘relevant data\-holder’, except where
-
-
-- data is requested about beneficial ownership of certain securities or payments, see [CH28760](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28760), and
-- it is not known whether the person to whom the notice is sent is also the person who is the beneficial owner.
-
-
-Apart from this, we use powers in Schedule 36 to FA 2008 to check the tax position of the relevant data\-holder.
-
-
-The data gathering powers allow us to issue a ‘data\-holder notice’, see [CH28250](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28250)\+, to a relevant data\-holder, requiring them to provide relevant data.
-
-
-Nothing in the purpose and scope restricts what the data can be used for. If we acquire information in connection with an HMRC function we may use it for any other function, subject to the usual rules.
-
-
-FA11/SCH23/PARA2
-
-
-CRCA05/S17 (1\)
-
-
----
-
-## CH28155 — Communications Data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28155>*
-
-## Background
-
-
-In early 2023, guidance from the Home Office classified
-“subscriber data”, i.e. the mandatory fields when subscribing for an online
-service, as possible communications data (CD) under the Investigatory Powers
-Act 2016 (IPA). Third Party Information Notices and Financial Institution
-Notices under Schedule 36 FA08 were therefore restricted to not requesting this
-data. 
-
-
-It also meant that a recipient of a Sch23 data\-holder notice
-was not compelled to send a return to HMRC if it included data from an online
-service.  
-
-
-To enable HMRC to continue to collect CD, a new clause was
-introduced in F(No 2\)A 2023 to exempt HMRC’s civil tax functions from the
-restriction in the IPA. This means that if HMRC receive a challenge by
-Financial Institutions that the data is CD, as long as we can confirm we are
-undertaking a civil enquiry then third parties have an obligation to provide
-what has been requested under Sch36/Sch23\.   
-
-
-## Can we now request CD?
-
-
-Yes, there is no change to the usual process of requesting
-data via Sch23 or Sch36 notices, and no change to the relevant authorisation
-levels of those notices.  
-
-
-## Further Information
-
-
-If you require further information, please
-approach your Authorised Officer.
-
-
----
-
-## CH28160 — Bulk Information
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28160>*
-
-The data\-gathering powers are used by HMRC to gather specific pieces of information about groups of people, for use in risk analysis. Once we have acquired the information in connection with an HMRC function we may use it for any other function, subject to the usual rules.
-
-
-The large number of people and the need to keep down the cost of administering the tax system mean HMRC cannot check every single tax return in depth. Risk information is therefore essential to HMRC’s compliance checking function. HMRC currently use a range of data from different sources to show where there are risks that the right amount of tax has not been paid.
-
-
-This information is used in a number of ways.
-
-
-- It allows HMRC to target publicity and support where there is a risk tax has been overpaid.
-- It is used to target HMRC’s compliance checks on cases where there is a risk tax has been underpaid, so that overall compliant people see fewer checks.
-- It helps to make sure that HMRC takes the right approach when checking, indicating whether the check should start with a quick phone call or an in\-depth investigation.
-
-
-Bulk information is essential if HMRC is to tell whether one return is more likely than another to be incorrect. The majority of the information for risk assessment comes from tax returns and public sources. However, much of it comes from HMRC’s bulk information powers.
-
-
-HMRC does need to require organisations to provide information about the people they deal with. Many of the bulk information returns are focussed on collecting information about income paid where tax may need to be deducted at source.
-
-
-HMRC uses the data\-gathering powers to obtain bulk information as a deterrent to non\-compliance. The fact that information is shared with HMRC discourages people from concealing sources of income.
-
-
----
-
-## CH28170 — What is a relevant data-holder
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28170>*
-
-A ‘relevant data\-holder’ is a person who holds, or previously held, one or more of the types of ‘relevant data’.
-
-
-See [CH28400](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28400) for details of who are relevant data\-holders, and see [CH28180](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28180) for the definition of ‘relevant data’.
-
-
-FA11/SCH23/PARA8
-
-
----
-
-## CH28180 — What is relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28180>*
-
-The data\-gathering powers allow us to require a relevant data\-holder to provide ‘relevant data’. We request the relevant data using a data\-holder notice, see [CH28250](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28250).
-
-
-Relevant data means data specified in the regulations for each type of data\-holder. The types of data\-holders and the relevant data that may be required from them are covered in [CH28400](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28400).
-
-
-The data that a relevant data\-holder may be required to provide
-
-
-- may be general data, or data relating to particular persons or matters, and
-- may include personal data (such as names and addresses of individuals).
-
-
-**FA11/SCH23/PARA1**
-
-
----
-
-## CH28350 — Power to copy documents
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28350>*
-
-We may take copies of, or make extracts from, any document that is provided in response to a data\-holder notice.
-
-
-FA11/SCH23/PARA6
-
-
----
-
-## CH28360 — Power to retain documents
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28360>*
-
-If we consider it to be reasonable to do so, we may retain documents that have been provided by the data\-holder in response to our data\-holder notice for a reasonable period.
-
-
-If the data\-holder reasonably requires a document that we are retaining, they may request that we give them a copy of that document.
-
-
-The fact that we are retaining a document doesn’t break any lien claimed on that document. A lien is a right to retain someone else’s property until a debt is paid. Producing the document to you does not affect the lien.
-
-
-We are liable to compensate the owner of a document if we lose or damage that document. The compensation is only for expenses reasonably incurred to replace or repair that document.
-
-
-FA11/SCH23/PARA7
-
-
----
-
-## CH28410 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28410>*
-
-There are 20 types of relevant data\-holders that we can require to provide relevant data. 
-
-
-The term relevant data\-holders include a person who was a data\-holder but who ceased to be a data\-holder less than four years from the date of the data\-holder notice.
-
-
-For example, a person who used to be a solicitor but who retired last year would still be a data\-holder as a solicitor.
-
-
-The Data\-Gathering Powers (Relevant Data) Regulations 2012 ([SI 2012/847](https://www.legislation.gov.uk/uksi/2012/847/contents)) specify the relevant data for each class of data\-holder.
-
-
-This chapter outlines who are relevant data\-holders and what is relevant data for each data\-holder.
-
-
-**FA11/SCH23/Part2**
-
-
-**SI 2012/847**
-
-
----
-
-## CH29410 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29410>*
-
-Any person to whom a data\-holder notice is addressed may appeal against the notice, or any requirement in the notice, subject to two exceptions.
-
-
-The first exception is that the data\-holder cannot appeal against the requirement to provide relevant data that forms part of their statutory records.
-
-
-The second exception is that the data\-holder cannot appeal where the tribunal has approved the notice.
-
-
-On an appeal referred to the tribunal, the tribunal has wide powers to vary a requirement in a notice and to set a new deadline to comply. A decision by the tribunal is final.
-
-
-FA11/SCH23/PARA28
-
-
-FA11/SCH23/PARA29
-
-
----
-
-## CH29420 — Grounds of appeal
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29420>*
-
-The data\-holder may appeal against the data\-holder notice, or any requirement in such a notice, on one or more of the following grounds.
-
-
-- It is unduly onerous to comply with the notice or requirement. But the data\-holder cannot use these grounds of appeal if the requirement is to provide data that is part of the data\-holder’s statutory records.
-- The data\-holder is not a relevant data\-holder.
-- Data specified in the notice is not relevant data.
-
-
-The provisions in Part 5 of TMA 1970 (appeals and other proceedings) that relate to appeals have effect in relation to appeals against a data\-holder notice in the same way as they have effect in relation to an appeal against an assessment to income tax. Appeals, Reviews and Tribunals Guidance (ARTG) contains full details of the review and appeals process, see [ARTG2100](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2100)\+.
-
-
-FA11/SCH23/PARA28
-
-
----
-
-## CH29430 — Process of appeal
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29430>*
-
-Where a person appeals against a data\-holder notice, see [CH29420](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29420), the appeal must
-
-
-- state the grounds of appeal
-- be in writing
-- be within 30 days from when the data\-holder notice was given, and
-- be given to the officer of HMRC who gave the data\-holder notice.
-
-
-FA11/SCH23/PARA29
-
-
----
-
-## CH29440 — Tribunal powers on appeal
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29440>*
-
-On appeal, the tribunal may confirm, vary or set aside the data\-holder notice or a requirement in it.
-
-
-If the tribunal confirms or varies the notice, or a requirement in it, the data\-holder must comply with the notice or requirement
-
-
-- within such period as is specified by the tribunal, or
-- if the tribunal does not specify a period, within such period as is reasonably specified in writing by an officer of HMRC following the tribunal’s decision.
-
-
-A decision by the tribunal under this part is final, despite the provisions of sections 11 and 13 of the Tribunals, Courts and Enforcement Act 2007\.
-
-
-The Appeals, Reviews and Tribunals Guidance has detailed guidance about the review and appeal process \- see the [Appeals, Reviews and Tribunals Guidance](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance) (ARTG).
-
-
-FA11/SCH23/PARA29
-
-
----
-
-## CH29510 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29510>*
-
-A data\-holder can be charged penalties if they fail to comply with a data\-holder notice.
-
-
-Depending on how long the data\-holder fails to comply with the data\-holder notice, the data\-holder can be liable to
-
-
-- an initial fixed penalty of £300 when they fail to comply with the data\-holder notice
-- daily default penalties of up to £60 per day for failures that continue after the initial fixed penalty has been charged
-- increased daily default penalties of up to £1,000 per day if they are approved by the tribunal after the £60 daily default penalties have been charged, and
-- an inaccuracy penalty of up to £3,000 where the data\-holder carelessly or deliberately provides inaccurate information or documents.
-
-
-An officer can allow further time for a data\-holder to comply with a data\-holder notice before penalties are charged.
-
-
-We cannot charge initial fixed penalties and daily default penalties where the person satisfies us, or the tribunal, that there is a reasonable excuse for the failure.
-
-
-When a person has incurred a penalty, we issue a penalty assessment. The person is entitled to a review and can appeal. Where we are unable to resolve an appeal by internal review, or if the person chooses not to have an internal review, the first\-tier tribunal will hear the appeal.
-
-
-For operational guidance on charging penalties, see [CH206480](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch206480).
-
-
-FA11/SCH23
-
-
----
-
-## CH29520 — Initial fixed penalty
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29520>*
-
-If the person ‘fails to comply’ with a data\-holder notice, they are liable to an initial fixed penalty of £300\.
-
-
-‘Failing to comply’ with a data\-holder notice means not providing the relevant data by the date stated on the data\-holder notice. Failing to comply also includes
-
-
-- concealing, destroying or otherwise disposing of a ‘material document’, or
-- arranging for a material document to be concealed, destroyed or otherwise disposed of.
-
-
-See [CH29530](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29530) for guidance on what is a ‘material document’, and see [CH29700](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29700)\+ for guidance and examples on assessing penalties.
-
-
-FA11/SCH23/PARA30
-
-
----
-
-## CH29530 — Material document
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29530>*
-
-A material document
-
-
-A document is a ‘material document’ if, at the time when the data\-holder acts, see [CH29520](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29520), the data\-holder has
-
-
-1. received a data\-holder notice requiring them to provide the document or data contained in the document, or
-2. not received such a notice but we have told them that we will, or are likely to, issue a notice.
-
-
-Not a material document
-
-
-A document is not a ‘material document’ under (a) above if the data\-holder has already compiled with the data\-holder notice, unless
-
-
-- we have notified the data\-holder in writing that they must continue to preserve the document, and
-- that notification has not been withdrawn.
-
-
-A document is not a ‘material document’ under (b) above if more than 6\-months have lapsed since the data\-holder was (or was last) informed that we would, or likely to, issue the notice.
-
-
-FA11/SCH23/PARA30
-
-
----
-
-## CH29540 — Daily default penalties
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29540>*
-
-Where we have assessed an initial fixed penalty, see [CH29520](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29520), and the person still does not comply with the data\-holder notice, they are liable to daily default penalties.
-
-
-Daily default penalties can be charged for each day that the failure continues.
-
-
-Daily default penalties can be for an amount of up to £60 per day.
-
-
-We do not need tribunal approval to charge daily default penalties.
-
-
-The tribunal may allow us to impose an alternative increased daily default penalty, see [CH29550](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29550).
-
-
-See [CH29700](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29700)\+ for guidance and examples on assessing the penalties.
-
-
-FA11/SCH23/PARA31
-
-
----
-
-## CH29550 — Increased daily default penalties
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29550>*
-
-If the initial fixed penalty and daily default penalties are unsuccessful in getting the person to comply with the data\-holder notice then we can apply to the tribunal to impose increased daily default penalties.
-
-
-Three conditions must be satisfied before we can apply to the tribunal. The conditions are that
-
-
-- the data\-holder has been assessed with
-
-
-> - an initial fixed penalty of £300, and
-> - daily default penalties, and
-
-
-- 30 days have passed since the data\-holder was last assessed with the daily default penalties, and they still have not complied with the data\-holder notice, and
-- the data\-holder has been told that we may make an application to the tribunal for an increased daily default penalty.
-
-
-The data\-holder may attend the hearing where we apply for an increased daily penalty.
-
-
-If the tribunal approves that we can charge increased daily default penalties then the increased daily default penalties are charged instead of the daily default penalties.
-
-
-The tribunal decides the amount of the increased daily default penalties. They cannot be more than £1,000 per day. When deciding on an amount of the increased daily default penalties, the tribunal must consider
-
-
-- the likely cost of complying with the data\-holder notice
-- any benefits of not complying with it, and
-- any benefits to anyone else resulting from the person’s non\-compliance.
-
-
-We must notify the person of
-
-
-- the amount of the increased daily default penalty that the tribunal has approved, and
-- the date in the future from which we will charge the increased daily default penalties, if they have not complied with the notice by that date.
-
-
-FA11/SCH23/PARA38
-
-
-FA11/SCH23/PARA39
-
-
----
-
-## CH29560 — Inaccuracy penalty
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29560>*
-
-A person is liable to an inaccuracy penalty, not exceeding £3,000, if they provide inaccurate data in response to a data\-holder notice, and
-
-
-- the inaccuracy is due to either the data\-holder’s failure to take reasonable care, or their deliberate behaviour
-- the data\-holder knows of the inaccuracy at the time when they provide the data but do not inform us at that time, or
-- the data\-holder discovers the inaccuracy after the data has been provided but fails to take reasonable steps to inform us.
-
-
-FA11/SCH23/PARA32
-
-
----
-
-## CH29600 — Reasonable excuse
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29600>*
-
-For guidance on Reasonable Excuse, see [CH160000](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch160000).
 
 
 ---
@@ -59070,16 +61529,16 @@ You must not use the video recording software on your digital device inside o
 You must not record information or use the voice recognition software on your digital device when on a customer’s premises. This is because you may obtain private information and this could constitute surveillance activity, which would require a RIPA application. You may use the voice recognition or recording software on your digital device in certain circumstances when you are away from the customer's premises. For example, you may use it when in your car, but not whilst driving, to record information to use as trigger notes when you cannot complete your notebook. 
 
 
-How you record notes will depend on which device you are using: On your Blackberry, use the voice recognition software in the 'Docs to Go' app in the Personal Space section of your BlackBerry, to dictate a word document and email the document to your HMRC secure email address. You must send the word document attached to an email from your HMRC email account to your secure email address and delete it from your Blackberry. You must not make voice notes in 'Remember' (the yellow Notes section) because they cannot be emailed.
+How you record notes will depend on which device you are using: On your digital device, use the voice recognition software to dictate a word document and email the document to your HMRC secure email address. You must send the word document attached to an email from your HMRC email account to your secure email address and delete it from your digital device. You must not make voice notes in 'Remember' (the yellow Notes section) because they cannot be emailed.
 
 
-On your Surface pro, record your notes into the Sway app within OneDrive.
+On your Laptop, record your notes into the Sway app within OneDrive.
 
 
 On your iphone, record your notes using the Voice memos function within Utilities and share to OneDrive. (There are no plans to introduce the Sway app for mobile phones.) Delete the file from Voice Memos immediately.
 
 
-## Recording trigger notes on a BlackBerry
+## Recording trigger notes on a Digital Device
 
 
 You can use your digital device to make trigger notes in situations when you are unable to use your notebook. You can do this when carrying out a test eat in a restaurant. If your device is 0365\-enabled, you can type your notes into a Word document and save it to OneDrive. If your device is not 0365\-enabled, you must record your trigger notes as an email and send the email to your HMRC secure email address.
@@ -73519,1570 +75978,6 @@ This was paid immediately, but the company still did not produce the documents.
 
 
 Further daily penalty action was considered unlikely to encourage production of the documents so agreement was sought of the authorised officer to make an application to the Upper Tribunal for a tax related penalty based on tax at risk of £2\.5 million.
-
-
----
-
-## CH28260 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28260>*
-
-[Data Acquisition and Exchange](https://hmrc.sharepoint.com/sites/COM140026262/SitePages/Data-Acquisition-%26-Exchange-(DA%26E).aspx) issue all Schedule 23 data\-holder notices on behalf of HMRC.
-
-
-We can issue a data\-holder notice to a data\-holder and require them to provide the relevant data that is specified in the notice. There is a limit to how far back we can request data, and we can only require the data\-holder to provide documents that are in the data\-holder’s possession or power.
-
-
-We may ask the tribunal for approval to issue a data\-holder notice. The tribunal may only approve our data\-holder notice if certain conditions are met, see [CH28280](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28280). If the tribunal approves issuing the data\-holder notice, it means that the data\-holder cannot appeal against the data\-holder notice.
-
-
-The data\-holder notice may specify the ‘means and form’ in which the data\-holder must provide the relevant data, providing that the means and form are reasonable. What is considered reasonable depends on the ability and circumstances of the data\-holder.
-
-
-We may allow a data\-holder extra time to comply with a data\-holder notice, and if they comply with the data\-holder notice within the extended time period then we will not charge penalties.
-
-
-FA11/SCH23/PARA3
-
-
----
-
-## CH28270 — Specify relevant data in a data-holder notice
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28270>*
-
-A data\-holder notice must specify the relevant data that the data\-holder is required to provide.
-
-
-We cannot require a data\-holder to provide relevant data unless we have reason to believe that the data could have a bearing on chargeable, or other periods, ending on or after the ‘applicable day’.
-
-
-The ‘applicable day’ is the first day of the period of four years that ends with the day on which the notice is given.
-
-
-For example
-
-
-> We issue a data\-holder notice to Auckland Limited on 25 May 2012 to provide relevant data. We may only request relevant data if it could have a bearing on chargeable or other periods, which end on or after 26 May 2008\.
-
-
-See [CH206420](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch206420) for operational guidance on a data\-holder notice.
-
-
-FA11/SCH23/PARA3
-
-
----
-
-## CH28280 — Approval by tribunal
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28280>*
-
-We may ask the tribunal for approval to issue a data\-holder notice. If the tribunal gives approval to issue the data\-holder notice, it means that the data\-holder cannot appeal against the data\-holder notice, see [CH29400](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29400).
-
-
-We can apply to the tribunal without giving the data\-holder notice of our application.
-
-
-The tribunal may only approve our data\-holder notice if all of the following conditions are met.
-
-
-- The application is made by, or with the agreement of, an authorised officer.
-- The tribunal is satisfied that we are justified in giving the data\-holder notice.
-- The data\-holder has been told that the data is required and has been given a reasonable opportunity to make representations, unless the tribunal is satisfied that doing this might prejudice any purpose for which the data is required.
-- The tribunal has been given a summary of any representations made by the data\-holder, unless the tribunal is satisfied that doing this might prejudice any purpose for which the data is required.
-
-
-A decision by the tribunal to approve a data\-holder notice is final and cannot be appealed, despite sections 11 and 13 of the Tribunals, Courts and Enforcement Act 2007\.
-
-
-FA11/SCH23/PARA5
-
-
----
-
-## CH28290 — Compliance with a notice
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28290>*
-
-The data\-holder notice may specify the ‘means and form’ in which the data\-holder must provide the relevant data, providing that the means and form are reasonable.
-
-
-‘Means and form’ includes being able to stipulate the structure and medium through which data is required; so long as our request is reasonable.
-
-
-If the data\-holder notice requires the data\-holder to
-
-
-- send the relevant data somewhere, then the data\-holder must send it to that address, and within the period we have specified in the notice, or
-- make documents available for inspection somewhere, then the data\-holder must make those documents available for inspection at such place and time as is
-
-
-> - reasonably specified in the notice, or
-> - agreed between the officer and data\-holder.
-
-
-The period for the data\-holder to provide the relevant data, or to make the documents available, must be reasonable. What is considered reasonable depends on the ability and circumstances of the data\-holder. We cannot require a data\-holder to provide documents for inspection at a place that is used solely as a dwelling.
-
-
-The data\-holder notice can only require the data\-holder to provide documents that are in the data\-holder’s possession or power.
-
-
-Our ability to specify the means and form, and how the data is provided, in the data\-holder notice includes a power to specify it in a document referred to in the data\-holder notice.
-
-
-Some machinery provisions of TMA, for example about the service of documents, apply to these data\-gathering powers.
-
-
-FA11/SCH23/PARA4
-
-
----
-
-## CH28300 — Officer can allow further time
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28300>*
-
-We may allow a data\-holder extra time to comply with a data\-holder notice.
-
-
-If they comply with the data\-holder notice within the extended time period then we will not charge
-
-
-- the initial fixed penalty, see [CH29520](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29520), or
-- the daily default penalties, see [CH29540](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29540).
-
-
-The factors you should consider when deciding whether to allow further time for the data\-holder to comply with the data\-holder notice are covered in [CH206490](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch206490).
-
-
-FA11/SCH23/PARA33
-
-
----
-
-## CH28460 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28460>*
-
-The relevant data\-holders in relation to payments of salaries, fees and commission etc, are employers and other people who make these types of payments.
-
-
-The relevant data for data\-holders who pay salaries, fees, commission etc is information relating to all employment related payments that were made.
-
-
-The relevant data is different where agencies are involved or where the person is employed by an overseas employer.
-
-
-FA11/SCH23/PARA9
-
-
-SI 2012/847/REG 3
-
-
----
-
-## CH28470 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28470>*
-
-The relevant data\-holders in relation to salaries, fees commission etc are
-
-
-- an employer
-- a person who makes payments to, or in respect of, another person’s employees, with respect to their employment with that other person
-- an approved payroll agent
-- a person who carries on a business where ‘relevant payments’ are likely to be made in connection with that business, and
-- a body of persons who carry on any other kind of activity where ‘relevant payments’ are likely to be made.
-
-
-‘Relevant payments’ for this type of data\-holder are
-
-
-- payments for, or in connection with, services provided by persons who are not employed in the business, or
-- periodical or lump sum payments in respect of any copyright, public lending right, right in a registered design or design right.
-
-
-Payments are considered to be made in connection with a business if they are made
-
-
-- in the course of carrying on the business, or a part of it, or
-- in connection with the formation, acquisition, development or disposal of the business or part of it.
-
-
-Payments include
-
-
-- the provision of benefits, and
-- giving any other valuable consideration.
-
-
-See [CH28480](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28480) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-There are different rules for
-
-
-- agencies, see [CH28490](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28490), and
-- overseas employers, see [CH28510](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28510).
-
-
-FA11/SCH23/PARA9
-
-
----
-
-## CH28480 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28480>*
-
-There are five categories of data holder in relation to salaries, commission etc, see [CH28470](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28470). The relevant data depends on the category of data\-holder.
-
-
-Employer
-
-
-The relevant data for an employer is information relating to all employment related payments made by the employer.
-
-
-A Person who makes payments to, or in respect of, another person’s employees, with respect to their employment with that other person
-
-
-The relevant data for a person who makes payments to, or in respect of, another person’s employees, with respect to their employment with that other person, is information relating to those employer related payments.
-
-
-In these two situations, the relevant data includes information relating to apportioned expenses incurred partly in respect of employment related payments and partly in connection with other matters.
-
-
-Approved payroll agent
-
-
-The relevant data for an approved payroll agent is information and documents relating to the donations made under Part 12 of the Income Tax (Earnings and Pensions) Act 2003 (ITEPA 03\) (payroll giving).
-
-
-A person who carries on a business where relevant payments are likely to be made
-
-
-The relevant data for a person who carries on a business where relevant payments are likely to be made, is information relating to those relevant payments that are made in connection with a business or part of a business. However, relevant data excludes
-
-
-- payments from which income tax is deductible, and
-- payments made to any one person where the total of those payments, particulars of which would otherwise fall to be provided, does not exceed £500\.
-
-
-A body of persons who carry on any other kind of activity where relevant payments are likely to be made
-
-
-The relevant data for a person who carries on any other kind of activity where relevant payments are likely to be made, is information relating to those relevant payments that are made in connection with that activity. However, relevant data excludes
-
-
-- payments from which income tax is deductible, and
-- payments made to any one person where the total of those payments, particulars of which would otherwise fall to be provided, does not exceed £500\.
-
-
-FA11/SCH23/PARA9
-
-
-SI 2012/847/REG3
-
-
----
-
-## CH28490 — Relevant data-holders - agencies
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28490>*
-
-Special data\-gathering powers exist where agencies are involved.
-
-
-Where a person (“the worker”) provides services to another person (“the client”) but those services are supplied through a third person (“the agency”), then the remuneration receivable from the contract is treated, under sections 44(2\) and 45 of ITEPA 2003, as employment held by the worker with the agency.
-
-
-For data\-gathering purposes the worker is treated as employed by the agency. So payments made to the worker under the agency contract, or treated as earnings under section 45 of ITEPA 2003, are not ‘relevant payments’ for the purposes of Schedule 23\.
-
-
-This means that we can issue a data\-holder notice requiring relevant data about the worker from the agency as the worker’s employer, but not from the client.
-
-
-See [CH28500](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28500) for guidance on the relevant data that we can obtain from the agency as data\-holder.
-
-
-FA11/SCH23/PARA10
-
-
-ITEPA03/S44 (2\)
-
-
-ITEPA03/S45
-
-
----
-
-## CH28500 — Relevant data - agencies
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28500>*
-
-Where an agency is the data\-holder, see [CH28490](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28490), we can request the same information and documents that we can request from an employer, see [CH28480](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28480).
-
-
-FA11/SCH23/PARA10
-
-
-SI 2012/847/REG3
-
-
----
-
-## CH28510 — Relevant data-holders - overseas employer
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28510>*
-
-Special data\-gathering powers exist where a person (“the worker”) performs the duties of an employment in the UK and
-
-
-- the worker is employed by a person who is not resident in the UK, and
-- the duties performed in the UK are performed for a continuous period of not less than 30 days, and
-- those duties are performed for the benefit of another person (“the client”) who is resident, or carrying on a trade, profession or vocation, in the UK.
-
-
-The special data\-gathering powers treat the client as the employer, but we can only require the client to provide limited information.
-
-
-See [CH28520](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28520) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA11
-
-
-ITEPA03/S44 (2\)
-
-
-ITEPA03/S45
-
-
----
-
-## CH28520 — Relevant data - overseas employer
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28520>*
-
-When we treat a person as a data\-holder because the person working for them (“the worker”) is employed by an overseas employer, see [CH28510](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28510), the only relevant data we can request from this data\-holder is the name and place of residence of the worker.
-
-
-FA11/SCH23/PARA11
-
-
-SI 2012/847/REG4
-
-
----
-
-## CH28610 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28610>*
-
-This type of relevant data\-holder is a person by or through whom interest is paid or credited.
-
-
-The relevant data for this data\-holder is information and documents relating to accounts or sums on which relevant interest is payable. This chapter specifies the relevant data for different types of interest payments.
-
-
-The description of relevant data uses the ‘information and documents relating to’ approach. This includes such things as the amounts of payments, amount of tax deducted and name and address of each payee.
-
-
-There is also guidance on payments that are not relevant data regarding interest.
-
-
-FA11/SCH23/PARA12
-
-
----
-
-## CH28620 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28620>*
-
-This type of relevant data\-holder is a person by or through whom ‘interest’ is paid or credited.
-
-
-‘Interest’ includes
-
-
-- a dividend in respect of a share in a building society
-- an amount to which a person holding a deeply discounted security is entitled on the redemption of that security
-- a foreign dividend, and
-- an alternative finance return.
-
-
-See [CH28630](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28630), [CH28640](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28640), [CH28650](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28650) and [CH28660](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28660) for guidance on the relevant data that we can obtain from this data\-holder. For guidance on what is not relevant data for this data\-holder see [CH28670](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28670).
-
-
-FA11/SCH23/PARA12
-
-
-SI 2012/847/REG5
-
-
----
-
-## CH28630 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28630>*
-
-The relevant data for a data\-holder through whom interest is paid or credited, see [CH28620](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28620), is information and documents relating to accounts on which relevant interest is payable, including but not limited to the data specified in
-
-
-- Regulation 8 of SI 2012/847, see [CH28640](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28640),
-- Regulation 9 of SI 2012/847, see [CH28650](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28650), and
-- Regulation 10 of SI 2012/847, see [CH28660](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28660).
-
-
-The description of relevant data uses the ‘information and documents relating to’ approach. This will include such things as the amounts of payments, amount of tax deducted and name and address of each payee.
-
-
-See [CH28670](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28670) for guidance on payments that are not relevant data regarding interest.
-
-
-FA11/SCH23/PARA12
-
-
----
-
-## CH28640 — Relevant data - Regulation 8
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28640>*
-
-For payment made when a certificate has been given under Regulation 5 of the Income Tax (Deposit\-takers and Building Societies) (Interest Payments) Regulations 2008 that the person beneficially entitled to the payment is unlikely to be liable to any income tax for the year in which the payment was made, then the relevant data for a data\-holder through whom interest is paid or credited, see [CH28620](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28620), is
-
-
-1. the name and address of the person, or persons for whom the certificate was issued in connection with the payment (“the beneficiary”) if other than the person or persons to whom the payment was made,
-2. the date of birth of the beneficiary,
-3. the national insurance number or tax identification number of the beneficiary (or confirmation that a national insurance number or tax identification number is not held) for any account opened on or after 6 April 2013, and for any account opened earlier if such number is provided to the deposit\-taker or building society,
-4. notification of the fact that the account in respect of which the payment was made is or was one in connection with which a certificate or certificates had been given which had not ceased to be valid at the 5 April in the year in which the payment was made or at the date of closure of the account, if earlier in that year,
-5. the reference number of the account referred to in (d) above and, where necessary for identifying the account, the reference number or other identifier of the branch of the payer where the account is held,
-6. where the payment was made to two or more account\-holders each of whom was beneficially entitled to the payment, notification of that fact and, if known, the number of such persons,
-7. the national insurance number or tax identification number of persons referred to in (f) above, other than the beneficiary referred to in (b) and (c) above (or confirmation that a national insurance number or tax identification number is not held) for any account opened on or after 6 April 2013, and for any account opened earlier if such number is provided to the deposit\-taker or building society,
-8. where a certificate was given by or on behalf of one, or more, but not all, of the persons referred to in (f) above and had not ceased to be valid at the 5 April in the year in which the payment was made or at the date of closure of the account, if earlier in that year, notification of those facts,
-9. where the payment was the first payment made in respect of an account, notification of that fact, and
-10. where the payment was in a currency other than sterling and the amount of the payment is recorded in that currency in the data provided under a data\-holder notice notification of the fact that the amount is so recorded and the specification of the currency concerned.
-
-
-FA11/SCH23/PARA12
-
-
-SI 2012/847/REG8
-
-
----
-
-## CH28650 — Relevant data - Regulation 9
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28650>*
-
-Payments of interest in respect of deposits
-
-
-In cases to which Regulation 8, see [CH28640](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28640), does not apply, relevant data relating to payments of interest in respect of deposits is
-
-
-> a. the reference number of the account in respect of which a payment was made and, where necessary for identifying the account, the reference number or other identifier of the branch of the payer where the account is held,
-
-
-> b. where a payment was made to two or more account holders, notification of that fact and, if known, the number of such persons,
-
-
-> c. where the payment was made without deduction of tax by virtue of a declaration made after 5 April 2001 under section 858, 859, 860 or 861 of the Income Tax Act 2007 (ITA 07\)
-
-
-> - the name and principal residential address of the individual beneficially entitled to the payment or, if more than one, of each individual entitled to the payment, or
-> - where the person beneficially entitled to the payment is a Scottish partnership, all the partners in which are individuals, the name and principal residential address of each of the partners,
-
-
-> d. in a case falling within (c) above notification of the fact that the account in respect of which the payment was made was one in respect of which a declaration had been made as mentioned in that sub\-paragraph,
-
-
-> e. the national insurance number or tax identification number (or confirmation that a national insurance number or tax identification number is not held) of the person or, where (b) above applies, each person to whom a payment was made for any account opened on or after 6 April 2013, and for any account opened earlier if such number is provided to the deposit\-taker or building society,
-
-
-> f. where a payment made in the course of the year was the first payment in respect of an account, notification of that fact, and
-
-
-> g. where a payment was in a currency other than sterling and the amount of the payment is recorded in that currency in the data provided under a data\-holder notice notification of the fact that the amount is so recorded and the specification of the currency concerned.
-
-
-FA11/SCH23/PARA12
-
-
-SI 2012/REG9
-
-
----
-
-## CH28660 — Relevant data - Regulation 10
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28660>*
-
-Payments and receipts of interest other than payments in respect of deposits
-
-
-In cases to which regulation 8, see [CH28640](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28640), does not apply, relevant data relating to payments and receipts of interest other than payments in respect of deposits is
-
-
-(a) identification of the security or investment in respect of which the payment was made or received,
-
-
-(b) where a payment or receipt was in a currency other than sterling and the amount of the payment is recorded in that currency in the data provided under a data\-holder notice, notification of the fact that the amount is so recorded and the specification of the currency concerned,
-
-
-(c) where a payment was made to, or the receipt was for, two or more persons, notification of that fact and, if known, the number of such persons,
-
-
-(d) where a payment was made without deduction of tax by virtue of a declaration made under regulation 31 of the Authorised Investment Funds (Tax) Regulations 2006, the name and principal residential address of the person beneficially entitled to the payment, or if more than one, of each person beneficially entitled to the payment, and
-
-
-(e) in a case falling within (d) above, notification of the fact that the account in respect of which the payment was made was one in respect of which the declaration had been made.
-
-
-FA11/SCH23/PARA12
-
-
-SI 2012/847 REG10
-
-
----
-
-## CH28670 — Not relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28670>*
-
-Information relating to the following payments is not relevant data.
-
-
-A payment
-
-
-- in respect of a certificate of deposit within the meaning given by section 1019 of the Income Tax Act 2007 (ITA 07\),
-- in respect of an investment or a deposit held by a branch of a person to whom a data\-holder notice is issued, where the branch is situated in a territory other than the United Kingdom,
-- falling within Regulation 9(c), see [CH28650](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28650) or 10(d), see [CH28660](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28660), of SI 2012/847, in respect of which the information that the notice shall not require is the name and address of the person to whom the interest was paid or credited, if other than the person beneficially entitled to the interest,
-- in respect of an investment under a plan provided for by regulations made under Chapter 3 of Part 6 of the Income Tax (Trading and Other Income) Act 2005 (ITTOIA 05\),
-- to, or a receipt for, a person other than an individual (in whatever capacity the individual is acting), except where the case falls within regulation 9(c) or 10(d) of SI 2012/847
-
-
-Any other payment, not mentioned above, is also not relevant data where that payment is specified in the notice as being a payment in respect of which information is not required.
-
-
-Information is not relevant data if it is in respect of a relevant dormant account before the time (if any) at which the balance of the account is paid out to the account\-holder following a repayment claim. This means that once the balance of a dormant account is paid out to the account\-holder (‘settled’), then all interest paid or credited to that account, during and at the end of the relevant dormant period, is treated as relevant data.
-
-
-Further rules for dormant accounts are that interest is treated
-
-
-- as paid at the time the repayment claim is settled,
-- as if the bank or building society had retained the balance of the account, in the ordinary course of the operations of its trade or business, and
-- if a data\-holder notice is given to the bank or building society, specifying the year of assessment in which the relevant dormant period for any account ends, the notice shall (unless it states otherwise) be deemed to require the inclusion of information for all relevant dormant accounts, in respect of which repayment claims were settled in that year.
-
-
-FA11/SCH23/PARA12
-
-
-SI 2012/847/REG6
-
-
-SI 2012/847/REG7
-
-
----
-
-## CH28710 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28710>*
-
-This type of relevant data\-holder is a person who is in receipt of money, or value of, or belonging to, another person.
-
-
-It does not matter in what capacity the person receives the money that belongs to another person.
-
-
-See [CH28720](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28720) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA13
-
-
----
-
-## CH28720 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28720>*
-
-The relevant data for a data\-holder who receives income, assets etc belonging to others, see [CH28710](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28710), is
-
-
-- information relating to the money or value received, and
-- the name and address of the beneficial owner of the money or value.
-
-
-FA11/SCH23/PARA13
-
-
-SI 2012/847/REG11
-
-
----
-
-## CH28735 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28735>*
-
-This type of relevant data\-holder is a person who has a contractual obligation to make payments to retailers in settlement of payment card transactions. These people are usually known as merchant acquirers and they run the Chip and Pin machines system, but other similar bodies are also included within this category, such as those who provide services for online transactions.
-
-
-'Payment card transactions' include cases where a reference to an account number or other indicators associated with a payment card cause the payment to be accepted.
-
-
-See [CH28740](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28740) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-In normal circumstances, the notice for these types of return are issued centrally and annually by the Centre for National Information (CNI). Data is reported on a monthly total basis so the annual return consists of twelve monthly figures 
-
-
-### FA11/SCH23/PARA13A
-
-
----
-
-## CH28740 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28740>*
-
-The relevant data for a data\-holder who is a merchant acquirer, see [CH28735](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28735), is all of the following,
-
-
-- For each retailer, information relating to payments made to a merchant account, including the currency the payments were made in. We require this information as twelve month totals.
-- The reference number of the bank account into which the payments were made and, where necessary for identifying the account, the branch where the account is held.
-- Any unique identifier that has been allocated to a retailer for the purposes of identifying the retailer or classifying the trade of the retailer, as part of the business arrangement between the data\-holder and the retailer. This is a trade class number assigned to the retailer by the data\-holder.
-- Any unique identifier that has been allocated to retailer’s merchant account for the purpose of identifying this merchant account, as part of the business arrangement between the data\-holder and the retailer. This is any number assigned to the retailer by the data\-holder. Such numbers can be used to follow businesses that move or change names or even identify individual card machines rented to the retailer by the data\-holder.
-- The name, address, telephone number, email address, website address and VAT number of each retailer and for each merchant account.
-
-
-Relevant data in this regulation only extends to information held by the data\-holder at the time of receipt of a data\-holder notice.
-
-
-### FA11/SCH23/PARA13A
-
-
-### SI 2012/847/REG11A
-
-
----
-
-## CH28742 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28742>*
-
-This type of relevant data\-holder is a person who provides services, by
-means of which monetary value is stored electronically, for the purpose of
-payments being made in respect of transactions to which the provider of those
-services is not a party. 
-
-
-See [CH28743](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28743) for guidance on the relevant data that we can obtain from this
-data\-holder.
-
-
-**FA11/SCH23/PARA13B**
-
-
----
-
-## CH28743 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28743>*
-
-The relevant data for a data\-holder who provides electronic stored\-value
-payment services, see [CH28742](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28742), is:  
-
-
-- in relation to a payment recipient,
-information relating to transactions, including the currency the transactions
-were made in;
-- identifying information relating to a payment
-recipient; and
-- identifying information relating to an account
-or system into which payments are credited to, or on behalf of, a payment
-recipient by the data\-holder.
-
-
-**FA11/SCH23/PARA13B**
-
-
-**SI 2012/847/REG 11B**
-
-
----
-
-## CH28745 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28745>*
-
-This type of relevant data\-holder is a person who:
-
-
-- provides services to enable or facilitate
-transactions between suppliers and their customers or clients (other than
-services provided solely to enable payments to be made), and
-- receives information about such transactions (including
-information that is capable of indicating the likely quantity or value of
-transactions) in the course of doing so.
-
-
-See [CH28746](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28746) for guidance on the relevant data that we can obtain from this
-data\-holder.
-
-
-**FA11/SCH23/PARA13C**
-
-
----
-
-## CH28746 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28746>*
-
-The relevant data for a data\-holder who provides services to enable or
-facilitate transactions between suppliers and their customers, see [CH28745](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28745) is:  
-
-
-- in relation to suppliers–
-- information relating to transactions that the
-data\-holder enabled or facilitated; and
-- information that the Commissioners consider is
-likely to assist them to quantify or otherwise determine the quantity or value
-of transactions of suppliers, whether or not the data\-holder processed the
-payment for those transactions;
-
-- Identifying information relating to:
-- suppliers for whom the data\-holder enables or
-facilitates transactions,
-- an account or system into which payments are
-credited to, or on behalf of, suppliers by the data\-holder.
-
-
-**FA11/SCH23/PARA13C**
-
-
-**SI 2012/847/REG 11C**
-
-
----
-
-## CH28748 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28748>*
-
-This type of relevant data\-holder is a person who:
-
-
-- Carries
-on these activities by way of business:
-- Operating a currency exchange office
-- Transmitting money (or any representation of
-monetary value) by any means
-- Cashing cheques made payable to customers
-
-- Is a relevant person within the meaning of
-regulation 8(1\) of the Money Laundering, Terrorist Financing and Transfer of
-Funds (Information on the Payer) Regulations 2017 (S.I. 2017/692\), and
-- Is not an excluded credit institution.
-
-
-See [CH28749](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28749) for guidance on the relevant data that we can obtain from this
-data\-holder.
-
-
-**FA11/SCH23/PARA13D**
-
-
----
-
-## CH28749 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28749>*
-
-The relevant data for a data\-holder who operates a currency exchange
-office, transmits money by any means or cashes cheques made payable to
-customers, see [CH28748](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28748), is:  
-
-
-- records required to be kept by the data\-holder
-under regulation 40 of the Money Laundering, Terrorist Financing and Transfer
-of Funds (Information on the Payer) Regulations 2017;
-- the quantity and value of transactions carried
-out by the data\-holder for a customer during any period;
-- identifying information relating to a
-customer; and
-- where, in a transaction carried out by the
-data\-holder for a customer, there is a beneficial owner who is not the
-customer, identifying information relating to the beneficial owner.
-
-
-**FA11/SCH23/PARA13D**
-
-
-**SI 2012/847/REG 11D**
-
-
----
-
-## CH28760 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28760>*
-
-This type of relevant data\-holder is a person who
-
-
-- is the registered or inscribed holder of securities
-- receives a payment derived from securities or would be entitled to do so if a payment is made
-- receives a payment treated by the company that makes it as a payment to which section 1033 of Corporation Tax Act 2010 applies (purchase by unquoted trading company of own shares), or
-- receives a chargeable payment.
-
-
-We can only require a relevant data\-holder of this type to provide relevant data if the data concerns a matter
-
-
-- of whether the relevant data\-holder is the beneficial owner (or sole beneficial owner) of the securities or payment in question,
-- if not,
-
-
-> - details of the beneficial owner (or other beneficial owners), and
-> - if those details are not known or if different, details of the person for whom the securities are held or to whom the payment is or may be paid on, and
-
-
-- if there is more than one beneficial owner or more than one person of the kind mentioned above, their respective interests in the securities or payment.
-
-
-A relevant data\-holder includes a person who makes a payment derived from securities that has been
-
-
-- received from another person, or
-- paid on behalf of another person.
-
-
-See [CH28770](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28770) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA14
-
-
-FA11/SCH23/PARA15
-
-
----
-
-## CH28770 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28770>*
-
-The relevant data for a data\-holder who receives payments derived from securities, see [CH28760](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28760), is
-
-
-- whether the relevant data\-holder is the beneficial owner (or sole beneficial owner) of the securities or payment in question,
-- if the relevant data\-holder is not the beneficial owner then,
-
-
-> - the details of the beneficial owner (or other beneficial owners), and
-> - if those details are not known, or if different, then the details of the person for whom the securities are held, or to whom the payment is or may be paid, and
-
-
-- if there is more than one beneficial owner, or more than one person for whom the securities are held, their respective interests in the securities or payment.
-
-
-The relevant data for a person who makes payments derived from securities is details of
-
-
-- the amounts paid that were received from, or paid on behalf of, another person, and
-- the name and address of each person.
-
-
-FA11/SCH23/PARA14
-
-
-FA11/SCH23/PARA15
-
-
-SI 2012/847/REG12
-
-
-SI 2012/847/REG13
-
-
----
-
-## CH28810 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28810>*
-
-This type of relevant data\-holder is any person who makes a payment out of public funds by way of grant or subsidy.
-
-
-See [CH28820](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28820) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA16
-
-
----
-
-## CH28820 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28820>*
-
-The relevant data for a data\-holder who makes grants or subsidies out of public funds, see [CH28810](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28810), is
-
-
-- the name and address of the person to whom the payment has been made, or on whose behalf the payment has been received
-- the amount of the payment, and
-- the address of any property in respect of which the payment has been made.
-
-
-FA11/SCH23/PARA16
-
-
-SI 2012/847/REG14
-
-
----
-
-## CH28860 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28860>*
-
-This type of relevant data\-holder is a person who issues licences or approvals, or maintains a register.
-
-
-See [CH28870](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28870) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-### FA11/SCH23/PARA17
-
-
----
-
-## CH28870 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28870>*
-
-The relevant data for a data\-holder who issues licences or approvals, or maintains a register, see [CH28860](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28860), is
-
-
-- the name and address of anyone who is, or has been, the holder of a licence or approval, or to whom an entry in that register relates
-- particulars of the licence, approval or entry, and
-- information relating to any application for such a licence, or approval, or for entry in that register.
-
-
-### FA11/SCH23/PARA17
-
-
-### SI 2012/847/REG15
-
-
----
-
-## CH28910 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28910>*
-
-This type of relevant data\-holder is a person who
-
-
-- is a lessee (or successor in title of a lessee),
-- is an occupier of land,
-- has the use of land, or
-- as agent, manages land, or is in receipt of rent or other payments arising from land.
-
-
-See [CH28920](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28920) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA18
-
-
----
-
-## CH28920 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28920>*
-
-The relevant data for a data\-holder who receives rent or other payments arising from land, see [CH28910](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28910), is information relating to
-
-
-- the terms applying to the lease, occupation or use of the land
-- any consideration given for the grant or assignment of the tenancy, and
-- any person on whose behalf the land is managed, or the payments received, including particulars of payments arising from the land.
-
-
-FA11/SCH23/PARA18
-
-
-SI 2012/847/REG16
-
-
----
-
-## CH28960 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28960>*
-
-This type of relevant data\-holder is a person who
-
-
-- effects, or is a party to securities transactions wholly or partly on behalf of others (whether as agent or principal)
-- in the course of business, acts as registrar or administrator in respect of securities transactions (including a person who manages a clearing house for any terminal market in securities)
-- makes a payment derived from securities to anyone other than the registered or inscribed holder of the securities
-- makes a payment derived from bearer securities, or
-- is an accountable person.
-
-
-See [CH28970](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28970) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA19
-
-
----
-
-## CH28970 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28970>*
-
-The relevant data for a data\-holder who deals in securities, see [CH28960](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch28960), is
-
-
-- information and documents relating to securities transactions in respect of which that person is a relevant data\-holder, and
-- in relation to a person who carries on a business of effecting public issues, or placings, or otherwise effects public issues, or placings, information relating to the issue, allotment or placing of the public issues or placings.
-
-
-FA11/SCH23/PARA19
-
-
-SI 2012/847/REG17
-
-
----
-
-## CH29010 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29010>*
-
-Each of the following is a relevant data\-holder.
-
-
-- The committee, or body of persons, responsible for managing a clearing house or a central securities depository for any terminal market in commodities.
-- An auctioneer.
-- A person who carries on a business of dealing in any description of tangible movable property.
-- A person who carries on a business of acting as an agent or intermediary in dealings in any description of tangible movable property.
-
-
-See [CH29020](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29020) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-**FA11/SCH23/PARA20**
-
-
----
-
-## CH29020 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29020>*
-
-The relevant data for a data\-holder who deals in tangible moveable property, see [CH29010](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29010), is particulars of any transaction effected through
-
-
-- a clearing house or a central securities depository, or
-- the data\-holder, which involves
-
-
-> - the disposal of an asset, which is tangible moveable property, and
-> - the disposal value is more than £6,000 in the hands of the recipient.
-
-
-**FA11/SCH23/PARA20**
-
-
-**SI 2012/847/REG18**
-
-
----
-
-## CH29060 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29060>*
-
-This type of relevant data\-holder is a person who is registered as a managing agent at Lloyd’s in relation to a syndicate of underwriting members of Lloyd’s.
-
-
-See [CH29070](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29070) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA21
-
-
----
-
-## CH29070 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29070>*
-
-The relevant data for a data\-holder who is registered as a managing agent at Lloyds, see [CH29060](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29060), is information and documents relating to, and to the activities of, the syndicate of underwriting members of Lloyds.
-
-
-FA11/SCH23/PARA21
-
-
-SI 2012/847/REG19
-
-
----
-
-## CH29110 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29110>*
-
-This type of relevant data\-holder is a person who is
-
-
-- a plan manager, or
-- an account provider in relation to a child trust fund.
-
-
-See [CH29120](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29120) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA22
-
-
----
-
-## CH29120 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29120>*
-
-The relevant data for a data\-holder who deals with investment plans, see [CH29110](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29110), is information and documents relating to
-
-
-- the plan, including investments which are, or have been, held under the plan, and
-- the child trust fund, including investments which are or have been held under the fund.
-
-
-FA11/SCH23/PARA22
-
-
-SI 2012/847/REG20
-
-
----
-
-## CH29160 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29160>*
-
-This type of relevant data\-holder is a person who is
-
-
-- the holder of a licence granted under Part 1 of the Petroleum Act 1998, or
-- the responsible person in relation to an oil field.
-
-
-See [CH29170](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29170) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA23
-
-
----
-
-## CH29170 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29170>*
-
-The relevant data for a data\-holder who is involved in petroleum activities, see [CH29160](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29160), is
-
-
-- the particulars of transactions in connection with any activities authorised by a petroleum licence, as a result of which any person is, or might be, liable to tax under
-
-
-> - section 276 of the Taxation of Chargeable Gains 1992 (TCGA 92\)
-> - section 1313 of the Corporation Tax Act 2009 (CTA 09\), or
-> - section 874 of the Income Tax (Trading and Other Income) Act 2005 (ITTOIA 05\)
-
-
-- the particulars of earnings or money treated as earnings, which constitute employment income (see section 7(2\)(a) or (b) of the Income Tax (Earnings and Pensions) Act 2003 (ITEPA 03\)), or other payments paid or payable in respect of duties or services performed in an area in which those activities may be carried on under the petroleum licence
-- the particulars of the persons to whom such earnings, money or other payments were paid and are payable, and
-- information and documents relating to the oil field.
-
-
-FA11/SCH23/PARA23
-
-
-SI 2012/847/REG21
-
-
----
-
-## CH29210 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29210>*
-
-This type of relevant data\-holder is a person who
-
-
-- is involved, in any capacity, in an insurance business
-- makes arrangements for persons to enter into contracts of insurance, or
-- is concerned in a business that is not an insurance business and who has been involved in the entering into of a contract of insurance that provides cover for any matter associated with the business.
-
-
-See [CH29220](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29220) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA24
-
-
----
-
-## CH29220 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29220>*
-
-The relevant data for a data\-holder who is involved in insurance activities, see [CH29210](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29210), is information and documents relating to contracts of insurance whether or not they are entered into in the course of an insurance business.
-
-
-FA11/SCH23/PARA24
-
-
-SI 2012/847/REG22
-
-
----
-
-## CH29260 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29260>*
-
-This type of relevant data\-holder is a person who is involved, in any capacity, in any of the following activities
-
-
-- subjecting aggregate to exploitation in the UK or connected activities,
-- making or receiving supplies of taxable commodities or connected activities, or
-- disposal of material (as defined for the purposes of Part 3 of FA 1996\).
-
-
-See [CH29270](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29270) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-**FA11/SCH23/PARA25**
-
-
----
-
-## CH29270 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29270>*
-
-The relevant data for a data\-holder who is involved in environmental activities, see [CH29260](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29260), is information and documents relating to
-
-
-- aggregates levy matters in which the person is, or has been involved
-- climate change levy matters in which the person is, or has been involved, and
-- landfill disposal.
-
-
-FA11/SCH23/PARA25
-
-
-SI 2012/847/REG23
-
-
----
-
-## CH29310 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29310>*
-
-This type of relevant data\-holder is a person, or persons, who
-
-
-- makes a settlement
-- are the trustees of a settlement
-- is a beneficiary under a settlement, or
-- is any other person who is entitled to receive income under a settlement.
-
-
-See [CH29320](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29320) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA26
-
-
----
-
-## CH29320 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29320>*
-
-The relevant data for a data\-holder who is involved with settlements, see [CH29310](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29310), is information and documents relating to the settlement in question and to income or gains arising from the settlement.
-
-
-FA11/SCH23/PARA26
-
-
-SI 2012/847/REG24
-
-
----
-
-## CH29360 — Relevant data-holders
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29360>*
-
-This type of relevant data\-holder is a person that is a charity, whether or not registered with the Charities Commission.
-
-
-See [CH29370](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29370) for guidance on the relevant data that we can obtain from this data\-holder.
-
-
-FA11/SCH23/PARA27
-
-
----
-
-## CH29370 — Relevant data
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29370>*
-
-The relevant data for a data\-holder that is a charity, see [CH29360](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29360), is information relating to donations to the charity that are eligible for tax relief under any of the following provisions
-
-
-- Section 257 of the Taxation of Chargeable Gains Act \-gifts to charities.
-- Section 63(2\) (a) or (aa) of the Capital Allowances Act 2001 \-cases in which disposal value is nil.
-- Part 12 of the Income Tax (Earnings and Pensions) Act 2003 \-payroll giving.
-- Section 108 of the Income Tax (Trading and Other Income) Act 2005 \-gifts of trading stock to charities etc.
-- Chapter 2 or 3 of Part 8 of the Income Tax Act 2007 \-gift aid, gifts of shares, securities and real property to charities etc.
-- Section 105 of the Corporation Tax Act 2009 \- gifts of trading stock to charities etc.
-- Part 6 of the Corporation Tax Act 2010 \- charitable donations relief.
-
-
-**FA11/SCH23/PARA27**
-
-
-**SI 2012/847/REG25**
-
-
----
-
-## CH29710 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29710>*
-
-If a data\-holder fails to comply with a data\-holder notice, they may become liable to
-
-
-- initial fixed penalty,
-- daily default penalties, or
-- inaccuracy penalties.
-
-
-The tribunal may also decide to allow the use of increased daily default penalties.
-
-
-When we assess a penalty, we send the data\-holder a penalty assessment notice.
-
-
-The assessment notice tells the data\-holder what they owe and when they must pay it. The penalty is enforceable as if it were income tax charged on an assessment. It does not matter which tax the data\-holder notice relates to, all penalties are enforced using the income tax system.
-
-
-FA11/SCH23/PARA35
-
-
----
-
-## CH29720 — What the assessment notice must include
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29720>*
-
-The penalty assessment must include
-
-
-- the date of the assessment
-- the amount of the penalty, and
-- the legislation under which the penalty is assessed.
-
-
-The penalty assessment explains the appeal rights.
-
-
-FA11/SCH23/PARA35
-
-
----
-
-## CH29730 — When to issue a penalty assessment
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29730>*
-
-Normally you should issue the penalty assessment to the data\-holder as soon as possible.
-
-
-|  |  |
-| --- | --- |
-| Initial fixed penalty | Issue the penalty as soon as possible after the date specified on the data\-holder notice has passed and the data has not been supplied. |
-| Daily penalties | The date when you decide to impose daily penalties. |
-| Increased daily penalties | The date when the tribunal approves the increased daily penalties. |
-| Inaccuracy penalties | The date on which an inaccuracy in the information provided or documents produced in response to the data\-holder comes to your attention. |
-
-
-However, you must issue a penalty assessment within the following time limits.
-
-
-## Initial fixed penalty or daily default penalties (at the standard or increased rate)
-
-
-An assessment for an initial fixed penalty or daily default penalties, at the standard or increased rate, must be made within 12 months of the latest of
-
-
-- the date on which the data\-holder became liable to the penalty,
-- the end of the period in which notice of an appeal against the data\-holder notice (or a requirement in it) could have been given, and
-- if notice of such an appeal is given, the date on which the appeal is determined or withdrawn.
-
-
-## Inaccuracy penalties
-
-
-An assessment for inaccuracy penalties must be made
-
-
-- within 12 months of the date on which we first became aware of the inaccuracy, and
-- within 6 years of the date on which the data\-holder became liable to the penalty.
-
-
-### FA11/SCH23/PARA35
-
-
----
-
-## CH29740 — When the penalty is payable
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29740>*
-
-All penalties charged by an assessment must be paid within 30 days.
-
-
-The 30\-day period begins on the date on which the penalty assessment is issued.
-
-
-FA11/SCH23/PARA40
-
-
----
-
-## CH29750 — Appeals against the imposition of a penalty
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29750>*
-
-A data\-holder has appeal and review rights against our decision to impose
-
-
-- an initial fixed penalty
-- daily default penalties
-- increased daily default penalties, or
-- inaccuracy penalties.
-
-
-Once increased daily penalties have been imposed, a data\-holder cannot appeal against the daily amount of the penalty because they will already have had their say before the tribunal that approved the daily amount of those penalties.
-
-
-The provisions in Part 5 of TMA 1970 (appeals and other proceedings) have effect in relation to appeals against a data\-holder notice in the same way as they have effect in relation to an appeal against an assessment to income tax.
-
-
-The Appeals, Reviews and Tribunals Guidance contains detailed guidance about the review and appeal process, see [ARTG2100](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2100).
-
-
-The tribunal may uphold or cancel our decision to impose the penalty.
-
-
-If the date\-holder appeals, the penalty must be paid within 30 days beginning on the date on which the appeal is finally decided or the data\-holder withdraws it.
-
-
-The penalties for not complying with a data\-holder notice are enforced as if they were income tax charged in an assessment and due and payable. It does not matter for which tax you have required data to be provided.
-
-
-For appeals against the amount of the penalty we have charged, see [CH29760](https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29760).
-
-
-FA11/SCH23/PARA36
-
-
-FA11/SCH23/PARA37(3\)
-
-
----
-
-## CH29760 — Appeals against the amount of a penalty
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29760>*
-
-A data\-holder has appeal and review rights against the amount of the penalty we impose.
-
-
-The Appeals, Reviews and Tribunals Guidance contains detailed guidance about the review and appeal process \- [ARTG2100](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg2100) for direct taxes.
-
-
-The tribunal may uphold our decision or replace it with another decision that we had the power to make. The tribunal does not have the authority to change the amount of the initial fixed penalty.
-
-
-FA11/SCH23/PARA36
-
-
-FA11/SCH23/PARA37(4\)
-
-
----
-
-## CH29770 — Process for appeal against the penalty
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29770>*
-
-The data\-holder’s appeal must
-
-
-- be in writing
-- be given to HMRC before 30 days from the date when the penalty assessment was issued, and
-- state the grounds of appeal.
-
-
-FA11/SCH23/PARA37
-
-
----
-
-## CH29860 — Overview
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29860>*
-
-A penalty assessment for failing to comply with a data\-holder notice is enforced as if it were an assessment of income tax.
-
-
-The Treasury has the power to change the amount of the
-
-
-- initial fixed penalty
-- daily default penalty
-- increased daily default penalty, and
-- penalty for inaccurate information or documents.
-
-
-Any changes to these amounts will be made by regulations.
-
-
-We cannot charge a penalty for failing to comply with a data\-holder notice if the data\-holder has been convicted of an offence connected to the failure.
-
-
-FA11/SCH23
-
-
----
-
-## CH29870 — Enforcement of penalties
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29870>*
-
-Penalties for failing to comply with a data\-holder notice must be paid within 30 days. The 30\-day period begins
-
-
-- on the date when the data\-holder is notified of the penalty, or
-- if the data\-holder appealed against the decision, then on the date when that the appeal is finally determined or withdrawn.
-
-
-A penalty assessment may be enforced as if it were an assessment of income tax.
-
-
-The data\-holder does not have to pay the penalty before making an appeal.
-
-
-FA11/SCH23/PARA40
-
-
----
-
-## CH29880 — Power to change amount of penalties
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29880>*
-
-The Treasury has the power to change the amount of the
-
-
-- initial fixed penalty
-- daily default penalties
-- increased daily default penalty, and
-- penalty for inaccurate information or documents.
-
-
-Any changes to these amounts will be made by Regulations.
-
-
-If the amount of the penalties is changed by Treasury, the new amount of penalty does not apply to
-
-
-- a failure which began before the date on which the amended penalties came into force, or
-- an inaccuracy in any data or document provided to us before that date.
-
-
-FA11/SCH23/PARA41
-
-
----
-
-## CH29890 — Double jeopardy
-*Source: <https://www.gov.uk/hmrc-internal-manuals/compliance-handbook/ch29890>*
-
-We cannot charge a penalty for failing to comply with a data\-holder notice if the data\-holder has been convicted of an offence in relation to that failure.
-
-
-FA11/SCH23/PARA42
 
 
 ---

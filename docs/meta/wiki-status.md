@@ -10,16 +10,17 @@ It is derived entirely from what is committed - the corpus, the extract cache, b
 
 ## Pipeline state
 
-- Corpus last checked upstream: 2026-09-10.
+- Corpus last checked upstream: 2026-10-05.
 - Most recent page written: 2026-09-10.
 
 **No complete end-to-end run is represented by the committed artifacts.** Outstanding:
 
+- 120 chunk(s) have never been extracted
 - 17 page(s) are stale or missing: `who-must-file`, `the-return`, `deadlines-and-amendments`, `payments-and-collection`, `records-and-information`, `enquiries`, `assessments-and-discovery`, `penalties`, `appeals-and-reviews`, `income-charges`, `reliefs-and-claims`, `rates-and-thresholds`, `hmrc-interpretation`, `case-law-themes`, `making-tax-digital`, `rules-inventory`, `data-requirements`
 
 ## Extraction coverage
 
-1265 of 1265 corpus chunks extracted (100%), across 43 mirrored documents. Only notes that pass the extract schema count as extracted.
+1147 of 1267 corpus chunks extracted (91%), across 43 mirrored documents. Only notes that pass the extract schema count as extracted.
 
 Chunks by Self Assessment relevance, as judged at extraction:
 
@@ -32,7 +33,7 @@ Chunks by Self Assessment relevance, as judged at extraction:
 | Document | Chunks | Extracted |
 |---|---|---|
 | `corpus/external-explainers.md` | 1 | 1 |
-| `corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md` | 1 | 1 |
+| `corpus/hmrc-publications/customer-facing-guidance/govuk-guidance.md` | 1 | 0 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/accrued-income-scheme-self-assessment-helpsheet-hs343.md` | 2 | 2 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/averaging-for-creators-of-literary-or-artistic-works-self-assessment-helpsheet-hs234.md` | 1 | 1 |
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/capital-gains-tax-and-employee-share-schemes-self-assessment-helpsheet-hs287.md` | 2 | 2 |
@@ -58,17 +59,17 @@ Chunks by Self Assessment relevance, as judged at extraction:
 | `corpus/hmrc-publications/customer-facing-guidance/helpsheets/seed-enterprise-investment-scheme-income-tax-and-capital-gains-tax-reliefs-self-assessment-helpsheet-hs393.md` | 2 | 2 |
 | `corpus/hmrc-publications/customer-facing-tools.md` | 2 | 2 |
 | `corpus/hmrc-publications/policy-and-interpretation/extra-statutory-concessions.md` | 1 | 1 |
-| `corpus/hmrc-publications/policy-and-interpretation/manuals/artg.md` | 45 | 45 |
-| `corpus/hmrc-publications/policy-and-interpretation/manuals/ch.md` | 383 | 383 |
-| `corpus/hmrc-publications/policy-and-interpretation/manuals/em.md` | 152 | 152 |
+| `corpus/hmrc-publications/policy-and-interpretation/manuals/artg.md` | 45 | 44 |
+| `corpus/hmrc-publications/policy-and-interpretation/manuals/ch.md` | 385 | 291 |
+| `corpus/hmrc-publications/policy-and-interpretation/manuals/em.md` | 152 | 146 |
 | `corpus/hmrc-publications/policy-and-interpretation/manuals/index.md` | 3 | 3 |
-| `corpus/hmrc-publications/policy-and-interpretation/manuals/salf.md` | 26 | 26 |
-| `corpus/hmrc-publications/policy-and-interpretation/manuals/sam.md` | 338 | 338 |
-| `corpus/hmrc-publications/policy-and-interpretation/revenue-and-customs-briefs.md` | 1 | 1 |
+| `corpus/hmrc-publications/policy-and-interpretation/manuals/salf.md` | 26 | 25 |
+| `corpus/hmrc-publications/policy-and-interpretation/manuals/sam.md` | 338 | 324 |
+| `corpus/hmrc-publications/policy-and-interpretation/revenue-and-customs-briefs.md` | 1 | 0 |
 | `corpus/hmrc-publications/policy-and-interpretation/statements-of-practice.md` | 1 | 1 |
 | `corpus/hmrc-publications/rates-and-allowances.md` | 1 | 1 |
-| `corpus/legal-system/case-law/first-tier-tribunal-tax-chamber.md` | 1 | 1 |
-| `corpus/legal-system/case-law/upper-tribunal-tax-chancery.md` | 1 | 1 |
+| `corpus/legal-system/case-law/first-tier-tribunal-tax-chamber.md` | 1 | 0 |
+| `corpus/legal-system/case-law/upper-tribunal-tax-chancery.md` | 1 | 0 |
 | `corpus/legal-system/primary-legislation/acts/crca-2005.md` | 23 | 23 |
 | `corpus/legal-system/primary-legislation/acts/itepa-2003.md` | 152 | 152 |
 | `corpus/legal-system/primary-legislation/acts/tma-1970.md` | 75 | 75 |

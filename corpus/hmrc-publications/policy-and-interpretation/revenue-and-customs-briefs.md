@@ -4,12 +4,12 @@ source_id: hmrc-rc-briefs
 category: hmrc-publications.policy-and-interpretation
 document_type: document_collection
 upstream_updated_at: '2026-08-03T08:34:57+01:00'
-item_count: 64
+item_count: 66
 ---
 
 # Revenue and Customs Briefs
 
-Full index of the **Revenue and Customs Briefs** collection from GOV.UK (64 documents).
+Full index of the **Revenue and Customs Briefs** collection from GOV.UK (66 documents).
 
 | Title | Upstream last updated | Link |
 |---|---|---|
@@ -22,6 +22,7 @@ Full index of the **Revenue and Customs Briefs** collection from GOV.UK (64 docu
 | Revenue and Customs Brief 10 (2020): temporary reduced rate of VAT for hospitality, holiday accommodation and attractions | 2020-07-09 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-10-2020-temporary-reduced-rate-of-vat-for-hospitality-holiday-accommodation-and-attractions) |
 | Revenue and Customs Brief 10 (2021): repayment of VAT to overseas businesses not established in the EU and not VAT registered in the UK | 2021-07-01 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-10-2021-repayment-of-vat-to-overseas-businesses-not-established-in-the-eu-and-not-vat-registered-in-the-uk) |
 | Revenue and Customs Brief 10 (2022): VAT — business and non-business activities | 2022-06-01 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-10-2022-vat-business-and-non-business-activities) |
+| Revenue and Customs Brief 10 (2026): Temporary zero rate of VAT for domestic electricity in Great Britain | 2026-09-08 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-10-2026-temporary-zero-rate-of-vat-for-domestic-electricity-in-great-britain) |
 | Revenue and Customs Brief 11 (2020): VAT and Stamp Duty Land Tax when existing leases between landlords and tenants are varied | 2020-07-29 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-11-2020-vat-and-stamp-duty-land-tax-when-existing-leases-between-landlords-and-tenants-are-varied) |
 | Revenue and Customs Brief 12 (2020): VAT early termination fees and compensation payments | 2021-01-25 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-12-2020-vat-early-termination-fees-and-compensation-payments) |
 | Revenue and Customs Brief 12 (2021): VAT treatment of gaming machines from 6 December 2005 to 31 January 2013 | 2023-04-11 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-12-2021-vat-treatment-of-gaming-machines-from-6-december-2005-to-31-january-2013) |
@@ -71,6 +72,7 @@ Full index of the **Revenue and Customs Briefs** collection from GOV.UK (64 docu
 | Revenue and Customs Brief 7 (2026): Changes to the VAT Capital Goods Scheme | 2026-07-30 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-7-2026-changes-to-the-vat-capital-goods-scheme) |
 | Revenue and Customs Brief 8 (2021): VAT treatment of public funds received by further education institutions | 2021-05-26 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-8-2021-vat-treatment-of-public-funds-received-by-further-education-institutions) |
 | Revenue and Customs Brief 8 (2025): VAT Tour Operators’ Margin Scheme — supplies by private hire vehicle or taxi operators | 2025-11-26 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-8-2025-vat-tour-operators-margin-scheme-supplies-by-private-hire-vehicle-or-taxi-operators) |
+| Revenue and Customs Brief 8 (2026): UK VAT refunds for non-UK businesses in a VAT group | 2026-09-08 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-8-2026-uk-vat-refunds-for-non-uk-businesses-in-a-vat-group) |
 | Revenue and Customs Brief 9 (2018): VAT - damp proofing products | 2018-07-20 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-9-2018-vat-damp-proofing-products) |
 | Revenue and Customs Brief 9 (2019): VAT Tour Operators Margin Scheme and retained payments and deposits | 2019-09-06 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-9-2019-vat-tour-operators-margin-scheme-and-retained-payments-and-deposits) |
 | Revenue and Customs Brief 9 (2020): delayed VAT repayments to overseas businesses | 2020-06-22 | [source](https://www.gov.uk/government/publications/revenue-and-customs-brief-9-2020-delayed-vat-repayments-to-overseas-businesses) |

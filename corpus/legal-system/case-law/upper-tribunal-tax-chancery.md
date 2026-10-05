@@ -12,6 +12,13 @@ The 40 most recent decisions from this tribunal, via the [Find Case Law](https:/
 
 | Date | Citation | Case | Judgment |
 |---|---|---|---|
+| 2026-09-28 | [2026] UKUT 368 (TCC) | Alesen Direct Solutions Limited v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/368) |
+| 2026-09-25 | [2026] UKUT 364 (TCC) | Jumpman Gaming Ltd v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/364) |
+| 2026-09-17 | [2026] UKUT 00357 (TCC) | City Doctoral Researchers Association v Charity Commission of England and Wales | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/00357) |
+| 2026-09-16 | [2026] UKUT 355 (TCC) | Massala Exotic Limited & Anor v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/355) |
+| 2026-09-14 | [2026] UKUT 356 (TCC) | Anandpreet Powar v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/356) |
+| 2026-09-14 | [2026] UKUT 351 (TCC) | Robin Crispin Odey v The Financial Conduct Authority  | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/351) |
+| 2026-09-09 | [2026] UKUT 348 (TCC) | Aramark Limited v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/348) |
 | 2026-09-03 | [2026] UKUT 343 (TCC) | Shane Matin v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/343) |
 | 2026-09-02 | [2026] UKUT 342 (TCC) | The Executors of Paul Hunt & Ors v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/342) |
 | 2026-08-28 | [2026] UKUT 335 (TCC) | The Commissioners for HMRC v John Douglas Wardle | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/335) |
@@ -45,10 +52,3 @@ The 40 most recent decisions from this tribunal, via the [Find Case Law](https:/
 | 2026-06-12 | [2026] UKUT 217 (TCC) | Alec Finch & Anor v The Financial Conduct Authority | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/217) |
 | 2026-06-12 | [2026] UKUT 219 (TCC) | The Commissioners for HMRC v GCH Corporation Limited & Ors | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/219) |
 | 2026-06-09 | [2026] UKUT 216 (TCC) | RS Global Limited & Anor v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/216) |
-| 2026-06-08 | [2026] UKUT 213 (TCC) | Top-Notch Accountants Limited v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/213) |
-| 2026-06-08 | [2026] UKUT 212 (TCC) | Barclays Bank PLC v The Commissioners For HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/212) |
-| 2026-06-08 | [2026] UKUT 211 (TCC) | Barclays Services Corporation & Anor v The Commissioners For HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/211) |
-| 2026-05-19 | [2026] UKUT 195 (TCC) | Queenscourt Limited v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/195) |
-| 2026-05-18 | [2026] UKUT 193 (TCC) | Michael Nielson v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/193) |
-| 2026-05-18 | [2026] UKUT 194 (TCC) | The Commissioners for HMRC v Healthspan Limited | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/194) |
-| 2026-05-05 | [2026] UKUT 173 (TCC) | Furlong Services Limited v The Commissioners for HMRC | [link](https://caselaw.nationalarchives.gov.uk/ukut/tcc/2026/173) |

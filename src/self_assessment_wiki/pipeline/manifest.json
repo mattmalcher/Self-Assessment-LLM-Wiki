@@ -1,90 +1,90 @@
 {
   "caselaw-ftt-tc": {
-    "content_hash": "024314c087217588b38e065cb2d809a201b155138775ffcd0c0c56a08ea63be6",
+    "content_hash": "ccd819c8b3553926cb4145b7719c4c864f1836b4cef75e06002aa9c21fac62a0",
     "http": {
       "etag": null,
-      "last_modified": "Tue, 01 Sep 2026 12:50:55 GMT"
+      "last_modified": "Thu, 01 Oct 2026 15:43:49 GMT"
     },
-    "last_checked": "2026-09-04"
+    "last_checked": "2026-10-05"
   },
   "caselaw-ut-tcc": {
-    "content_hash": "bebb0ce0210713908a6a9204e2353c281fba57a01d0dc17a9aafd35cd1a3d865",
+    "content_hash": "ff6f77274f53ee338a619c5351a727d87a7bf363e3349e1b2e0fa6de385f2c47",
     "http": {
       "etag": null,
-      "last_modified": "Thu, 03 Sep 2026 09:26:10 GMT"
+      "last_modified": "Tue, 29 Sep 2026 10:29:15 GMT"
     },
-    "last_checked": "2026-09-04"
+    "last_checked": "2026-10-05"
   },
   "crca-2005": {
     "content_hash": "3f68adf6a0171e971d899346f62cf3d2ef6f77d423eb6d093649389b098cd7e2",
     "http": {
       "etag": null,
-      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+      "last_modified": "Wed, 30 Sep 2026 16:18:53 GMT"
     },
-    "last_checked": "2026-09-04"
+    "last_checked": "2026-10-05"
   },
   "govuk-sa-detailed-information": {
-    "content_hash": "d96d31f2ed6a51c3c3beef0e47be35c14f57659fcacd817f29cb284c6affd011",
-    "last_checked": "2026-09-04",
+    "content_hash": "724078273ca2d90c5cdeaa9133dcf26cff9d2fa1511deb10fd857d845249a024",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2024-02-12T00:00:00+00:00"
   },
   "hmrc-escs": {
     "content_hash": "db40310072e6dfb598e80ea7a3330750381e7fcdfc01a96f7ee643cf0201b06c",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2017-04-21T13:20:24+01:00"
   },
   "hmrc-manual-artg": {
-    "content_hash": "500477ee55707085a6a2f63a1a5849296ffb7ca0f3ce4a7db727c5a153849c7d",
-    "last_checked": "2026-09-04"
+    "content_hash": "f1689e0f00c54751ba571a4a25974370bbac2a1afb9d316044ccec5b664490a3",
+    "last_checked": "2026-10-05"
   },
   "hmrc-manual-ch": {
-    "content_hash": "4be824260e80a7728cee350d92114b2ad61e4c3a695ef4cf6578dd9415c9c5c7",
-    "last_checked": "2026-09-04"
+    "content_hash": "5a7e30cae163e1533f5adf8dfeacf146e7cebeecaa7a84096b48f6f979421ec9",
+    "last_checked": "2026-10-05"
   },
   "hmrc-manual-em": {
-    "content_hash": "5fe62c0c00165cdad095a44fd84e6a90fcde44a458450c7dcc1177200a051420",
-    "last_checked": "2026-09-04"
+    "content_hash": "de2674ff96f0b425b26af936eda17ffe3a8ed3298edc6da71d29cab340a4840b",
+    "last_checked": "2026-10-05"
   },
   "hmrc-manual-salf": {
-    "content_hash": "48fde6d3a527ca952d23ee0df745d369e0c031532e23e2b5bbe94c371d60d8ee",
-    "last_checked": "2026-09-04"
+    "content_hash": "0d5ab603ea3aa46ef7f3ca65cb8ee668fb52331f448e634d135c58b6de9f2075",
+    "last_checked": "2026-10-05"
   },
   "hmrc-manual-sam": {
-    "content_hash": "bd41af8eb0da0dd5b7d43c3a491f034e96df1214e2e367b924de6edf81943500",
-    "last_checked": "2026-09-04"
+    "content_hash": "b80c9825bbb556382ed0dbef2b680207b8ddb777db97d2c6eef1fcc4fcd0d357",
+    "last_checked": "2026-10-05"
   },
   "hmrc-manuals-index": {
     "content_hash": "5550771a2521bbfd786f2244a5f092d2bce65b72433a722ef8a4b10196f2163e",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2026-09-02T11:39:31+01:00"
   },
   "hmrc-rates-allowances": {
     "content_hash": "1723b8ba64c68efed7a3d775738ffaf186969d72b83b9e7886a2e1ed03f9d110",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2025-08-22T11:48:48+01:00"
   },
   "hmrc-rc-briefs": {
-    "content_hash": "ba3cc9960217f70cd9b42e0c7adc100432c7290a9953126dfcfce3875309edbb",
-    "last_checked": "2026-09-04",
+    "content_hash": "5e9c9e3d620608fb6ac50c9b74de9e8d594627e0656a805e2dde393461b90b77",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2026-08-03T08:34:57+01:00"
   },
   "hmrc-statements-of-practice": {
     "content_hash": "9dec7242fa125c256da3644c62cc7d04e647c39ef8ecf1e7edaafca701223094",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2010-01-01T00:00:00+00:00"
   },
   "hmrc-tools-calculators": {
     "content_hash": "642d0a5f42f812c369ef65bebe85170ba61872c8eb3daf0066b647b94bc572fc",
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2026-08-14T10:54:46+01:00"
   },
   "itepa-2003": {
     "content_hash": "92d577c4352b6ef49ec7a45e0560643956dab4b7672464e69b504fd0ba3c8c7e",
     "http": {
       "etag": null,
-      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+      "last_modified": "Wed, 30 Sep 2026 16:18:53 GMT"
     },
-    "last_checked": "2026-09-04"
+    "last_checked": "2026-10-05"
   },
   "sa-helpsheets": {
     "content_hash": "505298386934501660e6cee377a3c8f5674661905b80a9190d71c86a663dcc39",
@@ -178,16 +178,16 @@
         "upstream_updated_at": "2026-05-18T15:59:09+01:00"
       }
     },
-    "last_checked": "2026-09-04",
+    "last_checked": "2026-10-05",
     "upstream_updated_at": "2014-07-04T00:00:00+01:00"
   },
   "si-ftt-tax-chamber-rules-2009": {
     "content_hash": "207e469cab2151d1439772f0d0fded4105c206197e410e140eb90b7eb3a6e6a1",
     "http": {
       "etag": null,
-      "last_modified": "Thu, 03 Sep 2026 16:52:26 GMT"
+      "last_modified": "Wed, 30 Sep 2026 16:18:53 GMT"
     },
-    "last_checked": "2026-09-04"
+    "last_checked": "2026-10-05"
   },
   "taxaid-self-assessment": {
     "content_hash": "23cfea070c40fe8966c13eef7849391b1d6655618be5cdd480eacf6c376978b4",
@@ -195,7 +195,7 @@
       "etag": null,
       "last_modified": null
     },
-    "last_checked": "2026-09-10"
+    "last_checked": "2026-10-05"
   },
   "tma-1970": {
     "content_hash": "155b31b2d4b262df3019d54b6c6d570b47776d9187d80c860c19e669cd4f8ca2",

@@ -23900,7 +23900,7 @@ Both initial and further surcharge are charged at a rate of 5 per cent of the ou
 (This content has been withheld because of exemptions in the Freedom of Information Act 2000\)
 
 
-Taxpayers receive a formal notice (SA324\) advising them of surcharge. An appeal can be made within 30 days from the date of issue of the notice. 
+Customers receive a formal notice (SA324\) advising them of surcharge. An appeal can be made within 30 days from the date of issue of the notice. 
 
 
 **Note:** Five extra days, over and above the 30 days described in the legislation, are allowed for payment and appeal against surcharge. The extra days take account of the delay between raising a surcharge and the expected or deemed date of issue of the surcharge notice. For this reason the date surcharge was imposed as shown on the SA record, and the date of issue of the surcharge notice, differ.
@@ -23920,15 +23920,15 @@ Interest is chargeable on late paid surcharge.
 ## Warning leaflets
 
 
-In December, if a return has still not been received, one of the following reminders will be issued alerting the taxpayer to their obligation to file a return and make payment by the due date
+In December, if a return has still not been received, one of the following reminders will be issued alerting the customer to their obligation to file a return and make payment by the due date
 
 
-- SA309A \- SA Online Tax Return and Payment Reminder will be issued where no taxpayer statement is issued to the taxpayer. The SA309A is a personalised warning to individuals and trusts about penalties, interest and surcharges and will include a payslip
-- SA309C \- SA Payment Reminder’ warning the taxpayer to make payment by the due date otherwise interest and surcharges may be applied. A payslip is included
-- SA309E \- SA Tax Return and Payment Reminder will be issued to those taxpayers for whom no return has been logged and who are unable to file their return online for technical or operational reasons so have until 31 January to file a paper return
+- SA309A \- SA Online Tax Return and Payment Reminder will be issued where no customer statement is issued to the customer. The SA309A is a personalised warning to individuals and trusts about penalties, interest and surcharges and will include a payslip
+- SA309C \- SA Payment Reminder’ warning the customer to make payment by the due date otherwise interest and surcharges may be applied. A payslip is included
+- SA309E \- SA Tax Return and Payment Reminder will be issued to those customers for whom no return has been logged and who are unable to file their return online for technical or operational reasons so have until 31 January to file a paper return
 
 
-In February, if a liability is outstanding, the SA359 SA Final Demand strongly worded payment reminder will be issued advising the taxpayer that they have missed the deadline for paying their tax and the consequences of not paying on time. It also advises of the benefits of making payment online and includes a printed payslip on the reverse.
+In February, if a liability is outstanding, the SA359 SA Final Demand strongly worded payment reminder will be issued advising the customer that they have missed the deadline for paying their tax and the consequences of not paying on time. It also advises of the benefits of making payment online and includes a printed payslip on the reverse.
 
 
 ## Explanation leaflets
@@ -23951,25 +23951,25 @@ This leaflet gives advice on appeals against fixed automatic penalties and inclu
 **This guidance applies to 2009\-10 and earlier. Different rules apply to 2010\-11 and later tax years. Guidance regarding tax years 2010\-11 onwards can be found under** [SAM61200](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam61200) **onwards.**
 
 
-The taxpayer may appeal against a surcharge but must do so within 30 days from the date of the notice, that is within 35 days of the date on which the surcharge was imposed as shown on the SA record.
+The customer may appeal against a surcharge but must do so within 30 days from the date of the notice, that is within 35 days of the date on which the surcharge was imposed as shown on the SA record.
 
 
 **Note:** Five extra days, over and above the 30 days described in the legislation, are allowed for payment and appeal against surcharge. The extra days take account of the delay between raising a surcharge and the expected or deemed date of issue of the surcharge notice. For this reason the date surcharge was imposed as shown on the SA record, and the date of issue of the surcharge notice, differ.
 
 
-In general the normal appeals procedures apply. Where the taxpayer makes a late appeal, see business area ‘Appeals’ ([SAM10000](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam10000)). Where you receive an appeal against surcharge on the grounds that a TTP arrangement is in place for the liability see [SAM62060](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam62060).
+In general the normal appeals procedures apply. Where the customer makes a late appeal, see business area ‘Appeals’ ([SAM10000](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam10000)). Where you receive an appeal against surcharge on the grounds that a TTP arrangement is in place for the liability see [SAM62060](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam62060).
 
 
-This subject only covers appeals on the grounds that there was a reasonable excuse for not paying the tax on time. The reasonable excuse must have existed throughout the whole of the period of default and it follows therefore that payment should have been made promptly once the reasonable excuse ended. Insufficient funds to pay the tax will not be regarded as a reasonable excuse. There is no formal definition of reasonable excuse. The SA353 which accompanies the surcharge notice gives guidance to taxpayers on what is likely to be accepted as a reasonable excuse. If you receive an appeal on any other grounds see the business area ‘Appeals’.
+This subject only covers appeals on the grounds that there was a reasonable excuse for not paying the tax on time. The reasonable excuse must have existed throughout the whole of the period of default and it follows therefore that payment should have been made promptly once the reasonable excuse ended. Insufficient funds to pay the tax will not be regarded as a reasonable excuse. There is no formal definition of reasonable excuse. The SA353 which accompanies the surcharge notice gives guidance to customers on what is likely to be accepted as a reasonable excuse. If you receive an appeal on any other grounds see the business area ‘Appeals’.
 
 
-**Note:** Surcharges may occur through reallocation of payments, whether clerical or automatic. An example of the latter is where an assessment is increased in an enquiry case and payments made against a later year are automatically reallocated. Where it is clear for which year the payments were intended then reallocate back to that year. But consider the implications particularly as regards interest (if the rate of interest is higher than the surcharge rate it may not be in the taxpayer’s best interests to do so).
+**Note:** Surcharges may occur through reallocation of payments, whether clerical or automatic. An example of the latter is where an assessment is increased in an enquiry case and payments made against a later year are automatically reallocated. Where it is clear for which year the payments were intended then reallocate back to that year. But consider the implications particularly as regards interest (if the rate of interest is higher than the surcharge rate it may not be in the customer's best interests to do so).
 
 
 If a payment is reallocated clerically consider all implications of the move for example will it give rise to an interest charge or surcharge as a result.
 
 
-Most appeals against surcharge will be received by the office with processing responsibility for the taxpayer. Some will be received by the office with technical responsibility for the taxpayer. Where an appeal is received by any other office the appeal should be acknowledged and then referred immediately to the office with processing responsibility for the taxpayer. For more information about receipt and logging of appeals see business area ‘Appeals’.
+Most appeals against surcharge will be received by the office with processing responsibility for the customer. Some will be received by the office with technical responsibility for the customer. Where an appeal is received by any other office the appeal should be acknowledged and then referred immediately to the office with processing responsibility for the customer. For more information about receipt and logging of appeals see business area ‘Appeals’.
 
 
 The office with processing responsibility should consider the appeal critically on the grounds of reasonable excuse and take one of the following actions
@@ -23997,12 +23997,11 @@ The office with processing responsibility should consider the appeal critically 
 | 1\. | When the office with processing responsibility considers an appeal against surcharge it should be based solely on the existence or otherwise of a reasonable excuse. Resourcing factors and cost\-effectiveness are not valid factors in this consideration and must not be taken into account |
 | --- | --- |
 | 2\. | Particular care will need to be taken when dealing with an appeal against surcharge where the underlying tax is unpaid. |
-| 3\. | Where an appeal is received and payment (of the tax) has not been made |
-|  | - If the underlying tax is in dispute |
-| - | - Accept the appeal and informally standover the penalty |
-|  | - If the reasonable excuse is claimed or the appeal has been made for other reasons |
-|  | - Advise the taxpayer that the appeal cannot be dealt with until the tax is paid |
-|  | - Ask the taxpayer to pay the tax or withdraw the appeal |
+| 3\. | Where an appeal is received and payment (of the tax) has not been made, if the underlying tax is in dispute |
+|  | - Accept the appeal and informally standover the penalty |
+| 4\. | Where the reasonable excuse is claimed or the appeal has been made for other reasons and the tax has not been paid |
+|  | - Advise the customer that the appeal cannot be dealt with until the tax is paid |
+|  | - Ask the customer to pay the tax or withdraw the appeal |
 
 
 ---
@@ -24277,7 +24276,7 @@ If you need to defer the surcharge trigger date ([SAM62080](https://www.gov.uk/h
 ## Automatic imposition
 
 
-Where a taxpayer fails to make payment by the surcharge trigger date ([SAM62080](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam62080)) the SA computer will, with the exceptions as listed below, automatically impose a surcharge. This is generally done on a monthly basis. (The surcharge run normally takes place a few days before the statement run. There is normally no statement run in February, July and August. )
+Where a customer fails to make payment by the surcharge trigger date ([SAM62080](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam62080)) the SA system will, with the exceptions as listed below, automatically impose a surcharge. This is generally done on a monthly basis. (The surcharge run normally takes place a few days before the statement run. There is normally no statement run in February, July and August. )
 
 
 Surcharge is charged in 2 phases
@@ -24290,37 +24289,37 @@ Surcharge is charged in 2 phases
 ## Manual imposition
 
 
-You can use function APPLY SURCHARGE, available through function MAINTAIN SURCHARGE, to manually impose a surcharge. You might do this, for example, when you do not want to wait until the monthly computer run (see ‘Issue of surcharge notice SA324’ below).
+You can use function APPLY SURCHARGE, available through function MAINTAIN SURCHARGE, to manually impose a surcharge. You might do this, for example, when you do not want to wait until the monthly system run (see ‘Issue of surcharge notice SA324’ below).
 
 
 ## Issue of surcharge notice SA324
 
 
-Each month the computer will scan all taxpayer’s records and where appropriate apply a surcharge for all liabilities for which a surcharge can be charged.
+Each month the system will scan all customer records and where appropriate apply a surcharge for all liabilities for which a surcharge can be charged.
 
 
-The computer issues a surcharge notice, form SA324 Surcharge for late payment of tax to the taxpayer and a copy to the taxpayer’s agent where the 64\-8 signal is set. The issue of the notice is not recorded on the SA system. Assume that the notice will be issued within 5 working days from the date the charge was created on the taxpayer record.
+The system issues a surcharge notice, form SA324 Surcharge for late payment of tax to the customer and a copy to the customer's agent where the 64\-8 signal is set. The issue of the notice is not recorded on the SA system. Assume that the notice will be issued within 5 working days from the date the charge was created on the customer record.
 
 
-Enclosed with the notice will be a leaflet SA353 explaining the surcharge. See subject ‘Surcharge: Advising and Warning the Taxpayer’ ([SAM62010](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam62010)).
+Enclosed with the notice will be a leaflet SA353 explaining the surcharge. See subject ‘Surcharge: Advising and Warning the customer’ ([SAM62010](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam62010)).
 
 
 Separate notices will generally be issued for initial and further surcharge. Only one year can appear on a surcharge notice.
 
 
-If a surcharge is reduced a further surcharge notice is not issued, the taxpayer is notified of the change in the surcharge by statement of account. Where the tax is increased for example by an amended tax return, the amount of the increase has a new trigger date; a surcharge will be imposed only when the increased tax is not paid by the trigger date.
+If a surcharge is reduced a further surcharge notice is not issued, the customer is notified of the change in the surcharge by statement of account. Where the tax is increased for example by an amended tax return, the amount of the increase has a new trigger date; a surcharge will be imposed only when the increased tax is not paid by the trigger date.
 
 
 The original surcharge is not increased, a new surcharge is created for the increased amount and a further surcharge notice is issued. The only exception is where the tax is increased by a tax return overturning a determination, the original surcharge will be increased and a further surcharge notice will not be issued. This is because there is no change to the original surcharge trigger date for the increase.
 
 
-If a surcharge is imposed, either manually or automatically, and it is reduced to nil **before** the surcharge notice is printed then the surcharge notice issued will be for nil. This could happen for example if the tax on which the surcharge is based is reduced to nil or, after manually imposing surcharge, you immediately cancel it (you may have selected the wrong taxpayer or charge).
+If a surcharge is imposed, either manually or automatically, and it is reduced to nil **before** the surcharge notice is printed then the surcharge notice issued will be for nil. This could happen for example if the tax on which the surcharge is based is reduced to nil or, after manually imposing surcharge, you immediately cancel it (you may have selected the wrong customer or charge).
 
 
 ## Surcharge due date
 
 
-Surcharges have a payment due date of 30 days after the issue of the notice. However for operational reasons, where the surcharge remains unpaid the debt will not appear on the ‘Outstanding Debt and/or Return’ Work List until after 35 days after the date the charge was created on the taxpayer’s record.
+Surcharges have a payment due date of 30 days after the issue of the notice. However for operational reasons, where the surcharge remains unpaid the debt will not appear on the ‘Outstanding Debt and/or Return’ Work List until after 35 days after the date the charge was created on the customer's record.
 
 
 ## Interest
@@ -24339,7 +24338,7 @@ Surcharge will not be imposed where
 - Liabilities have been transferred back from PAYE. Where an SA underpayment has been transferred to PAYE to be included in the tax code, but the full amount is not collected through the code, the outstanding balance is clerically transferred back to SA
 - The BY/VA signal is set
 - A remission in whole or part has been posted against the year of liability being reviewed (but any surcharge imposed prior to remission will remain)
-- The taxpayer is RLS
+- The customer is RLS
 - The TTP signal is set (if the TTP signal is later unset surcharge will be charged from the original surcharge trigger date ([SAM62080](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam62080))
 - Tax is stood\-over either formally or informally. If surcharge has already been imposed and the tax is formally stood\-over the surcharge will automatically be reduced to nil
 
@@ -24353,7 +24352,7 @@ You can cancel surcharge, for example following a successful appeal, using funct
 **Note:** Whenever you cancel a penalty, you must make an SA Note showing the reason for cancellation.
 
 
-Surcharge is automatically reduced, by overnight batch process, when the underlying tax is reduced. But when you unlog a captured return (and effectively reduce the balancing charge to nil) you must manually cancel any surcharge already raised.
+Surcharge is automatically reduced, by overnight batch process, when the underlying tax is reduced. However, when you unlog a captured return (and effectively reduce the balancing charge to nil) you must manually cancel any surcharge already raised.
 
 
 Where the underlying tax is increased and the amount of the increase has a new trigger date a separate notice for the surcharge due will be issued if unpaid.
@@ -33854,9 +33853,10 @@ The name and address of the PR dealing with the estate of the deceased cannot be
 - A ‘Tell Us Once’ notification
 - Sight of the Grant of Probate
 - Contact by the PR with a Contact Centre
+- A signed 64\-8
 
 
-If notification of the PR has been received by any other method, make an SA Note of those details but do not update the record using TBS (or NPS if an NPS record is held showing the customers UTR). For example, a form 64\-8 cannot be used to update capacities.
+If notification of the PR has been received by any other method, make an SA Note of those details but do not update the record using TBS (or NPS if an NPS record is held showing the customers UTR).
 
 
 ## Deceased SA customers with No SA criteria
@@ -35158,7 +35158,7 @@ or more
 You usually need to fill in a Self Assessment tax return if you’re a UK resident with foreign income or capital gains. But there’s some foreign income that’s taxed differently.
 
 
-You will need to complete a tax return if you receive foreign interest, even if the amount is small or has already been taxed abroad.
+You will need to complete a tax return if you have UK tax to pay on your foreign income, even if the amount is small or has already been taxed abroad.
 
 
 You do not need to fill in a tax return if your only foreign income is dividends which will be covered by the [dividend allowance](https://www.gov.uk/tax-on-dividends) and you do not have anything else to report.
@@ -35244,7 +35244,7 @@ You usually need to fill in a Self Assessment tax return if you’re a UK reside
 You do not need to fill in a tax return if your only foreign income is dividends which will be covered by the [dividend allowance](https://www.gov.uk/tax-on-dividends) and you do not have anything else to report.
 
 
-You will need to complete a Tax return if you receive foreign interest, even if the amount is small or has already been taxed abroad.
+You will need to complete a tax return if you have UK tax to pay on your foreign income, even if the amount is small or has already been taxed abroad.
 
 
 See also subject ‘Criteria For A PAYE / SA Record’ ([SAM100050](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam100050)).
@@ -35491,6 +35491,9 @@ You must make an SA Note to indicate that a ‘known as’ name is being used.
 ## SAM100120 — Non resident company landlord
 *Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam100120>*
 
+**NOTE: Since 6 April 2020, Non\-Resident Company Landlords should submit returns in line with [CTM92840](https://www.gov.uk/hmrc-internal-manuals/company-taxation-manual/ctm92840). The below information is provided for historical reference only.**
+
+
 All non\-resident company landlords cases are set up by Specialist PT.
 
 
@@ -35500,19 +35503,19 @@ The SA computer system (CESA) recognises a non\-resident company landlord (NRCL)
 Care should be taken when setting the NRCL signal. Only cases with Specialist PT should have this signal set.
 
 
-For cases set up on SA before the annual return issue starts in February, SA700 tax returns are issued automatically. For cases set up after that date, if form SA700 is required for that year, the form SA700 must be issued manually to the customer. Do not use Function RECORD RETURN REQUEST to issue the form because a form SA100 will be issued in error.
+For cases set up on SA before the annual return issue starts in February, SA700 tax returns are issued automatically. For cases set up after that date, if form SA700 is required for that year, the form SA700 **must** be issued manually to the customer. **Do not** use Function RECORD RETURN REQUEST to issue the form because a form SA100 will be issued in error.
 
 
-Specialist PT will not enter a National Insurance Number (NINO) on a non\-resident company landlord record. If a NINO is entered for a case which has the NRCL signal there will be problems within frameworks which cannot be resolved easily.
+**Specialist PT will not enter a National Insurance Number (NINO) on a non\-resident company landlord record. If a NINO is entered for a case which has the NRCL signal there will be problems within frameworks which cannot be resolved easily.**
 
 
-If the case has a NINO, it is unlikely that the NRCL signal is needed. Care should be taken when setting this signal.
+**If the case has a NINO, it is unlikely that the NRCL signal is needed. Care should be taken when setting this signal.**
 
 
 If, at a later date, the income as a non\-resident company landlord ceases and the taxpayer needs to be brought into Self Assessment for any other reason, the existing NRCL record should be made dormant and a new individual taxpayer record created.
 
 
-Note: Do not remove the Non\-resident Company Landlord signal from the dormant record.
+**Note: Do not remove the Non\-resident Company Landlord signal from the dormant record.**
 
 
 Function MAINTAIN SA NOTES should be used to record the UTR of the NRCL record and the National Insurance number should be entered on the new record.
@@ -40453,20 +40456,15 @@ Taxpayer Reference (UTR)
 - Get
 authorisation from their clients again, for the new legal entity
 - De\-authorise clients not moving to the new legal entity
-- Notify the Agent Compliance Team to remove  access to the oldASA
-linked to the previous legal entity.
-
-
-Note: Agent codes must not be moved between legal entities
+- Note: Agent codes must not be moved between legal entities
 as this
 breaches  HMRC’s standard for agents and
-UK GDPR. 
+UK GDPR.
 
 
 ### For Online Service Agent Account (OSAA)
 
 
-- Request new agent codes from the Agent maintainer teamfor self\-assessment and corporation Tax.
 - Request the removal of old agent codes for legal entities no
 longer trading or supervised for anti\-money laundering.
 - Apply for new agent codes as needed.
@@ -43651,12 +43649,6 @@ The Agent Compliance Team is responsible for
 
 
 The SA Agent Maintainer role must be allocated to set up new SA agent codes. This role is only available to the Agent Compliance team.
-
-
-If an agent’s
-name, address or telephone number changes, send details and a copy of any
-correspondence to the Agent Compliance Teams mailbox who will arrange for the national agents’ list
-to be updated.
 
 
 ---
@@ -51337,9 +51329,7 @@ Following capture of the SA return the majority of repayments will, where repaym
 - **Prior to 28th January 2000**, when an overpaid amount was re\-allocated, Repayment Interest was calculated from the effective date of payment (EDP) to the later of the relevant due date (RDD) of the charge and the date of re\-allocation.
 
 
-> This meant that where re\-allocation took place after the RDD, the taxpayer was given Repayment Interest **and** was also charged interest for any common period running from the later of the RDD or EDP to the date of re\-allocation.
-
-
+> This meant that where re\-allocation took place after the RDD, the taxpayer was given Repayment Interest **and** was also charged interest for any common period running from the later of the RDD or EDP to the date of re\-allocation.  
 > Further information about dealing with ‘common period’ cases is provided in subject ‘Repayment Supplement / Interest Charges ([SAM111030](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam111030))
 
 
@@ -51367,10 +51357,10 @@ Repayment Interest will need to be calculated clerically on repayments / realloc
 - Function TRANSFER FROM TAXPAYER CREDIT
 
 
-The office using one of the transfer functions will need to notify disposal instructions to the relevant Banking Operations office by form SA331 (available for completion and printing from SEES) to enable them to calculate and repay any Repayment Interest due.
+The office using one of the transfer functions will need to notify disposal instructions to the relevant Banking Operations office by using the IPP form to enable them to calculate and repay any Repayment Interest due.
 
 
-It is important to confirm prior to completion of the form SA331 whether the credit / payment qualifies as an overpayment for Repayment Interest purposes and does have the possibility to attract Repayment Interest.
+It is important to confirm before completing the IPP form that the credit / payment qualifies as an overpayment for Repayment Interest purposes and does have the possibility to attract Repayment Interest.
 
 
 Repayments of Repayment Interest handled through OAS will be subject to existing clerical and supervisory procedures at each Banking Operations office. See section ‘Issue Repayment’ ([SAM110000](https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam110000) onwards) and the Debt Management \& Banking Manual (DMBM) for more information.
@@ -65780,10 +65770,9 @@ Note: In a small number of cases for the year 2006/07, the calculation will inco
 Since April 2000, UK resident borrowers of income contingent Student Loans repay their loans through HMRC either
 
 
-- As a deduction from earnings together with tax and NIC
-
-
-> And / Or
+- As a deduction from earnings together with tax and NIC  
+  
+And / Or
 
 
 - Through Self Assessment
@@ -65799,6 +65788,12 @@ For more information concerning the general rules for the Collection of Student 
 
 
 A Self Assessment taxpayer, who is a borrower of an income contingent loan, is responsible for indicating on the Student Loan and/or Postgraduate Loan (PGL) repayments section, page TR 5 on the SA100 Main return, or box 1\.5 on the SA200 Short return, that they are liable to make Student Loan and/or PGL repayments.
+
+
+If you are using Making Tax Digital for Income Tax, you will need to complete and submit your tax return.
+
+
+Compatible software will pre\-populate student loan plan type information and details of any student loan or postgraduate loan repayments deducted through PAYE. The customer remains responsible for checking that the information is complete and accurate before the tax return is submitted. The software will use the information provided to calculate any student loan or postgraduate loan repayment due.
 
 
 Taxpayers liable to PAYE will have their repayments deducted by their employer. The total amount deducted should be entered in box 2 or 3 of the Student Loan and PGL repayments section page TR 5 SA100, or box 1\.6 or 1\.7 on the SA200\. As Student Loan and/or PGL repayments are not deducted on a cumulative basis, taxpayers who have had more than one employment during the year will need to obtain the information from their payslips. Taxpayers who have remained in the same employment for the whole year can obtain the information from their P60, however we would advise them to cross check the amount with their payslips.
@@ -83835,7 +83830,7 @@ enquiries.
 *Source: <https://www.gov.uk/hmrc-internal-manuals/self-assessment-manual/sam230100>*
 
 As part of MTD, ITSA ETMP roles are available in SRS for you
-to assign to your team. 
+to assign to your team within CSG. 
 
 
 When allocating roles, keep it simple — only give
