@@ -8198,7 +8198,11 @@ A separate stencil is required for each determination. If more than one determin
 To assist DMB you must record details of any known assets, for example, addresses of owned properties, details of bank accounts and so on, on the determination stencil.
 
 
-DMB will aim to deal with your request within 28 calendar days.
+DMB will aim to deal with your request within 28 calendar days. DMB will add the Determination
+charge to the customer’s SA record. Once the Determination charge has been added,
+the SA323 ‘Determination of tax due’ notice will be issued automatically to the
+customer, and a copy will be issued to their agent where the 64\-8 signal
+is present on the record at that time.  Refer to [DMBM518000](https://www.gov.uk/hmrc-internal-manuals/debt-management-and-banking/dmbm518000)  for further guidance.
 
 
 ---
@@ -16064,13 +16068,13 @@ You can customise the ‘CFD1’ certificates by selecting from the available op
 If you arrange a meeting with the taxpayer you should hand the certificate to them personally. This gives you the opportunity to emphasise its importance and answer any questions that the taxpayer might have about it. To enable the taxpayer to consider its implications and discuss this with their agent, they should be invited to take it away rather than sign it there and then. You should record the issue of the certificate in the notes of the meeting.
 
 
-Where the certificate is not issued at a meeting you should send it to the taxpayer, with a copy to the agent. You should specifically draw the taxpayer’s attention to the statement on the front of the certificate and emphasise its importance.
+Where the certificate is not issued at a meeting you should send it to the taxpayer, with a copy to the agent. You should specifically draw the taxpayer’s attention to the statement on the front of the certificate and emphasise its importance.
 
 
 Record the type of certificate issued and the period covered, keeping a copy with the case papers.
 
 
-When you receive the completed certificate is received, you should check
+When you receive the completed certificate, you should check:
 
 
 - the signature against that on any returns or other correspondence, and
@@ -20778,10 +20782,8 @@ You may be asked to choose from
 
 
 - that you are enclosing a formal notice imposing a penalty
-- how the penalty should be paid ([EM5254](https://www.gov.uk/hmrc-internal-manuals/enquiry-manual/em5254) explains what action you need to take)
 - that if it is an SA penalty, interest will be charged if it is paid late
 - any other points or issues that are outstanding
-- you should also include a copy of factsheet HMRC1 \- 'HMRC decisions \- what to do if you disagree'.
 
 
 8\.  If you have not already done so, you should also explain
@@ -25052,7 +25054,7 @@ Before issuing the SAFE contract stencil you must
 
 
 - informally discharge any unpaid duties on assessments or estimated assessments related to amounts included in the offer. Include amounts that have been stood over because they are under appeal. For ITSA cases, this will clear worklist WO15 but create a WO36 worklist entry, which should be cleared by your manager
-- prepare and issue form SA331 or CT251 in respect of any overpayments on SA or COTAX which are to be set off against the settlement (if the overpayment is not on SA or COTAX you should use the R90A procedure),
+- (This content has been withheld because of exemptions in the Freedom of Information Act 2000\) in respect of any overpayments on SA or COTAX which are to be set off against the settlement (if the overpayment is not on SA or COTAX you should use the R90A procedure),
 - prepare and issue the appropriate transfer of payment stencil if any payments are to be transferred to other Head of Duty systems or are to be transferred to or from other SAFE references, and
 - allow sufficient time for all payments on account and set offs to reach SAFE to ensure the notice to pay (issued centrally by SAFE) is for the correct amount.
 

@@ -1266,7 +1266,7 @@ Whenever payments on account are required for any tax year they are payable with
 - The second on or before 31 July next following that tax year.
 
 
-Self assessment tax returns are designed to guide taxpayers through the calculation of payments on account etc. The Internet service for sending in a tax return will calculate the tax and the following year's payments on account automatically. Taxpayers can get help from their local HMRC office or any HMRC Enquiry Centre. HMRC remind taxpayers that payments are due. Where possible the reminder states the amount that is due.
+Self assessment tax returns are designed to guide taxpayers through the calculation of payments on account etc. The Internet service for sending in a tax return will calculate the tax and the following year's payments on account automatically.  HMRC remind taxpayers that payments are due. Where possible the reminder states the amount that is due.
 
 
 ### Example: Calculation of payments on account

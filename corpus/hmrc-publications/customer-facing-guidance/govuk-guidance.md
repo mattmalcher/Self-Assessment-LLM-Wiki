@@ -22,7 +22,7 @@ Full index of the **Self Assessment: detailed information** collection from GOV.
 | Get help filling in your Self Assessment tax return | 2025-06-02 | [source](https://www.gov.uk/government/collections/get-help-filling-in-your-self-assessment-tax-return) |
 | Get help with tax | 2024-11-03 | [source](https://www.gov.uk/tax-help) |
 | Get your SA302 tax calculation | 2015-06-17 | [source](https://www.gov.uk/sa302-tax-calculation) |
-| HMRC email updates, videos and webinars for Self Assessment | 2026-07-08 | [source](https://www.gov.uk/guidance/help-and-support-for-self-assessment) |
+| HMRC email updates, videos and webinars for Self Assessment | 2026-10-01 | [source](https://www.gov.uk/guidance/help-and-support-for-self-assessment) |
 | Help online with Self Assessment | 2025-12-16 | [source](https://www.gov.uk/guidance/help-online-for-self-assessment) |
 | If you cannot pay your tax bill on time | 2014-12-11 | [source](https://www.gov.uk/difficulties-paying-hmrc) |
 | Keeping your pay and tax records | 2015-03-23 | [source](https://www.gov.uk/keeping-your-pay-tax-records) |

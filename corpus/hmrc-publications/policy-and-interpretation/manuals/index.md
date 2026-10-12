@@ -3,7 +3,7 @@ source_url: https://www.gov.uk/government/collections/hmrc-manuals
 source_id: hmrc-manuals-index
 category: hmrc-publications.policy-and-interpretation.manuals
 document_type: document_collection
-upstream_updated_at: '2026-09-02T11:39:31+01:00'
+upstream_updated_at: '2026-10-06T11:48:12+01:00'
 item_count: 0
 ---
 
@@ -625,6 +625,11 @@ Shared workspace is an online service used by HMRC to collaborate with businesse
 [Shares and Assets Valuation Manual](https://www.gov.uk/hmrc-internal-manuals/shares-and-assets-valuation-manual)   
 
 How HMRC works out the value of shares and assets in unquoted companies for Inheritance Tax and Capital Gains Tax purposes.
+
+
+[Special Measures](https://www.gov.uk/hmrc-internal-manuals/special-measures)  
+
+This manual is to support HMRC staff and customers understand how Special Measures work in practice.
 
 
 [Specialist Investigations Operational Guidance](https://www.gov.uk/hmrc-internal-manuals/specialist-investigations-operational-guidance)   

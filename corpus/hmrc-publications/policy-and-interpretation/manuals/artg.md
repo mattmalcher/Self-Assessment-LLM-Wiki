@@ -3803,70 +3803,117 @@ The nature and extent of the review is to be determined by the review officer. I
 ## ARTG4080 — Role of the review officer
 *Source: <https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4080>*
 
-The review officer must review the case with a view to checking whether the decision is in line with legal and technical guidance, policy and practice.
+The review officer must review the case with a view to
+checking whether the decision is in line with legal and technical guidance,
+policy and practice.
 
 
-Under the Litigation and Settlement Strategy, see [ARTG1020](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg1020), it is essential that HMRC only pursues cases where its decisions are defendable at Tribunal.
+Under the Litigation and Settlement Strategy, see [ARTG1020](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg1020),
+it is essential that HMRC only pursues cases where its decisions are
+defendable at Tribunal.
 
 
-The purpose of the review is primarily to review the decision, not to assess new facts or evidence, see also [ARTG4060](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4060).
+The purpose of the review is primarily to review the
+decision, not to assess new facts or evidence, see also [ARTG4060](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4060).
 
 
-The review officer does not have discretion to go outside current policy and practice. But they should consider current policy and as with any other matter, it is possible that as a result of a review HMRC may change their policy or practice. Any departure from the normal policy and practice should be with the prior knowledge and approval of the relevant policy and technical teams.
+The review officer does not have discretion to go outside
+current policy and practice. But they should consider current policy and as
+with any other matter, it is possible that as a result of a review HMRC may
+change their policy or practice. Any departure from the normal policy and
+practice should be with the prior knowledge and approval of the relevant policy
+and technical teams.
 
 
-The review officer must consider whether the case is one which HMRC would want to defend at tribunal. In particular the review officer should consider the following in light of the Litigation and Settlement Strategy
+The review officer must consider whether the case is one
+which HMRC would want to defend at tribunal. In particular the review officer
+should consider the following in light of the Litigation and Settlement
+Strategy
 
 
-- whether the facts have been established by sufficient evidence, and whether there is disagreement as to the facts
+#### whether the facts have been established by sufficient
+evidence, and whether there is disagreement as to the facts
 
 
-> has there been an appropriate fact\-finding phase? Have all the relevant facts been considered in arriving at the HMRC decision? Can any disagreement as to the facts be resolved?
+has there been an appropriate fact\-finding phase? Have all
+the relevant facts been considered in arriving at the HMRC decision? Can any
+disagreement as to the facts be resolved?
 
 
-- the technical and legal merits of the decision
+#### the technical and legal merits of the decision
 
 
-> is the decision in line with HMRC guidance and policy? If appropriate has technical or legal advice been sought from HMRC experts? If advice has been sought does it take into account all the relevant facts and evidence?
+is the decision in line with HMRC guidance and policy?
+If appropriate has technical or legal advice been sought from HMRC experts? If
+advice has been sought does it take into account all the relevant facts and
+evidence?
 
 
-> If a decision fails either of the criteria above, it cannot be defended.
+If a decision fails either of the criteria above, it cannot
+be defended.
 
 
-HMRC may not always have a full view of the facts, for example if a customer withholds information or does not keep adequate records. This does not prevent assessments being made to best judgement – see [VAEC1420](https://www.gov.uk/hmrc-internal-manuals/vat-assessments-and-error-correction/vaec1420). Provided the decision maker has fairly considered all the material before them and come to a decision that is reasonable and not arbitrary we can proceed – although the quantum may be altered (even to zero) by subsequent information from the customer or other sources.
+HMRC may not always have a full view of the facts, for
+example if a customer withholds information or does not keep adequate records.
+This does not prevent assessments being made to best judgement – see [VAEC1420](https://www.gov.uk/hmrc-internal-manuals/vat-assessments-and-error-correction/vaec1420).
+Provided the decision maker has fairly considered all the material before them
+and come to a decision that is reasonable and not arbitrary we can proceed –
+although the quantum may be altered (even to zero) by subsequent information
+from the customer or other sources.
 
 
-If the review officer is satisfied that the decision is legally and technically supportable then he or she should also consider the following factors as part of their review.
+If the review officer is satisfied that the decision is
+legally and technically supportable then he or she should also consider the
+following factors as part of their review.
 
 
-- materiality / proportionality
+#### materiality / proportionality
 
 
-> subject to the principles of the Litigation and Settlement Strategy. On occasion, the cost to the exchequer may outweigh other factors and a decision not to defend an appealable decision may be made on that basis.
+subject to the principles of the Litigation and Settlement
+Strategy. On occasion, the cost to the exchequer may outweigh other factors and
+a decision not to defend an appealable decision may be made on that basis.
 
 
-- whether HMRC’s decision is defendable at Tribunal
+#### whether HMRC’s decision is defendable at Tribunal
 
 
-> the case must be technically and legally correct, and there must be sufficient evidence to support HMRC’s position and view of the facts. In exceptional circumstances HMRC may uphold an appealable decision where the decision is defendable and based on sound supporting evidence, but the chance of litigation success is less than 50%.
+the case must be technically and legally correct, and there
+must be sufficient evidence to support HMRC’s position and view of the facts.
+In exceptional circumstances HMRC may uphold an appealable decision where the
+decision is defendable and based on sound supporting evidence, but the chance
+of litigation success is less than 50%. 
 
 
-- wider implications
+#### wider implications
 
 
-> an appeal may raise unusual questions of law or general policy or in some other way potentially have an effect on future decisions. In those cases it is especially important to check that the policy and technical experts have been consulted and to seek their view as to whether the case is appropriate for litigation.
+an appeal may raise unusual questions of law or general
+policy or in some other way potentially have an effect on future decisions. In
+those cases it is especially important to check that the policy and technical
+experts have been consulted and to seek their view as to whether the case is
+appropriate for litigation.
 
 
-In carrying out the review, the review officer has a ‘ringmaster’ role. For example they may need to seek and coordinate input from a number of different areas of the Department, such as the decision maker, lawyers, and technical or policy specialists or the secretariat of the Case Board or Issues Panel (see [ARTG4620](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4620)).
+In carrying out the review, the review officer has a
+‘ringmaster’ role. For example they may need to seek and coordinate input from
+a number of different areas of the Department, such as the decision maker,
+lawyers, and technical or policy specialists or the secretariat of the Case
+Board or Issues Panel (see [ARTG4620](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4620)).
 
 
-If the review officer is minded to disagree with a decision issued by a decision maker following a decision by a Case Board or in accordance with a strategy set by an Issues Panel, the review officer must agree the content of the review conclusion letter with the secretariat for the relevant Case Board or Issues Panel before it is issued. Review officers should be aware that it is acceptable for the decision made by a Case Board to override a strategy set by an Issues Panel.
+If the review officer is minded to disagree with a decision
+issued by a decision maker following a decision by a Case Board or in
+accordance with a strategy set by an Issues Panel, the review officer should
+follow the approach set out in [ARTG4635](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4635). In
+doing so the review officer must bear in mind the 45 day time limit for
+completing the review, see [ARTG4690](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4690),
+and seek to agree a longer period with the customer if necessary.
 
 
-In doing so the review officer must bear in mind the 45 day time limit for completing the review, see [ARTG4690](https://www.gov.uk/hmrc-internal-manuals/appeals-reviews-and-tribunals-guidance/artg4690), and seek to agree a longer period with the customer if necessary.
-
-
-Once the review officer has completed their review they must write to the customer to tell them the outcome of their review and their options and copy the letter to the decision maker.
+Once the review officer has completed their review they must
+write to the customer to tell them the outcome of their review and their
+options and copy the letter to the decision maker.
 
 
 ---
